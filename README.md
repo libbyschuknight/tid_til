@@ -3,6 +3,10 @@
 
 A collation of [what I have done](tid.md) each day at work and what I have learnt while coding.
 
+#### [Testing](/testing)
+- [Factory Girl](/testing/factory_girl.md)
+
+
 ## Links
 
 Good place for learning markdown - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
