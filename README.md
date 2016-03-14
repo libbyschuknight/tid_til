@@ -3,14 +3,20 @@
 
 A collation of [what I have done](tid.md) each day at work and what I have learnt while coding.
 
-#### [Testing](/testing)
-- [Factory Girl](/testing/factory_girl.md)
+#### Catergories
+- [Testing](#testing)
 
-
+---
 ## Links
 
-Good place for learning markdown - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+Good sites for learning markdown - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), [Markdown Cheatsheet
+](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## About
 
 I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til) and [jbranchaud/til](https://github.com/jbranchaud/til)
+
+---
+
+#### Testing
+- [Factory Girl](/testing/factory_girl.md)
