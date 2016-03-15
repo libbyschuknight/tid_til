@@ -2,8 +2,9 @@
 > Today I Did & Today I Learnt
 
 A collation of [what I have done](tid.md) each day at work and what I have learnt while coding.
+As well as [meet ups, courses, conferences](courses_etc.md) and other things I have been too.
 
-#### Catergories
+#### Categories
 - [Testing](#testing)
 
 ---
