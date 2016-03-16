@@ -5,7 +5,6 @@ Today I did...disco and resources. Added in another representer so as to get lin
 
 Today I learnt that it is not always good to be over zealous with merging master into a branch I am on. I was working in an app that used one of our own gems, which someone else had updated. I merged this into my local version of the gem and then it broke some specs in the app I was in. Learnt how to revert from a `git merge master`.
 
-
 ##### 15 March 2016
 Today I worked on disco and resources. Continued to fix specs that were failing due to changes. And learnt about hard coding UUIDs into factories. Numerous times I have find this online [Diff Checker](https://www.diffchecker.com/) very useful. It was very useful today.
 
