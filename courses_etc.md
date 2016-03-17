@@ -6,6 +6,8 @@
 Matthew Hartley
 > First up with have Mathew Hartley. Over Christmas Storypark moved from Heroku over to Elastic Beanstalk (and changed regions in the process). Learn what you need to know to perform this migration in production and then immediately escape on a three-week holiday. Mathew leads up the technical side of Storypark, which involves coding, delegating, and trying to minimise sys-admin time. He’s a friendly Ruby developer and has been for several years now.
 
+Good talk to go to. A lot of it over my head but understand more than I thought I might have. Good networking. Got some good links for devops from Tanya.
+
 ##### [Tales from Team Taniwha's Den](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/228094908/) - 15 Feb 2016
 Nick Johnstone / Rachel Colleridge
 >Telling the story of an agile delivery team from birth to maturity - what we found out, what went well and how we had a LOT of fun while doing it.

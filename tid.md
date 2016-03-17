@@ -1,5 +1,8 @@
 # Today I Did
 
+##### 17 Mar 2016
+Today I did...disco and resources, added in another facade and endpoint. Wrote some new specs. Embedded more understanding of how things interelate.
+
 ##### 16 Mar 2016
 Today I did...disco and resources. Added in another representer so as to get links in the embedded property. Update specs.
 
