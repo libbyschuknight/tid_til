@@ -5,13 +5,18 @@
 Today I have been working on starting to create my Seido Guide for my karate. I have created a new Rails app, added bootstrap-sass and started developing it from the simple starter them of getbootstrap.com.
 
 ##### 18 Mar 2016
+Today I did... more disco stuff. Realised was missing conditional in creation of role and party. Updated app using new properties. Broke out logic from facade into a service model, which will make it easier to test this logic. Samson helped me with breaking the conditional logic out into a method, so there would be less branches needed in testing.
+
+Notes from Retro:
+- work in breaking out more stories if I think a story I am on it more than one.
+- pull requests - need to have a good description, tag people for specific parts of the code, review patterns as well as syntax of code.
 
 
 ##### 17 Mar 2016
-Today I did...disco and resources, added in another facade and endpoint. Wrote some new specs. Embedded more understanding of how things interrelate.
+Today I did... disco and resources, added in another facade and endpoint. Wrote some new specs. Embedded more understanding of how things interrelate.
 
 ##### 16 Mar 2016
-Today I did...disco and resources. Added in another representer so as to get links in the embedded property. Update specs.
+Today I did... disco and resources. Added in another representer so as to get links in the embedded property. Update specs.
 
 Today I learnt that it is not always good to be over zealous with merging master into a branch I am on. I was working in an app that used one of our own gems, which someone else had updated. I merged this into my local version of the gem and then it broke some specs in the app I was in. Learnt how to revert from a `git merge master`.
 

@@ -24,3 +24,9 @@ Actually, while writing this I have realized I actually did a git reset.
 git reset 3333333333 # commit number
 ```
 Which probably wasn't the best option for me and a git revert would have been more approrpoate.
+
+##### searching commits
+
+```bash
+git log --all --grep="#til"
+```

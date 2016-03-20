@@ -1,5 +1,6 @@
 # Stuff that doesn't yet fit somewhere else
 
+##### Pry
 When using `pry`, you can type `ENV` and it will show all the environment variables! Yay!
 
 ```
@@ -17,4 +18,7 @@ When using `pry`, you can type `ENV` and it will show all the environment variab
  "API_HOST"=>"https://uat.XXXXXXX",
  ```
 
-This was important as I though I was running something in localhost but it was actually still connected to UAT. 
+This was important as I though I was running something in localhost but it was actually still connected to UAT.
+
+##### Trello
+[How To Format Your Text in Trello](http://help.trello.com/article/821-using-markdown-in-trello)

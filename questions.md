@@ -9,4 +9,12 @@
 
 - What is Docker?
 
-- What is an image, containter in relation to devops?
+- What is an image, container in relation to devops?
+
+- Workers...
+
+- HTTP requests...
+
+
+
+- What is distributed logging?
