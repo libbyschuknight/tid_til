@@ -1,7 +1,14 @@
 # Today I Did
 
+##### 20 March 2016
+
+Today I have been working on starting to create my Seido Guide for my karate. I have created a new Rails app, added bootstrap-sass and started developing it from the simple starter them of getbootstrap.com.
+
+##### 18 Mar 2016
+
+
 ##### 17 Mar 2016
-Today I did...disco and resources, added in another facade and endpoint. Wrote some new specs. Embedded more understanding of how things interelate.
+Today I did...disco and resources, added in another facade and endpoint. Wrote some new specs. Embedded more understanding of how things interrelate.
 
 ##### 16 Mar 2016
 Today I did...disco and resources. Added in another representer so as to get links in the embedded property. Update specs.

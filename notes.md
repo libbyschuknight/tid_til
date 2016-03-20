@@ -22,3 +22,6 @@ breaking out logic from facade into service model, this then will make it easier
 tests are good! wrote some code that had condiational, ran app, worked, tests (that were already there for other parts, no new tests yet) failed, because running the app didn't go into the conditaitonal
 
 notes from fridays retro
+
+
+be rails s -p 4000 - instead of 3000
