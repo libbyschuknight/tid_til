@@ -3,7 +3,7 @@
 Using local gem (on your computer)
 
 ```ruby
-gem "bananas",  path: "../bananas"
+gem "bananas", "~> 1.1.0" path: "../bananas"
 ```
 
 Setting the version

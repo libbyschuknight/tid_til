@@ -1,5 +1,8 @@
 # Today I Did
 
+##### 21 March 2016
+Today I have added specs for roles and parties. Creating pull requests and trying to make sense of how having different versions of our own gems. And when to merge master or not.
+
 ##### 20 March 2016
 
 Today I have been working on starting to create my Seido Guide for my karate. I have created a new Rails app, added bootstrap-sass and started developing it from the simple starter them of getbootstrap.com.
