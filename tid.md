@@ -1,7 +1,10 @@
 # Today I Did
 
+##### 22 March 2016
+Today I have worked on getting my branches of three different things working with changes others have made. There has been an issue with backward compatibility and updating of gems and not of apps using gems. 
+
 ##### 21 March 2016
-Today I have added specs for roles and parties. Creating pull requests and trying to make sense of how having different versions of our own gems. And when to merge master or not.
+Today I have added specs for roles and parties. Created pull requests and tried to make sense of how handle different versions of own gems when more than one person working on them and needing to merge.
 
 ##### 20 March 2016
 
