@@ -30,3 +30,13 @@ Which probably wasn't the best option for me and a git revert would have been mo
 ```bash
 git log --all --grep="#til"
 ```
+
+
+##### tags - deleting
+
+If you have pushed a tag and then released that you had the wrong number, you can do this:
+```bash
+git tag -d v1.0
+git push origin :refs/tags/v1.0
+```
+from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).

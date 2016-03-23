@@ -1,7 +1,10 @@
 # Today I Did
 
+##### 23 March 2016
+Today I have done/learnt more specs and learnt to think about what is being passed into OpenStructs, how to delete a tag when pushed accidently.
+
 ##### 22 March 2016
-Today I have worked on getting my branches of three different things working with changes others have made. There has been an issue with backward compatibility and updating of gems and not of apps using gems. 
+Today I have worked on getting my branches of three different things working with changes others have made. There has been an issue with backward compatibility and updating of gems and not of apps using gems.
 
 ##### 21 March 2016
 Today I have added specs for roles and parties. Created pull requests and tried to make sense of how handle different versions of own gems when more than one person working on them and needing to merge.
