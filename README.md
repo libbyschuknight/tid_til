@@ -13,8 +13,6 @@ There are many terms in coding/development/computer science that I don't know yo
 - [Git/Github](#git/github)
 - [Testing](#testing)
 
-
-
 ---
 ## Links
 
@@ -24,6 +22,12 @@ Good sites for learning markdown - [Mastering Markdown](https://guides.github.co
 ## About
 
 I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til) and [jbranchaud/til](https://github.com/jbranchaud/til)
+
+## To do
+- [ ] add tips from work stuff - https://github.com/libbyschuknight/tid_til/issues/2
+- [ ] add errors on mac/imac - https://github.com/libbyschuknight/tid_til/issues/2
+- [ ] add meet ups been to - https://github.com/libbyschuknight/tid_til/issues/1
+
 
 ---
 #### Databases

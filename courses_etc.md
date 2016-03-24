@@ -21,8 +21,16 @@ This session will help you form strategies for that inevitable moment where you'
 - presentation - [Sifting through source](https://docs.google.com/presentation/d/1savwjxTs4jY9Q9jtPKuB3aBMlg9OH5iK3uv5jZML3sk/edit?usp=sharing)
 
 ##### next
+---
+### Talks
+[#goodwithpicles](https://twitter.com/goodwithpixels) Talks on Code - speaker series
+23 March 2016
+THE STORYTELLER AND THE TEACHER
+> Rob Appierdo, Creative Director of Storybox, will show us behind-the-scenes work on their latest project. The Woman Who Forgot is a multi-dimensional theatre piece combining the physical space around the CBD, a smartphone app, and live performers of the NZ Arts Festival. Rob will be joined by Project Director Jess Feast and Lead Developer Joe Dixon.
+Vanessa Brennan, Software Development Manager at BNZ Digital, will give us a run down on what the next generation of developers might look like with Code Club Aotearoa. Code Club is a nation-wide network of volunteer-led after school coding clubs for kiwi kids. Vanessa will touch on what this might mean for the future of development, and how a diverse code-literate generation positively influences our collective futures.
 
-
+Storybox talk was really interesting. Its exciting to hear about how tech and creativity cross over. Would be great to get this information into schools and particularly share with secondary schools students (mostly girls), so they can really see they technology is not just geeky and science-y and maths-y but it can also be full on creative.
+Code Club talk - was hoping to hear more about the plans of getting a code club going at BNZ.
 
 ---
 ### Conferences
@@ -32,3 +40,7 @@ This session will help you form strategies for that inevitable moment where you'
 ---
 
 ### Courses
+
+
+To add
+All meet ups attended
