@@ -1,7 +1,10 @@
 # Today I Did
 
+##### 24 March 2016
+Today I have worked on another story for another endpoint in the api that I have been working on. Adding in new facades, representers. Remembering more about database stuff and learning about how frustrating it is when things a coupled together.
+
 ##### 23 March 2016
-Today I have done/learnt more specs and learnt to think about what is being passed into OpenStructs, how to delete a tag when pushed accidently.
+Today I have done/learnt more specs and learnt to think about what is being passed into OpenStructs, how to delete a tag when pushed accidentally.
 
 ##### 22 March 2016
 Today I have worked on getting my branches of three different things working with changes others have made. There has been an issue with backward compatibility and updating of gems and not of apps using gems.
