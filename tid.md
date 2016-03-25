@@ -1,7 +1,7 @@
 # Today I Did
 
-##### 25 March 2016
-
+##### 25 March 2016 (Good Friday)
+Today I have worked on my [Seido Karate Guide](https://github.com/libbyschuknight/libs_seido_guide). I have added in a stances model and added in images to it using Paperclip. Have added some capybara tests for the static home page. Having some trouble with the styling of the form for creating a stance. Think it is a bootstrap issue.
 
 ##### 24 March 2016
 Today I have worked on another story for another endpoint in the api that I have been working on. Adding in new facades, representers. Remembering more about database stuff and learning about how frustrating it is when things a coupled together.
