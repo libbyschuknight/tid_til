@@ -1,5 +1,8 @@
 # Today I Did
 
+##### 26 March 2016
+Today I have work on my Seido Karate guide again. Worked on the controller for stances and controller and feature specs. 
+
 ##### 25 March 2016 (Good Friday)
 Today I have worked on my [Seido Karate Guide](https://github.com/libbyschuknight/libs_seido_guide). I have added in a stances model and added in images to it using Paperclip. Have added some capybara tests for the static home page. Having some trouble with the styling of the form for creating a stance. Think it is a bootstrap issue.
 

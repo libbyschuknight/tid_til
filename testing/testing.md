@@ -59,3 +59,6 @@ let(:object) do
 end
 ```
 My point being, make sure that what the properties are in the OpenStruct object, are the same as what is in the Role. For example, `party_id` needs to be `party.id`.
+
+#### Params
+If you change the columns on your table, remember to change the 'strong params' that are allowed to pass through.
