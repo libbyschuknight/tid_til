@@ -1,6 +1,9 @@
 # Today I Did
 
-##### 27 March 2016 (Easter Monday)
+##### 28 March 2016 (Easter Monday)
+Today I worked on Seido Guide again. Added update, edit actions. Updated styling, added "add stance" button on pages.
+
+##### 27 March 2016 (Easter Sunday)
 Today I worked on the Seido Karate guide again. Added index page for stances.
 
 ##### 26 March 2016
