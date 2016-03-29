@@ -1,5 +1,8 @@
 # Today I Did
 
+##### 29 March 2016
+Today I have worked on adding facades/representers to extend out and complete (hopefully!) the endpoint I started making the other day. Seem to have a better understanding of making them but still no idea how it all works under the covers. All based on using ROAR and Grape.
+
 ##### 28 March 2016 (Easter Monday)
 Today I worked on Seido Guide again. Added update, edit actions. Updated styling, added "add stance" button on pages.
 

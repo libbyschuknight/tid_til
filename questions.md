@@ -15,6 +15,6 @@
 
 - HTTP requests...
 
-
-
 - What is distributed logging?
+
+- REST...
