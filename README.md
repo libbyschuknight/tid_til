@@ -7,10 +7,11 @@ Plus [questions](questions.md) that come up for me as I am coding. The aim will 
 There are many terms in coding/development/computer science that I don't know you, so there is also a [terms](terms.md) section.
 
 #### Categories
-- [Miscellaneous](miscellaneous.md)
 - [Databases](#databases)
 - [Gems](#gems)
 - [Git/Github](#git/github)
+- [Miscellaneous](miscellaneous.md)
+- [Ruby](#ruby)
 - [Testing](#testing)
 
 ---
@@ -38,6 +39,9 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 #### Git/Github
 - [Git/Github](/git_github/git.md)
+
+#### Ruby
+- [Errors](/ruby/errors.md)
 
 #### Testing
 - [Factory Girl](/testing/factory_girl.md)

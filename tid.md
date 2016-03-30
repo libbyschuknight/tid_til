@@ -1,4 +1,7 @@
-# Today I Did
+# Today I Did...Today I have worked on...
+
+##### 30 March 2016
+... I have been given advice that it is important to remember to look at the whole forest and not get stuck just looking at the trees. Rescued database error, see ruby/errors.md. Written more specs, which will be useful for next piece of work, as will be changing a lot of what I have just done. 
 
 ##### 29 March 2016
 Today I have worked on adding facades/representers to extend out and complete (hopefully!) the endpoint I started making the other day. Seem to have a better understanding of making them but still no idea how it all works under the covers. All based on using ROAR and Grape.
