@@ -1,7 +1,10 @@
 # Today I Did...Today I have worked on...
 
+##### 1 April 2016
+... I have been back into api endpoints, representers and plugging stuff together. I have had a view hiccups during the day which is mainly been down to not paying enough attention to the naming of things through the different apps. As well as copying and pasting and not paying enough attention on the small parts that need to be changed. I blame it on being a Friday! Yeah nah! Have been reviewing code review comments of my pull requests and making changes accordingly. I am wondering at what point I will start to recognise when I should be using different patterns...
+
 ##### 31 March 2016
-...we have had a "technical debt" day at work. Where we have been working on refactoring code that is poor and can be improved. I have been working on a gem for our front-end styling and learning a lot about mixins. More to come on this tomorrow.
+... we have had a "technical debt" day at work. Where we have been working on refactoring code that is poor and can be improved. I have been working on a gem for our front-end styling and learning a lot about mixins. More to come on this tomorrow.
 
 ##### 30 March 2016
 ... I have been given advice that it is important to remember to look at the whole forest and not get stuck just looking at the trees. Rescued database error, see ruby/errors.md. Written more specs, which will be useful for next piece of work, as will be changing a lot of what I have just done.
