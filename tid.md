@@ -1,5 +1,8 @@
 # Today I Did...Today I have worked on...
 
+##### 2/3 April 2016
+Seido site. Seed dump gem, sorting gitignore for images.
+
 ##### 1 April 2016
 ... I have been back into api endpoints, representers and plugging stuff together. I have had a view hiccups during the day which is mainly been down to not paying enough attention to the naming of things through the different apps. As well as copying and pasting and not paying enough attention on the small parts that need to be changed. I blame it on being a Friday! Yeah nah! Have been reviewing code review comments of my pull requests and making changes accordingly. I am wondering at what point I will start to recognise when I should be using different patterns...
 
