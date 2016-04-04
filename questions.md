@@ -18,3 +18,9 @@
 - What is distributed logging?
 
 - REST...
+
+
+####
+- What is white labelling?
+
+- Lambda?

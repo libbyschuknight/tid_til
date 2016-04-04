@@ -1,5 +1,8 @@
 # Today I Did...Today I have worked on...
 
+##### 4 April 2016
+... trying to get my head around working on numerous different branches in the same code base. Also, understanding apis and keeping old stuff in it that services use, even if updating bits that the services will use. This is so to be able to do backwards compatibility. I think also I need to be clearer in my communications with seniors around my large gaps in knowledge.
+
 ##### 2/3 April 2016
 Seido site. Seed dump gem, sorting gitignore for images.
 
