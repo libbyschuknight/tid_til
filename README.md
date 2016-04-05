@@ -42,6 +42,7 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 #### Databases
 - [General DB Stuff](databases/databases.md)
+- [Sequel](databases/sequel.md)
 
 #### Gems
 - [Gem Stuff](/gems/gem_stuff.md)
