@@ -7,6 +7,7 @@ Plus [questions](questions.md) that come up for me as I am coding. The aim will 
 There are many terms in coding/development/computer science that I don't know you, so there is also a [terms](terms.md) section.
 
 #### Categories
+- [API stuff](#api stuff)
 - [Code Reviews](#code reviews)
 - [Databases](#databases)
 - [Gems](#gems)
@@ -33,6 +34,9 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 
 ---
+#### API stuff
+- [General](api_stuff/general.md)
+
 #### Code Reviews
 - [Code Reviews - general](code_reviews/code_review_general.md)
 
