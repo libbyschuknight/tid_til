@@ -1,4 +1,29 @@
-# Courses, Conferences, Meet Ups etc
+# [Courses](#courses), [Conferences](#conferences), [Meet Ups](#meet-ups) etc
+
+### Conferences
+
+##### [Webstock 2016](http://www.webstock.org.nz/16/) - 11-12 Feb 2016
+Blog post to come
+
+##### [WDCNZ](http://www.wdcnz.com/) - 23 July 2015
+See my [blog post](https://schuknight.wordpress.com/2016/01/17/wdcnz-a-bit-late/)
+
+---
+### Courses
+
+
+---
+### Talks
+[#goodwithpicles](https://twitter.com/goodwithpixels) Talks on Code - speaker series
+23 March 2016
+THE STORYTELLER AND THE TEACHER
+> Rob Appierdo, Creative Director of Storybox, will show us behind-the-scenes work on their latest project. The Woman Who Forgot is a multi-dimensional theatre piece combining the physical space around the CBD, a smartphone app, and live performers of the NZ Arts Festival. Rob will be joined by Project Director Jess Feast and Lead Developer Joe Dixon.
+Vanessa Brennan, Software Development Manager at BNZ Digital, will give us a run down on what the next generation of developers might look like with Code Club Aotearoa. Code Club is a nation-wide network of volunteer-led after school coding clubs for kiwi kids. Vanessa will touch on what this might mean for the future of development, and how a diverse code-literate generation positively influences our collective futures.
+
+Storybox talk was really interesting. Its exciting to hear about how tech and creativity cross over. Would be great to get this information into schools and particularly share with secondary schools students (mostly girls), so they can really see they technology is not just geeky and science-y and maths-y but it can also be full on creative.
+Code Club talk - was hoping to hear more about the plans of getting a code club going at BNZ.
+
+---
 
 ### Meet Ups
 
@@ -49,26 +74,70 @@ This session will help you form strategies for that inevitable moment where you'
 - [Janella Espinas](https://twitter.com/fakeamerican)
 - presentation - [Sifting through source](https://docs.google.com/presentation/d/1savwjxTs4jY9Q9jtPKuB3aBMlg9OH5iK3uv5jZML3sk/edit?usp=sharing)
 
----
-### Talks
-[#goodwithpicles](https://twitter.com/goodwithpixels) Talks on Code - speaker series
-23 March 2016
-THE STORYTELLER AND THE TEACHER
-> Rob Appierdo, Creative Director of Storybox, will show us behind-the-scenes work on their latest project. The Woman Who Forgot is a multi-dimensional theatre piece combining the physical space around the CBD, a smartphone app, and live performers of the NZ Arts Festival. Rob will be joined by Project Director Jess Feast and Lead Developer Joe Dixon.
-Vanessa Brennan, Software Development Manager at BNZ Digital, will give us a run down on what the next generation of developers might look like with Code Club Aotearoa. Code Club is a nation-wide network of volunteer-led after school coding clubs for kiwi kids. Vanessa will touch on what this might mean for the future of development, and how a diverse code-literate generation positively influences our collective futures.
 
-Storybox talk was really interesting. Its exciting to hear about how tech and creativity cross over. Would be great to get this information into schools and particularly share with secondary schools students (mostly girls), so they can really see they technology is not just geeky and science-y and maths-y but it can also be full on creative.
-Code Club talk - was hoping to hear more about the plans of getting a code club going at BNZ.
+##### [Proposing Your First Conference Talk with Guest Speaker Carina C. Zona](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/223571001/) - 20 July 2015
 
----
-### Conferences
+> Giving conference talks is a game changer. Speaking can propel a career forward, expand your network considerably, and lead to wonderfully surprising opportunities.
+You get to learn and be inspired, as well as share. You get free tickets to a conference you may never have been able to attend another way. Some also pay for travel, lodging, and/or honorarium.
+As a speaker, you get to have lively conversations with peers and idols, about the topics that most fascinate you personally.
+At this Enspiral Dev Academy/Rails Girls workshop, you'll get practical skills for doing your first proposal:
+• how to find relevant opportunities
+• dissecting calls for proposals (CFPs)
+• evaluating CFPs for fit with you
+• questions it's cool to ask organizers
+• the darned fair expectations to hold
+• brainstorming a topic
+• writing the abstract
 
-
-
----
-
-### Courses
+- [Carina C. Zona](https://twitter.com/cczona)
 
 
-To add
-All meet ups attended
+##### [Who owns all that data?](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/221801498/) - 29 April 2015
+
+> Drew from Common Ledger will talk through his interesting run-ins with data access, data ownership, data custody, a $20M lawsuit and ways to avoid this - particularly around the API space. While he adds the disclaimer IANAL, there is educated and scarred truths of reality in this talk that will hopefully help you educate yourself in the world of the "Internet of Things".
+
+##### [Everything I wish someone had told me about being an IT graduate](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/220002585/) - 11 Feb 2015
+
+> It turns out that almost everyone who's new to being a developer has largely the same fears, worries and concerns about their first job - and it's never what you expect. Xero's Hannah Gray helps us debunk some of the myths, break through the jargon around career paths and tell you what a job as a junior developer will really be about.
+
+- [Hannah Gray](https://twitter.com/lerevedetoiles)
+
+##### [Navigating the Daily Demands of being a Developer](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/219998181/) - Feb 4 2015
+
+> We're joined by StarNow's resident .Net Ninja, Douglas, for an insight into scope management as a developer. Come along and get some tips and insights in to when to stop, when to ask for help, when to know you are doing too much, and when to say yes or no, to help you navigate the demands of bootcamp and life after as a developer.
+
+##### [Hoist and Api's!](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/219124913/) - 10 Dec 2014
+
+> The rough guide to APIs: A history lesson in three parts, ad-libbed and live. Owen Evans takes us on a look back at the world of the mysterious API. Learn what API’s exist for, what’s the different between REST, SOAP, JSON, WS-, OAUTH and many other crazy acronyms. Learn what makes a good API, how to approach building one and what pitfalls you should consider. Owen is currently CTO of Hoist http://hoist.io. Hoist is a developer platform for building integrated applications.  He works with and builds APIs all day every day. Previously Owen was the Chief Architect at Xero where he helped bring the Xero API to life amongst other claims to fame.
+
+- [Owen Evans](https://twitter.com/buildmaster)
+
+
+##### [What we're learning and what the industry is doing](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/218883287/) - 26 Nov 2014
+
+> We've got Ben and Dan from Xero this week. Dan has worked with some familiar names in Wellington IT and now works at Xero, building features and improving code in one of the core teams. Ben has been working with Microsoft technologies for around 15 years. After a stint teaching at Dev Academy earlier this year he is now also at Xero, looking after some of the developers and talking about code quality.
+They're going to talk about the similarities and differences techniques between and tools Dev Academy students are learning and the ones that firms like Xero are using.
+
+- [Ben Amor](https://twitter.com/ShortMethods)
+
+##### [A whirlwind tour of how computers work](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/217487932/) - 5 Nov 2014
+
+> This talk will be a whirlwind tour of what's going on under the covers in computers.  It will start from transistors, and build up to logic gates, state machines, instruction sets, machine code, assembly language and up to high level programming languages and frameworks.  Obviously we'll be skipping a lot of detail, but the goal will be to demystify how computers work by building up from simple things to increasingly complex things in layers that can be understood separately.
+
+- [Ben Amor](https://twitter.com/ShortMethods)
+
+##### [“A Day in the Life”](http://www.meetup.com/Enspiral-Dev-Academy-Meetup/events/205111522/) - 4 Oct 2014
+
+> Join us for a chance to really feel what it’s like to be a boot at our nine-week programming academy. We will walk you through the paces so you get an honest taste of what cohort members learn, feel and become.
+During the day you will launch right into coding fundamentals and we will challenge you based on your experience. You’ll be pairing (coding in pairs) with other “boots” just like our cohorts do and we’ll also explore lots of other programming ideas and concepts.
+In order to produce the well balanced programmers that we do we will also be focusing on emotional intelligence and wellbeing. We will make use of the yoga space and may try our hand at some meditation. This is everything you can expect to see daily at Dev Academy, so we’re making sure you get to try it all too!
+
+This was a great day to go to. Helped me decided to take the plunge to change careers.
+
+
+
+##### [heading](link) - date
+
+> about
+
+- [person](link)
