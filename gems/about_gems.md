@@ -8,3 +8,6 @@
 
 ### [Grape](https://github.com/ruby-grape/grape)
 - TODO: add own definition
+
+### [State Machine]()
+- TODO: add own definition

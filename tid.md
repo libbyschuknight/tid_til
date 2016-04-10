@@ -1,7 +1,13 @@
 # Today I Did...Today I have worked on...
 
+#### 8 April 2016
+... trying to implement State Machine in established code base. # TODO: add to!!!!!! 
+
+#### 7 April 2016
+... renaming models. Looking at using State Machine gem.
+
 #### 5 April 2016
-...I have been getting frustrated with forgetting small things I need to change to make codebases work together when running locally. E.g. pointing an app to local gem, changing environment host constant to localhost. Learnt how to add an enum value in Sequel. And that I need to pay more attention or think more laterally when making changes. It might pay to try and write at when I first start a story what I think I am doing and keep referring back to this, as I feel some things have gotten lost as I have progressed on current story. 
+...I have been getting frustrated with forgetting small things I need to change to make codebases work together when running locally. E.g. pointing an app to local gem, changing environment host constant to localhost. Learnt how to add an enum value in Sequel. And that I need to pay more attention or think more laterally when making changes. It might pay to try and write at when I first start a story what I think I am doing and keep referring back to this, as I feel some things have gotten lost as I have progressed on current story.
 
 ##### 4 April 2016
 ... trying to get my head around working on numerous different branches in the same code base. Also, understanding apis and keeping old stuff in it that services use, even if updating bits that the services will use. This is so to be able to do backwards compatibility. I think also I need to be clearer in my communications with seniors around my large gaps in knowledge.
