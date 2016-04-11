@@ -13,6 +13,7 @@ There are many terms in coding/development/computer science that I don't know yo
 - [Gems](#gems)
 - [Git/Github](#gitgithub)
 - [Miscellaneous](miscellaneous.md)
+- [Rails](#rails)
 - [Ruby](#ruby)
 - [Testing](#testing)
 - [Text Editors](#text-editors)
@@ -49,6 +50,10 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 #### Git/Github
 - [Git/Github](/git_github/git.md)
+
+#### Rails
+- [General](/rails/rails.md)
+- [New Rails app](/rails/new_rails_app.md)
 
 #### Ruby
 - [Errors](/ruby/errors.md)
