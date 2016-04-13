@@ -1,5 +1,8 @@
 # Today I Did...Today I have worked on...
 
+#### 13 April 2016
+Today I learnt that you have to be very careful with dropping tables, renaming, dropping columns etc. It might all work fine in your development environment but when pushed to test server (god forbid if it even happens to me when pushing to prod!). This issue came about by wanting to change a name of a table. Say `Cats` to `Dogs`. Simple to do with `rename_table`, but I decided to look at the postgresql database and in there the now `Dogs` table that had a relationship with the `Homes` table, has the naming of the keys still as `Cats`. After having a chat with someone I decided to remove `home_id` of `Cats` (so dropping the column), change `Cats` to `Dogs`, then add `foreign_key` for `Homes` to `Dogs`. This worked fine locally but when it was pushed to test server environment as there was a `null: false` on `home_id` (or something like that), it wouldn't run the migrations. So, the fix involved rolling back to the migration before last problematic migration and then deleting the problematic migrations. Likely the problematic migrations were not in production. Phew! Provides for an interesting day, especially when trying to get something on test server for demo time. I wonder if there had been more oversight by a senior dev if this issue would have come out a lot earlier and therefore wouldn't have had this issue when trying to deploy. Another thing I was thinking was it could work to have a senior with more over sight of what I was doing or more scheduled or semi-formal-ish check ins on what I have done and why.
+
 #### 12 April 2016
 ...getting new api endpoint working and amending one. Fixing up specs after making changes.
 

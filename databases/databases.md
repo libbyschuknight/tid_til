@@ -20,3 +20,34 @@ Models::Meal.where(ingredient: "beef")
 (Example using [Sequel gem](http://sequel.jeremyevans.net/))
 
 TODO: add example output???
+
+
+#### Using `.find` or creating find_by method on model
+
+if doing this a lot in codebase
+```ruby
+Models::Cat.find(tag_id: "123")
+```
+
+could add a `find_by_tag_id` to the Cat model
+```ruby
+Models::Cat.find_by_tag_id("123")
+```
+
+```ruby
+module Models
+  class Cat
+
+    many_to_one :home
+
+    one_to_many :dogs
+
+    def self.find_by_tag_id(tag_id)
+      self.find(tag_id: tag_id)
+    end
+
+  end
+end
+```
+
+This would be good if you are using `find` in a lot of places and then the column name you were using changed. Doing it like this would mean that you just need to change the column name in one place.
