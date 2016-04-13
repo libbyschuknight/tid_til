@@ -27,6 +27,15 @@ Code Club talk - was hoping to hear more about the plans of getting a code club 
 
 ### Meet Ups
 
+##### [Modules and basic PHP](http://www.meetup.com/Wellington-Stripe-Girls/events/229981904/) - 13 April 2016
+> - Checking out Silverstripe modules. See how to install them, and review a few nice once to have.
+- Lena taught us logic last time, we are going to use it! PHP intro to beginners.
+- Workshop. Apply what we learned :)
+The format is not yet decided. We can either have talks (with slides and all that) first and then on the workshop start coding. Or we can not have formal talks, just peer (group) programming from the beginning. If you have a preference for one, please leave a comment, otherwise we are going to decide before the meetup :)
+
+Was interesting learning about 'modules', which are basically Ruby 'gems', or very similar. 'Composer' is like 'bundler' in Ruby. Have better understanding of what SilverStripe is and what it is used for. 
+
+
 ##### [Railsn00bs v13](http://www.meetup.com/WellingtonRailsn00bs/events/229809896/) - 2 April 2016
 > In the mood to learn something new? Andrew Kampjes will host a mini workshop on security for Ruby on Rails. In this interactive session, you'll get a chance to try your hand at making things more secure!
 
