@@ -18,6 +18,7 @@ There are many terms in coding/development/computer science that I don't know yo
 - [Testing](#testing)
 - [Terminal stuff](/terminal/terminal_stuff.md)
 - [Text Editors](#text-editors)
+- [Work Flow](work_flow.md)
 
 ---
 ## Links
