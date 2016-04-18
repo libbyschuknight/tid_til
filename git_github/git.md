@@ -49,3 +49,24 @@ Check what what remotes are on a repo:
 - `git branch -a` => shows branches and remotes including `gem_fury`
 
 - `git branch -r` => just shows remotes
+
+
+### `git add <file1> <file2>`
+
+I'm not sure why it has taken me a long time to click onto this, it maybe because I have always added EVERYTHING before adding, committing and pushing. Which has gotten me into some tricky spots!
+So,
+
+`git add .`
+
+adds everything.
+
+But you can add one file at a time
+
+`git add <file`>
+
+or two or more files
+
+`git add <file1> <file2>`
+
+Perhaps also as I am using OhMyZsh and being using the git [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) I have taken the easy/lazy road of just always adding everything.
+I had better start using `ga` (shortcut for `git add`) when wanting to not add all files.
