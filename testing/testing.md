@@ -1,5 +1,8 @@
 # Testing - general
 
+#### Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz
+A must watch and re-watch - [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz]https://www.youtube.com/watch?v=URSWYvyc42M
+
 #### Using OpenStructs
 When using OpenStruct in tests, need to look at the things that are being passed into the object you are wanting to recreate.
 
@@ -62,3 +65,9 @@ My point being, make sure that what the properties are in the OpenStruct object,
 
 #### Params
 If you change the columns on your table, remember to change the 'strong params' that are allowed to pass through.
+
+#### TIME
+##### Stub out in RSpec
+```ruby
+allow(Time).to receive(:now).and_return(Time.parse('2016-03-02'))
+```

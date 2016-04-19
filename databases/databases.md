@@ -51,3 +51,28 @@ end
 ```
 
 This would be good if you are using `find` in a lot of places and then the column name you were using changed. Doing it like this would mean that you just need to change the column name in one place.
+
+
+#### Class name can be Implicit
+```ruby
+module Models
+  class Event < Sequel::Model
+
+    many_to_one :sports
+
+    def self.new_running_event(params:,)
+      Models::Event.create(sports_id: sports_id, type: "running", data: params)
+    end
+
+  end
+end
+```
+Instead of having:
+```ruby
+Models::Event.create(sports_id: sports_id, type: "running", data: params)
+```
+you can just have:
+```ruby
+create(sports_id: sports_id, type: "running", data: params)
+```
+... as you are inside the `Event` model.

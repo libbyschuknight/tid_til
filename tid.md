@@ -1,7 +1,10 @@
 # Today I Did...Today I have worked on...
 
+#### 19 April 2016
+... changes following code review! Heaps of stuff, a lot of what has been added to TIL.
+
 #### 18 April 2016
-...tidy up of pull request for feature branch. This involved checking to much sure I had covered everything in the story, specs passing etc. Have started on next task, attempted to write stories for these. This was quite good as it helped me clarify what was expected. 
+...tidy up of pull request for feature branch. This involved checking to much sure I had covered everything in the story, specs passing etc. Have started on next task, attempted to write stories for these. This was quite good as it helped me clarify what was expected.
 
 #### 15 April 2016
 ... specs for state machine. Performance review stuff.

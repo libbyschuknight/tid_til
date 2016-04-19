@@ -26,4 +26,49 @@ User stories are often written on index cards or sticky notes, stored in a shoe 
 **RUN THE TESTS!!**
 
 If tests fail, reset the test database: `rake db:test:prepare`  
-and remember to reset the development database: `rake db:reset` (depending on what rake tasks are set up)
+and remember to reset the development database: `rake db:reset` (depending on what rake tasks are set up).
+
+
+### During writing code
+
+Remember to:
+look at refactoring code BEFORE creating pull request
+single responsibility methods, rather then lots of logic in one method or (god forbid) in the initialize method
+
+E.g
+Before:
+
+```ruby
+def initialize(bubbles)
+  @bubbles = bubbles
+
+  begin
+    @bubbles = bubbles.collect do |bubble|
+      facade = Facades::BubbleFacade.new(bubble)
+      facade.extend(Resources::Representers::Bubble)
+    end
+  rescue Sequel::DatabaseError
+    @bubbles = []
+  end
+end
+```
+
+After:
+```ruby
+def initialize(bubbles)
+  @bubbles = wrap_in_facades(bubbles)
+end
+
+def wrap_in_facades(bubbles)
+  begin
+    bubbles.map { |bubble| wrap_in_facade(bubble) }
+  rescue Sequel::DatabaseError
+    []
+  end
+end
+
+def wrap_in_facade(bubble)
+  facade = Facades::BubbleFacade.new(bubble)
+  facade.extend(Resources::Representers::Bubble)
+end
+```

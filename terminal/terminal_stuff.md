@@ -17,6 +17,7 @@ A quick search of what `cat` is and found this link - [10 Terminal Commands That
 
 
 ### Pry
+##### binding.pry
 When using a `binding.pry` to debug stuff, really useful command to know is:
 ```bash
 whereami
@@ -39,6 +40,52 @@ this will take you to where you are in the code. Very useful if you have been tr
 32: end
 ```
 
+##### ENV
+When using `pry`, you can type `ENV` and it will show all the environment variables! Yay!
+
+```
+=> {"ADDRESSFINDER_CLEANSING_KEY"=>"XXXXX",
+"ADDRESSFINDER_CLEANSING_SECRET"=>"XXXXX",
+"AWS_ACCESS_KEY_ID"=>"XXXXX",
+"AWS_REGION"=>"XXXXXX",
+"AWS_SECRET_ACCESS_KEY"=>"XXXXXX",
+"Apple_PubSub_Socket_Render"=>"/private/tmp/com.apple.launchd.zBbBBbxFLf/Render",
+"BUNDLE_BIN_PATH"=>"/Users/libby/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/bundler-1.11.2/exe/bundle",
+"BUNDLE_GEMFILE"=>"/Users/libby/Code/customer_app/Gemfile",
+"BUNDLE_ORIG_MANPATH"=>
+"/Users/libby/.XXXXXXXXX",
+....
+"API_HOST"=>"https://uat.XXXXXXX",
+```
+
+This was important as I though I was running something in localhost but it was actually still connected to UAT.
+
+##### ls for methods
+
+```bash
+[5] pry(main)> ls Array
+
+Object.methods: yaml_tag
+Array.methods: []  try_convert  wrap
+Array#methods:
+  &       bsearch      drop_while        hash         prepend               rindex     sort!           to_xml
+  *       clear        each              include?     pretty_print          rotate     sort_by!        transpose
+  +       collect      each_index        index        pretty_print_cycle    rotate!    take            uniq
+  -       collect!     empty?            insert       product               sample     take_while      uniq!
+  <<      combination  eql?              inspect      push                  select     to_a            unshift
+  <=>     compact      extract_options!  join         rassoc                select!    to_ary          values_at
+  ==      compact!     fetch             keep_if      reject                shelljoin  to_csv          zip
+  []      concat       fill              last         reject!               shift      to_default_s    |
+  []=     count        find_index        length       repeated_combination  shuffle    to_formatted_s
+  any?    cycle        first             map          repeated_permutation  shuffle!   to_h
+  append  delete       flatten           map!         replace               size       to_param
+  assoc   delete_at    flatten!          pack         reverse               slice      to_query
+  at      delete_if    frozen?           permutation  reverse!              slice!     to_s
+  blank?  drop         grep              pop          reverse_each          sort       to_sentence
+```
+```
+
+
 ##### Pry-Byebug
-I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navgiation commands, however, `pry-rails` does (I think), which is what I have been used to.z tid
+I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navgiation commands, however, `pry-rails` does (I think), which is what I have been used to
 https://github.com/pry/pry/wiki/Available-plugins#pry-byebug
