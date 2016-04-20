@@ -1,5 +1,9 @@
 # Today I Did...Today I have worked on...
 
+#### 20 April 2016
+... more work on code review. Issues with passing in a JSON array it working with params using Grape. Fixing up of specs.
+> Pairing - trying to figure out using Grade params to get stuff out of JSON with an array inside.
+
 #### 19 April 2016
 ... changes following code review! Heaps of stuff, a lot of what has been added to TIL.
 
