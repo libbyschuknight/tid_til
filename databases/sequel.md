@@ -46,12 +46,12 @@ And I was reminded again (because I forgot to do it) to remember to do `rake db:
 ### Inspect
 When I was doing some stuff in the sequel console (i.e. irb with config/environment loaded) I was playing and did this:
 ```bash
-Models::Event.where(state: "issued").class
+Models::Event.where(state: "valid").class
 -> Sequel::Postgres::Dataset < Sequel::Dataset
 ```
 and then did:
 ```bash
-Models::Event.where(state: "claimed").inspect
--> "#<Sequel::Postgres::Dataset: \"SELECT * FROM \\\"events\\\" WHERE (\\\"state\\\" = 'issued')\">"
+Models::Event.where(state: "invalid").inspect
+-> "#<Sequel::Postgres::Dataset: \"SELECT * FROM \\\"events\\\" WHERE (\\\"state\\\" = 'invaid')\">"
 ```
 ...thought that this was very interesting and could be very useful, seeing the raw SQL statement of a query. I wonder if it works in Rails with ActiveRecord as well?

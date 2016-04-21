@@ -42,7 +42,7 @@ git push origin :refs/tags/v1.0
 from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).
 
 
-#### remotes
+### remotes
 
 Check what what remotes are on a repo:
 

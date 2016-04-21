@@ -18,7 +18,7 @@ User stories are short, simple descriptions of a feature told from the perspecti
 
 User stories are often written on index cards or sticky notes, stored in a shoe box, and arranged on walls or tables to facilitate planning and discussion. As such, they strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written.
 
-# TODO: add Simons definition
+### TODO: add Simons definition
 
 
 ### At the Beginning of Coding
@@ -29,11 +29,11 @@ If tests fail, reset the test database: `rake db:test:prepare`
 and remember to reset the development database: `rake db:reset` (depending on what rake tasks are set up).
 
 
-### During writing code
+### When writing code
 
 Remember to:
-look at refactoring code BEFORE creating pull request
-single responsibility methods, rather then lots of logic in one method or (god forbid) in the initialize method
+- look at refactoring code BEFORE creating pull request
+- single responsibility methods, rather then lots of logic in one method or (god forbid) in the initialize method!
 
 E.g
 Before:
@@ -72,3 +72,33 @@ def wrap_in_facade(bubble)
   facade.extend(Resources::Representers::Bubble)
 end
 ```
+
+### Strategies for solving difficult things
+
+##### Adding things in
+If you have working code and you want to add to it (might be refactoring or adding DSL) and it is providing difficult, revert code back to working and then add bits back in one at a time.
+Make it as general as possible.
+
+For example when trying to add in more `params` to Grape API endpoint:
+
+```ruby
+desc "Receive all data for changing a bubble"
+  params do
+    requires :change_bubbles, type: Array # this is what works
+  end
+  post "/bubble_event" do
+    bubble_id = params[:change_bubbles][1][:id] # don't want to use index on array
+
+    if Bubble.process_change_bubble(params: params, bubble_id: bubble_id)
+      status 200
+    else
+      status 400
+    end
+  end
+```
+Was aiming to access the `id` in the JSON array without using index of the array. Each element of the array holds a different Hash with different keys/values. And it is the second element  that has the first `id`
+
+Did try:
+- `type: Array[JSON]`
+- `given`, `values`, `optional`
+from https://github.com/ruby-grape/grape#parameter-validation-and-coercion
