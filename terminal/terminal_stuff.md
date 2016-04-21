@@ -83,8 +83,6 @@ Array#methods:
   at      delete_if    frozen?           permutation  reverse!              slice!     to_s
   blank?  drop         grep              pop          reverse_each          sort       to_sentence
 ```
-```
-
 
 ##### Pry-Byebug
 I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navgiation commands, however, `pry-rails` does (I think), which is what I have been used to
