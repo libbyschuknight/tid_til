@@ -41,7 +41,7 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 - [General](api_stuff/general.md)
 
 #### Code Reviews
-- [Code Reviews - general](code_reviews/code_review_general.md)
+- [Code Reviews - general](code_reviews/code_reviews_general.md)
 
 #### Databases
 - [General DB Stuff](databases/databases.md)
