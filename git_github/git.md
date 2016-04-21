@@ -70,3 +70,33 @@ or two or more files
 
 Perhaps also as I am using OhMyZsh and being using the git [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) I have taken the easy/lazy road of just always adding everything.
 I had better start using `ga` (shortcut for `git add`) when wanting to not add all files.
+
+### Checking out a branches `tag` / version
+
+```bash
+git checkout 4.4.0
+```
+Instead of a branch name you will see the first few digits of the tags commit shard.
+You will get something like this:
+
+```bash
+Note: checking out '4.4.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 3768438... Tag version 4.4.0
+```
+Make a new branch so any changes you make can be kept:
+```bash
+git branch -d feature/participant_roles_facade
+```
+Apply anything you have stashed - `git stash apply`
+
+(see [Gem Stuff](gems/gem_stuff.md) for example of when used)

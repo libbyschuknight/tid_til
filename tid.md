@@ -1,5 +1,11 @@
 # Today I Did...Today I have worked on...
 
+#### 22 April 2016
+... 
+
+#### 21 April 2016
+... learnt how to checkout a tag in a git repo. Have been working on creating a new endpoint for returning another collection. Following similar way did last one. An issue recently as been big changes to code happening in one branch for an app and a gem. The gem of which is used in many other apps. See see [Gem Stuff](gems/gem_stuff.md) for more information.
+
 #### 20 April 2016
 ... more work on code review. Issues with passing in a JSON array it working with params using Grape. Fixing up of specs.
 > Pairing - trying to figure out using Grade params to get stuff out of JSON with an array inside.

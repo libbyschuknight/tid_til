@@ -13,6 +13,7 @@ There are many terms in coding/development/computer science that I don't know yo
 - [Gems](#gems)
 - [Git/Github](#gitgithub)
 - [Miscellaneous](miscellaneous.md)
+- [PHP](php.md)
 - [Rails](#rails)
 - [Ruby](#ruby)
 - [Testing](#testing)
