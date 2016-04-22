@@ -1,7 +1,7 @@
 # Today I Did...Today I have worked on...
 
 #### 22 April 2016
-... 
+... finished of endpoint. Learnt how to generate an UUID in bash with alias. 
 
 #### 21 April 2016
 ... learnt how to checkout a tag in a git repo. Have been working on creating a new endpoint for returning another collection. Following similar way did last one. An issue recently as been big changes to code happening in one branch for an app and a gem. The gem of which is used in many other apps. See see [Gem Stuff](gems/gem_stuff.md) for more information.

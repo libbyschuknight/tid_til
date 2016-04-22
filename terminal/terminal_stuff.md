@@ -72,7 +72,7 @@ Array#methods:
   *       clear        each              include?     pretty_print          rotate     sort_by!        transpose
   +       collect      each_index        index        pretty_print_cycle    rotate!    take            uniq
   -       collect!     empty?            insert       product               sample     take_while      uniq!
-  <<      combination  eql?              inspect      push                  select     to_a            unshift
+  <<      combination  eql?              inspect      push                  select(!)  to_a            unshift   # (!) is just in this line, to make formatting below work properly
   <=>     compact      extract_options!  join         rassoc                select!    to_ary          values_at
   ==      compact!     fetch             keep_if      reject                shelljoin  to_csv          zip
   []      concat       fill              last         reject!               shift      to_default_s    |
@@ -87,3 +87,25 @@ Array#methods:
 ##### Pry-Byebug
 I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navgiation commands, however, `pry-rails` does (I think), which is what I have been used to
 https://github.com/pry/pry/wiki/Available-plugins#pry-byebug
+
+# Generate random UUID
+```bash
+uuidgen
+
+# output
+55AD6699-780F-499A-A49B-AF0AF6D2747E
+```
+This is cool, but I don't like that letters are in upper case. Found this:
+https://coderwall.com/p/t_sz3q/generate-uuid-at-shell-prompt
+
+```bash
+alias uuid="uuidgen | tr -d - | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+
+# output
+3ff7489e07644c93a444fd8c54f15965
+```
+Now missing the hyphens which want to keep, so have taken out the deleting of the `-`
+
+```bash
+alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
+```
