@@ -100,3 +100,15 @@ git branch -d feature/participant_roles_facade
 Apply anything you have stashed - `git stash apply`
 
 (see [Gem Stuff](gems/gem_stuff.md) for example of when used)
+
+
+### `git log` plus variations
+I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and `zsh` instead of `bash`.
+I use the [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet) as well, which has [a lot of `git`](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) aliases set up.
+
+One that I have just found useful is:
+```bash
+#alias     #command
+glg	      git log --stat --max-count = 10
+```
+This shows the files that have been committed, which can be useful if the commit message hasn't been written that well!

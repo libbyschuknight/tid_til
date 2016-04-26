@@ -46,6 +46,7 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 #### Databases
 - [General DB Stuff](databases/databases.md)
+- [Postgresql](databases/postgresql.md)
 - [Sequel](databases/sequel.md)
 
 #### Gems
