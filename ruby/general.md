@@ -36,3 +36,21 @@ included do
   class_attribute :formats
 end
  ```
+
+#### 2 dimensional array - array of arrays
+
+@users.collect{ |u| [u.name, u.id] }
+
+Wanted to make an array for `select_tag` in Rails. Found this [example](http://apidock.com/rails/ActionView/Helpers/FormTagHelper/select_tag#54-select-tag-with-options-for-select-example):
+
+```ruby
+select_tag 'user_id', options_for_select(@users.collect{ |u| [u.name, u.id] })
+```
+will give:
+```html
+<select id="user_id" name="user_id">
+  <option value="1">Brad</option>
+  <option value="2">Angie</option>
+  <option value="3">Jenny</option>
+</select>
+```

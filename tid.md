@@ -1,5 +1,8 @@
 # Today I Did...Today I have worked on...
 
+#### 27 April 2016
+... have been playing around in a big Rails app. Calling an external API to populate a drop down list. Adding in another controller which makes so many. And will be doing stuff to make a csv! Exiciting.
+
 #### 26 April 2016
 ... session with boss re development plan. Went well. Good things to focus on for the coming year.
 

@@ -88,6 +88,13 @@ Array#methods:
 I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navgiation commands, however, `pry-rails` does (I think), which is what I have been used to
 https://github.com/pry/pry/wiki/Available-plugins#pry-byebug
 
+##### Exiting out of Pry/Rails when running `binding.pry` in code/server
+Any of these:
+
+```bash
+exit-program / !!! / exit-p / exit! / disable-pry
+```
+
 # Generate random UUID
 ```bash
 uuidgen
