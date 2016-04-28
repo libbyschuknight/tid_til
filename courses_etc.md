@@ -27,13 +27,32 @@ Code Club talk - was hoping to hear more about the plans of getting a code club 
 
 ### Meet Ups
 
+##### [Wellington Wagtail CMS Meetup](http://www.meetup.com/Wellington-Wagtail-CMS-Meetup/events/230329388/) - 27 April 2016
+> We're excited to announce the first Wagtail CMS meetup in New Zealand!
+
+> Wagtail (https://wagtail.io) is an open source CMS (Content Management System) created by Torchbox. Built on top of the well-known Django Web Framework, it's extremely developer friendly while it also offers a great interface for content editors. Content can be created and structured intuitively thanks to its fast attractive interface. Here at Springload we have been using it for almost 2 years it has become a crucial piece of our technology stack.
+
+> This session will be conducted by some of the dev folks at Springload:
+
+>• Josh Barr – Front-end director (@joshbarrnz)
+
+>• Jordi J. Tablada – Senior dev (@jordijoan81)
+
+>• Rich McMillan – Technical director (@knersis)
+
+>They will showcase the main features Wagtail has to offer. There will be demo website, live coding, community involvement and of course food and drinks provided by Springload.
+
+Thought this was a great meetup. They went through things well. Particularly for someone who only knows a little bit about Python and nothing about Django or any other frameworks used in the Python world.
+I may have enjoyed as I love the UI of Wagtail. I am looking forward to playing with this in the near future.
+
+
 ##### [Modules and basic PHP](http://www.meetup.com/Wellington-Stripe-Girls/events/229981904/) - 13 April 2016
 > - Checking out Silverstripe modules. See how to install them, and review a few nice once to have.
 - Lena taught us logic last time, we are going to use it! PHP intro to beginners.
 - Workshop. Apply what we learned :)
 The format is not yet decided. We can either have talks (with slides and all that) first and then on the workshop start coding. Or we can not have formal talks, just peer (group) programming from the beginning. If you have a preference for one, please leave a comment, otherwise we are going to decide before the meetup :)
 
-Was interesting learning about 'modules', which are basically Ruby 'gems', or very similar. 'Composer' is like 'bundler' in Ruby. Have better understanding of what SilverStripe is and what it is used for. 
+Was interesting learning about 'modules', which are basically Ruby 'gems', or very similar. 'Composer' is like 'bundler' in Ruby. Have better understanding of what SilverStripe is and what it is used for.
 
 
 ##### [Railsn00bs v13](http://www.meetup.com/WellingtonRailsn00bs/events/229809896/) - 2 April 2016
