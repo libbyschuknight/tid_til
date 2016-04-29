@@ -1,10 +1,13 @@
 # Today I Did...Today I have worked on...
 
+#### 29 April 2016
+... got a csv file downloading with header and rows. It felt like it all went really well. Definietly a lot quicker then last year when doing a similar thing. 
+
 #### 28 April 2016
-... progressed well today. Feel more confident in creating modules to do work/logic and not leaving this in models or controllers. As well as thinking or remembering ways to improve finding records in the databases, ie `scope` in Rails. 
+... progressed well today. Feel more confident in creating modules to do work/logic and not leaving this in models or controllers. As well as thinking or remembering ways to improve finding records in the databases, ie `scope` in Rails.
 
 #### 27 April 2016
-... have been playing around in a big Rails app. Calling an external API to populate a drop down list. Adding in another controller which makes so many. And will be doing stuff to make a csv! Exciting.
+... have been playing around in a big Rails app. Calling an external API to populate a drop down list. Adding in another controller which makes so many. And will be doing stuff to make a csv! Exciting. I also attended the first Wagtail Meetup at Springload ([See meetups](courses.md#meetups))
 
 #### 26 April 2016
 ... session with boss re development plan. Went well. Good things to focus on for the coming year.
