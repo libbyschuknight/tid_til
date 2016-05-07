@@ -31,3 +31,17 @@ pragma (or "directive")
 > a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.
 
 - https://en.wikipedia.org/wiki/Directive_(programming)
+
+
+TLS - Transport Layer Security
+>  is a protocol that ensures privacy between communicating applications and their users on the Internet. When a server and client communicate, TLS ensures that no third party may eavesdrop or tamper with any message. TLS is the successor to the Secure Sockets Layer (SSL). http://searchsecurity.techtarget.com/definition/Transport-Layer-Security-TLS
+
+[OAuth](http://oauth.net/) -
+> An open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications.
+
+[OAuth 2.0](http://oauth.net/2/)
+
+MITM - man-in-the-middle (MITM) attack
+
+[cURL](https://curl.haxx.se/)
+> curl is an open source command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies, user+password authentication (Basic, Plain, Digest, CRAM-MD5, NTLM, Negotiate and Kerberos), file transfer resume, proxy tunneling and more.
