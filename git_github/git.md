@@ -23,7 +23,15 @@ Actually, while writing this I have realized I actually did a git reset.
 ```bash
 git reset 3333333333 # commit number
 ```
-Which probably wasn't the best option for me and a git revert would have been more approrpoate.
+Which probably wasn't the best option for me and a git revert would have been more appropriate.
+
+Wanted to go back a few commits that had already been pushed up. So reset to commit and then did a force push to branch. 
+
+```bash
+git reset --hard <commit>
+
+git push -f <remote> <branch>
+```
 
 ##### searching commits
 

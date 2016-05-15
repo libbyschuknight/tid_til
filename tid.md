@@ -1,7 +1,10 @@
 # Today I Did...Today I have worked on...
 
+#### 9 May 2016
+...first day back from holiday. Taking awhile to get my head back into the game. Did figure out how to test for an instance variable. Will try and add tomorrow.
+
 #### 29 April 2016
-... got a csv file downloading with header and rows. It felt like it all went really well. Definietly a lot quicker then last year when doing a similar thing. 
+... got a csv file downloading with header and rows. It felt like it all went really well. Definitely a lot quicker then last year when doing a similar thing.
 
 #### 28 April 2016
 ... progressed well today. Feel more confident in creating modules to do work/logic and not leaving this in models or controllers. As well as thinking or remembering ways to improve finding records in the databases, ie `scope` in Rails.
