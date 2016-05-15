@@ -72,3 +72,25 @@ If you change the columns on your table, remember to change the 'strong params' 
 allow(Time).to receive(:now).and_return(Time.parse('2016-03-02'))
 ```
 Needed to use `Time.utc(2016, 8, 1, 14, 34, 56)`, otherwise was failing on Travis due to different timezones.
+
+
+#### Using Doubles
+
+```ruby
+let(:role) do
+    double( "animal_role",
+      identifiers: double("identifiers", animal_code: "DOG"),
+      participant: double("animal",
+        name: "Rover",
+        links: { self: double(
+          "href", href: "/animals/1234"
+          )
+        }
+      )
+    )
+  end
+
+  let(:animals_roles_search_results_mock) do
+    double("animals_roles_search", animal_roles: [role])
+  end
+```

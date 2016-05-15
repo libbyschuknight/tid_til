@@ -1,4 +1,4 @@
-# jeyk;;
+# Jekyll
 
 Jekyll
 Using Jekyll to make this repo into a static site using GitHub pages.

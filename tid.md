@@ -1,5 +1,20 @@
 # Today I Did...Today I have worked on...
 
+16 May 2016
+... 
+
+#### 13 May 2016
+... more specs. More doubles. Good retro around resources, pairing, writing smaller stories.
+
+#### 12 May 2016
+... more specs. Issue with a test not seeming to local an ActiveRecord model created in the test. Think it is a issue with the big huge app rather then the test or ActiveRecord.
+
+#### 11 May 2016
+... been working away today at writing specs. Using doubles and mocks/stubs (?), using allow. I have obviously learnt something as I was able to look at other specs and figure out what I could do for the specs I was working on. Pretty happy with that.
+
+#### 10 May 2016
+... made a silly mistake today re a migration in [Rails][_pages/rails.md], lesson learnt again, don't copy and paste!!
+
 #### 9 May 2016
 ...first day back from holiday. Taking awhile to get my head back into the game. Did figure out how to test for an instance variable. Will try and add tomorrow.
 
