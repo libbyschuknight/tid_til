@@ -60,3 +60,8 @@ will give:
 > So the only way to call a Private method is to do so within the context of the object instance.
 
 > A Protected method is not accessible from outside of the context of the object, but it is accessible from inside the context of another object of the same type.
+
+### Keyword Arguments
+ADD!! links
+https://robots.thoughtbot.com/ruby-2-keyword-arguments
+http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/

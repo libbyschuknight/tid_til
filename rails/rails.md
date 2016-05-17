@@ -43,3 +43,18 @@ Customer.all.to_sql
 ```sql
 "SELECT \"customers\".* FROM \"customers\""
 ```
+
+### Constants
+On a model:
+```ruby
+class Phone
+
+  LIST = [
+    ["notified", "N"],
+    ["verified", "V"]
+  ]
+
+end
+```
+
+Accessing constant in controller:

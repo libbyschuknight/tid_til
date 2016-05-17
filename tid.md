@@ -1,7 +1,10 @@
 # Today I Did...Today I have worked on...
 
+17 May 2016
+... next stories don't involve TDD, which is a goal/aim for the next few months. Will have to be proactive about getting the one after this to include the opportunity for some TDD.
+
 16 May 2016
-... 
+... code review for last story. Moving onto some front-end work! Yay!
 
 #### 13 May 2016
 ... more specs. More doubles. Good retro around resources, pairing, writing smaller stories.
