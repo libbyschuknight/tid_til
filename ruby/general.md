@@ -12,6 +12,9 @@ state_paths.to_states.map(&:to_s)
 ```
 [How Does Symbol#to_proc Work?](http://benjamintan.io/blog/2015/03/16/how-does-symbol-to_proc-work/)
 
+[Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#single-action-blocks)
+> Use the proc invocation shorthand when the invoked method is the only operation of a block
+
 ### "pragma", or "directive"
 > a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.
 
