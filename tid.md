@@ -1,5 +1,11 @@
 # Today I Did...Today I have worked on...
 
+20 May 2016
+... working on join form but also got report story into UAT. Which is now involving writing a migration to change some data on some models.
+
+19 May 2016
+... have started on next story which is adding things to a join form in a big Rails app, which is mapped to SalesForce!
+
 18 May 2016
 ... issues again today with doing a migration and then actually realising that other things depended on the column. So had to rollback, re do things and then delete migration file. Frustrating!!
 

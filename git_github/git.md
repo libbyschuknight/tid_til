@@ -25,7 +25,7 @@ git reset 3333333333 # commit number
 ```
 Which probably wasn't the best option for me and a git revert would have been more appropriate.
 
-Wanted to go back a few commits that had already been pushed up. So reset to commit and then did a force push to branch. 
+Wanted to go back a few commits that had already been pushed up. So reset to commit and then did a force push to branch.
 
 ```bash
 git reset --hard <commit>
@@ -120,3 +120,11 @@ One that I have just found useful is:
 glg	      git log --stat --max-count = 10
 ```
 This shows the files that have been committed, which can be useful if the commit message hasn't been written that well!
+
+
+### git stash
+how to see what you have stashed
+git stash show -p
+git stash list
+
+http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git

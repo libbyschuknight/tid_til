@@ -116,3 +116,9 @@ Now missing the hyphens which want to keep, so have taken out the deleting of th
 ```bash
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
 ```
+
+## Find directory path of current folder
+
+```bash
+pwd
+```
