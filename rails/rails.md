@@ -64,5 +64,7 @@ Phone::LIST
 
 
 
-### Changing Database
+### Changing Database / Migrations / Rollbacks
 Really think about changing tables/columns etc before doing it!!
+
+Be very careful when deleting migration files. Think carefully about rolling back and when to delete! Especially if you have data you want to keep.

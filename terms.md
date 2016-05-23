@@ -50,3 +50,6 @@ DRY
 
 BRITTLE
 “Too DRY is BRITTLE (Badly Refactored Into Tiny Things Lacking Expressiveness)” - @keystonelemur
+
+[What is A/B Testing?](https://vwo.com/ab-testing/)
+> A/B testing (sometimes called split testing) is comparing two versions of a web page to see which one performs better. You compare two web pages by showing the two variants (let's call them A and B) to similar visitors at the same time. The one that gives a better conversion rate, wins!

@@ -1,5 +1,8 @@
 # Today I Did...Today I have worked on...
 
+23 May 2016
+... be very careful when deleting migration files. Think carefully about rolling back and when to delete! Especially if you have data you want to use.
+
 20 May 2016
 ... working on join form but also got report story into UAT. Which is now involving writing a migration to change some data on some models.
 
