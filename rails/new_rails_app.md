@@ -37,7 +37,6 @@ Remove Turbolinks (Rails 4?)
   http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4
   http://blog.flightswithfriends.com/post/53943440505/how-to-disable-turbolinks-in-rails-4
 
-
 Generate models, controllers, views etc.
 You can do each individually or use `resource` which will generate models and controllers
 
@@ -48,6 +47,11 @@ rake db:create
 
 rake db:migrate
 ```
+
+If you have run a migration and then want to reverse:
+```bash
+rails destroy resource CreateFeetsLegsWeapons
+``
 
 Add some seed code to db/seeds.rb
 `rake db:seed`
