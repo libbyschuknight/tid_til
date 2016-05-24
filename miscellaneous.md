@@ -21,3 +21,17 @@ When working with multiple codebases that work together, remember:
 ##### Google Chrome
 **Useful Keyboard Shortcuts:**
 - `Cmd + L` to focus on address bar
+
+##### [Rollbar](https://rollbar.com)
+Error was coming up on Rollbar
+```bash
+NoMethodError: undefined method 'strftime' for nil:NilClass
+```
+Fixed this and deployed fix to UAT.
+Tried on UX again and the error reoccured. Rollbar continued to say it was the above error.
+This is being on the traceback tab.
+After getting help, looked at the occurences tab and the top error was:
+```bash
+undefined method 'user' for nil:NilClass
+```
+Funny that it continues to report on the oringial error even though it has been fixed!!
