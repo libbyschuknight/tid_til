@@ -1,7 +1,10 @@
 # Today I Did...Today I have worked on...
 
+25 May 2016
+... 
+
 24 May 2016
-... have spent time deploying using Capistrano and finding errors on Rollbar and fixing. See [miscellaneous.md](miscellaneous.md). 
+... have spent time deploying using Capistrano and finding errors on Rollbar and fixing. See [miscellaneous.md](miscellaneous.md).
 
 23 May 2016
 ... be very careful when deleting migration files. Think carefully about rolling back and when to delete! Especially if you have data you want to use.

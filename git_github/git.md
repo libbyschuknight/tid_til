@@ -128,3 +128,11 @@ git stash show -p
 git stash list
 
 http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git
+
+### git rebase
+
+feature/first_page_join_form_MVP$
+
+git rebase feature/join_form_mvp
+
+git push --force origin feature/first_page_join_form_MVP
