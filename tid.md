@@ -1,7 +1,22 @@
 # Today I Did...Today I have worked on...
 
+3 June 2016
+...
+
+2 June 2016
+... have moved onto working on new biggish project with a couple of other devs, that needs to be done soonish. Another dev was working on front end stuff and have been trying to figure out what is happening. It is a combo of a new Rails app and an old Rails app. Using form model object in both, which is something I haven't used  before.
+
+1 June 2016
+... READ the rspec errors carefully!! Was failing on incorrect factory making rather then the actual test!!
+
+31 May 2016
+... working on improving seed script and methods used to create models. Some ambiguous language used in methods so has been unclear exactly what is happening and why.
+
+30 May 2016
+... issue with seed script running and not showing when things haven't been created.
+
 25 May 2016
-... 
+... bug fixing app deploy.
 
 24 May 2016
 ... have spent time deploying using Capistrano and finding errors on Rollbar and fixing. See [miscellaneous.md](miscellaneous.md).

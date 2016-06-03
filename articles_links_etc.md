@@ -6,7 +6,15 @@
 - release date does not move
 19:16
 
+
+### Testing
+
 [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz)
 - speaker deck [Magic Tricks of Testing (RailsConf)](Magic Tricks of Testing (RailsConf) )
 
 [Ruby On Ales 2016: How to Stop Hating Your Test Suite by Justin Searls](https://www.youtube.com/watch?v=MIJ2Grv2Bts)
+
+
+# Podcasts
+[65: Free as in Puppy (Katrina Owen)](http://bikeshed.fm/65)
+> While at RailsConf, we talk with Katrina Owen about finding metaphors for software development, the successes and mistakes of Exercism.io, and the benefits of providing code reviews.
