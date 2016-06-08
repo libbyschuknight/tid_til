@@ -22,3 +22,6 @@
 
 # Ruby
 [Learn Strftime](http://learnstrftime.com/)
+
+# Web Stuff
+[HTTP Status Cats API](https://http.cat/)
