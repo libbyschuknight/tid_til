@@ -19,9 +19,12 @@
 [65: Free as in Puppy (Katrina Owen)](http://bikeshed.fm/65)
 > While at RailsConf, we talk with Katrina Owen about finding metaphors for software development, the successes and mistakes of Exercism.io, and the benefits of providing code reviews.
 
-
 # Ruby
 [Learn Strftime](http://learnstrftime.com/)
 
 # Web Stuff
 [HTTP Status Cats API](https://http.cat/)
+
+# Auth Stuff
+[An Introduction to Using JWT Authentication in Rails](An Introduction to Using JWT Authentication in Rails)
+>>>>>>> Stashed changes

@@ -1,7 +1,7 @@
 # Today I Did...Today I have worked on...
 
-3 June 2016
-...
+3 - 10 June 2016
+...be pairing with junior collegue on a new Rails app for a biggish project. Beening use form model object. We are going well and it has been good to pair again.
 
 2 June 2016
 ... have moved onto working on new biggish project with a couple of other devs, that needs to be done soonish. Another dev was working on front end stuff and have been trying to figure out what is happening. It is a combo of a new Rails app and an old Rails app. Using form model object in both, which is something I haven't used  before.
