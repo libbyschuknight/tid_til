@@ -97,3 +97,10 @@ let(:role) do
     double("animals_roles_search", animal_roles: [role])
   end
 ```
+
+#### Test if something changes number of records
+
+```ruby
+params = { "address" => "31 Te Whiti Street, Kilbirnie, Wellington 6003" }
+expect{ post :create, params }.to change{ Application.count }.by(1)
+```

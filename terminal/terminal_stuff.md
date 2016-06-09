@@ -122,3 +122,27 @@ alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpas
 ```bash
 pwd
 ```
+
+## Keyboard Commands
+
+`ctrl + u`    deleting a line     
+`ctrl + y`    bringing that back  
+`ctrl + r`    back search
+`open .`      will open the current dir in the finder
+`cmd + r`     take off screen
+`cmd + k`     will get rid of forever
+`ctrl-a`      beginning of line
+`ctrl-e`      end of line
+`opt-f`       forward word
+`opt-b`       backward word
+`ctrl-f`      forward character
+`ctrl-b`      backward character
+`ctrl-d`      delete character
+`ctrl-l`      clear screen
+
+Copy the Current Path from Terminal to the Clipboard in Mac OS X\
+`pwd|pbcopy`
+
+Save Mark/Jump to Mark
+`cmd-shift-M`   save mark
+`cmd-shift-J`   jump back to it with 

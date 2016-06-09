@@ -33,6 +33,16 @@ git reset --hard <commit>
 git push -f <remote> <branch>
 ```
 
+Issue had with local repo:
+- did a `git pull branch`, then `git merge master`
+- resolved conflicts that came up
+- some how had one file that had all of its code missing, it was the most recent file
+- to fix did:
+    `git pull -f origin branch`
+    `git reset --hard origin/branch`
+
+
+
 ##### searching commits
 
 ```bash
@@ -131,8 +141,8 @@ http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-conte
 
 ### git rebase
 
-feature/first_page_join_form_MVP$
+feature/first_page_form
 
-git rebase feature/join_form_mvp
+git rebase feature/form
 
 git push --force origin feature/first_page_join_form_MVP
