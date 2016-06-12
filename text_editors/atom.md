@@ -6,4 +6,9 @@
 Tick on `Show icons in editor gutter`, which will mean you get `+`, `-` etc in colour. Rather then just lines.
 
 #### Adding a Language
-A haml file was coming up in plain text, searched for and found [`language-haml`](https://atom.io/packages/language-haml), just installed this package and all sorted. 
+A haml file was coming up in plain text, searched for and found [`language-haml`](https://atom.io/packages/language-haml), just installed this package and all sorted.
+
+
+## Shortcuts
+
+`shft + ctrl + ↓` - will add cusor onto mutiple lines, like using `cmd + click`
