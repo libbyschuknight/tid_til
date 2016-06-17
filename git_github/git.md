@@ -31,6 +31,9 @@ Wanted to go back a few commits that had already been pushed up. So reset to com
 git reset --hard <commit>
 
 git push -f <remote> <branch>
+
+e.g.
+git push --force origin bugfix/squash_it
 ```
 
 Issue had with local repo:

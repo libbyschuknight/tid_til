@@ -145,4 +145,27 @@ Copy the Current Path from Terminal to the Clipboard in Mac OS X\
 
 Save Mark/Jump to Mark
 `cmd-shift-M`   save mark
-`cmd-shift-J`   jump back to it with 
+`cmd-shift-J`   jump back to it with
+
+
+## Screen sessions (remote servers)
+[GNU Screen](http://aperiodic.net/screen/quick_reference)
+
+to start session
+```
+screen <name> # can add name if want to
+```
+press return
+do what you want, e.g. console stuff to db
+
+to detach `ctrl + a d`
+
+to go back in
+
+```
+screen -ls
+screen -r <number or name>
+```
+
+to exit screen, this will stop things running
+`exit`

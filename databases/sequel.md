@@ -55,3 +55,86 @@ Models::Event.where(state: "invalid").inspect
 -> "#<Sequel::Postgres::Dataset: \"SELECT * FROM \\\"events\\\" WHERE (\\\"state\\\" = 'invaid')\">"
 ```
 ...thought that this was very interesting and could be very useful, seeing the raw SQL statement of a query. I wonder if it works in Rails with ActiveRecord as well?
+
+
+### Timestamps
+If have:
+```ruby
+module Models
+  class Cat < Sequel::Model
+    one_to_many :owners
+  end
+end
+```
+To create:
+```ruby
+Models::Cat.create(name: "Bob", created_at: Time.now)
+```
+If add in timestamp plugin to model:
+```ruby
+module Models
+  class Cat < Sequel::Model
+    plugin :timestamps
+
+    one_to_many :owners
+  end
+end
+```
+Then can just do:
+```ruby
+Models::Cat.create(name: "Bob")
+```
+Handy!
+
+
+### Delete All
+Rails has `.destroy_all`, want to find something similar for Sequel in non-Rails environment
+
+```ruby
+Models::Person.dataset.delete
+```
+http://sequel.jeremyevans.net/rdoc/classes/Sequel/Model/ClassMethods.html#method-i-dataset
+
+
+### Schema
+http://sequel.jeremyevans.net/rdoc/classes/Sequel/Model/ClassMethods.html#method-i-db_schema
+
+```ruby
+ Models::Participant.db_schema
+ ```
+
+ returns...
+
+```ruby
+{
+            :id => {
+                   :oid => 2950,
+               :db_type => "uuid",
+               :default => "uuid_generate_v4()",
+            :allow_null => false,
+           :primary_key => true,
+                  :type => nil,
+        :auto_increment => false,
+          :ruby_default => nil
+    },
+          :name => {
+                 :oid => 1043,
+             :db_type => "character varying(255)",
+             :default => nil,
+          :allow_null => false,
+         :primary_key => false,
+                :type => :string,
+        :ruby_default => nil,
+          :max_length => 255
+    },
+    :created_at => {
+                 :oid => 1114,
+             :db_type => "timestamp without time zone",
+             :default => nil,
+          :allow_null => false,
+         :primary_key => false,
+                :type => :datetime,
+        :ruby_default => nil
+    }
+}
+```

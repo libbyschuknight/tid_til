@@ -1,7 +1,16 @@
 # Today I Did...Today I have worked on...
 
+15 June 2016
+... campsite day/s. Tidying up the Trello board. There were a few things that got parked to get something else out. I am enjoying going back and getting things finished. The main thing I am tidying up is a report that needs to be run, ideally every work, about customers networks.
+
+14 June 2016
+... worked on optimising calls to external API.
+
+13 June 2016
+...still on new app. Two others working on these as well and have demo tomorrow, so will be interesting to see it pulled together. Particularly as it is using two different apps and data is being passed back and forth.
+
 3 - 10 June 2016
-...be pairing with junior collegue on a new Rails app for a biggish project. Beening use form model object. We are going well and it has been good to pair again.
+...be pairing with junior colleague on a new Rails app for a biggish project. Been using form model object. We are going well and it has been good to pair again.
 
 2 June 2016
 ... have moved onto working on new biggish project with a couple of other devs, that needs to be done soonish. Another dev was working on front end stuff and have been trying to figure out what is happening. It is a combo of a new Rails app and an old Rails app. Using form model object in both, which is something I haven't used  before.
