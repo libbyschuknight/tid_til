@@ -42,7 +42,9 @@ Libby           2955   0.1  0.0  2423356    196 s001  R+    8:49am   0:00.00 gre
 Libby            323   0.0  0.1   697608   4648   ??  S     7:42am   0:00.26 /Library/Application Support/Flip Video/FlipShareAutoRun.app/Contents/MacOS/FlipShareAutoRun
 ```
 The numbers after `Libby` are the PID numbers. This shows that `Flip Video` was using this process, so I killed it:
-`kill -9 323`
+`kill -9 323`.
+
+ALSO - rather then killing the process you can delete the `postmaster.pid` file. Some stuff I googled said not to, some suggested it. This post [Postgres on OSX with homebrew not running after OSX crash](https://coderwall.com/p/zf-fww/postgres-on-osx-with-homebrew-not-running-after-osx-crash) I found useful. 
 
 Sometimes it isn't this simple.
 

@@ -12,6 +12,8 @@
 [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz)
 - speaker deck [Magic Tricks of Testing (RailsConf)](Magic Tricks of Testing (RailsConf) )
 
+[Cascadia Ruby Conf 2012 Therapeutic Refactoring by Katrina Owen](https://www.youtube.com/watch?v=J4dlF0kcThQ)
+
 [Ruby On Ales 2016: How to Stop Hating Your Test Suite by Justin Searls](https://www.youtube.com/watch?v=MIJ2Grv2Bts)
 
 

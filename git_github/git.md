@@ -3,6 +3,8 @@
 ### Useful Resources
 [Getting Started](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - have come across this again and again and it has always been useful.
 
+[git - the simple guide](http://rogerdudler.github.io/git-guide/)
+
 ##### git clean
 Quite often I have found that I have had to get rid of untracked files in git and have discovered that git clean is something that you can use.
 

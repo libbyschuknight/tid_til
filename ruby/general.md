@@ -68,3 +68,23 @@ will give:
 ADD!! links
 https://robots.thoughtbot.com/ruby-2-keyword-arguments
 http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/
+
+
+## True / False Statements / Conditionals
+If using things that return a `boolean` value, don't need to have them in a `if/else` statement.
+
+```ruby
+def valid?
+  if !number_empty? && is_valid_format?
+    true
+  else
+    false
+  end
+end
+```
+
+```ruby
+def valid?
+  !number_empty? && is_valid_format?
+end
+```

@@ -1,6 +1,10 @@
 # Today I Did...Today I have worked on...
 
-15 June 2016
+20 -  June
+
+... looking into adding a credit card set up. Adding eligibility checkers into a new app that will need to be passed back and forth between two different services. Probably will be turned into an API end point.
+
+15 - 17 June 2016
 ... campsite day/s. Tidying up the Trello board. There were a few things that got parked to get something else out. I am enjoying going back and getting things finished. The main thing I am tidying up is a report that needs to be run, ideally every work, about customers networks.
 
 14 June 2016
