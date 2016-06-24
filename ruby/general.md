@@ -88,3 +88,21 @@ def valid?
   !number_empty? && is_valid_format?
 end
 ```
+
+## Change a Hash but keep original Hash
+
+```ruby
+name_numbers = { "name1" => 1, "name2" => 2 }
+
+{
+    "name1" => 1,
+    "name2" => 2
+}
+
+new_name_numbers = Hash[name_numbers.map { |name, number| [name, number * 20] } ]
+
+{
+    "name1" => 20,
+    "name2" => 40
+}
+```
