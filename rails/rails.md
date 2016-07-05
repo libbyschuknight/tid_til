@@ -92,3 +92,46 @@ SELECT  "stances".* FROM "stances" WHERE (id > 7)  ORDER BY "stances"."id" ASC L
 
 "#<Stance id: 8, description: \"50/50, heels together, each foot at 45 degs\", created_at: \"2016-04-15 09:35:54\", updated_at: \"2016-04-15 09:35:54\", image_file_name: \"musubi.JPG\", image_content_type: \"image/jpeg\", image_file_size: 107624, image_updated_at: \"2016-04-15 09:35:54\", japanese_name: \"Musubi Dachi\", english_name: \"Open-toe stance\">"
 ```
+
+
+
+## FIND_OR_CREATE!!
+
+Don't forget about find or create when needing to return an object that may or may not already exist!!
+
+```ruby
+Dog.find_or_create_by(microchip_id: chip.id)
+```
+
+## .reload!!
+
+Working in test environment and had `Person` that has a `Dog`.
+
+Had a method that made and associated a new `Dog` with `Person` but in test doing `person.dog` was returning `nil`.
+
+Needed to do `person.reload.dog` to reload the `person` object with its new association!!
+
+e.g.
+
+
+```ruby
+describe "finding or creating a dog" do
+  let(:person) { create(:person) }
+
+  let(:attributes) { OpenStruct.new(dog_name: "Roof") }
+
+  context "when person does not have a dog" do
+    let(:result) do
+      Provisioning::DirectDebitService.find_or_create_dog(
+        person_id: person.id,
+        attributes: attributes
+      )
+    end
+
+    it "creates a new direct debit for sign up" do
+      expect(result).to eq(person.reload.dog) # if this is person.dog, it will return nil
+    end
+end
+```
+
+This was using Rails 4 with RSpec 3.

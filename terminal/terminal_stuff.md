@@ -151,6 +151,11 @@ Save Mark/Jump to Mark
 ## Screen sessions (remote servers)
 [GNU Screen](http://aperiodic.net/screen/quick_reference)
 
+check if any screens running
+```
+screen -ls
+```
+
 to start session
 ```
 screen <name> # can add name if want to
@@ -169,3 +174,26 @@ screen -r <number or name>
 
 to exit screen, this will stop things running
 `exit`
+
+
+## Terminal Commands
+Lists out in datetime order
+`ls -l`
+```bash
+drwx------   6 libby  staff   204 29 Mar 08:37 Applications
+drwxr-xr-x  24 libby  staff   816  1 Jun 15:22 Code
+drwx------+ 31 libby  staff  1054 21 Jun 08:52 Desktop
+drwx------+ 20 libby  staff   680 24 Jun 10:21 Documents
+drwx------+ 45 libby  staff  1530 29 Jun 12:31 Downloads
+
+```
+Lists hidden folders/files as well
+`ls -a`
+```bash
+.                                      .npm                                   Applications
+..                                     .nvm                                   Code
+.CFUserTextEncoding                    .oh-my-zsh                             Desktop
+.DS_Store                              .phantomjs                             Documents
+.Trash                                 .pry_history                           Downloads
+.atom                                  .pryrc                                 Dropbox
+```

@@ -14,7 +14,7 @@ git clean -f # actually removes files
 ```
 
 ##### git revert / reset
-This has been useful when I have be zealot like with merging in master to my branch and then discovering that a change someone else has made gives me problems, liking breaking tests. So, I have used git revert to go back to my last commit.
+This has been useful when I have be zealot like with merging in master to my branch and then discovering that a change someone else has made gives me problems, like breaking tests. So, I have used git revert to go back to my last commit.
 
 ```bash
 git revert 3333333333 # commit number
@@ -139,15 +139,47 @@ This shows the files that have been committed, which can be useful if the commit
 
 ### git stash
 how to see what you have stashed
-git stash show -p
+```bash
 git stash list
+git stash show -p
+git stash show -p stash@{3}
+```
+
 
 http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git
 
 ### git rebase
 
+```bash
 feature/first_page_form
 
 git rebase feature/form
 
 git push --force origin feature/first_page_join_form_MVP
+```
+
+###
+
+
+```bash
+git checkout uat
+
+git fetch origin uat
+
+git reset --hard origin/uat
+```
+
+
+### git commits
+[How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
+
+>**The seven rules of a great git commit message**
+
+>Keep in mind: This has all been said before.
+Separate subject from body with a blank line
+Limit the subject line to 50 characters
+Capitalize the subject line
+Do not end the subject line with a period
+Use the imperative mood in the subject line
+Wrap the body at 72 characters
+Use the body to explain what and why vs. how
