@@ -113,7 +113,6 @@ Needed to do `person.reload.dog` to reload the `person` object with its new asso
 
 e.g.
 
-
 ```ruby
 describe "finding or creating a dog" do
   let(:person) { create(:person) }
@@ -135,3 +134,7 @@ end
 ```
 
 This was using Rails 4 with RSpec 3.
+
+
+Note from senior dev
+> Yeah, so this is a more often that not a result of not using the ActiveRecord associations to update things like using Dog.create(person_id: person.id, number: number) instead of the better person.dog.create(number: number) that updates in memory as well.

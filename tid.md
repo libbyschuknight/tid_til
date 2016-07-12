@@ -1,6 +1,7 @@
 # Today I Did...Today I have worked on...
 
-20 -  June
+6 July
+...have been busy and have forgotten to add to this. Currently working on the app that is internal facing. This app/service is a hybrid in that one page is in one service and another is in an old app that is still being used. Proves for interesting times.
 
 ... looking into adding a credit card set up. Adding eligibility checkers into a new app that will need to be passed back and forth between two different services. Probably will be turned into an API end point.
 
