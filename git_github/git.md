@@ -5,6 +5,18 @@
 
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
+
+##### git fetch
+Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
+```bash
+git fetch origin <branch_name>
+
+git checkout <branch_name>
+```
+
+In somes cases pulling can cause problems. Will add why when I come across it again!
+
+
 ##### git clean
 Quite often I have found that I have had to get rid of untracked files in git and have discovered that git clean is something that you can use.
 

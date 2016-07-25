@@ -106,3 +106,26 @@ new_name_numbers = Hash[name_numbers.map { |name, number| [name, number * 20] } 
     "name2" => 40
 }
 ```
+
+### Accessing Hashes
+
+**ActiveSupport::HashWithIndifferentAccess**
+[Quick Guide to ActiveSupport::HashWithIndifferentAccess](http://ruby-journal.com/quick-guide-to-activesupport-hashwithindifferentaccess/)
+[Object::HashWithIndifferentAccess < Hash](http://api.rubyonrails.org/classes/ActiveSupport/HashWithIndifferentAccess.html)
+
+Came across issue in test, where in code was accessing a hash in this manner:
+```ruby
+let(:params) { MultiJson.load(json_data) }
+
+params.key?(:complete_switch)
+```
+but in the spec this was returning `nil`. However, if I accessed like this in spec:
+```ruby
+params.key?("complete_switch")
+```
+it returned `true`.
+
+To fix for test needed to use HashWithIndifferentAccess:
+```ruby
+let(:params) { ActiveSupport::HashWithIndifferentAccess.new(MultiJson.load(json_data)) }
+```
