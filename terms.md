@@ -53,3 +53,11 @@ BRITTLE
 
 [What is A/B Testing?](https://vwo.com/ab-testing/)
 > A/B testing (sometimes called split testing) is comparing two versions of a web page to see which one performs better. You compare two web pages by showing the two variants (let's call them A and B) to similar visitors at the same time. The one that gives a better conversion rate, wins!
+
+Encapsulation
+
+https://samurails.com/interview/ruby-inheritance-encapsulation-polymorphism/
+> Encapsulation is the packing of data and functions into a single component. Encapsulation means that the internal representation of an object is hidden from the outside. Only the object can interact with its internal data. Public methods can be created to open a defined way to access the logic inside an object.
+
+https://launchschool.com/books/oo_ruby/read/the_object_model
+>Encapsulation is hiding pieces of functionality and making it unavailable to the rest of the code base. It is a form of data protection, so that data cannot be manipulated or changed without obvious intention. It is what defines the boundaries in your application and allows your code to achieve new levels of complexity. Ruby, like many other OO languages, accomplishes this task by creating objects, and exposing interfaces (i.e., methods) to interact with those objects.

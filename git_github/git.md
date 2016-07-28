@@ -1,3 +1,4 @@
+
 # Git
 
 ### Useful Resources
@@ -170,8 +171,8 @@ git rebase feature/form
 git push --force origin feature/first_page_join_form_MVP
 ```
 
-###
-
+### git reset
+When have mucked up a merge or something badly and need to reset the branch. Or in this case want to reset the uat branch locally to what is on github.
 
 ```bash
 git checkout uat
