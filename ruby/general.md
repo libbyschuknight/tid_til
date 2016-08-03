@@ -129,3 +129,19 @@ To fix for test needed to use HashWithIndifferentAccess:
 ```ruby
 let(:params) { ActiveSupport::HashWithIndifferentAccess.new(MultiJson.load(json_data)) }
 ```
+
+## Using JSON
+
+Had a string that wanted to parse to make a json string.
+
+Wanted to use
+```
+JSON.parse(string)
+```
+but wasn't working because of this `include Roar::JSON` being included at top.
+
+So needed to do:
+```
+::JSON.parse(string)
+```
+The two colons make it move out of the current class. Or something like that.

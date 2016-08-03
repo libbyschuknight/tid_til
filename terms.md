@@ -61,3 +61,9 @@ https://samurails.com/interview/ruby-inheritance-encapsulation-polymorphism/
 
 https://launchschool.com/books/oo_ruby/read/the_object_model
 >Encapsulation is hiding pieces of functionality and making it unavailable to the rest of the code base. It is a form of data protection, so that data cannot be manipulated or changed without obvious intention. It is what defines the boundaries in your application and allows your code to achieve new levels of complexity. Ruby, like many other OO languages, accomplishes this task by creating objects, and exposing interfaces (i.e., methods) to interact with those objects.
+
+
+Race Condition
+
+http://searchstorage.techtarget.com/definition/race-condition
+> A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.
