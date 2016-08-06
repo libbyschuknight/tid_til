@@ -84,4 +84,18 @@ git commit -m "message here"  # add a git commit message
 git push origin <branch name> # push it all to github
 ```
 
-## Step 4 - set up database
+## Step 4 - set up database/run server
+Create database
+`rake db:create`
+Run server:
+`rails s`
+
+You will see this page:
+
+![welcome](images/welcome_aboard.png)
+
+You see this at the moment as no models have been created or migrations run and therefore no data is in the database to be able to show on the website.
+
+## Step 5 - create a resource
+
+See [RAILS: GENERATE MODEL VS. RESOURCE VS. SCAFFOLD](http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/) for a good explanation of the differences.
