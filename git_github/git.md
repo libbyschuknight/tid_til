@@ -1,4 +1,3 @@
-
 # Git
 
 ### Useful Resources
