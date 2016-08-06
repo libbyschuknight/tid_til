@@ -22,3 +22,35 @@ My first iteration is going to be:
 I will make one model - `SurfSpot` with 8 fields/attributes.
 
 ## Step 2 - create a new Rails app
+
+Create a new rails app:
+```bash
+rails new go_surf_2 --database=postgresql --skip-test-unit --skip-turbolinks
+```
+
+`rails new <app_name>` creates the new app
+
+The other options:
+- `--database=postgresql` make postgresql the dataebase used
+- `--skip-test-unit` means that the default test framework is not installed
+- `--skip-turbolinks` doesn't install Turbolinks
+
+# Step 3 - set up git repo
+
+```bash
+git init
+git add -A
+git commit -m "initial commit message"
+```
+
+Create a repo with the same name as your app on Github.
+![create_repo_github](images/creating_repo.png)
+
+Add the remote to you git repo.
+![add_remote](images/adding_remote.png)
+
+Since you have done the three git commands above, just do these to finish setting up you git repo:
+```bash
+git remote add origin git@github.com:libbyschuknight/go_surf_2.git
+git push -u origin master
+```
