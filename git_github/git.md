@@ -195,3 +195,12 @@ Do not end the subject line with a period
 Use the imperative mood in the subject line
 Wrap the body at 72 characters
 Use the body to explain what and why vs. how
+
+
+## Adding a remote to a local repo
+Needed to do this when I created a Rails app but then realised I hadn't used postgres or taken out test unit and turbolinks. I had already created a github repo so there was already a remote.
+I deleted my first repo locally and then create new app, then added the remote.
+
+`git remote add origin git@github.com:libbyschuknight/go_surf.git`
+
+`git remote -v`
