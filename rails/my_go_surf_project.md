@@ -5,4 +5,4 @@
 
 ## Step 1 - Plan
 Make a rough plan of what you what to do.
-![plan](images/go_surf.jpg)
+![plan](images/go_surf.JPG)
