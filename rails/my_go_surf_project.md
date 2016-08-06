@@ -35,7 +35,7 @@ The other options:
 - `--skip-test-unit` means that the default test framework is not installed
 - `--skip-turbolinks` doesn't install Turbolinks
 
-# Step 3 - set up git repo
+## Step 3 - set up git repo
 
 ```bash
 git init
@@ -54,3 +54,34 @@ Since you have done the three git commands above, just do these to finish settin
 git remote add origin git@github.com:libbyschuknight/go_surf_2.git
 git push -u origin master
 ```
+
+## Step 4 - Install RSpec (testing framework)
+(can skip if you don't care about testing!)
+https://github.com/rspec/rspec-rails
+
+Add the rspec-rails gem to your gem file:
+
+```ruby
+  group :development, :test do
+    gem 'rspec-rails'
+  end
+```
+Run:
+`bundle install`
+
+Initialize spec/ dir...
+`rails generate rspec:install`
+
+Use rspec to run commands... `rspec` or `bundle exec rspec`
+
+
+Everytime you add or change some code you should add, commit and push to GitHub:
+
+```bash
+git status  # shows what is to be added/committed
+git add .   # add everything
+git commit -m "message here"  # add a git commit message
+git push origin <branch name> # push it all to github
+```
+
+## Step 4 - set up database
