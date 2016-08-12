@@ -67,7 +67,7 @@ Next Steps:
 - create a file in the new views folder with the same name as the controller action.
 - add a route to point to the new controller action in the `config/routes.rb` file.
 - if it is a resource you can uses resources to create RESTful routes.
-- also add a root URL for the homepage if you haven't done so.
+- also add a root URL for the homepage if you haven\'t done so.
 
 Run `rails s` to start up the server and visit the site.
 

@@ -1,18 +1,20 @@
 # Go Surf and Rails
 
 ### Aim - to create a Rails app and document what I do and why
+---
+## Part 1 - How to get started
 
-## Step 1 - Plan
+### Step 1 - Plan
 Make a rough plan of what you what to do.
 ![plan](images/go_surf.JPG)
 
-This plan has a bit of sketch of what start of home page and then my thinking what tables and fields I need.
+This plan has a bit of sketch of what the home page might look like and then my thinking about what tables and fields I need.
 
 My first iteration is going to be:
 - Surf Spot
   - name
   - description
-  - coordinates
+  - coordinates (latitude & longtitude)
   - place
   - region
   - country
@@ -21,7 +23,7 @@ My first iteration is going to be:
 
 I will make one model - `SurfSpot` with 8 fields/attributes.
 
-## Step 2 - create a new Rails app
+### Step 2 - create a new Rails app
 
 Create a new rails app:
 ```bash
@@ -35,7 +37,7 @@ The other options:
 - `--skip-test-unit` means that the default test framework is not installed
 - `--skip-turbolinks` doesn't install Turbolinks
 
-## Step 3 - set up git repo
+### Step 3 - set up git repo
 
 ```bash
 git init
@@ -55,7 +57,7 @@ git remote add origin git@github.com:libbyschuknight/go_surf_2.git
 git push -u origin master
 ```
 
-## Step 4 - Install RSpec (testing framework)
+### Step 4 - Install RSpec (testing framework)
 (can skip if you don't care about testing!)
 https://github.com/rspec/rspec-rails
 
@@ -84,7 +86,7 @@ git commit -m "message here"  # add a git commit message
 git push origin <branch name> # push it all to github
 ```
 
-## Step 4 - set up database/run server
+### Step 4 - set up database/run server
 Create database
 `rake db:create`
 Run server:
@@ -96,6 +98,9 @@ You will see this page:
 
 You see this at the moment as no models have been created or migrations run and therefore no data is in the database to be able to show on the website.
 
-## Step 5 - create a resource
+
+### [Next](/2_my_go_surf_project.md)
+
+Create a resource...
 
 See [RAILS: GENERATE MODEL VS. RESOURCE VS. SCAFFOLD](http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/) for a good explanation of the differences.
