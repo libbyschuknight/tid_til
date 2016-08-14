@@ -197,3 +197,36 @@ Lists hidden folders/files as well
 .Trash                                 .pry_history                           Downloads
 .atom                                  .pryrc                                 Dropbox
 ```
+
+
+
+`ls -la | pbcopy`  ||  `ls | pbcopy`
+pipes the
+`ls -la` || `ls`
+
+e.g
+```
+README.md
+api_stuff
+articles_links_etc.md
+code_reviews
+courses_etc.md
+databases
+gems
+git_github
+html_css
+miscellaneous.md
+non_technical.md
+notes.md
+php
+questions.md
+rails
+ruby
+server_rack.md
+terminal
+terms.md
+testing
+text_editors
+tid.md
+work_flow.md
+```
