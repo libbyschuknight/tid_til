@@ -107,7 +107,7 @@ You will see this page:
 You see this at the moment as no models have been created or migrations run and therefore no data is in the database to be able to show on the website.
 
 
-### [Next](/2_my_go_surf_project.md)
+### [Next](2_my_go_surf_project.md)
 
 Create a resource...
 
