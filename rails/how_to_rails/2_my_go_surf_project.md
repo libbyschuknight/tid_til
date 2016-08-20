@@ -147,4 +147,34 @@ Now run your sever:
 `rails server`
 
 You should see this:
-![unknown_index_action](images/index_action.png)
+![unknown_index_action](images/missing_new_action.png)
+
+We now need to add the `index` action to our  `SurfSportController`, but first we are going to add the `new`action so we can data to our database.
+
+
+### Step 4 - add action to controller
+
+New action
+
+```ruby
+def new
+  @surf_spot = SurfSpot.new
+end
+```
+Visit [http://localhost:3000/surf_spots/new](http://localhost:3000/surf_spots/new)
+
+You should see this on the web page:
+![template_missing](images/template_missing.png)
+
+Now add a view.
+
+### Step 5 - add a view (template)
+
+Go to `app/view/surf_spots` folder and add a new file and name it:
+```
+new.html.erb
+```
+
+Now, you will see a blank page. Time to add html & erb.
+
+### [Next](/3_my_go_surf_project.md)
