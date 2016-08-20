@@ -4,6 +4,13 @@
 ---
 ## Part 1 - How to get started
 
+This is what I follow to set up a computer with Ruby, Rails and Git:
+- [Setup Ruby On Rails on Mac OS X 10.11 El Capitan: A guide to setting up a Ruby on Rails development environment](https://gorails.com/setup/osx/10.11-el-capitan)
+
+It also has options for:
+- [Windows 10](https://gorails.com/setup/windows/10)
+- [Ubuntu](https://gorails.com/setup/ubuntu/16.04)
+
 ### Step 1 - Plan
 Make a rough plan of what you what to do.
 ![plan](images/go_surf.JPG)
@@ -39,6 +46,7 @@ The other options:
 
 ### Step 3 - set up git repo
 
+
 ```bash
 git init
 git add -A
@@ -53,7 +61,7 @@ Add the remote to you git repo.
 
 Since you have done the three git commands above, just do these to finish setting up you git repo:
 ```bash
-git remote add origin git@github.com:libbyschuknight/go_surf_2.git
+git remote add origin git@github.com:<git username>/go_surf_2.git
 git push -u origin master
 ```
 
@@ -71,11 +79,10 @@ Add the rspec-rails gem to your gem file:
 Run:
 `bundle install`
 
-Initialize spec/ dir...
+Initialize spec/ dir:
 `rails generate rspec:install`
 
 Use rspec to run commands... `rspec` or `bundle exec rspec`
-
 
 Everytime you add or change some code you should add, commit and push to GitHub:
 
@@ -89,6 +96,7 @@ git push origin <branch name> # push it all to github
 ### Step 4 - set up database/run server
 Create database
 `rake db:create`
+
 Run server:
 `rails s`
 

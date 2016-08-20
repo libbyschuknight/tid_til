@@ -137,7 +137,14 @@ surf_spot       GET    /surf_spots/:id(.:format)      surf_spots#show
                 DELETE /surf_spots/:id(.:format)      surf_spots#destroy
 ```
 We want to set our root route to `surf_spots`
+
 Update your routes.rb file:
 ```ruby
 root "surf_spots#index"
 ```
+
+Now run your sever:
+`rails server`
+
+You should see this:
+![unknown_index_action](images/index_action.png)
