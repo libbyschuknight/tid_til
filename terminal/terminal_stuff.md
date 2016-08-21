@@ -41,7 +41,7 @@ this will take you to where you are in the code. Very useful if you have been tr
 ```
 
 ##### ENV
-When using `pry`, you can type `ENV` and it will show all the environment variables! Yay!
+When using `pry` or `irb`, you can type `ENV` and it will show all the environment variables! Yay!
 
 ```
 => {"ADDRESSFINDER_CLEANSING_KEY"=>"XXXXX",
@@ -85,7 +85,7 @@ Array#methods:
 ```
 
 ##### Pry-Byebug
-I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navgiation commands, however, `pry-rails` does (I think), which is what I have been used to
+I have been using Pry and `binding.pry` a lot in a Ruby app using Sequel ORM. When using `pry` I haven't been able to use `next`, `continue` etc. I finally took the time to look into this and I needed to add `pry-byebug`. This is because `pry` doesn't have these navigation commands, however, `pry-rails` does (I think), which is what I have been used to
 https://github.com/pry/pry/wiki/Available-plugins#pry-byebug
 
 ##### Exiting out of Pry/Rails when running `binding.pry` in code/server
@@ -230,3 +230,18 @@ text_editors
 tid.md
 work_flow.md
 ```
+
+
+### Remote servers
+
+#### Ruby applications
+
+Open up an irb console:
+`bundle exec irb -r "./config/application.rb"`
+
+Open up the postgres DB:
+
+`psql <database_name>` or should `psql ENV["DATABASE_DSN"]` work? (am not sure?)
+
+To find the database name, you can go into irb console and then type
+`ENV["DATABASE_DSN"]`.

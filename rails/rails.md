@@ -103,7 +103,7 @@ Don't forget about find or create when needing to return an object that may or m
 Dog.find_or_create_by(microchip_id: chip.id)
 ```
 
-## .reload!!
+## .reload
 
 Working in test environment and had `Person` that has a `Dog`.
 
@@ -138,3 +138,8 @@ This was using Rails 4 with RSpec 3.
 
 Note from senior dev
 > Yeah, so this is a more often that not a result of not using the ActiveRecord associations to update things like using Dog.create(person_id: person.id, number: number) instead of the better person.dog.create(number: number) that updates in memory as well.
+
+
+## In Rails console - `reload!`
+Reload the rails environment, e.g. when you have updated the code on a model and can't be bothered quitting out of console and re-running.
+[Rails::ConsoleMethods](http://api.rubyonrails.org/classes/Rails/ConsoleMethods.html)
