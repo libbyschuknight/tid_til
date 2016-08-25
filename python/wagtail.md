@@ -18,9 +18,15 @@ Running server locally:
 python manage.py runserver
 ```
 
-UP TO:
-http://tutorial.djangogirls.org/en/django_orm/
+Get into Django's interactive console  (like interactive ruby - irb)
+```bash
+python manage.py shell
+```
 
+
+
+UP TO:
+http://tutorial.djangogirls.org/en/dynamic_data_in_templates/
 
 https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed
 
