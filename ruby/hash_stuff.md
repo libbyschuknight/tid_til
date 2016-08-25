@@ -50,4 +50,19 @@ LABELS_FOR_ANIMALS = ANIMALS.map { |key, value| Hash[value, ANIMAL_LABELS[key] ]
        "urn:animal:sloth" => "Sleepy sloth "
   }
 
+Suggestions of Ruby NZ Slack channel:
+
+ANIMALS.keys.reduce({}) { |memo, key| memo[ANIMALS[key]] = ANIMAL_LABELS[key]; memo }
+
+> `memo` is the hash that is supplied as the first argument to `reduce`. It’s also often called the `accumulator` since it’s meant to accumulate the value.
+>`inject` is an alias for `reduce` and I find it a very confusing method
+
+ANIMALS.each_with_object({}) { |(key, urn), hash| hash[urn] = ANIMAL_LABELS[key] }
+
+
+ANIMALS.map { |key, urn| [urn, ANIMAL_LABELS[key]] }.to_h
+
+
+ANIMALS.map { |key, value| [ value, ANIMAL_LABELS[key]] }.to_h
+
 ```

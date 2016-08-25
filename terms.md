@@ -67,3 +67,7 @@ Race Condition
 
 http://searchstorage.techtarget.com/definition/race-condition
 > A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.
+
+
+Semaphore
+concurrency
