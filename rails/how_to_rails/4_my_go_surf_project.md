@@ -30,3 +30,14 @@ Add this html & erb to it:
 <% end %>
 ```
 Now visit the root url or the index url and you should see all the surf spots you have made. And be able to click through to view them.
+
+
+
+
+
+
+
+
+
+
+### [Next](4_my_go_surf_project.md)

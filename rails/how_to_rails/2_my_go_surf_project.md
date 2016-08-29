@@ -188,4 +188,4 @@ new.html.erb
 
 Now, you will see a blank page. Time to add html & erb.
 
-### [Next](/3_my_go_surf_project.md)
+### [Next](3_my_go_surf_project.md)

@@ -210,3 +210,5 @@ Latitude: -35.93478
 Longtitude: 174.457716
 
 Rating: 4
+
+### [Next](4_my_go_surf_project.md)
