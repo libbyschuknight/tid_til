@@ -45,8 +45,8 @@ We now want to add html so we can add a surf spot.
   </p>
 
   <p>
-    <%= f.label :longtitude %><br>
-    <%= f.number_field :longtitude %>
+    <%= f.label :longitude %><br>
+    <%= f.number_field :longitude %>
   </p>
 
   <p>
@@ -81,7 +81,7 @@ New Zealand
 I was getting an HTML5 validation error on the form as the number input did not want to accept decimals.
 [HTML5 input type=number and decimals/floats in Chrome](https://www.isotoma.com/blog/2012/03/02/html5-input-typenumber-and-decimalsfloats-in-chrome/)
 
-This was fixed by adding `step="any" to the html.
+You can fix this by adding `step="any" to the html.
 Add this to the number_field:
 ```ruby
 step: :any
@@ -125,7 +125,7 @@ This has to do with Rails `strong_params` see:
 - [5.6 Saving data in the controller](http://guides.rubyonrails.org/getting_started.html#saving-data-in-the-controller)
 - [Strong parameters: Dealing with mass assignment in the controller instead of the model](http://weblog.rubyonrails.org/2012/3/21/strong-parameters/)
 
-Click save again and you should see:
+Click save again or refresh the page and you should see:
 ![missing_show_action](images/missing_show_action.png)
 
 
@@ -146,10 +146,10 @@ If you refresh your page now you will get an empty page as there is no html in t
 Add html to view the surf spot you have just created.
 
 ```html
-<p>
+<h1>
   <strong>Surf Spot</strong>
   <%= @surf_spot.name %>
-</p>
+</h1>
 
 <p>
   <strong>Description:</strong>
@@ -178,7 +178,7 @@ Add html to view the surf spot you have just created.
 
 <p>
   <strong>Longtitude</strong>
-  <%= @surf_spot.longtitude %>
+  <%= @surf_spot.longitude %>
 </p>
 
 <p>
@@ -187,24 +187,26 @@ Add html to view the surf spot you have just created.
 </p>
 ```
 
+Refresh the page.
+
 Now that you can create a new surf spot and see the one you have created, we want to be able to view all the surf spots that we have made.
 
 ### [Next](/4_my_go_surf_project.md)
 
 #### Another surf spot
 
-Surf Spot Uretiti Beach
+Surf Spot: Uretiti Beach
 
 Description: This beach is in Bream Bay. Discovered while camping at the DOC campsite. Pretty cool surf beach for beginners, kind of where I first got into it. Oh and in summer it is nice and warm!!
 
-Place Bream Bay
+Place: Bream Bay
 
 Region: Northland
 
-Country New Zealand
+Country: New Zealand
 
 Latitude: -35.93478
 
-Longtitude 174.457716
+Longtitude: 174.457716
 
 Rating: 4

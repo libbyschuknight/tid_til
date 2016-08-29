@@ -4,8 +4,13 @@
 ---
 ## Part 1 - How to get started
 
+This tutorial is using Rails 5 and Ruby 2.3.1.
+
 This is what I follow to set up a computer with Ruby, Rails and Git:
 - [Setup Ruby On Rails on Mac OS X 10.11 El Capitan: A guide to setting up a Ruby on Rails development environment](https://gorails.com/setup/osx/10.11-el-capitan)
+Note: as of 29 Aug 2016, it is still installing Rails 4.
+
+[Installing Rails - RubyOnRails Guides](http://guides.rubyonrails.org/getting_started.html#installing-rails)
 
 It also has options for:
 - [Windows 10](https://gorails.com/setup/windows/10)
@@ -34,23 +39,21 @@ I will make one model - `SurfSpot` with 8 fields/attributes.
 
 Create a new rails app:
 ```bash
-rails new go_surf_2 --database=postgresql --skip-test-unit --skip-turbolinks
+rails new go_surf_5 --database=postgresql --skip-test-unit
 ```
 
-`rails new <app_name>` creates the new app
+`rails new <app_name>` creates the new app (you can choose a different name for your app if you want)
 
 The other options:
 - `--database=postgresql` make postgresql the dataebase used
 - `--skip-test-unit` means that the default test framework is not installed
-- `--skip-turbolinks` doesn't install Turbolinks
 
-### Step 3 - set up git repo
-
+### Step 3 - set up as git repo
 
 ```bash
 git init
 git add -A
-git commit -m "initial commit message"
+git commit -m "Initial commit message"
 ```
 
 Create a repo with the same name as your app on Github.
@@ -61,7 +64,10 @@ Add the remote to you git repo.
 
 Since you have done the three git commands above, just do these to finish setting up you git repo:
 ```bash
-git remote add origin git@github.com:<git username>/go_surf_2.git
+git remote add origin git@github.com:<git username>/<app_name>.git # replace username and app name
+
+e.g.:   git remote add origin git@github.com:libbyschuknight/go_surf_5.git
+
 git push -u origin master
 ```
 
@@ -69,13 +75,22 @@ git push -u origin master
 (can skip if you don't care about testing!)
 https://github.com/rspec/rspec-rails
 
-Add the rspec-rails gem to your gem file:
+Add the rspec-rails gem to your gemfile, under `development, test`:
 
 ```ruby
-  group :development, :test do
-    gem 'rspec-rails'
-  end
+gem 'rspec-rails'
 ```
+It should now look like this:
+```ruby
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+  gem 'rspec-rails'  
+end
+```
+(the byebug may already have been present, if not you don't need to add)
+
+
 Run:
 `bundle install`
 
@@ -102,7 +117,7 @@ Run server:
 
 You will see this page:
 
-![welcome](images/welcome_aboard.png)
+![your_one_rails](images/your_on_rails.png)
 
 You see this at the moment as no models have been created or migrations run and therefore no data is in the database to be able to show on the website.
 

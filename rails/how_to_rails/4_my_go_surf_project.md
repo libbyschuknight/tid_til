@@ -29,4 +29,4 @@ Add this html & erb to it:
   <%= link_to "Show", surf_spot_path(surf_spot) %>
 <% end %>
 ```
-Now visit the root url or the index url and you should see all the surf spots you have made. 
+Now visit the root url or the index url and you should see all the surf spots you have made. And be able to click through to view them.
