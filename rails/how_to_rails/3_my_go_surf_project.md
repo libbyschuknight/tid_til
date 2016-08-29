@@ -211,4 +211,4 @@ Longtitude: 174.457716
 
 Rating: 4
 
-### [Next](4_my_go_surf_project.md)
+### [Next - Part 4 - Adding an index page to view all surf spots](4_my_go_surf_project.md)

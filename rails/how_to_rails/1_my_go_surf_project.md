@@ -121,9 +121,4 @@ You will see this page:
 
 You see this at the moment as no models have been created or migrations run and therefore no data is in the database to be able to show on the website.
 
-
-### [Next](2_my_go_surf_project.md)
-
-Create a resource...
-
-See [RAILS: GENERATE MODEL VS. RESOURCE VS. SCAFFOLD](http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/) for a good explanation of the differences.
+### [Next - Part 2 - Creating models, views & controllers (MVC)](2_my_go_surf_project.md)
