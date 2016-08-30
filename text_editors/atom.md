@@ -11,4 +11,14 @@ A haml file was coming up in plain text, searched for and found [`language-haml`
 
 ## Shortcuts
 
-`shft + ctrl + ↓` - will add cusor onto mutiple lines, like using `cmd + click`
+`shft + ctrl + ↓` - will add cursor onto multiple lines, like using `cmd + click`
+
+#### Linter
+
+`command (⌘) + shift + p` - brings up commands then:
+`linter`
+- `lint`
+- `toggle`
+- `toggle panel`
+
+when turn things on and off.
