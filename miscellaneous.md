@@ -40,3 +40,8 @@ Funny that it continues to report on the oringial error even though it has been 
 ## Sites for RegEx
 [Rubular - a Ruby regular expression editor](http://rubular.com/)
 [RegExrv2.1](http://regexr.com/)
+
+
+### Mac Keyboard Shortcuts
+Control+Shift+Eject - sleep / lock (external keyboard)
+Control+Shift+Power 
