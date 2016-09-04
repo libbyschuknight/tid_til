@@ -10,7 +10,6 @@ source myvenv/bin/activate
 
 Stop:
 ```bash
-deactivate
 ```
 
 Running server locally:
@@ -26,7 +25,9 @@ python manage.py shell
 
 
 UP TO:
-http://tutorial.djangogirls.org/en/dynamic_data_in_templates/
+http://tutorial.djangogirls.org/en/css/
+
+
 
 https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed
 
