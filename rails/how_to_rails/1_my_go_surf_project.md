@@ -9,12 +9,14 @@ This tutorial is using Rails 5 and Ruby 2.3.1.
 This is what I follow to set up a computer with Ruby, Rails and Git:
 - [Setup Ruby On Rails on Mac OS X 10.11 El Capitan: A guide to setting up a Ruby on Rails development environment](https://gorails.com/setup/osx/10.11-el-capitan)
 Note: as of 29 Aug 2016, it is still installing Rails 4.
-
-[Installing Rails - RubyOnRails Guides](http://guides.rubyonrails.org/getting_started.html#installing-rails)
-
 It also has options for:
 - [Windows 10](https://gorails.com/setup/windows/10)
 - [Ubuntu](https://gorails.com/setup/ubuntu/16.04)
+
+You may also find the RubyOnRails Guide useful:
+- [Installing Rails - RubyOnRails Guides](http://guides.rubyonrails.org/getting_started.html#installing-rails)
+- [In depth information on starting a Rails app](http://guides.rubyonrails.org/getting_started.html#creating-the-blog-application)
+  - a lot of what I am doing (to start with) is similar to the guide, if you want to know more about how things work you will find the guide useful
 
 ### Step 1 - Plan
 Make a rough plan of what you what to do.
