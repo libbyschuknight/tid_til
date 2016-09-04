@@ -245,3 +245,16 @@ Open up the postgres DB:
 
 To find the database name, you can go into irb console and then type
 `ENV["DATABASE_DSN"]`.
+
+
+How to get syntax highlighting when using `cat`. First in the terminal:
+(thanks to @Ootoovak)
+```
+brew install python # if you haven't already
+pip install pygments
+```
+Then edit you `~/.zshrc` file and add:
+```
+alias cat='pygmentize -g -O style=colorful,linenos=1' # I actually alias mine to `show`
+```
+Got that from: http://stackoverflow.com/a/27501509/908793

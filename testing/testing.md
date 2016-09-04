@@ -104,3 +104,47 @@ let(:role) do
 params = { "address" => "31 Te Whiti Street, Kilbirnie, Wellington 6003" }
 expect{ post :create, params }.to change{ Application.count }.by(1)
 ```
+
+
+# RSpec
+
+## Autloading Error
+
+```bash
+LoadError:
+  Unable to autoload constant Billing::Resources::PaymentSchedule, expected /Users/libby/Code/payments/app/services/billing/resources/payment_schedule.rb to define it
+```
+
+Had three specs that were randomly failing - two would fail and one would pass, and it would change when had order as randomn.
+The issue was this:
+```ruby
+let(:schedules_resource)  { Resources::Schedule.new.from_json(schedule_response_json) }
+```
+
+After having a think and remembering that with `lets` there is lazy loading, so added a  ! to the let  - `let!(:schedule_resource)`
+and specs passed.
+
+From rspec:
+>Note that let is lazy-evaluated: it is not evaluated until the first time the method it defines is invoked. You can use let! to force the method's invocation before each example.
+[https://relishapp.com/rspec/rspec-core/v/3-4/docs/helper-methods/let-and-let]
+
+Then were running this pass other devs, got from @Ootoovak
+
+> This came across my Twitter feed a few days ago (by one of the RSpec core team members)
+
+>https://twitter.com/samphippen/status/767850685329203200 Extraordinary Alien @samphippen
+
+> RSpec advice:
+
+  > don't use let!
+
+  > use let and evaluate it in a before.
+
+So have done this:
+```ruby
+before do
+  payment_schedules_resource
+  # other code...
+end
+```
+And the specs are passing! Yay!
