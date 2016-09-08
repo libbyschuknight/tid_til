@@ -17,8 +17,7 @@ Been working on my Seido Karate Guide and added some styling to the `stances.scs
 from the `application.scss` file. Added this back in and it worked fine.
 
 
-### Simple mistake?
-Don't copy and paste!!
+## Simple mistake? Don't copy and paste!!
 Why won't this migration run?
 
 ```ruby
@@ -32,6 +31,49 @@ end
 ```
 
 Because it has two `def change` methods!! Doh!
+
+
+### And again!
+##### Bad bad as caused another error
+
+Had these two methods and there was an error happning in the `work` method, inside the loop.
+So, I copied the `rollbar` line from the `perform` method.
+```ruby
+def perform(message, data, worker: self)
+  worker.work
+rescue => e
+  Rollbar.error(e, message: message, data: data)
+  raise
+end
+
+def work
+  logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
+
+  Polling::Profile.all.each do |profile|
+    Polling::PollProfile.perform(profile, logger: logger)
+  end
+end
+```
+
+What added in and copied:
+```ruby
+def work
+  logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
+
+  Polling::Profile.all.each do |profile|
+    begin
+      Polling::PollProfile.perform(profile, logger: logger)
+    rescue => e
+      Rollbar.error(e, message: message, data: data)
+    end
+  end
+end
+```
+
+This meant that the Rollbar error was causing an error. Why? Because I was silly in copying and pasting and the work method DOES NOT have the `message` & `data` params! So it was failing on not finding the method `message`.
+
+Just needed to take those out. Hopefully I have learnt my lesson this time! 
+
 
 ### `to_sql`
 Can be used on ActiveRecord stuff to see SQL statement:
@@ -48,12 +90,10 @@ Customer.all.to_sql
 On a model:
 ```ruby
 class Phone
-
   LIST = [
     ["notified", "N"],
     ["verified", "V"]
   ]
-
 end
 ```
 
@@ -61,7 +101,6 @@ Accessing constant in controller:
 ```ruby
 Phone::LIST
 ```
-
 
 
 ### Changing Database / Migrations / Rollbacks
