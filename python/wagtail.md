@@ -25,8 +25,7 @@ python manage.py shell
 
 
 UP TO:
-http://tutorial.djangogirls.org/en/css/
-
+http://tutorial.djangogirls.org/en/template_extending/
 
 https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed
 

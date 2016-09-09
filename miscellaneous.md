@@ -44,4 +44,10 @@ Funny that it continues to report on the oringial error even though it has been 
 
 ### Mac Keyboard Shortcuts
 Control+Shift+Eject - sleep / lock (external keyboard)
-Control+Shift+Power 
+Control+Shift+Power
+
+
+### Some markdown stuff
+
+Image
+`![alt_tag](images/<name of image>.png)`
