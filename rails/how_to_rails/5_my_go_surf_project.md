@@ -75,3 +75,5 @@ Uretiti Beach
 Latitude: -35.934883
 Longtitude 174.462012
 ```
+
+### [Next](6_my_go_surf_project.md)
