@@ -118,3 +118,6 @@ mysite - admin/wagtail
 
 Up to
 http://wagtail.readthedocs.io/en/latest/getting_started/tutorial.html#wagtail-template-tags
+
+
+https://wagtail.io/blog/getting-started-wagtail-newcomers-perspective/

@@ -64,3 +64,16 @@ Might be worthwhile to search this again if comes up again.
 ```
 alter table accounts drop column nickname;
 ```
+
+
+
+### elixir
+** (Mix) The database for HelloPhoenix.Repo couldn't be created: FATAL (invalid_authorization_specification): role "postgres" does not exist
+
+22:26:05.517 [error] GenServer #PID<0.172.0> terminating
+** (Postgrex.Error) FATAL (invalid_authorization_specification): role "postgres" does not exist
+    (db_connection) lib/db_connection/connection.ex:148: DBConnection.Connection.connect/2
+    (connection) lib/connection.ex:622: Connection.enter_connect/5
+    (stdlib) proc_lib.erl:247: :proc_lib.init_p_do_apply/3
+Last message: nil
+State: Postgrex.Protocol
