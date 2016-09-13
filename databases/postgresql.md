@@ -64,3 +64,27 @@ Might be worthwhile to search this again if comes up again.
 ```
 alter table accounts drop column nickname;
 ```
+
+
+
+### elixir database issue
+
+```bash
+** (Mix) The database for HelloPhoenix.Repo couldnt be created: FATAL (invalid_authorization_specification): role "postgres" does not exist
+```
+
+In `config/dev.exs` it has this for the db:
+
+```elixir
+# Configure your database
+config :hello_phoenix, HelloPhoenix.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "hello_phoenix_dev",
+  hostname: "localhost",
+  pool_size: 10
+```
+My computer has no `postgres` user. So, by changing `username` to my computer name and having a blank password, it then works!
+
+Yay!
