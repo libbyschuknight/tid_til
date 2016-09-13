@@ -158,7 +158,7 @@ screen -ls
 
 to start session
 ```
-screen <name> # can add name if want to
+screen -S <name> # can add name if want to
 ```
 press return
 do what you want, e.g. console stuff to db

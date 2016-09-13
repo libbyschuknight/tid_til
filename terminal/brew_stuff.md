@@ -9,4 +9,6 @@
 
  brew update <package>  # always consider doing one at a time
 
+ brew info <package>    # will show the info from when installed, can be useful for postgres start / stop commands
+
  ```
