@@ -70,4 +70,9 @@ http://searchstorage.techtarget.com/definition/race-condition
 
 
 Semaphore
+
 concurrency
+
+Monkey patching
+
+Caching

@@ -1,6 +1,6 @@
 # Doing things with Strings
 
-Taking out extra `, ` (comman space) - ie the blank bit
+Taking out extra `, ` (common space) - ie the blank bit
 
 `"91 Panorama Drive, , Paraparaumu".split(",").reject(&:blank?).join(",")`
 

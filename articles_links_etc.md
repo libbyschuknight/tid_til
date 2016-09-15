@@ -29,3 +29,9 @@
 
 # Auth Stuff
 [An Introduction to Using JWT Authentication in Rails](An Introduction to Using JWT Authentication in Rails)
+
+# Rails
+[The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
+
+# Git
+[Oh shit, git!](http://ohshitgit.com/)
