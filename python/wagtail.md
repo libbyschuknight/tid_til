@@ -33,7 +33,7 @@ https://en.wikipedia.org/wiki/Pip_(package_manager)
 
 
 #### Virtualenv
-This confused me a lot. The Wagtail docs assume you know about this.
+This confused me a lot. The Wagtail docs assume you know about this I believe.
 
 I had used it for the [DjangoGirls tutorial](http://tutorial.djangogirls.org/en/) so I went back to look at that.
 
@@ -53,7 +53,7 @@ Then:
 ```bash
 source myvenv/bin/activate
 ```
-Which starts the virtual env. My termianl command line now looks like this:
+Which starts the virtual env. My terminal command line now looks like this:
 ```bash
 (myvenv) ~/code/python/play/test
 
@@ -113,11 +113,30 @@ So, have been doing the commands and can just do `pip` when inside the virtual e
 
 mysite - admin/wagtail
 
-
+Start server
+```bash
+python manage.py runserver
+```
 
 
 Up to
 http://wagtail.readthedocs.io/en/latest/getting_started/tutorial.html#wagtail-template-tags
 
 
-https://wagtail.io/blog/getting-started-wagtail-newcomers-perspective/
+
+
+
+## Naming
+Might take awhile to get use to the naming and nesting of things.
+
+Should have had this:
+`blog/templates/blog/blog_page.html`
+
+but had
+`blog/templates/blog_page.html`
+
+Missing one level of folder!
+
+
+
+A tutorial - https://wagtail.io/blog/getting-started-wagtail-newcomers-perspective/
