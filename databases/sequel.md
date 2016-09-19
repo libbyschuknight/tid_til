@@ -95,6 +95,29 @@ Models::Person.dataset.delete
 ```
 http://sequel.jeremyevans.net/rdoc/classes/Sequel/Model/ClassMethods.html#method-i-dataset
 
+Better!!
+
+So can do:
+
+```
+person.events
+```
+
+to get all the events for a person, well, I often want to delete all the events belonging to one person. Awhile ago find the above but have just searched again and found this:
+
+```
+person.events_dataset
+```
+
+Will return something like this:
+```
+#<Sequel::Postgres::Dataset: "SELECT * FROM \"events\" WHERE (\"events\".\"person_id\" = '3fad85c6-3b9d-4813-ac38-1a6f8efa21c8')">
+```
+
+And then you can do `.delete` or `.destroy`
+
+Nice!! And handy!
+
 
 ### Schema
 http://sequel.jeremyevans.net/rdoc/classes/Sequel/Model/ClassMethods.html#method-i-db_schema

@@ -17,6 +17,12 @@
 [Ruby On Ales 2016: How to Stop Hating Your Test Suite by Justin Searls](https://www.youtube.com/watch?v=MIJ2Grv2Bts)
 
 
+[Testing Rails Simple Guide — Part 1](http://blog.commandrun.com/testing-rails-simple-guide-part-1/)
+[Testing Rails Simple Guide — Part 2](http://blog.commandrun.com/testing-rails-simple-guide-part-2/)
+[Testing Rails Simple Guide — Part 3](http://blog.commandrun.com/testing-rails-simple-guide-part-3/)
+(these look good, haven't had a chance to look at properly yet)
+
+
 # Podcasts
 [65: Free as in Puppy (Katrina Owen)](http://bikeshed.fm/65)
 > While at RailsConf, we talk with Katrina Owen about finding metaphors for software development, the successes and mistakes of Exercism.io, and the benefits of providing code reviews.

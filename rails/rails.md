@@ -72,7 +72,7 @@ end
 
 This meant that the Rollbar error was causing an error. Why? Because I was silly in copying and pasting and the work method DOES NOT have the `message` & `data` params! So it was failing on not finding the method `message`.
 
-Just needed to take those out. Hopefully I have learnt my lesson this time! 
+Just needed to take those out. Hopefully I have learnt my lesson this time!
 
 
 ### `to_sql`
@@ -182,3 +182,9 @@ Note from senior dev
 ## In Rails console - `reload!`
 Reload the rails environment, e.g. when you have updated the code on a model and can't be bothered quitting out of console and re-running.
 [Rails::ConsoleMethods](http://api.rubyonrails.org/classes/Rails/ConsoleMethods.html)
+
+
+
+## Setting Up Rails App (when have done for ages!!)
+
+Remember to check the `.env` files. There maybe a `.env.development.example` or `.env.development.dist`, you will need to duplicate this and save as `.env.development`.

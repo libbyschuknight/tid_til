@@ -40,6 +40,16 @@ this will take you to where you are in the code. Very useful if you have been tr
 32: end
 ```
 
+#### Getting awesome print working
+Add to `./pryrc`
+
+```
+require "awesome_print"
+AwesomePrint.pry!
+```
+
+
+
 ##### ENV
 When using `pry` or `irb`, you can type `ENV` and it will show all the environment variables! Yay!
 
