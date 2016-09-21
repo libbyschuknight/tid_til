@@ -9,17 +9,24 @@
 
 ### Testing
 
-[Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz)
-- speaker deck [Magic Tricks of Testing (RailsConf)](Magic Tricks of Testing (RailsConf) )
+[Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz) - to watch again
+- speaker deck [Magic Tricks of Testing (RailsConf)](Magic Tricks of Testing (RailsConf)
 
-[Cascadia Ruby Conf 2012 Therapeutic Refactoring by Katrina Owen](https://www.youtube.com/watch?v=J4dlF0kcThQ)
+[Cascadia Ruby Conf 2012 Therapeutic Refactoring by Katrina Owen](https://www.youtube.com/watch?v=J4dlF0kcThQ) - to watch again
 
 [Ruby On Ales 2016: How to Stop Hating Your Test Suite by Justin Searls](https://www.youtube.com/watch?v=MIJ2Grv2Bts)
 
 
-[Testing Rails Simple Guide — Part 1](http://blog.commandrun.com/testing-rails-simple-guide-part-1/)
-[Testing Rails Simple Guide — Part 2](http://blog.commandrun.com/testing-rails-simple-guide-part-2/)
-[Testing Rails Simple Guide — Part 3](http://blog.commandrun.com/testing-rails-simple-guide-part-3/)
+[Red-Green-Refactor by Example](https://thoughtbot.com/upcase/videos/red-green-refactor-by-example) - to watch
+
+#### Testing Rails Simple Guides - to read
+
+- [Testing Rails Simple Guide — Part 1](http://blog.commandrun.com/testing-rails-simple-guide-part-1/)
+
+- [Testing Rails Simple Guide — Part 2](http://blog.commandrun.com/testing-rails-simple-guide-part-2/)
+
+- [Testing Rails Simple Guide — Part 3](http://blog.commandrun.com/testing-rails-simple-guide-part-3/)
+
 (these look good, haven't had a chance to look at properly yet)
 
 
