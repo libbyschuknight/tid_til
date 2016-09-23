@@ -26,6 +26,8 @@ ROAR -
 REST -
 [Ruby On REST: Introducing the Representer Pattern](http://nicksda.apotomo.de/2011/12/ruby-on-rest-introducing-the-representer-pattern/)
 
+[Understanding REST And RPC For HTTP APIs](https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/)
+
 
 pragma (or "directive")
 > a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.

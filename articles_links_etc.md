@@ -53,3 +53,6 @@
 
 # Git
 [Oh shit, git!](http://ohshitgit.com/)
+
+# HTTP
+[HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)

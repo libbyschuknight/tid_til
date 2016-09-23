@@ -8,7 +8,7 @@ Heroku is:
 And you can have a [free account](https://signup.heroku.com/?c=70130000001x9jFAAQ)!
 
 
-email, foolow link
+email, follow link
 
 set password
 
