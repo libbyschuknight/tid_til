@@ -76,3 +76,14 @@ you can just have:
 create(sports_id: sports_id, type: "running", data: params)
 ```
 ... as you are inside the `Event` model.
+
+
+### Database Transaction
+[What is a database transaction?](http://stackoverflow.com/questions/974596/what-is-a-database-transaction?answertab=votes#tab-top)
+>A transaction is a unit of work that you want to treat as "a whole". It has to either happen in full, or not at all.
+>A classical example is transferring money from one bank account to another. To do that you have to first withdraw the amount from the source account, and then deposit it to the destination account. The operation has to succeed in full. If you stop halfway, the money will be lost, and that is Very Bad.
+>In modern databases transactions also do some other things - like ensure that you can't access data that another person has written halfway. But the basic idea is the same - transactions are there to ensure, that no matter what happens, the data you work with will be in a sensible state. They guarantee that there will NOT be a situation where money is withdrawn from one account, but not deposited to another.
+
+[Transactions (Database Engine)](https://technet.microsoft.com/en-us/library/ms190612)
+
+[ACID](https://en.wikipedia.org/wiki/ACID)

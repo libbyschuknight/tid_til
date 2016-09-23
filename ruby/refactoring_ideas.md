@@ -22,3 +22,14 @@ So I can just have:
 ```ruby
 application.switch_type == type && application.move_date.blank?
 ```
+
+## Dealing with names
+
+name ? name.split(" ").map(&:capitalize).join(" ") : nil
+
+full_name.split(/\s+/).map { |name|  name == name.upcase ? name.capitalize : name }.join(" ")
+
+    # full_name.split(" ").map do |name|
+    #   name = name.capitalize if name == name.upcase
+    #   name
+    # end.join(" ")

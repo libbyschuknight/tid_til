@@ -1,3 +1,8 @@
+# Articles and Links
+
+[selfcare.tech](selfcare.tech)
+
+
 # Useful and Interesting Videos
 
 [Factory, Workshop, Stage by Sarah Mei](https://vimeo.com/146923862) - video

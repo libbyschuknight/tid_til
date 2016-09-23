@@ -268,3 +268,39 @@ Then edit you `~/.zshrc` file and add:
 alias cat='pygmentize -g -O style=colorful,linenos=1' # I actually alias mine to `show`
 ```
 Got that from: http://stackoverflow.com/a/27501509/908793
+
+
+## Manually running report, download as CSV
+
+Example of when might need to use, if have a report that times out on server, then want to run report manually in rails console.
+
+Go onto server, open up rails console
+
+```ruby
+params = ActiveSupport::HashWithIndifferentAccess.new({
+    "thing_ref" => "ref_thing_here",
+                 "file_status" => "I"
+})
+
+things =
+  ThingsFetcher.retrieve_things(
+    thing_ref: params[:thing_ref]
+  )
+
+presenter =
+  ThingPresenter.new(
+    params: params,
+    things: things
+  )
+
+filename = "#{Rails.root}/#{presenter.filename}"
+
+File.open(filename, 'w') { |file| file.write(presenter.to_csv) }
+```
+
+##### Get file from server
+You have to be in local terminal NOT on server.
+
+```bash
+scp server.name:/apps/customer_app/releases/20160922043147/filename.csv ~/Downloads/filename.csv
+```
