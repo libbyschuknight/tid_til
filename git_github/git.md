@@ -16,6 +16,11 @@ git checkout <branch_name>
 
 In somes cases pulling can cause problems. Will add why when I come across it again!
 
+##### git branch
+List branches by committer date instead of alphabetically:
+
+`git branch --sort=-committerdate`
+
 
 ##### git clean
 Quite often I have found that I have had to get rid of untracked files in git and have discovered that git clean is something that you can use.

@@ -4,7 +4,7 @@
 ---
 ## Part 1 - How to get started
 
-This tutorial is using Rails 5 and Ruby 2.3.1.
+This tutorial is using Rails 5 and Ruby 2.3.0
 
 This is what I follow to set up a computer with Ruby, Rails and Git:
 - [Setup Ruby On Rails on Mac OS X 10.11 El Capitan: A guide to setting up a Ruby on Rails development environment](https://gorails.com/setup/osx/10.11-el-capitan)
