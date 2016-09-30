@@ -50,6 +50,10 @@
 
 # Rails
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
+[7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 
 # Git
 [Oh shit, git!](http://ohshitgit.com/)
+
+# Javascript
+[7 Patterns to Refactor JavaScript Applications: View Objects](http://crushlovely.com/journal/7-patterns-to-refactor-javascript-applications-view-objects/)

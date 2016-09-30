@@ -66,3 +66,28 @@ ANIMALS.map { |key, urn| [urn, ANIMAL_LABELS[key]] }.to_h
 ANIMALS.map { |key, value| [ value, ANIMAL_LABELS[key]] }.to_h
 
 ```
+
+
+## Values - array
+So, was waiting to get a validation working in Rails, did have:
+
+```ruby
+SOURCES = {
+  cat: "kiity-cat",
+  dog: "puppy-wuppy"
+}.freeze
+
+{
+    :cat => "kiity-cat",
+    :dog => "puppy-wuppy"
+}
+```
+Using inclusion for the validation it needed an array so can do:
+```ruby
+SOURCES.values
+
+[
+    [0] "kiity-cat",
+    [1] "puppy-wuppy"
+]
+```

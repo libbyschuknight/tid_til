@@ -170,6 +170,8 @@ git rebase feature/form
 git push --force origin feature/first_page_join_form_MVP
 ```
 
+[Getting solid at Git rebase vs. merge](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.9yty645zl)
+
 ### git reset
 When have mucked up a merge or something badly and need to reset the branch. Or in this case want to reset the uat branch locally to what is on github.
 

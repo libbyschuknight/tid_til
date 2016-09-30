@@ -80,3 +80,6 @@ Caching
 
 Theory of Constraints
 http://www.leanproduction.com/theory-of-constraints.html
+
+
+[Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
