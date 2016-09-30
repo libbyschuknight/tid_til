@@ -57,3 +57,7 @@
 
 # Javascript
 [7 Patterns to Refactor JavaScript Applications: View Objects](http://crushlovely.com/journal/7-patterns-to-refactor-javascript-applications-view-objects/)
+
+# HTTP
+[HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)
+>>>>>>> 0ee7afc7f249c811b7bac6f08a70dc680c62eb7c
