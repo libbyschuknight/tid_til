@@ -32,6 +32,7 @@
 
 - [Testing Rails Simple Guide — Part 3](http://blog.commandrun.com/testing-rails-simple-guide-part-3/)
 
+[After RailsConf: Should I Still Learn TDD?](http://www.justinweiss.com/articles/post-railsconf-should-i-still-learn-tdd/)
 
 
 # Useful and Interesting Videos
