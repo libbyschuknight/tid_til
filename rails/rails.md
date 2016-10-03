@@ -197,3 +197,24 @@ If you are in a Rails app, you can do `rails dbconsole` or just `rails db` to ge
 Very handy!
 
 [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
+
+
+## Rescuing errors
+
+
+```ruby
+begin
+  code_here_that_is_casuing_the_probelm
+rescue Roar::Transport::Error => error
+  binding.pry
+  error
+end
+```
+
+Then in terminal:
+```ruby
+error.message
+error.inspect
+error.response
+error.response.body # most useful
+```

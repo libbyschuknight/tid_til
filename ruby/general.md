@@ -36,6 +36,24 @@ included do
 end
  ```
 
+## Arrays
+
+Show all data for one attribute on all your records:
+```ruby
+Application.all.collect(&:started_at)
+```
+output:
+```bash
+[
+  [ 0] Wed, 21 Sep 2016 03:33:56 UTC +00:00,
+  [ 1] Thu, 29 Sep 2016 02:42:43 UTC +00:00,
+  [ 2] Wed, 21 Sep 2016 03:35:08 UTC +00:00,
+  [ 3] Sun, 02 Oct 2016 22:16:28 UTC +00:00
+]
+```
+
+
+
 ### 2 dimensional array - array of arrays
 
 @users.collect{ |u| [u.name, u.id] }
@@ -145,3 +163,8 @@ So needed to do:
 ::JSON.parse(string)
 ```
 The two colons make it move out of the current class. Or something like that.
+
+
+### Time
+Michael @Flick
+>ISO8601 is more flexible that I thought, an ISO8601 can represent a time without any zone data e.g. `2016-10-02T22:12:13Z`, or it can include zone data: `2016-10-02T22:12:13+1300`
