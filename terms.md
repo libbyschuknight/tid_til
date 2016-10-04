@@ -87,3 +87,7 @@ http://www.leanproduction.com/theory-of-constraints.html
 [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
 
 HAML - HTML Abstraction Markup Language
+
+[BEM](https://en.bem.info/)
+Block Element Modifier is a methodology, that helps you to achieve reusable components and code sharing in the front-end
+- [get bem](http://getbem.com/)

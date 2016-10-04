@@ -1,4 +1,16 @@
-# Today I Did...Today I have worked on...
+# Today I learnt...
+
+
+
+4 Oct
+Have had a break from this but feel like it was useful so starting again.
+
+3 Oct
+...about BEM
+>Block Element Modifier is a methodology, that helps you to achieve reusable components and code sharing in the front-end
+I paired with Merrin today on using haml and BEM to style counting of applications.
+
+## Today I Did...Today I have worked on...
 
 6 July
 ...have been busy and have forgotten to add to this. Currently working on the app that is internal facing. This app/service is a hybrid in that one page is in one service and another is in an old app that is still being used. Proves for interesting times.
