@@ -1,6 +1,7 @@
 # Today I learnt...
 
-
+5 Oct
+About how to access helper methods in rails console (although didn't seem to work on staging server). Also, dealing with time! And how useful it is to set timezone in `.env.development`.
 
 4 Oct
 Have had a break from this but feel like it was useful so starting again.
