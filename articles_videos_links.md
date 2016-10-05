@@ -35,6 +35,15 @@
 [After RailsConf: Should I Still Learn TDD?](http://www.justinweiss.com/articles/post-railsconf-should-i-still-learn-tdd/)
 
 
+### String Stuff
+[Learn Strftime](http://learnstrftime.com/)
+
+
+### Dev Ops
+
+#### [Amazon Web Services](https://aws.amazon.com/)
+[A Comprehensive Guide to Building a Scalable Web App on Amazon Web Services - Part 1](https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1)
+
 # Useful and Interesting Videos
 
 ### Code Stuff
