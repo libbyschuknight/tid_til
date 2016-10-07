@@ -12,6 +12,9 @@
 
 [HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)
 
+### CSS
+[Can we stop bad-mouthing CSS in developer talks, please?(https://www.christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)]
+
 
 ### Rails
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
