@@ -1,6 +1,6 @@
 # Non-Technical Stuff
 
-## Articles / Links
+# # Articles / Links
 
 [Ten Steps Towards Happiness](http://hintjens.com/blog:99)
 
@@ -12,6 +12,9 @@
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)
 
 
+## Pairing
+[Continual Code Review](http://continual-code-review.surge.sh/#1)
+[Pairing with Junior Developers](https://www.devmynd.com/blog/2015-1-pairing-with-junior-developers/)
 
 
 #### Engineering Empathy
