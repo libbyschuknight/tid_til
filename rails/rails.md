@@ -201,7 +201,6 @@ Very handy!
 
 ## Rescuing errors
 
-
 ```ruby
 begin
   code_here_that_is_casuing_the_probelm

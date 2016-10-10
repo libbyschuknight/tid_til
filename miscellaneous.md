@@ -51,3 +51,9 @@ Control+Shift+Power
 
 Image
 `![alt_tag](images/<name of image>.png)`
+
+
+## Bug hunting
+
+A bug came up where the user was clicking a `save and switch` button and the page either just reloaded and there was no change or it errored and there was a message on Rollbar. After looking a lot at the errors and even doing stuff on the server the person I was working with was like "hmmm, its missing this!!". The thing missing should also have been showing an error message on the page but with a lot of work on changing the view recently it got hidden. 
+Lesson learnt - take the time to check what the user has inputted and what you would expect to see!!

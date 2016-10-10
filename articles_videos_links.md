@@ -21,6 +21,8 @@
 
 [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 
+[Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
+
 ### Git
 [Oh shit, git!](http://ohshitgit.com/)
 
