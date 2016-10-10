@@ -33,3 +33,33 @@ account = customer.account
 contact = account.main_contact
 sign_up = account.sign_up
 ```
+
+#### `where` and `nil`
+
+So was doing a `where` like this in a scope a model in Rails:
+```ruby
+Model.where("started_by = ? AND source = ?", nil, "join")
+```
+When I did `to_sql` on it (handy little trick in rails), got this:
+```sql
+"SELECT \"models\".* FROM \"models\" WHERE (started_by = NULL AND source = 'join')"
+```
+which returns `[]`, which is not what I want!
+
+So, knowing that this returns what I want:
+```ruby
+Model.where(started_by: nil).where(source: "join")
+```
+and the sql is this:
+```sql
+"SELECT \"models\".* FROM \"models\" WHERE \"models\".\"started_by\" IS NULL AND \"models\".\"source\" = 'join'"
+```
+and seeing that where `NULL` is it uses `IS NULL` I changed my first query to:
+```ruby
+Model.where("started_by is ? AND source = ?", nil, "join")
+```
+which is
+```sql
+"SELECT \"models\".* FROM \"models\" WHERE (started_by is NULL AND source = 'join')"
+```
+and returns what I want!

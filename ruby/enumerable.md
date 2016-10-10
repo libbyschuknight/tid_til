@@ -36,3 +36,10 @@ array1.zip(array2)  # makes a nested array,  2 by 2
     ]
 ]
 ```
+
+
+## collect
+```ruby
+Application.all.collect(&:started_at)
+```
+get an array of `started_at` values
