@@ -48,6 +48,8 @@
 
 #### [Amazon Web Services](https://aws.amazon.com/)
 [A Comprehensive Guide to Building a Scalable Web App on Amazon Web Services - Part 1](https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1)
+[The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
+
 
 # Useful and Interesting Videos
 
