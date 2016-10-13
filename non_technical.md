@@ -1,6 +1,6 @@
 # Non-Technical Stuff
 
-# # Articles / Links
+## Articles / Links
 
 [Ten Steps Towards Happiness](http://hintjens.com/blog:99)
 
@@ -8,16 +8,18 @@
 
 [Hacking Flow States on a Daily Basis](https://medium.com/the-mission/hacking-flow-states-on-a-daily-basis-c1da17ad8165#.qa165r16q)
 
+[Men and Women – Lets banish these 2 words from our vocabulary](http://optimalhq.com/2016/10/11/men-and-women-lets-banish-these-2-words-from-our-vocabulary/)
+
 ### Diversity
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)
 
 
-## Pairing
+### Pairing
 [Continual Code Review](http://continual-code-review.surge.sh/#1)
 [Pairing with Junior Developers](https://www.devmynd.com/blog/2015-1-pairing-with-junior-developers/)
 
 
-#### Engineering Empathy
+### Engineering Empathy
 
 
 ## Videos
