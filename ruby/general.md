@@ -82,6 +82,32 @@ will give:
 
 > A Protected method is not accessible from outside of the context of the object, but it is accessible from inside the context of another object of the same type.
 
+
+##### Private methods in modules
+[Private Class Methods in Ruby](http://domon.cc/2013/12/25/private-class-methods-in-ruby/)
+
+```ruby
+module UserInformationService
+
+  def self.overall_users_counts
+    {
+      started_count:      Application.started.count,
+      started_today_count:    Application.started_today.count
+    }
+  end
+
+  def self.collect_individual_users_data
+    users_names_and_counts.sort_by { |user| user[:name] }
+  end
+
+  def self.users_names_and_counts  # this is now a private method!!
+    # stuff happens in here
+  end
+  private_class_method :users_names_and_counts
+end
+```
+
+
 ### Keyword Arguments
 ADD!! links
 https://robots.thoughtbot.com/ruby-2-keyword-arguments
