@@ -194,3 +194,7 @@ The two colons make it move out of the current class. Or something like that.
 ### Time
 Michael @Flick
 >ISO8601 is more flexible that I thought, an ISO8601 can represent a time without any zone data e.g. `2016-10-02T22:12:13Z`, or it can include zone data: `2016-10-02T22:12:13+1300`
+
+
+[Precedence](https://ruby-doc.org/core-2.3.0/doc/syntax/precedence_rdoc.html)
+  >From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
