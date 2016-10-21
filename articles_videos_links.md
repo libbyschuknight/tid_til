@@ -12,8 +12,8 @@
 
 [HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)
 
-### HTML/CSS
 
+### HTML/CSS
 
 [Can we stop bad-mouthing CSS in developer talks, please?](https://www.christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
 
@@ -74,6 +74,8 @@
 
 [Red-Green-Refactor by Example](https://thoughtbot.com/upcase/videos/red-green-refactor-by-example) - to watch
 
+### Ruby
+[How to use Ruby’s English and/or operators without going nuts](How to use Ruby’s English and/or operators without going nuts)
 
 
 # Podcasts

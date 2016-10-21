@@ -12,6 +12,7 @@
 
 ### Diversity
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)
+[Twitter thread by Sarah Mei on hiring](https://twitter.com/sarahmei/status/788420315290345472)
 
 
 ### Pairing

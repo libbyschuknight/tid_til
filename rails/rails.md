@@ -217,3 +217,10 @@ error.inspect
 error.response
 error.response.body # most useful
 ```
+
+
+## Bits & Bobs
+
+Logic in controllers
+- controller should take in params and pass through to an object that then does stuff (logic stuff) with params and then passes it back to the controller
+- controller should not be doing any logic stuff if possible

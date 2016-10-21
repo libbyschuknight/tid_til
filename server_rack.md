@@ -21,3 +21,12 @@ In Gemfile
 ```ruby
 gem "rack", "< 2" # TODO: upgrade to Rack 2 once issue fixed https://github.com/rtomayko/shotgun/pull/61
 ```
+
+## Tail the logs on a server
+To see what is happening on a production log you can do this:
+(if you are in the `log` folder)
+
+```bash
+tails -f production.log
+```
+use `ctrl + c` to get out of the log
