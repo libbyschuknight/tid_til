@@ -224,3 +224,10 @@ error.response.body # most useful
 Logic in controllers
 - controller should take in params and pass through to an object that then does stuff (logic stuff) with params and then passes it back to the controller
 - controller should not be doing any logic stuff if possible
+
+
+## Changing between different versions for different projects
+[Managing multiple Rails versions](https://relativkreativ.at/articles/managing-multiple-rails-versions)
+
+
+### Rails Engines
