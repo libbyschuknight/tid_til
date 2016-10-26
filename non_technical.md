@@ -12,11 +12,15 @@
 
 ### Diversity
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)
+
 [Twitter thread by Sarah Mei on hiring](https://twitter.com/sarahmei/status/788420315290345472)
+
+[Being an Effective Ally to Women and Non-Binary People](https://codeascraft.com/2016/10/19/being-an-effective-ally-to-women-and-non-binary-people/)
 
 
 ### Pairing
 [Continual Code Review](http://continual-code-review.surge.sh/#1)
+
 [Pairing with Junior Developers](https://www.devmynd.com/blog/2015-1-pairing-with-junior-developers/)
 
 
