@@ -4,6 +4,19 @@
 [Awesome Falsehood Awesome](Awesome Falsehood Awesome)
 
 ### Ruby
+
+[TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
+
+### Rails
+[The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
+
+[7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
+
+[Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
+
+[It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
+
+### Other Code Stuff
 [Learn Strftime](http://learnstrftime.com/)
 
 ### Web Stuff
@@ -13,18 +26,9 @@
 
 [HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)
 
-
 ### HTML/CSS
 
 [Can we stop bad-mouthing CSS in developer talks, please?](https://www.christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
-
-
-### Rails
-[The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
-
-[7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
-
-[Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
 ### Git
 [Oh shit, git!](http://ohshitgit.com/)
