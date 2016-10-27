@@ -13,7 +13,8 @@
 ### Diversity
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)
 
-[Twitter thread by Sarah Mei on hiring](https://twitter.com/sarahmei/status/788420315290345472)
+[Twitter thread by Sarah Mei on hiring](https://twitter.com/i/moments/788795068530331648)
+- [Actual tweets](https://twitter.com/sarahmei/status/788420315290345472)
 
 [Being an Effective Ally to Women and Non-Binary People](https://codeascraft.com/2016/10/19/being-an-effective-ally-to-women-and-non-binary-people/)
 
