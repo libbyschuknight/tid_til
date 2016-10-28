@@ -231,3 +231,7 @@ Logic in controllers
 
 
 ### Rails Engines
+
+http://guides.rubyonrails.org/engines.html
+
+[Gems vs Engines: Know the difference](https://samurails.com/ruby/gems-vs-engines-know-the-difference/)
