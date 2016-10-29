@@ -8,13 +8,37 @@
 [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
 
 ### Rails
+
+##### Time
+
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
+
+[It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
+
+##### Code Style / Structure
 
 [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 
+[acts_as_good_style](http://rubyglasses.blogspot.co.nz/2007/08/actsasgoodstyle.html?m=1)
+
+##### Security
+
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
-[It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
+##### Routing
+[2.2 CRUD, Verbs, and Actions](http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions)
+
+##### Other...
+[Managing multiple Rails versions](https://relativkreativ.at/articles/managing-multiple-rails-versions)
+
+
+##### Engines
+
+http://guides.rubyonrails.org/engines.html
+
+[Gems vs Engines: Know the difference](https://samurails.com/ruby/gems-vs-engines-know-the-difference/)
+
+
 
 ### Other Code Stuff
 [Learn Strftime](http://learnstrftime.com/)

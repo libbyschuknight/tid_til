@@ -109,6 +109,10 @@ Really think about changing tables/columns etc before doing it!!
 Be very careful when deleting migration files. Think carefully about rolling back and when to delete! Especially if you have data you want to keep.
 
 
+###### Column Types
+http://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes
+http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column
+
 ### HAML
 HAML converter to HTML - https://haml2erb.org/
 
@@ -224,14 +228,3 @@ error.response.body # most useful
 Logic in controllers
 - controller should take in params and pass through to an object that then does stuff (logic stuff) with params and then passes it back to the controller
 - controller should not be doing any logic stuff if possible
-
-
-## Changing between different versions for different projects
-[Managing multiple Rails versions](https://relativkreativ.at/articles/managing-multiple-rails-versions)
-
-
-### Rails Engines
-
-http://guides.rubyonrails.org/engines.html
-
-[Gems vs Engines: Know the difference](https://samurails.com/ruby/gems-vs-engines-know-the-difference/)
