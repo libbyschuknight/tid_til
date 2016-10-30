@@ -17,3 +17,8 @@ I did
 rails _4.2.7.1_ new rickrockstar -m http://refinerycms.com/t/3.0.4
 ```
 as that is the most recent Rails version before 5, and the most up to date RefineryCMS version.
+
+changing the default db and skipping test-unit
+```
+rails _4.2.7.1_ new learn-2-code-nz -m http://refinerycms.com/t/3.0.4 --database=postgresql --skip-test-unit
+```
