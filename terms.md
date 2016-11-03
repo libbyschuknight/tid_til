@@ -79,6 +79,14 @@ Monkey patching
 
 Caching
 
+http://whatis.techtarget.com/definition/caching
+>Caching (pronounced “cashing”) is the process of storing data in a cache.
+>A cache is a temporary storage area. For example, the files you automatically request by looking at a Web page are stored on your hard disk in a cache subdirectory under the directory for your browser. When you return to a page you've recently looked at, the browser can get those files from the cache rather than the original server, saving you time and saving the network the burden of additional traffic.
+
+[Web cache](https://en.wikipedia.org/wiki/Web_cache)
+>A web cache (or HTTP cache) is an information technology for the temporary storage (caching) of web documents, such as HTML pages and images, to reduce bandwidth usage, server load, and perceived lag. A web cache system stores copies of documents passing through it; subsequent requests may be satisfied from the cache if certain conditions are met.[1] A web cache system can refer either to an appliance, or to a computer program.
+
+
 
 Theory of Constraints
 http://www.leanproduction.com/theory-of-constraints.html
