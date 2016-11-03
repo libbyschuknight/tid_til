@@ -228,3 +228,9 @@ error.response.body # most useful
 Logic in controllers
 - controller should take in params and pass through to an object that then does stuff (logic stuff) with params and then passes it back to the controller
 - controller should not be doing any logic stuff if possible
+
+#### Controller Actions
+In controller was no action for `payment_details` but was a `get :payment_details` in `routes.rb`.
+This confused me as I wanted to have a redirect for the view if user without account was trying to view.
+As it turns out what Rails goes is show the view, even if there is no action written in controller!
+TODO: look up some docs on this0.3
