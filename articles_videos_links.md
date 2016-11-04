@@ -22,6 +22,8 @@
 
 [acts_as_good_style](http://rubyglasses.blogspot.co.nz/2007/08/actsasgoodstyle.html?m=1)
 
+[10 Ruby on Rails Best Practices](https://www.sitepoint.com/10-ruby-on-rails-best-practices-3/)
+
 ##### Security
 
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
