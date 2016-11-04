@@ -2,7 +2,7 @@
 
 [selfcare.tech](selfcare.tech)
 
-[Awesome Falsehood Awesome](Awesome Falsehood Awesome)
+[Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
 ### Ruby
 
