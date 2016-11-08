@@ -13,6 +13,18 @@ A haml file was coming up in plain text, searched for and found [`language-haml`
 
 `shft + ctrl + ↓` - will add cursor onto multiple lines, like using `cmd + click`
 
+
+#### Tree View
+
+
+`cmd-shift-\` to reveal the current file in the Tree View
+https://gist.github.com/chrissimpkins/5bf5686bae86b8129bee#atom_editor_view
+
+`Ctrl + 0` (zero) 	Toggle focus Tree View
+https://www.shortcutworld.com/en/linux/Atom-(text-editor)_1.0.html _ (take off the `_`)
+TODO: upload PDF of shortcuts to google drive link here
+
+
 #### Linter
 
 `command (⌘) + shift + p` - brings up commands then:
