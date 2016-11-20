@@ -1,6 +1,10 @@
 # Terms
 
-DNS -
+DNS -Domain Name System
+> DNS stands for Domain Name System. DNS is how domain names are translated into IP addresses, and DNS also controls email delivery. DNS is what allows you to use your web browser to find web sites as well as send and receive email.
+http://support.e-zekiel.com/templates/System/details.asp?id=31606&fetch=26154
+
+[How DNS Works](https://howdns.works/ep1/)
 
 CDN - Content Delivery Network
     > A content delivery network (CDN) is a system of distributed servers (network) that deliver webpages and other Web content to a user based on the geographic locations of the user, the origin of the webpage and a content delivery server. This service is effective in speeding the delivery of content of websites with high traffic and websites that have global reach. The closer the CDN server is to the user geographically, the faster the content will be delivered to the user. CDNs also provide protection from large surges in traffic.
