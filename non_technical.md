@@ -10,6 +10,12 @@
 
 [Men and Women – Lets banish these 2 words from our vocabulary](http://optimalhq.com/2016/10/11/men-and-women-lets-banish-these-2-words-from-our-vocabulary/)
 
+
+### Juniors / Starting of as a developer
+[10 Tips To Start Off Well In A Junior Dev Role](https://simpleprogrammer.com/2016/11/09/10-tips-junior-dev-role/?utm_content=bufferc8a71&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
+
+
 ### Diversity
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)
 
