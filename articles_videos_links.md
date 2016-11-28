@@ -1,6 +1,5 @@
 # Articles and Links
 
-[selfcare.tech](selfcare.tech)
 
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
@@ -23,6 +22,8 @@
 [acts_as_good_style](http://rubyglasses.blogspot.co.nz/2007/08/actsasgoodstyle.html?m=1)
 
 [10 Ruby on Rails Best Practices](https://www.sitepoint.com/10-ruby-on-rails-best-practices-3/)
+
+[Ubiquitous Language & the joy of naming](http://blog.carbonfive.com/2016/10/04/ubiquitous-language-the-joy-of-naming/)
 
 ##### Security
 
