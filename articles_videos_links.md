@@ -1,6 +1,5 @@
 # Articles and Links
 
-
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
 ### Ruby

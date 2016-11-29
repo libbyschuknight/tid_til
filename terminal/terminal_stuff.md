@@ -186,6 +186,10 @@ to exit screen, this will stop things running
 `exit`
 
 
+Scrolling when in a screen - https://www.cyberciti.biz/faq/scroll-up-down-look-at-data-in-gnuscreen-using-pageup-pagedown-keys/
+
+http://smallbusiness.chron.com/scroll-up-linux-screen-46302.html - haven't tried this
+
 ## Terminal Commands
 Lists out in datetime order
 `ls -l`
