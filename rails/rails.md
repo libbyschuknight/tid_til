@@ -108,6 +108,13 @@ Really think about changing tables/columns etc before doing it!!
 
 Be very careful when deleting migration files. Think carefully about rolling back and when to delete! Especially if you have data you want to keep.
 
+#### If have pushed branch / merged
+Once have pushed, and most definitely if have merged code into master (and it is on prod 😫 ), you can't just revert the branch!!
+
+Best practice is to write another migration to remove what you have added.
+
+Otherwise the schema will be incorrect / out of sync and could cause bad 😱 things to happen!!
+
 
 ###### Column Types
 http://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes

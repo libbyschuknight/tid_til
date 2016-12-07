@@ -1,5 +1,22 @@
 # Testing - general
 
+## Four Phase Test Pattern
+
+Reminded about from here http://blog.commandrun.com/testing-rails-simple-guide-part-2/
+
+First came across here https://robots.thoughtbot.com/four-phase-test
+
+```
+test do  
+  # setup - Prepare object for this test
+  # exercise - Execute the functionality we are testing  
+  # verify - Verify the exercise's result against our expectation  
+  # teardown - Resetting all data to pre-test state
+end  
+```
+
+
+
 Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
@@ -108,7 +125,7 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 
 # RSpec
 
-## Autloading Error
+## Autoloading Error
 
 ```bash
 LoadError:
