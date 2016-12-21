@@ -48,3 +48,7 @@ https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed
 https://docs.djangoproject.com/en/1.10/
 
 http://blog.manbolo.com/2013/02/04/how-to-install-python-3-and-pydev-on-osx#1
+
+
+Add images
+http://stackoverflow.com/questions/33684713/adding-an-imagefield-to-already-existing-model-in-django
