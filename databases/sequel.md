@@ -119,6 +119,16 @@ And then you can do `.delete` or `.destroy`
 Nice!! And handy!
 
 
+##### Getting last record from lots of records
+
+```ruby
+s.events.size # 133
+
+s.events.last #
+
+s.events_dataset.order(:created_at).last # make sure get right one!
+```
+
 ### Schema
 http://sequel.jeremyevans.net/rdoc/classes/Sequel/Model/ClassMethods.html#method-i-db_schema
 

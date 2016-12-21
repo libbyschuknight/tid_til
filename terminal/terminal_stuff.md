@@ -186,7 +186,17 @@ to exit screen, this will stop things running
 `exit`
 
 
-Scrolling when in a screen - https://www.cyberciti.biz/faq/scroll-up-down-look-at-data-in-gnuscreen-using-pageup-pagedown-keys/
+Scrolling when in a screen -
+
+can do Shift + Pg_up & Shift + Pg_down
+
+ https://www.cyberciti.biz/faq/scroll-up-down-look-at-data-in-gnuscreen-using-pageup-pagedown-keys/
+CTRL-A, then [, then
+
+CTRL-u and CTRL-d scroll the display up/down by the specified amount of lines while preserving the cursor position. (Default: half screen-full).
+CTRL-b and C-f scroll the display up/down a full screen.
+
+
 
 http://smallbusiness.chron.com/scroll-up-linux-screen-46302.html - haven't tried this
 

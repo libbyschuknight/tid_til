@@ -165,3 +165,20 @@ before do
 end
 ```
 And the specs are passing! Yay!
+
+
+## Stubbing vs Using VCR
+
+Discussion at Flick about using doubles / allows to stub versus 
+
+With the specs, for the SupplyNodeDeprovisioner spec, I used the Claimer and Remover specs as a guide.
+Those were all stubbed.
+This then led me to stub in the DeprovisioningApi spec as well.
+
+Not too sure about stubbing. I guess though that as long as the Network assignment_suspension endpoint is tested well in Network then it is okay to stub?? Rather then use VCR??
+       @ootoovak
+ootoovak 4 hours ago
+Yeah, I think that is fine, like if you are thinking as servers as objects (just at a different level) then stubbing out calls to other servers is like a unit test. This does leave the problem of how we write "integration" level tests between our services. @mermop started the test suite for this but we have not come to a consensus about maintaining it and adding to it. One thing we have to overcome is how we manage state changes between servers. That level of tests might have to wait until the day we get containers with seed data. Then we could potentially spin up a test version of all our services, run all the "service/integration" level tests on them, then spin it down again. Meaning the data would be fresh between each run even if some tests changed the seed data.
+       @ootoovak
+ootoovak 4 hours ago
+As for VCR vs manually stubbing kind of the same as using FactoryGirl.build(:user) vs User.new(...). As in there is not much difference the former provides more convenience the latter has has less dependence on external tool that could be overused/debugged. In either case it is stubbing the call to a service and both can drift over time form the actual API if not maintained.
