@@ -14,7 +14,7 @@ git fetch origin <branch_name>
 git checkout <branch_name>
 ```
 
-In somes cases pulling can cause problems. Will add why when I come across it again!
+In some cases pulling can cause problems. Will add why when I come across it again!
 
 ##### git branch
 List branches by committer date instead of alphabetically:
@@ -162,7 +162,6 @@ git stash show -p
 git stash show -p stash@{3}
 ```
 
-
 http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git
 
 ### git rebase
@@ -211,3 +210,9 @@ I deleted my first repo locally and then create new app, then added the remote.
 `git remote add origin git@github.com:libbyschuknight/go_surf.git`
 
 `git remote -v`
+
+
+## Go back to previous branch - quickly
+```bash
+git checkout -
+```

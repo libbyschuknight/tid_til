@@ -30,3 +30,19 @@ To see what is happening on a production log you can do this:
 tails -f production.log
 ```
 use `ctrl + c` to get out of the log
+
+
+# DevOps
+
+## AWS
+
+### Troubleshooting a failed opsworks deploy (from Flick)
+
+1. Repeat the deploy (a deploy can fail for various network related reasons, if it fails twice in a row, then it's probably not that)
+2. Does the deploy appear in Opsworks as failed?
+  1. Check the deploy log for errors
+  2. If the error is about a missing git ref for a branch that has been deleted then edit the config for the affected app to point back to master
+3. SSH into the app server and run `ps -ef | grep puma` to check if the puma process is running for your app
+  1. If the puma process is not running, or it is running but the process start date does not match the last deploy, then you can stop it: `/xxx/www/APP_NAME/shared/scripts/puma stop` and then start it again `/xxx/www/APP_NAME/shared/scripts/puma start`
+  2. Or, you could do a clean restart by going to the current folder for your app `cd /xxx/www/APP_NAME/current`, then `../../shared/scripts/puma clean-restart`.
+4. Check the puma error log in `/xxx/www/APP_NAME/current/log/puma.stderr.log`

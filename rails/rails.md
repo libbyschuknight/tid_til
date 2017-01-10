@@ -3,8 +3,24 @@
 To run rails server not on default port
 
 ```bash
-be rails s -p 4000
+bundle exec rails s -p 4000
 ```
+
+Close bash window running rails server, opened new window and ran `rails s` again and got this error:
+
+`A server is already running. Check /Users/libby/Code/customer_app/tmp/pids/server.pid.`
+
+So looked at the file and it has `6854`, which was the `pid` that it was on. Double checked by doing:
+```bash
+ps aux | grep ruby
+```
+then killed that process
+
+```bash
+kill -9 6854
+```
+Server working again!
+
 
 ### Assest Pipeline - scss
 Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous  project, I was missing:
@@ -241,3 +257,9 @@ In controller was no action for `payment_details` but was a `get :payment_detail
 This confused me as I wanted to have a redirect for the view if user without account was trying to view.
 As it turns out what Rails goes is show the view, even if there is no action written in controller!
 TODO: look up some docs on this0.3
+
+
+## Useful RAILS stuff
+#### Active Model Dirty
+Provides a way to track changes in your object in the same way as Active Record does.
+http://api.rubyonrails.org/classes/ActiveModel/Dirty.html

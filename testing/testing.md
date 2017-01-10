@@ -169,7 +169,7 @@ And the specs are passing! Yay!
 
 ## Stubbing vs Using VCR
 
-Discussion at Flick about using doubles / allows to stub versus 
+Discussion at Flick about using doubles / allows to stub versus
 
 With the specs, for the SupplyNodeDeprovisioner spec, I used the Claimer and Remover specs as a guide.
 Those were all stubbed.
@@ -182,3 +182,13 @@ Yeah, I think that is fine, like if you are thinking as servers as objects (just
        @ootoovak
 ootoovak 4 hours ago
 As for VCR vs manually stubbing kind of the same as using FactoryGirl.build(:user) vs User.new(...). As in there is not much difference the former provides more convenience the latter has has less dependence on external tool that could be overused/debugged. In either case it is stubbing the call to a service and both can drift over time form the actual API if not maintained.
+
+
+## Capybara Testing
+
+When using [`save_and_open_page`](https://www.stefanwille.com/2010/12/printing-the-page-content-in-capybara/), to use the assets so the page has the correct styling, in your `config/environments/test.rb` file, add these:
+
+```ruby
+config.assets.debug = true
+config.action_controller.asset_host = "http://localhost:6001"
+```
