@@ -1,4 +1,4 @@
-[# Test-Driven Rails](https://thoughtbot.com/upcase/test-driven-rails)
+# [Test-Driven Rails](https://thoughtbot.com/upcase/test-driven-rails)
 
 [Upcase tutorials](https://thoughtbot.com/upcase/practice)
 
