@@ -17,3 +17,15 @@ end
 ```
 My spec output now looks like this:
 ![spec output](images/specs_ran.png)
+
+
+SSH in - kind of
+
+```
+heroku run bash
+```
+https://coderwall.com/p/szhuig/ssh-into-your-heroku-app
+
+
+Can't do `rake db:drop` on hekoru so have to do:
+[Reset heroku postgres database](https://coderwall.com/p/qbmhog/reset-heroku-postgres-database)
