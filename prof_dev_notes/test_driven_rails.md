@@ -58,3 +58,15 @@ Goals
 - focusing on the business values
 - making sure the code is easy to modify, extend, add functionally
 - design perspective - easy to modify or extend
+
+
+## 1. Setting Up the App & Initial Test
+Build a todo app
+`rails new todos -T`, `-T` skips test unit
+
+run `rake` to run specs
+
+? what is the difference between the different ways to run tests??
+
+
+Capybara - feature and scenario ==  describe and it
