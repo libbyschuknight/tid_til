@@ -245,6 +245,17 @@ error.response
 error.response.body # most useful
 ```
 
+## Flash
+`flash.now`
+
+http://guides.rubyonrails.org/action_controller_overview.html#the-flash
+Used this so a flash message wasn't staying around between new applications.
+
+
+## Rails Conventions
+
+> It is convention in Rails (and Ruby to some degree) to use ! at the end of the method name when there is going to be a side effect (like saving as well as changing attributes)
+@ootovak
 
 ## Bits & Bobs
 

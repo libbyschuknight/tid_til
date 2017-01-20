@@ -41,6 +41,14 @@ Funny that it continues to report on the oringial error even though it has been 
 [Rubular - a Ruby regular expression editor](http://rubular.com/)
 [RegExrv2.1](http://regexr.com/)
 
+`?` needs to be escaped in this case:
+```ruby
+expect(page).to have_content(/Oh no! Did you enter something incorrectly\? If not, let a computer friend know there is a problem./)
+```
+otherwise the test does not pass! Even though it looks like it should.
+
+
+
 
 ### Mac Keyboard Shortcuts
 Control+Shift+Eject - sleep / lock (external keyboard)
@@ -55,5 +63,5 @@ Image
 
 ## Bug hunting
 
-A bug came up where the user was clicking a `save and switch` button and the page either just reloaded and there was no change or it errored and there was a message on Rollbar. After looking a lot at the errors and even doing stuff on the server the person I was working with was like "hmmm, its missing this!!". The thing missing should also have been showing an error message on the page but with a lot of work on changing the view recently it got hidden. 
+A bug came up where the user was clicking a `save and switch` button and the page either just reloaded and there was no change or it errored and there was a message on Rollbar. After looking a lot at the errors and even doing stuff on the server the person I was working with was like "hmmm, its missing this!!". The thing missing should also have been showing an error message on the page but with a lot of work on changing the view recently it got hidden.
 Lesson learnt - take the time to check what the user has inputted and what you would expect to see!!

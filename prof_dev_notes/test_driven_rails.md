@@ -61,6 +61,7 @@ Goals
 
 
 ## 1. Setting Up the App & Initial Test
+
 Build a todo app
 `rails new todos -T`, `-T` skips test unit
 
@@ -70,3 +71,8 @@ run `rake` to run specs
 
 
 Capybara - feature and scenario ==  describe and it
+
+
+## 2. Creating the First Todo
+
+Next test - logically - to create a new todo
