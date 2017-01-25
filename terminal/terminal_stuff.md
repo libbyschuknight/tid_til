@@ -318,3 +318,8 @@ You have to be in local terminal NOT on server.
 ```bash
 scp server.name:/apps/customer_app/releases/20160922043147/filename.csv ~/Downloads/filename.csv
 ```
+
+## irb - interactive ruby
+
+>Irb has a built in help function. While in irb, you can type `help 'Hash#reduce'` for example and get the docs & an example in your terminal. Try `help 'Object#tap'`.
+Raquel Moss - #tech-links FlickElectric
