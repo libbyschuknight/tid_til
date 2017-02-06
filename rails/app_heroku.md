@@ -29,3 +29,22 @@ https://coderwall.com/p/szhuig/ssh-into-your-heroku-app
 
 Can't do `rake db:drop` on hekoru so have to do:
 [Reset heroku postgres database](https://coderwall.com/p/qbmhog/reset-heroku-postgres-database)
+
+
+Heroku
+
+Pushes to production continually deploy to Heroku.
+
+Run migrations: heroku run rake db:migrate
+
+Get into console heroku run rails console
+
+Delete all records e.g Stance.destroy_all
+
+Run seed task: heroku run rake db:seed
+
+This app is using: rake db:seed:dump To dump all data to seed file
+
+https://devcenter.heroku.com/articles/getting-started-with-rails4
+
+https://devcenter.heroku.com/articles/getting-started-with-rails5
