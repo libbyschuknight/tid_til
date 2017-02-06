@@ -88,6 +88,22 @@ http://guides.rubyonrails.org/engines.html
 
 # Useful and Interesting Videos
 
+
+### Human Drive Development / Culture
+[Human-Driven Development](https://www.youtube.com/watch?v=qcBol_s410k)
+Talk at Linux Conf Au by Aurynn Shaw
+
+Notes:
+- how do we fix it?
+- who are we missing, why are we missing them, how are we pushing them away
+how do we help
+- service centric
+- How can I be of service?
+- culture of service
+- challenge assumptions, challenges those that say we don't need to challenge
+
+
+
 ### Code Stuff
 
 [Factory, Workshop, Stage by Sarah Mei](https://vimeo.com/146923862) - video

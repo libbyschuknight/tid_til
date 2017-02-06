@@ -31,6 +31,8 @@
 
 [Pairing with Junior Developers](https://www.devmynd.com/blog/2015-1-pairing-with-junior-developers/)
 
+[Stop Wasting Time: Pair Programming Rocks](https://medium.com/javascript-scene/stop-wasting-time-pair-programming-rocks-4a99604cb09d#.ogw7an9zs)
+
 
 ### Engineering Empathy
 

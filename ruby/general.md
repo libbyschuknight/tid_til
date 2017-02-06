@@ -198,3 +198,49 @@ Michael @Flick
 
 [Precedence](https://ruby-doc.org/core-2.3.0/doc/syntax/precedence_rdoc.html)
   >From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
+
+
+### Case statements
+
+Thought you had to do like this:
+
+```ruby
+case
+when colour == "yellow" || colour == "white"
+  puts "light"
+when colour == "orange"
+  puts "not as light"
+else
+  puts "dark"
+end
+```
+and thought this was what [The Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) was saying as well:
+
+```ruby
+# good
+case
+when song.name == 'Misty'
+  puts 'Not again!'
+when song.duration > 120
+  puts 'Too long!'
+when Time.now.hour > 21
+  puts "It's too late"
+else
+  song.play
+end
+```
+
+But have realised that each when is checking on different things.
+And doing a quick search on case statements in ruby found out that you can do:
+
+```ruby
+case colour
+when "yellow" || "white"
+  puts "light"
+when "orange"
+  puts "not as light"
+else
+  puts "dark"
+end
+```
+Would be nice if the ruby style guide covered this... although the snippet above is from the the Source Code Layout section
