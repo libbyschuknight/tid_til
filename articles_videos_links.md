@@ -6,6 +6,8 @@
 
 [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
 
+[101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids/?utm_source=rubyweekly&utm_medium=email)
+
 ### Rails
 
 ##### Time
