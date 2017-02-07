@@ -1,6 +1,4 @@
-# Notes from Courses
-
-## [Mastering the Shell](https://thoughtbot.com/upcase/mastering-the-shell)
+# [Mastering the Shell](https://thoughtbot.com/upcase/mastering-the-shell)
 
 Printing out text from a file
 

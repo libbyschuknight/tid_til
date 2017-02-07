@@ -103,3 +103,28 @@ HAML - HTML Abstraction Markup Language
 [BEM](https://en.bem.info/)
 Block Element Modifier is a methodology, that helps you to achieve reusable components and code sharing in the front-end
 - [get bem](http://getbem.com/)
+
+
+
+#### CAP
+
+[CAP Theorem: Its importance in distributed systems](http://blog.flux7.com/blogs/nosql/cap-theorem-why-does-it-matter)
+
+Consistency (C) requires that all reads initiated after a successful write return the same and latest value at any given logical time.
+
+Availability (A) requires that every node (not in failed state) always execute queries. Let’s say we have “n” servers serving our application. To ensure better availability we would add an additional “x” servers.
+
+Partition Tolerance (P) requires that a system be able to re-route a communication when there are temporary breaks or failures in the network. The goal is to maintain synchronization among the involved nodes.
+
+
+Transaction - database? local?
+
+ACID
+
+Distributed transactions
+
+Fault tolerance
+
+Idempotent
+>Idempotence (UK: /ˌɪdɛmˈpoʊtns/;[1] US: /ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[2] is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application.
+https://en.wikipedia.org/wiki/Idempotence
