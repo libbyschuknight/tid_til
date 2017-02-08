@@ -76,3 +76,16 @@ Capybara - feature and scenario ==  describe and it
 ## 2. Creating the First Todo
 
 Next test - logically - to create a new todo
+
+## 3. Signing In and Todo Ownership
+
+- add module to `support/features` for `sign_in` method.
+
+- add to `rails_helper.rb`
+
+  - `config.include `Features`, type: :feature`
+
+  - flag that says only include the `Features` module tin the features specs
+
+  - also need to uncomment this:
+      `Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }` in `rails_helper.rb` to get it working
