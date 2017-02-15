@@ -89,3 +89,23 @@ Next test - logically - to create a new todo
 
   - also need to uncomment this:
       `Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }` in `rails_helper.rb` to get it working
+
+## 4. Refactor to User Model
+
+- add `current_user` rather then just `sessions params`
+
+- active record relation / scope
+
+  ```ruby
+  Todo.where(email: @email)
+  ```
+
+## 5. Completing a Todo
+
+ActiveRecord `touch`
+
+http://apidock.com/rails/v4.2.7/ActiveRecord/Persistence/touch
+
+> it is a method that only updates the specified timestamps of the model with the current time.
+
+http://stackoverflow.com/questions/31665895/in-rails-activerecord-what-is-touch-for
