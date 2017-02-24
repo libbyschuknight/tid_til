@@ -109,3 +109,5 @@ http://apidock.com/rails/v4.2.7/ActiveRecord/Persistence/touch
 > it is a method that only updates the specified timestamps of the model with the current time.
 
 http://stackoverflow.com/questions/31665895/in-rails-activerecord-what-is-touch-for
+
+## 6. Refactoring Todo Completions
