@@ -4,7 +4,12 @@ To run rails server not on default port
 
 ```bash
 bundle exec rails s -p 4000
+
+# seems to be an issue where I can't do the above start server on different point, quick google give me the below which works.
+bundle exec rails server Puma -b 0.0.0.0 -p 3001
 ```
+
+
 
 Close bash window running rails server, opened new window and ran `rails s` again and got this error:
 
