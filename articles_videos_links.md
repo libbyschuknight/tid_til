@@ -129,6 +129,9 @@ how do we help
 [How to use Ruby’s English and/or operators without going nuts](How to use Ruby’s English and/or operators without going nuts)
 
 
+### Rails
+[Validation, Database Constraint, or Both?](https://robots.thoughtbot.com/validation-database-constraint-or-both)
+
 # Podcasts
 [65: Free as in Puppy (Katrina Owen)](http://bikeshed.fm/65)
 > While at RailsConf, we talk with Katrina Owen about finding metaphors for software development, the successes and mistakes of Exercism.io, and the benefits of providing code reviews.
