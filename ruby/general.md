@@ -257,3 +257,16 @@ Would be nice if the ruby style guide covered this... although the snippet above
 ## `**kwargs`
 
 [kwargs reserved word in python. What does it mean? duplicate](http://stackoverflow.com/questions/20158516/kwargs-reserved-word-in-python-what-does-it-mean)
+
+
+## Ancestors
+
+```ruby
+puts buyer1.ancestors
+
+Buyer
+User
+Object
+Kernel
+BasicObject
+```
