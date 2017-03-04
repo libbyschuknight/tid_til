@@ -59,6 +59,10 @@ http://guides.rubyonrails.org/engines.html
 
 [Can we stop bad-mouthing CSS in developer talks, please?](https://www.christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
 
+[HTML Reference type](http://htmlreference.io/)
+
+[CSS Reference type](http://cssreference.io/)
+
 ### Git
 [Oh shit, git!](http://ohshitgit.com/)
 
