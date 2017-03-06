@@ -323,3 +323,10 @@ scp server.name:/apps/customer_app/releases/20160922043147/filename.csv ~/Downlo
 
 >Irb has a built in help function. While in irb, you can type `help 'Hash#reduce'` for example and get the docs & an example in your terminal. Try `help 'Object#tap'`.
 Raquel Moss - #tech-links FlickElectric
+
+
+## Programs installed via Homebrew
+
+[Fuzzy Finder](https://github.com/junegunn/fzf)
+
+- fzf is a general-purpose command-line fuzzy finder
