@@ -15,16 +15,20 @@ See my [blog post](https://schuknight.wordpress.com/2016/01/17/wdcnz-a-bit-late/
 ---
 ### Code Stuff
 
+##### [Django Girls Wellington](https://djangogirls.org/wellington/)
+Saturday 10 December 2016
+I was one of the coaches for this event.
+
 ##### [Rails Girls Wellington](http://railsgirls.com/wellington)
 Sat 27th & Sun 28th August 2016
-I was one of five organisers of this event in 2016
+I was one of five organisers of this event in 2016.
 
 ##### [Code Club Aotearoa Mashup 2016](https://mashup.codeclub.nz/)
 18 August 2016
 > A Day Full of Coding and Innovation!
 
 ##### [Start Up Weekend - Health]
-Start Up Weekend Health, Wellington
+Start Up Weekend Health, Wellington.
 
 ---
 ### Talks
@@ -42,6 +46,15 @@ Code Club talk - was hoping to hear more about the plans of getting a code club 
 ### Meet Ups
 
 
+##### [Networking - how to make a good impression](https://www.meetup.com/Female-Fueld-Tech-Talks-Wellington/events/235481360/)
+Nov 30, 2016 · 5:30 PM at OptimalBI
+[Female Fuel'd: Tech Talks - Wellington](https://www.meetup.com/Female-Fueld-Tech-Talks-Wellington/)
+
+
+##### [Supporting Women in Technology](https://www.meetup.com/Female-Fueld-Tech-Talks-Wellington/events/236980580/)
+February 1 · 5:30 PM
+Xero
+[Female Fuel'd: Tech Talks - Wellington](https://www.meetup.com/Female-Fueld-Tech-Talks-Wellington/)
 
 ##### [Wellington Wagtail CMS Meetup](http://www.meetup.com/Wellington-Wagtail-CMS-Meetup/events/230329388/) - 27 April 2016
 > We're excited to announce the first Wagtail CMS meetup in New Zealand!
