@@ -3,6 +3,13 @@
 to add - how to set up rails app on Heroku
 
 
+
+Rename heroku app via cli:
+```bash
+heroku rename <name-here>
+```
+this takes care of dealing with the git remotes, whereas if you renamed in the heroku dashboard you would then have to reset the git remotes yourself.
+
 #### Database stuff being logged when running RSpec
 
 When having added an app to Heroku using Puma, whenever I ran `rspec spec` on local terminal I would get db stuff being logged out:
