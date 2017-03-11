@@ -68,6 +68,8 @@ http://guides.rubyonrails.org/engines.html
 
 ### Javascript
 [7 Patterns to Refactor JavaScript Applications: View Objects](http://crushlovely.com/journal/7-patterns-to-refactor-javascript-applications-view-objects/)
+[You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+
 
 ### Testing
 
