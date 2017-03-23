@@ -2,6 +2,10 @@
 
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
+### Computer Science
+
+[Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
+
 ### Ruby
 
 [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
