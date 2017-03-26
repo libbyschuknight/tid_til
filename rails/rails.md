@@ -279,3 +279,16 @@ TODO: look up some docs on this0.3
 #### Active Model Dirty
 Provides a way to track changes in your object in the same way as Active Record does.
 http://api.rubyonrails.org/classes/ActiveModel/Dirty.html
+
+
+## Rails app using Sequel
+App has a `structure.sql` file instead of a `schema.rb` file and can't do `rake db:create`.
+So to get clean database need to do:
+
+```bash
+rake db:drop
+createdb service_development
+rake db:migrate
+rake db:seed
+```
+To get load the `structure.sql` run `rake db:structure:load`

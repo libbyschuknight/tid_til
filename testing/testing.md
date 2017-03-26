@@ -171,9 +171,9 @@ And the specs are passing! Yay!
 
 Discussion at Flick about using doubles / allows to stub versus
 
-With the specs, for the SupplyNodeDeprovisioner spec, I used the Claimer and Remover specs as a guide.
+With the specs, for the `SupplyNodeDeprovisioner` spec, I used the `Claimer` and `Remover` specs as a guide.
 Those were all stubbed.
-This then led me to stub in the DeprovisioningApi spec as well.
+This then led me to stub in the `DeprovisioningApi` spec as well.
 
 Not too sure about stubbing. I guess though that as long as the Network assignment_suspension endpoint is tested well in Network then it is okay to stub?? Rather then use VCR??
        @ootoovak
@@ -182,6 +182,26 @@ Yeah, I think that is fine, like if you are thinking as servers as objects (just
        @ootoovak
 ootoovak 4 hours ago
 As for VCR vs manually stubbing kind of the same as using FactoryGirl.build(:user) vs User.new(...). As in there is not much difference the former provides more convenience the latter has has less dependence on external tool that could be overused/debugged. In either case it is stubbing the call to a service and both can drift over time form the actual API if not maintained.
+
+### Strategy
+This is what Samson and I did when I was writing a feature spec for an api.
+
+```ruby
+service_client = instance_double("Invoiced::Client")
+invoiced_invoice = double(
+                    "InvoicedInvoice",
+                    balance: "105.00".to_f,
+                    paid: false,
+                    items: [],
+                  )
+allow(service_client).to receive_message_chain(:Invoice, :retrieve).and_return(invoiced_invoice)
+
+allow(InvoicedClient).to receive_message_chain(:new, :client).and_return(service_client)
+```
+
+Worked the above backwards. Starting with stubbing (or is it mocking) out an external call `InvoicedClient` and have the return an instance_double.
+Then the `service_client` was stubbed out and returned a double which to start with was just `invoiced_invoice = double("InvoicedInvoice")` and then ran the spec to see what messages the object was wanting to responsd to.
+
 
 
 ## Capybara Testing

@@ -164,6 +164,15 @@ git stash show -p stash@{3}
 
 http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git
 
+And then to put back into the branch the stash you want:
+
+```bash
+git stash apply stash@{3}
+```
+
+`apply` keeps the stash, `pop` takes it of the stack (gets rid of it)
+
+
 ### git rebase
 
 ```bash
