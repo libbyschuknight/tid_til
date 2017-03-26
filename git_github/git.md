@@ -166,9 +166,7 @@ http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-conte
 
 And then to put back into the branch the stash you want:
 
-```bash
-git stash apply stash@{3}
-```
+`git stash apply stash@{3}`
 
 `apply` keeps the stash, `pop` takes it of the stack (gets rid of it)
 
@@ -197,21 +195,21 @@ git reset --hard origin/uat
 ```
 
 #### git reset --soft HEAD^
+http://stackoverflow.com/questions/12481639/remove-files-from-git-commit
+
 When you have made a commit and then realise there are heaps of files in it that shouldn't be!
 
-```bash
-git reset --soft HEAD^
-```
-Then reset the unwanted files in order to leave them out from the commit:
-```bash
-git reset HEAD path/to/unwanted_file
+`git reset --soft HEAD^`
 
-git reset HEAD test/    # remove all the files under test that didn't want to add
-```
+Then reset the unwanted files in order to leave them out from the commit:
+
+`git reset HEAD path/to/unwanted_file`
+
+`git reset HEAD test/`    # remove all the files under test that didn't want to add
+
 Now commit again, you can even re-use the same commit message:
-```bash
-git commit -c ORIG_HEAD  
-```
+
+`git commit -c ORIG_HEAD`
 
 
 ### git commits
