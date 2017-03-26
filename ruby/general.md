@@ -270,3 +270,14 @@ Object
 Kernel
 BasicObject
 ```
+
+## ri - ruby documentation
+
+http://stackoverflow.com/a/1728941/4772356
+
+```bash
+ri File.open
+ri open
+ri IO.foreach
+ri File#each_line
+```
