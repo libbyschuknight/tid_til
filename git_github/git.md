@@ -196,6 +196,23 @@ git fetch origin uat
 git reset --hard origin/uat
 ```
 
+#### git reset --soft HEAD^
+When you have made a commit and then realise there are heaps of files in it that shouldn't be!
+
+```bash
+git reset --soft HEAD^
+```
+Then reset the unwanted files in order to leave them out from the commit:
+```bash
+git reset HEAD path/to/unwanted_file
+
+git reset HEAD test/    # remove all the files under test that didn't want to add
+```
+Now commit again, you can even re-use the same commit message:
+```bash
+git commit -c ORIG_HEAD  
+```
+
 
 ### git commits
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
