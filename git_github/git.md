@@ -170,6 +170,11 @@ And then to put back into the branch the stash you want:
 
 `apply` keeps the stash, `pop` takes it of the stack (gets rid of it)
 
+To get rid of a stash:
+
+`git stash drop`  removes top one
+`git stash drop stash@{3}` specific one
+
 
 ### git rebase
 
