@@ -128,3 +128,12 @@ Fault tolerance
 Idempotent
 >Idempotence (UK: /ˌɪdɛmˈpoʊtns/;[1] US: /ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[2] is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application.
 https://en.wikipedia.org/wiki/Idempotence
+
+
+
+## Web Stuff
+
+Evergreen Browser
+https://www.techopedia.com/definition/31094/evergreen-browser
+
+>The term "evergreen browser" refers to browsers that are automatically upgraded to future versions, rather than being updated by distribution of new versions from the manufacturer, as was the case with older browsers. The term is a reflection on how the design and delivery of browsers have changed quickly over the last few years, as technology advances in general and various new players threaten Microsoft's dominance as in the early days of MS Internet Explorer.

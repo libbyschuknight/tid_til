@@ -166,6 +166,19 @@ end
 ```
 And the specs are passing! Yay!
 
+## RSpec Formatting
+
+Repo is set with `--format documentation`, which will output all the documentation strings. In an app that has a lot of specs this can be slow.
+Can set when you run `rspec` to run as the default, which is no strings, just dots, F's and P's.
+
+```ruby
+rspec -f p
+
+or
+
+rspec --format progress
+```
+
 
 ## Stubbing vs Using VCR
 
