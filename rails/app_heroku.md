@@ -31,7 +31,7 @@ SSH in - kind of
 ```
 heroku run bash
 ```
-https://coderwall.com/p/szhuig/ssh-into-your-heroku-app
+['SSH' into your Heroku App](https://coderwall.com/p/szhuig/ssh-into-your-heroku-app)
 
 
 Can't do `rake db:drop` on hekoru so have to do:
