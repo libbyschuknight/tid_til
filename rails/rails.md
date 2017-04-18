@@ -271,8 +271,8 @@ Logic in controllers
 #### Controller Actions
 In controller was no action for `payment_details` but was a `get :payment_details` in `routes.rb`.
 This confused me as I wanted to have a redirect for the view if user without account was trying to view.
-As it turns out what Rails goes is show the view, even if there is no action written in controller!
-TODO: look up some docs on this0.3
+As it turns out what Rails does is show the view, even if there is no action written in controller!
+TODO: look up some docs on this
 
 
 ## Useful RAILS stuff
@@ -281,7 +281,7 @@ Provides a way to track changes in your object in the same way as Active Record 
 http://api.rubyonrails.org/classes/ActiveModel/Dirty.html
 
 
-## Rails app using Sequel
+#### Rails app using Sequel
 App has a `structure.sql` file instead of a `schema.rb` file and can't do `rake db:create`.
 So to get clean database need to do:
 
@@ -292,3 +292,46 @@ rake db:migrate
 rake db:seed
 ```
 To get load the `structure.sql` run `rake db:structure:load`
+
+
+#### has_secure_password
+http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html
+
+>has_secure_password(options = {}) Link
+Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
+
+>The following validations are added automatically:
+>- Password must be present on creation
+>- Password length should be less than or equal to 72 characters
+>- Confirmation of password (using a password_confirmation attribute)
+>- If password confirmation validation is not needed, simply leave out the value for password_confirmation (i.e. don't provide a form field for it). When this attribute has a nil value, the validation will not be triggered.
+
+- add method to `user.rb` - `has_secure_password`
+- add `bcrypt` gem to gemfile
+- add `password_digest` column/attribute to users table
+
+
+#### Sessions
+
+[Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
+>2.1 What are Sessions?
+>HTTP is a stateless protocol. Sessions make it stateful.
+
+>Most applications need to keep track of certain state of a particular user. This could be the contents of a shopping basket or the user id of the currently logged in user. Without the idea of sessions, the user would have to identify, and probably authenticate, on every request. Rails will create a new session automatically if a new user accesses the application. It will load an existing session if the user has already used the application.
+
+[Session](http://guides.rubyonrails.org/action_controller_overview.html#session)
+>Your application has a session for each user in which you can store small amounts of data that will be persisted between requests. The session is only available in the controller and the view and can use one of a number of different storage mechanisms:
+
+> - ActionDispatch::Session::CookieStore - Stores everything on the client.
+>- ActionDispatch::Session::CacheStore - Stores the data in the Rails cache.
+>- ActionDispatch::Session::ActiveRecordStore - Stores the data in a database using Active Record. (require activerecord-session_store gem).
+>- ActionDispatch::Session::MemCacheStore - Stores the data in a memcached cluster (this is a legacy implementation; consider using CacheStore instead).
+
+>All session stores use a cookie to store a unique ID for each session (you must use a cookie, Rails will not allow you to pass the session ID in the URL as this is less secure).
+
+[How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
+
+
+#### Helper Methods
+
+[ActionController::Helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html)
