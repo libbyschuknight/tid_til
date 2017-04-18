@@ -232,6 +232,25 @@ Wrap the body at 72 characters
 Use the body to explain what and why vs. how
 
 
+##### Amending a commit
+
+If you have made some changes and just want to add them to the last commit you made.
+
+Remember to `git add .` the changes
+
+```bash
+git commit --amend  # this will allow you to also change the commit message
+
+git commit -a
+```
+
+if you want to add files or changes without editing the message
+
+```bash
+git commit --amend --no-edit
+```
+
+
 ## Adding a remote to a local repo
 Needed to do this when I created a Rails app but then realised I hadn't used postgres or taken out test unit and turbolinks. I had already created a github repo so there was already a remote.
 I deleted my first repo locally and then create new app, then added the remote.
