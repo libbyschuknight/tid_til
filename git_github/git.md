@@ -264,3 +264,23 @@ I deleted my first repo locally and then create new app, then added the remote.
 ```bash
 git checkout -
 ```
+
+## Issue with pushing to github
+
+Started working in a repo I haven't been in for ages and when pushing kept getting this:
+
+`Enter passphrase for key '/Users/libby/.ssh/id_rsa':`
+
+enter password and all is good with that world...until next time, need to repeat.
+
+So, have tried doing
+
+`ssh-add`,
+
+this gives `Enter passphrase for /Users/libby/.ssh/id_rsa:`,
+
+enter password and then:
+
+`Identity added: /Users/libby/.ssh/id_rsa (/Users/libby/.ssh/id_rsa)`
+
+Hoping this has fixed it! 
