@@ -2,6 +2,8 @@
 
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
+[Sideways Dictionary](https://sidewaysdictionary.com/#/term/api)
+
 ### Computer Science
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
@@ -48,8 +50,6 @@
 http://guides.rubyonrails.org/engines.html
 
 [Gems vs Engines: Know the difference](https://samurails.com/ruby/gems-vs-engines-know-the-difference/)
-
-
 
 ### Other Code Stuff
 [Learn Strftime](http://learnstrftime.com/)

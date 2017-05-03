@@ -13,9 +13,16 @@ CDN - Content Delivery Network
 
 - asset CDN -
 
-Latency -
+Latency
+>is the amount of time it takes for the host server to receive and process a request for a page object. The amount of latency depends largely on how far away the user is from the server.
+http://www.webperformancetoday.com/2012/04/02/latency-101-what-is-latency-and-why-is-it-such-a-big-deal/
 
-RDS -   (in relation to Postgres?)
+>In web speak it is the round trip time between you requesting a http request and the returning answer. The longer the request takes to get an answer… the longer the latency.
+https://responsivedesign.is/articles/testing-for-latency/
+
+RDS - Relational Database Service
+[Amazon Relational Database Service (Amazon RDS)](https://aws.amazon.com/rds/)
+[Amazon RDS for PostgreSQL](https://aws.amazon.com/rds/postgresql/)
 
 SASS -    (e.g. Storypark)
 
