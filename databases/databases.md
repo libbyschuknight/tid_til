@@ -87,3 +87,14 @@ create(sports_id: sports_id, type: "running", data: params)
 [Transactions (Database Engine)](https://technet.microsoft.com/en-us/library/ms190612)
 
 [ACID](https://en.wikipedia.org/wiki/ACID)
+
+[Differences between transactions and locking](https://makandracards.com/makandra/31937-differences-between-transactions-and-locking)
+
+
+### Locking
+>Record locking is the technique of preventing simultaneous access to data in a database, to prevent inconsistent results.
+https://en.wikipedia.org/wiki/Record_locking
+
+[Understanding Locking in Rails ActiveRecord](http://thelazylog.com/understanding-locking-in-rails-activerecord/)
+
+[Differences between transactions and locking](https://makandracards.com/makandra/31937-differences-between-transactions-and-locking)
