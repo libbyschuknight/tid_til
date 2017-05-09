@@ -45,3 +45,26 @@ friend.("Sam")
 You will see this style of code in some of XX newer code as well as (where I think he got it from) any of the [Dry gems](http://dry-rb.org/).
 
 The reason Ruby treats it special is that `.call` is the method that executes `Procs` and `lambdas` in Ruby. Procs and lambdas are the one way you can pass around blocks of code (the same way you can pass a function around in JS) and so this makes Ruby act more like a language that has “first-class” function support.
+
+
+### Not using `next`
+
+Do not want to build a fruit_item factory if the category is "bananas":
+
+```ruby
+fruit_data.each do |fruit|
+  next if fruit.category == Constants::BANANA_CATEGORY
+  fruit_item_factory.build(data: fruit)
+  fruit.mark_as_processed!
+end
+```
+
+Instead of using `next` in the loop, reject the data with banana first:
+
+```ruby
+fruit_data = fruit_data.reject { |fruit| fruit.category == Constants::BANANA_CATEGORY }
+fruit_data.each do |fruit|
+ fruit_item_factory.build(data: fruit)
+ fruit.mark_as_processed!
+end
+```
