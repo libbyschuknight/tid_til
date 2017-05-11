@@ -125,6 +125,10 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 
 # RSpec
 
+## let
+
+[RSpec: What is the difference between let and a before block?](http://stackoverflow.com/questions/5974360/rspec-what-is-the-difference-between-let-and-a-before-block?answertab=active#tab-top)
+
 ## Autoloading Error
 
 ```bash
@@ -132,7 +136,7 @@ LoadError:
   Unable to autoload constant Billing::Resources::PaymentSchedule, expected /Users/libby/Code/payments/app/services/billing/resources/payment_schedule.rb to define it
 ```
 
-Had three specs that were randomly failing - two would fail and one would pass, and it would change when had order as randomn.
+Had three specs that were randomly failing - two would fail and one would pass, and it would change when had order as random.
 The issue was this:
 ```ruby
 let(:schedules_resource)  { Resources::Schedule.new.from_json(schedule_response_json) }

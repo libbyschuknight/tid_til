@@ -281,3 +281,12 @@ ri open
 ri IO.foreach
 ri File#each_line
 ```
+
+
+## #tap - object
+>Yields self to the block, and then returns self. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
+
+https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
+
+[advantage of tap method in ruby](http://stackoverflow.com/questions/17493080/advantage-of-tap-method-in-ruby)
+[Understanding tap in Ruby](http://stackoverflow.com/questions/25191805/understanding-tap-in-ruby)
