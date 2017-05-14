@@ -88,7 +88,7 @@ Handy!
 
 
 ### Delete All
-Rails has `.destroy_all`, want to find something similar for Sequel in non-Rails environment
+ActiveRecord has `.destroy_all`, want to find something similar for Sequel in non-Rails environment
 
 ```ruby
 Models::Person.dataset.delete

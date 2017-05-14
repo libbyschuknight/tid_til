@@ -70,7 +70,7 @@ alter table accounts drop column nickname;
 ### elixir database issue
 
 ```bash
-** (Mix) The database for HelloPhoenix.Repo couldnt be created: FATAL (invalid_authorization_specification): role "postgres" does not exist
+** (Mix) The database for HelloPhoenix.Repo couldn\'t be created: FATAL (invalid_authorization_specification): role "postgres" does not exist
 ```
 
 In `config/dev.exs` it has this for the db:
@@ -88,3 +88,7 @@ config :hello_phoenix, HelloPhoenix.Repo,
 My computer has no `postgres` user. So, by changing `username` to my computer name and having a blank password, it then works!
 
 Yay!
+
+
+## Updating Postgres
+[Homebrew and PostgreSQL 9.5 (or 9.6)]()
