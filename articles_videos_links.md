@@ -79,11 +79,11 @@ http://guides.rubyonrails.org/engines.html
 
 ### Testing
 
-- [Testing Rails Simple Guide — Part 1](http://blog.commandrun.com/testing-rails-simple-guide-part-1/)
+- [Testing Rails Simple Guide — Part 1](https://designcode.commandrun.com/testing-rails-simple-guide-part-1-33d3d80a83f)
 
-- [Testing Rails Simple Guide — Part 2](http://blog.commandrun.com/testing-rails-simple-guide-part-2/)
+- [Testing Rails Simple Guide — Part 2](https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187)
 
-- [Testing Rails Simple Guide — Part 3](http://blog.commandrun.com/testing-rails-simple-guide-part-3/)
+- [Testing Rails Simple Guide — Part 3](https://designcode.commandrun.com/testing-rails-simple-guide-part-3-9ed5355f6aea)
 
 [After RailsConf: Should I Still Learn TDD?](http://www.justinweiss.com/articles/post-railsconf-should-i-still-learn-tdd/)
 

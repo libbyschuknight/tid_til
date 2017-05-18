@@ -2,7 +2,7 @@
 
 ## Four Phase Test Pattern
 
-Reminded about from here http://blog.commandrun.com/testing-rails-simple-guide-part-2/
+Reminded about from here https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187
 
 First came across here https://robots.thoughtbot.com/four-phase-test
 
@@ -15,9 +15,36 @@ test do
 end  
 ```
 
+An example of when I have used:
+pseudocode
+
+```
+describe "#processing?" do
+  context "when payments are being processing" do
+    # setup - Prepare object for this test
+      # payment_schedule
+
+      # payments, that belong to payment_schedule
+        # all in processing - pipeline_processing_status == processing
+
+    # exercise - Execute the functionality we are testing
+      # payment_schedule.processing?
+
+    # verify - Verify the exercise's result against our expectation
+      # expect payment_schedule to eq processing
+
+  end
+end
+```
 
 
-Try to remember to read the Rspec errors really carefully!!
+
+
+
+
+
+
+#### Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
 #### Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz
