@@ -25,6 +25,11 @@ Happened when trying to load localhost for Rails app.
 **Solution:**
 
 Find `postgres` dir, `/usr/local/var/postgres/`.
+
+##### Update: Postgres 9.6 and above
+`/usr/local/var/log` and `postgres.log`
+http://stackoverflow.com/questions/2563494/where-are-the-postgresql-logs-on-mac-os-x/30949441#30949441
+
 Look at the `server.log` file, go to last line, probably see something like this:
 
 ```bash
