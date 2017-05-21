@@ -155,6 +155,7 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 ## let
 
 [RSpec: What is the difference between let and a before block?](http://stackoverflow.com/questions/5974360/rspec-what-is-the-difference-between-let-and-a-before-block?answertab=active#tab-top)
+[When to use RSpec let()?](http://stackoverflow.com/questions/5359558/when-to-use-rspec-let)
 
 ## Autoloading Error
 
