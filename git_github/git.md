@@ -5,6 +5,8 @@
 
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
+[Little Things I Like to Do with Git](https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/)
+
 
 ##### git fetch
 Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
@@ -175,6 +177,12 @@ To get rid of a stash:
 `git stash drop`  removes top one
 `git stash drop stash@{3}` specific one
 
+Stash untacked files:
+`git stash -u`
+>Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
+https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work
+
+
 
 ### git rebase
 
@@ -283,4 +291,4 @@ enter password and then:
 
 `Identity added: /Users/libby/.ssh/id_rsa (/Users/libby/.ssh/id_rsa)`
 
-Hoping this has fixed it! 
+Hoping this has fixed it!
