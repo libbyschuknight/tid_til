@@ -97,4 +97,5 @@ Yay!
 
 ## Updating Postgres
 [Homebrew and PostgreSQL 9.5 (or 9.6)](https://keita.blog/2016/01/09/homebrew-and-postgresql-9-5/)
-Very useful article. What I keep forgetting though is if you are upgrading patch numbers.
+Very useful article. What I keep forgetting though is if need to if you are upgrading patch numbers.
+Patch versions handle updating seamlessly. If it's a minor upgrade you do need to.
