@@ -96,4 +96,5 @@ Yay!
 
 
 ## Updating Postgres
-[Homebrew and PostgreSQL 9.5 (or 9.6)]()
+[Homebrew and PostgreSQL 9.5 (or 9.6)](https://keita.blog/2016/01/09/homebrew-and-postgresql-9-5/)
+Very useful article. What I keep forgetting though is if you are upgrading patch numbers.
