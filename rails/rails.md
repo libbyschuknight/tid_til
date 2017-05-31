@@ -1,5 +1,40 @@
 # Rails
 
+### Upgrade
+http://guides.rubyonrails.org/upgrading_ruby_on_rails.html
+
+Update gemfile with verion of rails you want.
+
+When upgrading an app from 5.0 to 5.1, running `bundle update rails`, got this:
+
+```bash
+Bundler could not find compatible versions for gem "railties":
+  In Gemfile:
+    dotenv-rails was resolved to 2.1.0, which depends on
+      railties (< 5.1, >= 4.0)
+
+    jquery-rails was resolved to 4.1.1, which depends on
+      railties (>= 4.2.0)
+
+    rails (>= 5.1.1, ~> 5.1) was resolved to 5.1.1, which depends on
+      railties (= 5.1.1)
+
+    rspec-rails was resolved to 3.5.2, which depends on
+      railties (>= 3.0)
+
+    sass-rails was resolved to 5.0.6, which depends on
+      railties (< 6, >= 4.0.0)
+
+    web-console (~> 2.0) was resolved to 2.3.0, which depends on
+      railties (>= 4.0)
+```
+So to do it to run the `bundle update` command and add all the gems listed:
+
+`bundle update rails dotenv-rails jquery-rails rspec-rails sass-rails web-console`
+
+
+### rails s
+
 To run rails server not on default port
 
 ```bash
@@ -8,8 +43,6 @@ bundle exec rails s -p 4000
 # seems to be an issue where I can't do the above start server on different point, quick google give me the below which works.
 bundle exec rails server Puma -b 0.0.0.0 -p 3001
 ```
-
-
 
 Close bash window running rails server, opened new window and ran `rails s` again and got this error:
 
