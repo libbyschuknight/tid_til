@@ -4,6 +4,8 @@
 
 [Sideways Dictionary](https://sidewaysdictionary.com/#/term/api)
 
+[30 best practices for software development and testing](https://opensource.com/article/17/5/30-best-practices-software-development-and-testing)
+
 ### Computer Science
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
