@@ -1,4 +1,6 @@
-# Formtastic
+# Rails View Stuff
+
+## Formtastic
 At work we are using [Formtastic](https://github.com/justinfrench/formtastic).
 [more docs](http://www.rubydoc.info/github/justinfrench/formtastic)
 
@@ -23,3 +25,22 @@ So tried this and it worked!
 ```ruby
 = f.action :submit, button_html: { disabled: true },label: "Add Credit Card"
 ```
+
+
+## Date Time Helper
+```ruby
+module DateTimeHelper
+  DEFAULT_DATE_FORMAT = "%d %B %Y".freeze
+
+  def date_format(time, format: DEFAULT_DATE_FORMAT)
+    time.in_time_zone.strftime(format)
+  end
+end
+```
+So if date is showing as `2017-06-01`, use `date_format` method
+
+```erb
+<%= date_format Model.date %>
+```
+
+And will show as `01 June 2017`

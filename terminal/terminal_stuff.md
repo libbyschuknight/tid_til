@@ -263,6 +263,9 @@ work_flow.md
 Open up an irb console:
 `bundle exec irb -r "./config/application.rb"`
 
+Or pry:
+`bundle exec pry -r ./config/environment`
+
 Open up the postgres DB:
 
 `psql <database_name>` or should `psql ENV["DATABASE_DSN"]` work? (am not sure?)
