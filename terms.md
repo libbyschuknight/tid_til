@@ -138,6 +138,10 @@ https://en.wikipedia.org/wiki/Idempotence
 
 
 
+Headless
+> "Headless" in this context simply means without a graphical display. (i.e.: Console based.)
+
+
 ## Web Stuff
 
 Evergreen Browser

@@ -258,6 +258,12 @@ if you want to add files or changes without editing the message
 git commit --amend --no-edit
 ```
 
+## Find most recent branches
+Can’t remember what branches are most recently active in a repo without using Github?
+Use `git branch --sort=-authordate`
+and the most recently changed branches will be listed at the top.
+Thanks @ootovak
+
 
 ## Adding a remote to a local repo
 Needed to do this when I created a Rails app but then realised I hadn't used postgres or taken out test unit and turbolinks. I had already created a github repo so there was already a remote.
