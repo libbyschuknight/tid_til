@@ -52,3 +52,9 @@ Time.parse("2017-04-23T12:00:00Z")
 Time.parse("2017-04-23T12:00:00Z").in_time_zone
 # Mon, 24 Apr 2017 00:00:00 NZST +12:00
 ```
+
+## sandbox
+http://guides.rubyonrails.org/command_line.html#rails-console
+>going `bundle exec rails c production --sandbox` is super handy
+>everything you do is in a transaction that is rolled back when you exit the console
+Thanks @terrcin
