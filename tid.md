@@ -1,7 +1,7 @@
 # Today I learnt...
 
 10 Oct
-Being learning how useful `to_sql` on ActiveRecord queries is; that I like using BEM for CSS; and when bug hunting thing FIRST of what the user has inputted and if it is correct!!
+Learning how useful `to_sql` on ActiveRecord queries is; that I like using BEM for CSS; and when bug hunting thing FIRST of what the user has inputted and if it is correct!!
 
 5 Oct
 About how to access helper methods in rails console (although didn't seem to work on staging server). Also, dealing with time! And how useful it is to set timezone in `.env.development`.
