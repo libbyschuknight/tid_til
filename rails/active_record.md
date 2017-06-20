@@ -63,3 +63,7 @@ which is
 "SELECT \"models\".* FROM \"models\" WHERE (started_by is NULL AND source = 'join')"
 ```
 and returns what I want!
+
+
+## Joining Tables
+[12 Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
