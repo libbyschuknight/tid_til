@@ -2,6 +2,7 @@
 
 ## Links
 
+[Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
 
 ## Notes
@@ -11,6 +12,6 @@ IIFE (Immediately Invoked Function Expression) is a JavaScript function that run
 https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 
 
-# Node
+## Node
 Set time in node console to UTC
 `process.env.TZ = utc`

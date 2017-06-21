@@ -290,3 +290,7 @@ https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
 
 [advantage of tap method in ruby](http://stackoverflow.com/questions/17493080/advantage-of-tap-method-in-ruby)
 [Understanding tap in Ruby](http://stackoverflow.com/questions/25191805/understanding-tap-in-ruby)
+
+
+## Patterns
+[Decorators, Presenters, Delegators and Rails](https://robertomurray.co.uk/blog/2014/decorators-presenters-delegators-rails/)

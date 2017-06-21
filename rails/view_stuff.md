@@ -26,8 +26,9 @@ So tried this and it worked!
 = f.action :submit, button_html: { disabled: true },label: "Add Credit Card"
 ```
 
+## Helpers
 
-## Date Time Helper
+### Date Time Helper
 ```ruby
 module DateTimeHelper
   DEFAULT_DATE_FORMAT = "%d %B %Y".freeze
@@ -44,3 +45,6 @@ So if date is showing as `2017-06-01`, use `date_format` method
 ```
 
 And will show as `01 June 2017`
+
+### Using `capture`
+[Using concat and capture to clean up custom Rails helpers](https://thepugautomatic.com/2013/06/helpers/)
