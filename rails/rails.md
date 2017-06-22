@@ -156,6 +156,10 @@ Accessing constant in controller:
 Phone::LIST
 ```
 
+## rake db
+
+[All Rails db Rake Tasks and What They Do](http://jacopretorius.net/2014/02/all-rails-db-rake-tasks-and-what-they-do.html)
+
 
 ### Changing Database / Migrations / Rollbacks
 Really think about changing tables/columns etc before doing it!!
@@ -355,7 +359,7 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 [Session](http://guides.rubyonrails.org/action_controller_overview.html#session)
 >Your application has a session for each user in which you can store small amounts of data that will be persisted between requests. The session is only available in the controller and the view and can use one of a number of different storage mechanisms:
 
-> - ActionDispatch::Session::CookieStore - Stores everything on the client.
+>- ActionDispatch::Session::CookieStore - Stores everything on the client.
 >- ActionDispatch::Session::CacheStore - Stores the data in the Rails cache.
 >- ActionDispatch::Session::ActiveRecordStore - Stores the data in a database using Active Record. (require activerecord-session_store gem).
 >- ActionDispatch::Session::MemCacheStore - Stores the data in a memcached cluster (this is a legacy implementation; consider using CacheStore instead).
