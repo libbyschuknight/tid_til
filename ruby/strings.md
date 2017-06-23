@@ -32,3 +32,20 @@ Operator	   Example/Output	   Notes
 %y           (00.99),          09 in 2009	Year % 100, last two digits of year
 -            %-d, %-l          Don't pad numerical output
 ```
+
+## Ruby Methods
+
+Get the number of characters in a string use `size` or `length`, both return length of the string.
+
+```ruby
+s = "test" # "test"
+s.size # 4
+```
+
+
+There is a `count` method for `String` but it is used like this:
+
+```ruby
+a = "hello world"
+a.count "lo"  #=> 5
+```
