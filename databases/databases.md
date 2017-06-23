@@ -85,8 +85,20 @@ create(sports_id: sports_id, type: "running", data: params)
 >In modern databases transactions also do some other things - like ensure that you can't access data that another person has written halfway. But the basic idea is the same - transactions are there to ensure, that no matter what happens, the data you work with will be in a sensible state. They guarantee that there will NOT be a situation where money is withdrawn from one account, but not deposited to another.
 
 [Transactions (Database Engine)](https://technet.microsoft.com/en-us/library/ms190612)
+- ACID
+>Atomicity
+> A transaction must be an atomic unit of work; either all of its data modifications are performed, or none of them is performed.
+>Consistency
+> When completed, a transaction must leave all data in a consistent state. In a relational database, all rules must be applied to the transaction's modifications to maintain all data integrity. All internal data structures, such as B-tree indexes or doubly-linked lists, must be correct at the end of the transaction.
+>Isolation
+> Modifications made by concurrent transactions must be isolated from the modifications made by any other concurrent transactions. A transaction either recognizes data in the state it was in before another concurrent transaction modified it, or it recognizes the data after the second transaction has completed, but it does not recognize an intermediate state. This is referred to as serializability because it results in the ability to reload the starting data and replay a series of transactions to end up with the data in the same state it was in after the original transactions were performed.
+>Durability
+> After a transaction has completed, its effects are permanently in place in the system. The modifications persist even in the event of a system failure.
+
 
 [ACID](https://en.wikipedia.org/wiki/ACID)
+
+
 
 [Differences between transactions and locking](https://makandracards.com/makandra/31937-differences-between-transactions-and-locking)
 
