@@ -102,6 +102,12 @@ http://whatis.techtarget.com/definition/caching
 Theory of Constraints
 http://www.leanproduction.com/theory-of-constraints.html
 
+[Singleton](http://whatis.techtarget.com/definition/singleton)
+>In object-oriented programming , a singleton class is a class that can have only one object (an instance of the class) at a time. For example, using Visual C++ , the "Application" class is an example of a singleton class. You can only create only one object of an Application class.
+
+[Ruby Singleton Pattern](https://dalibornasevic.com/posts/9-ruby-singleton-pattern)
+
+
 
 [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
 
@@ -110,6 +116,7 @@ HAML - HTML Abstraction Markup Language
 [BEM](https://en.bem.info/)
 Block Element Modifier is a methodology, that helps you to achieve reusable components and code sharing in the front-end
 - [get bem](http://getbem.com/)
+
 
 
 
