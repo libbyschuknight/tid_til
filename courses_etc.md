@@ -2,6 +2,8 @@
 
 ### Conferences
 
+##### [nz.js(con);](http://conference.javascript.org.nz/) - 9-10 March 2017
+
 ##### [Webstock 2016](http://www.webstock.org.nz/16/) - 11-12 Feb 2016
 Blog post to come
 
