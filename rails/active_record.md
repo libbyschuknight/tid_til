@@ -4,11 +4,11 @@ https://robots.thoughtbot.com/activerecords-wherenot
 
 This query:
 
-`User.where.not(name: 'Gabe')``
+`User.where.not(name: 'Gabe')`
 
 is effectively the same as this:
 
-`User.where('name != ?', 'Gabe')``
+`User.where('name != ?', 'Gabe')`
 
 
 ### [.includes](http://apidock.com/rails/ActiveRecord/QueryMethods/includes)
@@ -66,4 +66,4 @@ and returns what I want!
 
 
 ## Joining Tables
-[12 Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
+[Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
