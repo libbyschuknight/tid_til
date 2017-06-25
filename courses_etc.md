@@ -17,7 +17,7 @@ See my [blog post](https://schuknight.wordpress.com/2016/01/17/wdcnz-a-bit-late/
 ---
 ### Code Stuff
 
-##### [Rails Girls Wellington](http://railsgirls.com/wellington)
+##### [Rails Girls Wellington 2017](http://railsgirls.com/wellington)
 Sat 22nd & Sun 23rd April 2017
 Two day workshop for women, building Rails apps.
 
@@ -25,7 +25,7 @@ Two day workshop for women, building Rails apps.
 Saturday 10 December 2016
 I was one of the coaches for this event.
 
-##### [Rails Girls Wellington](http://railsgirls.com/wellington)
+##### [Rails Girls Wellington 2016](http://railsgirls.com/wellington)
 Sat 27th & Sun 28th August 2016
 I was one of five organisers of this event in 2016.
 
