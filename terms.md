@@ -30,6 +30,9 @@ BDD -
 
 TDD -
 
+API - Application programming interface
+[Application programming interface](Application programming interface)
+
 HTTP - Hypertext Transfer Protocol - [Version 2 (HTTP/2)](http://httpwg.org/specs/rfc7540.html)
 
 ROAR -

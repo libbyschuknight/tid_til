@@ -15,6 +15,10 @@ See my [blog post](https://schuknight.wordpress.com/2016/01/17/wdcnz-a-bit-late/
 ---
 ### Code Stuff
 
+##### [Rails Girls Wellington](http://railsgirls.com/wellington)
+Sat 22nd & Sun 23rd April 2017
+Two day workshop for women, building Rails apps.
+
 ##### [Django Girls Wellington](https://djangogirls.org/wellington/)
 Saturday 10 December 2016
 I was one of the coaches for this event.
