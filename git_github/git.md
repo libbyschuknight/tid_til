@@ -7,6 +7,9 @@
 
 [Little Things I Like to Do with Git](https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/)
 
+[Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
+[A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+
 
 ##### git fetch
 Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
