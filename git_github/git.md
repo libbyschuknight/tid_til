@@ -42,7 +42,7 @@ This has been useful when I have be zealot like with merging in master to my bra
 git revert 3333333333 # commit number
 ```
 
-Actually, while writing this I have realized I actually did a git reset.
+Actually, while writing this I have realized I actually did a table.
 
 ```bash
 git reset 3333333333 # commit number

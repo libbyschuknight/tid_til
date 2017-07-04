@@ -63,13 +63,25 @@ http://guides.rubyonrails.org/engines.html
 
 [HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)
 
+
 ### HTML/CSS
+
+[CSS_TRICKS](https://css-tricks.com/)
 
 [Can we stop bad-mouthing CSS in developer talks, please?](https://www.christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
 
 [HTML Reference type](http://htmlreference.io/)
 
 [CSS Reference type](http://cssreference.io/)
+
+
+[Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css/)
+
+
+##### Tables
+[Organizing Data with Tables](http://learn.shayhowe.com/html-css/organizing-data-with-tables/)
+
+[A Complete Guide to the Table Element](https://css-tricks.com/complete-guide-table-element/#article-header-id-5)
 
 ### Git
 [Oh shit, git!](http://ohshitgit.com/)

@@ -69,3 +69,14 @@ Make a new branch so any changes you make can be kept:
 git branch -d feature/participant_roles_facade
 ```
 Apply anything you have stashed - `git stash apply`
+
+
+## [Bundler](https://bundler.io/)
+
+`bundle open <gem>`
+http://bundler.io/v1.10/bundle_open.html
+>Opens the source directory of the given bundled gem
+
+`bundle pristine <gem>`
+https://bundler.io/v1.15/man/bundle-pristine.1.html
+>Restores installed gems to their pristine condition
