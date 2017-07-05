@@ -181,6 +181,7 @@ To get rid of a stash:
 `git stash drop stash@{3}` specific one
 
 Stash untacked files:
+`git stash --include-untracked`
 `git stash -u`
 >Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
 https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work
