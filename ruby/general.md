@@ -294,3 +294,9 @@ https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
 
 ## Patterns
 [Decorators, Presenters, Delegators and Rails](https://robertomurray.co.uk/blog/2014/decorators-presenters-delegators-rails/)
+
+
+## Using `try()`
+[try(), try() again in Rails](https://everydayrails.com/2011/04/28/rails-try-method.html)
+[Do, or do not. There is no #try.](http://www.virtuouscode.com/2011/06/28/do-or-do-not-there-is-no-try/)
+[Demeter: It’s not just a good idea. It’s the law.](http://www.virtuouscode.com/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/)
