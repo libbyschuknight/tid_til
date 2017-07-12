@@ -333,3 +333,18 @@ Raquel Moss - #tech-links FlickElectric
 [Fuzzy Finder](https://github.com/junegunn/fzf)
 
 - fzf is a general-purpose command-line fuzzy finder
+
+
+## Things
+### Get Date and Time
+
+```bash
+date
+# Wed 12 Jul 2017 14:46:27 NZST
+
+date +"%T"
+# 14:46:52
+```
+
+[Linux: Bash Get Time](https://www.cyberciti.biz/faq/unix-linux-bash-get-time/)
+[Display Date And Time In Linux](https://www.cyberciti.biz/faq/linux-display-date-and-time/)
