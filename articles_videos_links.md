@@ -12,6 +12,8 @@
 
 ### Ruby
 
+[How to avoid inheritance in Ruby?](http://mjk.space/how-to-avoid-inheritance-in-ruby/)
+
 [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
 
 [101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids)
@@ -35,6 +37,8 @@
 [10 Ruby on Rails Best Practices](https://www.sitepoint.com/10-ruby-on-rails-best-practices-3/)
 
 [Ubiquitous Language & the joy of naming](http://blog.carbonfive.com/2016/10/04/ubiquitous-language-the-joy-of-naming/)
+
+
 
 ##### Security
 
