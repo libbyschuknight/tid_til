@@ -59,3 +59,25 @@ list.max # 5
 
 list.minmax # [1, 5]
 ```
+
+
+## transform_values / transform_keys
+ActiveSupport
+
+Following a post about this:
+
+```ruby
+hash = { :a => 1, :b => 2, :c => 3 }
+hash.merge(hash) {|k,v| v*2 } # => {:a=>2, :b=>4, :c=>6}
+```
+
+Another post was this:
+ActiveSupport also has `transform_values` and `transform_keys`
+
+```ruby
+{ a: 1, b: 2, c: 3 }.transform_values { |x| x * 2 } # => { a: 2, b: 4, c: 6 }
+```
+
+https://apidock.com/rails/v4.2.7/Hash/transform_values
+
+https://apidock.com/rails/v4.2.7/Hash/transform_keys
