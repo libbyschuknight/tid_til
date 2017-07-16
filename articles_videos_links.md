@@ -1,5 +1,15 @@
 # Articles and Links
 
+## Culture / People / Team
+
+[The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
+
+
+
+
+## Stuff
+
+
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
 [Sideways Dictionary](https://sidewaysdictionary.com/#/term/api)
