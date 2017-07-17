@@ -40,10 +40,6 @@ end
 
 
 
-
-
-
-
 #### Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
@@ -257,3 +253,9 @@ When using [`save_and_open_page`](https://www.stefanwille.com/2010/12/printing-t
 config.assets.debug = true
 config.action_controller.asset_host = "http://localhost:6001"
 ```
+
+## Unit tests
+
+After having a chat with Sam about testing and unit tests.
+
+![unit testing](testing.jpg)
