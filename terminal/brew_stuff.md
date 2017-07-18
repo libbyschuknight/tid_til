@@ -12,3 +12,17 @@
  brew info <package>    # will show the info from when installed, can be useful for postgres start / stop commands
 
  ```
+
+
+# What I have installed at work
+
+brew list
+```
+ack         git         pcre          rbenv               tree
+autoconf    graphviz    phantomjs     readline            v8
+exercism    htop        pkg-config    ruby-build          xz
+fzf         libpng      postgresql    sqlite              yarn
+gdbm        openssl     python        the_silver_searcher
+```
+
+`the_silver_searcher` aka `ag` - https://github.com/ggreer/the_silver_searcher
