@@ -163,7 +163,7 @@ This shows the files that have been committed, which can be useful if the commit
 how to see what you have stashed
 ```bash
 git stash list
-git stash show -p
+git stash show -p # this shows the diff
 git stash show -p stash@{3}
 ```
 

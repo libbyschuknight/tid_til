@@ -68,3 +68,22 @@ fruit_data.each do |fruit|
  fruit.mark_as_processed!
 end
 ```
+
+
+### Instead of lots of `||`'s
+
+```ruby
+def payments_tab(controller)
+  controller == "payment_tasks" || controller == "payments" || controller == "dishonour_files"
+end
+```
+
+instead could do
+
+```ruby
+PAYMENTS_SECTION = %w(payment_tasks payments dishonour_files).freeze
+
+def payments_tab(controller)
+  PAYMENTS_SECTION.include?(controller)
+end
+```
