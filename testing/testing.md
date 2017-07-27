@@ -1,5 +1,7 @@
 # Testing - general
 
+[Tips to improve speed of your test suite](https://medium.com/appaloosa-store-engineering/tips-to-improve-speed-of-your-test-suite-8418b485205c)
+
 ## Four Phase Test Pattern
 
 Reminded about from here https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187
