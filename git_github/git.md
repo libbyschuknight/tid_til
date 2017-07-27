@@ -188,6 +188,35 @@ https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work
 
 
 
+## Error when trying to apply a stash
+Early I had an error when upon searching the suggestion was to do this:
+`Normally closing git program and re open will fix this issue` or `rm -f ./.git/index.lock`
+
+https://stackoverflow.com/questions/38004148/another-git-process-seems-to-be-running-in-this-repository
+
+I tried the second suggestion.
+
+Then when I tried to apply a stash got this:
+
+```bash
+error: Your local changes to the following files would be overwritten by merge:
+	spec/features/generate_invoices_spec.rb
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: Unable to create '/Users/libby/Code/payments/.git/MERGE_RR.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+```
+
+Re-read over the above stack overflow answer and closed terminal window, re-opened and the `git stash apply` worked fine!
+
+
+
+
 ### git rebase
 
 ```bash
