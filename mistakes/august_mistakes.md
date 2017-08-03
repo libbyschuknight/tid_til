@@ -75,3 +75,33 @@ module ChargeSourcesService
   end
 end
 ```
+
+## Mounting controller in Ruby Grape API
+
+Added new controller but forgot to mount it in the `root_controller`
+
+```ruby
+require ... things
+require_relative "../../stuffs/controllers/stuffs_controller"
+
+module Billing
+  class RootController < Grape::API
+    use Rollbar::Middleware::Sinatra
+
+    APP_NAME = "billing"
+
+    format       :json
+    formatter    :json, Grape::Formatter::Roar
+    content_type :json, "application/vnd.flick+json"
+    prefix       ENV['MOUNTED_AT']
+    version      "v1", using: :header, vendor: "flick"
+
+    before do
+      header["Access-Control-Allow-Origin"]   = "*"
+      header["Access-Control-Request-Method"] = "*"
+    end
+
+    mount Billing::StuffsController
+  end
+end
+```
