@@ -78,13 +78,26 @@ end
 
 ## Mounting controller in Ruby Grape API
 
+Was getting this error in a test:
+
+```bash
+1) Stuffs::StuffsController retrieving charge sources unauthorized returns an error
+     Failure/Error: response_json = JSON.parse(last_response.body)
+
+     JSON::ParserError:
+       784: unexpected token at '404 Not Found'
+     # ./spec/api/lib/stuffs/controllers/stuffs_controller_spec.rb:14:in `block (4 levels) in <module:Stuffs>'
+     # ./spec/support/test_within_transaction.rb:4:in `block (3 levels) in <top (required)>'
+     # ./spec/support/test_within_transaction.rb:4:in `block (2 levels) in <top (required)>'
+```
+
 Added new controller but forgot to mount it in the `root_controller`
 
 ```ruby
 require ... things
 require_relative "../../stuffs/controllers/stuffs_controller"
 
-module Billing
+module Stuffs
   class RootController < Grape::API
     use Rollbar::Middleware::Sinatra
 
@@ -101,7 +114,7 @@ module Billing
       header["Access-Control-Request-Method"] = "*"
     end
 
-    mount Billing::StuffsController
+    mount Stuffs::StuffsController
   end
 end
 ```
