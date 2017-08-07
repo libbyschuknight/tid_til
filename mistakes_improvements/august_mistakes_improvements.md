@@ -1,4 +1,4 @@
-# August Mistakes
+# August Mistakes & Improvements
 
 Got this idea from organiser of https://twitter.com/SheNomads
 - https://gist.github.com/LNA/3f66ec30e299289cb96ce1dea7a31a45
@@ -154,4 +154,164 @@ Finished in 0.14194 seconds (files took 3.92 seconds to load)
 Failed examples:
 
 rspec ./spec/api/lib/charge_sources/controllers/charge_source_controller_spec.rb:29 # Billing::ChargeSourcesController retrieving charge sources authorised returns the expected json
+```
+
+## Handling null value
+Question in code review - "Do we need to handle the case in which these are null?"
+
+Code was:
+
+```js
+function makeTableRow(data, target) {
+  var number = data["records"]["total"].toLocaleString(); // could be no total
+  var processed = data["records"]["processed"].toLocaleString(); //could be no processed
+
+  $(target).html(
+    '<tr>' +
+      '<td></td>' +
+      '<td colspan="2">Number of records: ' + number + '</td>' +
+      '<td></td>' +
+      '<td></td>' +
+    '</tr>' +
+    '<tr>' +
+      '<td></td>' +
+      '<td colspan="2">Number of processed records: ' + processed + '</td>' +
+      '<td></td>' +
+      '<td></td>' +
+    '</tr>'
+  );
+}
+```
+
+What I changed to:
+
+```js
+function makeTableRow(data, target) {
+  var records = data['records'];
+  var total = records['total'];
+  var processed = records['processed'];
+  if (total && processed) {
+    var total_string = total.toLocaleString();
+    var processed_string = processed.toLocaleString();
+    constructHtml(target, total_string, processed_string);
+  } else {
+    var url = data["_links"]["self"]["href"];
+    displayError('Oh no! Not all the details could be retrieved for: ', url, target);
+  }
+}
+
+function constructHtml(target, total_string, processed_string) {
+  $(target).html(
+    '<tr>' +
+    '<td></td>' +
+    '<td colspan="2">Number of records: ' + total_string + '</td>' +
+    '<td></td>' +
+    '<td></td>' +
+    '</tr>' +
+    '<tr>' +
+    '<td></td>' +
+    '<td colspan="2">Number of processed records: ' + processed_string + '</td>' +
+    '<td></td>' +
+    '<td></td>' +
+    '</tr>'
+  );
+}
+```
+
+So, if there is no `total` or `processed`, will return an error message to the view.
+
+
+## Add in Result object to handle success
+
+Was this:
+
+```ruby
+def self.delete_source(id:, source_deleter: self)
+  path = "#{resource_path}/#{id}"
+  source_deleter.delete(path)
+rescue RequestError, ResourceError => error
+  Rollbar.error(error)
+  raise SourceError, "Source deletion error."
+end
+```
+
+And the class that was calling this was doing:
+
+```ruby
+def self.delete(id:)
+  response = Something::Resources::Source.delete_source(id: id)
+  response == 200 ? true : false
+end
+```
+
+Changed to:
+
+```ruby
+Result = Struct.new(:code) do
+  def success?
+    code == 200
+  end
+end
+
+def self.delete_source(id:, source_deleter: self)
+  path = "#{resource_path}/#{id}"
+  Result.new(source_deleter.delete(path))
+rescue RequestError, ResourceError => error
+  Rollbar.error(error)
+  raise SourceError, "Source deletion error."
+end
+```
+
+and
+
+```ruby
+def self.delete(id:)
+  response = Something::Resources::Source.delete_source(id: id)
+  response.success?
+end
+```
+
+
+## Using RESTful routes instead of adding others
+
+Had:
+
+```ruby
+resources :charge_sources, only: [:index, :show, :destroy] do
+  collection do
+    get "detailed_view" => "charge_sources#show"
+  end
+end
+```
+
+Changed to:
+```ruby
+resources :charge_sources, only: [:index, :show, :destroy]
+```
+
+Action is called via click and ajax call, in view is:
+
+
+```erb
+<table class="highlight accordion" data-detailed-view="<%= Base64.urlsafe_encode64(charge_source.links[:detailed_view].href) %>">
+```
+
+Encoded the url/href here so that the server would not try to just add it to the end of the show action.
+
+It was trying to do this:
+
+```
+ActionController::RoutingError (No route matches [GET] "/charge_sources/something/charge_sources/bd28b37e-2dc2-46a8-86c8-3e80b4fd6afe/detailed_view"):
+```
+
+With the encoding and then decoding in the controller it now is this:
+
+```
+Started GET "/charge_sources/L2JpbGxpbmcvY2hhcmdlX3NvdXJjZXMvYmQyOGIzN2UtMmRjMi00NmE4LTg2YzgtM2U4MGI0ZmQ2YWZlL2RldGFpbGVkX3ZpZ
+```
+
+The decoding in the controller:
+
+```ruby
+link = Base64.urlsafe_decode64(params[:id])
 ```
