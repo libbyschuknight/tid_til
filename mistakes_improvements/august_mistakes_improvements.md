@@ -315,3 +315,21 @@ The decoding in the controller:
 ```ruby
 link = Base64.urlsafe_decode64(params[:id])
 ```
+
+
+## Query.sql / Ruby
+
+Reminders
+
+```bash
+$ FileData.order(:total).limit(5).sql
+=> SELECT * FROM \"file_data\" ORDER BY \"total\" LIMIT 5" "
+```
+
+```bash
+FileData.order(:total).limit(5).collect { |record| record.total }
+
+# same as
+
+FileData.order(:total).limit(5).collect(&:total)
+```
