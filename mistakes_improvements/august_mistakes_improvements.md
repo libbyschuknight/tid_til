@@ -323,13 +323,56 @@ Reminders
 
 ```bash
 $ FileData.order(:total).limit(5).sql
-=> SELECT * FROM \"file_data\" ORDER BY \"total\" LIMIT 5" "
+=> SELECT * FROM \"file_data\" ORDER BY \"total\" LIMIT 5
 ```
 
-```bash
+```ruby
 FileData.order(:total).limit(5).collect { |record| record.total }
 
 # same as
 
 FileData.order(:total).limit(5).collect(&:total)
+```
+
+
+## Hashes!!
+Small things, difference between writing a hash like this:
+
+```ruby
+params = { "id" => "1224" }
+
+params["id"] == "1224"
+
+# but
+
+params[:id] == nil
+
+# where as
+
+params = { id: "1224" }
+
+params[:id] == "1224"
+```
+
+Issue I came across in RSpec test. Something to remember!
+
+
+## Testing in Rspec with Sequel vs ActiveRecord
+
+Was doing an `allow`:
+
+```ruby
+allow(InvoiceSourceImport).to receive(:find).with(id).and_return(header_import)
+
+# but getting this error
+
+<Billing::InvoiceSourceImport (class)> received :find with unexpected arguments
+   expected: ("95c11a2c-438e-44dd-b27d-e9acac63d99f")
+        got: ({:id=>"95c11a2c-438e-44dd-b27d-e9acac63d99f"})
+```
+
+Collegue pointed out the the Sequel `find` method takes `id` as an argument, so need to do:
+
+```ruby
+allow(InvoiceSourceImport).to receive(:find).with(id: "id").and_return(header_import)
 ```
