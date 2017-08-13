@@ -4,6 +4,11 @@
 
 [The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
 
+[Put your paddle in the air](https://blog.figure.nz/put-your-paddle-in-the-air-28eee39648ef)
+
+[Figure NZ - Our kaupapa: raise a paddle](http://tohu.figure.nz/internal/our_kaupapa/#raise-a-paddle)
+
+[Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
 
 
