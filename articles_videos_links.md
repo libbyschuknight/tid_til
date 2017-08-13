@@ -10,10 +10,10 @@
 
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
+[Let Me Google That for You](http://bridgetkromhout.com/blog/2015/05/31/let-me-google-that-for-you/)
 
 
 ## Stuff
-
 
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
