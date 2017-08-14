@@ -371,8 +371,24 @@ allow(InvoiceSourceImport).to receive(:find).with(id).and_return(header_import)
         got: ({:id=>"95c11a2c-438e-44dd-b27d-e9acac63d99f"})
 ```
 
-Collegue pointed out the the Sequel `find` method takes `id` as an argument, so need to do:
+Colleague pointed out the the Sequel `find` method takes `id` as an argument, so need to do:
 
 ```ruby
 allow(InvoiceSourceImport).to receive(:find).with(id: "id").and_return(header_import)
 ```
+
+## Sequel - using `dataset`
+
+Wanting to get the number of records from an association, was doing:
+
+```ruby
+InvoiceSource.csv_records.count
+```
+But was taking like 20 secs +, as was making each one a ruby object and putting into an array.
+
+So, this is much quicker (does it almost instantly):
+
+```ruby
+InvoiceSource.csv_records_dataset.count
+```
+In cases like this I need to try and remember to "think" like a computer or at least think about how quickly a computer does stuff and/or how quickly sql can do stuff as well.
