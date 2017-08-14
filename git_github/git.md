@@ -331,3 +331,58 @@ enter password and then:
 `Identity added: /Users/libby/.ssh/id_rsa (/Users/libby/.ssh/id_rsa)`
 
 Hoping this has fixed it!
+
+
+## `git cherry-pick` from one local repo to another
+
+Had cloned straight from the Ruby NZ www repo (dir: branch) and made changes in a branch:
+
+` ~/Projects/open_source/www: resolve-register_of_ruby_companies`
+
+Found out (before I tried to push anything) I should have forked the repo, added a branch to my fork and then made a pull request.
+
+So, I needed to be able to copy the commits from
+
+` ~/Projects/open_source/www: resolve-register_of_ruby_companies`
+
+to the forked repo I had made:
+
+` ~/Projects/open_source/forked/www: gh-pages`
+
+Found this [~/Git cherry-pick from another repository](http://bendetat.com/git-cherry-pick-from-another-repository.html)
+
+First things first is making the ` ~/Projects/open_source/www: resolve-register_of_ruby_companies` a local remote in the ` ~/Projects/open_source/forked/www: gh-pages`.
+
+```bash
+~/Projects/open_source/forked/www: gh-pages                      # working copy
+~/Projects/open_source/www: resolve-register_of_ruby_companies   #copy with the commit I need
+```
+
+
+```bash
+~/Projects/open_source/forked/www: gh-pages>$ git remote add localcopy ../../www
+```
+
+```bash
+$ git remote -v
+
+localcopy	../../www (fetch)
+localcopy	../../www (push)
+origin	git@github.com:libbyschuknight/www.git (fetch)
+origin	git@github.com:libbyschuknight/www.git (push)
+```
+
+Then doing `git fetch localcopy` gave this:
+
+```bash
+remote: Counting objects: 29, done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 29 (delta 19), reused 3 (delta 0)
+Unpacking objects: 100% (29/29), done.
+From ../../www
+ * [new branch]      gh-pages                -> localcopy/gh-pages
+ * [new branch]      register-of-companies   -> localcopy/register-of-companies
+ * [new branch]      resolve-register_of_ruby_companies -> localcopy/resolve-register_of_ruby_companies
+ ```
+
+Then was able to `cherry-pick` which commits I wanted to move from one to the other.
