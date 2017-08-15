@@ -26,6 +26,8 @@ A haml file was coming up in plain text, searched for and found [`language-haml`
 
 `alt + cmd + =` - grows pane
 
+`ctrl + alt + t` - split diff, but make sure you have only one pane open before you do the split diff
+
 
 #### Tree View
 
