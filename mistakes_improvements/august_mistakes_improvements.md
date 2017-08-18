@@ -392,3 +392,41 @@ So, this is much quicker (does it almost instantly):
 InvoiceSource.csv_records_dataset.count
 ```
 In cases like this I need to try and remember to "think" like a computer or at least think about how quickly a computer does stuff and/or how quickly sql can do stuff as well.
+
+
+### Brackets or no brackets!!??
+
+In documentation for a http gem
+```ruby
+response = client.post "/path/to/resource", {
+  headers: { "Key" => "Value" }, # HTTP headers
+  query: { key: "value" }, # HTTP query string
+  body: { key: "value" }, # HTTP JSON body params
+  body: "string", # Raw HTTP post body,
+  timeout: 60, # seconds
+  max_retries: 10,
+  retry_interval: 5 # seconds
+}
+
+```
+
+I had:
+
+```ruby
+response = client.post(url)
+```
+to start with, but it was timing out so changed to:
+
+```ruby
+response = client.post(url), {
+  timeout: 60
+}
+```
+but that didn't work cos of the brackets! So, needed to change to:
+
+```ruby
+response = client.post(url, {
+  timeout: 60
+})
+```
+Remember that in Ruby you can have the brackets or not!
