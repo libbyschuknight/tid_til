@@ -10,6 +10,8 @@
 [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
 [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 
+[Markdown Tables Generator Facebook](http://www.tablesgenerator.com/markdown_tables) - useful for getting lines right for a table.
+
 
 ##### git fetch
 Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
