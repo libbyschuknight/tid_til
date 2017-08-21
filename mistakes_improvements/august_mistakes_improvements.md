@@ -430,3 +430,45 @@ response = client.post(url, {
 })
 ```
 Remember that in Ruby you can have the brackets or not!
+
+### Raising an exception in a RSpec spec
+
+Had this:
+
+```ruby
+let(:client) { instance_double("Http::ServiceAuthClient") }
+
+before(:each) do
+  allow(Http::ServiceAuthClient).to receive(:new).and_return(client)
+end
+
+it "raises an error" do
+  allow(client).to receive(:post).and_return(Http::PermanentError.new)
+
+  expect {
+    ReportCsvFetcher.fetch_report(url: "url")
+  }.to raise_error(ReportCsvFetcher::ReportError, "Report error. Please try again in a bit.")
+end
+```
+
+Was getting this from running the test:
+
+```bash
+1) Billing::ReportCsvFetcher fetch a csv string by url raises an error
+     Failure/Error:
+       expect {
+         ReportCsvFetcher.fetch_report(url: "url")
+       }.to raise_error(ReportCsvFetcher::ReportError, "")
+
+       expected Billing::ReportCsvFetcher::ReportError with "", got #<NoMethodError: undefined method `body' for #<FlickHttp::PermanentError: FlickHttp::PermanentError>> with backtrace:
+         # ./app/services/billing/report_csv_fetcher.rb:10:in `fetch_report'
+         # ./spec/services/billing/report_csv_fetcher_spec.rb:27:in `block (4 levels) in <module:Billing>'
+         # ./spec/services/billing/report_csv_fetcher_spec.rb:26:in `block (3 levels) in <module:Billing>'
+     # ./spec/services/billing/report_csv_fetcher_spec.rb:26:in `block (3 levels) in <module:Billing>'
+```
+
+Got another pair of eyes to look over it and I was doing `and_return` instead of `and_raise`! Doh!
+
+```ruby
+allow(client).to receive(:post).and_raise(Http::PermanentError.new)
+```
