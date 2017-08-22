@@ -494,3 +494,42 @@ Response.new(response_body, filename)
 response.filename
 response.body
 ```
+
+#### Testing the raising of an exception
+
+This is what I had...
+
+```ruby
+it "returns an error when not successful" do
+  report_error = ReportCsvFetcher::ReportError
+  allow(ReportCsvFetcher).to receive(:fetch_report).and_return(report_error)
+  result = ReportsService.download_billing_report(start_date: "2017-08-22")
+  expect(result).to eq(report_error)
+end
+```
+
+...but was getting this error...
+
+```bash
+Failures:
+
+  1) Billing::ReportsService fetching the billing report returns an error when not successful
+     Failure/Error: response_body = Billing::ReportCsvFetcher.fetch_report(url: url)
+
+     Billing::ReportCsvFetcher::ReportError:
+       Billing::ReportCsvFetcher::ReportError
+     # ./app/services/billing/reports_service.rb:12:in `download_billing_report'
+     # ./spec/services/billing/reports_service_spec.rb:17:in `block (3 levels) in <module:Billing>'
+```
+
+...then realised that I needed to do this...
+
+```ruby
+it "returns an error when not successful" do
+  report_error = ReportCsvFetcher::ReportError
+  allow(ReportCsvFetcher).to receive(:fetch_report).and_raise(report_error)
+  expect {
+    ReportsService.download_billing_report(start_date: "2017-08-22")
+  }.to raise_error(report_error)
+end
+```
