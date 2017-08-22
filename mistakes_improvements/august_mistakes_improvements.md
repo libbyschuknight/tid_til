@@ -472,3 +472,25 @@ Got another pair of eyes to look over it and I was doing `and_return` instead of
 ```ruby
 allow(client).to receive(:post).and_raise(Http::PermanentError.new)
 ```
+
+### Using Struct
+Had a method that was returning this:
+
+```ruby
+{ filename: filename, body: response_body }
+```
+
+And what was using it would have to do `result[:filename]`.
+
+Chatted with colleague and decided to use a `Struct`
+
+```ruby
+Response = Struct.new(:body, :filename)
+
+# method does
+Response.new(response_body, filename)
+
+# then can be accessed by
+response.filename
+response.body
+```
