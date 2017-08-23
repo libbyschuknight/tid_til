@@ -533,3 +533,68 @@ it "returns an error when not successful" do
   }.to raise_error(report_error)
 end
 ```
+
+
+### Testing with Time!
+
+Method:
+
+```ruby
+def self.build_url(start_date:)
+  raise DateError, "Date is blank. Try again." if start_date.blank?
+  start_time = Time.parse(start_date).utc.iso8601
+  invoiced_at = "?invoiced_at=#{start_time}"
+  URI.join(ENV["FLICK_BILLING_HOST"], BILLING_REPORT_PATH, invoiced_at)
+end
+ ```
+
+ Spec:
+
+```ruby
+it "returns a url when successful" do
+  uri = URI("http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-21T12:00:00Z")
+  result = ReportsService.build_url(start_date: "2017-08-22")
+  expect(result).to eq(uri)
+end
+```
+
+Was failing in Travis (not locally), due to time difference:
+
+```bash
+1) Billing::ReportsService building the url returns a url when succssful
+    Failure/Error: expect(result).to eq(uri)
+
+      expected: #<URI::HTTP http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-21T12:00:00Z>
+           got: #<URI::HTTP http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-22T00:00:00Z>
+
+      (compared using ==)
+
+      Diff:
+      @@ -1,2 +1,2 @@
+      -#<URI::HTTP http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-21T12:00:00Z>
+      +#<URI::HTTP http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-22T00:00:00Z>
+```
+
+Changed method to use `Time.zone`
+
+```ruby
+def self.build_url(start_date:)
+  raise DateError, "Date is blank. Try again." if start_date.blank?
+  start_time = Time.zone.parse(start_date).utc.iso8601
+  invoiced_at = "?invoiced_at=#{start_time}"
+  URI.join(ENV["FLICK_BILLING_HOST"], BILLING_REPORT_PATH, invoiced_at)
+end
+```
+
+Then in spec set the `Time.zone = "Pacific/Auckland"`
+
+```ruby
+it "returns a url when successful" do
+  Time.zone = "Pacific/Auckland"
+  uri = URI("http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-21T12:00:00Z")
+  result = ReportsService.build_url(start_date: "2017-08-22")
+  expect(result).to eq(uri)
+end
+```
+
+Tests go green!!

@@ -30,7 +30,7 @@ Different number of lines, pass the `-n` flag
 `grep -i -v rails tid.md` - finds all lines with rails or Rails in it
 
 
- With `ls`, can list what is inside a directoy:
+ With `ls`, can list what is inside a directory:
 
  `ls rails` - will show all files and directories
 
