@@ -119,6 +119,9 @@ allow(Time).to receive(:now).and_return(Time.parse('2016-03-02'))
 Needed to use `Time.utc(2016, 8, 1, 14, 34, 56)`, otherwise was failing on Travis due to different timezones.
 
 
+Also see # August Mistakes & Improvements - Testing with Time
+
+
 #### Using Doubles
 
 ```ruby
