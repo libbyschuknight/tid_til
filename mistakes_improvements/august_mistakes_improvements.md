@@ -598,3 +598,52 @@ end
 ```
 
 Tests go green!!
+
+
+##### `.fetch`
+
+Use `ENV.fetch("FLICK_BILLING_HOST")` instead of just doing `ENV["FLICK_BILLING_HOST"]`, so things fail loudly!
+
+
+### submit tag vs button tag
+
+Had this:
+
+```ruby
+<%= submit_tag "Generate Report", class: "green" %">"
+```
+But once the button was clicked the button stayed disabled, which I didn't think was the behaviour we wanted.
+
+So changed to:
+
+```ruby
+<%= button_tag "Generate Report", class: "green"">"
+```
+When this one is clicked, still clickable once stuff has happened.
+
+In code review, I mentioned why I had changed and got some good feedback and change to:
+
+```ruby
+<%= submit_tag "Generate Report", class: "green", data: {
+      confirm: "✨ FYI This might take a while and you might have to retry a second time. Soz. ✨",
+      disable_with: "⌛️ Please wait for about 1 minute or 3 or refresh and try again... ⌛️"
+    }
+%">"
+```
+So, this acutally pops up a dialog window and then the text in the button changes! Works well for what we want!
+
+
+#### Using regex
+
+Instead of using two expects like this:
+
+```ruby
+expect(headers).to include("billing_report_20170816_")
+expect(headers).to include(".csv")
+```
+
+Use regex matcher and do this:
+
+```ruby
+expect(headers).to match(/billing_report_20170816_.+\.csv/)
+```
