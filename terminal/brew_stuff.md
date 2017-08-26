@@ -26,3 +26,19 @@ gdbm        openssl     python        the_silver_searcher
 ```
 
 `the_silver_searcher` aka `ag` - https://github.com/ggreer/the_silver_searcher
+
+
+### What I have installed at home (as of 26/8/2017)
+
+```
+ack       exercism      heroku-toolbelt     libksba     little-cms2
+node      postgresql    sqlite              xz          autoconf
+freetype  hunspell      libpng              mariadb     openssl
+python    tree          zsh                 automake    gdbm
+icu4c     libtiff       mcrypt              pcre        python3
+unixodbc  brew-cask     gettext             imagemagick libtool
+mhash     php55         rbenv               watchman    elixir
+git       jpeg          libxml2             minicom     php55-mcrypt
+readline  webp          erlang              heroku      libgpg-error
+libyaml   mysql         pkg-config          ruby-build  wxmac
+```

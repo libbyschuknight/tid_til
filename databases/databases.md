@@ -1,5 +1,12 @@
 # Databases - general stuff
 
+#### Activerecord
+
+[Active record pattern](https://en.wikipedia.org/wiki/Active_record_pattern)
+
+>In software engineering, the active record pattern is an architectural pattern found in software that stores in-memory object data in relational databases. It was named by Martin Fowler in his 2003 book Patterns of Enterprise Application Architecture.[1] The interface of an object conforming to this pattern would include functions such as Insert, Update, and Delete, plus properties that correspond more or less directly to the columns in the underlying database table.
+
+
 #### Migrations
 
 In regard to taking out a column from db, remove all reference to the column FIRST in your code. Once you have done that, then remove the column via a migration. In particular if you are doing this on a live production site.
@@ -104,10 +111,6 @@ create(sports_id: sports_id, type: "running", data: params)
 
 
 [ACID](https://en.wikipedia.org/wiki/ACID)
-
-
-
-[Differences between transactions and locking](https://makandracards.com/makandra/31937-differences-between-transactions-and-locking)
 
 
 ### Locking
