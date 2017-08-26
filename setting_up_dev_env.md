@@ -11,9 +11,11 @@ Download Xcode
 xcode app - from app store
 
 brew
+
 xcode command line -  should be installed  from xcode app
 
 zsh - or use bash, up to you
+
 on-my-zsh - if using zsh
 
 ruby build & rbenv - https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
@@ -26,12 +28,18 @@ text editor - you choose, other devs using atom, vim, sublime
 postgres - install with brew and follow instructions
 
 gems
+
 bundler
+
 rails
-then run command rbenv rehash
+
+then run command `rbenv rehash`
+
 
 iterm2
+
 chrome
+
 slack
 
 
