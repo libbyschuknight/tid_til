@@ -561,7 +561,7 @@ end
 Was failing in Travis (not locally), due to time difference:
 
 ```bash
-1) Billing::ReportsService building the url returns a url when succssful
+1) Billing::ReportsService building the url returns a url when successful
     Failure/Error: expect(result).to eq(uri)
 
       expected: #<URI::HTTP http://localhost:9292/billing/billing_reports.csv?invoiced_at=2017-08-21T12:00:00Z>
@@ -598,6 +598,20 @@ end
 ```
 
 Tests go green!!
+
+Further note:
+The above worked, but in code review, it was suggested that we don't really want to be setting `Time.zone = "Pacific/Auckland"` in the spec.
+
+I goggled some stuff and had a better look at how timezone was being used in the app and removed `Time.zone = "Pacific/Auckland"` from the test and
+changed this line in the method:
+
+`start_time = Time.zone.parse(start_date).utc.iso8601`
+
+to
+
+`start_time = start_date.in_time_zone.utc.iso8601`
+
+And the tests pass locally and on Travis.
 
 
 ##### `.fetch`
