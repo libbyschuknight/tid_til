@@ -163,6 +163,13 @@ This shows the files that have been committed, which can be useful if the commit
 
 
 ### git stash
+
+Add a name when you are stashing:
+
+```bash
+git stash save useful name here
+```
+
 how to see what you have stashed
 ```bash
 git stash list
@@ -190,7 +197,6 @@ Stash untacked files:
 https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work
 
 
-
 ## Error when trying to apply a stash
 Early I had an error when upon searching the suggestion was to do this:
 `Normally closing git program and re open will fix this issue` or `rm -f ./.git/index.lock`
@@ -216,8 +222,6 @@ remove the file manually to continue.
 ```
 
 Re-read over the above stack overflow answer and closed terminal window, re-opened and the `git stash apply` worked fine!
-
-
 
 
 ### git rebase
@@ -335,6 +339,14 @@ enter password and then:
 
 Hoping this has fixed it!
 
+
+## `git cherry-pick`
+
+Make sure you are on the branch you want to add the commit to:
+
+```bash
+git cherry-pick <commit-hash>
+```
 
 ## `git cherry-pick` from one local repo to another
 
