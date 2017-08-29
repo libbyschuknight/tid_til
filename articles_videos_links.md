@@ -39,6 +39,10 @@
 
 ### Rails
 
+[The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)
+
+[How Rails handles status codes](http://ieftimov.com/how-rails-handles-status-codes)
+
 ##### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)

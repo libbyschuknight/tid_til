@@ -48,3 +48,36 @@ And will show as `01 June 2017`
 
 ### Using `capture`
 [Using concat and capture to clean up custom Rails helpers](https://thepugautomatic.com/2013/06/helpers/)
+
+
+## Buttons / Links
+
+[Rails' default HTTP methods for button_to and link_to helpers](https://cardoni.net/rails-button-to-vs-link-to-url-helpers/)
+
+Case in point, was doing this:
+
+`<%= button_tag "Refresh page", billing_reports_path, class: "green" %>`
+
+Only wanted it to redirect to a page but it kept wanting to create something because the actual html is:
+
+```html
+<form class="button_to" method="post" action="/billing_reports">
+  <input class="green" type="submit" value="Refresh page">
+  <input type="hidden" name="authenticity_token" value="xyz">
+</form>
+```
+
+Whereas if you do:
+
+`<%= button_to "Refresh page", billing_reports_path, method: :get, class: "green" %>`
+
+you get:
+
+```html
+<form class="button_to" method="get" action="/billing_reports">
+  <input class="green" type="submit" value="Refresh page">
+</form>
+```
+
+
+## 

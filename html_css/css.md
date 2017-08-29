@@ -23,3 +23,20 @@ Will add code when completed, and images.
 ### !important
 
 [When Using !important is The Right Choice](https://css-tricks.com/when-using-important-is-the-right-choice/)
+
+
+
+## Truncating
+
+Had a long file name ` FLCK_E_FLCK_YINVHDR_201610_20170828_095206_19700101000000.csv` and when making the page smaller, got it overlapping with other text, so doing the below, got ` FLCK_E_FLCK_YINVHDR_201610_2017...` and no overlapping! 😁
+
+```css
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
+
+And in my case added `padding-right: 2em;`, as had another class adding `width: 35%;`, which was overriding the `width: 250px;` and I wanted some white space on the right.
