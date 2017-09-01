@@ -289,14 +289,67 @@ ri File#each_line
 https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
 
 [advantage of tap method in ruby](http://stackoverflow.com/questions/17493080/advantage-of-tap-method-in-ruby)
+
 [Understanding tap in Ruby](http://stackoverflow.com/questions/25191805/understanding-tap-in-ruby)
 
 
 ## Patterns
 [Decorators, Presenters, Delegators and Rails](https://robertomurray.co.uk/blog/2014/decorators-presenters-delegators-rails/)
 
+[Using SimpleDelegator for your Decorators](https://hashrocket.com/blog/posts/using-simpledelegator-for-your-decorators)
+
+An example:
+
+```ruby
+class ChargeBatchDecorator < SimpleDelegator
+  def self.wrap(collection)
+    collection.map do |object|
+      new(object)
+    end
+  end
+
+  def completed?
+    status == "completed"
+  end
+
+  def processing?
+    status == "processing"
+  end
+
+  def failed?
+    status == "failed"
+  end
+
+  def status_icon
+    if completed?
+      "✅"
+    elsif processing?
+      "⚠️"
+    elsif failed?
+      "❌"
+    else
+      "❓"
+    end
+  end
+end
+```
+
+The object in this case being an OpenStruct:
+
+```ruby
+ChargeBatch {
+             :id => "549a3164-08b6-4c63-b603-e6464da83b20",
+           :kind => "charge_batch",
+    :description => "FLCK_E_FLCK_YINVHDR_201610_20170807_152642_19700101000000.csv",
+    :upload_date => "2017-08-29T23:53:52Z",
+         :status => "completed"
+}
+```
+
 
 ## Using `try()`
 [try(), try() again in Rails](https://everydayrails.com/2011/04/28/rails-try-method.html)
+
 [Do, or do not. There is no #try.](http://www.virtuouscode.com/2011/06/28/do-or-do-not-there-is-no-try/)
+
 [Demeter: It’s not just a good idea. It’s the law.](http://www.virtuouscode.com/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/)

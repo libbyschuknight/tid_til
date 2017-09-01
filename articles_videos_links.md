@@ -37,6 +37,12 @@
 
 [Following the Path](https://robots.thoughtbot.com/following-the-path)
 
+
+#### Deeper Ruby stuff
+[Metaprogramming Ruby](https://rubymonk.com/learning/books/2-metaprogramming-ruby)
+
+[0.1 Yield](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/54-yield)
+
 ### Rails
 
 [The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)

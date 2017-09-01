@@ -87,3 +87,37 @@ def payments_tab(controller)
   PAYMENTS_SECTION.include?(controller)
 end
 ```
+
+
+###
+>Try to rely on asking objects their status rather than knowing anything about it yourself.
+
+Had this:
+
+```ruby
+def invoice_source_status(status)
+  if status == "completed"
+    "✅"
+  elsif status == "failed"
+    "❌"
+  else
+    "⚠️"
+  end
+end
+```
+
+to
+
+```ruby
+def status_to_icon(object)
+  if object.completed?
+    "✅"
+  elsif objecct.processing?
+    "⚠️"
+  elsif object.failed?
+    "❌"
+  else
+    "❓"
+  end
+end
+```
