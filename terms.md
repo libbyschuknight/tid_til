@@ -146,6 +146,12 @@ Idempotent
 >Idempotence (UK: /ˌɪdɛmˈpoʊtns/;[1] US: /ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[2] is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application.
 https://en.wikipedia.org/wiki/Idempotence
 
+StackOverFlow question - What is an idempotent operation?
+
+>An idempotent operation can be repeated an arbitrary number of times and the result will be the same as if it had been done only once. In arithmetic, adding zero to a number is idempotent.
+
+https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation/1077489#1077489
+
 
 
 Headless

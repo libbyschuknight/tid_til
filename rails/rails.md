@@ -3,7 +3,7 @@
 ### Upgrade
 http://guides.rubyonrails.org/upgrading_ruby_on_rails.html
 
-Update gemfile with verion of rails you want.
+Update gemfile with version of rails you want.
 
 When upgrading an app from 5.0 to 5.1, running `bundle update rails`, got this:
 

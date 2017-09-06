@@ -27,6 +27,11 @@
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
 
+### Programming / Coding
+
+[The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
+[Rule of three (computer programming)](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
+
 ### Ruby
 
 [How to avoid inheritance in Ruby?](http://mjk.space/how-to-avoid-inheritance-in-ruby/)
@@ -36,6 +41,8 @@
 [101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids)
 
 [Following the Path](https://robots.thoughtbot.com/following-the-path)
+
+[Ruby’s Important Hook Methods](https://www.sitepoint.com/rubys-important-hook-methods/)
 
 
 #### Deeper Ruby stuff
@@ -48,6 +55,8 @@
 [The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)
 
 [How Rails handles status codes](http://ieftimov.com/how-rails-handles-status-codes)
+
+[How DHH Organizes His Rails Controllers](http://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/)
 
 ##### Time
 
