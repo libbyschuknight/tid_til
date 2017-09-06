@@ -2,6 +2,8 @@
 
 **[My stared packages](https://atom.io/users/libbyschuknight/stars?direction=desc&page=1&sort=stars)**
 
+[Atom Flight Manual](http://flight-manual.atom.io/)
+
 ## Packages
 
 [The 8 best packages for GitHub's Atom Editor](https://www.customd.com/articles/36/the-8-best-packages-for-githubs-atom-editor)
@@ -48,3 +50,14 @@ TODO: upload PDF of shortcuts to google drive link here
 - `toggle panel`
 
 when turn things on and off.
+
+
+### Issues
+Have had an issue of not being able to open up one project for the last 2 days. It is a large project.
+But could open up other projects fine.
+
+What I do to open a project is from the terminal dir for that project do `a.`, which is an alias for `atom .`, which opens up the directiy in that programme.
+
+Came across this command in a coupe of places `atom --clear-window-state`, this opens up Atom, does something and then it was suggested to exit Atom again.
+
+Which I did and now it works! Yay!
