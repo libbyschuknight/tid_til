@@ -30,6 +30,7 @@
 ### Programming / Coding
 
 [The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
+
 [Rule of three (computer programming)](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
 
 ### Ruby
@@ -46,6 +47,7 @@
 
 
 #### Deeper Ruby stuff
+
 [Metaprogramming Ruby](https://rubymonk.com/learning/books/2-metaprogramming-ruby)
 
 [0.1 Yield](https://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/54-yield)
@@ -81,9 +83,11 @@
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
 ##### Routing
+
 [2.2 CRUD, Verbs, and Actions](http://guides.rubyonrails.org/routing.html#crud-verbs-and-actions)
 
 ##### Other...
+
 [Managing multiple Rails versions](https://relativkreativ.at/articles/managing-multiple-rails-versions)
 
 
@@ -94,9 +98,11 @@ http://guides.rubyonrails.org/engines.html
 [Gems vs Engines: Know the difference](https://samurails.com/ruby/gems-vs-engines-know-the-difference/)
 
 ### Other Code Stuff
+
 [Learn Strftime](http://learnstrftime.com/)
 
 ### Web Stuff
+
 [HTTP Status Cats API](https://http.cat/)
 
 [An Introduction to Using JWT Authentication in Rails](An Introduction to Using JWT Authentication in Rails)
@@ -121,14 +127,17 @@ http://guides.rubyonrails.org/engines.html
 
 
 ##### Tables
+
 [Organizing Data with Tables](http://learn.shayhowe.com/html-css/organizing-data-with-tables/)
 
 [A Complete Guide to the Table Element](https://css-tricks.com/complete-guide-table-element/#article-header-id-5)
 
 ### Git
+
 [Oh shit, git!](http://ohshitgit.com/)
 
 ### Javascript
+
 [7 Patterns to Refactor JavaScript Applications: View Objects](http://crushlovely.com/journal/7-patterns-to-refactor-javascript-applications-view-objects/)
 [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
 
@@ -150,6 +159,7 @@ http://guides.rubyonrails.org/engines.html
 
 
 ### String Stuff
+
 [Learn Strftime](http://learnstrftime.com/)
 http://strftime.net/
 
@@ -157,11 +167,13 @@ http://strftime.net/
 ### Dev Ops
 
 #### [Amazon Web Services](https://aws.amazon.com/)
+
 [A Comprehensive Guide to Building a Scalable Web App on Amazon Web Services - Part 1](https://www.airpair.com/aws/posts/building-a-scalable-web-app-on-amazon-web-services-p1)
 
 [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
 
 ### Time
+
 [Time.is UTCCoordinated Universal Time](https://time.is/UTC)
 
 
@@ -169,7 +181,9 @@ http://strftime.net/
 
 
 ### Human Drive Development / Culture
+
 [Human-Driven Development](https://www.youtube.com/watch?v=qcBol_s410k)
+
 Talk at Linux Conf Au by Aurynn Shaw
 
 Notes:
@@ -203,12 +217,15 @@ how do we help
 [Red-Green-Refactor by Example](https://thoughtbot.com/upcase/videos/red-green-refactor-by-example) - to watch
 
 ### Ruby
+
 [How to use Ruby’s English and/or operators without going nuts](How to use Ruby’s English and/or operators without going nuts)
 
 
 ### Rails
+
 [Validation, Database Constraint, or Both?](https://robots.thoughtbot.com/validation-database-constraint-or-both)
 
 # Podcasts
+
 [65: Free as in Puppy (Katrina Owen)](http://bikeshed.fm/65)
 > While at RailsConf, we talk with Katrina Owen about finding metaphors for software development, the successes and mistakes of Exercism.io, and the benefits of providing code reviews.
