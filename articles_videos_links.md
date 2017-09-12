@@ -14,6 +14,8 @@
 
 [Let Me Google That for You](http://bridgetkromhout.com/blog/2015/05/31/let-me-google-that-for-you/)
 
+[One-on-one catchups with your team](https://medium.com/@mogest/one-on-one-catchups-with-your-team-4d84219d59ce)
+
 
 ## Stuff
 
@@ -27,11 +29,15 @@
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
 
+
 ### Programming / Coding
 
 [The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
 
 [Rule of three (computer programming)](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
+
+[Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
+
 
 ### Ruby
 

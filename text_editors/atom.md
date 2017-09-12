@@ -15,7 +15,7 @@ Tick on `Show icons in editor gutter`, which will mean you get `+`, `-` etc in c
 A haml file was coming up in plain text, searched for and found [`language-haml`](https://atom.io/packages/language-haml), just installed this package and all sorted.
 
 
-## Shortcuts that I use a lot and like
+## Shortcuts
 
 `shft + ctrl + ↓` - will add cursor onto multiple lines, like using `cmd + click`
 
@@ -33,11 +33,14 @@ A haml file was coming up in plain text, searched for and found [`language-haml`
 
 #### Tree View
 
-`cmd-shift-\` to reveal the current file in the Tree View
+`cmd + shift + \` - to reveal the current file in the Tree View
+
 https://gist.github.com/chrissimpkins/5bf5686bae86b8129bee#atom_editor_view
 
-`Ctrl + 0` (zero) 	Toggle focus Tree View
+`Ctrl + 0` - Toggle focus Tree View
+
 https://www.shortcutworld.com/en/linux/Atom-(text-editor)_1.0.html _ (take off the `_)
+
 TODO: upload PDF of shortcuts to google drive link here
 
 
