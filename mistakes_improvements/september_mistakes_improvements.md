@@ -60,3 +60,18 @@ Asked for help on Ruby slack and got this reply:
 >might need to `bundle update mini_portile2` - https://rubygems.org/gems/nokogiri/versions/1.8.0 depends on version `~> 2.2.0`, but it looks like according to that stack trace `2.1.0` is in your Gemfile.lock
 
 And that was it, updated `mini_portile2` and all was good in the world!!
+
+
+#### Issue with AWS error
+
+```
+14:03:15 web.1  | Aws::SQS::Errors::InvalidClientTokenId - The security token included in the request is invalid.:
+```
+
+There were AWS credentials in the `.env` file and I added my to the `.env.development`, still got some error.
+
+Asked a collegue and I said I thought I had come cross this error before, we searched slack for `InvalidClientTokenId` and wouldn't you know it, found this:
+
+>So FYI for everyone else, wasn’t my creds that were wrong, in the `.env.test` there were other AWS creds that were wrong! Solving meant replacing test creds with mine, which meant at present the VCR recording has my creds in. Which I will remove before pushing anything to github and I will revert the creds in  `.env.test` '
+
+In this case it was the other creds in the `.env` file that were the probably.
