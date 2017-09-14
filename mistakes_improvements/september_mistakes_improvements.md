@@ -75,3 +75,22 @@ Asked a collegue and I said I thought I had come cross this error before, we sea
 >So FYI for everyone else, wasn’t my creds that were wrong, in the `.env.test` there were other AWS creds that were wrong! Solving meant replacing test creds with mine, which meant at present the VCR recording has my creds in. Which I will remove before pushing anything to github and I will revert the creds in  `.env.test` '
 
 In this case it was the other creds in the `.env` file that were the probably.
+
+
+### RSpec test error
+
+When get this error:
+
+```shell
+$ bundle exec rake db:test:prepare
+
+rake aborted!
+NoMethodError: undefined method `+' for nil:NilClass
+/Users/libby/code/customer_app/config/environment.rb:5:in `<top (required)>'
+/Users/libby/.rbenv/versions/2.2.3/bin/bundle:23:in `load'
+/Users/libby/.rbenv/versions/2.2.3/bin/bundle:23:in `<main>'
+Tasks: TOP => db:test:prepare => environment
+(See full trace by running task with --trace)
+```
+
+Was fixed by adding in a `.env.development` file.

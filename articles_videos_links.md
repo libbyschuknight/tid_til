@@ -72,7 +72,7 @@
 
 [It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
 
-##### Code Style / Structure
+### Code Style / Structure
 
 [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 
@@ -81,6 +81,13 @@
 [10 Ruby on Rails Best Practices](https://www.sitepoint.com/10-ruby-on-rails-best-practices-3/)
 
 [Ubiquitous Language & the joy of naming](http://blog.carbonfive.com/2016/10/04/ubiquitous-language-the-joy-of-naming/)
+
+
+### Architecture Patterns
+
+[REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
+
+[Micro Frontends: extending the microservice idea to frontend development](https://micro-frontends.org/)
 
 
 
@@ -138,14 +145,17 @@ http://guides.rubyonrails.org/engines.html
 
 [A Complete Guide to the Table Element](https://css-tricks.com/complete-guide-table-element/#article-header-id-5)
 
-### Git
-
-[Oh shit, git!](http://ohshitgit.com/)
 
 ### Javascript
 
 [7 Patterns to Refactor JavaScript Applications: View Objects](http://crushlovely.com/journal/7-patterns-to-refactor-javascript-applications-view-objects/)
+
 [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+
+
+### Git
+
+[Oh shit, git!](http://ohshitgit.com/)
 
 
 ### Testing
