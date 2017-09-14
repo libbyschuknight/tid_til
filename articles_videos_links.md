@@ -16,6 +16,10 @@
 
 [One-on-one catchups with your team](https://medium.com/@mogest/one-on-one-catchups-with-your-team-4d84219d59ce)
 
+[Questions for our first 1:1](http://larahogan.me/blog/first-one-on-one-questions/)
+
+[Manager handoffs](http://larahogan.me/blog/manager-handoffs/)
+
 
 ## Stuff
 
