@@ -80,3 +80,16 @@ http://bundler.io/v1.10/bundle_open.html
 `bundle pristine <gem>`
 https://bundler.io/v1.15/man/bundle-pristine.1.html
 >Restores installed gems to their pristine condition
+
+
+## To see what versions of gems have
+e.g. to see what different versions of rails you have logically
+
+```
+gem list
+...
+rails (5.0.1, 5.0.0.1, 4.2.7.1, 4.2.6, 4.2.5.1, 4.2.5, 4.2.3, 4.2.1, 4.2.0, 3.2.15)
+rails-deprecated_sanitizer (1.0.3)
+rails-dom-testing (2.0.2, 2.0.1, 1.0.8, 1.0.7, 1.0.6)
+...
+```
