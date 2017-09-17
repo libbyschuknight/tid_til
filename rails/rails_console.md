@@ -1,5 +1,9 @@
 # Rails Console
 
+[Rails Console](https://thoughtbot.com/upcase/videos/rails-console)
+
+- using `pry-rails`
+
 ### Accessing Helper methods
 
 [Quick Tip: Helper Methods in the Rails Console?](http://code-worrier.com/blog/helper-methods-in-console/)
