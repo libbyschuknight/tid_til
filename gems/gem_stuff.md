@@ -83,7 +83,7 @@ https://bundler.io/v1.15/man/bundle-pristine.1.html
 
 
 ## To see what versions of gems have
-e.g. to see what different versions of rails you have logically
+e.g. to see what different versions of rails you have locally
 
 ```
 gem list
@@ -93,3 +93,8 @@ rails-deprecated_sanitizer (1.0.3)
 rails-dom-testing (2.0.2, 2.0.1, 1.0.8, 1.0.7, 1.0.6)
 ...
 ```
+
+
+## To install a particular version of a gem
+
+`gem install rails --version=4.2.9`
