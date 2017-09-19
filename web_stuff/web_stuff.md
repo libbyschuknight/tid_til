@@ -6,3 +6,5 @@
  - [Arrows](https://unicode-table.com/en/sets/arrows-symbols/)
 
 [JSONJSONLint - The JSON Validator](https://jsonlint.com/)
+
+[Convert Images to Base64](https://www.browserling.com/tools/image-to-base64)

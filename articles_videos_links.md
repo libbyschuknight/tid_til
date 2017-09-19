@@ -126,6 +126,8 @@ http://guides.rubyonrails.org/engines.html
 
 [HTTP Calls in Ruby](https://blog.codeship.com/http-calls-ruby/?utm_source=rubyweekly&utm_medium=email)
 
+[Liquid](http://shopify.github.io/liquid/)
+
 
 ### HTML/CSS
 
@@ -138,7 +140,6 @@ http://guides.rubyonrails.org/engines.html
 [CSS Reference type](http://cssreference.io/)
 
 [Bulma: A modern CSS framework based on Flexbox](http://bulma.io/)
-
 
 [Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css/)
 
