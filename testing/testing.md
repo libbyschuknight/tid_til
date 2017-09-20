@@ -177,6 +177,7 @@ and specs passed.
 
 From rspec:
 >Note that let is lazy-evaluated: it is not evaluated until the first time the method it defines is invoked. You can use let! to force the method's invocation before each example.
+
 [https://relishapp.com/rspec/rspec-core/v/3-4/docs/helper-methods/let-and-let]
 
 Then were running this pass other devs, got from @Ootoovak
