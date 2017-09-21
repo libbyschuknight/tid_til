@@ -4,7 +4,7 @@
 
 Updated `nokogiri`, worked fine locally, but failed on Travis with this error:
 
-```shell
+```
 Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
 current directory:
 /home/travis/build/FlickElectric/customer_app/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.0/ext/nokogiri
@@ -62,6 +62,11 @@ Asked for help on Ruby slack and got this reply:
 And that was it, updated `mini_portile2` and all was good in the world!!
 
 
+#### Again
+
+Had another issue with this, when merged master in. `nokogiri` was updated. Ended up copying the `gemfile.lock` from the master branch to my feature branch and running bundle install. Which has seemed to work. It removed `pk-config` and updated both `nokogiri` and `mini_portile2`. 
+
+
 #### Issue with AWS error
 
 ```
@@ -94,3 +99,108 @@ Tasks: TOP => db:test:prepare => environment
 ```
 
 Was fixed by adding in a `.env.development` file.
+
+
+## Merging hashes - using `inject`
+
+Had this method, where `empty_context, account_details, contacter_details, message_content` are all hashes.
+
+```ruby
+def self.create_flick_confirmation_context(idea:)
+  context = empty_context
+  if idea.user
+    account_details = account_details(user: idea.user)
+    context = context.merge(account_details)
+  else
+    contacter_details = enquirer_idea_details(idea: idea)
+    context = context.merge(contacter_details)
+  end
+  message_content = idea_content(idea: idea)
+  context.merge(message_content)
+end
+```
+
+Was looking at this to refactor (after writing specs) and looked up how to merge multiple hashes:
+
+https://www.ruby-forum.com/topic/620405
+
+```ruby
+a = [{:first => 1, :second => 2}, {:first => 10, :third => 3}]
+a.inject(:merge)
+```
+
+https://stackoverflow.com/questions/19548496/how-to-merge-multiple-hashes-in-ruby
+
+https://stackoverflow.com/questions/18329633/how-to-merge-multiple-hashes
+
+http://ruby-doc.org/core-2.3.0/Enumerable.html#method-i-inject
+
+Had a play in the console and then updated code to:
+
+```ruby
+def self.create_flick_confirmation_context(idea:)
+  context = [empty_context, enquirer_contact_details(idea: idea), idea_content(idea: idea)]
+  context.inject(:merge)
+end
+```
+
+With a new method to deal with the enquirer details:
+
+```ruby
+def self.enquirer_contact_details(idea:)
+  if idea.user
+    account_details(user: idea.user)
+  else
+    enquirer_idea_details(idea: idea)
+  end
+end
+```
+
+And refactored to:
+
+```ruby
+def self.enquirer_contact_details(idea:)
+  return account_details(user: idea.user) if idea.user
+  enquirer_idea_details(idea: idea)
+end
+```
+
+Handy having specs written, as was easy to make sure that changes were not changing the behaviour.
+
+Reference:
+
+```ruby
+def self.empty_context
+  {
+    subject: "",
+    body_text: "",
+    name: "",
+    email_address: "",
+    phone_number: "",
+    account_number: ""
+  }
+end
+
+def self.account_details(user:)
+  {
+    name: user.preferred_name,
+    email_address: user.email,
+    account_number: user.default_account.account_number
+  }
+end
+
+def self.enquirer_idea_details(idea:)
+  {
+    name: idea.name,
+    email_address: idea.email_address,
+    phone_number: idea.phone_number
+  }
+end
+
+def self.idea_content(idea:)
+  {
+    subject: idea.subject_label,
+    body_text: idea.body
+  }
+end
+```
