@@ -23,6 +23,8 @@
 
 ## Stuff
 
+[Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
+
 [Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
 
 [Sideways Dictionary](https://sidewaysdictionary.com/#/term/api)
