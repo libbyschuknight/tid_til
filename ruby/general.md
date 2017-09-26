@@ -1,5 +1,21 @@
 # Ruby Stuff
 
+## Ruby Classes
+
+#### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
+
+```ruby
+date_range = (Date.parse("16/9/2017"))..(Date.today)
+# Sat, 16 Sep 2017..Mon, 25 Sep 2017
+
+date_range.begin
+# Sat, 16 Sep 2017
+
+date_range.end
+# Mon, 25 Sep 2017
+```
+
+
 ### [to_proc](http://ruby-doc.org/core-2.3.0/Symbol.html#method-i-to_proc)
 
 You can shorten:
@@ -269,6 +285,28 @@ User
 Object
 Kernel
 BasicObject
+```
+
+```ruby
+date_range = (Date.yesterday)..(Date.today)
+# Mon, 25 Sep 2017..Mon, 25 Sep 2017
+
+date_range.class
+# Range < Object
+date_range.class.ancestors
+# [
+#     [ 0] Range < Object,
+#     [ 1] Enumerable,
+#     [ 2] Object < BasicObject,
+#     [ 3] PP::ObjectMixin,
+#     [ 4] RequireAll,
+#     [ 5] V8::Conversion::Object,
+#     [ 6] ActiveSupport::Dependencies::Loadable,
+#     [ 7] Delayed::MessageSending,
+#     [ 8] JSON::Ext::Generator::GeneratorMethods::Object,
+#     [ 9] Kernel,
+#     [10] BasicObject
+# ]
 ```
 
 ## ri - ruby documentation
