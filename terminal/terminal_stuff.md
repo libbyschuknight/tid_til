@@ -328,7 +328,7 @@ scp server.name:/apps/customer_app/releases/20160922043147/filename.csv ~/Downlo
 Raquel Moss - #tech-links FlickElectric
 
 
-## Programs installed via Homebrew
+## Programs installed via Homebrew (see gist)
 
 [Fuzzy Finder](https://github.com/junegunn/fzf)
 
