@@ -40,8 +40,6 @@ end
 ```
 
 
-
-
 #### Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
