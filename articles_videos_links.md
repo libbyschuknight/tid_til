@@ -253,3 +253,7 @@ how do we help
 
 [65: Free as in Puppy (Katrina Owen)](http://bikeshed.fm/65)
 > While at RailsConf, we talk with Katrina Owen about finding metaphors for software development, the successes and mistakes of Exercism.io, and the benefits of providing code reviews.
+
+
+## The Future
+[Some tech workers over 50 are literally working themselves to death — and other things we discovered about their careers](http://www.businessinsider.com/stressful-lives-of-older-tech-workers-2015-11/?_lrsc=e525de47-81f1-48b4-bc62-2a1e336af828&r=AU&IR=T)
