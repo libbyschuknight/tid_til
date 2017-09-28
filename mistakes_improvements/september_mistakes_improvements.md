@@ -64,7 +64,7 @@ And that was it, updated `mini_portile2` and all was good in the world!!
 
 #### Again
 
-Had another issue with this, when merged master in. `nokogiri` was updated. Ended up copying the `gemfile.lock` from the master branch to my feature branch and running bundle install. Which has seemed to work. It removed `pk-config` and updated both `nokogiri` and `mini_portile2`. 
+Had another issue with this, when merged master in. `nokogiri` was updated. Ended up copying the `gemfile.lock` from the master branch to my feature branch and running bundle install. Which has seemed to work. It removed `pk-config` and updated both `nokogiri` and `mini_portile2`.
 
 
 #### Issue with AWS error
@@ -202,5 +202,51 @@ def self.idea_content(idea:)
     subject: idea.subject_label,
     body_text: idea.body
   }
+end
+```
+
+
+## Result object
+
+```ruby
+Result = Struct.new(:status, :message, :body, :filename) do
+  def success?
+    status == :ok
+  end
+end
+
+
+def self.some_method(one:, two:, three:)
+  begin
+    csv_string = SomeService.fetch(
+      one: one,
+      two: two,
+      three: three
+    )
+    Result.new(:ok, nil, format_data(data: csv_string), filename(three: three))
+  rescue SomeService::Error => error
+    Result.new(:error, error.message, nil, nil)
+  end
+end
+
+# access in controller
+
+def data
+response = AnotherService.retrieve_csv(
+  one: params[:some],
+  two: params[:other],
+  three: three
+)
+
+  unless response.success?
+    flash.alert = response.message
+    redirect_to some_path
+  else
+    send_data(
+      response.body,
+      filename: response.filename,
+      type: "text/csv"
+    )
+  end
 end
 ```
