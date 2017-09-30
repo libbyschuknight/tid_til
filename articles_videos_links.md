@@ -57,6 +57,8 @@
 
 [Ruby’s Important Hook Methods](https://www.sitepoint.com/rubys-important-hook-methods/)
 
+[Do. Or Do Not. There Is No Try - Object#try Considered Harmful](https://karolgalanciak.com/blog/2017/09/24/do-or-do-not-there-is-no-try-object-number-try-considered-harmful/)
+
 
 #### Deeper Ruby stuff
 
