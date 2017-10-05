@@ -147,6 +147,8 @@ http://guides.rubyonrails.org/engines.html
 
 [Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css/)
 
+[5 things CSS developers wish they knew before they started](https://css-tricks.com/5-things-css-developers-wish-knew-started/)
+
 
 ##### Tables
 
@@ -160,6 +162,13 @@ http://guides.rubyonrails.org/engines.html
 [7 Patterns to Refactor JavaScript Applications: View Objects](http://crushlovely.com/journal/7-patterns-to-refactor-javascript-applications-view-objects/)
 
 [You Don't Know JS (book series)](https://github.com/getify/You-Dont-Know-JS)
+
+[Modern JavaScript Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet)
+
+[Angular vs. React vs. Vue: A 2017 comparison](https://medium.com/unicorn-supplies/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)
+
+[Learn How To Debug JavaScript with Chrome DevTools](https://codeburst.io/learn-how-to-debug-javascript-with-chrome-devtools-9514c58479db)
+
 
 
 ### Git

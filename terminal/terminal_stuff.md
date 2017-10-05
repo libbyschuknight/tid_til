@@ -82,7 +82,7 @@ Array#methods:
   *       clear        each              include?     pretty_print          rotate     sort_by!        transpose
   +       collect      each_index        index        pretty_print_cycle    rotate!    take            uniq
   -       collect!     empty?            insert       product               sample     take_while      uniq!
-  <<      combination  eql?              inspect      push                  select(!)  to_a            unshift   # (!) is just in this line, to make formatting below work properly
+  "<<"    combination  eql?              inspect      push                  select(!)  to_a            unshift   # get formatting working, had to had the ""
   <=>     compact      extract_options!  join         rassoc                select!    to_ary          values_at
   ==      compact!     fetch             keep_if      reject                shelljoin  to_csv          zip
   []      concat       fill              last         reject!               shift      to_default_s    |
@@ -127,6 +127,17 @@ Now missing the hyphens which want to keep, so have taken out the deleting of th
 alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]'  | pbcopy && pbpaste && echo"
 ```
 
+# Terminal Basics
+
+### Renaming / Moving
+
+http://themackhack.blogspot.co.nz/2012/10/mac-osx-terminal-how-to-rename-file-or.html
+
+```bash
+mv old-folder-name new-folder-name
+mv /path/to/old /path/to/new
+```
+
 ## Find directory path of current folder
 
 ```bash
@@ -141,21 +152,21 @@ pwd
 `open .`      will open the current dir in the finder   
 `cmd + r`     take off screen   
 `cmd + k`     will get rid of forever   
-`ctrl-a`      beginning of line   
-`ctrl-e`      end of line   
-`opt-f`       forward word   
-`opt-b`       backward word   
-`ctrl-f`      forward character   
-`ctrl-b`      backward character   
-`ctrl-d`      delete character   
-`ctrl-l`      clear screen   
+`ctrl - a`      beginning of line   
+`ctrl - e`      end of line   
+`opt - f`       forward word   
+`opt - b`       backward word   
+`ctrl - f`      forward character   
+`ctrl - b`      backward character   
+`ctrl - d`      delete character   
+`ctrl - l`      clear screen   
 
 Copy the Current Path from Terminal to the Clipboard in Mac OS X\
 `pwd|pbcopy`
 
 Save Mark/Jump to Mark
-`cmd-shift-M`   save mark
-`cmd-shift-J`   jump back to it with
+`cmd - shift - M`   save mark
+`cmd - shift - J`   jump back to it with
 
 
 ## Screen sessions (remote servers)
