@@ -241,6 +241,8 @@ how do we help
 
 [Cascadia Ruby Conf 2012 Therapeutic Refactoring by Katrina Owen](https://www.youtube.com/watch?v=J4dlF0kcThQ) - to watch again
 
+[RubyConf AU 2016: One Undo by Katrina Owen](https://www.youtube.com/watch?v=Uk-DMWVR1zc)
+
 
 ### Testing
 

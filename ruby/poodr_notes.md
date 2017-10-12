@@ -54,3 +54,38 @@ A class defines methods (definitions of behaviour) and attributes (definitions o
 >They share the same methods so they all behave like Strings; they contain different data so they represent different ones.
 
 >Knowledge of an objects' type(s) therefore lets you have expectations about the messages to which it responds.
+
+
+## Chapter 2 Designing Classes with Single Responsibility
+
+>The foundation of an OO system is the message, but the most visible organisational structure is the class.
+
+>The problem is not one of technical knowledge but of organisation; you know how to write the code but not where to put it.
+
+>The classes you create will affect how you think about your application forever.
+
+- Transparent - the consequences of changes should be obvious in the code that is changing and in distant code that relies upon it.
+
+- Reasonable - the code of any change should be proportional to the benefits the change achieves.
+
+- Usable - existing code should be usable in new and unexpected contexts.
+
+- Exemplary - the code itself should encourage those who change it to perpetuate these qualities.
+
+>The first step in creating code that is TRUE is to ensure that each class has a single, well-defined responsibility.
+
+#### Creating classes that have a single responsibility
+>A class should do the smallest possible **useful** thing; single responsibility.
+
+> A class that has more than one responsibility is difficult to reuse.
+
+
+#### Determining if a class has a single responsibility
+
+>Replace each on of its methods with a question, asking the question ought to make sense.
+
+>Another way to hone in on what a class is actually doing is to attempt to describe it in one sentence. Remember that a class should do the smallest possible **useful thing**. The thing ought to be simple to describe. If the simplest description you can devise uses the word "and", the class likely has more than one responsibility. If it uses the word "or", then the class has more than one responsibility and they aren't even very related.
+
+>OO designers use the word *cohesion* to describe this concept. When everything in a class is related to it central purpose, the class is said to be *highly cohesive* or to have a single responsibility.
+
+>... that everything the class does be highly related to its purpose.
