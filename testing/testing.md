@@ -39,6 +39,22 @@ describe "#processing?" do
 end
 ```
 
+### Tools
+
+[I am confused with terms Cucumber, Capybara and RSpec. Which of these should I go for in my new Rails application?](https://www.quora.com/I-am-confused-with-terms-Cucumber-Capybara-and-RSpec-Which-of-these-should-I-go-for-in-my-new-Rails-application)
+
+[Difference between rspec, capybara and cucumber](https://stackoverflow.com/questions/22491145/difference-between-rspec-capybara-and-cucumber/22491329#22491329)
+
+>rspec is a full-featured testing framework that will let you write what Rails considers unit tests, functional tests, and integration tests. All of these exercise Ruby code through various layers of your Rails application. All of these tests simulate requests to your Rails application, but don't actually run the application end-to-end over the network.
+
+>cucumber is a browser based integration testing framework, which allows writing automated tests that run against the entire Rails application accessed from within an automated web browser. This allows you to write automated tests about in-browser behavior for JS or CSS. Cucumber provides a unique angle on integration testing that uses plain english specification mapped to code via regular expressions. This allows a more natural "Behavior Driven Development" model - describing what a web application should do, in plain language, from the perspective of the user.
+
+>capybara is a particular web driver powering the cucumber integration testing framework, that uses headless webkit. This allows running a headless (without UI) Chrome/Webkit browser for automated testing. This is very useful both in development, but especially on a remote test/continuous integration server.
+
+>So rspec and cucumber are similar in being testing frameworks with their own way of specifying things.  rspec has a nice DSL that's very readable while being actual code.  cucumber maps plain text descriptions to real code.
+
+>Though cucumber is usually used on top of capybara, you can also use rspec to drive capybara integration tests. The tests are written in either rspec or cucumber, but capybara is an integration engine underneath.
+
 
 #### Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
