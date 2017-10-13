@@ -74,7 +74,7 @@ A class defines methods (definitions of behaviour) and attributes (definitions o
 
 >The first step in creating code that is TRUE is to ensure that each class has a single, well-defined responsibility.
 
-#### Creating classes that have a single responsibility
+###7 Creating classes that have a single responsibility
 >A class should do the smallest possible **useful** thing; single responsibility.
 
 > A class that has more than one responsibility is difficult to reuse.
@@ -89,3 +89,158 @@ A class defines methods (definitions of behaviour) and attributes (definitions o
 >OO designers use the word *cohesion* to describe this concept. When everything in a class is related to it central purpose, the class is said to be *highly cohesive* or to have a single responsibility.
 
 >... that everything the class does be highly related to its purpose.
+
+
+#### Determining when to make design decisions
+
+>Do not feel compelled to make design decisions prematurely. Resist, even if you fear your code would dismay the design gurus. When faced with an imperfect and muddled class like Gear, as yourself: *"What is the future cost of doing nothing today?"*
+
+>When the future cost of doing nothing in is the same as the current cost, postpone the decision.
+
+>Other developers believe that your intentions are reflected in the code; when the code lies you must be alert to programmers believing and then propagating that lie.
+
+>This "improves it now" vs "improve it later" tension always exists. Applications are never perfectly designed/ Every choice has a price. A good designer understands this tension and minimizes costs by making informed trade offs between the needs of the present and the possibilities of the future.
+
+
+### Writing code that embraces change
+
+>change is inevitable, coding in a changeable style has big future payoffs
+>a few well-known techniques..
+
+#### Depend on behaviour, not data
+
+>Behaviour is captured in methods and invoked by sending messages.
+>DRY
+
+>**Hide instance variables**
+
+always wrap instance variables in accessor methods instead of directly referring to variables. ...
+Making instance variables into methods using accessor methods, changes them from data (which is referenced all over) to behaviour (which is defined once).
+
+e.g
+```ruby
+class Gear
+  def initialize(chainring, cog)
+    @chainring = chainring
+    @cog = cog
+  end
+
+  def ratio
+    chainring / cog.to_f
+  end
+end
+
+#####
+class Gear
+  attr_reader :chainring, :cog
+  def initialize(chainring, cog)
+    @chainring = chainring
+    @cog = cog
+  end
+
+  def ratio
+    chainring / cog.to_f
+  end
+end
+
+# default implementation via attr_reader
+def cog
+  @cog
+end
+```
+
+>Send messages to access variables, even if you think of them as data.
+
+**Hide data structures**
+>If being attached to an instance variable is bad, depending on a complicated data structure is worse
+Example - ObscuringReference class
+
+```ruby
+class ObscuringReferences
+  attr_reader :data
+  def initialize(data)
+    @data = data
+  end
+
+  def diameters
+    # 0 is rim, 1 is tire
+    data.collect {|cell|
+      cell[0] + (cell[1] * 2)}
+  end
+  # ... many other methods that index into the array
+end
+```
+
+```ruby
+############## Page 27 ##############
+# rim and tire sizes (now in milimeters!) in a 2d array
+@data = [[622, 20], [622, 23], [559, 30], [559, 40]]
+```
+
+>However, since data contains a complicated data structure, just hiding the instance variable isn't enough.
+>To do anything useful, each sender of data much have complete knowledge of what piece of data is at which index of the array.
+>It depends upon the arrays structure. If that structure changes, then this code much change.
+references are leaky, escape encapsulation, are not DRY
+
+>Direct references into complicated structures are confusing, because they obscure what the data really is...
+
+>In Ruby its easy to separate structure from meaning...you can use the Ruby Struct class to wrap a structure.
+
+example
+
+```ruby
+############## Page 28 ##############
+class RevealingReferences
+  attr_reader :wheels
+  def initialize(data)
+    @wheels = wheelify(data)
+  end
+
+  def diameters
+    wheels.collect {|wheel|
+      wheel.rim + (wheel.tire * 2)}
+  end
+  # ... now everyone can send rim/tire to wheel
+
+  Wheel = Struct.new(:rim, :tire)
+  def wheelify(data)
+    data.collect {|cell|
+      Wheel.new(cell[0], cell[1])}
+  end
+end
+```
+
+>This style of code allows you to protect against changes in externally owned data structures and to make your code more readable and intention revealing.
+
+>If you can control the input, pass in a useful object, but if you are compelled to take a messy structure, hide the mess even from yourself.
+
+
+#### Enforce single responsibility everywhere
+
+**Extract extra responsibilities from methods**
+
+>Methods, like classes, should have a single responsibility.
+easy to change, easy to reuse
+ask them questions about what they do and try to describe their responsibilities in a single sentence
+
+```ruby
+############## Page 29 ##############
+#  2 responsibilities - iterates over wheels and calculates diameter
+  def diameters
+    wheels.collect {|wheel|
+      wheel.rim + (wheel.tire * 2)}
+  end
+
+############## Page 29 ##############
+  # first - iterate over the array
+  def diameters
+    wheels.collect {|wheel| diameter(wheel)}
+  end
+
+  # second - calculate diameter of ONE wheel
+  def diameter(wheel)
+    wheel.rim + (wheel.tire * 2)
+  end
+```
+
+>Separating iteration from the action thats being performed on each element i a common case of multiple responsibility that is easy to recognise.
