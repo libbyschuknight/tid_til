@@ -1,62 +1,5 @@
-# POODR - Practical Object-Oriented Design in Ruby
-
-## Chapter 1 Object-Oriented Design
-
->... a series of messages that pass between objects.
-> once you acquire an object-oriented perspective the rest follows naturally
-
-> change is unavoidable
-
->Applications that are easy to change are a pleasure to write and a joy to extend. They're flexible and adaptable.
-
->OO design is about managing dependencies.
->In the absence of design, unmanaged dependencies wreak havoc because objects know too much about one another.
-
->You must not only write code for the feature you plan to deliver today, you must also create code that is amendable to being changed later.
-
->The purpose of design is to allow you to do design later and its primary goal is to reduce the cost of change.
-
-#### Design Principles
-
-SOLID
-S ingle Responsibility
-O pen-Closed
-L iskov Substitution
-I nterface Segregation
-D enpendncy Inversion
-
-
-DRY - Dont' Repeat Yourself
-
-**NOTE: find Sandi Metz's recent article about DRY issues**
-
-Law of Demeter
-
-#### Design Patterns
->Each well-known pattern is a near perfect open-source solution for the problem it solves.
->However, ... pattern abuse by novice programmers, who, in an excess of well-meaning zeal, applied perfectly good patterns to the wrong problems.
-
-**NOTE: find out more about design patterns**
-
-#### A Brief Introduction to OO Programming
-
-OO Languages
->Instead of dividing data and behaviour into two separate spheres... .Ruby combines them together into a single thing, an object.
->Objects have behaviour and may contain data, data to which they alone control access. Objects invoke one another's behaviour by sending each other messages.
-
->Every object decides for itself how much, or how little, of its data to expose.
-
->Class-based OO languages...allow you to define a class that provides a blueprint for the construction of similar objects
-A class defines methods (definitions of behaviour) and attributes (definitions of variables). Methods get invoked in response to messages.
-
->Once the String class... . Every newly instantiated String implements the same methods and use the same attribute names but each contains it own personal data.
-
->They share the same methods so they all behave like Strings; they contain different data so they represent different ones.
-
->Knowledge of an objects' type(s) therefore lets you have expectations about the messages to which it responds.
-
-
 ## Chapter 2 Designing Classes with Single Responsibility
+Page 15
 
 >The foundation of an OO system is the message, but the most visible organisational structure is the class.
 
@@ -74,13 +17,16 @@ A class defines methods (definitions of behaviour) and attributes (definitions o
 
 >The first step in creating code that is TRUE is to ensure that each class has a single, well-defined responsibility.
 
-###7 Creating classes that have a single responsibility
+### Creating classes that have a single responsibility
+Page 17
+
 >A class should do the smallest possible **useful** thing; single responsibility.
 
 > A class that has more than one responsibility is difficult to reuse.
 
 
 #### Determining if a class has a single responsibility
+Page 22
 
 >Replace each on of its methods with a question, asking the question ought to make sense.
 
@@ -103,6 +49,7 @@ A class defines methods (definitions of behaviour) and attributes (definitions o
 
 
 ### Writing code that embraces change
+Page 24
 
 >change is inevitable, coding in a changeable style has big future payoffs
 >a few well-known techniques..
@@ -216,6 +163,7 @@ end
 
 
 #### Enforce single responsibility everywhere
+Page 29
 
 **Extract extra responsibilities from methods**
 
@@ -244,3 +192,130 @@ ask them questions about what they do and try to describe their responsibilities
 ```
 
 >Separating iteration from the action thats being performed on each element i a common case of multiple responsibility that is easy to recognise.
+
+Extract hidden things (e.g calculation of wheel diameter) into new methods, this will make it easier to examine the class's responsibilities.
+
+```ruby
+############## Page 30 ##############
+  def gear_inches
+      # tire goes around rim twice for diameter
+    ratio * (rim + (tire * 2))
+  end
+
+############## Page 30 ##############
+  def gear_inches
+    ratio * diameter
+  end
+
+  def diameter
+    rim + (tire * 2)
+  end
+```
+
+>The refactoring does not alter how diameter is calculated; it merely isolates the behaviour
+
+>Do these refactorings even when you do not know the ultimate design. They are needed, not because the design is clear, but because it isn't. You do not have to know where you're going to use good design practices to get there. Good practices reveal design.
+
+>The impact of a single refactoring like this is small, but the cumulative effect of this coding style is huge. Methods that have a single responsibility confer the following benefits:
+
+- expose previously hidden qualities
+  >Refactoring a class so that all of its methods have a single responsibility has a clarifying effect on the class.
+
+- avoid the need for comments
+  >If a bit of code inside a method needs a comment, extract that but into a separate method.
+
+- encourage reuse
+  >Small methods encourage coding behaviour that is healthy for your application.
+
+- are easy to move to another class
+  >Small methods lover the barriers to improving your design.
+
+
+**Isolate extra responsibilities in classes**
+Page 31
+
+>Once every method has a single responsibility, the scope of your class will be more apparent.
+>Your goal is to preserve single responsibility in Gear while making the fewest design commitments possible. Because you are writing changeable code, you are best served by postponing decisions until you are absolutely forced to make them.
+
+Gear example, with the Wheel Struct extended with a block.
+
+```ruby
+############## Page 32 ##############
+class Gear
+  attr_reader :chainring, :cog, :wheel
+  def initialize(chainring, cog, rim, tire)
+    @chainring = chainring
+    @cog       = cog
+    @wheel     = Wheel.new(rim, tire)
+  end
+
+  def ratio
+    chainring / cog.to_f
+  end
+
+  def gear_inches
+    ratio * wheel.diameter
+  end
+
+  Wheel = Struct.new(:rim, :tire) do
+    def diameter
+      rim + (tire * 2)
+    end
+  end
+end
+```
+
+>If you identify extra responsibilities that you cannot yet remove, isolate them. Do not allow extraneous responsibilities to leak into your class.
+
+**The real wheel**
+Page 33
+
+```ruby
+############## Page 33 ##############
+class Gear
+  attr_reader :chainring, :cog, :wheel
+  def initialize(chainring, cog, wheel=nil)
+    @chainring = chainring
+    @cog       = cog
+    @wheel     = wheel
+  end
+
+  def ratio
+    chainring / cog.to_f
+  end
+
+  def gear_inches
+    ratio * wheel.diameter
+  end
+end
+
+class Wheel
+  attr_reader :rim, :tire
+
+  def initialize(rim, tire)
+    @rim       = rim
+    @tire      = tire
+  end
+
+  def diameter
+    rim + (tire * 2)
+  end
+
+  def circumference
+    diameter * Math::PI
+  end
+end
+
+@wheel = Wheel.new(26, 1.5)
+puts @wheel.circumference
+# -> 91.106186954104
+
+puts Gear.new(52, 11, @wheel).gear_inches
+# -> 137.090909090909
+
+puts Gear.new(52, 11).ratio
+# -> 4.72727272727273
+```
+
+## Summary
+The path to changeable and maintainable OO software begins with classes that have a single responsibility. Classes that do one thing isolate that thing from the rest of your application. This isolation allows change without consequence and reuse without duplication.
