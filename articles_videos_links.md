@@ -24,6 +24,7 @@
 
 [Te Aka Māori-English](http://maoridictionary.co.nz/)
 
+[Tech’s Troubling New Trend: Diversity Is in Your Head](https://www.nytimes.com/2017/10/16/opinion/diversity-tech-women-silicon-valley.html)
 
 ## Stuff
 
