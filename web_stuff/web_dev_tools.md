@@ -12,3 +12,8 @@
 ### Icons
 
 [IONICONS](http://ionicons.com/)
+
+### fonts
+
+[Fount](https://fount.artequalswork.com/)
+> Fount will tell you which web font in your font-stack you are actually seeing – not just what is supposed to be seen. It’ll also tell you the font size, weight, and style.

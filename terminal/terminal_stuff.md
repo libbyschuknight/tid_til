@@ -341,9 +341,26 @@ Raquel Moss - #tech-links FlickElectric
 
 ## Programs installed via Homebrew (see gist)
 
-[Fuzzy Finder](https://github.com/junegunn/fzf)
+### [Fuzzy Finder](https://github.com/junegunn/fzf)
 
 - fzf is a general-purpose command-line fuzzy finder
+
+- install via homebrew `brew install fzf`
+
+To get working:
+
+`/usr/local/opt/fzf/install`
+
+then reload shell (e.g `source ~/.zshrc`)
+
+use `ctrl + r` and should bring up the fuzzy search
+
+TODO: add images
+
+[fzf](http://sourabhbajaj.com/mac-setup/iTerm/fzf.html)
+
+
+
 
 
 ## Things

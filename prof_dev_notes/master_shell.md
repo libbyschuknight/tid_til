@@ -36,10 +36,12 @@ Different number of lines, pass the `-n` flag
 
  Using `tree` - `brew install tree`, can show tree structure of directories:
 
+ [List A Directory With Tree Command On Mac OS X](https://rschu.me/list-a-directory-with-tree-command-on-mac-os-x-3b2d4c4a4827)
+
  `tree rails/how_to_rails`
 
  ```
- rails/how_to_rails
+ rails/how_to_rails`
 ├── 1_my_go_surf_project.md
 ├── 2_my_go_surf_project.md
 ├── 3_my_go_surf_project.md

@@ -10,7 +10,6 @@
 
 [Figure NZ - Our kaupapa: raise a paddle](http://tohu.figure.nz/internal/our_kaupapa/#raise-a-paddle)
 
-[Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
 [Let Me Google That for You](http://bridgetkromhout.com/blog/2015/05/31/let-me-google-that-for-you/)
 
@@ -25,6 +24,15 @@
 [Te Aka Māori-English](http://maoridictionary.co.nz/)
 
 [Tech’s Troubling New Trend: Diversity Is in Your Head](https://www.nytimes.com/2017/10/16/opinion/diversity-tech-women-silicon-valley.html)
+
+[Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
+
+[Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59)
+
+
+[ReWork - Google](https://rework.withgoogle.com/)
+[blog](https://rework.withgoogle.com/blog/)
+
 
 ## Stuff
 
