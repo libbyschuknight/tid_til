@@ -100,4 +100,135 @@ https://www.sitepoint.com/sass-based-media-queries-with-breakpoint/
 
 ### Using Node/npm to use Sass
 
-Add info for setting this up.
+The meet up I went to showed how to use Gulp get a localhost server running with your website, which would also make changes as you do them in the code (pretty much, on save anyway).
+
+What I ended up doing was copying the presenters gulp file, and installing the packages and it worked! Oh as well as her site. Got it working and then the play is to replace it with my site.
+
+Packages:
+- gulp - `npm install gulp --save-dev`
+- gulp-sass - `npm install gulp-sass --save-dev`
+- gulp-sourcemaps - `npm install gulp-sourcemaps --save-dev`
+- gulp-autoprefixer - `npm install gulp-autoprefixer --save-dev `
+- node-sass-globbing - `npm install node-sass-globbing --save-dev`
+- gulp-plumber - `npm install gulp-plumber --save-dev`
+- browser-sync - 
+
+Useful links:
+- [Installing Node.js and updating npm](https://docs.npmjs.com/getting-started/installing-node)
+- [Installing npm packages globally](https://docs.npmjs.com/getting-started/installing-npm-packages-globally)
+
+
+And her gulpfile:
+
+```js
+'use strict';
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
+var importer = require('node-sass-globbing');
+var plumber = require('gulp-plumber');
+var browserSync = require('browser-sync').create();
+
+var sass_config = {
+  importer: importer,
+  includePaths: [
+    'node_modules/breakpoint-sass/stylesheets/',
+  ]
+};
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        injectChanges: true,
+        server: true
+    });
+    gulp.watch("./sass/**/*.scss", ['sass']).on('change', browserSync.reload);
+});
+
+gulp.task('sass', function () {
+  gulp.src('./sass/**/*.scss')
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(sass(sass_config).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 version']
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./css'));
+});
+
+gulp.task('default', [ 'browser-sync']);
+```
+
+I then find this tutorial [Gulp for Beginners](https://css-tricks.com/gulp-for-beginners/), so thought I would spend sometime following this. To hopefully help me get a bit of an understanding of what is going on.
+
+Gulp
+>Tools like Gulp are often referred to as "build tools" because they are tools for running the tasks for building a website.
+
+Went through the above tutorial up until the `Optimizing CSS and JavaScript files` and installing `gulp-useref`. Hopefully will come back to sometime in the future.
+
+What I was really interested in doing was getting the set up I 'borrowed' to re-load on the first save. For some reason it was taking two saves to reload. And I think this was an issue for Laura when she was presenting. Also, in the above article they have html re-loading as well, which I thought was pretty cool. (You could also get js reloading but I haven't done that yet).
+
+So, by looking at Laura's gulp file and the one that I started from the "Gulp for Beginners", I managed to figure it out.
+
+
+I changed this:
+
+```js
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        injectChanges: true,
+        server: true
+    });
+    gulp.watch("./sass/**/*.scss", ['sass']).on('change', browserSync.reload);
+});
+```
+
+to...
+
+```js
+gulp.task('browser-sync', function() {
+    browserSync.init({
+      server: {
+        baseDir: ''
+      },
+    });
+    gulp.watch("./sass/**/*.scss", ['sass']);
+    gulp.watch('*.html', browserSync.reload);
+});
+```
+It changes what is in the `browserSync.init` and adds watching of html files.
+
+And here:
+
+```js
+gulp.task('sass', function () {
+  gulp.src('./sass/**/*.scss')
+    .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(sass(sass_config).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 version']
+    }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./css'))
+    // ***** added this pipe *****
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
+```
+
+I guess it was probably something to do with the order of things or the slightly different `browserSync` commands.
+
+One thing that might be an issue is that the repo I copied from Laura has a `package.lock.json` file no actual `package.json`. It might be a good idea to when set up another project with this that I create a `package.json`, which the "Gulp for Beginngers" tutorial walks you through, with using `npm init`.
+
+Note: haven't worked through any of these yet
+
+Another useful tutorial? [Watch & Compile your Sass with npm.](https://medium.com/@brianhan/watch-compile-your-sass-with-npm-9ba2b878415b).
+
+These could be useful as well, about getting live loading working with a rails app:
+[How to Set Up Sass Live Reloading in Rails Using Style Injection](https://shift.infinite.red/how-to-set-up-sass-live-reloading-in-rails-using-style-injection-366f979564bc)
+
+[Lightning-Fast Sass Reloading in Rails](https://mattbrictson.com/lightning-fast-sass-reloading-in-rails)
