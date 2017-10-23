@@ -1,4 +1,4 @@
-## Chapter 3
+# Chapter 3 Managing Dependencies
 Page 35
 
 >Objects reflect qualities of a real-world problem and the interactions between those objects provide solutions.
