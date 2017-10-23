@@ -20,6 +20,7 @@ You may also find the RubyOnRails Guide useful:
 
 ### Step 1 - Plan
 Make a rough plan of what you what to do.
+
 ![plan](images/go_surf.JPG)
 
 This plan has a bit of sketch of what the home page might look like and then my thinking about what tables and fields I need.
