@@ -30,3 +30,76 @@ Restaurant kitchen example of a public interface
 >Each of your classes is like a kitchen.
 >The class exists to fulfil a single responsibility but implements many methods.
 >Some of these methods represent the menu for your class and should be public; others deal with internal implementation details and are private.
+
+### Public interfaces
+
+>The methods that make up the pubic interface of your class comprise the face it presents to the world. They:
+>- reveal its primary responsibility
+>- are expected to be invoked by others
+>- will not change on a whim
+>- are safe for others to depend on
+>- are thoroughly documented in the tests
+
+
+### Private interfaces
+>All other methods in the class are part of its private interface. They:
+>- handle implementation details
+>- are not expected to be sent by other objects
+>- can change for any reason whatsoever
+>- are unsafe for others to depend on
+>- may not even be referenced in tests
+
+### Responsibilities, Dependencies, and Interfaces
+
+>single responsibility...There is a correspondence between the statements you might make about these more specific responsibilities and the classes' public methods. Indeed, public methods should read like a description of responsibilities. The public interface is a contract that articulates the responsibilities of your class.
+>managing dependencies...Now that you are dividing every class into a public part and a private part, this idea of depending on less changeable things also applies to the methods within a class. The public parts of a class are stable parts; the private parts are the changeable parts. When you mark methods as public or private you tell users of your class upon which methods they may safely depend.
+
+## Finding the Public Interface
+Page 63
+
+### An Example application: Bicycle touring company
+
+### Constructing an intention
+
+>You probably expect to have Customer, Trip, Route, Bike, Mechanic classes.
+Classes spring to mind, represent nouns that have data and behaviour => domain objects
+are obvious because are persistent, stand for big visible real world things
+
+domain objects are easy to find but are not at the centre of design, they are a trap, can led you to coerce behaviour into them
+
+>Design experts notice domain objects without concentrating on them; they focus not on these objects but on the messages that pass between them. These messages are guides that lead you to discover other objects, ones that are just as necessary but far less obvious.
+
+>Before you sit at the keyboard and start typing you should form an intention about the objects and the messages needed to satisfy this use case.
+
+### Using sequence diagrams
+
+UML - unified modelling language
+
+page 66
+example sequence diagram - figure 4.3
+
+to add
+
+>...read as follows: `Customer Moe` sends the `suitable_trips` message to the `Trip` class, which is activated to process it and then, when finished, returns a response.
+
+>... the design that it implies should give you pause.
+Moe expects `Trip` to find him a trip and a bike.
+
+>...the diagram exposes the message passing between the `Customer Moe` and the `Trip` class and prompts you to ask the question: "Should `Trip` be responsible for figuring out if an appropriate bicycle is available for each suitable trip?" or "Should this receiver be responsible for responding to this message?"
+
+>...the conversation has changed; it is not revolving around messages. Instead of deciding on a class and then figuring out its responsibilities, you are now deciding on a message and figuring out where to send it.
+
+**Message based design**
+
+Changing the fundamental design question from "I know I need this class, what should I do?" => "I need to send this message, who should respond to it?"
+
+
+>You don't send messages because you have objects, you have objects because you send messages.
+
+reasonable for `Customer` to send the `suitable_trips` message, problem isn't that `Customer` should not send it, problem is that `Trip` should not receive it
+
+figure 4.4
+adding
+
+
+### Asking for "What" instead of telling "How"
