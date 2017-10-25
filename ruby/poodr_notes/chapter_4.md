@@ -75,6 +75,8 @@ domain objects are easy to find but are not at the centre of design, they are a 
 
 UML - unified modelling language
 
+![figure 4.3](fig4_3.png)
+
 page 66
 example sequence diagram - figure 4.3
 
@@ -98,8 +100,72 @@ Changing the fundamental design question from "I know I need this class, what sh
 
 reasonable for `Customer` to send the `suitable_trips` message, problem isn't that `Customer` should not send it, problem is that `Trip` should not receive it
 
-figure 4.4
-adding
+![figure 4.4](fig4_4.png)
 
 
 ### Asking for "What" instead of telling "How"
+Page 69
+
+>difference between a message that asks for what the sender wants and a message that tells the receiver how to behave
+>understanding the difference is key part of writing reusable classes with well-defined public interfaces
+
+![figure 4.5](fig4_5.png)
+
+A `Trip` tells a `Mechanic` how to prepare each `Bicycle`
+
+In this example `Trip` knows too much about `Mechanic` and directs `Mechanic` in what to do. Which means that if `Mechanic` changes, then `Trip` must change as well. e.g if `Mechanic` adds a new bike prep process.
+
+![figure 4.6](fig4_6.png)
+
+A `Trip` asks a `Mechanic` to prepare each `Bicycle`
+
+`Trip` has given up lots of responsibility to `Mechanic`. It only cares about each `Bicycle` being prepared.
+
+>Because the responsibility for knowing *how* has been ceded to `Mechanic`, `Trip` will always get the correct behaviour regardless of future improvements to `Mechanic`
+
+The public interface of `Mechanic` has also been reduced. There is now one method, `prepare_bicycle`.
+
+
+### Seeking context independence
+
+>The things that `Trip` knows another other objects make up its *context*
+
+You can't use `Trip` without providing a `Mechanic`-like object that can respond to `prepare_bicycle`
+
+>Objects that have a single context are easy to use and easy to test; they expect few things from their surroundings.
+>Objects that have a complicated context are hard to use and hard to test; they require complicated setup before they can do anything.
+
+>`Trip` wants to collaborate with `Mechanic` while maintaining context independence.
+
+
+![figure 4.7](fig4_7.png)
+
+A `Trip` asks a `Mechanic` to prepare the `Trip`
+
+>- the public interface for `Trip` includes `bicycles`
+>- the public interface for `Mechanic` includes `prepare_trip` and perhaps `prepare_bicycle`
+>- `Trip` expects to be holding onto an object that can respond to `prepare_trip`
+>- `Mechanic` expects the argument passed along with `prepare_trip` to respond to `bicycles`
+
+>All of the knowledge about how mechanics prepare trips is now isolated inside of `Mechanic` and the context of `Trip` has been reduced. Both of the objects are now easier to change, to test and to reuse.
+
+### Trusting other objects
+
+figures 4.5-4.7 moving more towards OO, stages of development for a novice designer
+
+Figure 7 - "I know what I want and *I trust you to do your part*"
+
+>This blind trust is keystone of OO design. It allows objects to collaborate without binding themselves to context and it necessary in any application that expects to grow and change.
+
+### Using messages to discover objects
+Page 74
+
+original design problem - A customer, in order to choose a trip, would like to see a list of available trips of appropriate difficulties, on a specific date, where rental bicycles are available.
+
+figures 4.3 and 4.4
+
+![figure 4.3](fig4_3.png)
+
+![figure 4.4](fig4_4.png)
+
+In both above, `Trip` and `Customer` know too much
