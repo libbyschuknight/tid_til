@@ -13,6 +13,41 @@
 
 [Markdown Tables Generator Facebook](http://www.tablesgenerator.com/markdown_tables) - useful for getting lines right for a table.
 
+#### git commits
+[DEVELOPER TIP: KEEP YOUR COMMITS “ATOMIC”](https://www.freshconsulting.com/atomic-commits/)
+
+[How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
+
+  >**The seven rules of a great git commit message**
+
+  >Keep in mind: This has all been said before.
+  >- Separate subject from body with a blank line
+  >- Limit the subject line to 50 characters
+  >- Capitalise the subject line
+  >- Do not end the subject line with a period
+  >- Use the imperative mood in the subject line
+  >- Wrap the body at 72 characters
+  >- Use the body to explain what and why vs. how
+
+
+##### Amending a commit
+
+If you have made some changes and just want to add them to the last commit you made.
+
+Remember to `git add .` the changes
+
+```bash
+git commit --amend  # this will allow you to also change the commit message
+
+git commit -a
+```
+
+if you want to add files or changes without editing the message
+
+```bash
+git commit --amend --no-edit
+```
+
 
 ##### git fetch
 Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
@@ -265,39 +300,6 @@ Now commit again, you can even re-use the same commit message:
 
 `git commit -c ORIG_HEAD`
 
-
-### git commits
-[How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
-
->**The seven rules of a great git commit message**
-
->Keep in mind: This has all been said before.
-Separate subject from body with a blank line
-Limit the subject line to 50 characters
-Capitalize the subject line
-Do not end the subject line with a period
-Use the imperative mood in the subject line
-Wrap the body at 72 characters
-Use the body to explain what and why vs. how
-
-
-##### Amending a commit
-
-If you have made some changes and just want to add them to the last commit you made.
-
-Remember to `git add .` the changes
-
-```bash
-git commit --amend  # this will allow you to also change the commit message
-
-git commit -a
-```
-
-if you want to add files or changes without editing the message
-
-```bash
-git commit --amend --no-edit
-```
 
 ## Find most recent branches
 Can’t remember what branches are most recently active in a repo without using Github?
