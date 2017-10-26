@@ -36,7 +36,32 @@ Good instructions on gitlab to follow. Had issues with ssh-keys and it was askin
 To solve this did ` ssh-add -K`
 
 
+## Using gitlab (work) and github (personal)
 
+Good article - [SSH Keys with Multiple GitHub Accounts](https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e)
+
+
+```
+ssh-keygen -t rsa -b 4096 -C “your_email@example.com”
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_rsa_github  
+
+pbcopy < ~/.ssh/id_rsa_github.pub
+```
+Add key to github
+
+create a ssh config file with
+
+```
+Host github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa_github
+```
+
+And it worked. (hopefully gitlab still works!)
 
 
 ##### Amending a commit
