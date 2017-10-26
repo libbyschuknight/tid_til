@@ -30,6 +30,15 @@
   >- Use the body to explain what and why vs. how
 
 
+## Setting up git with gitlab
+
+Good instructions on gitlab to follow. Had issues with ssh-keys and it was asking me each time I pushed for my passphrase.
+To solve this did ` ssh-add -K`
+
+
+
+
+
 ##### Amending a commit
 
 If you have made some changes and just want to add them to the last commit you made.
