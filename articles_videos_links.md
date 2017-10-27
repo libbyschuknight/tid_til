@@ -31,7 +31,16 @@
 
 
 [ReWork - Google](https://rework.withgoogle.com/)
+
 [blog](https://rework.withgoogle.com/blog/)
+
+
+#### Spotify model
+
+[Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
+
+[Spotify Squad framework — Part I](https://medium.com/project-management-learnings/spotify-squad-framework-part-i-8f74bcfcd761)
+
 
 
 ## Stuff
