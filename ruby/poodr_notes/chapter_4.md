@@ -169,3 +169,73 @@ figures 4.3 and 4.4
 ![figure 4.4](fig4_4.png)
 
 In both above, `Trip` and `Customer` know too much
+
+In both `Customer` and `Trip` there is the `suitable_trips` method.
+>You have not yet identified an object whose responsibility it is to implement this method.
+
+Fig 4.8 - `TripFinder`
+
+![figure 4.8](fig4_8.png)
+
+>`TripFinder` contains all knowledge of what makes a trip suitable.
+>Now that this behaviour has been extracted from `Customer`, it can be used, in isolation, by any other object.
+
+
+### Creating a message-based application
+
+Sequence diagrams are a useful tool. Can help focus on the messages rather then the objects.
+>...concentrate on designing an application built upon public interfaces.
+
+
+## Writing code that puts its best (inter)face forward
+
+>*Think* about interfaces. Create them intentionally.
+>... rules of thumb for creating interfaces.
+
+#### Create explicit interfaces
+
+>Every time you create a class, declare its interfaces. Methods in the *public* interface should:
+>- be explicitly identified as such
+>- be more about *what* than how
+>- have names that, insofar as you can anticipate, will not change
+>-take a hash an an options parameter (? could use keyword args)
+
+>Be just as intentional about the private interface.
+
+>Public, protected and private keywords
+Indication of which methods are stable or unstable AND how visible a method is other parts of the application.
+
+
+#### Honour the public interfaces of others
+
+>Do your best to interact with other classes using only their public interfaces.
+>A dependency on a private method of an external framework is a form of technical debt. Avoid these dependencies.
+
+#### Exercise caution when depending on private interfaces
+
+>Depending on a private interface increases risk; keep this risk to a minimum by isolating the dependency.
+
+#### Minimise context
+
+>Construct public interfaces with an eye toward minimising the context they require from others. Keep the *what* versus *how* distinction in mind; create public method that allow senders to get what they want without knowing how your class implements its behaviour.
+
+
+## The Law of Demeter
+
+>The Law of Demeter is a set of coding rules that results in loosely coupled objects.
+>Some Demeter violations are harmless but others expose a failure to correctly identity and define public interfaces.
+
+### Defining Demeter
+
+>Demeter restricts the set of objects to which a method may *send* messages; it prohibits routing a message to a third object via a second object of a different type.
+
+> "only talk to your immediate neighbour" or "use only one dot"
+
+```
+  customer.bicycle.wheel.tire
+  customer.bicycle.wheel.rotate
+  hash.keys.sort.join(', ')
+```
+
+- each chain are referred to as *train wreaks*, each method name is a train car and each dot is a connection
+- it is an indication that the Law of Demeter might be being violated
