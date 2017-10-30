@@ -63,6 +63,12 @@ IdentityFile ~/.ssh/id_rsa_github
 
 And it worked. (hopefully gitlab still works!)
 
+Hmmm, gitlab doesn't still work, did `ssh-add -A` and reloaded zsh, think it will stop working again. Need to find long term solution.
+
+`ssh -T git@github.com`
+
+
+ssh -T git@git.fluxfederation.com
 
 ##### Amending a commit
 
