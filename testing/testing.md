@@ -2,6 +2,13 @@
 
 [Tips to improve speed of your test suite](https://medium.com/appaloosa-store-engineering/tips-to-improve-speed-of-your-test-suite-8418b485205c)
 
+
+### Using Fixtures in Rails
+
+[7 REASONS I'M STICKING WITH MINITEST AND FIXTURES IN RAILS](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
+
+[TIME TO BRING BACK FIXTURES](https://collectiveidea.com/blog/archives/2014/08/06/time-to-bring-back-fixtures)
+
 ## Four Phase Test Pattern
 
 Reminded about from here https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187
