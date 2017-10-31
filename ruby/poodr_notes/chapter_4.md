@@ -221,6 +221,7 @@ Indication of which methods are stable or unstable AND how visible a method is o
 
 
 ## The Law of Demeter
+Page 80
 
 >The Law of Demeter is a set of coding rules that results in loosely coupled objects.
 >Some Demeter violations are harmless but others expose a failure to correctly identity and define public interfaces.
@@ -239,3 +240,44 @@ Indication of which methods are stable or unstable AND how visible a method is o
 
 - each chain are referred to as *train wreaks*, each method name is a train car and each dot is a connection
 - it is an indication that the Law of Demeter might be being violated
+
+### Consequences of violations
+
+>...occasional violations will not collapse the universe.
+
+It might be okay to break the law if retrieving a distant attribute. But not so if getting a distant behaviour.
+
+The `hash.keys.sort.join(', ')` is reasonable, probably not a Demeter violation.
+>Instead of evaluating this phrase by counting the "dots", evaluate it by checking the types of the intermediate objects.
+>...actually returns an `Enumerable` of `Strings`
+
+### Avoiding violations
+Page 82
+
+Use delegations
+- Ruby - has `delegate.rb` and `forwardable.rb`
+- Rails - includes `delegate` methods
+
+>Using delegation to hide tight coupling is not the same as decoupling code.
+
+### Listening to Demeter
+
+>Demeter is trying to tell you something and it isn't "use more delegation."
+>Your familiarity with the public interfaces of known objects may lead you to string together long messages chains to get a distant behaviour.
+
+>The code knows not only what it wants but how to navigate through a bunch of intermediate objects to reach the desired behaviour.
+
+Lots of coupling, obvious is that `Trip` will be forced to change due to unrelated changes somewhere else in the message chain.
+More serious though is that the `depart` method knows this chain of objects. It is bound to a specific implementation, it can't be used in any other context.
+
+If started with thinking about *what* `depart` wants from customer, what message, "the answer is obvious" - `customer.ride`
+
+>The train wreaks of Demeter violations are clues that there are objects whose public interfaces are lacking.
+>If you shift to a message-based perspective, the messages you find will become public interfaces in the objects they lead you to discover.
+
+
+## Summary
+Page 83
+
+>OO applications are defined by the messages that pass between objects. This message passing takes place along "public" interfaces, well-defined public interfaces consist of stable methods that expose the responsibilities of their underlying classes and provide maximal benefit at minimal cost.
+>Focusing on messages revels objects that might otherwise be overlooked. When messages are *trusting* and ask for what the sender wants instead of telling the receiver how to behave, objects naturally evolve public interfaces that are flexible and reusable in novel and unexpected ways.
