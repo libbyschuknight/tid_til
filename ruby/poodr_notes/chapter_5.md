@@ -109,6 +109,135 @@ This code is first step in painting you into a corner. Code like this gets writt
 
 This new diagram is very complicated, this complexity is a warning.
 
->Sequence diagrams should always be simpler than the code they represent then they are not, something is wrong with the design. 
+>Sequence diagrams should always be simpler than the code they represent then they are not, something is wrong with the design.
 
 ![figure 5.1](fig5_1.png)
+
+
+### Finding the duck
+Page 90
+
+The key is that `Trip`'s `prepare` method serves a single purpose, arguments want to achieve a single goal.
+
+Think about what `prepare` needs. Then the problem is straightforward.
+
+>The `prepare` method wants to prepare the trip. Its arguments arrive ready to collaborate in trip preparation. The design would be simpler if `prepare` just trusted them to do so.
+
+
+![figure 5.3](fig5_3.png)
+
+The `prepare` method expects each class to be a `Preparer`.
+
+>This expectation neatly turns the tables. You've picked yourself loose from existing classes and invented a duck type.
+What message can the `prepare` method send each `Preparer`? -> `prepare_trip`
+
+
+![figure 5.4](fig5_4.png)
+
+>`Trip`'s `prepare` method now expects its arguments to be `Preparers` that can respond to `prepare_trip`.
+
+What is `Preparer`? An abstraction at this point.
+>Objects that implement `prepare_trip` *are* `Preparers` and objects that interact with `Preparers` only need to trust them to implement the `Preparer` interface. Once you see this abstraction, it's easy to fix the code. `Mechanic`, `TripCoordinator`, `Driver` should behave like `Preparers`; they should implement `prepare_trip`.
+
+
+```ruby
+############## Page 93 ##############
+# Trip preparation becomes easier
+class Trip
+  attr_reader :bicycles, :customers, :vehicle
+
+  def prepare(preparers)
+    preparers.each {|preparer|
+      preparer.prepare_trip(self)}
+  end
+end
+
+# when every preparer is a Duck
+# that responds to 'prepare_trip'
+class Mechanic
+  def prepare_trip(trip)
+    trip.bicycles.each {|bicycle|
+      prepare_bicycle(bicycle)}
+  end
+
+  # ...
+end
+
+class TripCoordinator
+  def prepare_trip(trip)
+    buy_food(trip.customers)
+  end
+
+  # ...
+end
+
+class Driver
+  def prepare_trip(trip)
+    vehicle = trip.vehicle
+    gas_up(vehicle)
+    fill_water_tank(vehicle)
+  end
+  # ...
+end
+```
+
+Can easily create additional `Preparers` as the `prepare` method can now accept new `Preparers`.
+
+### Consequences of Duck Typing
+
+Tension between costs of concretion and costs of abstraction is fundamental to OOD.
+
+>Concrete code is easy to understand but costly to extend. Abstract code may initially seem more obscure but, once understood, is far easier to change.
+
+Treat objects as if they are defined by their behaviour rather than by their class.
+
+
+**Polymorphism**
+- state of having many forms
+In OOP - the ability of many different objects to respond to the same message. Senders of the message need not car about the class of the receiver; receivers supply their own specific version of the behaviour.
+
+>A single message this has many (poly) forms (morphs).
+
+Many ways to achieve Polymorphism duck typing, inheritance, behaviour sharing.
+
+## Writing code that relies on ducks
+Ppage 95
+
+Patterns that reveal paths to follow to discover ducks.
+
+### Recognising hidden ducks
+
+>You can replace the following with ducks:
+  - case statements that switch on class
+  - `kind_of?` and `is_a?`
+  - `responds_to?`
+
+
+#### Case statements that switch on class
+Page 96
+
+```ruby
+############## Page 96 ##############
+class Trip
+  attr_reader :bicycles, :customers, :vehicle
+
+  def prepare(preparers)
+    preparers.each {|preparer|
+      case preparer
+      when Mechanic
+        preparer.prepare_bicycles(bicycles)
+      when TripCoordinator
+        preparer.buy_food(customers)
+      when Driver
+        preparer.gas_up(vehicle)
+        preparer.fill_water_tank(vehicle)
+      end
+    }
+  end
+end
+```
+
+>When you see this pattern you know that all of the `preparers` must share something in common.
+>"What is it that `prepare` wants from each of its arguments?"
+>The answer to that question suggests the message you should send; this message begins to define the underlying duck type.
+>Here the `prepare` method wants it arguments to prepare the trip. Thus, `prepare_trip` becomes a method in the public interface of the new `Preparer` duck.
