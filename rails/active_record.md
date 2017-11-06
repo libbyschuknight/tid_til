@@ -67,3 +67,18 @@ and returns what I want!
 
 ## Joining Tables
 [Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
+
+
+
+## Validations
+
+#### Number being non-negative
+
+http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html#method-i-validates_numericality_of
+
+```ruby
+class Game < ApplicationRecord
+  validates :lives, presence: true
+  validates_numericality_of :lives, greater_than_or_equal_to: 0
+end
+```

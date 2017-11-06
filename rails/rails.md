@@ -60,6 +60,22 @@ kill -9 6854
 Server working again!
 
 
+### Adding Service object and it not loading
+
+Rails 5.1 app
+Added `services` folder inside app folder, was coming up with `uninitialized constant CreateGame` on page.
+This was also happening in rails console.
+Quick Google search came up with [Why doesn't Rails autoload classes from app/services?](https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-from-app-services)
+Solution is to stop `spring`
+
+>Stopping Spring with bin/spring stop will force Spring to load your app fresh. Now running rails console and inspecting ActiveSupport::Dependencies.autoload_paths will successfully show app/services.
+
+https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-from-app-services/41371440#41371440
+
+Although, it may happen again when I add another file or folder?? And if so then this might be the long term answer:
+`config.autoload_paths += %W(#{Rails.root}/app/services)`
+
+
 ### Assest Pipeline - scss
 Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous  project, I was missing:
 
@@ -69,6 +85,22 @@ Been working on my Seido Karate Guide and added some styling to the `stances.scs
 ```
 
 from the `application.scss` file. Added this back in and it worked fine.
+
+
+### Removing coffeescript from Rails 5.1
+
+Removed gem from gemfile, did bundle install, removed .coffee files.
+
+Was still getting error `LoadError (cannot load such file -- coffee_script):`
+
+Stopped `spring`, no change.
+
+Did some googling and found this
+```
+FYI if you're having this issue, it may be the cache. Try this: rake tmp:cache:clear and restart your server.
+```
+
+So tried `rake tmp:cache:clear` and worked! yay!
 
 
 ## Simple mistake? Don't copy and paste!!
