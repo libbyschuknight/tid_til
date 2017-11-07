@@ -241,3 +241,94 @@ end
 >"What is it that `prepare` wants from each of its arguments?"
 >The answer to that question suggests the message you should send; this message begins to define the underlying duck type.
 >Here the `prepare` method wants it arguments to prepare the trip. Thus, `prepare_trip` becomes a method in the public interface of the new `Preparer` duck.
+
+
+#### kind_of and is_a?
+Page 97
+
+These also check the class of an object.
+
+This does nothing to improve the code:
+```ruby
+############## Page 97 ##############
+  if preparer.kind_of?(Mechanic)
+    preparer.prepare_bicycles(bicycle)
+  elsif preparer.kind_of?(TripCoordinator)
+    preparer.buy_food(customers)
+  elsif preparer.kind_of?(Driver)
+    preparer.gas_up(vehicle)
+    preparer.fill_water_tank(vehicle)
+  end
+```
+
+`kind_of?` / `is_a?` is no different to using a case statement. Should be fixed in the same way.
+
+
+#### responds_to?
+
+eg.
+```ruby
+############## Page 97 ##############
+  if preparer.responds_to?(:prepare_bicycles)
+    preparer.prepare_bicycles(bicycle)
+  elsif preparer.responds_to?(:buy_food)
+    preparer.buy_food(customers)
+  elsif preparer.responds_to?(:gas_up)
+    preparer.gas_up(vehicle)
+    preparer.fill_water_tank(vehicle)
+  end
+```
+
+This decreases a bit the number of dependencies, but still has too many.
+Code is still very bound to class.
+>This example still expects very specific classes.
+>...it controls rather than trusts other objects.
+
+
+### Placing trust in your ducks
+
+The use of the above indicate the presence of an unidentified duck.
+It is an indication that you are missing an object, with a public interface you haven't discovered yet.
+
+>The fact that the missing object is a duck type instead of a concrete class matters not at all; it's the interface that matters, not the class of the object that implements it.
+
+>Flexible applications are built on objects that operate on trust.
+
+
+### Documenting duck types
+
+>Simplest kind of duck type is one the exists as an agreement about its public interface. Code in this chapter implements that kind of duck, where several different classes implement `prepare_trip` and can thus be treated like `Preparers`.
+
+>When you create duck types you must both document and test their public interfaces.
+
+### Sharing code between ducks
+Page 99
+
+In this chapters code, the `Preparer` ducks only share an interface. Others will share behaviour - chap 7
+
+### Choosing your ducks wisely
+
+Ruby on Rails example - first
+
+
+## Conquering a fear of duck typing
+
+dynamic vs static typed languages
+
+### Subverting duck types with static typing
+
+type - category of the contents of a variable
+prog languages are either static of dynamic typing
+most static type languages require that you explicitly declare the type of each var and method params
+dynamic type -  don't need to do
+
+People who are use to static typed languages check classes, when they fail they add more checks.
+
+>Duck typing provides a way out of this trap.
+
+
+### Static vs Dynamic Typing
+pros and cons
+
+### Embracing Dynamic Typing
+Page 102
