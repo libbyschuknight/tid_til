@@ -332,3 +332,10 @@ pros and cons
 
 ### Embracing Dynamic Typing
 Page 102
+
+Pros of dynamic typing for static
+
+## Summary
+
+>Messages are at the centre of OO applications and they pass among objects along public interfaces. Duck typing detaches there public interfaces from specific classes, creating virtual types that are defined by what they do instead of by who they are.
+>Duck typing reveals underlying abstractions that might otherwise be invisible. Depending on these abstractions reduces risk and increases flexibility, making your application cheaper to maintain and easier to change.
