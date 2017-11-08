@@ -12,3 +12,10 @@ http://railssolutions.blogspot.co.nz/2012/02/difference-between-find-and-findbyi
 
 DHH explains the difference:
 https://stackoverflow.com/questions/4966430/rails-2-model-find1-gives-activerecord-error-when-id-1-does-not-exist/4966553#4966553
+
+
+### safe navigation activerecord
+
+Had this `last_guess && last_guess.correct`, can do as this `last_guess&.correct`
+
+[The Safe Navigation Operator (&.) in Ruby](http://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/)
