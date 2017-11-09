@@ -21,3 +21,19 @@ Match part if a filename:
 ```ruby
 expect(result.filename).to match(/111222_0000060962TR01A_26_09_2017_.+\.csv/)
 ```
+
+
+### Change
+Discovered that instead of doing
+
+```ruby
+expect { post :create, params: params }.to change { Guess.count }.by(1)
+```
+
+you can do
+
+```ruby
+expect { post :create, params: params }.to change { Guess.count }.from(0).to(1)
+```
+
+Which is better then the first expect because it will mean that it will be less likely to fail if there was a race condition (??)
