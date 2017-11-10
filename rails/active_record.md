@@ -68,6 +68,17 @@ and returns what I want!
 ## Joining Tables
 [Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
 
+### Find all records which have a count of an association greater than zero
+https://stackoverflow.com/questions/20183710/find-all-records-which-have-a-count-of-an-association-greater-than-zero
+
+I wanted to find games that had more then x guesses.
+
+I thought it might have been simple (I might be missing a simple way), but this is what I found:
+
+```ruby
+Game.joins(:guesses).group('games.id').having('count(game_id) > 5')
+```
+
 
 
 ## Validations
