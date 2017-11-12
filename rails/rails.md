@@ -210,6 +210,96 @@ Otherwise the schema will be incorrect / out of sync and could cause bad 😱 th
 http://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes
 http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column
 
+#### Plural issues!
+
+I wanted to create a `Kata` model. With kata being the singular of katas.
+
+Was trying to actually do this in a refinerycms app.
+
+`rails generate refinery:engine kata title:string meaning:text interpretation:text`
+
+And it exited with:
+
+`Please specify the singular name 'katum' instead of 'kata'.`
+
+So, thought, is this a rails things or a refinerycms thing. Did this in a vanilla rails app:
+
+`rails generate model kata title:string meaning:text interpretation:text`
+
+and it outputted this:
+
+```
+[WARNING] The model name 'kata' was recognized as a plural, using the singular 'katum' instead. Override with --force-plural or setup custom inflection rules for this noun before running the generator.
+      invoke  active_record
+      create    db/migrate/20171112004026_create_kata.rb
+      create    app/models/katum.rb
+      invoke    rspec
+      create      spec/models/katum_spec.rb
+      invoke      factory_girl
+      create        spec/factories/kata.rb
+```
+
+Which I don't want, want the singular to be `kata` and the plural to be `katas`.
+
+So did
+`rails generate model katas title:string meaning:text interpretation:text --force-plural`
+
+and got
+
+```
+invoke  active_record
+ create    db/migrate/20171112005014_create_katas.rb
+ create    app/models/katas.rb
+ invoke    rspec
+ create      spec/models/katas_spec.rb
+ invoke      factory_girl
+ create        spec/factories/katas.rb
+```
+
+But has not made the model kata.
+
+Had a closer look at things online re inflectors and added this in the `inflections.rb` file:
+
+```ruby
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.plural 'kata', 'katas'
+end
+```
+
+and then ran the migration again and got:
+
+```
+create    db/migrate/20171112005548_create_katas.rb
+create    app/models/kata.rb
+invoke    rspec
+create      spec/models/kata_spec.rb
+invoke      factory_girl
+create        spec/factories/katas.rb
+```
+
+And in refinerycms app:
+
+```
+create  vendor/extensions/katas/app/controllers/refinery/katas/admin/katas_controller.rb
+create  vendor/extensions/katas/app/controllers/refinery/katas/katas_controller.rb
+create  vendor/extensions/katas/app/models/refinery/katas/kata.rb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/_actions.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/_form.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/_katas.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/_records.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/_kata.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/_sortable_list.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/edit.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/index.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/admin/katas/new.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/katas/index.html.erb
+create  vendor/extensions/katas/app/views/refinery/katas/katas/show.html.erb
+...
+```
+
+So, think it has worked add in plural in the inflections file.
+
+
 ### HAML
 HAML converter to HTML - https://haml2erb.org/
 

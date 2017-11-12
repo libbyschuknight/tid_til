@@ -38,17 +38,37 @@ Can't do `rake db:drop` on hekoru so have to do:
 [Reset heroku postgres database](https://coderwall.com/p/qbmhog/reset-heroku-postgres-database)
 
 
-Heroku
+## Deploying
+
+manually push from console:
+`git push heroku master`
+
+Run migrations:
+
+`heroku run rake db:migrate`
+
+
+Run seed task:
+
+`heroku run rake db:seed`
+
+
+
+###Seido site:
 
 Pushes to production continually deploy to Heroku.
 
-Run migrations: heroku run rake db:migrate
+Run migrations:
+
+`heroku run rake db:migrate`
 
 Get into console heroku run rails console
 
 Delete all records e.g Stance.destroy_all
 
-Run seed task: heroku run rake db:seed
+Run seed task:
+
+`heroku run rake db:seed`
 
 This app is using: rake db:seed:dump To dump all data to seed file
 
