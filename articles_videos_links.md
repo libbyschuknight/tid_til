@@ -34,6 +34,8 @@
 
 [blog](https://rework.withgoogle.com/blog/)
 
+[No, I have no side code projects to show you](https://www.codementor.io/ezekielbuchheit/no-i-have-no-side-code-projects-to-show-you-cz1tyhgdz?__s=3y8eajxoa2yag3smywqg)
+
 
 #### Spotify model
 
