@@ -106,3 +106,118 @@ These changes have made `Bicycle` worse. It now has more responsibility, contain
 >This code contains an if statement that checks *an attribute that holds the category self* to determine what message to send to self.
 
 This pattern indicates a missing subtype -> subclass.
+
+### Finding the Embedded Types
+
+In `if` statement, var is called `style` that the method switches on but you have easily been called `type` or `category`. Vars named like this are a queue to notice the underlying pattern.
+
+`type & category` similar to those you would use to describe a class.
+
+Inheritance solves where highly related types that share common behaviour but differ along some dimension - in this case `style`.
+
+### Choosing inheritance
+
+>Objects receive messages. It handles a message in one of two ways - either responds directly or it passes the message onto some other object for a response.
+
+>Inheritance provides a way to define two objects as having a relationship such the when the first receives a message that it does not understand, it *automatically* forwards, or delegates, the message to the second.
+
+Ruby - single inheritance
+A superclass may have many subclasses but each subclass can have only one superclass.
+
+>Message forwarding via classical inheritance takes place between *classes*.
+>Duck types share code via Ruby modules.
+
+### Drawing inheritance relationships
+Page 114
+
+
+## Misapplying inheritance
+
+Examples of common difficulties encountered by novices.
+
+```ruby
+############## Page 107 ##############
+class Bicycle
+  attr_reader :size, :tape_color
+
+  def initialize(args)
+    @size       = args[:size]
+    @tape_color = args[:tape_color]
+  end
+
+  # every bike has the same defaults for
+  # tire and chain size
+  def spares
+    { chain:        '10-speed',
+      tire_size:    '23',
+      tape_color:   tape_color}
+  end
+
+  # Many other methods...
+end
+
+bike = Bicycle.new(
+        size:       'M',
+        tape_color: 'red' )
+
+bike.size     # -> 'M'
+bike.spares
+# -> {:tire_size   => "23",
+#     :chain       => "10-speed",
+#     :tape_color  => "red"}
+```
+
+`MountainBike` is a direct descendent of `Bicycle`
+two method - `initialize` & `spares`, which are already implemented in `Bicycle`, they are *overridden* by `MountainBike`
+>Sending `super` in any method passes that message up the superclass chain.
+
+```ruby
+############## Page 115 ##############
+class MountainBike < Bicycle
+  attr_reader :front_shock, :rear_shock
+
+  def initialize(args)
+    @front_shock = args[:front_shock]
+    @rear_shock  = args[:rear_shock]
+    super(args)
+  end
+
+  def spares
+    super.merge(rear_shock: rear_shock)
+  end
+end
+
+
+############## Page 115 ##############
+mountain_bike = MountainBike.new(
+                  size:         'S',
+                  front_shock:  'Manitou',
+                  rear_shock:   'Fox')
+
+mountain_bike.size # -> 'S'
+
+mountain_bike.spares
+# -> {:tire_size   => "23",       <- wrong!
+#     :chain       => "10-speed",
+#     :tape_color  => nil,        <- not applicable
+#     :front_shock => 'Manitou',
+#     :rear_shock  => "Fox"}
+```
+Above code shows what happens when jam a subclass under a superclass.
+
+>The `Bicycle` class is a concrete class that was not written to be subclassed.
+It has behaviour for bicycles in general but also specifically for a road bike as well.
+
+## Finding the abstraction
+
+The `Bicycle` class does't just represent any kind of bike, is represents a road bike.
+
+Once `MountainBike` exists, `Bicycle`'s name is misleading.
+Inheritance is implied but it is wrong.
+
+>Subclasses are specialisations of their superclass. A `MountainBike` should be everything a `Bicycle` is plus more. Any object that expects a `Bicycle` should be able to interact with a `MountainBike` in blissful ignorance of its actual class.
+
+
+>For inheritance to work, two things must always be true. First, the objects that you are modelling must truly have a generalisation-specialisation relationship. Second, you must the the correct coding techniques.
+
+For this example, it is time to move the road bike code out of `Bicycle` into its own class.
