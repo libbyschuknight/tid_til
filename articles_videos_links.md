@@ -55,6 +55,7 @@
 
 [30 best practices for software development and testing](https://opensource.com/article/17/5/30-best-practices-software-development-and-testing)
 
+
 ### Computer Science
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
@@ -106,7 +107,7 @@
 
 [It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
 
-### Code Style / Structure
+### Code Style / Structure / Reviews
 
 [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
 
@@ -115,6 +116,8 @@
 [10 Ruby on Rails Best Practices](https://www.sitepoint.com/10-ruby-on-rails-best-practices-3/)
 
 [Ubiquitous Language & the joy of naming](http://blog.carbonfive.com/2016/10/04/ubiquitous-language-the-joy-of-naming/)
+
+[How to Do Code Reviews Like a Human (Part One)](https://mtlynch.io/human-code-reviews-1/)
 
 
 ### Architecture Patterns
