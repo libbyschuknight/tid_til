@@ -38,6 +38,9 @@ To solve this did ` ssh-add -K`
 
 ## Using gitlab (work) and github (personal)
 
+Another good article
+[Multiple SSH keys for different accounts on Github or Gitlab](https://coderwall.com/p/7smjkq/multiple-ssh-keys-for-different-accounts-on-github-or-gitlab)
+
 Good article - [SSH Keys with Multiple GitHub Accounts](https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e)
 
 
