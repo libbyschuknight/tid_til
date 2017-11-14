@@ -10,7 +10,6 @@
 
 [Figure NZ - Our kaupapa: raise a paddle](http://tohu.figure.nz/internal/our_kaupapa/#raise-a-paddle)
 
-
 [Let Me Google That for You](http://bridgetkromhout.com/blog/2015/05/31/let-me-google-that-for-you/)
 
 [One-on-one catchups with your team](https://medium.com/@mogest/one-on-one-catchups-with-your-team-4d84219d59ce)
@@ -29,7 +28,6 @@
 
 [Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59)
 
-
 [ReWork - Google](https://rework.withgoogle.com/)
 
 [blog](https://rework.withgoogle.com/blog/)
@@ -43,6 +41,10 @@
 
 [Spotify Squad framework — Part I](https://medium.com/project-management-learnings/spotify-squad-framework-part-i-8f74bcfcd761)
 
+
+## Help yourself
+
+[You Must Try, and then You Must Ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html)
 
 
 ## Stuff
