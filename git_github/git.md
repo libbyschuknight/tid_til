@@ -246,7 +246,6 @@ Add a name when you are stashing:
 
 ```bash
 git stash save useful name here
-git stash save useful name here
 ```
 
 how to see what you have stashed
