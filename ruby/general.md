@@ -4,6 +4,7 @@
 
 #### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
 
+**Date ranges - begin/end**
 ```ruby
 date_range = (Date.parse("16/9/2017"))..(Date.today)
 # Sat, 16 Sep 2017..Mon, 25 Sep 2017
@@ -13,6 +14,12 @@ date_range.begin
 
 date_range.end
 # Mon, 25 Sep 2017
+```
+
+**Quickly making an array**
+```ruby
+("a".."f").to_a
+# => ["a", "b", "c", "d", "e", "f"]
 ```
 
 
@@ -68,7 +75,12 @@ output:
 ]
 ```
 
-
+### Quickly making an array
+```ruby
+[*"a".."f"]
+# => ["a", "b", "c", "d", "e", "f"]
+```
+as well as using a range above
 
 ### 2 dimensional array - array of arrays
 
@@ -88,7 +100,7 @@ will give:
 </select>
 ```
 
-### Private vs Protected (and Public)
+## Private vs Protected (and Public)
 [The difference between Public, Protected and Private methods in Ruby](http://culttt.com/2015/06/03/the-difference-between-public-protected-and-private-methods-in-ruby/)
 > ... a Public method and so you can call it from outside the scope of the object.
 
