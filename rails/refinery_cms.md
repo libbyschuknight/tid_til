@@ -22,3 +22,21 @@ changing the default db and skipping test-unit
 ```
 rails _4.2.7.1_ new learn-2-code-nz -m http://refinerycms.com/t/3.0.4 --database=postgresql --skip-test-unit
 ```
+
+
+
+## Karate site
+Generations
+
+```ruby
+rails generate refinery:engine singular_model_name attribute:type [attribute:type ...]
+
+rails generate refinery:engine person first_name:string last_name:string photo:image dojo:string
+
+rails generate refinery:engine grade dan:boolean level:integer
+
+# here added it into 
+rails g refinery:engine grade dan:boolean level:integer  --extension people --namespace people
+
+rails generate migration AddGradeToRefineryPeople grade_id:integer
+```
