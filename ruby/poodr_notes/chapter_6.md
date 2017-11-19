@@ -221,3 +221,133 @@ Inheritance is implied but it is wrong.
 >For inheritance to work, two things must always be true. First, the objects that you are modelling must truly have a generalisation-specialisation relationship. Second, you must the the correct coding techniques.
 
 For this example, it is time to move the road bike code out of `Bicycle` into its own class.
+
+
+### Creating an abstract superclass
+Page 117
+
+![figure 6.6](fig6_6.png)
+
+The above is your goal.
+
+`Bicycle` will contain the common behaviour, and `MountainBike` and `RoadBike` will add specialisations.
+
+
+`Bicycle`'s public interface will include `spares`, `sizes` and the subclasses interfaces will add own individual parts.
+
+>`Bicycle` now represents an abstract class.
+>...abstract as being disassociated from any specific instance...
+
+>This new version of `Bicycle` will not define a complete bike, just the bits that all bicycles share.
+Will expect to create instances of `MountainBike & RoadBike` but not of `Bicycle`.
+`Bicycle` is not a class where the new message would ever be sent.
+
+Some languages allow you to declare classes as abstract. Ruby does not and enforces no restriction.
+
+>Abstract classes exist to be subclassed.
+Never makes sense to create an abstract super class with only one subclass. Do not do this from the beginning.
+Until you need to deal with other bikes, is better just to have the one class, and the current `Bicycle` is good enough.
+
+Even when there are requirements for 2 kinds of bikes, it still might not be the right time to use inheritance, as it has costs.
+>If you could put off this decision until FastFeet asked for a third kind of bike, your odds of finding the right abstraction would improve dramatically.
+
+Assuming have good reason to create a `Bicycle` hierarchy, want to mirror figure 6.6.
+
+```ruby
+############## Page 119 ##############
+class Bicycle
+  # This class is now empty.
+  # All code has been moved to RoadBike.
+end
+
+class RoadBike < Bicycle
+  # Now a subclass of Bicycle.
+  # Contains all code from the old Bicycle class.
+end
+
+class MountainBike < Bicycle
+  # Still a subclass of Bicycle (which is now empty).
+  # Code has not changed.
+end
+```
+
+>This rearrangement improves your lot because its easier to promote code up to a superclass than to demote it down to a subclass.
+
+
+```ruby
+############## Page 120 ##############
+road_bike = RoadBike.new(
+              size:       'M',
+              tape_color: 'red' )
+
+road_bike.size  # => "M"
+
+mountain_bike = MountainBike.new(
+                  size:         'S',
+                  front_shock:  'Manitou',
+                  rear_shock:   'Fox')
+
+mountain_bike.size
+# NoMethodError: undefined method `size'
+```
+Because `Bicycle` is empty. And above does not have `.size`.
+
+### Promoting abstract behaviour
+
+Moving `size` up to the superclass.
+```ruby
+############## Page 121 ##############
+class Bicycle
+  attr_reader :size     # <- promoted from RoadBike
+
+  def initialize(args={})
+    @size = args[:size] # <- promoted from RoadBike
+  end
+end
+
+class RoadBike < Bicycle
+  attr_reader :tape_color
+
+  def initialize(args)
+    @tape_color = args[:tape_color]
+    super(args)  # <- RoadBike now MUST send 'super'
+  end
+  # ...
+end
+```
+
+
+`MountainBike`'s current code state
+```ruby
+############## Page 115 ##############
+class MountainBike < Bicycle
+  attr_reader :front_shock, :rear_shock
+
+  def initialize(args)
+    @front_shock = args[:front_shock]
+    @rear_shock  = args[:rear_shock]
+    super(args)
+  end
+
+  def spares
+    super.merge(rear_shock: rear_shock)
+  end
+end
+```
+
+Now that `size` has been moved into `Bicycle`, both `RoadBike & MountainBike` respond correctly to `size`.
+```ruby
+############## Page 122 ##############
+road_bike = RoadBike.new(
+              size:       'M',
+              tape_color: 'red' )
+
+road_bike.size  # -> "M"
+
+mountain_bike = MountainBike.new(
+                  size:         'S',
+                  front_shock:  'Manitou',
+                  rear_shock:   'Fox')
+
+mountain_bike.size # -> 'S'
+```

@@ -644,7 +644,7 @@ In code review, I mentioned why I had changed and got some good feedback and cha
     }
 %">"
 ```
-So, this acutally pops up a dialog window and then the text in the button changes! Works well for what we want!
+So, this actually pops up a dialog window and then the text in the button changes! Works well for what we want!
 
 
 #### Using regex
