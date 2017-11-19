@@ -33,10 +33,27 @@ rails generate refinery:engine singular_model_name attribute:type [attribute:typ
 
 rails generate refinery:engine person first_name:string last_name:string photo:image dojo:string
 
-rails generate refinery:engine grade dan:boolean level:integer
+rails generate refinery:engine grade title:string dan:boolean kyu:boolean level:integer
 
-# here added it into 
+# here added it into
 rails g refinery:engine grade dan:boolean level:integer  --extension people --namespace people
 
 rails generate migration AddGradeToRefineryPeople grade_id:integer
+```
+
+```ruby
+Refinery::Page.where(slug:  "grades")
+Refinery::Page.where(:slug => "grades")
+```
+
+
+Associate two models in different engines https://stackoverflow.com/questions/12691733/refinerycms-with-mutliple-associated-model-in-rails/14599955#14599955
+
+```ruby
+# In the user.rb in the User engine add
+has_many :posts, :class_name => Refinery::Posts::Post
+
+# and in the post.rb add
+
+belongs_to :user, :class_name => Refinery::Users::User
 ```
