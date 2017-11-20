@@ -351,3 +351,123 @@ mountain_bike = MountainBike.new(
 
 mountain_bike.size # -> 'S'
 ```
+
+>...but this push-everything-down-and-then-pull-somethings-up strategy is an important part of this refactoring.
+
+Remember to ask the questions *What happens if I am wrong?*
+
+>The general rule for refactoring into a new inheritance hierarchy is to arrange code so that you can promote abstractions rather than demote concretions.
+
+
+### Separating abstract from concrete
+Page 123
+`RoadBike`'s `spares` method, self-contained, still works.
+
+```ruby
+############## Page 123 ##############
+class RoadBike < Bicycle
+  # ...
+  def spares
+    { chain:        '10-speed',
+      tire_size:    '23',
+      tape_color:   tape_color}
+  end
+end
+```
+
+
+`MountainBike`'s `spares` method, broken as sends `super` and new `Bicycle` supper class does not implement `spares`.
+
+```Ruby
+############## Page 124 ##############
+class MountainBike < Bicycle
+  # ...
+  def spares
+    super.merge({rear_shock:  rear_shock})
+  end
+end
+
+mountain_bike.spares
+# NoMethodError: super: no superclass method `spares'
+```
+
+Code that handles `size`, `chain`, `tire_size` in a similar way - code for similar things should follow a similar pattern.
+
+```Ruby
+############## Page 125 ##############
+class Bicycle
+  attr_reader :size, :chain, :tire_size
+
+  def initialize(args={})
+    @size       = args[:size]
+    @chain      = args[:chain]
+    @tire_size  = args[:tire_size]
+  end
+  # ...
+end
+```
+
+>`RoadBike & MountainBike` inherit the `attr_reader` definitions in `Bicycle` and both send `super` in their `initialize` methods.
+
+
+### Using the template method pattern
+Page 125
+
+Defining a basic structure in the superclass and sending messages to acquire subclass-specific contributions is known as the *template method* pattern.
+
+`MountainBike & RoadBike` only take advantage of one of these opportunities - `default_tire_size`
+
+```ruby
+############## Page 126 ##############
+class Bicycle
+  attr_reader :size, :chain, :tire_size
+
+  def initialize(args={})
+    @size       = args[:size]
+    @chain      = args[:chain]     || default_chain
+    @tire_size  = args[:tire_size] || default_tire_size
+  end
+
+  def default_chain       # <- common default
+    '10-speed'
+  end
+end
+
+class RoadBike < Bicycle
+  # ...
+  def default_tire_size   # <- subclass default
+    '23'
+  end
+end
+
+class MountainBike < Bicycle
+  # ...
+  def default_tire_size   # <- subclass default
+    '2.1'
+  end
+end
+```
+
+All bikes share same default for chain and have different defaults for tire size.
+
+```Ruby
+############## Page 126 ##############
+road_bike = RoadBike.new(
+              size:       'M',
+              tape_color: 'red' )
+
+road_bike.tire_size     # => '23'
+road_bike.chain         # => "10-speed"
+
+mountain_bike = MountainBike.new(
+                  size:         'S',
+                  front_shock:  'Manitou',
+                  rear_shock:   'Fox')
+
+mountain_bike.tire_size # => '2.1'
+road_bike.chain         # => "10-speed"
+```
+
+However, the code contains a booby trap!
+
+### Implementing every template method
