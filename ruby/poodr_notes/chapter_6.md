@@ -471,3 +471,223 @@ road_bike.chain         # => "10-speed"
 However, the code contains a booby trap!
 
 ### Implementing every template method
+Page 127
+
+`Bicycle` sends `default_tire_size` initialize method but does not implement it.
+This could cause problems in the future.
+If another bike is added but  the subclass, `RecumbentBike`, doesn't supply the `default_tire_size` method, it will break.
+
+
+```ruby
+############## Page 127 ##############
+class RecumbentBike < Bicycle
+  def default_chain
+    '9-speed'
+  end
+end
+
+bent = RecumbentBike.new
+# NameError: undefined local variable or method
+#   `default_tire_size'
+```
+
+>The root of the problem is that `Bicycle` imposes a requirement upon its subclass that is not obvious from a glance at the code.
+
+>Any class that uses the template method pattern must supply an implementation for every message it sends, even if the only reasonable implementation in the sending... is raising an error
+
+```ruby
+############## Page 128 ##############
+class Bicycle
+  #...
+  def default_tire_size
+    raise NotImplementedError
+  end
+end
+```
+This provides useful documentation about the `Bicycle` class.
+
+
+The fail for the `RecumbentBike` now:
+
+```ruby
+############## Page 128 ##############
+bent = RecumbentBike.new
+#  NotImplementedError: NotImplementedError
+```
+
+Adding more info is nicer:
+
+```ruby
+############## Page 128 ##############
+class Bicycle
+  #...
+  def default_tire_size
+    raise NotImplementedError,
+          "This #{self.class} cannot respond to:"
+  end
+end
+```
+
+Which gives:
+
+```ruby
+############## Page 129 ##############
+bent = RecumbentBike.new
+#  NotImplementedError:
+#    This RecumbentBike cannot respond to:
+#	     `default_tire_size'
+```
+This makes it very clear.
+>This error is unambiguous and easily corrected.
+
+>Always document template method requirements by implementing matching methods that raise useful errors.
+
+
+## Managing coupling between superclasses and subclasses
+
+>Managing coupling is important; tightly coupled classes stick together and may be impossible to change independently.
+
+### Understanding coupling
+
+Easy way to write `spares` makes for tightly coupled classes:
+
+`RoadBike`
+```ruby
+############## Page 130 ##############
+class RoadBike < Bicycle
+  #
+  def spares
+    { chain:        '10-speed',
+      tire_size:    '23',
+      tape_color:   tape_color}
+  end
+end
+```
+
+`MountainBike`
+```ruby
+############## Page 130 ##############
+class MountainBike < Bicycle
+  #
+  def spares
+    super.merge({rear_shock:  rear_shock})
+  end
+end
+```
+
+Adding this `spares` method to `Bicycle` to meet `MountainBike` needs.
+
+```ruby
+############## Page 130 ##############
+class Bicycle
+  #...
+  def spares
+    { tire_size:  tire_size,
+      chain:      chain}
+  end
+end
+```
+
+Now that this is in place in `Bicycle`, sorting out `RoadBike` is a case of changing its `spares` implementation to mirror `MountainBike`.
+
+```ruby
+############## Page 131 ##############
+class Bicycle
+  attr_reader :size, :chain, :tire_size
+
+  def initialize(args={})
+    @size       = args[:size]
+    @chain      = args[:chain]      || default_chain
+    @tire_size  = args[:tire_size]  || default_tire_size
+  end
+
+  def spares
+    { tire_size:  tire_size,
+      chain:      chain}
+  end
+
+  def default_chain
+    '10-speed'
+  end
+
+  def default_tire_size
+    raise NotImplememtedError
+  end
+end
+
+class RoadBike < Bicycle
+  attr_reader :tape_color
+
+  def initialize(args)
+    @tape_color = args[:tape_color]
+    super(args)
+  end
+
+  def spares
+    super.merge({ tape_color: tape_color})
+  end
+
+  def default_tire_size
+    '23'
+  end
+end
+
+class MountainBike < Bicycle
+  attr_reader :front_shock, :rear_shock
+
+  def initialize(args)
+    @front_shock = args[:front_shock]
+    @rear_shock =  args[:rear_shock]
+    super(args)
+  end
+
+  def spares
+    super.merge({rear_shock: rear_shock})
+  end
+
+  def default_tire_size
+    '2.1'
+  end
+end
+```
+
+Pattern - every template method sent by `Bicycle` is implemented by itself and `MountainBike & RoadBike` both send super in their `initialize & spares` methods.
+
+But it has a booby trap. They know about their superclass.
+
+>Knowing things about other classes, as always, creates dependencies and dependencies couple objects together. The dependencies in the code above are also the booby traps; both are created by the sends of `super` in the subclasses.
+
+An example:
+
+```ruby
+############## Page 133 ##############
+class RecumbentBike < Bicycle
+  attr_reader :flag
+
+  def initialize(args)
+    @flag = args[:flag]  # forgot to send 'super'
+  end
+
+  def spares
+    super.merge({flag: flag})
+  end
+
+  def default_chain
+    '9-speed'
+  end
+
+  def default_tire_size
+    '28'
+  end
+end
+
+bent = RecumbentBike.new(flag: 'tall and orange')
+bent.spares
+# -> {:tire_size => nil, <- didn't get initialized
+#     :chain     => nil,
+#     :flag      => "tall and orange"}
+```
+
+>When a subclass sends `super` its effectively declaring that it knows the algorithm; it *depends* on this knowledge. If the algorithm changes, then the subclasses may break even if their own specialisations are not otherwise affected.
+
+### Decoupling subclasses using hook messages
