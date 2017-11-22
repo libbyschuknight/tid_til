@@ -691,3 +691,175 @@ bent.spares
 >When a subclass sends `super` its effectively declaring that it knows the algorithm; it *depends* on this knowledge. If the algorithm changes, then the subclasses may break even if their own specialisations are not otherwise affected.
 
 ### Decoupling subclasses using hook messages
+Page 134
+
+>Instead of allowing subclasses to know the algorithm and requiring that they send super, superclasses can instead send *hook* messages, ones that exist solely to provide subclasses a place to contribute information by implementing matching methods.
+
+
+```ruby
+############## Page 134 ##############
+class Bicycle
+
+  def initialize(args={})
+    @size       = args[:size]
+    @chain      = args[:chain]     || default_chain
+    @tire_size  = args[:tire_size] || default_tire_size
+
+    post_initialize(args)    # Bicycle both sends
+  end
+
+  # and implements this
+  def post_initialize(args)
+    nil
+  end
+  # ...
+end
+
+class RoadBike < Bicycle
+
+  def post_initialize(args)
+    @tape_color = args[:tape_color] # RoadBike can optionally
+  end                               # override it
+  # ...
+end
+```
+
+`RoadBike` overrides `post_initialize` with its own specialised initialisation.
+This removes the `initialize` method as well as removing the sending of `super`.
+It no longer controls initialisation but contributes specialisations to a larger, abstract algorithm.
+
+Change `Bicycle`'s `spares` method to send `local_spares`:
+
+```ruby
+############## Page 135 ##############
+class Bicycle
+  # ...
+  def spares
+    { tire_size: tire_size,
+      chain:     chain}.merge(local_spares)
+  end
+
+  # hook for subclasses to override
+  def local_spares
+    {}
+  end
+end
+
+class RoadBike < Bicycle
+  # ...
+  def local_spares
+    {tape_color: tape_color}
+  end
+end
+```
+
+>This changes preserves the specialisation supplied by `RoadBike` but reduces its coupling to `Bicycle`.
+
+With changes to `MountainBike`, here is all the code:
+
+```ruby
+############## Page 136 ##############
+class Bicycle
+  attr_reader :size, :chain, :tire_size
+
+  def initialize(args={})
+    @size       = args[:size]
+    @chain      = args[:chain]     || default_chain
+    @tire_size  = args[:tire_size] || default_tire_size
+    post_initialize(args)
+  end
+
+  def spares
+    { tire_size: tire_size,
+      chain:     chain}.merge(local_spares)
+  end
+
+  def default_tire_size
+    raise NotImplementedError
+  end
+
+  # subclasses may override
+  def post_initialize(args)
+    nil
+  end
+
+  def local_spares
+    {}
+  end
+
+  def default_chain
+    '10-speed'
+  end
+
+end
+
+class RoadBike < Bicycle
+  attr_reader :tape_color
+
+  def post_initialize(args)
+    @tape_color = args[:tape_color]
+  end
+
+  def local_spares
+    {tape_color: tape_color}
+  end
+
+  def default_tire_size
+    '23'
+  end
+end
+
+class MountainBike < Bicycle
+  attr_reader :front_shock, :rear_shock
+
+  def post_initialize(args)
+    @front_shock = args[:front_shock]
+    @rear_shock =  args[:rear_shock]
+  end
+
+  def local_spares
+    {rear_shock:  rear_shock}
+  end
+
+  def default_tire_size
+    '2.1'
+  end
+end
+```
+
+`RoadBike & MountainBike` are more readable, its clear what they do and that they are specialisations of `Bicycle`.
+
+`RecumbentBike` class - how simple it is to create a new subclass, because it need only implement the template methods.
+
+```ruby
+############## Page 138 ##############
+class RecumbentBike < Bicycle
+  attr_reader :flag
+
+  def post_initialize(args)
+    @flag = args[:flag]
+  end
+
+  def local_spares
+    {flag: flag}
+  end
+
+  def default_chain
+    '9-speed'
+  end
+
+  def default_tire_size
+    '28'
+  end
+end
+
+bent = RecumbentBike.new(flag: 'tall and orange')
+bent.spares
+# -> {:tire_size => "28",
+#     :chain     => "10-speed",
+#     :flag      => "tall and orange"}
+```
+
+## Summary
+
+>Inheritance solves the problem of related types that share a great deal of common behaviour but differ across some dimension. It allows you to isolate shared code and implement common algorithms in an abstract class, while also providing a structure that permits subclasses to contribute specialisations.
