@@ -2,9 +2,13 @@
 
 The steps I follow to create a new rails app - from https://github.com/roa-2015/shopping_cart_example (private repo)
 
+- create new rails app
 ```bash
 rails new app_name --database=postgresql --skip-test-unit --skip-turbolinks
+```
 
+- if not already git initialised (which probably is with new versions of rails)
+```
 cd app_name
 
 git init
@@ -14,13 +18,25 @@ git add -A
 git commit -m "first commit message"
 ```
 
+Got to github or gitlab and create a online repo for your `existing Git repository`,  follow instructions for adding remote to local:
+
+gitlab example
+```
+cd existing_repo
+git remote add origin git@git.fluxfederation.com:libby/<app_name>.git
+git push -u origin --all
+git push -u origin --tags
+```
+
+Remove coffeescript gem, might be better to do above.
+
 Install RSpec Rails - https://github.com/rspec/rspec-rails
 
 Add rspec-rails to both the :development and :test groups in the Gemfile:
 
 ```ruby
   group :development, :test do
-    gem 'rspec-rails', '~> 3.0'
+    gem 'rspec-rails' # go to rubygems to get most up to date version number
   end
 ```
 Run:
@@ -32,6 +48,38 @@ Initialize spec/ dir...
 `rails generate rspec:install`
 
 Use rspec to run commands... `rspec` or `bundle exec rspec`
+
+
+Add cucumber (https://cucumber.io/docs/reference/rails)
+
+```ruby
+group :test, :development do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
+```
+
+`bundle install`
+
+`rails generate cucumber:install`
+
+## Other gems for dev/test setup:
+
+```ruby
+gem "awesome_print"
+
+gem 'pry-byebug'
+gem 'pry-rails', '~> 0.3.6'
+
+gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2' # rails 5 up
+```
+
+
+
+
+-----
+
 
 Remove Turbolinks (Rails 4?)
   http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4

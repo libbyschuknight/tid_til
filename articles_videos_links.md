@@ -130,10 +130,15 @@
 
 
 
-##### Security
+### Security
 
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
-##### Routing
+### Routing
 
 [2.2 CRUD, Verbs
+
+
+### Other Stuff
+
+[Collections: Curated lists and insight into burgeoning industries, topics, and communities.](https://github.com/collections)
