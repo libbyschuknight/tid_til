@@ -41,3 +41,26 @@ In Ruby they are *modules*.
 
 ### Removing unnecessary dependencies
 Page 145
+
+>The fact that the `Schedule` checks many class names to determine what value to place in one var suggests that the var name should be turned into a message, which in turn should be sent to each incoming object.
+
+#### Discovering the schedulable duck type
+
+![figure 7.2](fig7_2.png)
+
+This removes the check on class, changes method `schedulable?` to send the `lead_days` messages to its incoming target argument.
+
+This change moves the responsibility for knowing lead days into the last object.
+
+>The `Schedule` expects its `target` to behave like something that understands `lead_days`, that is, like something that is "schedulable". You have discovered a duck type.
+
+#### Letting objects speak for themselves
+Page 147
+e.g `StringUtils.empty?(some_string)`
+
+>This specific example illustrates the general idea that objects should manage themselves; they should contain their own behaviour. If your interest is in object B, you should not be forced to know about object A if your only use of it is to find things out about B.
+
+>Just as strings respond to `empty?` and can speck for themselves, targets should respond to `schedulable?`. The `schedulable?` method should be added to the interface of the `Schedulable` role.
+
+
+## Writing the concrete code
