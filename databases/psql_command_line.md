@@ -138,3 +138,26 @@ Large Objects
   \lo_list
   \lo_unlink LOBOID      large object operations
 ```
+
+
+## Finding data types
+
+```bash
+select column_name, data_type from information_schema.columns
+where table_name = 'users';
+```
+returns
+```sql
+column_name |          data_type
+-------------+-----------------------------
+id          | bigint
+name        | character varying
+admin       | boolean
+address     | text
+city        | character varying
+icp         | character varying
+status      | integer
+created_at  | timestamp without time zone
+updated_at  | timestamp without time zone
+(9 rows)
+```

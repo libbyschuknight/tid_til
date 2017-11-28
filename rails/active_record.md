@@ -93,3 +93,14 @@ class Game < ApplicationRecord
   validates_numericality_of :lives, greater_than_or_equal_to: 0
 end
 ```
+
+
+## Migrations
+
+[Rails 5: Rename a Column on a Database in a Migration](http://codkal.com/how-rename-database-column-rails-5-migration/)
+
+
+
+## Enums
+
+[Creating Easy, Readable Attributes With ActiveRecord Enums](https://www.justinweiss.com/articles/creating-easy-readable-attributes-with-activerecord-enums/)
