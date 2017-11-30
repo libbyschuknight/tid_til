@@ -494,3 +494,11 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 #### Helper Methods
 
 [ActionController::Helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html)
+
+#### View Stuff
+
+Add debug to view:
+
+```
+<%= debug(params) if Rails.env.development? %>
+```

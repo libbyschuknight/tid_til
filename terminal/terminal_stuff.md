@@ -40,6 +40,12 @@ this will take you to where you are in the code. Very useful if you have been tr
 32: end
 ```
 
+#### Pry in rails without adding gem to gemfile
+
+https://stackoverflow.com/questions/8377263/rails-console-with-pr
+
+`pry -I . -r config/environment` works to launch pry in a Rails environment, so I can just alias `rails pry` to that in my `bashrc`.
+
 #### Getting awesome print working
 Add to `./pryrc`
 
