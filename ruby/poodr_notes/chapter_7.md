@@ -189,3 +189,59 @@ b.schedulable?(starting, ending)
 
 Now that have created this module, other objects can make use of it to become `Schedulable` themselves.
 >They can play this role without duplicating code.
+
+>Once you include the module in all the classes that can be scheduled, pattern looks a lot like inheritance.
+
+```ruby
+############## Page 152 ##############
+class Vehicle
+  include Schedulable
+
+  def lead_days
+    3
+  end
+
+  # ...
+end
+
+class Mechanic
+  include Schedulable
+
+  def lead_days
+    4
+  end
+
+  # ...
+end
+
+v = Vehicle.new
+v.schedulable?(starting, ending)
+# This Vehicle is not scheduled
+#   between 2015-09-01 and 2015-09-10
+#  => true
+
+m = Mechanic.new
+m.schedulable?(starting, ending)
+# This Mechanic is not scheduled
+#   between 2015-08-31 and 2015-09-10
+#  => true
+```
+
+>The code in `Schedulable` is the *abstraction* and it uses the template method pattern to invite objects to provide specialisations to the algorithm it supplies.
+>When `schedulable?` arrives at any `Schedulable`, the message is automatically delegated to the method defined in the module.
+
+This technique is similar to classical inheritance but there is a  *is-a versus behaves-like-a* difference and it matters. But coding techniques are similar because they reply on automatic message delegation.
+
+
+## Looking up methods
+Page 154
+
+>Understanding similarities between classical inheritance and module inclusion is easier of you understand how OO languages find the method implementation that matches a message send.
+
+### A gross oversimplification
+
+>When an objects receives a message, the OO language first looks in that object's *class* for a matching method. Otherwise method definition would need to be duplicated within every instance of every class. Storing the methods known to an object inside of its class means that all instances of a class can share the same set of method definitions; definitions that need then exist in only one place.
+
+>If the class does not implement the message, the search proceeds to its superclass. From here on only superclasses matter, the search proceeds up the superclass chain, looking in one superclass after another, until it reaches the top of the hierarchy.
+
+fig 7.5
