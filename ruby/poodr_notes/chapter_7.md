@@ -63,7 +63,7 @@ e.g `StringUtils.empty?(some_string)`
 >Just as strings respond to `empty?` and can speck for themselves, targets should respond to `schedulable?`. The `schedulable?` method should be added to the interface of the `Schedulable` role.
 
 
-## Writing the concrete code
+### Writing the concrete code
 Page 147
 
 `Schedulable` role only has an interface, need to add `schedulable?` method to it, must decide what the code should do and where the code should go.
@@ -130,7 +130,7 @@ b.schedulable?(starting, ending)
 
 This hides `Schedule` and what it does inside of `Bicycle`.
 
-## Extracting the Abstraction
+### Extracting the Abstraction
 Page 150
 
 Above code solves first part of problem, has decided what `schedulable?` should do. `Bicycle` is not the right place for it though, as other things are `schedulable`. Need to rearrange so can be used by objects of different classes.
@@ -233,15 +233,67 @@ m.schedulable?(starting, ending)
 This technique is similar to classical inheritance but there is a  *is-a versus behaves-like-a* difference and it matters. But coding techniques are similar because they reply on automatic message delegation.
 
 
-## Looking up methods
+### Looking up methods
 Page 154
 
 >Understanding similarities between classical inheritance and module inclusion is easier of you understand how OO languages find the method implementation that matches a message send.
 
-### A gross oversimplification
+#### A gross oversimplification
 
 >When an objects receives a message, the OO language first looks in that object's *class* for a matching method. Otherwise method definition would need to be duplicated within every instance of every class. Storing the methods known to an object inside of its class means that all instances of a class can share the same set of method definitions; definitions that need then exist in only one place.
 
 >If the class does not implement the message, the search proceeds to its superclass. From here on only superclasses matter, the search proceeds up the superclass chain, looking in one superclass after another, until it reaches the top of the hierarchy.
 
-fig 7.5
+![figure 7.5](fig7_5.png)
+
+>If all attempts to find a suitable method fail, you might expect the search to stop, but many languages make a second attempt to resolve the message.
+>Ruby gives the original receiver a second chance by sending it a new message, `method_missing`, and passing `:spares` as an argument. Attempts to resolve this new message restart the search along the same path, except now the search is for `method_missing` rather than `spares`
+
+^^ Classical inheritance
+
+#### A more accurate explanation
+Page 155
+
+Methods defined in a Ruby module
+
+![figure 7.6](fig7_6.png)
+
+>Adds the `Schedulable` module to the method lookup path
+
+>When `Bicycle` includes `Schedulable`, all of the methods defined in the module becomd part of `Bicycle`'s response set.
+>Any message received by an instance of `MountainBike` now stands a chance of being satisfied by a method defined in the `Schedulable` module.
+>This has enormous implications.
+
+
+#### A very nearly complete explanation
+
+>Its entirely possible for a hierarchy to contain a long chain of superclasses, each of which includes many modules.
+
+As well as including modules in classes, an object can also be added to with `extend`, if added to a class, creates class methods, if added to an instance of a class creates instance methods.
+
+Fig 7.7 - complete list of possibilities - but not the complete story.
+
+![figure 7.7](fig7_7.png)
+
+
+### Inheriting role behaviour
+
+Write properly inheritable code.
+
+## Writing inheritable code
+
+The use and maintenance of inheritance hierarchies and modules depends on the quality of the code.
+
+### Recognise the anti-patterns
+Page 158
+
+Two anti-patterns that might show that your code could benefit from inheritance.
+
+>First, an object that uses a variable with a name like `type`, `category` to determine what message to send to `self` contains two highly related but slightly different types.
+
+Can be rearranged to use classical inheritance, put common code in superclass, create subclasses for different types.
+
+>Second, when a sending object checks the class of a receiving object to determine what message to send, you have overlooked a duck type.
+Code into a duck type, received should implement the duck type's interface.
+
+### Insist on the abstraction
