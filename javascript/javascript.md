@@ -2,6 +2,10 @@
 
 ## Links
 
+[YOU MIGHT NOT NEED JQUERY](http://youmightnotneedjquery.com/)
+
+[(Now More Than Ever) You Might Not Need jQuery](https://css-tricks.com/now-ever-might-not-need-jquery/)
+
 [Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
 
