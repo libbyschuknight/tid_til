@@ -297,3 +297,17 @@ Can be rearranged to use classical inheritance, put common code in superclass, c
 Code into a duck type, received should implement the duck type's interface.
 
 ### Insist on the abstraction
+
+>All of the code in an abstract superclass should apply to every class that inherits it. Superclasses should not contain code that applies to some, but not all, subclasses. This restriction also applies to modules: the code in a module must apply to all who use it.
+
+>If you cannot correctly identity the abstraction there may not be one, and if no common abstraction exists then inheritance is not the solution to your design problem.
+
+### Honour the contract
+
+>Subclasses agree to a *contract*; they promise to substitutable for their superclasses.
+This is only possible when objects behave as expected and subclasses are *expected* to conform to their superclasses's interfaces.
+>Subclasses that fail to honour their contract are difficult to use.
+Honouring the contract means you are following the Liskov Substitution Principle (LSP)
+>- in order for a type systems to be sane, subtypes must be substitutable for their super types.
+
+### Use the template method pattern
