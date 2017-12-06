@@ -22,3 +22,12 @@ Start in the centre and work way outwards, in a methodical manner
 [Learn CSS Layout](http://learnlayout.com/)
 
 [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
+
+
+
+## Security Stuff
+
+[What is the difference between authentication and authorization?](https://serverfault.com/questions/57077/what-is-the-difference-between-authentication-and-authorization)
+
+>- Authentication is the process of verifying who you are. When you log on to a PC with a user name and password you are authenticating.
+>- Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.

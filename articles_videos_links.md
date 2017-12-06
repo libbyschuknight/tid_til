@@ -134,6 +134,8 @@
 
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
+[What is the difference between authentication and authorization?](https://serverfault.com/questions/57077/what-is-the-difference-between-authentication-and-authorization)
+
 ### Routing
 
 [2.2 CRUD, Verbs
