@@ -311,3 +311,37 @@ Honouring the contract means you are following the Liskov Substitution Principle
 >- in order for a type systems to be sane, subtypes must be substitutable for their super types.
 
 ### Use the template method pattern
+
+>The fundamental coding technique for creating inheritable code is the template method pattern.
+>Allows you to separate the abstract from the concrete.
+>The abstract code defines the algorithms, and the concrete inheritors of the abstraction contribute specialisations by overriding these template methods.
+
+### Preemptively decouple classes
+
+>Avoid writing code that requires its inheritors so send `super`; instead use hook messages.
+
+### Create shallow hierarchies
+
+>The limitations of hook methods are just one of the many reasons to create shallow hierarchies.
+
+hierarchy -> pyramid -> depth and breadth
+depth - number of superclasses between object and the top
+breadth - number of its direct subclasses
+
+![figure 7.8](fig7_8.png)
+
+shallow, narrow - easy to understand
+shallow, wide - slightly more complicated
+deep, narrow - bit more challenging, tendency to get wider
+deep, wide - difficult to understand, costly to maintain, avoid
+
+## Summary
+
+objects that play a common role need to share behaviour, do via Ruby module
+code in a module can be added to any object, instance of a class, a class or another module
+
+class includes a module, methods are in same lookup path as methods acquired via inheritance
+coding techniques for modules mirror those of inheritance, therefore modules should use the template method pattern and use hook methods to avoid forcing `includers` to send `super`
+
+>When an object acquires behaviour that was defined elsewhere, the acquiring object makes a commitment to honouring an implied contract.
+Liskov Substitution Principle
