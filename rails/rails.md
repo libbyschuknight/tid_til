@@ -502,3 +502,8 @@ Add debug to view:
 ```
 <%= debug(params) if Rails.env.development? %>
 ```
+
+
+## Links
+
+[Data Types in Rails](http://blog.ifyouseewendy.com/blog/2015/08/10/data-types-in-rails/)
