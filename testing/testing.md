@@ -273,6 +273,10 @@ Then the `service_client` was stubbed out and returned a double which to start w
 
 ## Capybara Testing
 
+Useful page - has node methods (as in `fill_in`) and session methods (using `page`, `page.body`, `page.save_page`)
+
+[Class: Capybara::Session](http://www.rubydoc.info/github/jnicklas/capybara/Capybara/Session)
+
 When using [`save_and_open_page`](https://www.stefanwille.com/2010/12/printing-the-page-content-in-capybara/), to use the assets so the page has the correct styling, in your `config/environments/test.rb` file, add these:
 
 ```ruby
