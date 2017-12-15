@@ -1,1 +1,0 @@
-# December Mistakes & Improvements
