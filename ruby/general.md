@@ -49,6 +49,9 @@ Example in pull request:
 ```
 [Ruby 2.3 release](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
 
+#### frozen_string_literal
+[Friendly Frozen String Literals](https://freelancing-gods.com/2017/07/27/friendly-frozen-string-literals.html)
+
 
 ### class_attribute
 http://api.rubyonrails.org/classes/Class.html#method-i-class_attribute

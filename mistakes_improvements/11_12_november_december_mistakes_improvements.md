@@ -12,6 +12,11 @@ http://railssolutions.blogspot.co.nz/2012/02/difference-between-find-and-findbyi
 DHH explains the difference:
 https://stackoverflow.com/questions/4966430/rails-2-model-find1-gives-activerecord-error-when-id-1-does-not-exist/4966553#4966553
 
+  >When you use a finder driven by primary keys, you’re looking for a particular record. You expect it to exist. A call to Person.find(5) is based on our knowledge of the people table. We want the row with an id of 5. If this call is unsuccessful—if the record with the id of 5 has been destroyed—we’re in an exceptional situation. This mandates the raising of an exception, so Rails raises RecordNotFound.
+
+  >On the other hand, finders that use criteria to search are looking for a match. So, Person.find(:first, :conditions=>"name=’Dave’") is the equivalent of telling the database (as a black box) “Give me the first person row that has the name Dave.” This exhibits a distinctly different approach to retrieval; we’re not certain up front that we’ll get a result. It’s entirely possible the result set may be empty. Thus, returning nil in the case of finders that search for one row and an empty array for finders that search for many rows is the natural, nonexceptional response.
+
+
 
 ### safe navigation activerecord
 
@@ -128,3 +133,48 @@ end
 ```
 
 Now, it is specifically looking for a particular id, and doing `find_by(id: id)` returns `nil` if there is nothing found.
+
+
+### Database constraints
+
+I hadn't bothered to put many db constraints into my minishop and no one had said anything about it until now, as was considering feedback found this
+[Validation, Database Constraint, or Both?](https://robots.thoughtbot.com/validation-database-constraint-or-both)
+
+which I think explains it well.
+
+Also
+
+[Required Fields Should Be Marked NOT NULL](https://www.viget.com/articles/required-fields-should-be-marked-not-null)
+
+>For example, update_attribute ignores validations, as does save if you call it with the validate: false option.
+
+
+### Commit messages
+
+Feedback in merge request
+
+>So for example on 4b049231, instead of "Small updates" you might say:
+
+>`Add bad_customer fixture for reason x, adjust wording of cuke steps`
+
+>`Because of x, we needed to add a bad_customer fixture. This new fixture allows
+us to test y.>`
+
+>`Also, adjust the wording of some cuke steps so that they read more naturally.`
+
+
+>In general, I like to see the following in a commit message:
+
+>`HEADLINE: the crux of this change. If you read only this line you at least know the gist of what the commit does.`
+
+>`FIRST PARAGRAPH: The cause, motivation, or behaviour prior to this
+commit. This gives context, in particular we're trying to illuminate
+the *why* of this commit.`
+
+>`NEXT PARAGRAPH: If necessary, this paragraph explains the context of
+the solution. Often it's not needed, because the headline + first
+paragraph + code are enough to understand the change. However, if your
+solution does some non-standard or suprising stuff, then this is a
+good place to explain the constraints that prompted you to solve the
+problem in this way.
+This is just a guide, there are many good templates out there, but in general we want to think about the why of both the problem and the solution.`
