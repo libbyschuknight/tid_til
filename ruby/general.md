@@ -401,8 +401,14 @@ ChargeBatch {
 
 
 ## Using `try()`
+
 [try(), try() again in Rails](https://everydayrails.com/2011/04/28/rails-try-method.html)
 
 [Do, or do not. There is no #try.](http://www.virtuouscode.com/2011/06/28/do-or-do-not-there-is-no-try/)
 
 [Demeter: It’s not just a good idea. It’s the law.](http://www.virtuouscode.com/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/)
+
+
+## safe navigation operator
+
+[The Safe Navigation Operator (&.) in Ruby](http://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/)
