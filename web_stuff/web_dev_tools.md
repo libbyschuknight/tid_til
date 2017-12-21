@@ -1,5 +1,7 @@
 # Web Dev Tools
 
+[JONAS' RESOURCES FOR BUILDING BEAUTIFUL WEBSITES WITH HTML5, CSS3 AND JAVASCRIPT](http://codingheroes.io/resources/)
+
 
 ### Color
 
