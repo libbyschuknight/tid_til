@@ -109,6 +109,8 @@
 
 [It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
 
+[Working with dates on Ruby on Rails](https://nandovieira.com/working-with-dates-on-ruby-on-rails)
+
 ### Code Style / Structure / Reviews
 
 [7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)

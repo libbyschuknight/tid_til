@@ -504,6 +504,17 @@ Add debug to view:
 ```
 
 
+## Generation of things in Rails - model, controller, resource, scaffold, migration
+
+See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for differences
+
+`rails g scaffold Invoice invoice_date:date_time price_per_kwh:decimal final_price:decimal total_kwh:decimal user:belongs_to`
+
+`user:belongs_to` can also be `user:references` and adds a `belongs_to` column
+
+
+
+
 ## Links
 
 [Data Types in Rails](http://blog.ifyouseewendy.com/blog/2015/08/10/data-types-in-rails/)

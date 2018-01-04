@@ -336,7 +336,7 @@ ri File#each_line
 ```
 
 
-## #tap - object
+## tap - object
 >Yields self to the block, and then returns self. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
 
 https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
