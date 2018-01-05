@@ -151,7 +151,7 @@ Also
 
 ### Commit messages
 
-Feedback in merge request
+Feedback in merge request (credit to @trezona-lecomte)
 
 >So for example on 4b049231, instead of "Small updates" you might say:
 
