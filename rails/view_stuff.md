@@ -23,7 +23,7 @@ Before coming across a post that had:
 ```
 So tried this and it worked!
 ```ruby
-= f.action :submit, button_html: { disabled: true },label: "Add Credit Card"
+= f.action :submit, button_html: { disabled: true }, label: "Add Credit Card"
 ```
 
 ## Helpers
@@ -80,4 +80,4 @@ you get:
 ```
 
 
-## 
+##
