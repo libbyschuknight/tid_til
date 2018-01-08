@@ -103,6 +103,9 @@
 
 [How DHH Organizes His Rails Controllers](http://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/)
 
+[The Importance of Scopes in Ruby on Rails](https://jasoncharnes.com/importance-rails-scopes/)
+
+
 ##### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)

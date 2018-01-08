@@ -34,6 +34,10 @@ contact = account.main_contact
 sign_up = account.sign_up
 ```
 
+## Scopes
+
+[The Importance of Scopes in Ruby on Rails](https://jasoncharnes.com/importance-rails-scopes/)
+
 #### `where` and `nil`
 
 So was doing a `where` like this in a scope a model in Rails:
