@@ -38,6 +38,8 @@ sign_up = account.sign_up
 
 [The Importance of Scopes in Ruby on Rails](https://jasoncharnes.com/importance-rails-scopes/)
 
+[Should You Use Scopes or Class Methods?](https://www.justinweiss.com/articles/should-you-use-scopes-or-class-methods/)
+
 #### `where` and `nil`
 
 So was doing a `where` like this in a scope a model in Rails:

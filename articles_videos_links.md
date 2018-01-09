@@ -105,6 +105,10 @@
 
 [The Importance of Scopes in Ruby on Rails](https://jasoncharnes.com/importance-rails-scopes/)
 
+[Skipping Validations in Ruby On Rails](https://richonrails.com/articles/skipping-validations-in-ruby-on-rails)
+
+[Different Ways to Set Attributes in ActiveRecord (Rails 4)](http://www.davidverhasselt.com/set-attributes-in-activerecord/)
+
 
 ##### Time
 
