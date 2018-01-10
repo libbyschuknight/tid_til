@@ -109,6 +109,8 @@
 
 [Different Ways to Set Attributes in ActiveRecord (Rails 4)](http://www.davidverhasselt.com/set-attributes-in-activerecord/)
 
+[Essential RubyOnRails patterns — part 1: Service Objects](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
+
 
 ##### Time
 

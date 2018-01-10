@@ -46,6 +46,18 @@ So if date is showing as `2017-06-01`, use `date_format` method
 
 And will show as `01 June 2017`
 
+### strftime
+If you want to have good spacing for dates and times, use this:
+e.g.
+`09 Jan 2018 - 9:51am`
+
+`%-d %b %Y` but a `-` between the `%` and the `d` and get:
+
+`9 Jan 2018 - 9:51am`
+
+
+
+
 ### Using `capture`
 [Using concat and capture to clean up custom Rails helpers](https://thepugautomatic.com/2013/06/helpers/)
 

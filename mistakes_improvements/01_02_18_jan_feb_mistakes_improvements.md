@@ -19,3 +19,26 @@ end
 ## validations
 
 [Skipping Validations in Ruby On Rails](https://richonrails.com/articles/skipping-validations-in-ruby-on-rails)
+
+
+## Remind about things to think about when starting to test something like a service object
+
+Draw it out:
+![service object](service_object.jpg)
+
+Pseudocode it out:
+
+```ruby
+describe "#call" do
+  # happy path
+  #   creates / saves an invoice
+  #      with correct values
+  #   invoice has no errors
+
+  # sad path
+  #   invoice is not saved
+  #   invoice has errors
+  #   or
+  #   invoice_creator has errors
+end
+```
