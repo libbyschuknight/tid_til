@@ -42,3 +42,21 @@ describe "#call" do
   #   invoice_creator has errors
 end
 ```
+
+## Test on a scope for number of customers
+
+`scope :customers, -> { where(admin: false) }`
+
+spec
+
+```ruby
+it "returns users that are customers" do
+  expect(User.customers.first.admin).to be false
+end
+```
+
+suggestion to change to:
+> i think you could do something like expect(User.customers.pluck(:admin).compact).to eq [false] or something?
+
+changed to
+`expect(User.customers.pluck(:admin).compact.uniq).to eq([false])`
