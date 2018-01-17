@@ -18,6 +18,8 @@
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
+[TELLING STORIES THROUGH YOUR COMMITS](http://blog.mocoso.co.uk/talks/2015/01/12/telling-stories-through-your-commits/``)
+
   >**The seven rules of a great git commit message**
 
   >Keep in mind: This has all been said before.

@@ -8,6 +8,8 @@
 
 [Stylify Me](http://stylifyme.com/)
 
+[“Stop Using CSS Selectors for Non-CSS”](https://css-tricks.com/stop-using-css-selectors-non-css/)
+
 ## CSS-Tricks
 Good site, need to explore - https://css-tricks.com/
 It has:

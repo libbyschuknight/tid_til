@@ -272,6 +272,11 @@ tid.md
 work_flow.md
 ```
 
+### [Stop rails server from the command line](https://www.codementor.io/tips/2171438772/stop-rails-server-from-the-command-line)
+stoping rails server if `ctrl + c` doesn't work or PIDs are still running and need to be shutdown.
+
+`ctrl + z` will also quit out of a rails server of `ctrl + c` doesn't work.
+
 
 ### Remote servers
 
