@@ -78,6 +78,8 @@
 
 [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
 
+[How to Tame Time Zones in Ruby on Rails](http://quipper.github.io/2016/02/12/how-to-tame-time-zones-in-ruby-on-rails.html)
+
 [101 Ruby Code Factoids](https://6ftdan.com/allyourdev/2016/01/13/101-ruby-code-factoids)
 
 [Following the Path](https://robots.thoughtbot.com/following-the-path)
