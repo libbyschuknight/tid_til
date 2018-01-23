@@ -503,8 +503,7 @@ Add debug to view:
 <%= debug(params) if Rails.env.development? %>
 ```
 
-
-## Generation of things in Rails - model, controller, resource, scaffold, migration
+#### Generation of things in Rails - model, controller, resource, scaffold, migration
 
 See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for differences
 
@@ -513,6 +512,25 @@ See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for dif
 `user:belongs_to` can also be `user:references` and adds a `belongs_to` column
 
 
+#### Rails methods
+
+##### [delegate](https://apidock.com/rails/Module/delegate)
+
+Question in slack:
+
+>hey I saw this line
+>```
+>delegate :name, :email, :account_number, :to => :customer, :prefix => true
+>```
+>in `/Users/nandahibatullah/powershop/app/models/consumer.rb` and was wondering what `:prefix` does? (edited)
+
+reply:
+
+>creates `customer_email` on Consumer
+
+>https://apidock.com/rails/Module/delegate
+
+>:prefix - Prefixes the new method with the target name or a custom prefix
 
 
 ## Links
