@@ -129,6 +129,10 @@ Actually, while writing this I have realized I actually did a table.
 
 ```bash
 git reset 3333333333 # commit number
+
+# or
+
+git reset --hard master # if want to change branch development to be the same as master (this is if you already have a branch development)
 ```
 Which probably wasn't the best option for me and a git revert would have been more appropriate.
 
