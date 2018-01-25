@@ -92,6 +92,10 @@
 
 [Understanding Scope in Ruby](https://www.sitepoint.com/understanding-scope-in-ruby/)
 
+[Ruby Gem Basics](http://guides.rubygems.org/rubygems-basics/)
+
+[RubyGems](http://sourabhbajaj.com/mac-setup/Ruby/RubyGems.html)
+
 
 #### Deeper Ruby stuff
 
@@ -154,6 +158,11 @@
 ### Routing
 
 [2.2 CRUD, Verbs
+
+
+## Mac Stuff
+
+[macOS Setup Guide](http://sourabhbajaj.com/mac-setup/)
 
 
 ### Other Stuff
