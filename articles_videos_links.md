@@ -96,6 +96,8 @@
 
 [RubyGems](http://sourabhbajaj.com/mac-setup/Ruby/RubyGems.html)
 
+[Ruby String Methods (Ultimate Guide)](http://www.rubyguides.com/2018/01/ruby-string-methods/?utm_source=rubyweekly&utm_medium=email)
+
 
 #### Deeper Ruby stuff
 
@@ -146,6 +148,8 @@
 [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
 
 [Micro Frontends: extending the microservice idea to frontend development](https://micro-frontends.org/)
+
+[The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
 
 
 
