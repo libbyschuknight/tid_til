@@ -98,6 +98,10 @@
 
 [Ruby String Methods (Ultimate Guide)](http://www.rubyguides.com/2018/01/ruby-string-methods/?utm_source=rubyweekly&utm_medium=email)
 
+[5 Pry Features Every Ruby Developer Should Know](https://blog.cognitohq.com/five-pry-features-every-ruby-developer-should-know/)
+
+[AWESOME RUBY](http://awesome-ruby.com/)
+
 
 #### Deeper Ruby stuff
 
