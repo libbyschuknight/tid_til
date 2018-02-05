@@ -11,7 +11,7 @@
 ##### [Git Diff](https://atom.io/packages/git-diff)
 Tick on `Show icons in editor gutter`, which will mean you get `+`, `-` etc in colour. Rather then just lines.
 
-#### Adding a Language
+## Adding a Language
 A haml file was coming up in plain text, searched for and found [`language-haml`](https://atom.io/packages/language-haml), just installed this package and all sorted.
 
 
@@ -55,7 +55,20 @@ TODO: upload PDF of shortcuts to google drive link here
 when turn things on and off.
 
 
-### Issues
+## Keybindings
+
+Adding...
+
+[Keymaps In-Depth](http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/)
+
+I have added one of my own for copying the project/relative path:
+
+```js
+'atom-text-editor':
+  'ctrl-alt-shift-c': 'editor:copy-project-path'
+```
+
+## Issues
 Have had an issue of not being able to open up one project for the last 2 days. It is a large project.
 But could open up other projects fine.
 

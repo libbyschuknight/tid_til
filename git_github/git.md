@@ -274,6 +274,11 @@ To get rid of a stash:
 `git stash drop`  removes top one
 `git stash drop stash@{3}` specific one
 
+[Cleaning up your stash](https://www.atlassian.com/git/tutorials/git-stash#cleaning-up-your-stash)
+
+`git stash clear` to remove all stashes
+
+
 Stash untacked files:
 `git stash --include-untracked`
 `git stash -u`
