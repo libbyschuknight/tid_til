@@ -125,6 +125,7 @@
 
 [Essential RubyOnRails patterns — part 1: Service Objects](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
 
+[How constant lookup and resolution works in Ruby on Rails](http://blog.bigbinary.com/2015/11/05/how-constant-lookup-happens-in-rails.html)
 
 ##### Time
 
