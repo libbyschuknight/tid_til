@@ -245,6 +245,15 @@ glg	      git log --stat --max-count = 10
 ```
 This shows the files that have been committed, which can be useful if the commit message hasn't been written that well!
 
+Show the diff on commits:
+
+```bash
+# all commits
+ git log -p
+
+# limit number of commits - e.g. first 2
+ git log -p -2
+```
 
 ### git stash
 
