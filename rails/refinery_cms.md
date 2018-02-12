@@ -26,7 +26,7 @@ rails _4.2.7.1_ new learn-2-code-nz -m http://refinerycms.com/t/3.0.4 --database
 
 
 ## Karate site
-Generations
+#### Generations
 
 ```ruby
 rails generate refinery:engine singular_model_name attribute:type [attribute:type ...]
@@ -47,7 +47,7 @@ Refinery::Page.where(:slug => "grades")
 ```
 
 
-Associate two models in different engines https://stackoverflow.com/questions/12691733/refinerycms-with-mutliple-associated-model-in-rails/14599955#14599955
+#### Associate two models in different engines https://stackoverflow.com/questions/12691733/refinerycms-with-mutliple-associated-model-in-rails/14599955#14599955
 
 ```ruby
 # In the user.rb in the User engine add
@@ -56,4 +56,69 @@ has_many :posts, :class_name => Refinery::Posts::Post
 # and in the post.rb add
 
 belongs_to :user, :class_name => Refinery::Users::User
+```
+### has_many: through
+
+#### Example off Railscasts
+
+[47 Two Many-to-Many - Railscasts](http://railscasts.com/episodes/47-two-many-to-many)
+
+```ruby
+
+# models
+# category - name
+# product - name
+
+# create join model
+
+rails g model categorisation product_id:integer category_id:integer
+
+# categorisation model
+#   belongs_to :product
+#   belongs_to :category
+
+# product model
+#   has_many :categorisation
+#   has many :categories, :through => :categorisation
+
+# category model
+#   has_many :categorisation
+#   has_many :products, :through => :categorisation
+```
+
+#### What done for refinerycms karate site
+```ruby
+
+# model
+# Refinery::Katas::Kata
+# Refinery::Stances::Stance
+
+# create join model
+
+rails g model Katas_Stances kata_id:integer stance_id:integer
+
+# migration
+class CreateKatasStances < ActiveRecord::Migration
+  def change
+    create_table :katas_stances do |t|
+      t.integer :kata_id # singular
+      t.integer :stance_id # singular
+
+      t.timestamps null: false
+    end
+  end
+end
+
+# KatasStances model
+#   belongs_to :kata, class_name: Refinery::Katas::Kata  # singular
+#   belongs_to :stance, class_name: Refinery::Stances::Stance # singular
+
+# Refinery::Katas:::Kata model
+#   has_many :katas_stances
+#   has_many :stances, :through => :katas_stances, :class_name => Refinery::Stances::Stance
+
+
+# Refinery::Stances::Stance model
+#   has_many :katas_stances
+#   has_many :katas, :through => :katas_stances, :class_name => Refinery::Katas::Kata
 ```

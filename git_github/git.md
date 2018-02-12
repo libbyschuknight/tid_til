@@ -129,6 +129,10 @@ Actually, while writing this I have realized I actually did a table.
 
 ```bash
 git reset 3333333333 # commit number
+
+# or
+
+git reset --hard master # if want to change branch development to be the same as master (this is if you already have a branch development)
 ```
 Which probably wasn't the best option for me and a git revert would have been more appropriate.
 
@@ -270,6 +274,11 @@ To get rid of a stash:
 `git stash drop`  removes top one
 `git stash drop stash@{3}` specific one
 
+[Cleaning up your stash](https://www.atlassian.com/git/tutorials/git-stash#cleaning-up-your-stash)
+
+`git stash clear` to remove all stashes
+
+
 Stash untacked files:
 `git stash --include-untracked`
 `git stash -u`
@@ -315,6 +324,10 @@ git push --force origin feature/first_page_join_form_MVP
 ```
 
 [Getting solid at Git rebase vs. merge](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.9yty645zl)
+
+[Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history)
+
+[Interactive Rebase](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase)
 
 ### git reset
 When have mucked up a merge or something badly and need to reset the branch. Or in this case want to reset the uat branch locally to what is on github.

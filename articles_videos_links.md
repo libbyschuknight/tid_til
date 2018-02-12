@@ -92,6 +92,16 @@
 
 [Understanding Scope in Ruby](https://www.sitepoint.com/understanding-scope-in-ruby/)
 
+[Ruby Gem Basics](http://guides.rubygems.org/rubygems-basics/)
+
+[RubyGems](http://sourabhbajaj.com/mac-setup/Ruby/RubyGems.html)
+
+[Ruby String Methods (Ultimate Guide)](http://www.rubyguides.com/2018/01/ruby-string-methods/?utm_source=rubyweekly&utm_medium=email)
+
+[5 Pry Features Every Ruby Developer Should Know](https://blog.cognitohq.com/five-pry-features-every-ruby-developer-should-know/)
+
+[AWESOME RUBY](http://awesome-ruby.com/)
+
 
 #### Deeper Ruby stuff
 
@@ -115,6 +125,7 @@
 
 [Essential RubyOnRails patterns — part 1: Service Objects](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
 
+[How constant lookup and resolution works in Ruby on Rails](http://blog.bigbinary.com/2015/11/05/how-constant-lookup-happens-in-rails.html)
 
 ##### Time
 
@@ -143,6 +154,8 @@
 
 [Micro Frontends: extending the microservice idea to frontend development](https://micro-frontends.org/)
 
+[The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
+
 
 
 ### Security
@@ -154,6 +167,11 @@
 ### Routing
 
 [2.2 CRUD, Verbs
+
+
+## Mac Stuff
+
+[macOS Setup Guide](http://sourabhbajaj.com/mac-setup/)
 
 
 ### Other Stuff

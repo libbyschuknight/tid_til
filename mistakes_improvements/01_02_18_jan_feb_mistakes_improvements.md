@@ -60,3 +60,23 @@ suggestion to change to:
 
 changed to
 `expect(User.customers.pluck(:admin).compact.uniq).to eq([false])`
+
+
+## Thinking on links vs buttons and making a link look like a button
+
+Changing this
+
+```html
+<div class="back-to-overview"><%= link_to "Back to overview", {:controller => '/properties'}, :id => "back-to-overview-link" %></div>
+```
+
+```css
+.back-to-overview {
+  float: left;
+  margin-left: 12px;
+  padding-top: 8px;
+}
+```
+
+Which looks just like a link to something that looks like a button but is not a button, as it does not submit anything.
+It took me a little while to get my head around that, I had in my head that the design/er was wanting a button, so was thinking about using the styles already in the app for buttons. But its functionality is not that of a button, it is a link, so although it might end up looking like a button, it is not.
