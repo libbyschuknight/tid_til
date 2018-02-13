@@ -73,6 +73,14 @@
 
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
+#### Resources
+
+##### Younger
+
+[Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
+
+
+
 
 ### Ruby
 
