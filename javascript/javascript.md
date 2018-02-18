@@ -24,6 +24,8 @@ Set time in node console to UTC
 ## jQuery
 https://css-tricks.com/snippets/jquery/
 
+[Smooth Scrolling](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
+
 #### Learn jQuery
 (have not tried this)
 http://try.jquery.com/

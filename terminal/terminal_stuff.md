@@ -144,6 +144,12 @@ mv old-folder-name new-folder-name
 mv /path/to/old /path/to/new
 ```
 
+### Copy folder and contents
+
+```bash
+ cp -r old-folder/. new-folder
+ ```
+
 ## Find directory path of current folder
 
 ```bash
