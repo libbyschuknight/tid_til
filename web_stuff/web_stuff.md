@@ -31,3 +31,8 @@ Start in the centre and work way outwards, in a methodical manner
 
 >- Authentication is the process of verifying who you are. When you log on to a PC with a user name and password you are authenticating.
 >- Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.
+
+
+## Browsers
+
+[Emulate and Test Other Browsers](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)
