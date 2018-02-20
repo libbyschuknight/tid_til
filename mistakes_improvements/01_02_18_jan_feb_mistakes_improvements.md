@@ -107,3 +107,21 @@ Killed off the server running
 `kill -9 5080`
 
  and run spec again and it works! yay!
+
+
+## RSpec `include`
+
+https://relishapp.com/rspec/rspec-expectations/v/3-7/docs/built-in-matchers/include-matcher#string-usage
+
+You can do this
+```ruby
+expect(mail.subject).to include("Your Powershop", "Account Invoice")
+```
+
+instead of
+
+```ruby
+expect(mail.subject).to include("Your Powershop")
+expect(mail.subject).to include("Account Invoice")
+```
+or trying to do some sort of regex
