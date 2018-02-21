@@ -125,3 +125,27 @@ expect(mail.subject).to include("Your Powershop")
 expect(mail.subject).to include("Account Invoice")
 ```
 or trying to do some sort of regex
+
+
+## `to_partial_path`
+
+Was trying to find a render using a path and couldn't because it was using a `to_partial_path` on a presenter
+
+https://apidock.com/rails/ActiveModel/Conversion/to_partial_path
+
+```ruby
+class Customer::AddUtilityBannerPresenter
+  attr_reader :customer
+
+  def initialize(customer)
+    @customer = customer
+  end
+
+  def to_partial_path
+    'customer/this_path'
+  end
+end
+
+Customer::AddUtilityBannerPresenter.new(customer).to_partial_path
+# "customer/add_utility_banner"
+```
