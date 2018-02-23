@@ -503,6 +503,37 @@ Add debug to view:
 <%= debug(params) if Rails.env.development? %>
 ```
 
+
+###### link_to things
+
+Came across the `link_to_remote`, this is deprecated, can do something like this instead:
+
+```html
+<% if add_utility_notice.shown? %>
+  <div class="add-utility-notice">
+    <%= link_to(new_utility_path(:property_id => add_utility_notice.property_id, :customer_id => add_utility_notice.customer_id), { :class => "text" }) do %>
+      <%= t :company_name %> now has <%= add_utility_notice.utility_type %>!
+      <span class="call-to-action">Add now</span>
+    <% end %>
+
+    <%= link_to(customer_utility_notice_dismissals_path, html_options = {
+        :class => "dismiss-button",
+        :method => :post,
+        :remote => true,
+        :onclick => "document.querySelector('.add-utility-notice').style.display = 'none'; return false"
+      }) do %>
+      <div class="icon"></div>
+    <% end %>
+
+  </div>
+<% end %>
+```
+
+This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.
+
+
+
+
 #### Generation of things in Rails - model, controller, resource, scaffold, migration
 
 See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for differences

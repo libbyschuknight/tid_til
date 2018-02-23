@@ -62,3 +62,45 @@ http://guides.rubyonrails.org/command_line.html#rails-console
 >going `bundle exec rails c production --sandbox` is super handy
 >everything you do is in a transaction that is rolled back when you exit the console
 Thanks @terrcin
+
+
+## rake routes
+
+[5.1 Listing Existing Routes](http://guides.rubyonrails.org/routing.html#listing-existing-routes)
+
+Specific rails command - `rails routes -g user`
+
+[How To Search Rails Routes](https://www.natashatherobot.com/search-rails-routes/#)
+
+console / unix command
+
+```bash
+rake routes | grep user
+
+# search of my minishop project
+
+user_reads        GET    /users/:user_id/reads(.:format)             reads#index
+                  POST   /users/:user_id/reads(.:format)             reads#create
+new_user_read     GET    /users/:user_id/reads/new(.:format)         reads#new
+edit_user_read    GET    /users/:user_id/reads/:id/edit(.:format)    reads#edit
+ user_read        GET    /users/:user_id/reads/:id(.:format)         reads#show
+                  PATCH  /users/:user_id/reads/:id(.:format)         reads#update
+                  PUT    /users/:user_id/reads/:id(.:format)         reads#update
+                  DELETE /users/:user_id/reads/:id(.:format)         reads#destroy
+user_invoices     GET    /users/:user_id/invoices(.:format)          invoices#index
+                  POST   /users/:user_id/invoices(.:format)          invoices#create
+new_user_invoice  GET    /users/:user_id/invoices/new(.:format)      invoices#new
+edit_user_invoice GET    /users/:user_id/invoices/:id/edit(.:format) invoices#edit
+user_invoice      GET    /users/:user_id/invoices/:id(.:format)      invoices#show
+                  PATCH  /users/:user_id/invoices/:id(.:format)      invoices#update
+                  PUT    /users/:user_id/invoices/:id(.:format)      invoices#update
+                  DELETE /users/:user_id/invoices/:id(.:format)      invoices#destroy
+     users        GET    /users(.:format)                            users#index
+                  POST   /users(.:format)                            users#create
+  new_user        GET    /users/new(.:format)                        users#new
+ edit_user        GET    /users/:id/edit(.:format)                   users#edit
+      user        GET    /users/:id(.:format)                        users#show
+                  PATCH  /users/:id(.:format)                        users#update
+                  PUT    /users/:id(.:format)                        users#update
+                  DELETE /users/:id(.:format)                        users#destroy
+```

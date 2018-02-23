@@ -149,3 +149,14 @@ end
 Customer::AddUtilityBannerPresenter.new(customer).to_partial_path
 # "customer/add_utility_banner"
 ```
+
+
+### Controller / Routes things
+Had to have a button that would then do some stuff in a controller and make a banner go away.
+Which required a new model, controller etc.
+
+I forgot, initially about routes, so added one in, but had to be done in this format `post '/utility_notice_dismissals' => 'utility_notice_dismissals#create'`.
+
+Then was trying to hit the endpoint, which was a post (create) but was getting an error, as was trying to do it via a get!
+
+Also, reminder to check naming, another error was due to missing of `Controller` at the end of the controller name in the file.
