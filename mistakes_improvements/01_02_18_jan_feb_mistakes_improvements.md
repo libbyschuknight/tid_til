@@ -160,3 +160,24 @@ I forgot, initially about routes, so added one in, but had to be done in this fo
 Then was trying to hit the endpoint, which was a post (create) but was getting an error, as was trying to do it via a get!
 
 Also, reminder to check naming, another error was due to missing of `Controller` at the end of the controller name in the file.
+
+
+## JS adding in a click and dismiss
+
+```html
+<%= link_to(customer_utility_notice_dismissals_path(:customer_id => add_utility_notice.customer_id), :class => "dismiss-button") do %>
+   <div class="icon"></div>
+ <% end %>
+```
+
+```js
+jQuery(function($) {
+  $(".add-utility-notice .dismiss-button").click(function(event) {
+    event.preventDefault();
+    postAjax($(this).attr("href"));
+
+    $(".add-utility-notice").hide();
+  });
+});
+```
+So this sends post to controller which creates something and it also hides a notice/banner on the click as well!
