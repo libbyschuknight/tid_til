@@ -203,6 +203,8 @@ or two or more files
 Perhaps also as I am using OhMyZsh and being using the git [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) I have taken the easy/lazy road of just always adding everything.
 I had better start using `ga` (shortcut for `git add`) when wanting to not add all files.
 
+UPPATE to this is that I am now using the Git / Github integration with Atom https://github.atom.io/, which is great and makes it much easier I think to stage files and parts of files.
+
 ### Checking out a branches `tag` / version
 
 ```bash
@@ -481,3 +483,16 @@ Quick searched showed I needed to set the config to wait:
 `git config --global core.editor "atom --wait"`
 
 Now, working all good!
+
+
+## [OhMyZsh](http://ohmyz.sh/)
+
+I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and `zsh` instead of `bash`.
+I use the [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet) as well, which has [a lot of `git`](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) aliases set up.
+
+One I have just discovered that is very useful:
+
+```
+gwip	     git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"
+gunwip	   git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
+```
