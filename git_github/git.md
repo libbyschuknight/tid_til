@@ -484,6 +484,13 @@ Quick searched showed I needed to set the config to wait:
 
 Now, working all good!
 
+## `git push --force or --force-with-lease`
+
+[--force considered harmful; understanding git's --force-with-lease](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
+
+[Force-with-lease: an alternative to force push](http://weiqingtoh.github.io/force-with-lease/)
+
+[Force push with care](https://robots.thoughtbot.com/git-push-force-with-lease)
 
 ## [OhMyZsh](http://ohmyz.sh/)
 
