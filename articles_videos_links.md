@@ -36,6 +36,8 @@
 
 [You are not your code - twitter storm](https://twitter.com/kerrizor/status/929051683249725440)
 
+[Becoming a 10x Developer: 10 Ways to be a Better Teammate](https://kateheddleston.com/blog/becoming-a-10x-developer)
+
 
 #### Spotify model
 
