@@ -110,3 +110,26 @@ end
 ## Enums
 
 [Creating Easy, Readable Attributes With ActiveRecord Enums](https://www.justinweiss.com/articles/creating-easy-readable-attributes-with-activerecord-enums/)
+
+
+## update_all
+
+http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all
+When have a group of records where want to change say an `something_id` on all of them.
+
+
+## Overcome readonly_attributes
+
+Needed to do some hacking to change a brand on a `User` and `Customer` but due to validations and readonly_attributes couldn't.
+
+The work around (note - this is something not to do on any prod data):
+
+```ruby
+User.class_eval do
+  def self.readonly_attributes
+    []
+  end
+end
+
+User.update_column(brand_id: 3)
+```
