@@ -16,6 +16,8 @@
 
 [Questions for our first 1:1](http://larahogan.me/blog/first-one-on-one-questions/)
 
+[Every One-on-One Meeting Should Ask This Question](https://www.startups.co/articles/one-question-ask-every-one-one-meeting)
+
 [Manager handoffs](http://larahogan.me/blog/manager-handoffs/)
 
 [Get your macron on: A guide to writing Māori the right way](https://thespinoff.co.nz/atea/13-10-2017/get-your-macron-on-a-guide-to-writing-maori-the-right-way/?utm_source=The+Spinoff&utm_medium=CPE&utm_campaign=Get+your+macron+on%3A+A+guide+to+writing+M%C4%81ori+the+right+way)
