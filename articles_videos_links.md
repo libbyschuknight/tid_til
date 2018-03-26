@@ -40,6 +40,8 @@
 
 [Becoming a 10x Developer: 10 Ways to be a Better Teammate](https://kateheddleston.com/blog/becoming-a-10x-developer)
 
+[Engineering Growth Framework](https://medium.com/s/engineering-growth-framework)
+
 
 #### Spotify model
 
