@@ -42,6 +42,10 @@
 
 [Engineering Growth Framework](https://medium.com/s/engineering-growth-framework)
 
+[The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
+
+[Diverse Teams Feel Less Comfortable — and That’s Why They Perform Better](https://hbr.org/2016/09/diverse-teams-feel-less-comfortable-and-thats-why-they-perform-better)
+
 
 #### Spotify model
 
