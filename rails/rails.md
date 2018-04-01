@@ -76,7 +76,7 @@ Although, it may happen again when I add another file or folder?? And if so then
 `config.autoload_paths += %W(#{Rails.root}/app/services)`
 
 
-### Assest Pipeline - scss
+### Assets Pipeline - scss
 Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous  project, I was missing:
 
 ```
@@ -503,6 +503,9 @@ Add debug to view:
 <%= debug(params) if Rails.env.development? %>
 ```
 
+#### Routes
+
+http://localhost:3000/rails/info/routes - will show routes on web as `rails routes` does in the terminal
 
 ###### link_to things
 
