@@ -46,6 +46,8 @@
 
 [Diverse Teams Feel Less Comfortable — and That’s Why They Perform Better](https://hbr.org/2016/09/diverse-teams-feel-less-comfortable-and-thats-why-they-perform-better)
 
+[Letter to a Junior Engineer](https://builttoadapt.io/a-letter-to-a-junior-engineer-edec0e260b87)
+
 
 #### Spotify model
 

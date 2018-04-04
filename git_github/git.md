@@ -20,6 +20,8 @@
 
 [TELLING STORIES THROUGH YOUR COMMITS](http://blog.mocoso.co.uk/talks/2015/01/12/telling-stories-through-your-commits/``)
 
+[Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
+
   >**The seven rules of a great git commit message**
 
   >Keep in mind: This has all been said before.
