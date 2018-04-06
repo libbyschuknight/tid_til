@@ -567,6 +567,9 @@ reply:
 >:prefix - Prefixes the new method with the target name or a custom prefix
 
 
+##### [ordinalize](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-ordinalize)
+Makes a `1` into `1st`
+
 ## Links
 
 [Data Types in Rails](http://blog.ifyouseewendy.com/blog/2015/08/10/data-types-in-rails/)
