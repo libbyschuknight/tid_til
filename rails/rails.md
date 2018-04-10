@@ -573,3 +573,5 @@ Makes a `1` into `1st`
 ## Links
 
 [Data Types in Rails](http://blog.ifyouseewendy.com/blog/2015/08/10/data-types-in-rails/)
+[A Quick Peek at Ruby: 'Include' vs. 'Require'](https://web.archive.org/web/20150405161656/http://ruby.about.com/b/2008/10/23/a-quick-peek-at-ruby-include-vs-require.htm)
+[Ruby Methods: differences between load, require, include and extend in Ruby.](https://prograils.com/posts/ruby-methods-differences-load-require-include-extend)
