@@ -37,3 +37,5 @@ expect { post :create, params: params }.to change { Guess.count }.from(0).to(1)
 ```
 
 Which is better then the first expect because it will mean that it will be less likely to fail if there was a race condition (??)
+
+[Understanding RSpec Expect and Change Syntax in the context of Ruby](https://forum.shakacode.com/t/understanding-rspec-expect-and-change-syntax-in-the-context-of-ruby/219)
