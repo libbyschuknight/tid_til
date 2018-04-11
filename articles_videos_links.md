@@ -48,6 +48,8 @@
 
 [Letter to a Junior Engineer](https://builttoadapt.io/a-letter-to-a-junior-engineer-edec0e260b87)
 
+[Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
+
 
 #### Spotify model
 
