@@ -50,6 +50,11 @@
 
 [Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
 
+#### Inclusion
+[Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)
+
+[Conferences I won’t be speaking at](https://medium.com/@fox/conferences-i-wont-be-speaking-at-a60b9beed97b)
+
 
 #### Spotify model
 
