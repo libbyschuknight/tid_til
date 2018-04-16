@@ -133,3 +133,18 @@ end
 
 User.update_column(brand_id: 3)
 ```
+
+
+## .merge
+
+[14.4 Merging of scopes](http://guides.rubyonrails.org/active_record_querying.html#merging-of-scopes)
+
+Instead of doing this:
+
+```ruby
+Consumer.joins(:customer).where("experience = ?", Customer::SHOPPER)
+```
+can do:
+```ruby
+Consumer.joins(:customer).merge(Customer.shopper)
+```

@@ -1,18 +1,18 @@
 # Databases - general stuff
 
-#### Activerecord
+## Activerecord
 
 [Active record pattern](https://en.wikipedia.org/wiki/Active_record_pattern)
 
 >In software engineering, the active record pattern is an architectural pattern found in software that stores in-memory object data in relational databases. It was named by Martin Fowler in his 2003 book Patterns of Enterprise Application Architecture.[1] The interface of an object conforming to this pattern would include functions such as Insert, Update, and Delete, plus properties that correspond more or less directly to the columns in the underlying database table.
 
 
-#### Migrations
+## Migrations
 
 In regard to taking out a column from db, remove all reference to the column FIRST in your code. Once you have done that, then remove the column via a migration. In particular if you are doing this on a live production site.
 
 
-#### Where vs Find
+## Where vs Find
 So, when using...
 ```ruby
 Models::Meal.find(ingredient: "beef")
@@ -29,7 +29,7 @@ Models::Meal.where(ingredient: "beef")
 TODO: add example output???
 
 
-#### Using `.find` or creating find_by method on model
+## Using `.find` or creating find_by method on model
 
 if doing this a lot in codebase
 ```ruby
@@ -60,7 +60,7 @@ end
 This would be good if you are using `find` in a lot of places and then the column name you were using changed. Doing it like this would mean that you just need to change the column name in one place.
 
 
-#### Class name can be Implicit
+## Class name can be Implicit
 ```ruby
 module Models
   class Event < Sequel::Model
@@ -85,7 +85,7 @@ create(sports_id: sports_id, type: "running", data: params)
 ... as you are inside the `Event` model.
 
 
-### Database Transaction
+## Database Transaction
 [What is a database transaction?](http://stackoverflow.com/questions/974596/what-is-a-database-transaction?answertab=votes#tab-top)
 >A transaction is a unit of work that you want to treat as "a whole". It has to either happen in full, or not at all.
 >A classical example is transferring money from one bank account to another. To do that you have to first withdraw the amount from the source account, and then deposit it to the destination account. The operation has to succeed in full. If you stop halfway, the money will be lost, and that is Very Bad.
@@ -113,10 +113,38 @@ create(sports_id: sports_id, type: "running", data: params)
 [ACID](https://en.wikipedia.org/wiki/ACID)
 
 
-### Locking
+## Locking
 >Record locking is the technique of preventing simultaneous access to data in a database, to prevent inconsistent results.
 https://en.wikipedia.org/wiki/Record_locking
 
 [Understanding Locking in Rails ActiveRecord](http://thelazylog.com/understanding-locking-in-rails-activerecord/)
 
 [Differences between transactions and locking](https://makandracards.com/makandra/31937-differences-between-transactions-and-locking)
+
+
+## Order
+
+Wanted to find the first record and check what `start_date` it had. There are thousands of records, so didn't want to return all, hence use of limit`
+
+```ruby
+Consumer.active.activated.order(start_date: :asc).limit(10)
+```
+
+To check the dates can add `collect` method on end:
+
+```ruby
+Consumer.active.activated.order(start_date: :asc).limit(10).collect(&:start_date)
+
+# [
+#     [0] Thu, 06 Oct 2016,
+#     [1] Fri, 14 Oct 2016,
+#     [2] Tue, 08 Nov 2016,
+#     [3] Tue, 08 Nov 2016,
+#     [4] Fri, 11 Nov 2016,
+#     [5] Mon, 14 Nov 2016,
+#     [6] Mon, 14 Nov 2016,
+#     [7] Fri, 02 Dec 2016,
+#     [8] Fri, 02 Dec 2016,
+#     [9] Thu, 08 Dec 2016
+# ]
+```
