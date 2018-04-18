@@ -416,3 +416,10 @@ ChargeBatch {
 ## and/or
 
 [How to use Ruby’s English and/or operators without going nuts](http://www.virtuouscode.com/2014/08/26/how-to-use-rubys-english-andor-operators-without-going-nuts/)
+
+
+## Memoization
+
+Great article:
+
+[The Basics of Ruby Memoization](http://gavinmiller.io/2013/basics-of-ruby-memoization/)
