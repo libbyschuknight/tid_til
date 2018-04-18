@@ -1,5 +1,7 @@
 # Active Record DB stuff
 
+## Queries
+
 https://robots.thoughtbot.com/activerecords-wherenot
 
 This query:
@@ -11,7 +13,20 @@ is effectively the same as this:
 `User.where('name != ?', 'Gabe')`
 
 
-### [.includes](http://apidock.com/rails/ActiveRecord/QueryMethods/includes)
+#### Finding records
+
+In between certain dates
+```ruby
+Consumer.active.activated.where(start_date: Date.parse("23/3/2017")..Date.parse("4/4/2017"))
+```
+
+Before a certain date, with a certain attribute set to `nil`
+```ruby
+Consumer.active.activated.where(last_annual_summary_date: nil).where("start_date <= ?", Date.parse("1/4/2018"))
+```
+
+
+## [.includes](http://apidock.com/rails/ActiveRecord/QueryMethods/includes)
 
 Use to speed up a query that is taking ages due to using lots of models.
 

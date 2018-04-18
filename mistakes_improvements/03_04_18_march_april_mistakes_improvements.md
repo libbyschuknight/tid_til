@@ -75,3 +75,43 @@ Consumer.active.activated.joins(:customer => :brand).where(:brands => {:shopper_
 ```
 SELECT `consumers`.* FROM `consumers` INNER JOIN `customers` ON `customers`.`id` = `consumers`.`customer_id` INNER JOIN `brands` ON `brands`.`id` = `customers`.`brand_id` WHERE (`consumers`.`start_date` <= '2018-04-13' AND (`consumers`.`end_date` IS null OR `consumers`.`end_date` >= '2018-04-13')) AND (`consumers`.`go_shopping_notified_at` IS NOT NULL) AND `brands`.`shopper_enabled` = 1 AND (COALESCE(last_annual_summary_date, start_date) <= '2017-04-27')
 ```
+
+
+## Logic in a couple of places
+In code review I had:
+
+```ruby
+annual_summary_date = (consumer.last_annual_summary_date || consumer.start_date) + 1.year
+
+# and in another place
+@start_date = (@consumer.last_annual_summary_date || @consumer.start_date)
+@end_date = @start_date + 1.year
+```
+
+Suggested that all the logic figuring out the `start_date` and `end_date` was in the one place, and passed through to the other, which was possible. So changed to:
+
+```ruby
+# in first file/method
+...
+current_start_date = (consumer.last_annual_summary_date || consumer.start_date)
+current_end_date = current_start_date + 1.year
+
+transaction do
+  model.something!(
+    nil,
+    "annual_consumer_summary",
+    :utility_description => consumer.description,
+    :property => consumer.vanity_address.property_name_or_street_address,
+    :start_date => current_start_date,
+    :end_date => current_end_date
+  )
+  model.update_attributes!(:something_else => current_end_date)
+end
+...
+
+# in second file/method where the above goes off to
+...
+@start_date = params[:start_date]
+@end_date = params[:end_date]
+...
+```
