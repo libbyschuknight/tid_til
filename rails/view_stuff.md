@@ -46,7 +46,7 @@ So if date is showing as `2017-06-01`, use `date_format` method
 
 And will show as `01 June 2017`
 
-### strftime
+## strftime
 If you want to have good spacing for dates and times, use this:
 e.g.
 `09 Jan 2018 - 9:51am`
@@ -56,9 +56,7 @@ e.g.
 `9 Jan 2018 - 9:51am`
 
 
-
-
-### Using `capture`
+## Using `capture`
 [Using concat and capture to clean up custom Rails helpers](https://thepugautomatic.com/2013/06/helpers/)
 
 
@@ -92,4 +90,11 @@ you get:
 ```
 
 
-##
+## render
+
+[Ruby On Rails : difference between render and `render partial: :template`| Passing locals in partials](https://cbabhusal.wordpress.com/2015/06/19/ruby-on-rails-difference-between-render-and-render-partial/)
+
+>render is a shorthand for render :partial.
+>render will not accept additional local variables for the partial, you need to use render :partial
+
+[Using Partials (Rails Guide)](http://guides.rubyonrails.org/layouts_and_rendering.html#using-partials)

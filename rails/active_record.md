@@ -55,7 +55,9 @@ sign_up = account.sign_up
 
 [Should You Use Scopes or Class Methods?](https://www.justinweiss.com/articles/should-you-use-scopes-or-class-methods/)
 
-#### `where` and `nil`
+## .where
+
+### `where` and `nil`
 
 So was doing a `where` like this in a scope a model in Rails:
 ```ruby
@@ -84,6 +86,13 @@ which is
 "SELECT \"models\".* FROM \"models\" WHERE (started_by is NULL AND source = 'join')"
 ```
 and returns what I want!
+
+### finding a bunch of users by id
+
+```ruby
+ids = [1,2,3,4]
+User.where(id: ids)
+```
 
 
 ## Joining Tables

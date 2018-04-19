@@ -12,7 +12,7 @@ Was going to add to the repo, but have already!! Remember to check here first! A
 
 ## Working on Specs - Spec helpers
 
-When doing some pairing with colleague for a fix to the api, on setting up a spec for a gas consumer, he looked into if there were any spec helpers that would be useful.
+When doing some pairing with colleague for a fix to the api, on setting up a spec for a water consumer, he looked into if there were any spec helpers that would be useful.
 There was one called `readings_spec_support.rb`, which had some useful methods in it. Which could be used in the spec by including the spec helper in the file or actually using similar code from the spec helper in the spec file.
 (This is an app that is HUGE!!)
 
@@ -114,4 +114,44 @@ end
 @start_date = params[:start_date]
 @end_date = params[:end_date]
 ...
+```
+
+
+### Finding records
+
+#### before certain date
+
+Wanted to check that this query:
+
+```ruby
+CUTOFF = 1.year + 14.days
+
+Consumer.active.activated.joins(:customer).merge(Customer.shopper).where("COALESCE(last_annual_summary_date, start_date) <= ?", Date.today - CUTOFF).count
+# 134
+```
+
+was getting what I expected.
+Knowing that all records have a `nil` value for `last_annual_summary_date`, I just needed to use `start_date` and figure out the date to use.
+
+```ruby
+Consumer.active.activated.where("start_date <= ?", Date.today).count
+# 24174
+
+Consumer.active.activated.where("start_date <= ?", 1.year.ago).count
+# 201
+
+Consumer.active.activated.where("start_date <= ?", 1.year.ago - 14.days).count
+# 134
+```
+
+#### Date and type
+
+```ruby
+Consumer.active.activated.where("start_date <= ?", Date.today).where(utility_type: "water").count
+```
+
+collecting date to double check
+
+```ruby
+Consumer.active.activated.where("start_date <= ?", Date.today).where(utility_type: "water").collect(&:start_date)
 ```
