@@ -505,3 +505,13 @@ One I have just discovered that is very useful:
 gwip	     git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"
 gunwip	   git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
 ```
+
+## exclude from git (not git ignore)
+
+Add to `.git/info/exclude`
+
+e.g. if you want to have a local folder but not have it in git or in the `gitignore` file
+
+`local/*`
+
+[Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
