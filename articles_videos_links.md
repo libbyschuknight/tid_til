@@ -55,6 +55,8 @@
 
 [Conferences I won’t be speaking at](https://medium.com/@fox/conferences-i-wont-be-speaking-at-a60b9beed97b)
 
+[How your Dudebros are Losing You Money: The Microcosmic Impact of Inclusion on your Bottom Line](https://chelseatroy.com/2017/06/12/how-your-dudebros-are-losing-you-money-the-microcosmic-impact-of-inclusion-on-your-bottom-line/)
+
 
 #### Spotify model
 

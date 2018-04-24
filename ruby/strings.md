@@ -49,3 +49,18 @@ There is a `count` method for `String` but it is used like this:
 a = "hello world"
 a.count "lo"  #=> 5
 ```
+
+## Multi line strings
+
+[Ruby: Multiline strings – Heredoc or quotes](https://cbabhusal.wordpress.com/2015/10/06/ruby-multiline-string-definition/)
+[A Cheatsheet for Multi-line Strings in Ruby](https://commandercoriander.net/blog/2014/11/09/a-multiline-string-cheatsheet-for-ruby/)
+
+Example
+
+```ruby
+%Q(
+  The cheapest thing is:
+  #{presenter.savings(someone).first[:label]}
+  Save an estimated #{signed_number_to_currency(presenter.other_savings(someone))} a year.
+)
+```
