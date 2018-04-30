@@ -1,4 +1,4 @@
-# March Mistakes, Improvements
+# April / March Mistakes, Improvements
 
 Asked this question:
 
@@ -155,3 +155,31 @@ collecting date to double check
 ```ruby
 Consumer.active.activated.where("start_date <= ?", Date.today).where(utility_type: "water").collect(&:start_date)
 ```
+
+
+### Partials
+
+Was trying to get a local working through rendering a partial, was doing this:
+
+```
+<%= render => "customer_stored_mailer/shared/header", :locals => { :title => "Annual Account Summary" } % >
+```
+
+Thought it wasn't working because of there being a `content_for` block being involved and not really knowing how they work or how the `yield` block works within them.
+
+Then tried it with the `partial` wording
+
+```
+<%= render :partial => "customer_stored_mailer/shared/header", :locals => { :title => "Annual Account Summary" } %>
+```
+
+And it worked. And had a look at what I had added in here the other week:
+
+# view stuff / render - add link
+
+
+### Rails Assets Precompile
+
+Colleague was swapping images out for a separate market in a big app, but the page this was happening on was still showing the old images. With some chatting and looking at the file on the page, and me going "Well, that is the image, where is it?" was an image name like `confirm-header-1-2346yhduldo.png`. We were then like, oh that is a complied assets. Colleague remembered about precompiling assets and did `rails assets:precompile`, this there loaded the new images! Yay!
+
+[4.1 Precompiling Assets](http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets)

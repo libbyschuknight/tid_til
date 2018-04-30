@@ -503,6 +503,16 @@ Add debug to view:
 <%= debug(params) if Rails.env.development? %>
 ```
 
+
+#### Partials Locals and not Instance Variables (ivars)
+
+[Stop Using Instance Variables Inside Your Partials](http://www.carlosramireziii.com/stop-using-instance-variables-in-partials.html)
+
+>Partials using local variables are easier to reuse
+>Partials that use local variables are more maintainable
+>Partials that use local variables are easier to debug
+
+
 #### Routes
 
 http://localhost:3000/rails/info/routes - will show routes on web as `rails routes` does in the terminal
