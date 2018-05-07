@@ -11,6 +11,15 @@
 
 [The Promise of a Burger Party](https://kosamari.com/notes/the-promise-of-a-burger-party)
 
+[HTTPS](https://en.wikipedia.org/wiki/HTTPS)
+
+[HTTPS explained with carrier pigeons](https://medium.freecodecamp.org/https-explained-with-carrier-pigeons-7029d2193351)
+
+
+## Chrome Dev Tools
+
+[Cool Chrome DevTools tips and tricks you wish you knew already](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2)
+
 
 ## Learning CSS
 

@@ -51,12 +51,14 @@
 [Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
 
 #### Inclusion
+
 [Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)
 
 [Conferences I won’t be speaking at](https://medium.com/@fox/conferences-i-wont-be-speaking-at-a60b9beed97b)
 
 [How your Dudebros are Losing You Money: The Microcosmic Impact of Inclusion on your Bottom Line](https://chelseatroy.com/2017/06/12/how-your-dudebros-are-losing-you-money-the-microcosmic-impact-of-inclusion-on-your-bottom-line/)
 
+["Well Actually..." Answers to Diversity and Inclusion FAQ Based on Data and Research](https://speakerdeck.com/jezhumble/well-actually-dot-dot-dot-answers-to-diversity-and-inclusion-faq-based-on-data-and-research)
 
 #### Spotify model
 
@@ -93,6 +95,8 @@
 [Rule of three (computer programming)](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
 
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
+
+
 
 #### Resources
 
