@@ -183,3 +183,17 @@ And it worked. And had a look at what I had added in here the other week:
 Colleague was swapping images out for a separate market in a big app, but the page this was happening on was still showing the old images. With some chatting and looking at the file on the page, and me going "Well, that is the image, where is it?" was an image name like `confirm-header-1-2346yhduldo.png`. We were then like, oh that is a complied assets. Colleague remembered about precompiling assets and did `rails assets:precompile`, this there loaded the new images! Yay!
 
 [4.1 Precompiling Assets](http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets)
+
+
+# Getting db stuff
+The way Flux gets db's created locally uses ssh things. This came up:
+
+```
+Enter passphrase for key '/Users/libby/.ssh/id_rsa':
+
+# entered password and got
+
+Authentication failed.
+```
+
+Asked some peeps and needed to do this `ssh-add`. Which I keep forgetting!!

@@ -378,6 +378,33 @@ TODO: add images
 
 
 
+## Zsh
+
+I use zsh and [OhMyZsh](http://ohmyz.sh/)
+
+#### rake tasks
+
+Was trying to do this:
+
+```
+rake brands:create[beastpowr]
+```
+
+but it kept giving this error
+
+`zsh: no matches found: brands:create[beastpowr]`
+
+And I was like what? Must not being doing the args things properly for the rake task. (Think the `zsh` at the start should have given me a heads up).
+
+Some searching and found this:
+[How To Use Arguments In a Rake Task](https://robots.thoughtbot.com/how-to-use-arguments-in-a-rake-task)
+
+where it has `rake tweets:send\[cpytel\]`
+
+So tried:
+`rake brands:create\[beastpowr\]`
+
+And it worked! Yay!
 
 
 ## Things
