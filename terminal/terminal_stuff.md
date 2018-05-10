@@ -402,7 +402,7 @@ Some searching and found this:
 where it has `rake tweets:send\[cpytel\]`
 
 So tried:
-`rake brands:create\[beastpowr\]`
+`rake brands:create\[test_brand\]`
 
 And it worked! Yay!
 
