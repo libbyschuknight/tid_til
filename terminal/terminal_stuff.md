@@ -164,7 +164,7 @@ pwd
 `open .`      will open the current dir in the finder   
 `cmd + r`     take off screen   
 `cmd + k`     will get rid of forever   
-`ctrl - a`      beginning of line   
+`ctrl - a`      beginning of line
 `ctrl - e`      end of line   
 `opt - f`       forward word   
 `opt - b`       backward word   
@@ -387,12 +387,12 @@ I use zsh and [OhMyZsh](http://ohmyz.sh/)
 Was trying to do this:
 
 ```
-rake brands:create[beastpowr]
+rake brands:create[test_brand]
 ```
 
 but it kept giving this error
 
-`zsh: no matches found: brands:create[beastpowr]`
+`zsh: no matches found: brands:create[test_brand]`
 
 And I was like what? Must not being doing the args things properly for the rake task. (Think the `zsh` at the start should have given me a heads up).
 
