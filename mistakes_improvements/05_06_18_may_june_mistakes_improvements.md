@@ -27,3 +27,16 @@ letters = Array.new(['a', 'b', 'c'])
  https://gistpages.com/posts/ruby_arrays_insert_append_length_index_remove
 
  https://ruby-doc.org/core-2.5.0/Array.html#method-i-insert
+
+
+ ## exclude from git (not git ignore)
+
+ Found this useful again for a place to add notes when doing reading
+
+ Add to `.git/info/exclude`
+
+ e.g. if you want to have a local folder but not have it in git or in the `gitignore` file
+
+ `local/*`
+
+ [Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
