@@ -1,5 +1,7 @@
 # Brew
 
+[Homebrew Documentation - FAQ](https://docs.brew.sh/FAQ)
+
 [Keeping Your Homebrew Up to Date](https://www.safaribooksonline.com/blog/2014/03/18/keeping-homebrew-date/)
 
 ```bash
