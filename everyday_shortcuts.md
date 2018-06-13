@@ -3,6 +3,12 @@
 ## Mac
 `Control + Shift + Eject` or `Control + Shift + Power` - sleep / lock (external keyboard)
 
+`fn + ctrl + F2` - menu focus
+
+## Chrome Dev Tools`
+
+`cmd + shift + p` - screenshot, when on inspect tab/window
+
 
 ## iTerm2
 
@@ -41,6 +47,8 @@ Save Mark/Jump to Mark
 `ctrl + alt + n` - next diff, `p` previous diff
 
 `cmd + shift + \` - reveal file in tree
+
+`cmd + opt + return` - go to definition
 
 
 ## Git

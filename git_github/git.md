@@ -77,7 +77,7 @@ Hmmm, gitlab doesn't still work, did `ssh-add -A` and reloaded zsh, think it wil
 
 ssh -T git@git.fluxfederation.com
 
-##### Amending a commit
+## Amending a commit
 
 If you have made some changes and just want to add them to the last commit you made.
 
@@ -96,7 +96,7 @@ git commit --amend --no-edit
 ```
 
 
-##### git fetch
+## git fetch
 Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
 ```bash
 git fetch origin <branch_name>
@@ -106,13 +106,13 @@ git checkout <branch_name>
 
 In some cases pulling can cause problems. Will add why when I come across it again!
 
-##### git branch
+## git branch
 List branches by committer date instead of alphabetically:
 
 `git branch --sort=-committerdate`
 
 
-##### git clean
+## git clean
 Quite often I have found that I have had to get rid of untracked files in git and have discovered that git clean is something that you can use.
 
 ```bash
@@ -120,7 +120,7 @@ git clean -n # performs a dry run, will show you what will be removed
 git clean -f # actually removes files
 ```
 
-##### git revert / reset
+## git revert / reset
 This has been useful when I have be zealot like with merging in master to my branch and then discovering that a change someone else has made gives me problems, like breaking tests. So, I have used git revert to go back to my last commit.
 
 ```bash
@@ -159,14 +159,16 @@ Issue had with local repo:
 
 
 
-##### searching commits
+## searching commits
 
 ```bash
 git log --all --grep="#til"
 ```
 
 
-##### tags - deleting
+## tags
+
+### deleting
 
 If you have pushed a tag and then released that you had the wrong number, you can do this:
 ```bash
@@ -175,6 +177,14 @@ git push origin :refs/tags/v1.0
 ```
 from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).
 
+
+### fetch /checkout
+
+```bash
+git fetch --tags
+
+git checkout <tag_number>
+```
 
 ### remotes
 
@@ -341,6 +351,45 @@ git push --force origin feature/first_page_join_form_MVP
 [Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history)
 
 [Interactive Rebase](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase)
+
+#### git rebase -i (--interactive)
+
+
+```
+commit sha123456
+Author: Libby Schumacher-Knight
+Date:   Tue Jun 12 15:01:43 2018 +1200
+
+    WIP Something a rather
+
+    Comments, comments comments
+
+commit sha9876543
+Author: Libby Schumacher-Knight
+Date:   Mon Jun 11 11:20:01 2018 +1200
+
+    WIP Othe commit here
+
+    More comments more comments
+
+commit shaabcdefg
+Merge: cfc7d565435b3b ea4d3eb96542
+Author: Misty
+Date:   Tue Jun 12 14:30:41 2018 +1200
+
+    Merge branch '123' into 'master'
+
+```
+
+I want to remove the `WIP`'s at the start of my 2 commit messages. To do this I can use:
+
+`git rebase -i` by using the commit before the ones I want to change.
+
+`git rebase -i sha123456`
+
+This will then give me the option to say what I want to do with each commit - in this case just wanted to reword the commit messages.
+Have a look at https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase for what to do next.
+
 
 ### git reset
 When have mucked up a merge or something badly and need to reset the branch. Or in this case want to reset the uat branch locally to what is on github.

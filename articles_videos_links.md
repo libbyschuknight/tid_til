@@ -184,6 +184,10 @@
 
 [One weird trick for handling code review feedback](https://medium.com/@raquelxmoss/one-weird-trick-to-help-you-handle-code-review-feedback-better-d999a08620b1)
 
+Object Oriented design twitter threads:
+https://twitter.com/betsythemuffin/status/1006292902333607936
+https://twitter.com/betsythemuffin/status/1006597377413795842
+
 
 ### Architecture Patterns
 
