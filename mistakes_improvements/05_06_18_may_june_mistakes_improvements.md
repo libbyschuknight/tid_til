@@ -18,25 +18,47 @@ To get this back into the right position I used `.insert`
 
 ```ruby
 letters = Array.new(['a', 'b', 'c'])
- => ["a", "b", "c"]
+=> ["a", "b", "c"]
 
- letters.insert(letters.length - 1, 'Z')
- => ["a", "b", "Z", "c"]
- ```
+letters.insert(letters.length - 1, 'Z')
+=> ["a", "b", "Z", "c"]
+```
 
- https://gistpages.com/posts/ruby_arrays_insert_append_length_index_remove
+https://gistpages.com/posts/ruby_arrays_insert_append_length_index_remove
 
- https://ruby-doc.org/core-2.5.0/Array.html#method-i-insert
+https://ruby-doc.org/core-2.5.0/Array.html#method-i-insert
 
 
- ## exclude from git (not git ignore)
+## exclude from git (not git ignore)
 
- Found this useful again for a place to add notes when doing reading
+Found this useful again for a place to add notes when doing reading
 
- Add to `.git/info/exclude`
+Add to `.git/info/exclude`
 
- e.g. if you want to have a local folder but not have it in git or in the `gitignore` file
+e.g. if you want to have a local folder but not have it in git or in the `gitignore` file
 
- `local/*`
+`local/*`
 
- [Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
+[Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
+
+
+## Carful about adding nils
+
+```ruby
+def UsageTabs
+  tabs = default_customer_usage_tabs
+
+  tabs << cheapest_tariffs_tab(tabs, consumer)
+
+  tabs
+end
+
+def cheapest_tariffs_tab(tabs, consumer)
+  if vanilla_only_brand?(consumer.brand) && consumer.active?
+    ["Could you pay less?", { :controller => "/cheapest_tariffs", :action => "best_rates" }]
+  end
+end
+```
+
+>Be careful here, you'll end up shovelling nil into tabs (which is actually ok to do, since I know it eventually gets .compact called on it, but it's cleaner not to assume that).
+Simon Antliff
