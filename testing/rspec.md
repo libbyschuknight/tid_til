@@ -3,6 +3,8 @@
 [RSpec Documentation](https://rspec.info/documentation/)
 [RSpec Relish](https://relishapp.com/rspec)
 
+[Better Specs { rspec guidelines with ruby }](http://www.betterspecs.org/)
+
 ### Time
 
 Freeze time:

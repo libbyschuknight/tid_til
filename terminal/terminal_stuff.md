@@ -16,6 +16,16 @@ PASSWORD=""
 A quick search of what `cat` is and found this link - [10 Terminal Commands That Will Boost Your Productivity](http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105).
 
 
+### md5
+
+To get a md5 hash in your terminal:
+
+```bash
+$ md5 -s 2281cc73797deb3ec2319ed19bdbd5ff
+# MD5 ("2281cc73797deb3ec2319ed19bdbd5ff") = 2feca6d1b69c0cb5ecdb3c7a798e4f5a
+```
+
+
 ### Pry
 ##### binding.pry
 When using a `binding.pry` to debug stuff, really useful command to know is:
