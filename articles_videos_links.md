@@ -50,6 +50,14 @@
 
 [Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
 
+
+#### Agile and Introverts
+[Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
+
+[Agile Introverts, an Oxymoron?](https://medium.com/@ChrisAndSeanAgile/agile-introverts-an-oxymoron-3182deab3813)
+
+[Facilitating Introverts: Eliciting the Gifts of the Quiet Ones](http://www.janicethomson.net/facilitating-introverts-eliciting-the-gifts-of-the-quiet-ones/)
+
 #### Inclusion
 
 [Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)

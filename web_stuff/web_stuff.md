@@ -45,3 +45,18 @@ Start in the centre and work way outwards, in a methodical manner
 ## Browsers
 
 [Emulate and Test Other Browsers](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)
+
+
+## Pattern Libraries
+
+[How to create a pattern library and why you should bother](https://boagworld.com/design/pattern-library/)
+
+[Pattern Library Examples](http://styleguides.io/examples.html)
+
+[Taking The Pattern Library To The Next Level](https://www.smashingmagazine.com/taking-pattern-libraries-next-level/)
+
+## Design Patterns / Systems
+
+[Design patterns](http://ui-patterns.com/patterns)
+
+[A frequently updated collection of Design System examples, articles, tools and talks.](https://designsystemsrepo.com/)
