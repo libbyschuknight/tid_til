@@ -1,5 +1,9 @@
 # Active Record DB stuff
 
+[Preload, Eagerload, Includes and Joins](https://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)
+
+[Making sense of ActiveRecord joins, includes, preload, and eager_load](http://blog.scoutapp.com/articles/2017/01/24/activerecord-includes-vs-joins-vs-preload-vs-eager_load-when-and-where)
+
 ## Queries
 
 https://robots.thoughtbot.com/activerecords-wherenot

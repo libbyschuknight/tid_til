@@ -495,6 +495,10 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 
 [ActionController::Helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html)
 
+[Rails 5 adds helpers method in controllers to ease usage of helper modules in controllers](https://blog.bigbinary.com/2016/06/26/rails-add-helpers-method-to-ease-usage-of-helper-modules-in-controllers.html)
+
+- or just put the method in the controller!?!
+
 #### View Stuff
 
 Add debug to view:

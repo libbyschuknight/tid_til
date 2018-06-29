@@ -61,4 +61,48 @@ end
 ```
 
 >Be careful here, you'll end up shovelling nil into tabs (which is actually ok to do, since I know it eventually gets .compact called on it, but it's cleaner not to assume that).
-Simon Antliff
+colleague at Flux
+
+
+## erb link_to and buttons!!
+
+Was updating some views and changing a link to look like a button. Did this first:
+
+```html
+<button class="button">
+  <i class="material-icons is-small">add</i>
+    <%= link_to "New #{Thing}", thing_path(:id => id) %>
+</button>
+```
+
+Which shows on the page as:
+
+```html
+<button class="button">
+  <i class="material-icons is-small">add</i>
+    <a href="/things/new?id=2">New Thing</a>
+</button>
+```
+In this case the `add` icon (which is a plus sign) is none clickable.
+
+I had forgotten that you can do a `do` with `link_to`, changed to this:
+
+```html
+<%= link_to new_thing(:id => @id), class: "button" do %>
+  <i class="material-icons is-small">add</i> <%= "New Thing" %>
+<% end %>
+```
+
+Looks like:
+
+```html
+<a class="button" href="/admin/premium_providers/new?id=2">
+  <i class="material-icons is-small">add</i> New Premium provider
+</a>
+```
+So the `add` icon is within the link.
+
+Feedback from colleague when asking about something:
+
+>Just as an FYI, having the <a> inside the button would be very frustrating for the user.
+>Generally speaking, only the text in the button would be a link.
