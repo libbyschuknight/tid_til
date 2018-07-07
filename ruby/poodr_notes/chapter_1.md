@@ -1,6 +1,7 @@
 # POODR - Practical Object-Oriented Design in Ruby
 
 Code examples - https://github.com/skmetz/poodr
+
 Someone else's notes with references to code - http://ericfarkas.com/posts/notes-on-poodr
 
 ## Chapter 1 Object-Oriented Design
@@ -24,10 +25,15 @@ Page 1
 Page 5
 
 SOLID
+
 S ingle Responsibility
+
 O pen-Closed
+
 L iskov Substitution
+
 I nterface Segregation
+
 D enpendncy Inversion
 
 
