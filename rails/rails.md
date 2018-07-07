@@ -521,6 +521,20 @@ Add debug to view:
 
 http://localhost:3000/rails/info/routes - will show routes on web as `rails routes` does in the terminal
 
+
+###### Exploring Routes (optional) - from RailsBridge http://docs.railsbridge.org/intro-to-rails/setting_the_default_page
+Now you can have a look at the paths that are available in your app. Let's try looking at one of the topics routes we just generated. Open up your Rails console and play:
+
+```
+$ rails console
+>> app.topics_path
+=> "/topics"
+>> app.topics_url
+=> "http://www.example.com/topics"
+```
+`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
+
+
 ###### link_to things
 
 Came across the `link_to_remote`, this is deprecated, can do something like this instead:
