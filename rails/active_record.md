@@ -176,3 +176,11 @@ can do:
 ```ruby
 Consumer.joins(:customer).merge(Customer.shopper)
 ```
+
+
+
+## Printing table data in console
+
+```
+pt Customer.all
+```
