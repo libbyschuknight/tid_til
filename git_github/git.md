@@ -13,6 +13,8 @@
 
 [Markdown Tables Generator Facebook](http://www.tablesgenerator.com/markdown_tables) - useful for getting lines right for a table.
 
+[Oh shit, git!](https://ohshitgit.com/)
+
 #### git commits
 [DEVELOPER TIP: KEEP YOUR COMMITS “ATOMIC”](https://www.freshconsulting.com/atomic-commits/)
 
