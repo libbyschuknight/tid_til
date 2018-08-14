@@ -38,3 +38,39 @@ The fix was:
 ```
 
 Could have also used a reload in the original code which is not shown here.
+
+
+## Running tests
+
+We use RSpec and Cucumber. I have aliases set up to run each:
+
+```
+nzspec='nz bundle exec spring rspec'
+
+nzcuk='nz bundle exec spring cucumber'
+```
+
+An example of running a cuke (cucumber feature test) would be:
+
+```
+nzcuk nz/features/some_feature_test.feature
+```
+
+I have got things turned around a couple of times and wondered why it wasn't working:
+
+```
+nzspec nz/features/some_feature_test.feature
+```
+
+```
+An error occurred while loading ./nz/features/some_feature_test.feature.
+Failure/Error: load_dependency(file) { result = super }
+
+SyntaxError:
+  /Users/libby/flux/powershop/nz/features/some_feature_test.feature:2: syntax error, unexpected ':', expecting end-of-input
+  Feature: Administrators can view and ...
+          ^
+# -e:1:in `<main>'
+```
+
+Was racking my brain. Asked someone else if they had come across this and they saw my mistake, phew!
