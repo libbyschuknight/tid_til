@@ -143,6 +143,8 @@
 
 [AWESOME RUBY](http://awesome-ruby.com/)
 
+[https://www.dotnetperls.com/#ruby](https://www.dotnetperls.com/#ruby)
+
 
 #### Deeper Ruby stuff
 
