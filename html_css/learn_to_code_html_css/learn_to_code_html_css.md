@@ -5,14 +5,19 @@ https://learn.shayhowe.com/html-css/
 
 Useful links at the bottom of each lesson.
 
-## Using CSS Resets
+## Lesson 1 [Building Your First Web Page](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
 
+http://www.scriptingmaster.com/html/HTML-terms-glossary.asp
+https://www.impressivewebs.com/css-terms-definitions/
+http://necolas.github.io/normalize.css/
+
+## Using CSS Resets
 [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 [Normalize.css](http://necolas.github.io/normalize.css/)
 
+## Lesson 2 [Getting to Know HTML](https://learn.shayhowe.com/html-css/getting-to-know-html/)
 
-
-## [Semantic code](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
+### [Semantic code](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
 
 [Semantic code: What? Why? How?](http://boagworld.com/dev/semantic-code-what-why-how/)
 
@@ -23,11 +28,15 @@ Are not semantic code - for styling only.
 
 >Paragraphs are semantic in that content wrapped within a <p> element is known and understood as a paragraph. <div>s and <span>s do not hold any such meaning and are simply containers.
 
-
 [Copy Paste Character](https://www.copypastecharacter.com/)
 
+## Lesson 3 [Getting to Know CSS](https://learn.shayhowe.com/html-css/getting-to-know-css/)
 
-## [Specificity](https://learn.shayhowe.com/html-css/getting-to-know-css/#specificity)
+### [The Cascade](https://learn.shayhowe.com/html-css/getting-to-know-css/#cascade)
+>Within CSS, all styles cascade from the top of a style sheet to the bottom, allowing different styles to be added or overwritten as the style sheet progresses.
+
+
+### [Specificity](https://learn.shayhowe.com/html-css/getting-to-know-css/#specificity)
 
 >The type selector has the lowest specificity weight and holds a point value of 0-0-1.
 >The class selector has a medium specificity weight and holds a point value of 0-1-0.>
@@ -39,8 +48,9 @@ As we can see, specificity points are calculated using three columns. The first 
 >The higher the specificity weight of a selector, the more superiority the selector is given when a styling conflict occurs.
 >The specificity weights of different types of selectors are incredibly important to remember. At times styles may not appear on elements as intended, and chances are the specificity weights of our selectors are breaking the cascade, therefore our styles are not appearing properly.
 
+https://color.adobe.com/create/color-wheel/
 
-## [Opening the Box Model](https://learn.shayhowe.com/html-css/opening-the-box-model/)
+## Lesson 4 [Opening the Box Model](https://learn.shayhowe.com/html-css/opening-the-box-model/)
 
 ### Display
 
@@ -51,6 +61,13 @@ As we can see, specificity points are calculated using three columns. The first 
 >According to the box model concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.
 >That’s worth repeating: **Every element on a page is a rectangular box.**
 
+[The CSS Box Model](https://css-tricks.com/the-css-box-model/)
+
+```css
+* {
+   border: 1px solid red !important;
+}
+```
 
 ## [HTML Borders](https://www.quackit.com/html/codes/html_borders.cfm)
 
@@ -60,8 +77,9 @@ As we can see, specificity points are calculated using three columns. The first 
 >In the first step of this exercise we were introduced to the universal selector. In CSS the asterisk, &#42;, is the universal selector, which selects every element. Rather than listing every single element imaginable, we can use the asterisk as a catch-all to select all elements for us.
 >The :before and :after pseudo-elements also mentioned in this step are elements that can be dynamically generated with CSS. We’re not going to be using these elements within our project; however, when using the universal selector it’s a good practice to also include these pseudo-elements in case they should ever appear.
 
+## Lesson 5 [Positioning Content](https://learn.shayhowe.com/html-css/positioning-content/)
 
-## [Floats](https://learn.shayhowe.com/html-css/positioning-content/#floats)
+### [Floats](https://learn.shayhowe.com/html-css/positioning-content/#floats)
 
 >Floats May Change an Element’s Display Value
 >When floating an element, it is also important to recognize that an element is removed from the normal flow of a page, and that may change an element’s default display value. The float property relies on an element having a display value of block, and may alter an element’s default display value if it is not already displayed as a block-level element.
