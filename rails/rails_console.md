@@ -2,6 +2,8 @@
 
 [Rails Console](https://thoughtbot.com/upcase/videos/rails-console)
 
+[Rails Console Magic Tricks](https://medium.com/@lfv89/rails-console-magic-tricks-da1fdd657d32)
+
 - using `pry-rails`
 
 ### Accessing Helper methods
