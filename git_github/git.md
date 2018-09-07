@@ -264,7 +264,7 @@ This shows the files that have been committed, which can be useful if the commit
 Show the diff on commits:
 
 ```bash
-# all commits
+# all commits - show the diff
  git log -p
 
 # limit number of commits - e.g. first 2
