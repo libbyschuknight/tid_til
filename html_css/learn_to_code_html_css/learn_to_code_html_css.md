@@ -8,7 +8,9 @@ Useful links at the bottom of each lesson.
 ## Lesson 1 [Building Your First Web Page](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
 
 http://www.scriptingmaster.com/html/HTML-terms-glossary.asp
+
 https://www.impressivewebs.com/css-terms-definitions/
+
 http://necolas.github.io/normalize.css/
 
 ## Using CSS Resets
