@@ -58,7 +58,7 @@
 
 [Facilitating Introverts: Eliciting the Gifts of the Quiet Ones](http://www.janicethomson.net/facilitating-introverts-eliciting-the-gifts-of-the-quiet-ones/)
 
-#### Inclusion
+#### Diversity & Inclusion
 
 [Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)
 
@@ -67,6 +67,8 @@
 [How your Dudebros are Losing You Money: The Microcosmic Impact of Inclusion on your Bottom Line](https://chelseatroy.com/2017/06/12/how-your-dudebros-are-losing-you-money-the-microcosmic-impact-of-inclusion-on-your-bottom-line/)
 
 ["Well Actually..." Answers to Diversity and Inclusion FAQ Based on Data and Research](https://speakerdeck.com/jezhumble/well-actually-dot-dot-dot-answers-to-diversity-and-inclusion-faq-based-on-data-and-research)
+
+[Eight Ways to Make Your D&I Efforts Less Talk and More Walk](http://firstround.com/review/eight-ways-to-make-your-dandi-efforts-less-talk-and-more-walk/?utm_campaign=new_article&utm_medium=email&utm_source=newsletter)
 
 #### Spotify model
 
