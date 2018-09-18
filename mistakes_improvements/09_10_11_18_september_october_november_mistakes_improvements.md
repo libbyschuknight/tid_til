@@ -26,3 +26,104 @@ en-NZ-realsurf:
 ```
 Removed it and yay it works!! Such a small thing! A reminder to be careful when changing things and to check and re-check!
 
+## Making requests to APIs
+
+Using `Net::HTTP`, get request to Hubspot API.
+
+https://developers.hubspot.com/docs/methods/lists/get_list_contacts_recent
+`GET /contacts/v1/lists/:list_id/contacts/recent`
+
+https://api.hubapi.com/contacts/v1/lists/120824/contacts/recent?hapikey=demo
+Returns stuff as of Sept 2018
+
+For this, wanted to be able to pass in the `list_id` and have optional params for offsets to do paginigation and be able to change the count if needed.
+
+```ruby
+# requires rails
+module Hubspot
+  class FetchRecentContactsForList
+    BASE_URL = "https://api.hubapi.com"
+
+    def initialize(list_id:)
+      @list_id = list_id
+    end
+
+    def fetch_contacts(vid_offset: nil, time_offset: nil, count: 5)
+      params = {
+        hapikey: api_key,
+        vidOffset: vid_offset,
+        timeOffset: time_offset,
+        count: count
+      }
+      uri = URI.parse(build_url(params))
+      request = Net::HTTP.new(uri.host, uri.port)
+      request.use_ssl = true if uri.scheme == 'https'
+      response = request.get(uri)
+      JSON.parse(response.body)
+    end
+
+    private
+
+    def build_url(params)
+      "#{BASE_URL}/contacts/v1/lists/#{@list_id}/contacts/recent?#{params.compact.to_query}"
+    end
+
+    def api_key
+      "demo"
+    end
+  end
+end
+
+hub = Hubspot::FetchRecentContactsForList.new(list_id: 120824)
+hub.fetch_contacts
+```
+
+Response:
+```json
+{
+       "contacts" => [
+        [0] {
+                      "addedAt" => 1537302433623,
+                          "vid" => 9419024,
+                "canonical-vid" => 9419024,
+                  "merged-vids" => [],
+                    "portal-id" => 62515,
+                   "is-contact" => true,
+                "profile-token" => "AO_T-mPnLRnWxlb3nMMrPXeIfEXz5WpO0k9M7zBlCkD6s0cZyS4wqGeN0E2aiCaEZZ2FRfQJyIEdqHOKIT_hRyLfkK4wRKX5m-xGpQh521x96NgKYrHVH0DZqLU3V7-Y9vpC-6prU0np",
+                  "profile-url" => "https://app.hubspot.com/contacts/62515/lists/public/contact/_AO_T-mPnLRnWxlb3nMMrPXeIfEXz5WpO0k9M7zBlCkD6s0cZyS4wqGeN0E2aiCaEZZ2FRfQJyIEdqHOKIT_hRyLfkK4wRKX5m-xGpQh521x96NgKYrHVH0DZqLU3V7-Y9vpC-6prU0np/",
+                   "properties" => {
+                       "firstname" => {
+                    "value" => "Emily"
+                },
+                "lastmodifieddate" => {
+                    "value" => "1537302437940"
+                },
+                        "lastname" => {
+                    "value" => "Schwickerath"
+                }
+            },
+             "form-submissions" => [],
+            "identity-profiles" => [
+                [0] {
+                                          "vid" => 9419024,
+                           "saved-at-timestamp" => 1537302425752,
+                    "deleted-changed-timestamp" => 0,
+                                   "identities" => [
+                        [0] {
+                                  "type" => "EMAIL",
+                                 "value" => "schwickerathe@skokie69.net",
+                             "timestamp" => 1537302425741,
+                            "is-primary" => true
+                        },
+                        [1] {
+                                 "type" => "LEAD_GUID",
+                                "value" => "713020ee-9993-4b93-9865-b5916fb3a85f",
+                            "timestamp" => 1537302425748
+                        }
+                    ]
+                }
+            ],
+                 "merge-audits" => []
+        },
+        ...
+```
