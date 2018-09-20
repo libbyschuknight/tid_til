@@ -3,6 +3,8 @@
 
 https://learn.shayhowe.com/html-css/
 
+My code is now here - https://github.com/libbyschuknight/learn_to_code_site, and the live here - http://libbyschuknight.github.io/learn_to_code_site/
+
 Useful links at the bottom of each lesson.
 
 ## Lesson 1 [Building Your First Web Page](https://learn.shayhowe.com/html-css/building-your-first-web-page/)
@@ -91,3 +93,6 @@ https://color.adobe.com/create/color-wheel/
 [CSS Positioning 101](http://alistapart.com/article/css-positioning-101)
 
 [CSS Float Theory: Things You Should Know](https://www.smashingmagazine.com/2007/05/css-float-theory-things-you-should-know/)
+
+## Lesson 6 [Working with Typography](https://learn.shayhowe.com/html-css/working-with-typography/)
+

@@ -17,6 +17,12 @@
 
 [Reboot, Resets, and Reasoning](https://css-tricks.com/reboot-resets-reasoning/)
 
+[The Web I Want](https://dev.to/quii/the-web-i-want-43o)
+
+[CSS Zen Garden](http://www.csszengarden.com/)
+
+[The Ultimate List Of Free Stock Photos & Free Royalty Free Images](https://www.eric-liang.com/blog/the-ultimate-list-of-free-stock-photos-free-royalty-free-images/)
+
 
 ## Chrome Dev Tools
 
