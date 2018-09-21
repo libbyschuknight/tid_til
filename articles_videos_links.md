@@ -97,6 +97,8 @@
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
 
+[Brilliant - Computer Science courses](https://brilliant.org/courses/#computer-science-advanced)
+
 
 ### Programming / Coding
 

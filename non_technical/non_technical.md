@@ -33,6 +33,8 @@
 
 [Stop Wasting Time: Pair Programming Rocks](https://medium.com/javascript-scene/stop-wasting-time-pair-programming-rocks-4a99604cb09d#.ogw7an9zs)
 
+[Advanced Pair Programming: Pairing Remotely](https://chelseatroy.com/2017/04/01/advanced-pair-programming-pairing-remotely/)
+
 
 ### Engineering Empathy
 
