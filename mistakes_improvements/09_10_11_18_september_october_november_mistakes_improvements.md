@@ -127,3 +127,69 @@ Response:
         },
         ...
 ```
+
+
+## Specs
+Think I have come across this before, created a new spec, ran it and got an error like this:
+
+```bash
+ActiveRecord::NotNullViolation:
+       Mysql2::Error: Field 'credit' doesn't have a default value: INSERT INTO `promotion_grants` (`id`, `created_at`, `updated_at`, `discount_voucher_category_id`, `promotion_id`, `delay_until`, `delay_days`) VALUES (644667019, '2018-09-24 12:09:24.770222', '2018-09-24 12:09:24.770222', 284678023, 644667019, NULL, NULL), (16771602, '2018-09-24 12:09:24.770222',
+```
+And was like WTF?!! as my spec wasn't doing anything with the db (service making a request to an external API) and the remembdered about making sure the test database was all nice and clean.
+
+Ran `rails db:test:prepare`, but that seems not to have worked. I think that works nicely on postgres databases but not so nicely with MariaDB database, or at least how it is set up at work.
+
+Have just found out more about `rails/rake db:test:prepare` -
+https://guides.rubyonrails.org/v5.0/testing.html#maintaining-the-test-database-schema
+
+and this part
+>Running the migrations against the development database (bin/rails db:migrate) will bring the schema up to date
+
+So should have run `rails db:migrate db:test:prepare`. Which I actually usually do when having just synced the db (work thing but didn't this time.
+
+Also found a rake task in our codebase that drops, creates, loads structure and runs migrations. And that has worked! Yay!
+
+
+## VScode
+
+Adding user snippets.
+I use rspec and there is a lot of times you need to write `do newline end`:
+```ruby
+something do
+
+end
+```
+There didn't seem to be a shortcut for this so I added one to my user snippets.
+
+Go to preferences and user snippets and and existing or new snippets file (is a json file). I had existing one and copied on of the ones already there and changed it to this:
+
+```json
+"Insert do end": {
+  "prefix": "de",
+  "body": [
+    "do\n\nend"
+  ],
+  "description": "Insert do end (mainly for specs) at cursor location"
+}
+```
+And when I type `de` enter, it does this:
+```ruby
+do
+
+end
+```
+
+So if wanted to do a let block with a do end, could do:
+```ruby
+let(:this) de
+# and would give me
+
+let(:this) do
+
+end
+```
+
+With an extenstion (https://marketplace.visualstudio.com/items?itemName=karunamurti.rspec-snippets) I already have I can write `let` and get `let(:object) {  }` but often I need the do/end.
+
+Possibly a hack day projects would be to add some stuff to that extension.
