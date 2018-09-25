@@ -149,6 +149,8 @@
 
 [https://www.dotnetperls.com/#ruby](https://www.dotnetperls.com/#ruby)
 
+[The Ultimate Guide to HTTP Requests in Ruby](http://www.rubyguides.com/2018/08/ruby-http-request/)
+
 
 #### Deeper Ruby stuff
 
