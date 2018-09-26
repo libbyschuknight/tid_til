@@ -193,3 +193,88 @@ end
 With an extenstion (https://marketplace.visualstudio.com/items?itemName=karunamurti.rspec-snippets) I already have I can write `let` and get `let(:object) {  }` but often I need the do/end.
 
 Possibly a hack day projects would be to add some stuff to that extension.
+
+
+## Net::HTTP::Post
+
+Just spent ages trying to get a post request happening with Net::HTTP.
+
+Most things I found where showing to do with with `set_form_data`, like this:
+
+```ruby
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true if uri.scheme == "https"
+request = Net::HTTP::Post.new(uri.request_uri)
+raw_body = [
+    {
+      "vid": "402",
+      "properties": [
+        {
+          "property": "firstname",
+          "value": "Lizzy"
+        },
+        {
+          "property": "lastname",
+          "value": "Knight"
+        },
+        {
+        "property": "lifecyclestage",
+        "value": "customer"
+        }
+      ]
+    }
+  ]
+
+request.set_form_data(raw_body)
+request["Content-Type"] = "application/json"
+
+response = http.request(post_request)
+```
+
+but it kept coming up with a bad request error:
+```
+"{\"status\":\"error\",\"message\":\"Invalid input JSON on line 1, column 2: Unexpected character ('%' (code 37)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')\",\"correlationId\":\"858c584c-5157-44fa-bb6f-94b7a7855159\",\"requestId\":\"eea949ee93f3eb71e990d53affdaf96c\"}"
+```
+I think I was doing something wrong with what I was passing into the `set_form_data` but couldn't figure out what it was.
+Things I have been looking all seem to do a post using `post_form` - https://github.com/augustl/net-http-cheat-sheet/blob/master/post_form.rb.
+
+But then found this - https://coderwall.com/p/c-mu-a/http-posts-in-ruby and did this:
+
+```ruby
+uri = URI.parse(build_url(params))
+
+header = { 'Content-Type': 'application/json' }
+
+body = [
+  {
+    "vid": "402",
+    "properties": [
+      {
+        "property": "firstname",
+        "value": "Lizzy"
+      },
+      {
+        "property": "lastname",
+        "value": "Knight"
+      },
+      {
+      "property": "lifecyclestage",
+      "value": "customer"
+      }
+    ]
+  }
+]
+
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true if uri.scheme == "https"
+request = Net::HTTP::Post.new(uri.request_uri, header)
+request.body = body.to_json
+response = http.request(request)
+```
+
+And it worked! Yay!
+Now to figure out why the other way didn't work. Maybe something to do with what passing into the form.
+In the example it has:
+`request.set_form_data({"q" => "My query", "per_page" => "50"})`
+and for the endpoint I am hitting it needs to be in an array, so wondering if I am passing things in incorrectly.
+
