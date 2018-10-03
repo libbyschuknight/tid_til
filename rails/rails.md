@@ -75,6 +75,8 @@ https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-f
 Although, it may happen again when I add another file or folder?? And if so then this might be the long term answer:
 `config.autoload_paths += %W(#{Rails.root}/app/services)`
 
+#### At work due to how things are set up
+`COUNTRY=nz bundle exec spring stop`
 
 ### Assets Pipeline - scss
 Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous  project, I was missing:

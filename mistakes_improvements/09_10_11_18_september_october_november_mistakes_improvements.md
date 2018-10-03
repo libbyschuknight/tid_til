@@ -278,3 +278,74 @@ In the example it has:
 `request.set_form_data({"q" => "My query", "per_page" => "50"})`
 and for the endpoint I am hitting it needs to be in an array, so wondering if I am passing things in incorrectly.
 
+
+## Another raise_error in RSpec!!!
+Has this:
+
+```ruby
+it "returns an exception" do
+  response = request.call
+  expect { response }.to raise_error(Net::HTTPServerException)
+end
+```
+
+But needed to do this!! Always forget that the subject (?) has to be within a block, with the expect block.
+
+```ruby
+it "raises the error" do
+  expect { request.call }.to raise_error(Net::HTTPServerException)
+end
+```
+
+
+## Stubbing external API calls
+
+Spec
+
+```ruby
+...
+let(:body_json) do
+  "[{\"vid\":402,\"properties\":[{\"property\":\"apples\",\"value\":\"bananas\"},{\"property\":\"rabbits\",\"value\":\"bunnies\"}]}]"
+end
+
+context "when the update is successful" do
+  before do
+    stub_request(:post, "/hubspot_endpoint")
+      .with(:body => body_json, :headers => { "Content-Type" => "application/json" })
+      .to_return(:status => 202)
+  end
+
+  it "returns true" do
+    response = request.call
+
+    expect(response).to be_true
+  end
+end
+```
+
+Was working on having another `it` block that tested if the data sent to a service was then changed when it made a call to the Hubspot API.
+I didn't realise that within this stub when are testing that already.
+
+So if the `body_json` doesn't much what is passed to the `post` request, the stub will fail. E.g if I change the `(body: body_json,` to be `(body: "")`, the spec fails with this:
+
+```bash
+1) Hubspot::BulkUpdateLeadProperties#call when the update is successful returns true
+     Failure/Error: response = request.call
+
+     WebMock::NetConnectNotAllowedError:
+       Real HTTP connections are disabled. Unregistered request: POST /hubspot_endpoint with body '[{"vid":402,"properties":[{"property":"apples","value":"bananas"},{"property":"rabbits","value":"bunnies"}]}]' with headers {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Content-Type'=>'application/json', 'User-Agent'=>'Ruby'}
+
+       You can stub this request with the following snippet:
+
+       stub_request(:post, "/hubspot_endpoint").
+         with(:body => "[{\"vid\":402,\"properties\":[{\"property\":\"apples\",\"value\":\"bananas\"},{\"property\":\"rabbits\",\"value\":\"bunnies\"}]}]",
+              :headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'Content-Type'=>'application/json', 'User-Agent'=>'Ruby'}).
+         to_return(:status => 200, :body => "", :headers => {})
+
+       registered request stubs:
+
+       stub_request(:post, "/hubspot_endpoint").
+         with(:body => "",
+              :headers => {'Content-Type'=>'application/json'})
+```
+
