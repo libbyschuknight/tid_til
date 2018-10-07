@@ -596,6 +596,7 @@ reply:
 
 >:prefix - Prefixes the new method with the target name or a custom prefix
 
+http://api.rubyonrails.org/classes/Module.html#method-i-delegate
 
 ##### [ordinalize](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-ordinalize)
 Makes a `1` into `1st`
