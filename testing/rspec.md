@@ -5,6 +5,8 @@
 
 [Better Specs { rspec guidelines with ruby }](http://www.betterspecs.org/)
 
+[RSpec::Expectations Cheat Sheet](https://www.rubypigeon.com/posts/rspec-expectations-cheat-sheet/)
+
 ### Time
 
 Freeze time:
