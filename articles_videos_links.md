@@ -108,6 +108,8 @@
 
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
+[Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
+
 
 
 #### Resources
