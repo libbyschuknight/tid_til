@@ -50,6 +50,16 @@
 
 [Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
 
+[Gender and sex](http://geekfeminism.wikia.com/wiki/Gender_and_sex)
+
+[Use of "guys" - twitter thread](https://twitter.com/samanthageitz/status/993967503901646848)
+
+[The art of developing resilience](https://medium.com/@victoria.maclennan/the-art-of-developing-resilience-12d643f100f7)
+
+[Calling Grown Women ‘Girls’ Is Sexist As Hell – Here Are 4 Reasons Why](https://everydayfeminism.com/2015/06/grown-women-are-not-girls/)
+
+[How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
+
 
 #### Agile and Introverts
 [Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
@@ -69,6 +79,8 @@
 ["Well Actually..." Answers to Diversity and Inclusion FAQ Based on Data and Research](https://speakerdeck.com/jezhumble/well-actually-dot-dot-dot-answers-to-diversity-and-inclusion-faq-based-on-data-and-research)
 
 [Eight Ways to Make Your D&I Efforts Less Talk and More Walk](http://firstround.com/review/eight-ways-to-make-your-dandi-efforts-less-talk-and-more-walk/?utm_campaign=new_article&utm_medium=email&utm_source=newsletter)
+
+[Better Allies: Tech Privilege Walk](https://docs.google.com/document/u/1/d/1DTjj_4UxpkUjaf0FS_K5ZdjI8pUFs5r-356SMDlUmzA/mobilebasic?usp=gmail#heading=h.nrnw03t7conb)
 
 #### Spotify model
 
@@ -91,6 +103,8 @@
 [Sideways Dictionary](https://sidewaysdictionary.com/#/term/api)
 
 [30 best practices for software development and testing](https://opensource.com/article/17/5/30-best-practices-software-development-and-testing)
+
+[What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
 
 
 ### Computer Science
@@ -201,6 +215,8 @@
 [How to Do Code Reviews Like a Human (Part Two)](https://mtlynch.io/human-code-reviews-2/)
 
 [One weird trick for handling code review feedback](https://medium.com/@raquelxmoss/one-weird-trick-to-help-you-handle-code-review-feedback-better-d999a08620b1)
+
+[Code review thoughts](https://twitter.com/schuknight/status/1003802645465714688?s=11)
 
 Object Oriented design twitter threads:
 https://twitter.com/betsythemuffin/status/1006292902333607936
