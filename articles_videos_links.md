@@ -222,6 +222,8 @@ Object Oriented design twitter threads:
 https://twitter.com/betsythemuffin/status/1006292902333607936
 https://twitter.com/betsythemuffin/status/1006597377413795842
 
+[[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
+
 
 ### Architecture Patterns
 
