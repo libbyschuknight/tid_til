@@ -1,10 +1,12 @@
-# Active Record DB stuff
+# Active Record
+
+## DB stuff
 
 [Preload, Eagerload, Includes and Joins](https://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)
 
 [Making sense of ActiveRecord joins, includes, preload, and eager_load](http://blog.scoutapp.com/articles/2017/01/24/activerecord-includes-vs-joins-vs-preload-vs-eager_load-when-and-where)
 
-## Queries
+### Queries
 
 https://robots.thoughtbot.com/activerecords-wherenot
 
@@ -335,3 +337,20 @@ Guess Load (3.0ms)  SELECT "guesses".* FROM "guesses"
 `find_in_batches`
 >The find_in_batches method is similar to find_each, since both retrieve batches of records. The difference is that find_in_batches yields batches to the block as an array of models, instead of individually.
 
+
+## Translations
+
+[4.5 Translations for Active Record Models](https://guides.rubyonrails.org/i18n.html#translations-for-active-record-models)
+
+>For example when you add the following translations:
+```
+en:
+  activerecord:
+    models:
+      user: Dude
+    attributes:
+      user:
+        login: "Handle"
+      # will translate User attribute "login" as "Handle"
+```
+>Then User.model_name.human will return "Dude" and User.human_attribute_name("login") will return "Handle".
