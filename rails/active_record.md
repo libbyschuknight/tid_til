@@ -338,7 +338,7 @@ Guess Load (3.0ms)  SELECT "guesses".* FROM "guesses"
 >The find_in_batches method is similar to find_each, since both retrieve batches of records. The difference is that find_in_batches yields batches to the block as an array of models, instead of individually.
 
 
-## Translations
+## Translations (yaml files)
 
 [4.5 Translations for Active Record Models](https://guides.rubyonrails.org/i18n.html#translations-for-active-record-models)
 
