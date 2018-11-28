@@ -54,6 +54,12 @@ You can use an array in a yaml file and then iterate over it in the view. And wi
 
 confirmation_one:
   confirmation: "I confirm that:"
+  list_content:
+    - I am allowed to do x, y and z
+    - by providing  %{company_name} with some stuff and I have look at %{link_to_agreement};
+    - another parpagraph of information to year
+
+# after getting feedback from a colleague, I learnt that the above way of making a list is the more "yaml" way, rather then explicitly using [] as I have below
   list_content: [
     "I am allowed to do x, y and z",
     "by providing  %{company_name} with some stuff and I have look at %{link_to_agreement};",
