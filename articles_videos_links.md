@@ -125,14 +125,11 @@
 [Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
 
 
-
 #### Resources
 
 ##### Younger
 
 [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
-
-
 
 
 ### Ruby
@@ -199,6 +196,15 @@
 [It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
 
 [Working with dates on Ruby on Rails](https://nandovieira.com/working-with-dates-on-ruby-on-rails)
+
+### YAML
+
+[YAML Syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
+
+[YAML SYNTAX](https://learn.getgrav.org/advanced/yaml)
+
+[YAML for Ruby](http://yaml4r.sourceforge.net/doc/)
+
 
 ### Code Style / Structure / Reviews
 
