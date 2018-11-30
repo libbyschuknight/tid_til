@@ -583,3 +583,7 @@ e.g. if you want to have a local folder but not have it in git or in the `gitign
 `local/*`
 
 [Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
+
+## git squash
+
+[Auto-squashing Git Commits](https://robots.thoughtbot.com/autosquashing-git-commits)
