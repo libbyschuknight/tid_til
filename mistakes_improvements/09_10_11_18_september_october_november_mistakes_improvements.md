@@ -411,3 +411,5 @@ So if the `body_json` doesn't much what is passed to the `post` request, the stu
               :headers => {'Content-Type'=>'application/json'})
 ```
 
+## Rails Commands
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)

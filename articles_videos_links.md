@@ -189,6 +189,9 @@
 
 [How constant lookup and resolution works in Ruby on Rails](http://blog.bigbinary.com/2015/11/05/how-constant-lookup-happens-in-rails.html)
 
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
+
+
 ##### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)

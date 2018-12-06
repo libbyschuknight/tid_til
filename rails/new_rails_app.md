@@ -4,8 +4,16 @@ The steps I follow to create a new rails app - from https://github.com/roa-2015/
 
 - create new rails app
 ```bash
-rails new app_name --database=postgresql --skip-test-unit --skip-turbolinks
+rails new app_name --database=postgresql --skip-test --skip-turbolinks
+
+# note it use to be
+--skip-test-unit
+
+# it is now just
+--skip-test
 ```
+
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
 
 - if not already git initialised (which probably is with new versions of rails)
 ```
