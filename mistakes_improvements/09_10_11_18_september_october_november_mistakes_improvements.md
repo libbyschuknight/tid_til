@@ -413,3 +413,14 @@ So if the `body_json` doesn't much what is passed to the `post` request, the stu
 
 ## Rails Commands
 [The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
+
+
+## Newlines at end of file
+
+`\ No newline at end of file`
+
+https://robots.thoughtbot.com/no-newline-at-end-of-file
+
+https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline
+
+https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file
