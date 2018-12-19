@@ -85,8 +85,12 @@ confirmation_one:
 </ul>
 ```
 
+## When moving translations into another file, reload server
 
+As in from `en.yml` to say `en-terms.yml`, so as to have lots of smaller files rather then one huge file.
+When working on locally and you create the new file and move the stuff, REMEMEBR to re-start your server again, otherwise you will get an error!!
 
+DOH!!
 
 ## Making requests to APIs
 
