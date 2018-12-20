@@ -180,6 +180,23 @@ git push origin :refs/tags/v1.0
 from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).
 
 
+#### Deleteing multipl branches at once
+
+
+```bash
+# a grep showing what branches this will be
+$ git branch | grep -E 'ci-*'
+  ci-2949
+  ci-3219
+
+# then can do
+$ git branch -D `git branch | grep -E 'ci-*'`
+Deleted branch ci-2949 (was 8e0aa94780).
+Deleted branch ci-3219 (was 7cefdc4239).
+```
+Bound to be lots of other ways to delete branches and different combindations of branches.
+
+
 ### fetch /checkout
 
 ```bash
@@ -566,3 +583,7 @@ e.g. if you want to have a local folder but not have it in git or in the `gitign
 `local/*`
 
 [Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
+
+## git squash
+
+[Auto-squashing Git Commits](https://robots.thoughtbot.com/autosquashing-git-commits)

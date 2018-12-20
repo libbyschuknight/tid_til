@@ -1,5 +1,7 @@
 # API Stuff
 
+[What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
+
 #### Semantic Versioning
 - [Semantic Versioning](http://semver.org/)
 

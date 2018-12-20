@@ -42,6 +42,7 @@ Will add code when completed, and images.
 
 [When Using !important is The Right Choice](https://css-tricks.com/when-using-important-is-the-right-choice/)
 
+[Don’t use “!important”](https://j11y.io/css/dont-use-important/)
 
 
 ## Truncating

@@ -50,6 +50,16 @@
 
 [Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
 
+[Gender and sex](http://geekfeminism.wikia.com/wiki/Gender_and_sex)
+
+[Use of "guys" - twitter thread](https://twitter.com/samanthageitz/status/993967503901646848)
+
+[The art of developing resilience](https://medium.com/@victoria.maclennan/the-art-of-developing-resilience-12d643f100f7)
+
+[Calling Grown Women ‘Girls’ Is Sexist As Hell – Here Are 4 Reasons Why](https://everydayfeminism.com/2015/06/grown-women-are-not-girls/)
+
+[How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
+
 
 #### Agile and Introverts
 [Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
@@ -69,6 +79,8 @@
 ["Well Actually..." Answers to Diversity and Inclusion FAQ Based on Data and Research](https://speakerdeck.com/jezhumble/well-actually-dot-dot-dot-answers-to-diversity-and-inclusion-faq-based-on-data-and-research)
 
 [Eight Ways to Make Your D&I Efforts Less Talk and More Walk](http://firstround.com/review/eight-ways-to-make-your-dandi-efforts-less-talk-and-more-walk/?utm_campaign=new_article&utm_medium=email&utm_source=newsletter)
+
+[Better Allies: Tech Privilege Walk](https://docs.google.com/document/u/1/d/1DTjj_4UxpkUjaf0FS_K5ZdjI8pUFs5r-356SMDlUmzA/mobilebasic?usp=gmail#heading=h.nrnw03t7conb)
 
 #### Spotify model
 
@@ -92,6 +104,8 @@
 
 [30 best practices for software development and testing](https://opensource.com/article/17/5/30-best-practices-software-development-and-testing)
 
+[What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
+
 
 ### Computer Science
 
@@ -108,6 +122,7 @@
 
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
+[Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
 
 
 #### Resources
@@ -115,8 +130,6 @@
 ##### Younger
 
 [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
-
-
 
 
 ### Ruby
@@ -176,6 +189,9 @@
 
 [How constant lookup and resolution works in Ruby on Rails](http://blog.bigbinary.com/2015/11/05/how-constant-lookup-happens-in-rails.html)
 
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
+
+
 ##### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
@@ -183,6 +199,15 @@
 [It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
 
 [Working with dates on Ruby on Rails](https://nandovieira.com/working-with-dates-on-ruby-on-rails)
+
+### YAML
+
+[YAML Syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)
+
+[YAML SYNTAX](https://learn.getgrav.org/advanced/yaml)
+
+[YAML for Ruby](http://yaml4r.sourceforge.net/doc/)
+
 
 ### Code Style / Structure / Reviews
 
@@ -200,9 +225,13 @@
 
 [One weird trick for handling code review feedback](https://medium.com/@raquelxmoss/one-weird-trick-to-help-you-handle-code-review-feedback-better-d999a08620b1)
 
+[Code review thoughts](https://twitter.com/schuknight/status/1003802645465714688?s=11)
+
 Object Oriented design twitter threads:
 https://twitter.com/betsythemuffin/status/1006292902333607936
 https://twitter.com/betsythemuffin/status/1006597377413795842
+
+[[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
 
 
 ### Architecture Patterns

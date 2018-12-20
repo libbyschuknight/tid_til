@@ -15,6 +15,8 @@
 
 [HTTPS explained with carrier pigeons](https://medium.freecodecamp.org/https-explained-with-carrier-pigeons-7029d2193351)
 
+[How HTTPS works ...in a comic!](https://howhttps.works/)
+
 [Reboot, Resets, and Reasoning](https://css-tricks.com/reboot-resets-reasoning/)
 
 [The Web I Want](https://dev.to/quii/the-web-i-want-43o)

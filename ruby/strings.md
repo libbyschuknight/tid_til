@@ -64,3 +64,38 @@ Example
   Save an estimated #{signed_number_to_currency(presenter.other_savings(someone))} a year.
 )
 ```
+
+
+## tr method
+https://ruby-doc.org/core-2.3.0/String.html#method-i-tr
+
+Marielle from work:
+
+> I've got a cool use case of tr to show you!
+```
+irb(main):010:0> alphabet = ('a'..'z').to_a.join
+=> "abcdefghijklmnopqrstuvwxyz"
+irb(main):011:0> cipher = "qwertyuiopasdfghjklzxcvbnm"
+=> "qwertyuiopasdfghjklzxcvbnm"
+irb(main):012:0> "return the books".tr(alphabet, cipher)
+=> "ktzxkf zit wggal"
+```
+
+In a hangman context it's even cooler, this was how he used it:
+```
+word = "knowledge"
+=> "knowledge"
+
+alphabet = ('a'..'z').to_a
+=> ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+guesses = "kniwea".chars
+=> ["k", "n", "i", "w", "e", "a"]
+
+letters_left = alphabet - guesses
+=> ["b", "c", "d", "f", "g", "h", "j", "l", "m", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"]
+
+word.tr(letters_left.join, "_")
+=> "kn_w_e__e"
+```
+

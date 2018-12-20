@@ -26,6 +26,72 @@ en-NZ-realsurf:
 ```
 Removed it and yay it works!! Such a small thing! A reminder to be careful when changing things and to check and re-check!
 
+
+## Translations / Locales (yaml files)
+### [4.5 Translations for Active Record Models](https://guides.rubyonrails.org/i18n.html#translations-for-active-record-models)
+
+>For example when you add the following translations:
+```
+en:
+  activerecord:
+    models:
+      user: Dude
+    attributes:
+      user:
+        login: "Handle"
+      # will translate User attribute "login" as "Handle"
+```
+>Then User.model_name.human will return "Dude" and User.human_attribute_name("login") will return "Handle".
+
+### Using a list in translation files to add list text to view
+
+This was a case of wanting to do a few things. We had text to add and we had cases where there would be a different company name depending on the country and also a link that to a pdf that would show a different pdf depending on the country.
+
+You can use an array in a yaml file and then iterate over it in the view. And within the method used to use the translation information in the view you can pass specific argruments and use other translations. Not that easy to explain but the code below should show what I mean.
+
+```yaml
+# en.yml
+
+confirmation_one:
+  confirmation: "I confirm that:"
+  list_content:
+    - I am allowed to do x, y and z
+    - by providing  %{company_name} with some stuff and I have look at %{link_to_agreement};
+    - another parpagraph of information to year
+
+# after getting feedback from a colleague, I learnt that the above way of making a list is the more "yaml" way, rather then explicitly using [] as I have below
+  list_content: [
+    "I am allowed to do x, y and z",
+    "by providing  %{company_name} with some stuff and I have look at %{link_to_agreement};",
+    "another parpagraph of information to year"
+  ]
+```
+
+```html
+<!-- a view file  -->
+<ul class="disc indent-30">
+  <% t("confirmation_one.list_content",
+        company_name: t("company_name"),
+        link_to_agreement:
+          (
+            link_to "The Agreement",
+            country_pdf_path("the_agreement.pdf"),
+            target: "_blank",
+            rel: "noopener noreferrer"
+          )
+      ).each do |line| %>
+    <li><%= line.html_safe %></li>
+  <% end %>
+</ul>
+```
+
+## When moving translations into another file, reload server
+
+As in from `en.yml` to say `en-terms.yml`, so as to have lots of smaller files rather then one huge file.
+When working on locally and you create the new file and move the stuff, REMEMEBR to re-start your server again, otherwise you will get an error!!
+
+DOH!!
+
 ## Making requests to APIs
 
 Using `Net::HTTP`, get request to Hubspot API.
@@ -349,3 +415,16 @@ So if the `body_json` doesn't much what is passed to the `post` request, the stu
               :headers => {'Content-Type'=>'application/json'})
 ```
 
+## Rails Commands
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
+
+
+## Newlines at end of file
+
+`\ No newline at end of file`
+
+https://robots.thoughtbot.com/no-newline-at-end-of-file
+
+https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline
+
+https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file

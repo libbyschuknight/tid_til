@@ -5,6 +5,8 @@
 
 [Better Specs { rspec guidelines with ruby }](http://www.betterspecs.org/)
 
+[RSpec::Expectations Cheat Sheet](https://www.rubypigeon.com/posts/rspec-expectations-cheat-sheet/)
+
 ### Time
 
 Freeze time:
@@ -63,3 +65,20 @@ allow_any_instance_of(ThisHelper).to receive(:show_bananas?).and_return(true)
 ```
 
 Not sure if `allow_any_instance_of` is good to use.
+
+
+## [Aggregating Failures](https://relishapp.com/rspec/rspec-core/docs/expectation-framework-integration/aggregating-failures)
+
+>RSpec::Expectations provides aggregate_failures, an API that allows you to group a set of expectations and see all the failures at once, rather than it aborting on the first failure.
+
+>```ruby
+>it "returns a successful response" do
+>  response = Client.make_request
+>
+>  aggregate_failures "testing response" do
+>    expect(response.status).to eq(200)
+>    expect(response.headers).to include("Content-Type" => "application/json")
+>    expect(response.body).to eq('{"message":"Success"}')
+>  end
+>end
+```
