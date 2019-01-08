@@ -160,6 +160,16 @@ Issue had with local repo:
     `git reset --hard origin/branch`
 
 
+## cancelling a merge that has conflicts - abort
+
+`git merge --abort`  if there has been conflicts
+
+[How to: Cancel a Git merge](https://nathanhoad.net/how-to-git-cancel-merge/)
+
+There are heaps of ways to do it in git but since Git version 1.7.4 you can do this
+
+https://www.git-scm.com/docs/git-merge/1.7.4
+
 
 ## searching commits
 
