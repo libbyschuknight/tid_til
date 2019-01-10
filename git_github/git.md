@@ -383,6 +383,7 @@ git push --force origin feature/first_page_join_form_MVP
 
 #### git rebase -i (--interactive)
 
+[Beginner’s Guide to Interactive Rebasing](https://hackernoon.com/beginners-guide-to-interactive-rebasing-346a3f9c3a6d)
 
 ```
 commit sha123456
