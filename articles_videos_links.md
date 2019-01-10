@@ -24,8 +24,6 @@
 
 [Te Aka Māori-English](http://maoridictionary.co.nz/)
 
-[Tech’s Troubling New Trend: Diversity Is in Your Head](https://www.nytimes.com/2017/10/16/opinion/diversity-tech-women-silicon-valley.html)
-
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
 [Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59)
@@ -81,6 +79,17 @@
 [Eight Ways to Make Your D&I Efforts Less Talk and More Walk](http://firstround.com/review/eight-ways-to-make-your-dandi-efforts-less-talk-and-more-walk/?utm_campaign=new_article&utm_medium=email&utm_source=newsletter)
 
 [Better Allies: Tech Privilege Walk](https://docs.google.com/document/u/1/d/1DTjj_4UxpkUjaf0FS_K5ZdjI8pUFs5r-356SMDlUmzA/mobilebasic?usp=gmail#heading=h.nrnw03t7conb)
+
+[Tech’s Troubling New Trend: Diversity Is in Your Head](https://www.nytimes.com/2017/10/16/opinion/diversity-tech-women-silicon-valley.html)
+
+[‘Diversity of Thought’ Is Just a Euphemism for ‘White Supremacy’](https://www.theroot.com/diversity-of-thought-is-just-a-euphemism-for-white-supr-1825191839)
+
+Sarah Mei: Diversity of Thought tweets:
+
+- https://twitter.com/sarahmei/status/842036465324380160
+- https://twitter.com/sarahmei/status/980587316199567360
+- https://twitter.com/sarahmei/status/920311083264491520
+
 
 #### Spotify model
 
