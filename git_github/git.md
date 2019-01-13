@@ -13,6 +13,10 @@
 
 [Markdown Tables Generator Facebook](http://www.tablesgenerator.com/markdown_tables) - useful for getting lines right for a table.
 
+[Markdown Guide](https://www.markdownguide.org/)
+
+  - [Extended Syntax](https://www.markdownguide.org/extended-syntax)
+
 [Oh shit, git!](https://ohshitgit.com/)
 
 #### git commits
