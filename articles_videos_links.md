@@ -115,6 +115,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
 
+[awesome-aotearoa-tech](https://github.com/radsy/awesome-aotearoa-tech)
+
 
 ### Computer Science
 
