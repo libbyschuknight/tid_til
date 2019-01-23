@@ -102,6 +102,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [You Must Try, and then You Must Ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html)
 
+[Shut Up, Imposter Syndrome: I Can Too Program](https://www.laserfiche.com/ecmblog/shut-up-imposter-syndrome-i-can-too-program/#)
+
+[You don’t have Impostor Syndrome: And neither do I anymore](https://medium.com/counter-intuition/you-don-t-have-impostor-syndrome-126e4c4bdcc)
+
 
 ## Stuff
 
