@@ -206,6 +206,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
 
+[What is the difference between <%, <%=, <%# and -%> in ERB in Rails?](https://stackoverflow.com/questions/7996695/what-is-the-difference-between-and-in-erb-in-rails)
+
+[Rails Techniques: Using Polymorphic Associations](https://semaphoreci.com/blog/2017/08/16/polymorphic-associations-in-rails.html)
+
 
 ##### Time
 
