@@ -68,6 +68,8 @@
 
 #### Diversity & Inclusion
 
+[How do you define diversity](https://www.youtube.com/watch?v=a4YrQD0JpN0)
+
 [Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)
 
 [Conferences I won’t be speaking at](https://medium.com/@fox/conferences-i-wont-be-speaking-at-a60b9beed97b)
@@ -90,6 +92,7 @@ Sarah Mei: Diversity of Thought tweets:
 - https://twitter.com/sarahmei/status/980587316199567360
 - https://twitter.com/sarahmei/status/920311083264491520
 
+[FOR WOMEN JOB SEEKERS, NETWORKING LIKE A MAN ISN'T ENOUGH](https://www.wired.com/story/women-leadership-job-networking/)
 
 #### Spotify model
 
