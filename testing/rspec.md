@@ -7,6 +7,8 @@
 
 [RSpec::Expectations Cheat Sheet](https://www.rubypigeon.com/posts/rspec-expectations-cheat-sheet/)
 
+[RSpec Mocks and Stubs in Plain English](https://www.codewithjason.com/rspec-mocks-stubs-plain-english/)
+
 ### Time
 
 Freeze time:

@@ -182,6 +182,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The Ultimate Guide to HTTP Requests in Ruby](http://www.rubyguides.com/2018/08/ruby-http-request/)
 
+[“!” and “?”: Understanding One of Ruby’s Coolest Naming Conventions](https://blog.codeminer42.com/and-understanding-one-of-rubys-coolest-naming-conventions-5a9300b75605)
+
+[The simplicity and power of Ruby Struct](http://pdabrowski.com/blog/ruby/ruby-struct/)
+
 
 #### Deeper Ruby stuff
 

@@ -67,6 +67,20 @@ Start in the centre and work way outwards, in a methodical manner
 
 ## Design Patterns / Systems
 
+[Atomic Design](http://atomicdesign.bradfrost.com/table-of-contents/)
+
+[CARBON DESIGN SYSTEM](https://www.carbondesignsystem.com/)
+
+[Lonely Planet Design System](https://rizzo.lonelyplanet.com/styleguide/design-elements/colours)
+
+[Lightning Design System](https://www.lightningdesignsystem.com/)
+
+[Primer CSS](https://primer-css.now.sh/css)
+
+[Luna - Sainsbury](https://luna.sainsburys.co.uk/guidelines)
+
+[A RARE LOOK INTO SAINSBURY’S DIGITAL EXPERIENCE PLAYBOOK](http://whatusersdo.com/blog/sainsburys-digital-experience/)
+
 [Design patterns](http://ui-patterns.com/patterns)
 
 [A frequently updated collection of Design System examples, articles, tools and talks.](https://designsystemsrepo.com/)
