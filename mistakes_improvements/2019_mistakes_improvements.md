@@ -36,7 +36,7 @@ module Api
         )
       end
 
-      context 'when customer experience is shopper' do
+      context 'when experience is apple' do
         ... # some code here
 
         it 'marks supplied notifications as read' do
@@ -67,3 +67,156 @@ received :allow_experience_traits with unexpected arguments
 
 And the same would happen if a trait was removed from the controller.
 We ended up doing this instead of adding a separate test to test the "sad path", as we are really just wanting to test that this endpoint is only used of the trait is either `apple` or `banana`.
+
+
+
+## RSpec Shared Examples
+
+So, was adding a context in the below spec. I knew when I was adding it that there would be a better way of doing it.
+
+
+```ruby
+# frozen_string_literal: true
+
+require 'spec_helper'
+
+module Api
+  module V1
+    RSpec.describe NotificationsController do
+
+      describe 'POST#read' do
+        subject(:mark_as_read) do
+          post(
+            :create,
+            params: {
+              id: something.id,
+              ids: notifications.map(&:id)
+            }
+          )
+        end
+
+        context 'when experience is apple' do
+          let(:customer) { customers(:apple_for_external_api) }
+          let(:access_token) { oauth_tokens(:apple_customer_for_external_api) }
+
+          let(:notification_one) do
+            customer_notification_events(:unread_customer_notification)
+          end
+          let(:notification_two) { notification_one.dup.tap(&:save!) }
+          let(:notifications) { [notification_one, notification_two] }
+
+          it 'marks supplied notifications as read' do
+            mark_as_read
+
+            expect(notification_one.reload.read_at).to be_present
+            expect(notification_two.reload.read_at).to be_present
+          end
+
+          it 'responds with 204' do
+            mark_as_read
+
+            expect(response.status).to eql(204)
+          end
+        end
+
+        # added in this context
+        # lots of duplication of the first context block
+        context 'when experience is banana' do
+          let(:customer) { customers(:banana_customer) }
+          let(:access_token) { oauth_tokens(:banana_customer) }
+
+          let(:notification_one) do
+            customer_notification_events(:unread_customer_notification)
+          end
+          let(:notification_two) { notification_one.dup.tap(&:save!) }
+          let(:notifications) { [notification_one, notification_two] }
+
+          it 'marks supplied notifications as read' do
+            mark_as_read
+
+            expect(notification_one.reload.read_at).to be_present
+            expect(notification_two.reload.read_at).to be_present
+          end
+
+          it 'responds with 204' do
+            mark_as_read
+
+            expect(response.status).to eql(204)
+          end
+        end
+      end
+    end
+  end
+end
+```
+
+Got feedback in code review around lots of duplication, could be good to break out into using shared examples. Not knowing much about shared examples I was a bit hesistate. However, the reviewer shared this:
+
+https://relishapp.com/rspec/rspec-core/docs/example-groups/shared-examples#shared-examples-group-included-in-two-groups-in-one-file
+
+and I found an example in the code base as well.
+
+So changed the above to this:
+
+```ruby
+# frozen_string_literal: true
+
+require 'spec_helper'
+
+module Api
+  module V1
+    RSpec.describe NotificationsController do
+      describe 'POST#read' do
+        let(:customer) { customers(:apple_for_external_api) }
+        let(:access_token) { oauth_tokens(:apple_customer_for_external_api) }
+
+        let(:notification_one) do
+          customer_notification_events(:unread_customer_notification)
+        end
+        let(:notification_two) { notification_one.dup.tap(&:save!) }
+        let(:notifications) { [notification_one, notification_two] }
+
+        subject(:mark_as_read) do
+          post(
+            :create,
+            params: {
+              id: something.id,
+              ids: notifications.map(&:id)
+            }
+          )
+        end
+
+        shared_examples 'updates notification read_at' do
+          it 'marks supplied notifications as read' do
+            mark_as_read
+
+            expect(notification_one.reload.read_at).to be_present
+            expect(notification_two.reload.read_at).to be_present
+          end
+
+          it 'responds with 204' do
+            mark_as_read
+
+            expect(response.status).to eql(204)
+          end
+        end
+
+        context 'when experience is apple' do
+          include_examples 'updates notification read_at'
+        end
+
+        context 'when experience is orange' do
+          before do
+            customer.update(experience: "orange")
+            access_token.update(customer_id: customer.id)
+            notification_one.update(customer: customer)
+          end
+
+          include_examples 'updates notification read_at'
+        end
+      end
+    end
+  end
+end
+```
+Seems a lot clearer and there is a lot less duplication.
