@@ -3,11 +3,13 @@
 [Tips to improve speed of your test suite](https://medium.com/appaloosa-store-engineering/tips-to-improve-speed-of-your-test-suite-8418b485205c)
 
 
-### Using Fixtures in Rails
+## Using Fixtures in Rails
 
 [7 REASONS I'M STICKING WITH MINITEST AND FIXTURES IN RAILS](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
 
 [TIME TO BRING BACK FIXTURES](https://collectiveidea.com/blog/archives/2014/08/06/time-to-bring-back-fixtures)
+
+[Define Fixtures With Polymorphic Association](http://ruby-journal.com/rails/define-fixtures-with-polymorphic-association/)
 
 ## Four Phase Test Pattern
 
@@ -16,12 +18,12 @@ Reminded about from here https://designcode.commandrun.com/testing-rails-simple-
 First came across here https://robots.thoughtbot.com/four-phase-test
 
 ```
-test do  
+test do
   # setup - Prepare object for this test
-  # exercise - Execute the functionality we are testing  
-  # verify - Verify the exercise's result against our expectation  
+  # exercise - Execute the functionality we are testing
+  # verify - Verify the exercise's result against our expectation
   # teardown - Resetting all data to pre-test state
-end  
+end
 ```
 
 An example of when I have used:
@@ -46,7 +48,7 @@ describe "#processing?" do
 end
 ```
 
-### Tools
+## Tools
 
 [I am confused with terms Cucumber, Capybara and RSpec. Which of these should I go for in my new Rails application?](https://www.quora.com/I-am-confused-with-terms-Cucumber-Capybara-and-RSpec-Which-of-these-should-I-go-for-in-my-new-Rails-application)
 
@@ -63,13 +65,13 @@ end
 >Though cucumber is usually used on top of capybara, you can also use rspec to drive capybara integration tests. The tests are written in either rspec or cucumber, but capybara is an integration engine underneath.
 
 
-#### Try to remember to read the Rspec errors really carefully!!
+## Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
-#### Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz
+## Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz
 A must watch and re-watch - [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz]https://www.youtube.com/watch?v=URSWYvyc42M
 
-#### Using OpenStructs
+## Using OpenStructs
 When using OpenStruct in tests, need to look at the things that are being passed into the object you are wanting to recreate.
 
 e.g.
@@ -129,11 +131,11 @@ end
 ```
 My point being, make sure that what the properties are in the OpenStruct object, are the same as what is in the Role. For example, `party_id` needs to be `party.id`.
 
-#### Params
+## Params
 If you change the columns on your table, remember to change the 'strong params' that are allowed to pass through.
 
-#### TIME
-##### Stub out in RSpec
+## TIME
+### Stub out in RSpec
 ```ruby
 allow(Time).to receive(:now).and_return(Time.parse('2016-03-02'))
 ```
@@ -143,7 +145,7 @@ Needed to use `Time.utc(2016, 8, 1, 14, 34, 56)`, otherwise was failing on Travi
 Also see # August Mistakes & Improvements - Testing with Time
 
 
-#### Using Doubles
+## Using Doubles
 
 ```ruby
 let(:role) do
@@ -164,7 +166,7 @@ let(:role) do
   end
 ```
 
-#### Test if something changes number of records
+## Test if something changes number of records
 
 ```ruby
 params = { "address" => "31 Te Whiti Street, Kilbirnie, Wellington 6003" }
@@ -271,7 +273,7 @@ Then the `service_client` was stubbed out and returned a double which to start w
 
 
 
-## Capybara Testing
+# Capybara Testing
 
 Useful page - has node methods (as in `fill_in`) and session methods (using `page`, `page.body`, `page.save_page`)
 
@@ -284,7 +286,7 @@ config.assets.debug = true
 config.action_controller.asset_host = "http://localhost:6001"
 ```
 
-## Unit tests
+# Unit tests
 
 After having a chat with Sam about testing and unit tests.
 

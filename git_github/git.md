@@ -194,7 +194,7 @@ git push origin :refs/tags/v1.0
 from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).
 
 
-#### Deleteing multipl branches at once
+#### Deleteing multiple branches at once
 
 
 ```bash
@@ -208,7 +208,7 @@ $ git branch -D `git branch | grep -E 'ci-*'`
 Deleted branch ci-2949 (was 8e0aa94780).
 Deleted branch ci-3219 (was 7cefdc4239).
 ```
-Bound to be lots of other ways to delete branches and different combindations of branches.
+Bound to be lots of other ways to delete branches and different combinations of branches.
 
 
 ### fetch /checkout

@@ -1,6 +1,6 @@
 # 2019 Mistakes, Improvements, Learning and Stuff
 
-### Testing a an API controller `before_action`:
+### Testing an API controller `before_action`:
 
 ```ruby
 module Api
@@ -70,7 +70,7 @@ We ended up doing this instead of adding a separate test to test the "sad path",
 
 
 
-## RSpec Shared Examples
+### RSpec Shared Examples
 
 So, was adding a context in the below spec. I knew when I was adding it that there would be a better way of doing it.
 
@@ -220,3 +220,13 @@ module Api
 end
 ```
 Seems a lot clearer and there is a lot less duplication.
+
+
+### VSCode
+Just a reminder on how to do this. If want to include/exclude certain file types in the search, e.g. `*_spec.rb`
+
+
+### Fixtures
+
+Need to learn more about polymorphic associations.
+This is useful when using fixtures -http://ruby-journal.com/rails/define-fixtures-with-polymorphic-association/
