@@ -59,7 +59,7 @@ Start in the centre and work way outwards, in a methodical manner
 
 ## Pattern Libraries
 
-[How to create a pattern library and why you should bother](https://boagworld.com/design/pattern-library/)
+[How to create a pattern library and why you should bother](https://boagworld.com/`/pattern-library/)
 
 [Pattern Library Examples](http://styleguides.io/examples.html)
 
@@ -79,8 +79,12 @@ Start in the centre and work way outwards, in a methodical manner
 
 [Luna - Sainsbury](https://luna.sainsburys.co.uk/guidelines)
 
+[Design, develop, and deliver (Atlassian’s Design System)](https://atlassian.design/)
+
 [A RARE LOOK INTO SAINSBURY’S DIGITAL EXPERIENCE PLAYBOOK](http://whatusersdo.com/blog/sainsburys-digital-experience/)
 
 [Design patterns](http://ui-patterns.com/patterns)
 
 [A frequently updated collection of Design System examples, articles, tools and talks.](https://designsystemsrepo.com/)
+
+[The key lessons I learned creating a popular Design System](https://medium.com/asana-design/the-key-lessons-i-learned-creating-a-popular-design-system-d078c817b4dd)
