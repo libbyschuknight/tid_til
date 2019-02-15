@@ -15,14 +15,18 @@
 
 ## HTML / CSS / SASS stuff
 
-### [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
+### clip-path
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
 
 [CSS clip-path marker](https://bennettfeely.com/clippy/)
 
 [clip-path (css-tricks)](https://css-tricks.com/almanac/properties/c/clip/)
 
 
-### [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+### position
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 [position (css-tricks)](https://css-tricks.com/almanac/properties/p/position/)
 
@@ -45,3 +49,25 @@
 [transition (css-tricks)](https://css-tricks.com/almanac/properties/t/transition/)
 
 [Transitions in CSS](https://cssreference.io/transitions/)
+
+
+### Pseudo-classes
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+[Meet the Pseudo Class Selectors](https://css-tricks.com/pseudo-class-selectors/)
+
+[An Ultimate Guide To CSS Pseudo Classes And Pseudo Elements](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/#table-of-contents-in-alphabetical-order)
+
+
+### Cascade and inheritance
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance
+
+#### Inheritance
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
+
+### px / em / rem
+
+[EM vs REM vs PX – Why you shouldn't “just use pixels”](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)

@@ -13,6 +13,17 @@ See my [blog post](https://schuknight.wordpress.com/2016/01/17/wdcnz-a-bit-late/
 ---
 ### Courses
 
+#### [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/advanced-css-and-sass.)
+
+Brought this course on Udemy sometime in 2018. Started it at some point that year but have just got back into going through it during Geb 2019 hack days.
+
+Here the slides for the course - https://github.com/jonasschmedtmann/advanced-css-course/blob/master/slides-students-C04.pdf
+
+There is a section **HOW CSS WORKS: A LOOK BEHIND THE SCENES**, which covers from the basics the why and how behind CSS. So far I have found this really useful. Particiualry the *HOW CSS IS PARSED, PART 1: THE CASCADE AND SPECIFICITY* lecture.
+I have known about specificity but never really understand it, and I think it is explained well in this lecture.
+
+
+
 
 ---
 ### Code Stuff
