@@ -88,3 +88,15 @@ Start in the centre and work way outwards, in a methodical manner
 [A frequently updated collection of Design System examples, articles, tools and talks.](https://designsystemsrepo.com/)
 
 [The key lessons I learned creating a popular Design System](https://medium.com/asana-design/the-key-lessons-i-learned-creating-a-popular-design-system-d078c817b4dd)
+
+[What is a Design System?](https://medium.muz.li/what-is-a-design-system-1e43d19e7696)
+
+[Everything you need to know about Design Systems](https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969)
+
+  >A Design System is the single source of truth which groups all the elements that will allow the teams to design, realize and develop a product.
+
+[Design Systems Gallery](https://designsystemsrepo.com/design-systems/)
+
+[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)
+
+[How white space killed an enterprise app (and why data density matters)](https://uxdesign.cc/how-white-space-killed-an-enterprise-app-and-why-data-density-matters-b3afad6a5f2a)
