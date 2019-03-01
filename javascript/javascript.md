@@ -9,6 +9,10 @@
 [Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
 
+## Resources / Tools
+
+[flatpickr js](https://flatpickr.js.org/)
+
 ## Notes
 
 #### IIFE (Immediately Invoked Function Expression)
