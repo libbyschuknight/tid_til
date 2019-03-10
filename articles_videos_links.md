@@ -131,6 +131,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Brilliant - Computer Science courses](https://brilliant.org/courses/#computer-science-advanced)
 
+[Famous Laws Of Software Development](https://www.timsommer.be/famous-laws-of-software-development/)
+
 
 ### Programming / Coding
 

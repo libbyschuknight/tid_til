@@ -25,6 +25,12 @@
 
 [The Ultimate List Of Free Stock Photos & Free Royalty Free Images](https://www.eric-liang.com/blog/the-ultimate-list-of-free-stock-photos-free-royalty-free-images/)
 
+[Periodic Table of the Elements](http://smm.zoomquiet.top/data/20110511083224/index.html)
+
+[How white space killed an enterprise app (and why data density matters)](https://uxdesign.cc/how-white-space-killed-an-enterprise-app-and-why-data-density-matters-b3afad6a5f2a)
+
+[The Process of Implementing A UI Design From Scratch](https://ishadeed.com/article/building-ui-design-scratch/)
+
 
 ## Chrome Dev Tools
 
@@ -91,12 +97,19 @@ Start in the centre and work way outwards, in a methodical manner
 
 [What is a Design System?](https://medium.muz.li/what-is-a-design-system-1e43d19e7696)
 
+[Building Design Systems](https://medium.muz.li/building-design-systems-9bda90d8ec25)
+
 [Everything you need to know about Design Systems](https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969)
 
   >A Design System is the single source of truth which groups all the elements that will allow the teams to design, realize and develop a product.
+
+Follow on article
+[Atomic design: how to design systems of components](https://uxdesign.cc/atomic-design-how-to-design-systems-of-components-ab41f24f260e)
 
 [Design Systems Gallery](https://designsystemsrepo.com/design-systems/)
 
 [awesome-design-systems](https://github.com/alexpate/awesome-design-systems)
 
-[How white space killed an enterprise app (and why data density matters)](https://uxdesign.cc/how-white-space-killed-an-enterprise-app-and-why-data-density-matters-b3afad6a5f2a)
+[MATERIAL DESIGN](https://material.io/)
+
+[Solar Design System (Bulb)](https://design.bulb.co.uk/#/patterns/styles/colors/README.md)
