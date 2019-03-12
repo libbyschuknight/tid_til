@@ -35,3 +35,17 @@ Some things that came up:
   [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
   >A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.
   >Concretely, a higher-order component is a function that takes a component and returns a new component.
+
+- the React tutorial is really good place to start learning React - https://reactjs.org/tutorial/tutorial.htmt.
+  We spent less than 10 mins stepping through the steps of using `create-react-app` to start one - https://facebook.github.io/create-react-app/
+
+- due to not having webpack avaiable yet we have to still write an older style of JS, instead of being able to use models, import, export, Babel, compliing etc etc
+
+    ```js
+    (() => {
+      // Code goes here
+    })();
+    ```
+- above is also this
+  [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+  >An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.

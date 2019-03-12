@@ -109,6 +109,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [You don’t have Impostor Syndrome: And neither do I anymore](https://medium.com/counter-intuition/you-don-t-have-impostor-syndrome-126e4c4bdcc)
 
+[The Mistakes I Made As a Beginner Programmer: Learn to identify them, make habits to avoid them](https://edgecoders.com/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
+
 
 ## Stuff
 

@@ -113,3 +113,6 @@ Follow on article
 [MATERIAL DESIGN](https://material.io/)
 
 [Solar Design System (Bulb)](https://design.bulb.co.uk/#/patterns/styles/colors/README.md)
+
+
+[Versioning Design Systems: Communicating Change Clearly to People Using Systems](https://medium.com/eightshapes-llc/versioning-design-systems-48cceb5ace4d)
