@@ -94,6 +94,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [FOR WOMEN JOB SEEKERS, NETWORKING LIKE A MAN ISN'T ENOUGH](https://www.wired.com/story/women-leadership-job-networking/)
 
+[You Guys](https://www.xaprb.com/blog/you-guys/)
+
 #### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
