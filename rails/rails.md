@@ -565,8 +565,6 @@ Came across the `link_to_remote`, this is deprecated, can do something like this
 This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.
 
 
-
-
 #### Generation of things in Rails - model, controller, resource, scaffold, migration
 
 See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for differences

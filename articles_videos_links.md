@@ -224,6 +224,8 @@ Sarah Mei: Diversity of Thought tweets:
 [Rails Techniques: Using Polymorphic Associations](https://semaphoreci.com/blog/2017/08/16/polymorphic-associations-in-rails.html)
 
 
+<!-- TODO: add link to javascript.md page for using webpack in rails -->
+
 ##### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
