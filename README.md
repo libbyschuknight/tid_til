@@ -1,5 +1,6 @@
-# tid_til
-> Today I Did & Today I Learnt
+# Today I learnt
+
+Update: Have changed this to what I have learnt, as haven't been writing down what I have done for ages and ages!!
 
 A collation of [what I have done](tid.md) each day at work and what I have learnt while coding.
 As well as [meet ups, courses, conferences](courses_etc.md) and other things I have been too.
