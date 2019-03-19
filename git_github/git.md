@@ -467,7 +467,13 @@ I deleted my first repo locally and then create new app, then added the remote.
 
 `git remote add origin git@github.com:libbyschuknight/go_surf.git`
 
-`git remote -v`
+`git remote -v` # this shows you the remotes e.g.
+
+```
+git remote -v
+origin	git@github.com:libbyschuknight/tid_til.git (fetch)
+origin	git@github.com:libbyschuknight/tid_til.git (push)
+```
 
 
 ## Go back to previous branch - quickly

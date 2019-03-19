@@ -105,3 +105,145 @@ Got a couple of great replies!!
 >I don’t disagree necessarily. Instead, I’d like to further qualify the “sprinkles” approach. It probably means different things to different people. For the most part it’s probably fair to say that it usually implies rendering your HTML server side and then add some dynamic behaviour via jQuery and plugins. It works but it’s hard to maintain/extend in larger apps. These days, the sprinkles approach can mean something different though. For instance, you could have one page in your Rails app (for lack of a better word) that uses a ReactJS/VueJS/StimulusJS/etc app, but only for that one page or section of the entire application. With ReactJS/VueJS you’d probably push the view rendering into the frameworks’ preferred templating language, e.g. JSX or `<template>…</template>`. With StimulusJS (Basecamp’s JS framework) you’d still render your HTML server side (ERB by default in Rails), annotate it with lots of special meaning `data-` attributes and then provide one or even multiple little apps for the different dynamic behaviours. So it that sense it’s still somewhat a sprinkles approach. Here’s an example for what I mean using VueJS + Turbolinks: https://gorails.com/episodes/how-to-use-vuejs-and-turbolinks-together IIRC, GitLab uses VueJS to “app-ify” parts of their UI but it’s not one big JS app yet. Somebody please correct me there if this is no longer true.
 
 >I wholeheartedly on the premise that Webpack(er) allows one to use new JS technologies including ES6/7/8, TS, and many others. Bundling your JS is not a universally solved problem (IMO) but this is one possible solution with a big/vocal community and lots of tooling. Brunch we’d be another one and there are probably a few more.
+
+
+## Getting React working in the gem for developement purposes
+
+Using a little simple button to help with this
+
+add in react and react-dom
+
+```bash
+npm install react --save
+npm install react-dom --save
+```
+
+Add some very basic React
+
+```js
+import React from 'react';
+
+class StatusButton extends React.Component {
+  render() {
+    return (
+      <button>
+        This is a button from react
+      </button>
+    );
+  }
+}
+
+export default StatusButton;
+```
+
+Got this error:
+```bash
+ERROR in ./index.jsx 12:2
+Module parse failed: Unexpected token (12:2)
+You may need an appropriate loader to handle this file type.
+|
+| ReactDOM.render(
+>   <StatusButton />,
+|   document.getElementById('status-button')
+| );
+```
+
+Figured out I needed to add a loader
+added babel loader stuff
+
+did just this first
+
+```bash
+npm install -D babel-loader @babel/core @babel/preset-env webpack
+```
+
+didn't work, had another error as hadn't added @babel/preset-react
+
+```bash
+ERROR in ./index.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/libby/flux/admin_pattern_library/index.jsx: Unexpected token (12:2)
+
+  10 |
+  11 | ReactDOM.render(
+> 12 |   <StatusButton />,
+     |   ^
+  13 |   document.getElementById('status-button')
+  14 | );
+  15 |
+```
+
+Got help from Thomas and added this
+```
+npm install --save-dev @babel/preset-react
+```
+
+I had actually come across a tutorial that I didn't look at closely enough that had this
+```
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+```
+which would have given me what I needed!!
+
+plus adding to webpack config file
+
+```js
+  module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react']
+            }
+          }
+        }
+      ]
+    },
+```
+
+
+## Live reloading
+
+added webpack-dev-server to get live reloading plus also have access to the react chrome tools
+
+```
+npm install webpack-dev-server --save-dev
+```
+
+Needed a bit of figuring out how to get working as we have `npm run build` building to `./dist/bundle.xxx` but had `index.html` pointing to these files which meant that the live reloading wasn't working
+
+added into package.json
+
+```js
+"scripts": {
+  "start:dev": "npx webpack-dev-server --config webpack.config.js"
+},
+```
+
+added to webpack.config.js
+
+```js
+module.exports = {
+  mode: 'development',
+  entry: {
+    bundle: './index.js',
+  },
+...
+  devServer: {
+      index: 'index.html',
+      contentBase: path.join(__dirname, '.'),
+      compress: true,
+    }
+  }
+};
+```
+
+And changed the top level `index.jsx` to be `.js`, and needed to rename some of the link files in the `index.html` to use `bundle.xx` because we have our entry point in the webpack config as `bundle`:
+
+```js
+  entry: {
+    bundle: './index.js',
+  },
+```
