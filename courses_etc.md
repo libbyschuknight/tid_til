@@ -114,15 +114,15 @@ Nope, more errors :(
 
 Now trying this
 https://gist.github.com/d2s/372b5943bce17b964a79
-
+```
 nvm install v10.15.3
 
 nvm alias default v10.15.3
 
-and now got `v10.15.3`
+# and now got `v10.15.3`
 
-this is what `nvm ls` gives me
-```
+# this is what `nvm ls` gives me
+
     v6.0.0
     v6.11.0
     v6.11.3
@@ -137,18 +137,15 @@ lts/* -> lts/dubnium (-> v10.15.3)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.0 (-> N/A)
 lts/carbon -> v8.15.1 (-> N/A)
-lts/dubnium -> v10.15.3```
+lts/dubnium -> v10.15.3
 
-uninstalled
- ```
+# uninstalled
  v6.0.0
  v6.11.0
- v6.11.3```
+ v6.11.3
 
-now nvm ls give me
+# now nvm ls give me
 
-
-```
 ->     v10.15.3
        v11.12.0
          system
@@ -163,7 +160,8 @@ lts/carbon -> v8.15.1 (-> N/A)
 lts/dubnium -> v10.15.3
 ```
 
-Installed node-sass
+Installed node-sass:
+
 `npm install node-sass --save-dev`
 
 Added a script in `package.json`
@@ -173,13 +171,16 @@ Added a script in `package.json`
   },
 ```
 
-Installed `live-server` globally
+Installed `live-server` globally:
+
 `npm install live-server -g`
 
-Now can have one window that run the script in
+Now can have one window that run the script in:
+
 `npm run compile:sass`
 
 And another with for the live-server:
+
 `live-server`
 
 
