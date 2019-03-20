@@ -1,5 +1,6 @@
-# CSS
+# CSS & SASS
 
+## CSS
 [YOU MIGHT NOT NEED JAVASCRIPT](http://youmightnotneedjs.com/)
 
 [Why CSS Grid is better than Bootstrap for creating layouts](https://hackernoon.com/how-css-grid-beats-bootstrap-85d5881cf163)
@@ -70,3 +71,20 @@ And in my case added `padding-right: 2em;`, as had another class adding `width: 
 [Confused About REM and EM?](https://j.eremy.net/confused-about-rem-and-em/)
 
 [EM vs REM vs PX – Why you shouldn't “just use pixels”](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)
+
+
+## SASS - Syntactically Awesome Style Sheets
+
+https://sass-lang.com/
+
+CSS preprocessor
+
+
+
+[SASS Guidelines](https://sass-guidelin.es/)
+
+[The 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
+
+[sass-boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)
+
+[Aesthetic Sass 1: Architecture and Style Organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
