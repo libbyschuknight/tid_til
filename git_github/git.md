@@ -595,6 +595,18 @@ gwip	     git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -
 gunwip	   git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
 ```
 
+## .gitignore
+https://git-scm.com/docs/gitignore
+
+https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+
+If want to ignore `node_modules` folder
+
+```
+node_modules/
+```
+
 ## exclude from git (not git ignore)
 
 Add to `.git/info/exclude`
