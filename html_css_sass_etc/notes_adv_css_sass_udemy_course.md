@@ -172,6 +172,8 @@ https://sass-lang.com/ - is a CSS preprocessor
 
 [SASS Guidelines](https://sass-guidelin.es/)
 
+[The Sass Ampersand](https://css-tricks.com/the-sass-ampersand/)
+
 
 ### CSS Architecture
 
@@ -204,3 +206,86 @@ and one file:
 [Aesthetic Sass 1: Architecture and Style Organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
 Using this might be over the top for a small project, or one page but good for large projects. And a good habit to get use to.
+
+## Basic Principles of Responsive Design and Layout Types
+
+1. Fluid grid and layouts - %'s instead of px's for all layout related lengths
+2. Flexible / responseive images
+3. Media queries
+
+![responsive design principles](adv-css-sass-resp-design-prins.png)
+
+Float layouts? Flexbox? Or CSS grid? Will go over all of them.
+
+### Implementing a grid system
+Things learnt along the way...
+
+#### :not
+[:not(s)](https://css-tricks.com/almanac/selectors/n/not/)
+
+[:not() CSS pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+
+```css
+/* Selects any element that is NOT a paragraph */
+:not(p) {
+  color: blue;
+}
+```
+
+#### [attribute]
+[Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+
+https://css-tricks.com/almanac/selectors/a/attribute/
+
+```css
+[data-value] {
+  /* Attribute exists */
+}
+
+[data-value="foo"] {
+  /* Attribute has this exact value */
+}
+
+[data-value*="foo"] {
+  /* Attribute value contains this value somewhere in it */
+}
+
+[data-value~="foo"] {
+  /* Attribute has this value in a space-separated list somewhere */
+}
+
+[data-value^="foo"] {
+  /* Attribute value starts with this */
+}
+
+[data-value|="foo"] {
+  /* Attribute value starts with this in a dash-separated list */
+}
+
+[data-value$="foo"] {
+  /* Attribute value ends with this */
+}
+```
+
+Example in course, selectors all classes that start with `col-`
+
+```css
+[class^="col-"] {
+
+}
+```
+
+Can also do the links of :
+
+```css
+/* <a> elements with a title attribute */
+a[title] {
+  color: purple;
+}
+```
+
+Grid system:
+
+![grid system example](grid-system-adv-css-sass.png)
+
+Link to grid system - https://libbyschuknight.github.io/natours-site/grid.html
