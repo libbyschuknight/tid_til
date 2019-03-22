@@ -54,6 +54,9 @@ otherwise the test does not pass! Even though it looks like it should.
 Control+Shift+Eject - sleep / lock (external keyboard)
 Control+Shift+Power
 
+control + shift + space bar - for switching between keyboard languages
+control + space bar - to bring up list and select with arrow keys
+
 
 ### Some markdown stuff
 

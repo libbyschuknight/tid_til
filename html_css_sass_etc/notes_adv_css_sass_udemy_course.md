@@ -289,3 +289,94 @@ Grid system:
 ![grid system example](grid-system-adv-css-sass.png)
 
 Link to grid system - https://libbyschuknight.github.io/natours-site/grid.html
+
+## Building the about and feature sections
+
+Think / Build / Architect
+
+
+Use of utility classes, and have a `_utilities.scss` partial file
+
+```css
+.u-center-text { text-align: center; }
+```
+
+Using `background-clip` to create a graident affect on text:
+
+```css
+-webkit-background-clip: text;
+```
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
+
+Last demo here does something similar.
+
+https://css-tricks.com/almanac/properties/b/background-clip/
+
+Text example shows something similar as well.
+
+Using `transform` and `skew` to get the text to do stuff.
+
+
+Adding arrow symbol:
+
+```html
+&rarr;
+```
+see https://css-tricks.com/snippets/html/glyphs/
+
+```
+&rarr;	→	&#8594;	rightwards arrow	u+2192 ISOnum	alert("\u2192");
+```
+
+Useful resources - http://codingheroes.io/resources/
+
+
+### Emmet!! https://emmet.io/
+
+https://code.visualstudio.com/docs/editor/emmet - built into VSCode
+
+
+```html
+.compoistion>(img.composition__photo.composition__photo--p1)*3
+
+<!-- will make this -->
+<div class="compoistion">
+  <img src="" alt="" class="composition__photo composition__photo--p1">
+  <img src="" alt="" class="composition__photo composition__photo--p1">
+  <img src="" alt="" class="composition__photo composition__photo--p1">
+</div>
+```
+
+
+## CSS stuff
+
+`outline`
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/outline
+
+https://css-tricks.com/almanac/properties/o/outline/
+
+
+`outline-offset`
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset
+
+https://css-tricks.com/almanac/properties/o/outline-offset/
+
+`transform`
+
+https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/transform
+
+https://css-tricks.com/almanac/properties/t/transform/
+
+`z-index`
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+https://css-tricks.com/almanac/properties/z/z-index/
+
+
+## Icon Fonts
+
+http://www.linea.io/
