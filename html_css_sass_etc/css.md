@@ -16,6 +16,8 @@
 [The Ultimate Guide to CSS](https://docs.google.com/document/d/1PU8y7_jld2RBcj79uwmJCUBtjMeXNl44EjUu5jqY4YU/edit)
 >A complete breakdown of the CSS support for the most popular mobile, web and desktop email clients on the planet.
 
+[Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
+
 ## Layout
 
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) (CSS Grid)
@@ -78,7 +80,6 @@ And in my case added `padding-right: 2em;`, as had another class adding `width: 
 https://sass-lang.com/
 
 CSS preprocessor
-
 
 
 [SASS Guidelines](https://sass-guidelin.es/)
