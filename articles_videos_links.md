@@ -203,6 +203,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)
 
+[Render and Redirect- Which to Use?](https://medium.com/@kerenlerner/render-and-redirect-which-to-use-106ff653ee9a)
+
 [How Rails handles status codes](http://ieftimov.com/how-rails-handles-status-codes)
 
 [How DHH Organizes His Rails Controllers](http://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/)

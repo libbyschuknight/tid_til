@@ -8,6 +8,8 @@
 
 [Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
+[What do the three dots (...) mean in JavaScript?](https://oprea.rocks/blog/what-do-the-three-dots-mean-in-javascript/)
+
 ### IIFE (Immediately Invoked Function Expression)
 
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.

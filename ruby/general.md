@@ -443,3 +443,7 @@ Great article:
 >unknown_amount(1, 2, 3)
 ># => [1, 2, 3]
 >```
+
+## alias keyword and method
+
+[Alias in Ruby](https://medium.com/rubycademy/alias-in-ruby-bf89be245f69)
