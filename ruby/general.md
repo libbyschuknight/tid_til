@@ -447,3 +447,10 @@ Great article:
 ## alias keyword and method
 
 [Alias in Ruby](https://medium.com/rubycademy/alias-in-ruby-bf89be245f69)
+
+
+## set ruby version
+
+using `rbenv` do `rbenv local 2.4.5` and it will create a file `.ruby-version` with the version number in it.
+
+Then you need to do `bundle install` to get all the gems with this version and probably need to do a `rbenv rehash` either before or after or both.

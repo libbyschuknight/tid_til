@@ -247,3 +247,136 @@ And changed the top level `index.jsx` to be `.js`, and needed to rename some of 
     bundle: './index.js',
   },
 ```
+
+## Webpack, eslint etc etc
+
+Being sorting out more stuff recently.
+
+Have used `webpack-merge` to split out the `webpack` config files to have different configurations for dev and prod enviroments.
+
+Have got all the eslint stuff working and then had to fix some errors.
+
+This code throws a couple of warnings (eslint is being extended with the AirBnB linting rules):
+
+```jsx
+class StatusButton extends React.Component {
+  render() {
+    return (
+      <button>
+        This is a button from React!!
+      </button>
+    );
+  }
+}
+```
+
+`Missing an explicit type attribute for button`
+
+Solved by adding `type="submit"` to the `button`
+
+`Component should be written as a pure function`
+
+Solved by re-writing the class as a stateless function, also known as a functional component I believe.
+
+```jsx
+function StatusButton() {
+  return (
+    <button type="submit">
+      This is a button from React!!
+    </button>
+  );
+}
+```
+
+[Class vs React.createClass vs stateless](http://airbnb.io/javascript/react/#class-vs-reactcreateclass-vs-stateless)
+
+[Pure Functional Components in React 16.6](https://logrocket.com/blog/pure-functional-components/)
+
+
+### webpack dev-server
+
+So when using this, it doesn't save the files to disk. Bit of a discussion around whether we want to be able to see the ressulting files or not and if we want to ahve the ability to see the prod files as well in development. Could help with debugging.
+
+Found this useful stackoverflow question and answer:
+
+[webpack “--watch” vs “--hot” : what's the difference?](https://stackoverflow.com/questions/38089785/webpack-watch-vs-hot-whats-the-difference)
+
+Top answer - https://stackoverflow.com/questions/38089785/webpack-watch-vs-hot-whats-the-difference?answertab=votes#tab-top
+
+Short of it is:
+
+>The dev server uses webpack’s watch mode. It also prevents webpack from emitting the resulting files to disk. Instead it keeps and serves the resulting files from memory.
+
+
+## Errors
+Pearl of widsom from my collegue Thomas, if you are searching for an error on Google and you can't find anything, there you have probably done something wrong in your code e.g. spelling error, as there are so many people out there that someone else would have come across the same error!
+
+
+## Locking down npm packages
+In `package.json` has this:
+
+```json
+"devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+```
+
+If you ran `npm update` it would then update to a minor release if there was one.
+
+We wanted to lock down out versions to what we have currently, so need to take out the `^`.
+
+```json
+"devDependencies": {
+    "@babel/core": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "@babel/preset-react": "7.0.0",
+```
+
+https://docs.npmjs.com/cli/update
+
+https://www.hostingadvice.com/how-to/update-npm-packages/ - Semantic Versioning: Major, Minor, & Patch Version Ranges
+
+>To Allow Patch Releases: 1.0 or 1.0.x or ~1.0.4
+>To Allow Minor Releases: 1 or 1.x or ^1.0.4
+>To Allow Major Releases: * or x
+
+## `package.json`
+
+Was wondering if we needed the `"main": "index.jsx" in our package.json file.
+
+https://docs.npmjs.com/files/package.json#main
+
+[Main property in package.json defines package entry point](https://bytearcher.com/articles/main-property-in-package.json-defines-entry-point/)
+
+>Locating entry point
+>After finding the directory Node tries a couple of strategies to determining the entry point of the package. The entry point is the file that is to be loaded and its exports object to be returned as the return value of the originating require call. First, Node looks for a package.json file and checks if it contains a main property. It will be used to point a file inside the package directory that will be the entry point. If main property does not exist, then Node tries in order index.js, index.json and index.node.
+
+
+## VScode ruby linting issues
+
+Have Ruby extension as well as Ruby-Rubcop one. Think there was some sort of clash or something and things not set up properly.
+
+Got rid of rubocop extension as the Ruby one can also did linting. Needed to sort out my user settings, grabbed a friends and changed mine to:
+
+
+```json
+"[ruby]": {
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSaveTimeout": 1500,
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.format": "rubocop",
+  "ruby.useBundler": true,
+  "ruby.pathToBundler": "/Users/libby/.rbenv/shims/bundler",
+```
+
+not sure if these are all relevant, got some from this page as well
+
+https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby
+
+The linting is working in one project, which is new and not in another which is a real old one. Will try and figure out what is not happening!!

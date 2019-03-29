@@ -114,5 +114,6 @@ Follow on article
 
 [Solar Design System (Bulb)](https://design.bulb.co.uk/#/patterns/styles/colors/README.md)
 
-
 [Versioning Design Systems: Communicating Change Clearly to People Using Systems](https://medium.com/eightshapes-llc/versioning-design-systems-48cceb5ace4d)
+
+[A comprehensive guide to design systems](https://www.invisionapp.com/inside-design/guide-to-design-systems/)

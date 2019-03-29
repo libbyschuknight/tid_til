@@ -381,6 +381,8 @@ git push --force origin feature/first_page_join_form_MVP
 
 [Getting solid at Git rebase vs. merge](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.9yty645zl)
 
+[The Golden Rule of Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing)
+
 [Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history)
 
 [Interactive Rebase](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase)
@@ -620,3 +622,12 @@ e.g. if you want to have a local folder but not have it in git or in the `gitign
 ## git squash
 
 [Auto-squashing Git Commits](https://robots.thoughtbot.com/autosquashing-git-commits)
+
+
+## git-rerere
+
+Records conflict changes you have made so you don't have to do them again.
+
+https://git-scm.com/docs/git-rerere
+
+[Fix conflicts only once with git rerere](https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)

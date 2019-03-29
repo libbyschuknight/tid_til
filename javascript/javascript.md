@@ -10,6 +10,8 @@
 
 [What do the three dots (...) mean in JavaScript?](https://oprea.rocks/blog/what-do-the-three-dots-mean-in-javascript/)
 
+[Airbnb JavaScript Style Guide](http://airbnb.io/javascript/react/)
+
 ### IIFE (Immediately Invoked Function Expression)
 
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
@@ -33,6 +35,27 @@ https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 ## Node
 Set time in node console to UTC
 `process.env.TZ = utc`
+
+### Updating npm packages
+
+Check to see what is outdated:
+
+```shell
+npm outdated
+
+Package            Current  Wanted  Latest  Location
+@babel/core          7.3.4   7.4.0   7.4.0  admin_pattern_library
+@babel/preset-env    7.3.4   7.4.2   7.4.2  admin_pattern_library
+react               16.8.4  16.8.6  16.8.6  admin_pattern_library
+react-dom           16.8.4  16.8.6  16.8.6  admin_pattern_library
+webpack-cli          3.2.3   3.3.0   3.3.0  admin_pattern_library
+```
+
+update them:
+`npm update`
+
+And then `npm outdated` should not return anything.
+
 
 
 ## jQuery
