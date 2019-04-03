@@ -96,6 +96,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [You Guys](https://www.xaprb.com/blog/you-guys/)
 
+[No more excuses: Why your attempts to deny the gender pay gap just won’t wash](https://thespinoff.co.nz/society/08-03-2017/no-more-excuses-why-your-attempts-to-deny-the-gender-pay-gap-just-wont-wash/)
+
 #### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
