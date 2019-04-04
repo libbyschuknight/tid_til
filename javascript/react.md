@@ -10,3 +10,5 @@
 ## Resources
 
 [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+
+[Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)

@@ -115,6 +115,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The Mistakes I Made As a Beginner Programmer: Learn to identify them, make habits to avoid them](https://edgecoders.com/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
 
+[It is never too late to be who you might have been — becoming a developer at age 36](https://medium.freecodecamp.org/it-is-never-too-late-to-be-who-you-might-have-been-becoming-a-developer-at-age-36-7d186ad5702)
 
 ## Stuff
 

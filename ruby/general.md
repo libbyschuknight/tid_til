@@ -1,6 +1,14 @@
 # Ruby Stuff
 
-## Ruby Classes
+## Bang
+[Why are exclamation marks used in Ruby methods?](https://stackoverflow.com/questions/612189/why-are-exclamation-marks-used-in-ruby-methods)
+
+>In general, methods that end in ! indicate that the method will modify the object it's called on. Ruby calls these as "dangerous methods" because they change state that someone else might have a reference to.
+
+>A bang can used in the below ways, in order of my personal preference.
+>1) An active record method raises an error if the method does not do what it says it will.
+>2) An active record method saves the record or a method saves an object (e.g. strip!)
+>3) A method does something “extra”, like posts to someplace, or does some action.
 
 #### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
 

@@ -2,15 +2,36 @@
 
 ## Links
 
+[My Favorite Teachers In The JavaScript Community](https://dev.to/emmawedekind/my-favorite-teachers-in-the-javascript-community-53h)
+
 [YOU MIGHT NOT NEED JQUERY](http://youmightnotneedjquery.com/)
 
 [(Now More Than Ever) You Might Not Need jQuery](https://css-tricks.com/now-ever-might-not-need-jquery/)
 
 [Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
-[What do the three dots (...) mean in JavaScript?](https://oprea.rocks/blog/what-do-the-three-dots-mean-in-javascript/)
 
 [Airbnb JavaScript Style Guide](http://airbnb.io/javascript/react/)
+
+## Language things
+
+[What does this symbol mean in JavaScript?](https://stackoverflow.com/questions/9549780/what-does-this-symbol-mean-in-javascript)
+
+[Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+
+### The three dots `...`
+
+[Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+[Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+[What do the three dots (...) mean in JavaScript?](https://oprea.rocks/blog/what-do-the-three-dots-mean-in-javascript/)
+
+[Three dots ( … ) in JavaScript](https://dev.to/sagar/three-dots---in-javascript-26ci)
+
+
+
+
 
 ### IIFE (Immediately Invoked Function Expression)
 
