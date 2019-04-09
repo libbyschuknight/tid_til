@@ -31,7 +31,7 @@ Some things that came up:
   https://developer.mozilla.org/en-US/docs/Glossary/Scope
   [Understanding JavaScript Scope](https://scotch.io/tutorials/understanding-scope-in-javascript)
 
-- talked about higher order components in React, in our case we are wrapping a compoenebt with a `div`
+- talked about higher order components in React, in our case we are wrapping a component with a `div`
   [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
   >A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.
   >Concretely, a higher-order component is a function that takes a component and returns a new component.
@@ -204,7 +204,7 @@ plus adding to webpack config file
 ```
 
 
-## Live reloading
+### Live reloading
 
 added webpack-dev-server to get live reloading plus also have access to the react chrome tools
 
@@ -248,7 +248,7 @@ And changed the top level `index.jsx` to be `.js`, and needed to rename some of 
   },
 ```
 
-## Webpack, eslint etc etc
+### Webpack, eslint etc etc
 
 Being sorting out more stuff recently.
 
@@ -291,6 +291,47 @@ function StatusButton() {
 [Class vs React.createClass vs stateless](http://airbnb.io/javascript/react/#class-vs-reactcreateclass-vs-stateless)
 
 [Pure Functional Components in React 16.6](https://logrocket.com/blog/pure-functional-components/)
+
+
+### Other linting
+
+#### CSS / SCSS
+
+scss - should throw an error
+
+`"lint:scss": "stylelint '**/*.scss'",`
+
+```css
+a { color: #FFF; }
+
+a {}
+              /* ← */
+/* comment */ /* ↑ */
+/**              ↑
+*        This line */
+```
+
+```
+ 9:1  ✖  Unexpected duplicate selector "a", first used at line 7   no-duplicate-selectors
+ 9:3  ✖  Unexpected empty block                                    block-no-empty
+```
+
+js - should throw an error
+
+` "lint:js": "eslint '**/*.{js,jsx}'"`
+
+```js
+document.getElementById {
+
+}
+```
+
+```
+/Users/libby/flux/admin_pattern_library/index.jsx
+  6:25  error  Parsing error: Unexpected token {
+
+✖ 1 problem (1 error, 0 warnings)
+```
 
 
 ### webpack dev-server
