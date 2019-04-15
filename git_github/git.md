@@ -5,6 +5,8 @@
 
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
+[New Developer? You should’ve learned Git yesterday.](https://codeburst.io/number-one-piece-of-advice-for-new-developers-ddd08abc8bfa)
+
 [Little Things I Like to Do with Git](https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/)
 
 [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)

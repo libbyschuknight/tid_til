@@ -117,6 +117,12 @@ Sarah Mei: Diversity of Thought tweets:
 
 [It is never too late to be who you might have been — becoming a developer at age 36](https://medium.freecodecamp.org/it-is-never-too-late-to-be-who-you-might-have-been-becoming-a-developer-at-age-36-7d186ad5702)
 
+[Web Developer Roadmaps: All In One Place](https://medium.com/level-up-web/developer-roadmaps-all-in-one-place-75c0402db0e0)
+
+[Learn to become a modern Frontend Developer in 2019](https://medium.com/tech-tajawal/modern-frontend-developer-in-2018-4c2072fa2b9c)
+
+[The 2018 Web Developer Roadmap](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
+
 ## Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)

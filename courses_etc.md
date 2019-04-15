@@ -5,21 +5,34 @@
 ##### [nz.js(con);](http://conference.javascript.org.nz/) - 9-10 March 2017
 
 ##### [Webstock 2016](http://www.webstock.org.nz/16/) - 11-12 Feb 2016
-Blog post to come
+Blog post about my experience - https://medium.com/@SchuKnight/webstock-2016-50f3a34ff671
 
 ##### [WDCNZ](http://www.wdcnz.com/) - 23 July 2015
 See my [blog post](https://schuknight.wordpress.com/2016/01/17/wdcnz-a-bit-late/)
 
 ---
-### Courses
+### Online Courses
 
-#### [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/advanced-css-and-sass.)
+#### [The Complete JavaScript Course 2019: Build Real Projects!](https://www.udemy.com/the-complete-javascript-course) - just started
 
-Brought this course on Udemy sometime in 2018. Started it at some point that year but have just got back into going through it during Geb 2019 hack days.
+I want to get back into Javascript so brought this course and started doing it before finishing other courses as I have changed roles recently and need to get back into JS.
 
-Here the slides for the course - https://github.com/jonasschmedtmann/advanced-css-course/blob/master/slides-students-C04.pdf
+#### [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/advanced-css-and-sass) - still doing
 
-See [notes here](html_css_sass_etc/notes_adv_css_sass_udemy_course.md)
+Brought this course on Udemy sometime in 2018. Started it at some point that year but have just got back into going through it during 2019 hack days.
+Here the slides for the course - https://github.com/jonasschmedtmann/advanced-css-course/blob/master/slides-students-C04.pdf.
+See [notes here](html_css_sass_etc/notes_adv_css_sass_udemy_course.md).
+And blog posts about progress, mostly under hack days and specific posts - https://medium.com/@SchuKnight.
+And my github repo for the main project - https://github.com/libbyschuknight/natours-site.
+
+#### [Build Responsive Real World Websites with HTML5 and CSS3](https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3) - completed
+I did this course as I felt I didn't have a good grasp of HTML/CSS and wanted to improve in this area. I had been trying to work through this online book [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/) but realised that I learn better from videos. I was getting bored with the Learn to Code site.
+This is my repo for the site made during this course - https://github.com/libbyschuknight/omnifood-site.
+
+
+#### [The Complete Ruby on Rails Developer Course](https://www.udemy.com/the-complete-ruby-on-rails-developer-course) - incomplete
+Started this while was still working in my first job as I didn't feel I had a strong understanding on how to get a Rails app started from the ground up. I haven't completed it as I think I ended up changing jobs and this went to the wayside. Would be good to come back and finish as the next section I would be on many-to-many associations.
+
 
 ---
 ### Code Stuff

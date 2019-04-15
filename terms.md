@@ -1,76 +1,88 @@
 # Terms
 
-DNS -Domain Name System
+## DNS -Domain Name System
 > DNS stands for Domain Name System. DNS is how domain names are translated into IP addresses, and DNS also controls email delivery. DNS is what allows you to use your web browser to find web sites as well as send and receive email.
 http://support.e-zekiel.com/templates/System/details.asp?id=31606&fetch=26154
 
 [How DNS Works](https://howdns.works/ep1/)
 
-CDN - Content Delivery Network
+## CDN - Content Delivery Network
     > A content delivery network (CDN) is a system of distributed servers (network) that deliver webpages and other Web content to a user based on the geographic locations of the user, the origin of the webpage and a content delivery server. This service is effective in speeding the delivery of content of websites with high traffic and websites that have global reach. The closer the CDN server is to the user geographically, the faster the content will be delivered to the user. CDNs also provide protection from large surges in traffic.
     > [CDN - Content Delivery Network](http://www.webopedia.com/TERM/C/CDN.html)
 
 
 - asset CDN -
 
-Latency
+## Latency
 >is the amount of time it takes for the host server to receive and process a request for a page object. The amount of latency depends largely on how far away the user is from the server.
 http://www.webperformancetoday.com/2012/04/02/latency-101-what-is-latency-and-why-is-it-such-a-big-deal/
 
 >In web speak it is the round trip time between you requesting a http request and the returning answer. The longer the request takes to get an answer… the longer the latency.
 https://responsivedesign.is/articles/testing-for-latency/
 
-RDS - Relational Database Service
+## RDS - Relational Database Service
 [Amazon Relational Database Service (Amazon RDS)](https://aws.amazon.com/rds/)
 [Amazon RDS for PostgreSQL](https://aws.amazon.com/rds/postgresql/)
 
-SASS - Syntactically Awesome Style Sheets  (e.g. Storypark)
+## SASS - Syntactically Awesome Style Sheets  (e.g. Storypark)
 
-BDD - Behaviour Driven Development
+## BDD - Behaviour Driven Development
 
-TDD - Test Driven Development
+## TDD - Test Driven Development
 
-API - Application programming interface
+## API - Application programming interface
 [Application programming interface](Application programming interface)
 
-HTTP - Hypertext Transfer Protocol - [Version 2 (HTTP/2)](http://httpwg.org/specs/rfc7540.html)
+## HTTP - Hypertext Transfer Protocol - [Version 2 (HTTP/2)](http://httpwg.org/specs/rfc7540.html)
 
-ROAR -
+## HTTPS
+https://en.wikipedia.org/wiki/HTTPS
 
-REST -
-[Ruby On REST: Introducing the Representer Pattern](http://nicksda.apotomo.de/2011/12/ruby-on-rest-introducing-the-representer-pattern/)
+>Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet.
 
-[Understanding REST And RPC For HTTP APIs](https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/)
+>The principal motivation for HTTPS is authentication of the accessed website and protection of the privacy and integrity of the exchanged data while in transit. It protects against man-in-the-middle attacks. The bidirectional encryption of communications between a client and server protects against eavesdropping and tampering of the communication. In practice, this provides a reasonable assurance that one is communicating without interference by attackers with the website that one intended to communicate with, as opposed to an impostor.
 
-
-pragma (or "directive")
-> a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.
-
-- https://en.wikipedia.org/wiki/Directive_(programming)
-
-
-TLS - Transport Layer Security
+## TLS - Transport Layer Security
 >  is a protocol that ensures privacy between communicating applications and their users on the Internet. When a server and client communicate, TLS ensures that no third party may eavesdrop or tamper with any message. TLS is the successor to the Secure Sockets Layer (SSL). http://searchsecurity.techtarget.com/definition/Transport-Layer-Security-TLS
+
+https://en.wikipedia.org/wiki/Transport_Layer_Security
 
 [OAuth](http://oauth.net/) -
 > An open protocol to allow secure authorization in a simple and standard method from web, mobile and desktop applications.
 
 [OAuth 2.0](http://oauth.net/2/)
 
-MITM - man-in-the-middle (MITM) attack
+## MITM - man-in-the-middle (MITM) attack
 
-[cURL](https://curl.haxx.se/)
+
+## ROAR -
+
+## REST
+
+[Ruby On REST: Introducing the Representer Pattern](http://nicksda.apotomo.de/2011/12/ruby-on-rest-introducing-the-representer-pattern/)
+
+[Understanding REST And RPC For HTTP APIs](https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/)
+
+
+## pragma (or "directive")
+
+> a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.
+
+- https://en.wikipedia.org/wiki/Directive_(programming)
+
+## [cURL](https://curl.haxx.se/)
+
 > curl is an open source command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMTP, SMTPS, Telnet and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, HTTP/2, cookies, user+password authentication (Basic, Plain, Digest, CRAM-MD5, NTLM, Negotiate and Kerberos), file transfer resume, proxy tunneling and more.
 
-DRY - Don't Repeat Yourself
+## DRY - Don't Repeat Yourself
 
-BRITTLE
+## BRITTLE
 “Too DRY is BRITTLE (Badly Refactored Into Tiny Things Lacking Expressiveness)” - @keystonelemur
 
-[What is A/B Testing?](https://vwo.com/ab-testing/)
+## [What is A/B Testing?](https://vwo.com/ab-testing/)
 > A/B testing (sometimes called split testing) is comparing two versions of a web page to see which one performs better. You compare two web pages by showing the two variants (let's call them A and B) to similar visitors at the same time. The one that gives a better conversion rate, wins!
 
-Encapsulation
+## Encapsulation
 
 https://samurails.com/interview/ruby-inheritance-encapsulation-polymorphism/
 > Encapsulation is the packing of data and functions into a single component. Encapsulation means that the internal representation of an object is hidden from the outside. Only the object can interact with its internal data. Public methods can be created to open a defined way to access the logic inside an object.
@@ -79,19 +91,19 @@ https://launchschool.com/books/oo_ruby/read/the_object_model
 >Encapsulation is hiding pieces of functionality and making it unavailable to the rest of the code base. It is a form of data protection, so that data cannot be manipulated or changed without obvious intention. It is what defines the boundaries in your application and allows your code to achieve new levels of complexity. Ruby, like many other OO languages, accomplishes this task by creating objects, and exposing interfaces (i.e., methods) to interact with those objects.
 
 
-Race Condition
+## Race Condition
 
 http://searchstorage.techtarget.com/definition/race-condition
 > A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.
 
 
-Semaphore
+## Semaphore
 
-concurrency
+## concurrency
 
-Monkey patching
+## Monkey patching
 
-Caching
+## Caching
 
 http://whatis.techtarget.com/definition/caching
 >Caching (pronounced “cashing”) is the process of storing data in a cache.
@@ -101,29 +113,25 @@ http://whatis.techtarget.com/definition/caching
 >A web cache (or HTTP cache) is an information technology for the temporary storage (caching) of web documents, such as HTML pages and images, to reduce bandwidth usage, server load, and perceived lag. A web cache system stores copies of documents passing through it; subsequent requests may be satisfied from the cache if certain conditions are met.[1] A web cache system can refer either to an appliance, or to a computer program.
 
 
-
-Theory of Constraints
+## Theory of Constraints
 http://www.leanproduction.com/theory-of-constraints.html
 
-[Singleton](http://whatis.techtarget.com/definition/singleton)
+## [Singleton](http://whatis.techtarget.com/definition/singleton)
 >In object-oriented programming , a singleton class is a class that can have only one object (an instance of the class) at a time. For example, using Visual C++ , the "Application" class is an example of a singleton class. You can only create only one object of an Application class.
 
 [Ruby Singleton Pattern](https://dalibornasevic.com/posts/9-ruby-singleton-pattern)
 
 
+## [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
 
-[Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
+## HAML - HTML Abstraction Markup Language
 
-HAML - HTML Abstraction Markup Language
+## [BEM](https://en.bem.info/)
 
-[BEM](https://en.bem.info/)
 Block Element Modifier is a methodology, that helps you to achieve reusable components and code sharing in the front-end
 - [get bem](http://getbem.com/)
 
-
-
-
-#### CAP
+## CAP
 
 [CAP Theorem: Its importance in distributed systems](http://blog.flux7.com/blogs/nosql/cap-theorem-why-does-it-matter)
 
@@ -134,16 +142,17 @@ Availability (A) requires that every node (not in failed state) always execute q
 Partition Tolerance (P) requires that a system be able to re-route a communication when there are temporary breaks or failures in the network. The goal is to maintain synchronization among the involved nodes.
 
 
-Transaction - database? local?
+## Transaction - database? local?
 
-ACID
+### ACID
 
-Distributed transactions
+### Distributed transactions
 
-Fault tolerance
+## Fault tolerance
 
-Idempotent
->Idempotence (UK: /ˌɪdɛmˈpoʊtns/;[1] US: /ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns)[2] is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application.
+## Idempotent
+>Idempotence (UK: /ˌɪdɛmˈpoʊtns/; US: /ˌaɪdᵻmˈpoʊtəns/ eye-dəm-poh-təns) is the property of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application.
+
 https://en.wikipedia.org/wiki/Idempotence
 
 StackOverFlow question - What is an idempotent operation?
@@ -153,8 +162,7 @@ StackOverFlow question - What is an idempotent operation?
 https://stackoverflow.com/questions/1077412/what-is-an-idempotent-operation/1077489#1077489
 
 
-
-Headless
+## Headless
 > "Headless" in this context simply means without a graphical display. (i.e.: Console based.)
 
 
