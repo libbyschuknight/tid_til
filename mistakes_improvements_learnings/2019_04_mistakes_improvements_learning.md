@@ -43,3 +43,10 @@ module CommonOptions
 ```
 
 https://api.rubyonrails.org/classes/ActiveSupport/Concern.html
+
+
+## `npm ci`
+
+https://docs.npmjs.com/cli/ci.html
+
+[What is the difference between “npm install” and “npm ci”?](https://stackoverflow.com/questions/52499617/what-is-the-difference-between-npm-install-and-npm-ci)
