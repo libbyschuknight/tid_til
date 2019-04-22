@@ -50,3 +50,26 @@ https://api.rubyonrails.org/classes/ActiveSupport/Concern.html
 https://docs.npmjs.com/cli/ci.html
 
 [What is the difference between “npm install” and “npm ci”?](https://stackoverflow.com/questions/52499617/what-is-the-difference-between-npm-install-and-npm-ci)
+
+## Setting up for Wes Bos's React for Beginners course
+
+Adding here as well started on home and will be working on work laptop as well.
+
+I am using `nvm` as my managment for `node`.
+
+Install most recent version `nvm install 11.14`
+
+Copy down my github `catch-of-the-day` repo -
+
+Run `npm install`.
+
+Currently ignore all the warnings and deprecations and vulnerabilities, as the course is over a year old so shrug.
+
+Run `npm start`, if get errors re packages, look to see if have a `node_modules` folder in my home directory. This was an issue on my home comptuer.
+
+```
+6. Check if /Users/SchuKnight/node_modules/babel-loader is outside your project directory.
+    For example, you might have accidentally installed something in your home folder.
+```
+
+This was in the error output when using `npm start`. See full list of errors etc here - https://gist.github.com/libbyschuknight/a1d1d970175b598eb4ad3a6164cb57c9.
