@@ -59,6 +59,14 @@
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
 
+##### Why personality tests can be useless / harmful in the workplace
+
+[Goodbye to MBTI, the Fad That Won’t Die](https://www.psychologytoday.com/us/blog/give-and-take/201309/goodbye-mbti-the-fad-won-t-die)
+
+[Personality Tests Don’t Work, Here’s Why and The Alternatives](https://academy.nobl.io/personality-tests-dont-work-heres-why-and-alternatives/)
+
+[QUIZ: WHICH DISNEY PRINCESS ARE YOU?](https://ohmy.disney.com/quiz/2014/06/25/quiz-which-disney-princess-are-you/) - a good alternative? 😂
+
 #### Agile and Introverts
 [Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
 
@@ -122,6 +130,8 @@ Sarah Mei: Diversity of Thought tweets:
 [Learn to become a modern Frontend Developer in 2019](https://medium.com/tech-tajawal/modern-frontend-developer-in-2018-4c2072fa2b9c)
 
 [The 2018 Web Developer Roadmap](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d)
+
+[How to Feel Less Overwhelmed as a Developer](https://medium.com/@juliahaigh/how-to-feel-less-overwhelmed-as-a-developer-79bc816709de)
 
 ## Stuff
 

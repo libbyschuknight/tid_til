@@ -1,6 +1,6 @@
 # Gem Stuff
 
-### [bundle exec](http://bundler.io/man/bundle-exec.1.html)
+## [bundle exec](http://bundler.io/man/bundle-exec.1.html)
 
 >This command executes the command, making all gems specified in the Gemfile(5) available to require in Ruby programs.
 
@@ -37,3 +37,8 @@
 | 167744 | "user_167744@test@example.com" | "Kate_167744" | "Builder_167744" |
 +--------+---------------------------------+--------------+------------------+
 ```
+
+# Useful Gems
+
+## [Rubocop](https://rubygems.org/gems/rubocop/versions/0.67.2)
+See [linters/rubocop](../linters/rubocop.md)

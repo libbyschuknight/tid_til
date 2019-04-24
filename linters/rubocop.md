@@ -1,4 +1,17 @@
-# Rubocop - with Atom
+# Rubocop
+
+https://github.com/rubocop-hq/rubocop
+
+>RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide.
+
+
+## Different ways to disable cops
+
+[RuboCop your Ruby: enable, disable and configure your linter checks](https://medium.freecodecamp.org/rubocop-enable-disable-and-configure-linter-checks-for-your-ruby-code-475fbf11046a#3f8e)
+
+https://rubocop.readthedocs.io/en/latest/configuration/#configuration
+
+## - with Atom
 
 Merge master of app into branch, master had `.ruby_version` file with `2.3`.
 Rubocop was having a mare!

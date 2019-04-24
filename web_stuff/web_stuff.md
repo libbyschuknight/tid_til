@@ -81,6 +81,8 @@ Start in the centre and work way outwards, in a methodical manner
 
 [Atomic Design](http://atomicdesign.bradfrost.com/table-of-contents/)
 
+[Create atomic design systems with Pattern Lab](https://patternlab.io/)
+
 [CARBON DESIGN SYSTEM](https://www.carbondesignsystem.com/)
 
 [Lonely Planet Design System](https://rizzo.lonelyplanet.com/styleguide/design-elements/colours)

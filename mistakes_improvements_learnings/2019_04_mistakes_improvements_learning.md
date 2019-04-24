@@ -30,6 +30,22 @@ end
 
 Next part is exposing the helpers, hooking it up with the rails app that we want to use these in.
 
+I haven't been sure about how this `react_component` helper method works or how Rails and React are working together.
+
+The docs for `react-rails` explain what the `react_component` does a litle bit.
+
+https://www.airpair.com/reactjs/posts/reactjs-a-guide-for-rails-developers - I found this article useful, particularly this:
+
+>Next, we need to create a new file index.html.erb under apps/views/records/, **this file will act as a bridge between our Rails app and our React Components**. To achieve this task, we will use the helper method react_component, which receives the name of the React component we want to render along with the data we want to pass into it.
+
+"this file will act as **a bridge** between our Rails app and our React Components"
+
+I think at this point I probably don't know quite enough about how React works to really get the connection here.
+
+There is a bit from here - https://blog.codeship.com/using-react-inside-your-rails-apps/, that is useful (note that this blog uses a different gem for adding react then we have used):
+
+>This produces the following HTML, which is then picked up by react_on_rails, and **a component is initialized on your behalf.**
+
 
 
 ## Rails Concerns
@@ -73,3 +89,86 @@ Run `npm start`, if get errors re packages, look to see if have a `node_modules`
 ```
 
 This was in the error output when using `npm start`. See full list of errors etc here - https://gist.github.com/libbyschuknight/a1d1d970175b598eb4ad3a6164cb57c9.
+
+## Wes Bos React for Beginners
+
+### `React.Fragment`
+From a render method you can only ever return one element.
+
+Can put as many elements as you want inside the parent element, you can't return sibling elements.
+
+This could be a problem if using flexbox or css grid.
+
+The solution (from 16.2) is that you can wrap the elements in a `React.Fragment` tag.
+
+https://reactjs.org/docs/fragments.html
+
+What has been used previously is just adding an extra `div` tag, but this would add lots of unecessary `div` tags to the DOM.
+
+```jsx
+class StorePicker extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <p>Fish!</p>
+        <form className="store-selector">
+          <h2>Please Enter A Store</h2>
+        </form>
+      </React.Fragment>
+    )
+  }
+}
+```
+
+### Comemnts in react
+
+Use curly brackets, `{ }`, means I am doing some javascript.
+
+```jsx
+class StorePicker extends React.Component {
+  render() {
+    return (
+      <form className="store-selector">
+        {/* comment */}
+        <h2>Please Enter A Store</h2>
+      </form>
+    )
+  }
+}
+```
+
+Do not do this:
+
+```jsx
+return (
+  {/* comment */}
+  <form className="store-selector">
+    <h2>Please Enter A Store</h2>
+  </form>
+)
+```
+
+Having `{/* comment */}` above `form` will throw an error:
+
+```
+ Line 8:  Parsing error: Unexpected token, expected ","
+```
+
+You cannot add a  comment and an element, the comment must be inside the returned element.
+
+
+## Code Review for the APL gem
+
+Had a quesion about this code:
+
+```ruby
+module AdminPatternLibrary
+  module StatusButton
+    module V1_0 # rubocop:disable Naming/ClassAndModuleCamelCase
+  ...
+```
+
+And:
+https://rubocop.readthedocs.io/en/latest/configuration/#disabling-cops-within-source-code
+
+https://medium.freecodecamp.org/rubocop-enable-disable-and-configure-linter-checks-for-your-ruby-code-475fbf11046a#3f8e

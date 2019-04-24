@@ -24,14 +24,13 @@ https://responsivedesign.is/articles/testing-for-latency/
 [Amazon Relational Database Service (Amazon RDS)](https://aws.amazon.com/rds/)
 [Amazon RDS for PostgreSQL](https://aws.amazon.com/rds/postgresql/)
 
-## SASS - Syntactically Awesome Style Sheets  (e.g. Storypark)
+## SASS - Syntactically Awesome Style Sheets
 
 ## BDD - Behaviour Driven Development
 
 ## TDD - Test Driven Development
 
 ## API - Application programming interface
-[Application programming interface](Application programming interface)
 
 ## HTTP - Hypertext Transfer Protocol - [Version 2 (HTTP/2)](http://httpwg.org/specs/rfc7540.html)
 
