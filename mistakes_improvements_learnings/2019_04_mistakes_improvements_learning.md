@@ -46,8 +46,6 @@ There is a bit from here - https://blog.codeship.com/using-react-inside-your-rai
 
 >This produces the following HTML, which is then picked up by react_on_rails, and **a component is initialized on your behalf.**
 
-
-
 ## Rails Concerns
 
 Was doing a code review where are this was added:
@@ -172,3 +170,37 @@ And:
 https://rubocop.readthedocs.io/en/latest/configuration/#disabling-cops-within-source-code
 
 https://medium.freecodecamp.org/rubocop-enable-disable-and-configure-linter-checks-for-your-ruby-code-475fbf11046a#3f8e
+
+
+## Issue with `ps aux` not working
+
+Needed to find a ruby process, usually do this `ps aux | grep ruby`.
+
+In this case was getting this error when running my zsh shell:
+
+```
+zsh: command not found: aux
+```
+
+When I ran it in `bash` shell it was working properly.
+
+Collegues suggested checking aliases:
+
+```bash
+$ alias ps="RETAIL_BRAND=powershop"
+
+gsps='git show --pretty=short --show-signature'
+nzs3='SECURE_SITE_DOMAIN=localhost:3000 psnz nz be rails s -p 3000 --pid tmp/pids/server_nz.pid'
+ps='RETAIL_BRAND=powershop'
+ps-reset-test='cp ~/Flux/powershop/db/test_structure.sql
+```
+
+or
+
+```bash
+$ type ps
+
+ps is an alias for RETAIL_BRAND=powershop
+```
+
+So, my alias was mucking up the `ps` command

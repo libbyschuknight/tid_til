@@ -1,12 +1,14 @@
-# Gem Stuff
+# Gem Stuff (this is for Ruby)
 
-### Using local gem (on your computer)
+https://guides.rubygems.org
+
+## Using local gem (on your computer)
 
 ```ruby
 gem "bananas", "~> 1.1.0" path: "../bananas"
 ```
 
-### Setting the version
+## Setting the version
 
 Absolute Version Constraint
 
@@ -32,7 +34,7 @@ They do different things:
 - https://robots.thoughtbot.com/rubys-pessimistic-operator
 
 
-### Change back to older version of local gem
+## Change back to older version of local gem
 
 Using a gem, say `bubble_resources`, which is a representer gem, the master version was `5.0.0`.
 
@@ -107,3 +109,20 @@ rails-dom-testing (2.0.2, 2.0.1, 1.0.8, 1.0.7, 1.0.6)
 or
 
 `gem list -i <gem-name>`
+
+
+## Load paths
+
+Question around what to use:
+
+```ruby
+require_relative './lib/admin_pattern_library/version'
+
+# or
+
+lib = File.expand_path("lib", __dir__)
+```
+
+https://guides.rubygems.org/patterns/#declaring-dependencies, section title `Requiring files relative to each other`
+
+>Gems should not have to use __FILE__ to bring in other Ruby files in your gem.
