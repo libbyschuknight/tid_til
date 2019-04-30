@@ -204,3 +204,26 @@ ps is an alias for RETAIL_BRAND=powershop
 ```
 
 So, my alias was mucking up the `ps` command
+
+
+## Runtime and test time
+
+I was getting this error when running a cucumber feature that in the steps uses Page Object Model.
+
+```bash
+/Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant': uninitialized constant SitePrism (NameError)
+```
+
+I had in my head that there must have been something wrong with how I was using `SitePrism`. Thought it needed to be added to the gem, even though the rails app that the gem was using already had `SitePrism`.
+
+After getting help from a colleague, we realised I didn't have the gem files loading properly for the test / feature environment.
+
+So in `application.rb` we had `require 'admin_pattern_library'` which is the gem.
+
+But in the `features/support/env.rb` file we had `require 'flux_admin_pattern_library/page_object_models'`, which had been `require 'admin_pattern_library/page_object_models'`, because orinigally the `admin_pattern_library` was added in the Rails app under `lib/`. But then we started pulling it out into a gem and there was a name clash. So renamed the folder in the Rails `lib` folder to `flux_admin_pattern_library` and I missed places where I either should have updated or should have also added a require for the gem.
+
+So to fix this issue needed to add `require 'admin_pattern_library/page_object_models'` to `features/support/env.rb`.
+
+This was due to the `env.rb` file trying to find the POMs in the runtime part of the app and the the test time.
+
+![runtime vs test time](runtime-vs-testtime.jpg)
