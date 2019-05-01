@@ -300,12 +300,12 @@ https://twitter.com/betsythemuffin/status/1006597377413795842
 [The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
 
 
-
 ### Security
 
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
 [What is the difference between authentication and authorization?](https://serverfault.com/questions/57077/what-is-the-difference-between-authentication-and-authorization)
+
 
 ### Routing
 

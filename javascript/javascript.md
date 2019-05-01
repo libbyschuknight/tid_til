@@ -10,8 +10,10 @@
 
 [Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
-
 [Airbnb JavaScript Style Guide](http://airbnb.io/javascript/react/)
+
+[A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
 
 ## Language things
 
@@ -23,6 +25,7 @@
 
 - [Primitive Types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 
+
 ### The three dots `...`
 
 [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
@@ -32,9 +35,6 @@
 [What do the three dots (...) mean in JavaScript?](https://oprea.rocks/blog/what-do-the-three-dots-mean-in-javascript/)
 
 [Three dots ( … ) in JavaScript](https://dev.to/sagar/three-dots---in-javascript-26ci)
-
-
-
 
 
 ### IIFE (Immediately Invoked Function Expression)
@@ -52,10 +52,23 @@ https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 
 [Essential JavaScript: Mastering Immediately-invoked Function Expressions](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
 
+
+### Events (part of JavaScript API not language)
+
+[Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+
+>Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if desired. For example, if the user clicks a button on a webpage, you might want to respond to that action by displaying an information box
+
+>events are actions or occurrences that happen in the system you are programming — the system will fire a signal of some kind when an event occurs, and also provide a mechanism by which some kind of action can be automatically taken (e.g. some code running) when the event occurs
+
+[Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+[How to handle event handling in JavaScript (examples and all)](https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57)
+
+
 ## Resources / Tools
 
 [flatpickr js](https://flatpickr.js.org/)
-
 
 ## Node
 Set time in node console to UTC
