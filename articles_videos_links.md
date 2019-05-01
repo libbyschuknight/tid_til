@@ -133,6 +133,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [How to Feel Less Overwhelmed as a Developer](https://medium.com/@juliahaigh/how-to-feel-less-overwhelmed-as-a-developer-79bc816709de)
 
+[On being overwhelmed with our fast paced industry](https://wesbos.com/overwhelmed-with-web-development/)
+
 ## Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
