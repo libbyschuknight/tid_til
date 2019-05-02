@@ -94,6 +94,8 @@ e.g. in `App.js`, `<Header tagline="Lib is cool" age={500} />` is a component in
 
 `.props` is going to be an object inside of the component, which contains all of our final properties e.g.  `.tagline`
 
+\
+\
 :mortar_board:
 
 Use of `$0` in dev tool consoles
@@ -226,3 +228,98 @@ Handling events in react - click, hover, form submit.
 [How to handle event handling in JavaScript (examples and all)](https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57) - found this article useful
 
 [Modern JavaScript in React Documentation](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c)
+
+In React:
+
+[SyntheticEvent](https://reactjs.org/docs/events.html)
+
+[Handling Events](https://reactjs.org/docs/handling-events.html)
+
+
+#### Golden rule
+>Golden rule in React is don't touch the DOM. Don't go and manually select the elements on the page. The rendered out elements in React are an after the fact thing.
+>Always want to be thinking about it with what our React app looks like.
+
+Use `refs` in React - [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+
+
+#### Weird piece of React
+
+`this` is always equal to the component??
+
+But if have a method called `goToStore`:
+
+```js
+class StorePicker extends React.Component {
+  myInput = React.createRef();
+
+  goToStore(event) {
+    event.preventDefault();
+    console.log(this.myInput);
+  }
+  render() {
+    return (
+      <form className="store-selector" onSubmit={this.goToStore}>
+        <h2>Please Enter A Store</h2>
+        <input
+          type="text"
+          ref={this.myInput}
+          required
+          placeholder="Store Name"
+          defaultValue={getFunName()}
+        />
+        <button type="submit">Visit Store -></button>
+      </form>
+    );
+  }
+}
+```
+
+Then `this` is `undefined` within the `goToStore` method!! Why?
+
+Has to do with binding in React. Built in method. Life cycle events.
+All the built-in methods are in the "mummy" component - `React.component`.
+
+If we extend it with our own component and then add own methods on top of it, they ARE NOT bound by default, which means it is hard to reference the components inside of its own methods, a bit of a problem, especially when get into state.
+
+The solution is bind own methods as well.
+
+Solution with plain ES6:
+
+```js
+constructor() {
+  super();
+  this.goToStore = this.goToStore.bind(this);
+}
+```
+
+Solution with React:
+
+```js
+goToStore = event => {
+  event.preventDefault();
+  console.log(this);
+};
+```
+
+`goToStore` is a property, set it to an arrow function, which will allow us to bind the value of `this` to the `StorePicker` component.
+
+
+### Video 12 - Handling Events
+
+He has `this.myInput.value`, for me is it `current` instead of `value`.
+
+Push state - change url without having to refresh the page or lose anything in memory.
+
+Do with accessing React Router.
+
+```js
+goToStore = event => {
+  event.preventDefault();
+  const storeName = this.myInput.current.value;
+  this.props.history.push(`/store/${storeName}`);
+};
+```
+See code here - https://github.com/libbyschuknight/catch-of-the-day/blob/master/src/components/StorePicker.js
+
+Covered changing pages with React Router and handling events with onclick events.
