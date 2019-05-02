@@ -65,6 +65,58 @@ https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 
 [How to handle event handling in JavaScript (examples and all)](https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57)
 
+### [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
+ECMA = European Computer Manufacturers Association, and has been around since the 1960s
+
+ECMAScript is "JavaScript"
+
+>Ecma International®facilitates the timely creation of a wide range of global Information and Communications Technology (ICT) and Consumer Electronics (CE) standards
+
+#### Objects - simple collections of name-value pairs
+>JavaScript objects can be thought of as simple collections of name-value pairs. As such, they are similar to:
+>- Dictionaries in Python.
+>- Hashes in Perl and Ruby.
+>- Hash tables in C and C++.
+>- HashMaps in Java.
+>- Associative arrays in PHP.
+
+>The "name" part is a JavaScript string, while the value can be any JavaScript value — including more objects. This allows you to build data structures of arbitrary complexity.
+
+#### Arrays
+
+>Arrays in JavaScript are actually a special type of object. They work very much like regular objects (numerical properties can naturally be accessed only using [] syntax) but they have one magic property called 'length'. This is always one more than the highest index in the array.
+
+>Note that array.length isn't necessarily the number of items in the array. Consider the following:
+
+```js
+var a = ['dog', 'cat', 'hen'];
+a[100] = 'fox';
+a.length; // 101
+```
+
+>Remember — the length of the array is one more than the highest index.
+
+```js
+> var a = ['dog', 'cat', 'hen'];
+> a
+<- (3) ["dog", "cat", "hen"]
+> a[100] = 'fox';
+<- "fox"
+> a
+<- (101) ["dog", "cat", "hen", empty × 97, "fox"]
+```
+
+#### Functions
+> Along with objects, functions are the core component in understanding JavaScript. The most basic function couldn't be much simpler:
+
+```js
+function add(x, y) {
+  var total = x + y;
+  return total;
+}
+```
+Got up to https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Custom_objects
 
 ## Resources / Tools
 
