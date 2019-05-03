@@ -96,7 +96,7 @@ e.g. in `App.js`, `<Header tagline="Lib is cool" age={500} />` is a component in
 
 \
 \
-:mortar_board:
+##### :mortar_board: `$0` & `$r`
 
 Use of `$0` in dev tool consoles
 
@@ -113,7 +113,7 @@ Whole component thing, it is just a object!
 
 So what is `this`?
 
-It is the componenet / object that is "active" "in use" right at the moment, and in this case is what `$r` returns.
+It is the component / object that is "active" "in use" right at the moment, and in this case is what `$r` returns.
 
 
 ### Video 8 - Stateless Functional Components
@@ -217,6 +217,8 @@ I also managed to sort my eslint and prettier for React while watching this. Had
 
 Handling events in react - click, hover, form submit.
 
+#### :mortar_board: Events in Javascript
+
 [Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
 >Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if desired. For example, if the user clicks a button on a webpage, you might want to respond to that action by displaying an information box
@@ -229,7 +231,7 @@ Handling events in react - click, hover, form submit.
 
 [Modern JavaScript in React Documentation](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c)
 
-In React:
+#### Events in React:
 
 [SyntheticEvent](https://reactjs.org/docs/events.html)
 
@@ -323,3 +325,44 @@ goToStore = event => {
 See code here - https://github.com/libbyschuknight/catch-of-the-day/blob/master/src/components/StorePicker.js
 
 Covered changing pages with React Router and handling events with onclick events.
+
+### Video 13 - Understanding State
+
+Tip - Watch over a few times, state is a fundamental concept in React
+
+>What is State?
+
+>State is essentially just an object, an object that lives inside of a component that stores all of the data that that component and maybe some of its children need.\
+>State is just an object, that holds data, that it needs and maybe some of its children need.
+
+Think of state as single source of truth, (golden rule - don't touch the DOM), think about just updating our data and letting React take it.
+
+React "reacted" to a change in state and updated all the places where that number was used. - see vid at 2min40 about.
+
+Building components!!
+
+When updating state:
+1. take a copy of existing state (state should be immutable)
+2. add our new object ("fish") to the new copy of our state
+3. set the new object state
+
+```js
+addFish = fish => {
+  // 1. take a copy of existing state (state should be immutable)
+  const fishes = { ...this.state.fishes };
+  // 2. add our new fish to fishes var
+  fishes[`fish${Date.now()}`] = fish;
+  // 3. set the new fishes object to state
+  this.setState({ fishes });
+};
+```
+
+### Video 14 - Loading data into state onClick
+
+```js
+<button onClick={this.props.loadSampleFishes}>
+  Load Sample Fishes
+</button>
+```
+
+Anything that gets passed into a component is avaiable on the `props` object on that component.
