@@ -15,7 +15,7 @@
 
 [Google Chrome duplicate tab shortcut ](http://hints.macworld.com/article.php?story=20110214102729988)
 
-`Cmd + L Opt return`
+`Cmd + L` then `Opt + return`
 
 ```
 You can open the page you are currently viewing in a new tab or window without closing it, using this shortcut. Basically you are duplicating the tab.
