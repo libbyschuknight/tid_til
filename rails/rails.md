@@ -604,3 +604,29 @@ Makes a `1` into `1st`
 [Data Types in Rails](http://blog.ifyouseewendy.com/blog/2015/08/10/data-types-in-rails/)
 [A Quick Peek at Ruby: 'Include' vs. 'Require'](https://web.archive.org/web/20150405161656/http://ruby.about.com/b/2008/10/23/a-quick-peek-at-ruby-include-vs-require.htm)
 [Ruby Methods: differences between load, require, include and extend in Ruby.](https://prograils.com/posts/ruby-methods-differences-load-require-include-extend)
+
+
+## assets
+
+https://guides.rubyonrails.org/command_line.html#assets
+
+
+https://guides.rubyonrails.org/command_line.html#bin-rails
+
+```bash
+bin/rails assets:precompile
+
+bin/rails assets:clean
+
+bin/rails assets:clobber
+```
+
+https://makandracards.com/makandra/29533-asset-pipeline-basics
+
+>Debugging
+>One step in debugging the asset pipeline is to check the precompilation results. You can do this locally using the following >commands:
+>
+>```bash
+>rake assets:precompile # precompiles to Rails.root/public/assets
+>rake assets:clobber # deletes the public/assets directory
+>```

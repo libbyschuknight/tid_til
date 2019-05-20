@@ -73,3 +73,8 @@ Save Mark/Jump to Mark
 `git fetch origin <branch>`
 
 `git reset --hard origin/<branch>`
+
+
+## VSCode
+
+Correct misspelt word - `cmd + .`

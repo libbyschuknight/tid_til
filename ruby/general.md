@@ -1,5 +1,7 @@
 # Ruby Stuff
 
+[Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
+
 ## Bang
 [Why are exclamation marks used in Ruby methods?](https://stackoverflow.com/questions/612189/why-are-exclamation-marks-used-in-ruby-methods)
 
@@ -462,3 +464,12 @@ Great article:
 using `rbenv` do `rbenv local 2.4.5` and it will create a file `.ruby-version` with the version number in it.
 
 Then you need to do `bundle install` to get all the gems with this version and probably need to do a `rbenv rehash` either before or after or both.
+
+
+## The % Notation - `%w, %i`
+
+https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation
+
+https://ruby-doc.org/core-2.5.1/doc/syntax/literals_rdoc.html#label-Percent+Strings
+
+http://ruby.zigzo.com/2014/08/21/rubys-notation/

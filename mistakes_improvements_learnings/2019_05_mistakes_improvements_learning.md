@@ -121,3 +121,12 @@ and then run the script set up again and then everything worked
 
 Since it said that ruby-build and openssl were already installed did rbenv reash -  https://github.com/rbenv/rbenv#rbenv-rehash
 and then run the script set up again and then everything worked.
+
+
+## yarn, rails and building assets
+
+Was trying to get a change working from gem into the rails app we have. We are now using `yarn` for the building of the gem assets.
+
+I hadn't done a `yarn build` for awhile so this was way my rails app wasn't picking up the changes.
+
+We debugged this by using the `.dev` version of the gem in the rails app, as we could see that the dates were being passed into the react component but the component wasn't doing what it was suppose to be doing.

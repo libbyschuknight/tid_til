@@ -213,6 +213,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The simplicity and power of Ruby Struct](http://pdabrowski.com/blog/ruby/ruby-struct/)
 
+[Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
 
 #### Deeper Ruby stuff
 
