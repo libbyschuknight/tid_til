@@ -130,3 +130,94 @@ Was trying to get a change working from gem into the rails app we have. We are n
 I hadn't done a `yarn build` for awhile so this was way my rails app wasn't picking up the changes.
 
 We debugged this by using the `.dev` version of the gem in the rails app, as we could see that the dates were being passed into the react component but the component wasn't doing what it was suppose to be doing.
+
+## `bundle update`
+
+Working with a rails app and a gem that using in this app. Needed to make changes to the gem and then test in the rails app. There were no changes to the rails app.
+Needed to get the gem changes working in the rails app, in a deploy branch. So the rails app has in the gemfile:
+
+```gemfile
+GIT
+  remote: git@git.xxx.com:powergems/apl-gem.git
+  revision: 2ec871eeac7557d941d03bf1f63b8008d0b2805e
+  branch: deploy-branch-a
+  specs:
+    apl-gem (0.1.0)
+      rails (~> 5.2.2)
+      react-rails (~> 2.4.7)
+```
+
+So it is pointing to a certain remote, branch and commit. I needed the commit to change. I needed up update the gem but only this gem, not the other gems in this rails app.
+
+The answer is:
+
+```bash
+bundle update apl-gem --conservative
+```
+
+https://bundler.io/man/bundle-update.1.html
+
+>`--conservative`
+>Use bundle install conservative update behavior and do not allow shared dependencies to be updated.
+
+
+[A Guide to Update Gems with bundle update: Tips and tricks to master bundle update by following incremental, controlled and safe steps](https://medium.com/cedarcode/reduce-fear-of-bundle-update-with-this-4-step-process-e021e8808c48)
+
+>### Step 2 — Update “Non-production” gems
+>`$ bundle update --conservative --group test development`
+>
+>Bundler’s --conservative option prevents updates in any “Production” gem that is also a dependency of a“Non-production” gem.
+
+[Updating Gems cheat sheet: Using Bundler’s advanced features](https://medium.com/cedarcode/updating-gems-cheat-sheet-346d5666a181)
+
+
+## Chromedriver issues with cucumbers
+
+Got this error
+
+`unable to connect to chromedriver 127.0.0.1:9515 (Selenium::WebDriver::Error::WebDriverError)`
+
+Suggestions from collegues when other people had same issue (from Slack):
+
+>what does `which chromedriver` get you?
+
+give me this:
+`/Users/libby/.rbenv/shims/chromedriver`
+
+> if you have `.rbenv/shims/chromedriver`, you may need to `gem uninstall chromedriver-helper`
+
+>also, `rm .rbenv/shims/chromedriver`, and run `which chromedriver` again - it should point to a different one, and from then your cukes will work
+
+Removed `.rbenv/shims/chromedriver`` but didn't uninstall the gem.
+
+Restarted terminal and getting this again:
+
+```bash
+$ which chromedriver
+/Users/libby/.rbenv/shims/chromedriver
+```
+
+```bash
+$ chromedriver -v
+ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40})
+```
+
+But my version of Chrome is `Version 74.0.3729.169 (Official Build) (64-bit)`, so it seems ChromeDriver is using a newer version then what Chrome is it.
+
+What I have done:
+
+`gem uninstall chromedriver-helper`
+
+restarted the terminal
+
+```bash
+$ which chromedriver
+/usr/local/bin/chromedriver
+```
+
+```bash
+$ chromedriver -v
+ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
+```
+
+My cucumber test is now working!! Yay!

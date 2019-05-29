@@ -50,6 +50,7 @@ Save Mark/Jump to Mark
 `cmd - shift - m`   save mark
 `cmd - shift - j`   jump back to it with
 
+[iTerm cheatsheet shortcuts](https://gist.github.com/squarism/ae3613daf5c01a98ba3a)
 
 ## Atom
 
@@ -77,4 +78,9 @@ Save Mark/Jump to Mark
 
 ## VSCode
 
-Correct misspelt word - `cmd + .`
+`cmd + .`           Correct misspelt word\
+`shift + cmd + e`   Open explorer panel in side bar\
+`shift + cmd + f`   Open search panel in side bar\
+`shift + cmd + x`   Open extentions panel in side bar\
+`shift + cmd + m`   Toogle problems panel
+`shift + cmd + .`   ERB toggle

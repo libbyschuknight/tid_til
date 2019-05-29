@@ -79,6 +79,8 @@ Start in the centre and work way outwards, in a methodical manner
 
 ## Design Patterns / Systems
 
+[Adele: The repository of publicly available design systems and pattern libraries](https://adele.uxpin.com/)
+
 [Atomic Design](http://atomicdesign.bradfrost.com/table-of-contents/)
 
 [Create atomic design systems with Pattern Lab](https://patternlab.io/)

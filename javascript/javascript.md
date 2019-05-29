@@ -122,11 +122,11 @@ function add(x, y) {
 
 [flatpickr js](https://flatpickr.js.org/)
 
-## Node
+### Node
 Set time in node console to UTC
 `process.env.TZ = utc`
 
-### Updating npm packages
+#### Updating npm packages
 
 Check to see what is outdated:
 
@@ -146,9 +146,7 @@ update them:
 
 And then `npm outdated` should not return anything.
 
-
-
-## jQuery
+### jQuery
 https://css-tricks.com/snippets/jquery/
 
 [Smooth Scrolling](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
@@ -220,7 +218,7 @@ Webpack is a build / bundle tool.
 [Choosing a JavaScript build tool: to config or not config](https://dev.to/netlify/choosing-a-javascript-build-tool-to-config-or-not-config-2ia8)
 
 
-## What is webpack?
+### What is webpack?
 
 https://webpack.js.org/concepts/
 
@@ -243,7 +241,7 @@ https://webpack.js.org/concepts/
 TODO: go through and do this.
 
 
-## Using webpack in a Rails app
+### Using webpack in a Rails app
 
 First this
 [The Asset Pipeline](https://guides.rubyonrails.org/asset_pipeline.html)
@@ -256,3 +254,16 @@ First this
 [see comments here from question in Ruby NZ Slack](../mistakes_improvements_learnings/2019_03_mistakes_improvements_learning.md) under `Using webpack in Rails`
 
 [Webpacker](https://github.com/rails/webpacker)
+
+
+## Tree Shaking
+
+https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking
+
+[What is tree shaking? 🌲](https://medium.com/@netxm/what-is-tree-shaking-de7c6be5cadd)
+
+>Tree shaking or dead code elimination means that unused modules will not be included in the bundle during the build process.
+
+[What is tree shaking and how does it work?](https://bitsofco.de/what-is-tree-shaking/)
+
+https://webpack.js.org/guides/tree-shaking/
