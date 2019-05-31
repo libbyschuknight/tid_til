@@ -1,5 +1,4 @@
-# VUWWIT Intro to Hackthon helpful links
-
+# VUWWIT Intro to Hackthon - helpful links
 
 ## Terminal / Shell Cheat Sheets
 
@@ -39,3 +38,12 @@ Plus many more at www.meetup.com
 [Empowering our generation through tech](https://www.meetup.com/Wahine-in-Tech-Wellington/events/258050712/) - June 13
 
 [Rachel Collingridge and Sarah Jayne on teamwork and learning](https://www.meetup.com/WellingtonJS/events/261245840/) - June 19
+
+
+Also, feel free to get in touch:
+
+https://twitter.com/SchuKnight
+
+https://www.linkedin.com/in/libbyschumacherknight/
+
+And I am on meetup.com and in lot of Slack channels 😁
