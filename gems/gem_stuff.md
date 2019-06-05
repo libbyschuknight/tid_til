@@ -111,6 +111,21 @@ or
 `gem list -i <gem-name>`
 
 
+## Uninstall a gem
+
+https://guides.rubygems.org/rubygems-basics/#uninstalling-gems
+
+```
+gem uninstall bundler
+```
+
+Uninstall a specific version
+
+```
+gem uninstall --default -v1.17.1 bundler
+```
+
+
 ## Load paths
 
 Question around what to use:

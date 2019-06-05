@@ -370,6 +370,8 @@ remove the file manually to continue.
 
 Re-read over the above stack overflow answer and closed terminal window, re-opened and the `git stash apply` worked fine!
 
+Had this again, found same stack overflow question, did this `rm -f .git/index.lock` and it fixed the problem.
+
 
 ### git rebase
 
