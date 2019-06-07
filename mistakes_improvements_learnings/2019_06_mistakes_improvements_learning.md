@@ -74,3 +74,43 @@ Searched on company slack and other people have had this. Suggested fix was:
 export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/3.2.1/lib/pkgconfig/
 gem install cairo -v '1.15.10' --source 'https://rubygems.org/'
 ```
+
+## `jQuery.ajax` call
+
+http://api.jquery.com/jquery.ajax/
+
+An old javascript page is using this `.ajax` call:
+
+```js
+Application.updateEstimates = function() {
+  function postAjax(url, data) {
+    return jQuery.ajax({
+      method: "POST", // Modern jQuery
+      type: "POST",   // Ancient jQuery
+      data: data,
+      url: url,
+      beforeSend: setCsrfHeader
+    });
+  }
+
+  // Registers a single click event on the container that gets rendered by react-rails.
+  // That container can only be clicked once it actually has any content inside which is our
+  // way to ensure that the input field of the React component has rendered.
+  const DateWrapper = document.querySelector('[data-id="date-wrapper"]');
+
+  if (DateWrapper) {
+    var url = DateWrapper.dataset.url;
+
+    jQuery('#estimate-spinner').show();
+
+    var data = jQuery('#date-form').serialize();
+
+    postAjax(url, data)
+      .complete(function() { jQuery('#estimate-spinner').hide(); });
+  }
+};
+```
+
+This is then doing stuff on a Rails page and is it working within Rails-React.
+
+http://api.jquery.com/Ajax_Events/ -  see here for what `.complete` does.

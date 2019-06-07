@@ -197,6 +197,8 @@ new_name_numbers = Hash[name_numbers.map { |name, number| [name, number * 20] } 
 }
 ```
 
+## Hashes
+
 ### Accessing Hashes
 
 **ActiveSupport::HashWithIndifferentAccess**
@@ -218,6 +220,22 @@ it returned `true`.
 To fix for test needed to use HashWithIndifferentAccess:
 ```ruby
 let(:params) { ActiveSupport::HashWithIndifferentAccess.new(MultiJson.load(json_data)) }
+```
+
+### Hash Rockets
+
+[Why did Ruby 1.9 do away with hash rocket syntax?](https://www.quora.com/Why-did-Ruby-1-9-do-away-with-hash-rocket-syntax)
+
+```ruby
+x = {:name => "Tom", :location => "London"}
+
+x = {name: "Tom", location: "London"}
+
+# This saves a few characters and may be a bit more readable.
+
+# There are still situations when you will need to use the hashrocket, for instance: if you want to use strings as keys.
+
+x = {"name" => "Tom", "location" => "London"}
 ```
 
 ## Using JSON
