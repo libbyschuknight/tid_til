@@ -2,6 +2,13 @@
 
 ## Articles / Links
 
+Asking for what you are worth
+
+https://www.reddit.com/r/TheGirlSurvivalGuide/comments/aocfao/figured_this_would_be_useful_for_most_women/?st=JRVU0W3T&sh=e742a357
+
+https://twitter.com/nicolestamp/status/1068262555397775361
+
+
 [Ten Steps Towards Happiness](http://hintjens.com/blog:99)
 
 [EVERYDAY MISOGYNY: 122 SUBTLY SEXIST WORDS ABOUT WOMEN (AND WHAT TO DO ABOUT THEM)](http://sacraparental.com/2016/05/14/everyday-misogyny-122-subtly-sexist-words-women/)

@@ -42,6 +42,8 @@
 
 [Cool Chrome DevTools tips and tricks you wish you knew already](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2)
 
+[16 DevTools tips and tricks every CSS developer needs to know](https://www.heartinternet.uk/blog/16-devtools-tips-and-tricks-every-css-developer-need-to-know/)
+
 
 ## Learning CSS
 

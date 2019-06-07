@@ -13,6 +13,10 @@
 
 [Does CSS Grid Replace Flexbox?](https://css-tricks.com/css-grid-replace-flexbox/)
 
+[CSS Grid Generator](https://cssgrid-generator.netlify.com/)
+
+[Understanding grid placement through building a HTML periodical table](https://www.chenhuijing.com/blog/understanding-grid-placement/#%F0%9F%91%9F)
+
 [The Ultimate Guide to CSS](https://docs.google.com/document/d/1PU8y7_jld2RBcj79uwmJCUBtjMeXNl44EjUu5jqY4YU/edit)
 >A complete breakdown of the CSS support for the most popular mobile, web and desktop email clients on the planet.
 
