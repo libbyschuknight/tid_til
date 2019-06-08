@@ -2,11 +2,13 @@
 
 [A Web Design Crash Course: from one non-designer to another](https://medium.freecodecamp.org/a-web-design-crash-course-from-one-non-designer-to-another-a6f8da0e6aa)
 
+## Forms
+
 ## Build Responsive Real World Websites with HTML5 and CSS3
 
 From [Build Responsive Real World Websites with HTML5 and CSS3](https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/) course on Udemy
 
-## The ultimate cheatsheet: all web design guidelines in one place
+### The ultimate cheatsheet: all web design guidelines in one place
 
 Section 4, Lecture 31
 
@@ -17,7 +19,7 @@ It contains all the guidelines I showed you in this web design section.
 It is very important that you have all of the guidelines in mind at the same time when you're making your designs.
 
 
-### Beautiful Typography
+#### Beautiful Typography
 
 1. Use a font-size between 15 and 25 pixels for body text
 
@@ -35,7 +37,7 @@ It is very important that you have all of the guidelines in mind at the same tim
 
 
 
-### Using Colors Like a Pro
+#### Using Colors Like a Pro
 
 1. Use only one base color
 
@@ -49,7 +51,7 @@ It is very important that you have all of the guidelines in mind at the same tim
 
 
 
-### Working with Images
+#### Working with Images
 
 1. Put text directly on the image
 
@@ -63,7 +65,7 @@ It is very important that you have all of the guidelines in mind at the same tim
 
 
 
-### Working with icons
+#### Working with icons
 
 1. Use icons to list features/steps
 
@@ -79,7 +81,7 @@ It is very important that you have all of the guidelines in mind at the same tim
 
 
 
-### Spacing and layout
+#### Spacing and layout
 
 1. Put whitespace between your elements
 
