@@ -114,3 +114,15 @@ Application.updateEstimates = function() {
 This is then doing stuff on a Rails page and is it working within Rails-React.
 
 http://api.jquery.com/Ajax_Events/ -  see here for what `.complete` does.
+
+
+## https issue
+
+```
+Mixed Content: The page at 'https://schuknight.com/js-memory-cards/' was loaded over HTTPS, but requested an insecure script 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'. This request has been blocked; the content must be served over HTTPS.
+```
+
+solution:
+https://stackoverflow.com/questions/18251128/why-am-i-suddenly-getting-a-blocked-loading-mixed-active-content-issue-in-fire
+
+Update the `http` part of url to `https`.

@@ -366,3 +366,7 @@ addFish = fish => {
 ```
 
 Anything that gets passed into a component is avaiable on the `props` object on that component.
+
+### Video 15 - Displaying State with JSX
+
+*Note: `npm start` to get site going locally!*
