@@ -46,20 +46,6 @@ Will add code when completed, and images.
 
 [CSS coding techniques](https://hacks.mozilla.org/2016/05/css-coding-techniques/)
 
-### `child >` selector
-
-https://css-tricks.com/almanac/selectors/c/child/
-
->A child combinator in CSS is the "greater than" symbol, it looks like this:
-
->```css
->ol > li {
->  color: red;
->}
->```
-
->It means "select elements that are direct descendants only". In this case: "select list items that are direct descendants of an ordered list".
-
 
 ### !important
 

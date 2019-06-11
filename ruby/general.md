@@ -462,6 +462,8 @@ Great article:
 
 [An introduction to Ruby’s *Splat and double **Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
 
+[Using splats to build up and tear apart arrays in Ruby](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/)
+
 >But the main idea is that whenever you don’t want to specify the number of arguments you have, you would use a splat operator. The simplest example would be something like this:
 
 >```ruby
