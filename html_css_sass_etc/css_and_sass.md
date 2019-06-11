@@ -95,3 +95,12 @@ CSS preprocessor
 [sass-boilerplate](https://github.com/HugoGiraudel/sass-boilerplate)
 
 [Aesthetic Sass 1: Architecture and Style Organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
+
+
+### Default Values - `!default`
+
+https://sass-lang.com/documentation/variables#default-values
+
+>Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
+
+>To make this possible, Sass provides the !default flag. This assigns a value to a variable only if that variable isn’t defined or its value is null. Otherwise, the existing value will be used. This way, users can set variables before they import your library to customize its behavior.
