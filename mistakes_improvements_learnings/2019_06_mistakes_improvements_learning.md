@@ -126,3 +126,9 @@ solution:
 https://stackoverflow.com/questions/18251128/why-am-i-suddenly-getting-a-blocked-loading-mixed-active-content-issue-in-fire
 
 Update the `http` part of url to `https`.
+
+## `npm` error - `node`, `yarn`
+
+Just using `nvm`!!!
+
+https://github.com/nvm-sh/nvm
