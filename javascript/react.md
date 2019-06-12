@@ -370,3 +370,99 @@ Anything that gets passed into a component is avaiable on the `props` object on 
 ### Video 15 - Displaying State with JSX
 
 *Note: `npm start` to get site going locally!*
+
+`jsx` doesn't have logic built into it. If you want to do anything like that, you just used basic `js`.
+
+So for looping, an array, `.map / .foreach`
+
+Can't map over an object. Use `Object.keys`.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+
+>Object.keys() returns an array whose elements are strings corresponding to the enumerable properties found directly upon object. The ordering of the properties is the same as that given by looping over the properties of the object manually.
+
+
+Instead of doing this:
+
+```js
+const image = this.props.details.image
+const name = this.props.details.name
+
+// or this
+
+const details = this.props.details;
+const image = details.image;
+const name = details.name;
+```
+
+Can use ES6 Destructuring, allows you to set multiple variables in a single shot.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+[Destructuring Props in React](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0)
+
+> It’s a JavaScript feature that allows us to extract multiple pieces of data from an array or object and assign them to their own variables.
+
+### Video 16 - Updating our Order State
+
+The order that Wes likes to put things in his `App.js` file:
+ - state at the top
+ - lifecycle events
+ - custom stuff
+ - finally render method
+
+>If you need access to the key you need to pass it a second time with a prop other then key.
+
+e.g
+
+```js
+<Fish
+  key={key}
+  index={key}
+  details={this.state.fishes[key]}
+  addToOrder={this.addToOrder}
+/>
+```
+
+Adding action on button to add a order, could do like this with `handleClick`:
+
+```js
+class Fish extends React.Component {
+  handleClick = () => {
+    this.props.addToOrder(this.props.index);
+  };
+
+  render() {
+...
+        <button disabled={!isAvailable} onClick={this.handleClick}>
+          {isAvailable ? 'Add To Order' : 'Sold Out'}
+        </button>
+    );
+  }
+}
+```
+
+Or on one line:
+
+```js
+<button
+  disabled={!isAvailable}
+  onClick={() => this.props.addToOrder(this.props.index)}
+>
+  {isAvailable ? 'Add To Order' : 'Sold Out'}
+</button>
+```
+
+Rule of thumb, if only need to do once it is fine to do inline, otherwise put into a function outside of the render method.
+
+### Video 17 - Displaying Order State with JSX
+
+Object spread - spread everything from state into it.
+
+```js
+<Order {...this.state} />
+```
+
+>Will take everything from state into order, is a little bit lazy and can pass everything down but we want to make module data and want to know all the data that is being passed in. Should not pass down data unless you explicitly need it.
+
+[Spread Attributes](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes)
