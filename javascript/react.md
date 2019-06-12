@@ -466,3 +466,57 @@ Object spread - spread everything from state into it.
 >Will take everything from state into order, is a little bit lazy and can pass everything down but we want to make module data and want to know all the data that is being passed in. Should not pass down data unless you explicitly need it.
 
 [Spread Attributes](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes)
+
+
+#### `.reduce()`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+>is a sort of lke a for loop or a map instead of returning a new item, a reduce takes in some data and returns a tally (plus lots of other stuff)
+
+
+#### Using "extra" render functions
+
+Then the render function of a component gets overloaded, when there is lots of code happening in that function, probably means that it is doing to much for a specific component.
+
+This complexity could be moved out into a separate component, and would be appropriate in some cases.
+
+But a separate component might not make too much sense if not going to be using anywhere else.
+
+What Wes likes to do is create separate render functions inside of single component.
+
+e.g. `renderOrder` below
+
+```js
+class Order extends React.Component {
+  renderOrder = key => {
+    const fish = this.props.fishes[key];
+    const count = this.props.order[key];
+    const isAvailable = fish.status === 'available';
+    if (!isAvailable) {
+      return (
+        <li key={key}>
+          Sorry {fish ? fish.name : 'fish'} is no longer available
+        </li>
+      );
+    }
+    return (
+      <li key={key}>
+        {count} lbs {fish.name}
+        {formatPrice(count * fish.price)}
+      </li>
+    );
+  };
+
+  render() {
+    ...
+    return (
+      <div className="order-wrap">
+        <h2>Order</h2>
+        <ul className="order">{orderIds.map(this.renderOrder)}</ul>
+        ...
+      </div>
+    );
+  }
+}
+```
