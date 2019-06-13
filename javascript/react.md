@@ -542,7 +542,54 @@ We will be using `componentDidMount()`, hook into the first possible second that
 
 https://reactjs.org/docs/react-component.html#the-component-lifecycle
 
+https://reactjs.org/docs/react-component.html#componentdidmount
 
 Using `this.ref` with firebase is different to the input refs, refs in firebase are the reference to a piece of data in the database.
 
 Tip: if getting a error on page, check that there is more to add to what Wes Bos has been doing. Just spent sometime trying to figure out an error, and it was only error because not everything was in the method that need to be! Doh!
+
+### Video 19 - Persisting Order State with localstorage
+
+Local storage
+
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Local_storage
+
+https://dev.to/rdegges/please-stop-using-local-storage-1i04
+
+Another lifecycle event - `componentDidUpdate()`
+
+https://reactjs.org/docs/react-component.html#componentdidupdate
+
+
+#### `[object Object]`
+
+The reason why you get this is because you are trying to convert an object to a string or pass it in somewhere where a string is required, it will call the `toString()` method on it, and it will give you back `[object Object]`.
+
+What we need to do is convert that object to a string representation, this is what `JSON.stringify()` does. This is what we are going to use to store in our database.
+
+```js
+> const lib = { name: "libby" }
+<  undefined\
+
+> lib
+<  {name: "libby"}
+
+> lib.toString();
+<  "[object Object]"
+
+> JSON.stringify(lib)
+< "{"name":"libby"}"
+```
+
+`JSON.parse` will parse a string back into an object.
+
+```js
+> stringlib = JSON.stringify(lib)
+< "{"name":"libby"}"
+
+>stringlib
+<"{"name":"libby"}"
+
+>JSON.parse(stringlib)
+<{name: "libby"}
+```
