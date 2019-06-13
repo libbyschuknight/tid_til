@@ -520,3 +520,29 @@ class Order extends React.Component {
   }
 }
 ```
+
+### Video 18 - Persisting our State with Firebase
+
+Using Firebase - https://firebase.google.com/
+
+https://howtofirebase.com/what-is-firebase-fcb8614ba442
+
+A real time database, connected through WebSockets.
+
+https://hackernoon.com/introduction-to-firebase-218a23186cd7
+
+Hooked up to firebase with using `Rebase`.
+
+Need to mirror our fish state over to firebase, need to wait until app component is on the page.
+
+We are starting to get into "lifecycle methods".
+
+Lifecycle methods in React tell us when certain things are happening.
+We will be using `componentDidMount()`, hook into the first possible second that the application is loaded onto the page.
+
+https://reactjs.org/docs/react-component.html#the-component-lifecycle
+
+
+Using `this.ref` with firebase is different to the input refs, refs in firebase are the reference to a piece of data in the database.
+
+Tip: if getting a error on page, check that there is more to add to what Wes Bos has been doing. Just spent sometime trying to figure out an error, and it was only error because not everything was in the method that need to be! Doh!

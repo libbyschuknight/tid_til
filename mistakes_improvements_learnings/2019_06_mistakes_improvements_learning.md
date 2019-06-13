@@ -132,3 +132,13 @@ Update the `http` part of url to `https`.
 Just using `nvm`!!!
 
 https://github.com/nvm-sh/nvm
+
+## Handy tip about reversing the order of WordPress blog posts
+
+I wanted to share all of my blog posts about my journay at EDA. I have tagged them all - https://schuknight.wordpress.com/category/eda/, but this is most recent to least. I thought it would make more sense to have least recent (oldest) to most recent (newest).
+
+https://en.support.wordpress.com/show-your-posts-in-chronological-order/
+
+And you can by adding `?order=asc`, to the end of a url - https://schuknight.wordpress.com/category/eda/?order=asc
+
+Handy!!
