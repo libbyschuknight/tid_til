@@ -142,3 +142,8 @@ https://en.support.wordpress.com/show-your-posts-in-chronological-order/
 And you can by adding `?order=asc`, to the end of a url - https://schuknight.wordpress.com/category/eda/?order=asc
 
 Handy!!
+
+
+## CSS figuring out!! Use 100% for height
+
+[use 100% height - Natours](../html_css_sass_etc/notes_adv_css_sass_udemy_course.md##issue-with-height-of-feature-boxes)

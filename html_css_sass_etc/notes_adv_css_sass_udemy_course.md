@@ -380,3 +380,42 @@ https://css-tricks.com/almanac/properties/z/z-index/
 ## Icon Fonts
 
 http://www.linea.io/
+
+## Issue with height of feature boxes
+
+When adding the feature box, my spacing was different to the tutorial.
+
+You can see below that there is a teeny bit of spacing below that feature boxes. It should be the same as the above spacing.
+
+![wrong spacing](feature-box-50px.png)
+
+I started this section a couple of months ago and back then I could not figure out what was happening. Today I played around more with the dev tools and got looking at the padding around the row and the element.
+
+![element spacing](feature-box-element.png)
+![row spacing](feature-box-row.png)
+
+Particulary in the row image, you can see that the height of the element is small, only 50px. This was odd, so I started increasing the height of ti in the box model on the right.
+
+![changing height](changing-height.png)
+
+Then I went and found what was setting this height or at least the height of the column. Which was in the `_grid.scss` file:
+
+```scss
+[class^="col-"] {
+    font-size: 15px;
+    height: 50px; // changed this to 100% to get it displaying as expected
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+```
+
+Changing the `height` to `100%` fixed the issue with the feature box as well as the spacing above between the about section and feature section.
+
+![feature box 100%](feature-box-100.png)
+
+I think all the learning I have been doing being in a frontend-ish team at Flux has helped me with figuring this out. Things are seeping into my brain.
+
+And lastly, this issue I think came about because I made a little grid page to show the grid and made the height of the `col`'s to be `50px`.
