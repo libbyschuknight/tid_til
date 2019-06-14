@@ -413,8 +413,6 @@ The order that Wes likes to put things in his `App.js` file:
 
 >If you need access to the key you need to pass it a second time with a prop other then key.
 
-e.g
-
 ```js
 <Fish
   key={key}
@@ -434,9 +432,9 @@ class Fish extends React.Component {
 
   render() {
 ...
-        <button disabled={!isAvailable} onClick={this.handleClick}>
-          {isAvailable ? 'Add To Order' : 'Sold Out'}
-        </button>
+      <button disabled={!isAvailable} onClick={this.handleClick}>
+        {isAvailable ? 'Add To Order' : 'Sold Out'}
+      </button>
     );
   }
 }
@@ -480,9 +478,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 Then the render function of a component gets overloaded, when there is lots of code happening in that function, probably means that it is doing to much for a specific component.
 
 This complexity could be moved out into a separate component, and would be appropriate in some cases.
-
 But a separate component might not make too much sense if not going to be using anywhere else.
-
 What Wes likes to do is create separate render functions inside of single component.
 
 e.g. `renderOrder` below
@@ -538,6 +534,7 @@ Need to mirror our fish state over to firebase, need to wait until app component
 We are starting to get into "lifecycle methods".
 
 Lifecycle methods in React tell us when certain things are happening.
+
 We will be using `componentDidMount()`, hook into the first possible second that the application is loaded onto the page.
 
 https://reactjs.org/docs/react-component.html#the-component-lifecycle
@@ -593,3 +590,22 @@ What we need to do is convert that object to a string representation, this is wh
 >JSON.parse(stringlib)
 <{name: "libby"}
 ```
+
+### Video 20 - Bi-directional Data Flow and Live State Editing
+
+Was lots of doing of stuff in this video.
+
+### Video 21 - Removing Items from State
+
+CRUD
+
+Create - load simple fishes
+Read - read on right hand side
+Update - can edit a fish in inventory
+Delete - don't have this yet.
+
+`delete operator`
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
+
+>The delete operator removes a given property from an object. On successful deletion, it will return true, else false will be returned.

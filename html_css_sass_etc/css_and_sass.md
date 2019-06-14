@@ -22,6 +22,11 @@
 
 [Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
+
+### Specificity
+
+[CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
 ## Layout
 
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) (CSS Grid)
