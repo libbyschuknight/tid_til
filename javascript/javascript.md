@@ -32,6 +32,16 @@
 [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `value`.
+[Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+
+[Grouping operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping)
+
+[Associativity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Associativity)
+
+>Associativity determines the way in which operators of the same precedence are parsed.
+
+
+[Javascript variables; should you use let, var or const?](https://medium.com/podiihq/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
 
 
 ### The three dots `...`
@@ -124,7 +134,6 @@ function add(x, y) {
   return total;
 }
 ```
-
 
 ## Resources / Tools
 

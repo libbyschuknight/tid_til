@@ -151,7 +151,6 @@ And you can by adding `?order=asc`, to the end of a url - https://schuknight.wor
 
 Handy!!
 
-
 ## MYSQL issues, again
 
 Was getting this error:
@@ -195,3 +194,7 @@ Kitchen Syncing failed.
 as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll mysql-client`
 
 - now kitchen sync works beautifully!!
+
+## CSS figuring out!! Use 100% for height
+
+[use 100% height - Natours](../html_css_sass_etc/notes_adv_css_sass_udemy_course.md##issue-with-height-of-feature-boxes)
