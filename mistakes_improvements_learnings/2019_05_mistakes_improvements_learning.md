@@ -115,8 +115,6 @@ Installing openssl has failed!
 Installing mariadb@10.3
 Installing chromedriver
 Homebrew Bundle failed! 2 Brewfile dependencies failed to install.
-Since it said that ruby-build and openssl were already installed did rbenv reash -  https://github.com/rbenv/rbenv#rbenv-rehash
-and then run the script set up again and then everything worked
 ```
 
 Since it said that ruby-build and openssl were already installed did rbenv reash -  https://github.com/rbenv/rbenv#rbenv-rehash

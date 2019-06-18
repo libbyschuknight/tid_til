@@ -15,6 +15,13 @@
 
 ## HTML / CSS / SASS stuff
 
+## HTML
+
+[<pre>: The Preformatted Text element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)
+
+
+## CSS
+
 ### clip-path
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path

@@ -21,12 +21,34 @@
 
 [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 
+### Specifics
 
-## Resources
+[constructor()](https://reactjs.org/docs/react-component.html#constructor)
+
+>Typically, in React constructors are only used for two purposes:
+>- Initializing local state by assigning an object to this.state.
+>- Binding event handler methods to an instance.
+
+[Understanding Constructors with React Components](https://alligator.io/react/constructors-with-react-components/)
+
+>>The constructor is a method that’s automatically called during the creation of an object from a class. It can handle your initial setup stuff like defaulting some properties of the object, or sanity checking the arguments that were passed in. Simply put, the constructor aids in constructing things.
+
+>In React, the constructor is no different. It can be used to bind event handlers to the component and/or initializing the local state of the component. The constructor() method is fired before the component is mounted and like most things in React, has a few rules that you should follow when using them.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor
+
 
 [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
+>To run typechecking on the props for a component, you can assign the special propTypes property
+
+[Default Prop Values](https://reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values)
+
+>You can define default values for your props by assigning to the special defaultProps property
+
 [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html) (HOC)
+
+[Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
 
 
 ## NOTES: React for Beginners - Wes Bos
@@ -393,9 +415,15 @@ const name = this.props.details.name
 const details = this.props.details;
 const image = details.image;
 const name = details.name;
+
+// destructing
+// it will find image within `this.props.details` and assign it to `image`
+const { image, name, price, desc, status } = this.props.details;
 ```
 
 Can use ES6 Destructuring, allows you to set multiple variables in a single shot.
+
+e.g. `const { image, name, price, desc, status } = this.props.details;` as above
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 

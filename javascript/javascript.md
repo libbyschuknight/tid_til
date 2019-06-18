@@ -25,6 +25,14 @@
 
 - [Primitive Types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 
+[constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+
+>The constructor method is a special method for creating and initializing an object created within a class.
+
+[Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `value`.
+
 
 ### The three dots `...`
 

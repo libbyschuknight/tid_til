@@ -6,9 +6,9 @@ Did a `bundle install` and some how it decdied to update the `BUNDLED WITH` bit 
 
 I should have been able to uninstall the `1.17.3` version and the have it work with the `.1.17.1` version.
 
-I think I should ahve also been able to have run this `bundle _1.17.1_ install` and it should have run it with that version, but this wasn't working either. After discussion and help from collegnues we decided to re-install the ruby version.
+I think I should have also been able to have run this `bundle _1.17.1_ install` and it should have run it with that version, but this wasn't working either. After discussion and help from colleagues we decided to re-install the ruby version.
 
-I am using `rbenv` and the version is `2.4.5`. So uninbstalled it, have ran `rbenv install 2.4.5` but it has hung on
+I am using `rbenv` and the version is `2.4.5`. So uninstalled it, have ran `rbenv install 2.4.5` but it has hung on
 `ruby-build: use readline from homebrew`
 
 A google tells me that `readline` has been a problem - https://github.com/rbenv/ruby-build/issues/1064
@@ -40,7 +40,7 @@ So it turns out that I was just not waiting long enough for `rbenv` to do its in
 
 It took about half an hour to install using `rbenv install 2.4.5`.
 
-Rest of the fix was then just specifying bundler verisign when i did `gem install bundler -v 1.17.1`.
+Rest of the fix was then just specifying bundler version when i did `gem install bundler -v 1.17.1`.
 
 ## Cario issue
 
@@ -74,6 +74,14 @@ Searched on company slack and other people have had this. Suggested fix was:
 export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/3.2.1/lib/pkgconfig/
 gem install cairo -v '1.15.10' --source 'https://rubygems.org/'
 ```
+
+## `bundle update` issue
+
+With a gem we have, to update it in our main rails up, we need to do `bundle update --conservative admin_pattern_library` so that only the sha of the gem gets updated.
+
+This rails app uses `bundler 1.17.1`, however 2 plus is that up to date version for `bundler` and every time I run `bundle update --conservative admin_pattern_library`, which I haven't need to do often, it also updates the `bundler` version and I forget to check my change properly and push and then everything stops working!!!
+
+So to fix, I had to undo commit and disgard changes in the `Gemfile && Gemfile.lock` and then I figured out that I can do `bundle _1.17.1_ update --conservative admin_pattern_library`, which will keep the `bundler` version at `1.17.1` and not update it to `2.x.x`. Yay!
 
 ## `jQuery.ajax` call
 
@@ -142,3 +150,48 @@ https://en.support.wordpress.com/show-your-posts-in-chronological-order/
 And you can by adding `?order=asc`, to the end of a url - https://schuknight.wordpress.com/category/eda/?order=asc
 
 Handy!!
+
+
+## MYSQL issues, again
+
+Was getting this error:
+
+```bash
+> psau au SCHEMA=db/test_structure.sql bundle exec rails db:create db:structure:load
+
+Can't connect to local MySQL server through socket '/tmp/mysql.sock' (38)
+Couldn't create 'powershop_development_au' database. Please check your configuration.
+rails aborted!
+Mysql2::Error::ConnectionError: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (38)
+bin/rails:4:in `<main>'
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
+```
+
+Tried a number of things particular to work, running our script setup file, which seems to have worked fine. And then lots of suggestions by others who have come across the problem in our slack channel.
+
+BUT was heading down the wrong rabbit hole!
+
+Got help from colleague and we did this:
+
+- uninstalled mysql-client / mariadb
+- ran `./script/setup.sh` again (script for work to get stuff set up)
+- did kitchen sync (setting up of database data) but got this error:
+
+```
+Kitchen Sync
+dyld: Library not loaded: /usr/local/opt/mysql-client/lib/libmysqlclient.20.dylib
+  Referenced from: /usr/local/bin/ks_mysql
+  Reason: image not found
+Connection closed
+Connection closed
+Connection closed
+Connection closed
+Kitchen Syncing failed.
+/Users/libby/flux/powershop/lib/partial_sync/runner.rb:73:in `run_ks': PartialSync::Runner::SystemCommandError (PartialSync::Runner::SystemCommandError)
+	from /Users/libby/flux/powershop/lib/partial_sync/runner.rb:13:in `build_table_structure'
+	from lib/db_refresh.rb:78:in `<main>'`
+```
+as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll mysql-client`
+
+- now kitchen sync works beautifully!!
