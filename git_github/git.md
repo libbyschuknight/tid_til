@@ -184,9 +184,9 @@ git log --all --grep="#til"
 ```
 
 
-## tags
+## Deleting
 
-### deleting
+### Deleting tags
 
 If you have pushed a tag and then released that you had the wrong number, you can do this:
 ```bash
@@ -196,7 +196,7 @@ git push origin :refs/tags/v1.0
 from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).
 
 
-#### Deleteing multiple branches at once
+### Deleteing multiple branches at once
 
 
 ```bash
@@ -211,6 +211,12 @@ Deleted branch ci-2949 (was 8e0aa94780).
 Deleted branch ci-3219 (was 7cefdc4239).
 ```
 Bound to be lots of other ways to delete branches and different combinations of branches.
+
+Another suggestion:
+
+```bash
+git branch --merged | egrep -v "(^\*|master|prod)" | xargs git branch -D
+```
 
 
 ### fetch /checkout
@@ -635,3 +641,34 @@ Records conflict changes you have made so you don't have to do them again.
 https://git-scm.com/docs/git-rerere
 
 [Fix conflicts only once with git rerere](https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)
+
+## `git prune`
+
+https://git-scm.com/docs/git-prune
+
+https://www.atlassian.com/git/tutorials/git-prune
+
+>The git prune command is an internal housekeeping utility that cleans up unreachable or "orphaned" Git objects. Unreachable objects are those that are inaccessible by any refs. Any commit that cannot be accessed through a branch or tag is considered unreachable.
+
+Used this after I was doing a pull on the master branch for the huge monolith at work, where it came up with this message:
+
+```bash
+From git....
+ * branch                    master     -> FETCH_HEAD
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+error: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log.
+Automatic cleanup will not be performed until the file is removed.
+
+warning: There are too many unreachable loose objects; run 'git prune' to remove them.
+```
+
+Seemed to do the trick. Had asked in slack and another suggestion was:
+
+```bash
+git prune --dry-run # to see what would be deleted
+
+# run this from time to time to delete all merged branches locally other than ones with master and prod in name
+git branch --merged | egrep -v "(^\*|master|prod)" | xargs git branch -D
+```

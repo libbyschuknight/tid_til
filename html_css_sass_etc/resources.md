@@ -19,6 +19,10 @@
 
 [<pre>: The Preformatted Text element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)
 
+[The HTML autocomplete attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
+
+>The HTML autocomplete attribute is available on <input> elements that take a text or numeric value as input, <textarea> elements, <select> elements, and <form> elements. autocomplete lets web developers specify what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
+
 
 ## CSS
 

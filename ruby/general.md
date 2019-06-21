@@ -238,6 +238,18 @@ x = {name: "Tom", location: "London"}
 x = {"name" => "Tom", "location" => "London"}
 ```
 
+### `delete(key)`
+
+https://ruby-doc.org/core-2.4.5/Hash.html#method-i-delete
+
+```ruby
+h = { "a" => 100, "b" => 200 }
+h.delete("a")   #=> 100
+```
+
+>Deletes the key-value pair and returns the value from hsh whose key is equal to key.
+
+
 ## Using JSON
 
 Had a string that wanted to parse to make a json string.

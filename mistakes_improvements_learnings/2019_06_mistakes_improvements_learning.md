@@ -198,3 +198,8 @@ as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll my
 ## CSS figuring out!! Use 100% for height
 
 [use 100% height - Natours](../html_css_sass_etc/notes_adv_css_sass_udemy_course.md##issue-with-height-of-feature-boxes)
+
+
+## VoiceOver User Guide (mac)
+
+https://help.apple.com/voiceover/mac/10.14/
