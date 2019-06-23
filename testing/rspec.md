@@ -1,6 +1,9 @@
 # RSpec
 
+[The RSpec Style Guide](https://rspec.rubystyle.guide/) - https://github.com/rubocop-hq/rspec-style-guide
+
 [RSpec Documentation](https://rspec.info/documentation/)
+
 [RSpec Relish](https://relishapp.com/rspec)
 
 [Better Specs { rspec guidelines with ruby }](http://www.betterspecs.org/)

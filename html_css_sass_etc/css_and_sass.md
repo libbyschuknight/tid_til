@@ -22,6 +22,12 @@
 
 [Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
+[The CSS Mindset](https://mxb.dev/blog/the-css-mindset/)
+
+>```css
+>outline: 2px dotted hotpink
+>```
+
 
 ### Specificity
 

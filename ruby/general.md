@@ -1,5 +1,8 @@
 # Ruby Stuff
 
+[The Ruby Style Guide](https://rubystyle.guide/) - https://github.com/rubocop-hq/ruby-style-guide
+
+
 [Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
 
 ## Bang

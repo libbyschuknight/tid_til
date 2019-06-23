@@ -17,6 +17,8 @@
 
 ## HTML
 
+[How to Section Your HTML](https://css-tricks.com/how-to-section-your-html/)
+
 [<pre>: The Preformatted Text element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)
 
 [The HTML autocomplete attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)

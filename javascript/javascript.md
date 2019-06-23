@@ -14,6 +14,11 @@
 
 [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
+[javascript-questions](https://github.com/lydiahallie/javascript-questions)
+
+>A long list of (advanced) JavaScript questions, and their explanations ✨ Updated weekly!
+
+
 
 ## Language things
 
@@ -32,6 +37,7 @@
 [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `value`.
+
 [Operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
 [Grouping operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping)
@@ -40,8 +46,10 @@ e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `v
 
 >Associativity determines the way in which operators of the same precedence are parsed.
 
-
 [Javascript variables; should you use let, var or const?](https://medium.com/podiihq/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
+
+
+[Everything You Need to Know About Date in JavaScript](https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/)
 
 
 ### The three dots `...`
