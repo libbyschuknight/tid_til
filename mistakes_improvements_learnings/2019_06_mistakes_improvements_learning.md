@@ -266,3 +266,29 @@ end
 ```
 
 Why would you want to do this? When you are playing with things say with a `form_with` where you want to access a model and its attributes but you don't want to create actual ActiveRecord models.
+
+
+## load_missing_constant': uninitialized constant
+
+Check carefully the naming of classes / modules etc!!!
+
+```ruby
+module AdminPatternLibrary
+  module TextInput
+...
+```
+
+```bash
+/Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant': uninitialized constant AdminPatternLibrary::TexInput (NameError)
+	from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+	from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+	from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:98:in `<class:AplFormBuilder>'
+	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:96:in `<module:ViewHelpers>'
+	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:8:in `<module:AdminPatternLibrary>'
+	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:7:in `<main>'
+  ```
+
+`TextInput` not `TexInput`
+
+Doh!!!
