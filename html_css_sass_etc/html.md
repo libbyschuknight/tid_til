@@ -1,5 +1,7 @@
 # HTML Stuff
 
+[How to Section Your HTML](https://css-tricks.com/how-to-section-your-html/)
+
 [HTML Cheat Sheet (For Beginners)](https://hostingfacts.com/html-cheat-sheet/)
 
 HAML converter to HTML - https://haml2erb.org/

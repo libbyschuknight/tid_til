@@ -637,3 +637,14 @@ Delete - don't have this yet.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
 
 >The delete operator removes a given property from an object. On successful deletion, it will return true, else false will be returned.
+
+### Video 22 - Animating React Components
+
+Two types of animation, one is sort of mounting and unmounting of different components. Animating did mount and unmount. And then we things move up and down.
+
+[React Transition Group](https://reactcommunity.org/react-transition-group/)
+
+
+CSS used - Stylus - http://stylus-lang.com/
+- same as SASS, is based on indentation
+- omits brackets and semi colons
