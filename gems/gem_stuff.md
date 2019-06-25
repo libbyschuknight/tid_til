@@ -99,7 +99,16 @@ rails-dom-testing (2.0.2, 2.0.1, 1.0.8, 1.0.7, 1.0.6)
 
 ## To install a particular version of a gem
 
-`gem install rails --version=4.2.9`
+https://guides.rubygems.org/command-reference/#gem-install
+
+
+```bash
+gem install rails --version=4.2.9`
+
+# or
+
+gem install bundler -v 1.17.3
+```
 
 
 ## Check if gem installed

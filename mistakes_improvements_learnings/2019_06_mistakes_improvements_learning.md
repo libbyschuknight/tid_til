@@ -83,6 +83,11 @@ This rails app uses `bundler 1.17.1`, however 2 plus is that up to date version 
 
 So to fix, I had to undo commit and disgard changes in the `Gemfile && Gemfile.lock` and then I figured out that I can do `bundle _1.17.1_ update --conservative admin_pattern_library`, which will keep the `bundler` version at `1.17.1` and not update it to `2.x.x`. Yay!
 
+```bash
+bundle _1.17.3_ update --conservative admin_pattern_library
+```
+
+
 ## `jQuery.ajax` call
 
 http://api.jquery.com/jquery.ajax/
@@ -203,3 +208,61 @@ as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll my
 ## VoiceOver User Guide (mac)
 
 https://help.apple.com/voiceover/mac/10.14/
+
+
+## `form_for && form_with` builders
+
+https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for
+
+https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
+
+With working on updating the pattern library we have been getting into customising forms.
+
+### `form_for && form_with`
+
+`form_for && form_with` are basically helpers to make adding forms for objects easier
+
+https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object
+
+>What we want to do is somehow bind a form to a model object, which is exactly what form_for does.
+
+If we wanted to we could build a form for an object using form tags we could.
+
+https://guides.rubyonrails.org/form_helpers.html#dealing-with-model-objects-model-object-helpers
+
+>While the *_tag helpers can certainly be used for this task they are somewhat verbose as for each tag you would have to ensure the correct parameter name is used and set the default value of the input appropriately. Rails provides helpers tailored to this task.
+
+But why do that we Rails gives us `form_for && form_with`
+
+Note also that `form_with` will be the one in the future if not now.
+
+[Rails 5.1's form_with vs. form_tag vs. form_for](https://m.patrikonrails.com/rails-5-1s-form-with-vs-old-form-helpers-3a5f72a8c78a)
+
+[form_with — Building HTML forms in Rails 5.1](https://medium.com/@tinchorb/form-with-building-html-forms-in-rails-5-1-f30bd60ef52d)
+
+### Customising form builder
+
+We can customise `form_for && form_with` via the form builder.
+
+Look here for example in Rails guide - https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
+
+NB: more to come on this....
+
+
+## Faking a Rails model
+
+If you want to "fake" a Rails model, you can just do this:
+
+```ruby
+class Person
+  include ActiveModel::Model
+
+  attr_accessor :firstName, :lastName, :created_at
+
+  def persisted?
+    false
+  end
+end
+```
+
+Why would you want to do this? When you are playing with things say with a `form_with` where you want to access a model and its attributes but you don't want to create actual ActiveRecord models.

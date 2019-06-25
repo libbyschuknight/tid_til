@@ -1,6 +1,21 @@
 # Rails View Stuff
 
-## Formtastic
+## Forms
+
+https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
+
+https://guides.rubyonrails.org/form_helpers.htm
+
+https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for
+
+https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
+
+[Rails 5.1's form_with vs. form_tag vs. form_for](https://m.patrikonrails.com/rails-5-1s-form-with-vs-old-form-helpers-3a5f72a8c78a)
+
+[form_with — Building HTML forms in Rails 5.1](https://medium.com/@tinchorb/form-with-building-html-forms-in-rails-5-1-f30bd60ef52d)
+
+
+### Formtastic
 At work we are using [Formtastic](https://github.com/justinfrench/formtastic).
 [more docs](http://www.rubydoc.info/github/justinfrench/formtastic)
 
