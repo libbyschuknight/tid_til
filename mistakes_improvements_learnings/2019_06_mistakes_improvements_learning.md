@@ -292,3 +292,14 @@ module AdminPatternLibrary
 `TextInput` not `TexInput`
 
 Doh!!!
+
+
+## Feature tests using Cucumber
+
+To run a cucumber test to open up the Chrome browser, add this to the end `BROWSER=chrome`.
+
+```bash
+bundle exec rails features/some_feature_test.feature:3 BROWSER=chrome
+```
+
+Maybe set up specifically for work.

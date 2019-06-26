@@ -1,5 +1,7 @@
 # Ruby Stuff
 
+[Ruby Docs](https://ruby-doc.org/)
+
 [The Ruby Style Guide](https://rubystyle.guide/) - https://github.com/rubocop-hq/ruby-style-guide
 
 
@@ -158,9 +160,12 @@ end
 
 
 ### Keyword Arguments
-ADD!! links
-https://robots.thoughtbot.com/ruby-2-keyword-arguments
-http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/
+[Ruby and method arguments](http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/)
+
+[Ruby 2 Keyword Arguments](https://robots.thoughtbot.com/ruby-2-keyword-arguments),
+
+[Keyword arguments in Ruby 2.0](http://brainspec.com/blog/2012/10/08/keyword-arguments-ruby-2-0/))
+
 
 
 ## True / False Statements / Conditionals
