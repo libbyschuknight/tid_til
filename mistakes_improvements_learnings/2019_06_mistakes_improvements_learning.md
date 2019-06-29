@@ -303,3 +303,79 @@ bundle exec rails features/some_feature_test.feature:3 BROWSER=chrome
 ```
 
 Maybe set up specifically for work.
+
+
+## `content_tag`
+
+Suggestion to colleague who was using `content_tag`.
+
+>I was just reminding myself what `content_tag` does and for Rails 5 it has this in the documentation - `Note: this is legacy syntax, see tag method description for details.`
+>
+>https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-content_tag - old
+>https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-tag - new
+>
+>And found this https://blog.bigbinary.com/2017/08/23/new-syntax-for-tag-helpers-in-rails-5-1.html
+>And it is being used in our main app at work
+>
+>Think we should use the preferred option - `tag.<tag name>(optional content, options)`
+
+
+## Ruby variables - class, instance etc
+
+I found this useful today
+
+[Class and Instance Variables In Ruby](http://www.railstips.org/blog/archives/2006/11/18/class-and-instance-variables-in-ruby/)
+
+Was trying to figure out how to add a counter to a module with not using a class varaible `@@class_var`.
+
+Came up with this:
+
+```ruby
+class Counter
+  class << self; attr_accessor :count end
+  @count = 0
+end
+```
+
+```ruby
+module PatternLibrary
+  module TextInputField
+    module V1_0
+      module TextInputFieldHelpers
+        class Counter
+          class << self; attr_accessor :count end
+          @count = 0
+        end
+
+        def create_id_if_not_set(options = {})
+          class_name_component = create_component_class_name(COMPONENT_NAME, COMPONENT_VERSION)
+          Counter.count += 1
+          options[:id] || "#{class_name_component}-#{Counter.count}"
+        end
+
+        # other methods
+      end
+
+      module ViewHelpers
+      # other stuff
+      end
+
+      module FormBuilderMethods
+      # other stuff
+      end
+    end
+  end
+end
+```
+
+## Timezones
+
+Been lots of issues around timezones with the date picker we have implemented. We have used Flatpickr, but don't think it does timezones very well.
+
+https://flatpickr.js.org/
+
+https://medium.com/@toastui/handling-time-zone-in-javascript-547e67aa842d
+
+https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
+
+https://www.iana.org/time-zones

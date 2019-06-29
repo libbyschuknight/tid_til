@@ -2,6 +2,8 @@
 
 [The Rails Style Guide](https://rails.rubystyle.guide/) - https://github.com/rubocop-hq/rails-style-guide
 
+[Rails Trace](https://rails-trace.chriszetter.com/)
+
 ### Upgrade
 http://guides.rubyonrails.org/upgrading_ruby_on_rails.html
 
