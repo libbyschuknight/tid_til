@@ -4,6 +4,10 @@
 
 [My Favorite Teachers In The JavaScript Community](https://dev.to/emmawedekind/my-favorite-teachers-in-the-javascript-community-53h)
 
+[Learn JavaScript with Eric Elliott](https://ericelliottjs.com/)
+
+[10 Interview Questions: Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
+
 [YOU MIGHT NOT NEED JQUERY](http://youmightnotneedjquery.com/)
 
 [(Now More Than Ever) You Might Not Need jQuery](https://css-tricks.com/now-ever-might-not-need-jquery/)
@@ -17,6 +21,16 @@
 [javascript-questions](https://github.com/lydiahallie/javascript-questions)
 
 >A long list of (advanced) JavaScript questions, and their explanations ✨ Updated weekly!
+
+
+
+[Handling Time Zone in JavaScript](https://medium.com/@toastui/handling-time-zone-in-javascript-547e67aa842d)
+
+>But if you want full time zone support, do not implement it from scratch. Rather use a library like Moment Timezone.
+
+- https://momentjs.com/
+
+- https://momentjs.com/timezone/
 
 
 
