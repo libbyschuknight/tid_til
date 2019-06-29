@@ -2,6 +2,7 @@
 
 [JONAS' RESOURCES FOR BUILDING BEAUTIFUL WEBSITES WITH HTML5, CSS3 AND JAVASCRIPT](http://codingheroes.io/resources/)
 
+[Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/#2)
 
 ### Color
 

@@ -18,6 +18,7 @@
 
 >A long list of (advanced) JavaScript questions, and their explanations ✨ Updated weekly!
 
+[8 Useful JavaScript Tricks](https://devinduct.com/blogpost/26/8-useful-javascript-tricks)
 
 
 ## Language things
