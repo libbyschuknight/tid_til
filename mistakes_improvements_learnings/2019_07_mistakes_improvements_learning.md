@@ -178,44 +178,71 @@ Hence the solution above which ends up outputting this HTML:
 </label>
 ```
 
+## Fixing the `id` for our HTML output
 
+For work we have been doing with our pattern library, we have been adding lots of html / css to build up components and we want both a view `tag` and a `form builder` method to return pretty much the same output.
 
-## TODO: finish: add about method and id
+For our pattern library, if we want to add a tag in an erb template:
 
-okay I believe I have fixed it! So what was happening was that an id was being passed all the way through to `text_field(method, options)` in `options` and if you pass an id in options to that method it overrides the id created  from using `method`.
-So have deleted out the id from the `text_input_options` before they get passed to `apl_text_input_v1_1` where the `text_field` method is called! Yay! exciting!
-Will pull down your changes thomas and then push mine.
+```ruby
+<%= apl_text_input_field_tag_v1(
+  "test-field",
+  "Some text",
+  className: "field-class-name",
+  label: "APL Field tag test",
+  inputClassName: "input-class-name",
+  helpText: "this is help text",
+  errorText: "wrong input",
+  optional: true
+)%>
+```
 
-libby  [8 hours ago]
-oh and because I am removing that is from `text_input_options` then all of the id creation we have done before that is used for the error text etc etc !! :smile:
+Then via the `text_field_tag` we get this output:
 
-
+https://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-text_field_tag
 
 ```html
 <div class="apl-field-v1_0 field-class-name has-error">
-  <label class="apl-field__label" for="person_firstName">
-    this is a title for the label
+  <label class="apl-field__label" for="apl-text-input-field-v1_0-2">
+    APL Field tag test
     <span class="apl-field__optional-text">Optional</span>
   </label>
-  <input
-    placeholder="text input with field should have label"
+  <input type="text"
+    name="test-field"
+    id="apl-text-input-field-v1_0-2"
+    value="Some text"
     class="apl-text-input-v1_1 input-class-name"
-    aria-describedby="-error-text -help-text"
-    type="text" name="person[firstName]"
-    id="person_firstName">
-  <div role="alert"
-    class="apl-field__error-text"
-    id="-error-text">
+    aria-describedby="apl-text-input-field-v1_0-2-error-text apl-text-input-field-v1_0-2-help-text"
+  >
+  <div role="alert" class="apl-field__error-text" id="apl-text-input-field-v1_0-2-error-text">
       wrong input
-    </div>
-  <div
-    class="apl-field__help-text"
-    id="-help-text">
+  </div>
+  <div class="apl-field__help-text"id="apl-text-input-field-v1_0-2-help-text">
       this is help text
   </div>
 </div>
+```
+Notice that the `id` (`apl-text-input-field-v1_0-2`) is reused in a number of places.
 
+If we use the same underlying code for generating the `html` for a `form` that uses `text_field`:
 
+```ruby
+<%= apl_form_for(@person, url: '/') do |f| %>
+  <%= f.apl_text_input_field_v1 :firstName,
+    className: "field-class-name",
+    placeholder: "text input with field should have label",
+    inputClassName: "input-class-name",
+    errorText: "wrong input",
+    helpText: "this is help text",
+    optional: true,
+    label: "this is a title for the label"
+  %>
+<% end %>
+```
+
+We get this output:
+
+```html
 <div class="apl-field-v1_0 field-class-name has-error">
   <label class="apl-field__label" for="person_firstName">
     this is a title for the label
@@ -239,7 +266,31 @@ oh and because I am removing that is from `text_input_options` then all of the i
       this is help text
   </div>
 </div>
-
-
-aria-describedby="person_firstName-error-text person_firstName-help-text"
 ```
+
+Which has a couple of things wrong with it. Firstly, within the `input` block, the `id` is `apl-text-input-field-v1_0-1` but it should be `person_firstName` as this is rendering a form for a model.
+
+What I had initially done was actually remove the creation of the `apl-text-input-field-v1_0-1` `id`, so was getting `person_firstName` but where we have things like `apl-text-input-field-v1_0-1-help-text`, which uses the generated `id` as the start of the name, we were getting `-help-text`. These classes and ids etc are important for out error and help text and accessibility.
+
+As I was figuring out what to do, I realised that the `text_field(method, options)` `FormBuilder` method we use to create the `input` block, takes `options` and if in that hash there is an `id`, it takes that and overwrites the `form id` that gets automatically created when using `form_for` and `text_field`.
+
+So the fix was to remove the `id` from the `options` hash before it got passed into the method that calls `text_field`.
+
+```ruby
+def pl_text_input_field_v1_0(method, options = {})
+  options[:id] = create_id_if_not_set(options)
+  field_options = TextInputFieldHelpers.create_field_options(options)
+  text_input_options = TextInputFieldHelpers.create_text_input_options(options, field_options)
+
+  text_input_options.delete(:id)
+  field_options[:control] = pl_text_input_v1(method, **text_input_options)
+
+  pl_field_v1(method, **field_options)
+end
+```
+
+I was pleased I was able to use my knowledge (recent understanding) of `text_field` and figure out what was happneing and fix it. I think it was due to the work we had done previoulsy (mentioned above) around  the `label` method.
+
+https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-text_field
+
+https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label

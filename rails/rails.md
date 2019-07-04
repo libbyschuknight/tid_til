@@ -1,5 +1,9 @@
 # Rails
 
+https://api.rubyonrails.org/ - Ruby on Rails  - RDOC_MAIN.rdoc
+
+[Ruby on Rails Guides](https://guides.rubyonrails.org/)
+
 [The Rails Style Guide](https://rails.rubystyle.guide/) - https://github.com/rubocop-hq/rails-style-guide
 
 [Rails Trace](https://rails-trace.chriszetter.com/)
