@@ -40,7 +40,7 @@ Create a new branch - (core - `apl-123`)
   - best to do with a `git rebase -i` probably
 - merge into master
   - this will trigger a build of the deploy branch
-- update version and commit to master
+- update version, changelog and commit to master
   - ruby `version.rb
   - javascript `package.json`
   - this commit will trigger a build of the deploy branch
