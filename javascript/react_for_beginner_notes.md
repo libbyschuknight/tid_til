@@ -111,7 +111,7 @@ class Header extends React.Component {
 
 This doesn't do anything, doesn't have any custom data, it gets feed in the data it needs, so there is no need for it to be a full blown react component, simply a render function that renders out some HTMl -> stateless functional component.
 
-If your component is only has a render method and prop types and we can make it a stateless functional component.
+If your component only has a render method and proptypes then we can make it a stateless functional component.
 
 ```js
 function Header() {
@@ -595,3 +595,8 @@ Two types of animation, one is sort of mounting and unmounting of different comp
 CSS used - Stylus - http://stylus-lang.com/
 - same as SASS, is based on indentation
 - omits brackets and semi colons
+
+
+### Video 23 - Component Validation with PropTypes
+
+[Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)

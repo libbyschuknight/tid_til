@@ -65,6 +65,9 @@ end
 >Though cucumber is usually used on top of capybara, you can also use rspec to drive capybara integration tests. The tests are written in either rspec or cucumber, but capybara is an integration engine underneath.
 
 
+[A repeatable, step-by-step process for writing Rails integration tests with Capybara](https://www.codewithjason.com/repeatable-step-step-process-writing-rails-integration-tests-capybara/)
+
+
 ## Try to remember to read the Rspec errors really carefully!!
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 

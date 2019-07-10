@@ -289,7 +289,7 @@ def pl_text_input_field_v1_0(method, options = {})
 end
 ```
 
-I was pleased I was able to use my knowledge (recent understanding) of `text_field` and figure out what was happneing and fix it. I think it was due to the work we had done previoulsy (mentioned above) around  the `label` method.
+I was pleased I was able to use my knowledge (recent understanding) of `text_field` and figure out what was happening and fix it. I think it was due to the work we had done previously (mentioned above) around  the `label` method.
 
 https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-text_field
 
@@ -300,3 +300,66 @@ https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i
 
 >Build bulletproof UI components faster
 >Storybook is an open source tool for developing UI components in isolation for React, Vue, and Angular. It makes building stunning UIs organized and efficient.
+
+### `$r` when using Storybook
+
+When wanting to access the use `$r` when using Storybook, you may need to change JavaScript context in Chrome Dev Tools to `top`.
+
+See https://github.com/facebook/react-devtools/issues/366#issuecomment-212749794
+
+![JS-context](JS-context-storybook.png)
+
+
+
+## Spelling AGAIN!!!
+
+Have been adding a stateless React component to our pattern library and had this set up for the `proptypes`:
+
+```jsx
+// prettier-ignore
+Button.prototypes = {
+  // React props
+  onClick:    PropTypes.func,
+
+  // HTMLInputElement props
+  name:       PropTypes.string,
+  title:      PropTypes.string,
+  className:  PropTypes.string,
+};
+```
+
+And with our linting, which uses [ESlint](https://eslint.org/) and with React, this plugin - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react), I was getting these errors:
+
+```bash
+$ run-s lint:*
+$ eslint '**/*.{js,jsx}'
+
+/Users/libby/flux/admin_pattern_library/src/components/button/v1_0/js/Button.jsx
+  11:19  error  'name' is missing in props validation       react/prop-types
+  11:25  error  'title' is missing in props validation      react/prop-types
+  11:32  error  'className' is missing in props validation  react/prop-types
+  11:43  error  'onClick' is missing in props validation    react/prop-types
+
+✖ 4 problems (4 errors, 0 warnings)
+```
+
+So I am thinking I have missed something, as I have followed the format of the other components we already have.
+
+Did some googling, trying different things out but nothing was working and was half way to writing a message to my team and I realised that I had `prototypes` not `propTypes` on the first line! Doh!
+
+```jsx
+Button.propTypes = {
+  // React props
+  ...
+```
+
+My brain can't cope with words that look similar in the same domain!!
+
+
+## [Difference between <input type='button' /> and <input type='submit' />](https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit)
+
+https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit/290221#290221
+
+>`<input type="button" />` buttons will not submit a form - they don't do anything by default. They're generally used in conjunction with >JavaScript as part of an AJAX application.
+>
+>`<input type="submit">` buttons will submit the form they are in when the user clicks on them, unless you specify otherwise with >JavaScript.

@@ -57,3 +57,20 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constr
 [Default Prop Values](https://reactjs.org/docs/typechecking-with-proptypes.html#default-prop-values)
 
 >You can define default values for your props by assigning to the special defaultProps property
+
+
+## `props.children`
+
+[React.Children](https://reactjs.org/docs/react-api.html#react.children)
+
+[A quick intro to React’s props.children](https://codeburst.io/a-quick-intro-to-reacts-props-children-cb3d2fce4891)
+
+>My simple explanation of what this.props.children does is that it is used to display whatever you include between the opening and closing tags when invoking a component.
+
+## Passing `props` to component
+
+[How to pass props to components in React](https://www.robinwieruch.de/react-pass-props-to-component/#react-props-vs-state)
+
+[Spread Attributes](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes)
+
+>Spread attributes can be useful but they also make it easy to pass unnecessary props to components that don’t care about them or to pass invalid HTML attributes to the DOM. We recommend using this syntax sparingly.
