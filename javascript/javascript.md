@@ -33,6 +33,29 @@
 - https://momentjs.com/timezone/
 
 
+## Testing
+
+[Jest](https://jestjs.io/)
+
+>Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+>It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
+
+To run all tests - `npm run test`
+
+To run one file - `npm run test src/components/button/v1_0/js/_tests_/Button.spec.jsx`
+
+[Enzyme](https://airbnb.io/enzyme/)
+
+>Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output.
+
+[jest-enzyme](https://github.com/FormidableLabs/enzyme-matchers/tree/master/packages/jest-enzyme)
+
+<!-- TODO write up
+https://airbnb.io/enzyme/docs/api/ShallowWrapper/html.html
+
+
+
+ -->
 
 ## Language things
 

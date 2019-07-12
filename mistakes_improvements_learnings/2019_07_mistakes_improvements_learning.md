@@ -363,3 +363,8 @@ https://stackoverflow.com/questions/290215/difference-between-input-type-button-
 >`<input type="button" />` buttons will not submit a form - they don't do anything by default. They're generally used in conjunction with >JavaScript as part of an AJAX application.
 >
 >`<input type="submit">` buttons will submit the form they are in when the user clicks on them, unless you specify otherwise with >JavaScript.
+
+
+## Top tip from colleague
+
+If using `PropTypes`, ALWAYS define them straight away! Otherwise you get errors and I did not understand them!
