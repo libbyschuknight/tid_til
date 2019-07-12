@@ -12,6 +12,8 @@
 
 [RSpec Mocks and Stubs in Plain English](https://www.codewithjason.com/rspec-mocks-stubs-plain-english/)
 
+[Examples of pointless types of RSpec tests](https://www.codewithjason.com/examples-pointless-rspec-tests/)
+
 ## Running Specs
 
 [Running Rspec examples by name, or: Running a single shared example](https://makandracards.com/makandra/47400-running-rspec-examples-by-name-or-running-a-single-shared-example)

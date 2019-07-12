@@ -57,12 +57,14 @@ Start in the centre and work way outwards, in a methodical manner
 
 
 
-## Security Stuff
+## Security
 
 [What is the difference between authentication and authorization?](https://serverfault.com/questions/57077/what-is-the-difference-between-authentication-and-authorization)
 
 >- Authentication is the process of verifying who you are. When you log on to a PC with a user name and password you are authenticating.
 >- Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.
+
+[How to fix target=”_blank” links: a security and performance issue in web pages](https://medium.com/@ali.dev/how-to-fix-target-blank-a-security-and-performance-issue-in-web-pages-2118eba1ce2f)
 
 
 ## Browsers

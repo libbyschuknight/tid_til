@@ -101,7 +101,7 @@ The solution (from 16.2) is that you can wrap the elements in a `React.Fragment`
 
 https://reactjs.org/docs/fragments.html
 
-What has been used previously is just adding an extra `div` tag, but this would add lots of unecessary `div` tags to the DOM.
+What has been used previously is just adding an extra `div` tag, but this would add lots of unnecessary `div` tags to the DOM.
 
 ```jsx
 class StorePicker extends React.Component {
