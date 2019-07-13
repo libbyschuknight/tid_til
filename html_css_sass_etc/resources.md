@@ -68,7 +68,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 [Transitions in CSS](https://cssreference.io/transitions/)
 
-
 ### Pseudo-classes
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
@@ -76,7 +75,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 [Meet the Pseudo Class Selectors](https://css-tricks.com/pseudo-class-selectors/)
 
 [An Ultimate Guide To CSS Pseudo Classes And Pseudo Elements](https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/#table-of-contents-in-alphabetical-order)
-
 
 ### Cascade and inheritance
 
@@ -89,7 +87,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
 ### px / em / rem
 
 [EM vs REM vs PX – Why you shouldn't “just use pixels”](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)
-
 
 ## Images
 

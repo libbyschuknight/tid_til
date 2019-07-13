@@ -4,6 +4,7 @@ Got this idea from organiser of https://twitter.com/SheNomads
 - https://gist.github.com/LNA/3f66ec30e299289cb96ce1dea7a31a45
 
 My aim:
+
 - to track my programming mistakes here, so I can reflect what I've been learning, improve my skill set
 - see if there are any patterns in my mistake making
 - what concepts aren't sticking?

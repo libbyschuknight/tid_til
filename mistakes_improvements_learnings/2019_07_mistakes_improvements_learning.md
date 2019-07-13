@@ -1,5 +1,3 @@
-<!-- TODO: Remane 2018 files -->
-
 # July 2019 Mistakes, Improvements, Learning and Stuff
 
 ## FormBuilder methods and customising
