@@ -18,3 +18,23 @@
 - image
 
 ![alt](https://link)
+
+## Emmet - built into VSCode
+
+### [Emmet](https://emmet.io/)
+
+[Emmet in Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet)
+
+```html
+<!-- This will expand into -->
+ul.li*5
+
+<!-- this -->
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+```

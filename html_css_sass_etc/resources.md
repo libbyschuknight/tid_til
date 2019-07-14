@@ -1,6 +1,6 @@
 # Resources for HTML / CSS
 
-## Use semantic code.
+## Use semantic code
 
 ### [Semantic code](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
 
@@ -30,7 +30,6 @@
 >  `reset`: The button resets all the controls to their initial values.
 >  `button`: The button has no default behavior. It can have client-side scripts associated with the element's events, which are >triggered when the events occur.
 
-
 ## CSS
 
 ### clip-path
@@ -40,7 +39,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
 [CSS clip-path marker](https://bennettfeely.com/clippy/)
 
 [clip-path (css-tricks)](https://css-tricks.com/almanac/properties/c/clip/)
-
 
 ### position
 
@@ -88,6 +86,16 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
 
 [EM vs REM vs PX – Why you shouldn't “just use pixels”](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)
 
+### background-blend-mode
+
+[background-blend-mode - mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
+
+[background-blend-mode - css tricks](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
+
 ## Images
 
 [The Ultimate List Of Free Stock Photos & Free Royalty Free Images](https://www.eric-liang.com/blog/the-ultimate-list-of-free-stock-photos-free-royalty-free-images/)
+
+[Unsplash](https://unsplash.com/)
+
+>The internet’s source of freely useable images. Powered by creators everywhere.]
