@@ -58,8 +58,7 @@
 
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
-
-##### Why personality tests can be useless / harmful in the workplace
+#### Why personality tests can be useless / harmful in the workplace
 
 [Goodbye to MBTI, the Fad That Won’t Die](https://www.psychologytoday.com/us/blog/give-and-take/201309/goodbye-mbti-the-fad-won-t-die)
 
@@ -68,6 +67,7 @@
 [QUIZ: WHICH DISNEY PRINCESS ARE YOU?](https://ohmy.disney.com/quiz/2014/06/25/quiz-which-disney-princess-are-you/) - a good alternative? 😂
 
 #### Agile and Introverts
+
 [Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
 
 [Agile Introverts, an Oxymoron?](https://medium.com/@ChrisAndSeanAgile/agile-introverts-an-oxymoron-3182deab3813)
@@ -112,7 +112,6 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Spotify Squad framework — Part I](https://medium.com/project-management-learnings/spotify-squad-framework-part-i-8f74bcfcd761)
 
-
 ## Help yourself
 
 [You Must Try, and then You Must Ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html)
@@ -149,7 +148,6 @@ Sarah Mei: Diversity of Thought tweets:
 
 [awesome-aotearoa-tech](https://github.com/radsy/awesome-aotearoa-tech)
 
-
 ### Computer Science
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/?__s=3y8eajxoa2yag3smywqg)
@@ -158,24 +156,21 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Famous Laws Of Software Development](https://www.timsommer.be/famous-laws-of-software-development/)
 
-
 ### Programming / Coding
 
 [The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
 
-[Rule of three (computer programming)](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming))
+[Rule of three (computer programming)](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>)
 
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
 [Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
-
 
 #### Resources
 
 ##### Younger
 
 [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
-
 
 ### Ruby
 
@@ -247,7 +242,6 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Rails Techniques: Using Polymorphic Associations](https://semaphoreci.com/blog/2017/08/16/polymorphic-associations-in-rails.html)
 
-
 <!-- TODO: add link to javascript.md page for using webpack in rails -->
 
 ##### Time
@@ -265,7 +259,6 @@ Sarah Mei: Diversity of Thought tweets:
 [YAML SYNTAX](https://learn.getgrav.org/advanced/yaml)
 
 [YAML for Ruby](http://yaml4r.sourceforge.net/doc/)
-
 
 ### Code Style / Structure / Reviews
 
@@ -291,7 +284,6 @@ https://twitter.com/betsythemuffin/status/1006597377413795842
 
 [[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
 
-
 ### Architecture Patterns
 
 [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
@@ -300,23 +292,21 @@ https://twitter.com/betsythemuffin/status/1006597377413795842
 
 [The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
 
-
 ### Security
 
 [Introduction to Ruby on Rails security](https://www.youtube.com/watch?v=Hez1QYc9yo8)
 
 [What is the difference between authentication and authorization?](https://serverfault.com/questions/57077/what-is-the-difference-between-authentication-and-authorization)
 
+[Your Pa\$\$word doesn't matter](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Your-Pa-word-doesn-t-matter/ba-p/731984)
 
 ### Routing
 
 [2.2 CRUD, Verbs
 
-
 ## Mac Stuff
 
 [macOS Setup Guide](http://sourabhbajaj.com/mac-setup/)
-
 
 ### Other Stuff
 
