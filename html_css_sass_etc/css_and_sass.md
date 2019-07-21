@@ -1,7 +1,10 @@
 # CSS & SASS
 
 ## CSS
+
 [YOU MIGHT NOT NEED JAVASCRIPT](http://youmightnotneedjs.com/)
+
+[CSS can do that?](https://dev.to/ananyaneogi/css-can-do-that-18g7)
 
 [Why CSS Grid is better than Bootstrap for creating layouts](https://hackernoon.com/how-css-grid-beats-bootstrap-85d5881cf163)
 
@@ -28,7 +31,6 @@
 >outline: 2px dotted hotpink
 >```
 
-
 ### Specificity
 
 [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
@@ -40,15 +42,19 @@
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## CSS-Tricks
-Good site, need to explore - https://css-tricks.com/
+
+Good site, need to explore - <https://css-tricks.com/>
+
 It has:
+
 - [CSS Almanac](https://css-tricks.com/almanac/)
 - [Video Screencasts](https://css-tricks.com/video-screencasts/)
 - [The Lodge - Full Training Courses on Web Design & Development](https://css-tricks.com/lodge/)
 
-
 ## Basic stuff
-Used this site to work on creating a button that I wanted. Was keen to have a bigger button then the defaults seem to give - http://www.w3schools.com/css/css3_buttons.asp
+
+Used this site to work on creating a button that I wanted. Was keen to have a bigger button then the defaults seem to give - <http://www.w3schools.com/css/css3_buttons.asp>
+
 Will add code when completed, and images.
 
 [Learn CSS Layout](http://learnlayout.com/)
@@ -57,17 +63,15 @@ Will add code when completed, and images.
 
 [CSS coding techniques](https://hacks.mozilla.org/2016/05/css-coding-techniques/)
 
-
 ### !important
 
 [When Using !important is The Right Choice](https://css-tricks.com/when-using-important-is-the-right-choice/)
 
 [Don’t use “!important”](https://j11y.io/css/dont-use-important/)
 
-
 ## Truncating
 
-Had a long file name ` FLCK_E_FLCK_YINVHDR_201610_20170828_095206_19700101000000.csv` and when making the page smaller, got it overlapping with other text, so doing the below, got ` FLCK_E_FLCK_YINVHDR_201610_2017...` and no overlapping! 😁
+Had a long file name `FLCK_E_FLCK_YINVHDR_201610_20170828_095206_19700101000000.csv` and when making the page smaller, got it overlapping with other text, so doing the below, got `FLCK_E_FLCK_YINVHDR_201610_2017...` and no overlapping! 😁
 
 ```css
 .truncate {
@@ -84,20 +88,17 @@ And in my case added `padding-right: 2em;`, as had another class adding `width: 
 
 [Adobe Color CC](https://color.adobe.com/create/color-wheel/)
 
-
 ## unis - rem, em, px, %
 
 [Confused About REM and EM?](https://j.eremy.net/confused-about-rem-and-em/)
 
 [EM vs REM vs PX – Why you shouldn't “just use pixels”](https://engageinteractive.co.uk/blog/em-vs-rem-vs-px)
 
-
 ## SASS - Syntactically Awesome Style Sheets
 
-https://sass-lang.com/
+<https://sass-lang.com/>
 
 CSS preprocessor
-
 
 [SASS Guidelines](https://sass-guidelin.es/)
 
@@ -107,11 +108,10 @@ CSS preprocessor
 
 [Aesthetic Sass 1: Architecture and Style Organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
-
 ### Default Values - `!default`
 
-https://sass-lang.com/documentation/variables#default-values
+<https://sass-lang.com/documentation/variables#default-values>
 
 >Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
-
+>
 >To make this possible, Sass provides the !default flag. This assigns a value to a variable only if that variable isn’t defined or its value is null. Otherwise, the existing value will be used. This way, users can set variables before they import your library to customize its behavior.

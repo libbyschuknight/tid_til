@@ -226,6 +226,26 @@ console.log(sum(2, 6));
 // expected output: 8
 ```
 
+#### Property accessors
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors>
+
+>Property accessors provide access to an object's properties by using the dot notation or the bracket notation.
+
+```js
+var person = {};
+person['firstname'] = 'Mario';
+person['lastname'] = 'Rossi';
+
+console.log(person.firstname);
+// expected output: "Mario"
+
+person = {'firstname': 'John', 'lastname': 'Doe'}
+
+console.log(person['lastname']);
+// expected output: "Doe"
+```
+
 ## Resources / Tools
 
 [flatpickr js](https://flatpickr.js.org/)

@@ -58,7 +58,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constr
 
 >You can define default values for your props by assigning to the special defaultProps property
 
-
 ## `props.children`
 
 [React.Children](https://reactjs.org/docs/react-api.html#react.children)
@@ -74,3 +73,28 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constr
 [Spread Attributes](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes)
 
 >Spread attributes can be useful but they also make it easy to pass unnecessary props to components that don’t care about them or to pass invalid HTML attributes to the DOM. We recommend using this syntax sparingly.
+
+## `aria` HTML attributes
+
+[Accessibility](https://reactjs.org/docs/accessibility.html)
+
+- [WAI-ARIA](https://reactjs.org/docs/accessibility.html#wai-aria)
+
+>Note that all aria-* HTML attributes are fully supported in JSX. Whereas most DOM properties and attributes in React are camelCased, these attributes should be hyphen-cased (also known as kebab-case, lisp-case, etc) as they are in plain HTML:
+>
+>```html
+><input
+>  type="text"
+>  aria-label={labelText}
+>  aria-required="true"
+>  onChange={onchangeHandler}
+>  value={inputValue}
+>  name="name"
+>/>
+>```
+
+[DOM Elements](https://reactjs.org/docs/dom-elements.html)
+
+>In React, all DOM properties and attributes (including event handlers) should be camelCased. For example, the HTML attribute `tabindex` corresponds to the attribute `tabIndex` in React. The exception is `aria-*` and `data-*` attributes, which should be lowercased. For example, you can keep `aria-label` as `aria-label`.
+
+[Using the aria-label attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)

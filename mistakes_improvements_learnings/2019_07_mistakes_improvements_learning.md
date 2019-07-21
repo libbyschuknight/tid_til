@@ -353,7 +353,6 @@ Button.propTypes = {
 
 My brain can't cope with words that look similar in the same domain!!
 
-
 ## [Difference between <input type='button' /> and <input type='submit' />](https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit)
 
 https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit/290221#290221
@@ -361,7 +360,6 @@ https://stackoverflow.com/questions/290215/difference-between-input-type-button-
 >`<input type="button" />` buttons will not submit a form - they don't do anything by default. They're generally used in conjunction with >JavaScript as part of an AJAX application.
 >
 >`<input type="submit">` buttons will submit the form they are in when the user clicks on them, unless you specify otherwise with >JavaScript.
-
 
 ## Top tip from colleague
 
