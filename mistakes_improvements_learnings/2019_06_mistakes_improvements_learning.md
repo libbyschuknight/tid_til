@@ -2,7 +2,7 @@
 
 ## `bundle` / `bundler` issues!!
 
-Did a `bundle install` and some how it decdied to update the `BUNDLED WITH` bit in `Gemfile.lock`  from `1.17.1` to `1.17.3`. However, for this app we need to keep it at `1.17.1`. So then I started looking into what I needed to do to have it bundle with `1.17.1`.
+Did a `bundle install` and some how it decided to update the `BUNDLED WITH` bit in `Gemfile.lock` from `1.17.1` to `1.17.3`. However, for this app we need to keep it at `1.17.1`. So then I started looking into what I needed to do to have it bundle with `1.17.1`.
 
 I should have been able to uninstall the `1.17.3` version and the have it work with the `.1.17.1` version.
 
@@ -20,6 +20,7 @@ Trying this
 ```bash
 RUBY_CONFIGURE_OPTS=--with-readline-dir="$(brew --prefix readline)" rbenv install 2.4.5
 ```
+
 Hmmm but this seems to not be working for me..... it seems to be hanging as well. This didn't even get to the `ruby-build: use readline from homebrew` line, which `rbenv install 2.4.5` does.
 
 Trying `rbenv install 2.4.5` again.
@@ -87,10 +88,9 @@ So to fix, I had to undo commit and disgard changes in the `Gemfile && Gemfile.l
 bundle _1.17.3_ update --conservative admin_pattern_library
 ```
 
-
 ## `jQuery.ajax` call
 
-http://api.jquery.com/jquery.ajax/
+<http://api.jquery.com/jquery.ajax/>
 
 An old javascript page is using this `.ajax` call:
 
@@ -98,8 +98,8 @@ An old javascript page is using this `.ajax` call:
 Application.updateEstimates = function() {
   function postAjax(url, data) {
     return jQuery.ajax({
-      method: "POST", // Modern jQuery
-      type: "POST",   // Ancient jQuery
+      method: 'POST', // Modern jQuery
+      type: 'POST', // Ancient jQuery
       data: data,
       url: url,
       beforeSend: setCsrfHeader
@@ -118,16 +118,16 @@ Application.updateEstimates = function() {
 
     var data = jQuery('#date-form').serialize();
 
-    postAjax(url, data)
-      .complete(function() { jQuery('#estimate-spinner').hide(); });
+    postAjax(url, data).complete(function() {
+      jQuery('#estimate-spinner').hide();
+    });
   }
 };
 ```
 
 This is then doing stuff on a Rails page and is it working within Rails-React.
 
-http://api.jquery.com/Ajax_Events/ -  see here for what `.complete` does.
-
+http://api.jquery.com/Ajax_Events/ - see here for what `.complete` does.
 
 ## https issue
 
@@ -196,6 +196,7 @@ Kitchen Syncing failed.
 	from /Users/libby/flux/powershop/lib/partial_sync/runner.rb:13:in `build_table_structure'
 	from lib/db_refresh.rb:78:in `<main>'`
 ```
+
 as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll mysql-client`
 
 - now kitchen sync works beautifully!!
@@ -204,11 +205,9 @@ as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll my
 
 [use 100% height - Natours](../html_css_sass_etc/notes_adv_css_sass_udemy_course.md##issue-with-height-of-feature-boxes)
 
-
 ## VoiceOver User Guide (mac)
 
 https://help.apple.com/voiceover/mac/10.14/
-
 
 ## `form_for && form_with` builders
 
@@ -224,13 +223,13 @@ With working on updating the pattern library we have been getting into customisi
 
 https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object
 
->What we want to do is somehow bind a form to a model object, which is exactly what form_for does.
+> What we want to do is somehow bind a form to a model object, which is exactly what form_for does.
 
 If we wanted to we could build a form for an object using form tags we could.
 
 https://guides.rubyonrails.org/form_helpers.html#dealing-with-model-objects-model-object-helpers
 
->While the *_tag helpers can certainly be used for this task they are somewhat verbose as for each tag you would have to ensure the correct parameter name is used and set the default value of the input appropriately. Rails provides helpers tailored to this task.
+> While the \*\_tag helpers can certainly be used for this task they are somewhat verbose as for each tag you would have to ensure the correct parameter name is used and set the default value of the input appropriately. Rails provides helpers tailored to this task.
 
 But why do that we Rails gives us `form_for && form_with`
 
@@ -247,7 +246,6 @@ We can customise `form_for && form_with` via the form builder.
 Look here for example in Rails guide - https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
 
 NB: more to come on this....
-
 
 ## Faking a Rails model
 
@@ -266,7 +264,6 @@ end
 ```
 
 Why would you want to do this? When you are playing with things say with a `form_with` where you want to access a model and its attributes but you don't want to create actual ActiveRecord models.
-
 
 ## load_missing_constant': uninitialized constant
 
@@ -287,12 +284,11 @@ module AdminPatternLibrary
 	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:96:in `<module:ViewHelpers>'
 	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:8:in `<module:AdminPatternLibrary>'
 	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:7:in `<main>'
-  ```
+```
 
 `TextInput` not `TexInput`
 
 Doh!!!
-
 
 ## Feature tests using Cucumber
 
@@ -304,21 +300,19 @@ bundle exec rails features/some_feature_test.feature:3 BROWSER=chrome
 
 Maybe set up specifically for work.
 
-
 ## `content_tag`
 
 Suggestion to colleague who was using `content_tag`.
 
->I was just reminding myself what `content_tag` does and for Rails 5 it has this in the documentation - `Note: this is legacy syntax, see tag method description for details.`
+> I was just reminding myself what `content_tag` does and for Rails 5 it has this in the documentation - `Note: this is legacy syntax, see tag method description for details.`
 >
->https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-content_tag - old
->https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-tag - new
+> https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-content_tag - old
+> https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-tag - new
 >
->And found this https://blog.bigbinary.com/2017/08/23/new-syntax-for-tag-helpers-in-rails-5-1.html
->And it is being used in our main app at work
+> And found this https://blog.bigbinary.com/2017/08/23/new-syntax-for-tag-helpers-in-rails-5-1.html
+> And it is being used in our main app at work
 >
->Think we should use the preferred option - `tag.<tag name>(optional content, options)`
-
+> Think we should use the preferred option - `tag.<tag name>(optional content, options)`
 
 ## Ruby variables - class, instance etc
 
