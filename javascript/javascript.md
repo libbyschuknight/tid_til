@@ -108,7 +108,7 @@ e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `v
 ### IIFE (Immediately Invoked Function Expression)
 
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
-https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+<https://developer.mozilla.org/en-US/docs/Glossary/IIFE>
 
 [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
 
@@ -275,9 +275,13 @@ update them:
 
 And then `npm outdated` should not return anything.
 
+#### nvm
+
+[NVM, the Easiest Way to Switch Node.js Environments on Your Machine in a Flash](https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b)
+
 ### jQuery
 
-https://css-tricks.com/snippets/jquery/
+<https://css-tricks.com/snippets/jquery/>
 
 [Smooth Scrolling](https://css-tricks.com/snippets/jquery/smooth-scrolling/)
 
@@ -345,18 +349,18 @@ Webpack is a build / bundle tool.
 > Concept #1 — The core dichotomy of build tools is “installing vs. doing”
 > Build tools do two things:
 >
-> 1.  Install things
-> 2.  Do things
-
+>1. Install things
+>2. Do things
+>
 > Concept #4 — The lines between “install” and “do” can be blurry
-
+>
 > Concept #6 — Build tools have a steep learning curve, so only learn what’s necessary
 
 [Choosing a JavaScript build tool: to config or not config](https://dev.to/netlify/choosing-a-javascript-build-tool-to-config-or-not-config-2ia8)
 
 ### What is webpack?
 
-https://webpack.js.org/concepts/
+<https://webpack.js.org/concepts/>
 
 > At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles.
 
@@ -369,7 +373,7 @@ https://webpack.js.org/concepts/
 [What is Webpack and why should I care? [Part 1][Introduction]](https://medium.com/the-self-taught-programmer/what-is-webpack-and-why-should-i-care-part-1-introduction-ca4da7d0d8dc)
 
 > Webpack is a module builder. This is important to understand, as Webpack does not run during your page, it runs during your development.
-
+>
 > Webpack is a tool wherein you use a configuration to explain to the builder how to load specific things. You describe to Webpack how to load \*.js files, or how it should look at .scss files, etc. Then, when you run it, it goes into your entry point and walks up and down your program and figures out exactly what it needs, in what order it needs it, and what each piece depends on. It will then create bundles — as few as possible, as optimized as possible, that you include as the scripts in your application.
 
 [An intro to Webpack: what it is and how to use it](https://medium.freecodecamp.org/an-intro-to-webpack-what-it-is-and-how-to-use-it-8304ecdc3c60)
@@ -391,7 +395,7 @@ First this
 
 ## Tree Shaking
 
-https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking
+<https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking>
 
 [What is tree shaking? 🌲](https://medium.com/@netxm/what-is-tree-shaking-de7c6be5cadd)
 
@@ -399,4 +403,4 @@ https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking
 
 [What is tree shaking and how does it work?](https://bitsofco.de/what-is-tree-shaking/)
 
-https://webpack.js.org/guides/tree-shaking/
+<https://webpack.js.org/guides/tree-shaking/>

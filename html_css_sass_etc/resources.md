@@ -30,6 +30,8 @@
 > `reset`: The button resets all the controls to their initial values.
 > `button`: The button has no default behavior. It can have client-side scripts associated with the element's events, which are >triggered when the events occur.
 
+(There is no `cancel` type.)
+
 [Using the aria-label attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
 ## CSS

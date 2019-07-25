@@ -22,6 +22,7 @@
 [Oh shit, git!](https://ohshitgit.com/)
 
 #### git commits
+
 [DEVELOPER TIP: KEEP YOUR COMMITS “ATOMIC”](https://www.freshconsulting.com/atomic-commits/)
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
@@ -41,12 +42,10 @@
   >- Wrap the body at 72 characters
   >- Use the body to explain what and why vs. how
 
-
 ## Setting up git with gitlab
 
 Good instructions on gitlab to follow. Had issues with ssh-keys and it was asking me each time I pushed for my passphrase.
-To solve this did ` ssh-add -K`
-
+To solve this did `ssh-add -K`
 
 ## Using gitlab (work) and github (personal)
 
@@ -103,9 +102,10 @@ if you want to add files or changes without editing the message
 git commit --amend --no-edit
 ```
 
-
 ## git fetch
+
 Rather than pulling down a branch, which does a `fetch` and a `merge`, I have stared doing:
+
 ```bash
 git fetch origin <branch_name>
 
@@ -294,10 +294,12 @@ I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and `zsh` instead o
 I use the [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet) as well, which has [a lot of `git`](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) aliases set up.
 
 One that I have just found useful is:
+
 ```bash
 #alias     #command
-glg	      git log --stat --max-count = 10
+glg        git log --stat --max-count = 10
 ```
+
 This shows the files that have been committed, which can be useful if the commit message hasn't been written that well!
 
 Show the diff on commits:
@@ -434,7 +436,7 @@ I want to remove the `WIP`'s at the start of my 2 commit messages. To do this I 
 `git rebase -i sha123456`
 
 This will then give me the option to say what I want to do with each commit - in this case just wanted to reword the commit messages.
-Have a look at https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase for what to do next.
+Have a look at <https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase> for what to do next.
 
 
 ### git reset
@@ -449,7 +451,8 @@ git reset --hard origin/uat
 ```
 
 #### git reset --soft HEAD^
-http://stackoverflow.com/questions/12481639/remove-files-from-git-commit
+
+<http://stackoverflow.com/questions/12481639/remove-files-from-git-commit>
 
 When you have made a commit and then realise there are heaps of files in it that shouldn't be!
 
@@ -465,15 +468,28 @@ Now commit again, you can even re-use the same commit message:
 
 `git commit -c ORIG_HEAD`
 
+#### git reset --soft HEAD~1 - remove the last commit
+
+[How can I undo the last commit?](https://www.git-tower.com/learn/git/faq/undo-last-commit)
+
+>In these cases, the "reset" command is your best friend:
+>
+>`$ git reset --soft HEAD~1`
+>
+>If you don't want to keep these changes, simply use the --hard flag. Be sure to only do this when you're sure you don't need these changes anymore.
+>
+>`$ git reset --hard HEAD~1`
+
 
 ## Find most recent branches
+
 Can’t remember what branches are most recently active in a repo without using Github?
 Use `git branch --sort=-authordate`
 and the most recently changed branches will be listed at the top.
 Thanks @ootovak
 
-
 ## Adding a remote to a local repo
+
 Needed to do this when I created a Rails app but then realised I hadn't used postgres or taken out test unit and turbolinks. I had already created a github repo so there was already a remote.
 I deleted my first repo locally and then create new app, then added the remote.
 
@@ -481,14 +497,14 @@ I deleted my first repo locally and then create new app, then added the remote.
 
 `git remote -v` # this shows you the remotes e.g.
 
-```
+```bash
 git remote -v
-origin	git@github.com:libbyschuknight/tid_til.git (fetch)
-origin	git@github.com:libbyschuknight/tid_til.git (push)
+origin git@github.com:libbyschuknight/tid_til.git (fetch)
+origin git@github.com:libbyschuknight/tid_til.git (push)
 ```
-
 
 ## Go back to previous branch - quickly
+
 ```bash
 git checkout -
 ```
@@ -513,7 +529,6 @@ enter password and then:
 
 Hoping this has fixed it!
 
-
 ## `git cherry-pick`
 
 Make sure you are on the branch you want to add the commit to:
@@ -526,21 +541,21 @@ git cherry-pick <commit-hash>
 
 Had cloned straight from the Ruby NZ www repo (dir: branch) and made changes in a branch:
 
-` ~/Projects/open_source/www: resolve-register_of_ruby_companies`
+`~/Projects/open_source/www: resolve-register_of_ruby_companies`
 
 Found out (before I tried to push anything) I should have forked the repo, added a branch to my fork and then made a pull request.
 
 So, I needed to be able to copy the commits from
 
-` ~/Projects/open_source/www: resolve-register_of_ruby_companies`
+`~/Projects/open_source/www: resolve-register_of_ruby_companies`
 
 to the forked repo I had made:
 
-` ~/Projects/open_source/forked/www: gh-pages`
+`~/Projects/open_source/forked/www: gh-pages`
 
 Found this [~/Git cherry-pick from another repository](http://bendetat.com/git-cherry-pick-from-another-repository.html)
 
-First things first is making the ` ~/Projects/open_source/www: resolve-register_of_ruby_companies` a local remote in the ` ~/Projects/open_source/forked/www: gh-pages`.
+First things first is making the `~/Projects/open_source/www: resolve-register_of_ruby_companies` a local remote in the `~/Projects/open_source/forked/www: gh-pages`.
 
 ```bash
 ~/Projects/open_source/forked/www: gh-pages                      # working copy
@@ -555,10 +570,10 @@ First things first is making the ` ~/Projects/open_source/www: resolve-register_
 ```bash
 $ git remote -v
 
-localcopy	../../www (fetch)
-localcopy	../../www (push)
-origin	git@github.com:libbyschuknight/www.git (fetch)
-origin	git@github.com:libbyschuknight/www.git (push)
+localcopy ../../www (fetch)
+localcopy ../../www (push)
+origin git@github.com:libbyschuknight/www.git (fetch)
+origin git@github.com:libbyschuknight/www.git (push)
 ```
 
 Then doing `git fetch localcopy` gave this:
@@ -575,7 +590,6 @@ From ../../www
  ```
 
 Then was able to `cherry-pick` which commits I wanted to move from one to the other.
-
 
 ## `git config`
 

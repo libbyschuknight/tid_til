@@ -289,10 +289,9 @@ end
 
 I was pleased I was able to use my knowledge (recent understanding) of `text_field` and figure out what was happening and fix it. I think it was due to the work we had done previously (mentioned above) around  the `label` method.
 
-https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-text_field
+<https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-text_field>
 
-https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label
-
+<https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label>
 
 ## [Storybook](https://storybook.js.org/)
 
@@ -307,9 +306,7 @@ See https://github.com/facebook/react-devtools/issues/366#issuecomment-212749794
 
 ![JS-context](JS-context-storybook.png)
 
-
-
-## Spelling AGAIN!!!
+## Spelling AGAIN
 
 Have been adding a stateless React component to our pattern library and had this set up for the `proptypes`:
 
@@ -355,7 +352,7 @@ My brain can't cope with words that look similar in the same domain!!
 
 ## [Difference between <input type='button' /> and <input type='submit' />](https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit)
 
-https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit/290221#290221
+<https://stackoverflow.com/questions/290215/difference-between-input-type-button-and-input-type-submit/290221#290221>
 
 >`<input type="button" />` buttons will not submit a form - they don't do anything by default. They're generally used in conjunction with >JavaScript as part of an AJAX application.
 >
@@ -364,3 +361,123 @@ https://stackoverflow.com/questions/290215/difference-between-input-type-button-
 ## Top tip from colleague
 
 If using `PropTypes`, ALWAYS define them straight away! Otherwise you get errors and I did not understand them!
+
+## React - prod mode vs dev mode
+
+Was adding a `Button` component to a page and went to look at it with the React Dev Tools and the output was:
+
+![React g tag in prod](react-g-prod.png)
+
+I was expecting to see something starting with `<Button>`
+
+But I needed to change the way that the Rails app was serving the assets. Currently it was serving the assets in prod mode. To change it to dev mode, I needed to update the `app/assets/javascripts/admin.js` file to have `//= require admin_pattern_library.dev` instead of `//= require admin_pattern_library`.
+
+This then means you see this:
+
+![React Button tag dev](react-button-dev.png)
+
+## Error running `npm run compile:sass`
+
+I have been working through a Udemy course - [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/advanced-css-and-sass), which uses Node.
+
+One command that is run to make it so that when you make changes to the css/scss, those changes are automatically picked up is `npm run compile:sass`.
+
+As I have worked on this at work and at home, on two different computers with different set ups, and recently at work I have been using React etc, there seemed to have been some issues. So when I went to run `npm run compile:sass` for the latest hack days I got this error:
+
+```bash
+/Users/libby/own/natours-site/node_modules/node-sass/lib/binding.js:15
+      throw new Error(errors.missingBinary());
+      ^
+
+Error: Missing binding /Users/libby/own/natours-site/node_modules/node-sass/vendor/darwin-x64-64/binding.node
+Node Sass could not find a binding for your current environment: OS X 64-bit with Node.js 10.x
+
+Found bindings for the following environments:
+  - OS X 64-bit with Node.js 11.x
+  - OS X 64-bit with Unsupported runtime (72)
+
+This usually happens because your environment has changed since running `npm install`.
+Run `npm rebuild node-sass` to download the binding for your current environment.
+    at module.exports (/Users/libby/own/natours-site/node_modules/node-sass/lib/binding.js:15:13)
+    at Object.<anonymous> (/Users/libby/own/natours-site/node_modules/node-sass/lib/index.js:14:35)
+    at Module._compile (internal/modules/cjs/loader.js:701:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)
+    at Module.load (internal/modules/cjs/loader.js:600:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:531:3)
+    at Module.require (internal/modules/cjs/loader.js:637:17)
+    at require (internal/modules/cjs/helpers.js:22:18)
+    at Object.<anonymous> (/Users/libby/own/natours-site/node_modules/node-sass/bin/node-sass:10:10)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! natours-site@1.0.0 compile:sass: `node-sass sass/main.scss css/style.css -w`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the natours-site@1.0.0 compile:sass script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/libby/.npm/_logs/2019-07-24T20_53_46_659Z-debug.log
+```
+
+I googled a bit and then ran this command `npm rebuild node-sass`, which is outlined in the error output (didn't notice that yesterday, READ THE ERRORS CAREFULLY!!).
+But that errored out as well.
+
+Went home, tried it on home laptop, worked fine. Took note of the versions of everything:
+
+```bash
+$ nvm --version
+> 0.34.0
+
+$ node -v
+> v10.15.3
+
+$ npm -v
+>6.4.1
+```
+
+At work I have:
+
+```bash
+$ node -v
+> v12.4.0
+
+$ nvm --version
+> 0.34.0
+
+$ npm  -v
+>6.9.0
+```
+
+So I was like, okay need to have the same node version (remembering to change back later!!). Did this stuff:
+
+```bash
+$ nvm ls
+->      v12.4.0
+         system
+default -> node (-> v12.4.0)
+node -> stable (-> v12.4.0) (default)
+stable -> 12.4 (-> v12.4.0) (default)
+...
+
+$ nvm install 10.15.3
+Downloading and installing node v10.15.3...
+Downloading https://nodejs.org/dist/v10.15.3/node-v10.15.3-darwin-x64.tar.xz...
+######################################################################## 100.0%
+Computing checksum with shasum -a 256
+Checksums matched!
+Now using node v10.15.3 (npm v6.4.1)
+
+
+$  nvm ls
+->     v10.15.3 # this is showing what version of Node is being use, also said it just above when install the version
+        v12.4.0
+         system
+default -> node (-> v12.4.0)
+node -> stable (-> v12.4.0) (default)
+stable -> 12.4 (-> v12.4.0) (default)
+...
+```
+
+Did a `npm install`, then `npm run compile:sass` and got the same error. In the error message is gives this command to run `npm rebuild node-sass`. Ran that, which ran fine. Did `npm run compile:sass` again and all is good in the world!!
+
