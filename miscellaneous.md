@@ -36,19 +36,17 @@ undefined method 'user' for nil:NilClass
 ```
 Funny that it continues to report on the oringial error even though it has been fixed!!
 
-
 ## Sites for RegEx
 [Rubular - a Ruby regular expression editor](http://rubular.com/)
 [RegExrv2.1](http://regexr.com/)
 
 `?` needs to be escaped in this case:
+
 ```ruby
 expect(page).to have_content(/Oh no! Did you enter something incorrectly\? If not, let a computer friend know there is a problem./)
 ```
+
 otherwise the test does not pass! Even though it looks like it should.
-
-
-
 
 ### Mac Keyboard Shortcuts
 Control+Shift+Eject - sleep / lock (external keyboard)
@@ -57,12 +55,10 @@ Control+Shift+Power
 control + shift + space bar - for switching between keyboard languages
 control + space bar - to bring up list and select with arrow keys
 
-
 ### Some markdown stuff
 
 Image
 `![alt_tag](images/<name of image>.png)`
-
 
 ## Bug hunting
 
