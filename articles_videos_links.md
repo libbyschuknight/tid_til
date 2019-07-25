@@ -96,9 +96,9 @@
 
 Sarah Mei: Diversity of Thought tweets:
 
-- https://twitter.com/sarahmei/status/842036465324380160
-- https://twitter.com/sarahmei/status/980587316199567360
-- https://twitter.com/sarahmei/status/920311083264491520
+- <https://twitter.com/sarahmei/status/842036465324380160>
+- <https://twitter.com/sarahmei/status/980587316199567360>
+- <https://twitter.com/sarahmei/status/920311083264491520>
 
 [FOR WOMEN JOB SEEKERS, NETWORKING LIKE A MAN ISN'T ENOUGH](https://www.wired.com/story/women-leadership-job-networking/)
 
@@ -134,7 +134,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 [On being overwhelmed with our fast paced industry](https://wesbos.com/overwhelmed-with-web-development/)
 
-## Stuff
+## More Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
 
@@ -147,6 +147,18 @@ Sarah Mei: Diversity of Thought tweets:
 [What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
 
 [awesome-aotearoa-tech](https://github.com/radsy/awesome-aotearoa-tech)
+
+### Phone numbers and addresses
+
+[Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
+
+- has phone numbers and addresses
+
+<https://github.com/google/libphonenumber>
+
+[AddressValidationMetadata](https://github.com/google/libaddressinput/wiki/AddressValidationMetadata)
+
+[Handling Addresses from All Around the World](https://engineering.shopify.com/blogs/engineering/handling-addresses-from-all-around-the-world)
 
 ### Computer Science
 
