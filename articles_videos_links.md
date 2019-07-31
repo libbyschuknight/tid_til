@@ -58,7 +58,7 @@
 
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
-#### Why personality tests can be useless / harmful in the workplace
+### Why personality tests can be useless / harmful in the workplace
 
 [Goodbye to MBTI, the Fad That Won’t Die](https://www.psychologytoday.com/us/blog/give-and-take/201309/goodbye-mbti-the-fad-won-t-die)
 
@@ -74,9 +74,11 @@
 
 [Facilitating Introverts: Eliciting the Gifts of the Quiet Ones](http://www.janicethomson.net/facilitating-introverts-eliciting-the-gifts-of-the-quiet-ones/)
 
-#### Diversity & Inclusion
+### Diversity & Inclusion
 
 [How do you define diversity](https://www.youtube.com/watch?v=a4YrQD0JpN0)
+
+[8 Things Diversity&Inclusion Leaders Need Everyone to Know](https://medium.com/@emilybest/8-things-d-i-leaders-need-everyone-to-know-65a0a7674867)
 
 [Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)
 
@@ -218,6 +220,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 ### Rails
 
+[Understanding the basics of Ruby on Rails: HTTP, MVC, and Routes](https://www.freecodecamp.org/news/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a/)
+
 [The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)
 
 [Render and Redirect- Which to Use?](https://medium.com/@kerenlerner/render-and-redirect-which-to-use-106ff653ee9a)
@@ -244,7 +248,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 <!-- TODO: add link to javascript.md page for using webpack in rails -->
 
-##### Time
+#### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
 

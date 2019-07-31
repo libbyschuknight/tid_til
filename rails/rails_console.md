@@ -79,6 +79,8 @@ console / unix command
 ```bash
 rake routes | grep user
 
+(use rails now instead of rake)
+
 # search of my minishop project
 
 user_reads        GET    /users/:user_id/reads(.:format)             reads#index

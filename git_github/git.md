@@ -17,7 +17,7 @@
 
 [Markdown Guide](https://www.markdownguide.org/)
 
-  - [Extended Syntax](https://www.markdownguide.org/extended-syntax)
+- [Extended Syntax](https://www.markdownguide.org/extended-syntax)
 
 [Oh shit, git!](https://ohshitgit.com/)
 
@@ -32,8 +32,9 @@
 [Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
 
   >**The seven rules of a great git commit message**
-
+  >
   >Keep in mind: This has all been said before.
+  >
   >- Separate subject from body with a blank line
   >- Limit the subject line to 50 characters
   >- Capitalise the subject line
@@ -438,8 +439,8 @@ I want to remove the `WIP`'s at the start of my 2 commit messages. To do this I 
 This will then give me the option to say what I want to do with each commit - in this case just wanted to reword the commit messages.
 Have a look at <https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase> for what to do next.
 
-
 ### git reset
+
 When have mucked up a merge or something badly and need to reset the branch. Or in this case want to reset the uat branch locally to what is on github.
 
 ```bash
@@ -658,9 +659,9 @@ https://git-scm.com/docs/git-rerere
 
 ## `git prune`
 
-https://git-scm.com/docs/git-prune
+<https://git-scm.com/docs/git-prune>
 
-https://www.atlassian.com/git/tutorials/git-prune
+<https://www.atlassian.com/git/tutorials/git-prune>
 
 >The git prune command is an internal housekeeping utility that cleans up unreachable or "orphaned" Git objects. Unreachable objects are those that are inaccessible by any refs. Any commit that cannot be accessed through a branch or tag is considered unreachable.
 

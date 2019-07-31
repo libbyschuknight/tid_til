@@ -481,3 +481,40 @@ stable -> 12.4 (-> v12.4.0) (default)
 
 Did a `npm install`, then `npm run compile:sass` and got the same error. In the error message is gives this command to run `npm rebuild node-sass`. Ran that, which ran fine. Did `npm run compile:sass` again and all is good in the world!!
 
+## Git commit messages
+
+In a code review by colleague, where I had added this method on a controller:
+
+```ruby
+def override_legacy_layout
+  "admin" if params[:action] == "pricing_group"
+end
+```
+
+They left this comment:
+
+>Would you please add a comment or commit message describing this change? I couldn't understand it from code until I ran it.
+
+All I had put in the commit message was `Fix page layout and alert`. Thinking on this when I read the above comment, I think because I  know that the method `override_legacy_layout` is used in a number of places, I guess I kind of assumed everyone would know it or be able to figure it out pretty quickly. Hence, didn't elaborate in my commit message. But it makes utter sense for there to be clearer commit message. I don't like the idea of adding a comment to the code, as that is just not the Ruby way!
+
+## Look at logs and server output
+
+Been doing some work on the Rails app at work and trying to figure out how some react/js stuff is working / what is happening in what we call the lifecycle page.
+
+This is a reminder for me to look at and read the development server logs, which starts of with:
+
+```bash
+rails server
+=> Booting Puma
+=> Rails 5.2.2.1 application starting in development
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.1 (ruby 2.4.5-p335), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+[67ce7145-6eb5-440e-bae2-c3501a4e6ab5] Started GET "/admin/lifecycle/users/12345/customers/98765" for ::1 at 2019-07-31 08:44:27 +1200
+```
+
+So, the first thing it is doing is get a customer. There is a lot more output and I am interested in urls that have `.json` on the end, as there are `ajax` calls being made to get data from other endpoints and returning `json`.
