@@ -35,6 +35,22 @@
 
 [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
+### Useful Links (from Thomas Winter)
+
+#### Useful Resources
+
+- [CSS tricks](https://css-tricks.com/)
+- [BEM methodology](https://en.bem.info/methodology/css/)
+- [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+- [Smacss](https://smacss.com/)
+
+##### People to follow
+
+- [Brad Frost](http://bradfrost.com/)
+- [Chris Coyier](https://chriscoyier.net/)
+- [Jonathan Snook](https://snook.ca/)
+- [Harry Roberts](https://csswizardry.com/)
+
 ## Layout
 
 [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) (CSS Grid)
