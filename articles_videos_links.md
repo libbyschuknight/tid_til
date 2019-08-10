@@ -138,6 +138,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [On being overwhelmed with our fast paced industry](https://wesbos.com/overwhelmed-with-web-development/)
 
+[Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
+
 ## Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)

@@ -72,12 +72,12 @@ https://stackoverflow.com/questions/9033797/how-to-specify-conditions-on-joined-
 Consumer.active.activated.joins(:customer => :brand).where(:brands => {:shopper_enabled => true }).where("COALESCE(last_annual_summary_date, start_date) <= ?", Date.today - CUTOFF).to_sql
 ```
 
-```
+```sql
 SELECT `consumers`.* FROM `consumers` INNER JOIN `customers` ON `customers`.`id` = `consumers`.`customer_id` INNER JOIN `brands` ON `brands`.`id` = `customers`.`brand_id` WHERE (`consumers`.`start_date` <= '2018-04-13' AND (`consumers`.`end_date` IS null OR `consumers`.`end_date` >= '2018-04-13')) AND (`consumers`.`go_shopping_notified_at` IS NOT NULL) AND `brands`.`shopper_enabled` = 1 AND (COALESCE(last_annual_summary_date, start_date) <= '2017-04-27')
 ```
 
-
 ## Logic in a couple of places
+
 In code review I had:
 
 ```ruby
@@ -115,7 +115,6 @@ end
 @end_date = params[:end_date]
 ...
 ```
-
 
 ### Finding records
 
@@ -161,7 +160,7 @@ Consumer.active.activated.where("start_date <= ?", Date.today).where(utility_typ
 
 Was trying to get a local working through rendering a partial, was doing this:
 
-```
+```html
 <%= render => "customer_stored_mailer/shared/header", :locals => { :title => "Annual Account Summary" } % >
 ```
 
@@ -169,14 +168,13 @@ Thought it wasn't working because of there being a `content_for` block being inv
 
 Then tried it with the `partial` wording
 
-```
+```html
 <%= render :partial => "customer_stored_mailer/shared/header", :locals => { :title => "Annual Account Summary" } %>
 ```
 
 And it worked. And had a look at what I had added in here the other week:
 
-# view stuff / render - add link
-
+## view stuff / render - add link
 
 ### Rails Assets Precompile
 
@@ -184,11 +182,11 @@ Colleague was swapping images out for a separate market in a big app, but the pa
 
 [4.1 Precompiling Assets](http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets)
 
+## Getting db stuff
 
-# Getting db stuff
 The way Flux gets db's created locally uses ssh things. This came up:
 
-```
+```bash
 Enter passphrase for key '/Users/libby/.ssh/id_rsa':
 
 # entered password and got
