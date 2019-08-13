@@ -1,8 +1,9 @@
 # Useful Stuff from other Devs
 
-
 ## Samson Ootovak (Flick Electric)
-#### `.call`
+
+### `.call`
+
 Hay team just wanted to share something that I didn’t know till recently. In Ruby `.call` is a bit of a special method you can define as normal but you can call it two different ways. The first way is the way you would expect.
 
 ```ruby

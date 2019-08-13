@@ -172,9 +172,11 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
 
-#### Resources
+#### Computer Hardware Stuff
 
-##### Younger
+[How Many Cores Does My CPU Have? A Guide For All OS](https://techwiser.com/how-many-cores-does-my-cpu-have/)
+
+#### Younger
 
 [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
 

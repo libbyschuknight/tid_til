@@ -10,8 +10,6 @@
 
 [Rails Trace](https://rails-trace.chriszetter.com/)
 
-
-
 ## Upgrade
 
 <http://guides.rubyonrails.org/upgrading_ruby_on_rails.html>
@@ -40,8 +38,8 @@ Bundler could not find compatible versions for gem "railties":
 
     web-console (~> 2.0) was resolved to 2.3.0, which depends on
       railties (>= 4.0)
-
 ```
+
 So to do it to run the `bundle update` command and add all the gems listed:
 
 `bundle update rails dotenv-rails jquery-rails rspec-rails sass-rails web-console`
@@ -464,8 +462,8 @@ TODO: look up some docs on this
 Provides a way to track changes in your object in the same way as Active Record does.
 <http://api.rubyonrails.org/classes/ActiveModel/Dirty.html>
 
-
 #### Rails app using Sequel
+
 App has a `structure.sql` file instead of a `schema.rb` file and can't do `rake db:create`.
 So to get clean database need to do:
 
@@ -475,16 +473,18 @@ createdb service_development
 rake db:migrate
 rake db:seed
 ```
+
 To get load the `structure.sql` run `rake db:structure:load`
 
-
 #### has_secure_password
-http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html
+
+<http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html>
 
 >has_secure_password(options = {}) Link
-Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
-
+>Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
+>
 >The following validations are added automatically:
+>
 >- Password must be present on creation
 >- Password length should be less than or equal to 72 characters
 >- Confirmation of password (using a password_confirmation attribute)
@@ -494,27 +494,26 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 - add `bcrypt` gem to gemfile
 - add `password_digest` column/attribute to users table
 
-
 #### Sessions
 
 [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
+
 >2.1 What are Sessions?
 >HTTP is a stateless protocol. Sessions make it stateful.
-
+>
 >Most applications need to keep track of certain state of a particular user. This could be the contents of a shopping basket or the user id of the currently logged in user. Without the idea of sessions, the user would have to identify, and probably authenticate, on every request. Rails will create a new session automatically if a new user accesses the application. It will load an existing session if the user has already used the application.
 
 [Session](http://guides.rubyonrails.org/action_controller_overview.html#session)
 >Your application has a session for each user in which you can store small amounts of data that will be persisted between requests. The session is only available in the controller and the view and can use one of a number of different storage mechanisms:
-
+>
 >- ActionDispatch::Session::CookieStore - Stores everything on the client.
 >- ActionDispatch::Session::CacheStore - Stores the data in the Rails cache.
 >- ActionDispatch::Session::ActiveRecordStore - Stores the data in a database using Active Record. (require activerecord-session_store gem).
 >- ActionDispatch::Session::MemCacheStore - Stores the data in a memcached cluster (this is a legacy implementation; consider using CacheStore instead).
-
+>
 >All session stores use a cookie to store a unique ID for each session (you must use a cookie, Rails will not allow you to pass the session ID in the URL as this is less secure).
 
 [How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
-
 
 #### Helper Methods
 
@@ -528,10 +527,9 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 
 Add debug to view:
 
-```
+```ruby
 <%= debug(params) if Rails.env.development? %>
 ```
-
 
 #### Partials Locals and not Instance Variables (ivars)
 
@@ -541,24 +539,23 @@ Add debug to view:
 >Partials that use local variables are more maintainable
 >Partials that use local variables are easier to debug
 
-
 #### Routes
 
-http://localhost:3000/rails/info/routes - will show routes on web as `rails routes` does in the terminal
+<http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
 
+##### Exploring Routes (optional) - from RailsBridge <http://docs.railsbridge.org/intro-to-rails/setting_the_default_page>
 
-###### Exploring Routes (optional) - from RailsBridge http://docs.railsbridge.org/intro-to-rails/setting_the_default_page
 Now you can have a look at the paths that are available in your app. Let's try looking at one of the topics routes we just generated. Open up your Rails console and play:
 
-```
+```bash
 $ rails console
 >> app.topics_path
 => "/topics"
 >> app.topics_url
 => "http://www.example.com/topics"
 ```
-`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
 
+`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
 
 ###### link_to things
 
@@ -587,15 +584,13 @@ Came across the `link_to_remote`, this is deprecated, can do something like this
 
 This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.
 
-
 #### Generation of things in Rails - model, controller, resource, scaffold, migration
 
-See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for differences
+See <http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/> for differences
 
 `rails g scaffold Invoice invoice_date:date_time price_per_kwh:decimal final_price:decimal total_kwh:decimal user:belongs_to`
 
 `user:belongs_to` can also be `user:references` and adds a `belongs_to` column
-
 
 #### Rails methods
 
@@ -604,22 +599,25 @@ See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for dif
 Question in slack:
 
 >hey I saw this line
->```
+>
+>```ruby
 >delegate :name, :email, :account_number, :to => :customer, :prefix => true
 >```
+>
 >in `/Users/nandahibatullah/powershop/app/models/consumer.rb` and was wondering what `:prefix` does? (edited)
 
 reply:
 
 >creates `customer_email` on Consumer
-
->https://apidock.com/rails/Module/delegate
-
+>
+><https://apidock.com/rails/Module/delegate>
+>
 >:prefix - Prefixes the new method with the target name or a custom prefix
 
-http://api.rubyonrails.org/classes/Module.html#method-i-delegate
+<http://api.rubyonrails.org/classes/Module.html#method-i-delegate>
 
 ##### [ordinalize](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-ordinalize)
+
 Makes a `1` into `1st`
 
 ## Links
@@ -628,23 +626,26 @@ Makes a `1` into `1st`
 [A Quick Peek at Ruby: 'Include' vs. 'Require'](https://web.archive.org/web/20150405161656/http://ruby.about.com/b/2008/10/23/a-quick-peek-at-ruby-include-vs-require.htm)
 [Ruby Methods: differences between load, require, include and extend in Ruby.](https://prograils.com/posts/ruby-methods-differences-load-require-include-extend)
 
-
 ## assets
 
-https://guides.rubyonrails.org/command_line.html#assets
+<https://guides.rubyonrails.org/command_line.html#assets>
 
-
-https://guides.rubyonrails.org/command_line.html#bin-rails
+<https://guides.rubyonrails.org/command_line.html#bin-rails>
 
 ```bash
 bin/rails assets:precompile
 
 bin/rails assets:clean
 
-bin/rails assets:clobber
+bin/rails assets:clobber # use this one!! When working with the APL at work.
+
+# ran `bundle exec rails -T (couldn't get the -h flag working)
+rails assets:clean[keep]    # Remove old compiled assets
+rails assets:clobber        # Remove compiled assets -> # use this one!! When working with the APL at work.
+rails assets:precompile     # Compile all the assets named in config.assets.precompile
 ```
 
-https://makandracards.com/makandra/29533-asset-pipeline-basics
+<https://makandracards.com/makandra/29533-asset-pipeline-basics>
 
 >Debugging
 >One step in debugging the asset pipeline is to check the precompilation results. You can do this locally using the following >commands:
