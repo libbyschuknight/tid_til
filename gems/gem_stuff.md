@@ -66,28 +66,42 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at 3768438... Tag version 4.4.0
 ```
+
 Make a new branch so any changes you make can be kept:
+
 ```bash
 git branch -d feature/participant_roles_facade
 ```
-Apply anything you have stashed - `git stash apply`
 
+Apply anything you have stashed - `git stash apply`
 
 ## [Bundler](https://bundler.io/)
 
+`bundle _1.17.1_ install` this will run bundle for the version set.
+
+[Run specific version of bundler](https://makandracards.com/makandra/9741-run-specific-version-of-bundler) - this site is old but...
+
+<https://stackoverflow.com/questions/12092928/how-to-bundle-install-when-your-gemfile-requires-an-older-version-of-bundler>
+
+[How to install and bundle your rails application with a specific bundler version](https://www.aloucaslabs.com/miniposts/how-to-install-and-bundle-your-rails-application-with-a-specific-bundler-version)
+
 `bundle open <gem>`
-http://bundler.io/v1.10/bundle_open.html
+
+<http://bundler.io/v1.10/bundle_open.html>
+
 >Opens the source directory of the given bundled gem
 
 `bundle pristine <gem>`
-https://bundler.io/v1.15/man/bundle-pristine.1.html
+
+<https://bundler.io/v1.15/man/bundle-pristine.1.html>
+
 >Restores installed gems to their pristine condition
 
-
 ## To see what versions of gems have
+
 e.g. to see what different versions of rails you have locally
 
-```
+```bash
 gem list
 ...
 rails (5.0.1, 5.0.0.1, 4.2.7.1, 4.2.6, 4.2.5.1, 4.2.5, 4.2.3, 4.2.1, 4.2.0, 3.2.15)

@@ -2,6 +2,18 @@
 
 ## Culture / People / Team
 
+[He Tangata](http://www.hetangata.com/what-he-tangata-about)
+
+>***He aha te mea nui o te ao***
+>
+>What is the most important thing in the world?
+>
+>***He tangata, he tangata, he tangata***
+>
+>It is the people, it is the people, it is the people
+>
+>Māori proverb
+
 [The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
 
 [How to Build a High Velocity Development Team](https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021)
@@ -20,9 +32,9 @@
 
 [Manager handoffs](http://larahogan.me/blog/manager-handoffs/)
 
-[Get your macron on: A guide to writing Māori the right way](https://thespinoff.co.nz/atea/13-10-2017/get-your-macron-on-a-guide-to-writing-maori-the-right-way/?utm_source=The+Spinoff&utm_medium=CPE&utm_campaign=Get+your+macron+on%3A+A+guide+to+writing+M%C4%81ori+the+right+way)
+[Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk)
 
-[Te Aka Māori-English](http://maoridictionary.co.nz/)
+
 
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
@@ -139,6 +151,10 @@ Sarah Mei: Diversity of Thought tweets:
 [On being overwhelmed with our fast paced industry](https://wesbos.com/overwhelmed-with-web-development/)
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
+
+## Working Remotely
+
+[Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)
 
 ## Stuff
 
