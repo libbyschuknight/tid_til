@@ -1,7 +1,8 @@
 # Git
 
-### Useful Resources
-[Getting Started](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - have come across this again and again and it has always been useful.
+## Useful Resources
+
+[Getting Started - atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - have come across this again and again and it has always been useful.
 
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
@@ -21,7 +22,7 @@
 
 [Oh shit, git!](https://ohshitgit.com/)
 
-#### git commits
+### git commits
 
 [DEVELOPER TIP: KEEP YOUR COMMITS “ATOMIC”](https://www.freshconsulting.com/atomic-commits/)
 
@@ -55,8 +56,7 @@ Another good article
 
 Good article - [SSH Keys with Multiple GitHub Accounts](https://medium.com/@trionkidnapper/ssh-keys-with-multiple-github-accounts-c67db56f191e)
 
-
-```
+```bash
 ssh-keygen -t rsa -b 4096 -C “your_email@example.com”
 
 eval "$(ssh-agent -s)"
@@ -65,11 +65,12 @@ ssh-add ~/.ssh/id_rsa_github
 
 pbcopy < ~/.ssh/id_rsa_github.pub
 ```
+
 Add key to github
 
 create a ssh config file with
 
-```
+```bash
 Host github.com
 HostName github.com
 PreferredAuthentications publickey
@@ -82,8 +83,7 @@ Hmmm, gitlab doesn't still work, did `ssh-add -A` and reloaded zsh, think it wil
 
 `ssh -T git@github.com`
 
-
-ssh -T git@git.fluxfederation.com
+`ssh -T git@git.fluxfederation.com`
 
 ## Amending a commit
 
@@ -116,12 +116,13 @@ git checkout <branch_name>
 In some cases pulling can cause problems. Will add why when I come across it again!
 
 ## git branch
+
 List branches by committer date instead of alphabetically:
 
 `git branch --sort=-committerdate`
 
-
 ## git clean
+
 Quite often I have found that I have had to get rid of untracked files in git and have discovered that git clean is something that you can use.
 
 ```bash
@@ -130,6 +131,7 @@ git clean -f # actually removes files
 ```
 
 ## git revert / reset
+
 This has been useful when I have be zealot like with merging in master to my branch and then discovering that a change someone else has made gives me problems, like breaking tests. So, I have used git revert to go back to my last commit.
 
 ```bash
@@ -145,6 +147,7 @@ git reset 3333333333 # commit number
 
 git reset --hard master # if want to change branch development to be the same as master (this is if you already have a branch development)
 ```
+
 Which probably wasn't the best option for me and a git revert would have been more appropriate.
 
 Wanted to go back a few commits that had already been pushed up. So reset to commit and then did a force push to branch.
@@ -159,13 +162,13 @@ git push --force origin bugfix/squash_it
 ```
 
 Issue had with local repo:
+
 - did a `git pull branch`, then `git merge master`
 - resolved conflicts that came up
 - some how had one file that had all of its code missing, it was the most recent file
 - to fix did:
     `git pull -f origin branch`
     `git reset --hard origin/branch`
-
 
 ## cancelling a merge that has conflicts - abort
 
@@ -380,7 +383,6 @@ remove the file manually to continue.
 Re-read over the above stack overflow answer and closed terminal window, re-opened and the `git stash apply` worked fine!
 
 Had this again, found same stack overflow question, did this `rm -f .git/index.lock` and it fixed the problem.
-
 
 ### git rebase
 

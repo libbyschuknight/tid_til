@@ -34,8 +34,6 @@
 
 [Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk)
 
-
-
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
 [Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59)
@@ -52,13 +50,11 @@
 
 [Engineering Growth Framework](https://medium.com/s/engineering-growth-framework)
 
-[The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
-
 [Diverse Teams Feel Less Comfortable — and That’s Why They Perform Better](https://hbr.org/2016/09/diverse-teams-feel-less-comfortable-and-thats-why-they-perform-better)
 
-[Letter to a Junior Engineer](https://builttoadapt.io/a-letter-to-a-junior-engineer-edec0e260b87)
+[Atlassian ditches ‘brilliant jerks’ in performance review overhaul](https://www.news.com.au/finance/work/at-work/atlassian-ditches-brilliant-jerks-in-performance-review-overhaul/news-story/82a5e2abba1939f51d68ae81db8f05bd)
 
-[Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
+[Letter to a Junior Engineer](https://builttoadapt.io/a-letter-to-a-junior-engineer-edec0e260b87)
 
 [Gender and sex](http://geekfeminism.wikia.com/wiki/Gender_and_sex)
 
@@ -70,6 +66,16 @@
 
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
+### Privilege
+
+[The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
+
+[Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
+
+[Straight White Male: The Lowest Difficulty Setting There Is](https://whatever.scalzi.com/2012/05/15/straight-white-male-the-lowest-difficulty-setting-there-is/)
+
+[Facts are Cool](http://www.jimchines.com/2012/05/facts-are-cool/)
+
 ### Why personality tests can be useless / harmful in the workplace
 
 [Goodbye to MBTI, the Fad That Won’t Die](https://www.psychologytoday.com/us/blog/give-and-take/201309/goodbye-mbti-the-fad-won-t-die)
@@ -78,7 +84,7 @@
 
 [QUIZ: WHICH DISNEY PRINCESS ARE YOU?](https://ohmy.disney.com/quiz/2014/06/25/quiz-which-disney-princess-are-you/) - a good alternative? 😂
 
-#### Agile and Introverts
+### Agile and Introverts
 
 [Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
 
@@ -110,9 +116,9 @@
 
 Sarah Mei: Diversity of Thought tweets:
 
-- https://twitter.com/sarahmei/status/842036465324380160
-- https://twitter.com/sarahmei/status/980587316199567360
-- https://twitter.com/sarahmei/status/920311083264491520
+- <https://twitter.com/sarahmei/status/842036465324380160>
+- <https://twitter.com/sarahmei/status/980587316199567360>
+- <https://twitter.com/sarahmei/status/920311083264491520>
 
 [FOR WOMEN JOB SEEKERS, NETWORKING LIKE A MAN ISN'T ENOUGH](https://www.wired.com/story/women-leadership-job-networking/)
 
@@ -120,7 +126,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 [No more excuses: Why your attempts to deny the gender pay gap just won’t wash](https://thespinoff.co.nz/society/08-03-2017/no-more-excuses-why-your-attempts-to-deny-the-gender-pay-gap-just-wont-wash/)
 
-#### Spotify model
+### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
 
@@ -152,11 +158,13 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
 
+[Ikigai: The Japanese Secret to a Long and Happy Life Might Just Help You Live a More Fulfilling Life](https://medium.com/thrive-global/ikigai-the-japanese-secret-to-a-long-and-happy-life-might-just-help-you-live-a-more-fulfilling-9871d01992b7)
+
 ## Working Remotely
 
 [Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)
 
-## Stuff
+## Computer Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
 

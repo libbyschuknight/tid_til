@@ -292,6 +292,10 @@ Then the `service_client` was stubbed out and returned a double which to start w
 
 ## Capybara Testing
 
+<https://rubydoc.info/github/teamcapybara/capybara/master>
+
+[Write Reliable, Asynchronous Integration Tests With Capybara](https://thoughtbot.com/blog/write-reliable-asynchronous-integration-tests-with-capybara)
+
 Useful page - has node methods (as in `fill_in`) and session methods (using `page`, `page.body`, `page.save_page`)
 
 [Class: Capybara::Session](http://www.rubydoc.info/github/jnicklas/capybara/Capybara/Session)
