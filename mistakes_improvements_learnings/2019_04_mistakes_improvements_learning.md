@@ -205,7 +205,6 @@ ps is an alias for RETAIL_BRAND=powershop
 
 So, my alias was mucking up the `ps` command
 
-
 ## Runtime and test time
 
 I was getting this error when running a cucumber feature that in the steps uses Page Object Model.

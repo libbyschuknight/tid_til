@@ -1,15 +1,18 @@
 # Rails
 
-https://api.rubyonrails.org/ - Ruby on Rails  - RDOC_MAIN.rdoc
+<https://api.rubyonrails.org/> - Ruby on Rails  - RDOC_MAIN.rdoc
 
 [Ruby on Rails Guides](https://guides.rubyonrails.org/)
 
-[The Rails Style Guide](https://rails.rubystyle.guide/) - https://github.com/rubocop-hq/rails-style-guide
+[The Rails Style Guide](https://rails.rubystyle.guide/) - <https://github.com/rubocop-hq/rails-style-guide>
+
+[Understanding the basics of Ruby on Rails: HTTP, MVC, and Routes](https://www.freecodecamp.org/news/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a/)
 
 [Rails Trace](https://rails-trace.chriszetter.com/)
 
-### Upgrade
-http://guides.rubyonrails.org/upgrading_ruby_on_rails.html
+## Upgrade
+
+<http://guides.rubyonrails.org/upgrading_ruby_on_rails.html>
 
 Update gemfile with version of rails you want.
 
@@ -36,12 +39,12 @@ Bundler could not find compatible versions for gem "railties":
     web-console (~> 2.0) was resolved to 2.3.0, which depends on
       railties (>= 4.0)
 ```
+
 So to do it to run the `bundle update` command and add all the gems listed:
 
 `bundle update rails dotenv-rails jquery-rails rspec-rails sass-rails web-console`
 
-
-### rails s
+## rails s
 
 To run rails server not on default port
 
@@ -57,18 +60,20 @@ Close bash window running rails server, opened new window and ran `rails s` agai
 `A server is already running. Check /Users/libby/Code/customer_app/tmp/pids/server.pid.`
 
 So looked at the file and it has `6854`, which was the `pid` that it was on. Double checked by doing:
+
 ```bash
 ps aux | grep ruby
 ```
+
 then killed that process
 
 ```bash
 kill -9 6854
 ```
+
 Server working again!
 
-
-### Adding Service object and it not loading
+## Adding Service object and it not loading
 
 Rails 5.1 app
 Added `services` folder inside app folder, was coming up with `uninitialized constant CreateGame` on page.
@@ -78,26 +83,27 @@ Solution is to stop `spring`
 
 >Stopping Spring with bin/spring stop will force Spring to load your app fresh. Now running rails console and inspecting ActiveSupport::Dependencies.autoload_paths will successfully show app/services.
 
-https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-from-app-services/41371440#41371440
+<https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-from-app-services/41371440#41371440>
 
 Although, it may happen again when I add another file or folder?? And if so then this might be the long term answer:
 `config.autoload_paths += %W(#{Rails.root}/app/services)`
 
-#### At work due to how things are set up
+## At work due to how things are set up
+
 `COUNTRY=nz bundle exec spring stop`
 
-### Assets Pipeline - scss
+## Assets Pipeline - scss
+
 Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous  project, I was missing:
 
-```
+```js
 *= require_tree .
 *= require_self
 ```
 
 from the `application.scss` file. Added this back in and it worked fine.
 
-
-### Removing coffeescript from Rails 5.1
+## Removing coffeescript from Rails 5.1
 
 Removed gem from gemfile, did bundle install, removed .coffee files.
 
@@ -106,14 +112,15 @@ Was still getting error `LoadError (cannot load such file -- coffee_script):`
 Stopped `spring`, no change.
 
 Did some googling and found this
-```
+
+```bash
 FYI if you're having this issue, it may be the cache. Try this: rake tmp:cache:clear and restart your server.
 ```
 
 So tried `rake tmp:cache:clear` and worked! yay!
 
-
 ## Simple mistake? Don't copy and paste!!
+
 Why won't this migration run?
 
 ```ruby
@@ -128,12 +135,13 @@ end
 
 Because it has two `def change` methods!! Doh!
 
-
 ### And again!
-##### Bad bad as caused another error
 
-Had these two methods and there was an error happning in the `work` method, inside the loop.
+#### Bad bad as caused another error
+
+Had these two methods and there was an error happening in the `work` method, inside the loop.
 So, I copied the `rollbar` line from the `perform` method.
+
 ```ruby
 def perform(message, data, worker: self)
   worker.work
@@ -152,6 +160,7 @@ end
 ```
 
 What added in and copied:
+
 ```ruby
 def work
   logger = ActiveSupport::TaggedLogging.new(Logger.new(STDOUT))
@@ -170,8 +179,8 @@ This meant that the Rollbar error was causing an error. Why? Because I was silly
 
 Just needed to take those out. Hopefully I have learnt my lesson this time!
 
+## `to_sql`
 
-### `to_sql`
 Can be used on ActiveRecord stuff to see SQL statement:
 
 ```ruby
@@ -182,8 +191,10 @@ Customer.all.to_sql
 "SELECT \"customers\".* FROM \"customers\""
 ```
 
-### Constants
+## Constants
+
 On a model:
+
 ```ruby
 class Phone
   LIST = [
@@ -194,6 +205,7 @@ end
 ```
 
 Accessing constant in controller:
+
 ```ruby
 Phone::LIST
 ```
@@ -202,25 +214,27 @@ Phone::LIST
 
 [All Rails db Rake Tasks and What They Do](http://jacopretorius.net/2014/02/all-rails-db-rake-tasks-and-what-they-do.html)
 
+## Changing Database / Migrations / Rollbacks
 
-### Changing Database / Migrations / Rollbacks
 Really think about changing tables/columns etc before doing it!!
 
 Be very careful when deleting migration files. Think carefully about rolling back and when to delete! Especially if you have data you want to keep.
 
-#### If have pushed branch / merged
+### If have pushed branch / merged
+
 Once have pushed, and most definitely if have merged code into master (and it is on prod 😫 ), you can't just revert the branch!!
 
 Best practice is to write another migration to remove what you have added.
 
 Otherwise the schema will be incorrect / out of sync and could cause bad 😱 things to happen!!
 
+#### Column Types
 
-###### Column Types
-http://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes
-http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column
+<http://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes>
 
-#### Plural issues!
+<http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-add_column>
+
+## Plural issues!
 
 I wanted to create a `Kata` model. With kata being the singular of katas.
 
@@ -238,7 +252,7 @@ So, thought, is this a rails things or a refinerycms thing. Did this in a vanill
 
 and it outputted this:
 
-```
+```bash
 [WARNING] The model name 'kata' was recognized as a plural, using the singular 'katum' instead. Override with --force-plural or setup custom inflection rules for this noun before running the generator.
       invoke  active_record
       create    db/migrate/20171112004026_create_kata.rb
@@ -256,7 +270,7 @@ So did
 
 and got
 
-```
+```bash
 invoke  active_record
  create    db/migrate/20171112005014_create_katas.rb
  create    app/models/katas.rb
@@ -278,7 +292,7 @@ end
 
 and then ran the migration again and got:
 
-```
+```bash
 create    db/migrate/20171112005548_create_katas.rb
 create    app/models/kata.rb
 invoke    rspec
@@ -289,7 +303,7 @@ create        spec/factories/katas.rb
 
 And in refinerycms app:
 
-```
+```bash
 create  vendor/extensions/katas/app/controllers/refinery/katas/admin/katas_controller.rb
 create  vendor/extensions/katas/app/controllers/refinery/katas/katas_controller.rb
 create  vendor/extensions/katas/app/models/refinery/katas/kata.rb
@@ -309,13 +323,13 @@ create  vendor/extensions/katas/app/views/refinery/katas/katas/show.html.erb
 
 So, think it has worked add in plural in the inflections file.
 
+## HAML
 
-### HAML
-HAML converter to HTML - https://haml2erb.org/
+HAML converter to HTML - <https://haml2erb.org/>
 
+## Adding Next and Previous buttons to show pages
 
-### Adding Next and Previous buttons to show pages
-Found this on StackOverFlow - http://stackoverflow.com/questions/1275963/rails-next-post-and-previous-post-links-in-my-show-view-how-to (second answer)
+Found this on StackOverFlow - <http://stackoverflow.com/questions/1275963/rails-next-post-and-previous-post-links-in-my-show-view-how-to> (second answer)
 
 ```ruby
 class Stance < ActiveRecord::Base
@@ -324,6 +338,7 @@ class Stance < ActiveRecord::Base
   end
 end
 ```
+
 Not being too good with SQL yet, I ran the query in the Rails console to see what the raw SQL is.
 `Stance.where(["id > ?", 7]).first.inspect`
 
@@ -332,8 +347,6 @@ SELECT  "stances".* FROM "stances" WHERE (id > 7)  ORDER BY "stances"."id" ASC L
 
 "#<Stance id: 8, description: \"50/50, heels together, each foot at 45 degs\", created_at: \"2016-04-15 09:35:54\", updated_at: \"2016-04-15 09:35:54\", image_file_name: \"musubi.JPG\", image_content_type: \"image/jpeg\", image_file_size: 107624, image_updated_at: \"2016-04-15 09:35:54\", japanese_name: \"Musubi Dachi\", english_name: \"Open-toe stance\">"
 ```
-
-
 
 ## FIND_OR_CREATE!!
 
@@ -375,30 +388,26 @@ end
 
 This was using Rails 4 with RSpec 3.
 
-
 Note from senior dev
 > Yeah, so this is a more often that not a result of not using the ActiveRecord associations to update things like using Dog.create(person_id: person.id, number: number) instead of the better person.dog.create(number: number) that updates in memory as well.
 
-
 ## In Rails console - `reload!`
+
 Reload the rails environment, e.g. when you have updated the code on a model and can't be bothered quitting out of console and re-running.
 [Rails::ConsoleMethods](http://api.rubyonrails.org/classes/Rails/ConsoleMethods.html)
-
-
 
 ## Setting Up Rails App (when haven't done for ages!!)
 
 Remember to check the `.env` files. There maybe a `.env.development.example` or `.env.development.dist`, you will need to duplicate this and save as `.env.development`.
 
-
 ## The Rails Console
+
 Came across this awhile ago but forgot about it.
 If you are in a Rails app, you can do `rails dbconsole` or just `rails db` to get into the development database.
 
 Very handy!
 
 [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
-
 
 ## Rescuing errors
 
@@ -412,6 +421,7 @@ end
 ```
 
 Then in terminal:
+
 ```ruby
 error.message
 error.inspect
@@ -420,11 +430,11 @@ error.response.body # most useful
 ```
 
 ## Flash
+
 `flash.now`
 
-http://guides.rubyonrails.org/action_controller_overview.html#the-flash
+<http://guides.rubyonrails.org/action_controller_overview.html#the-flash>
 Used this so a flash message wasn't staying around between new applications.
-
 
 ## Rails Conventions
 
@@ -434,23 +444,26 @@ Used this so a flash message wasn't staying around between new applications.
 ## Bits & Bobs
 
 Logic in controllers
+
 - controller should take in params and pass through to an object that then does stuff (logic stuff) with params and then passes it back to the controller
 - controller should not be doing any logic stuff if possible
 
-#### Controller Actions
+### Controller Actions
+
 In controller was no action for `payment_details` but was a `get :payment_details` in `routes.rb`.
 This confused me as I wanted to have a redirect for the view if user without account was trying to view.
 As it turns out what Rails does is show the view, even if there is no action written in controller!
 TODO: look up some docs on this
 
-
 ## Useful RAILS stuff
-#### Active Model Dirty
-Provides a way to track changes in your object in the same way as Active Record does.
-http://api.rubyonrails.org/classes/ActiveModel/Dirty.html
 
+### Active Model Dirty
+
+Provides a way to track changes in your object in the same way as Active Record does.
+<http://api.rubyonrails.org/classes/ActiveModel/Dirty.html>
 
 #### Rails app using Sequel
+
 App has a `structure.sql` file instead of a `schema.rb` file and can't do `rake db:create`.
 So to get clean database need to do:
 
@@ -460,16 +473,18 @@ createdb service_development
 rake db:migrate
 rake db:seed
 ```
+
 To get load the `structure.sql` run `rake db:structure:load`
 
-
 #### has_secure_password
-http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html
+
+<http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html>
 
 >has_secure_password(options = {}) Link
-Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
-
+>Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
+>
 >The following validations are added automatically:
+>
 >- Password must be present on creation
 >- Password length should be less than or equal to 72 characters
 >- Confirmation of password (using a password_confirmation attribute)
@@ -479,27 +494,26 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 - add `bcrypt` gem to gemfile
 - add `password_digest` column/attribute to users table
 
-
 #### Sessions
 
 [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
+
 >2.1 What are Sessions?
 >HTTP is a stateless protocol. Sessions make it stateful.
-
+>
 >Most applications need to keep track of certain state of a particular user. This could be the contents of a shopping basket or the user id of the currently logged in user. Without the idea of sessions, the user would have to identify, and probably authenticate, on every request. Rails will create a new session automatically if a new user accesses the application. It will load an existing session if the user has already used the application.
 
 [Session](http://guides.rubyonrails.org/action_controller_overview.html#session)
 >Your application has a session for each user in which you can store small amounts of data that will be persisted between requests. The session is only available in the controller and the view and can use one of a number of different storage mechanisms:
-
+>
 >- ActionDispatch::Session::CookieStore - Stores everything on the client.
 >- ActionDispatch::Session::CacheStore - Stores the data in the Rails cache.
 >- ActionDispatch::Session::ActiveRecordStore - Stores the data in a database using Active Record. (require activerecord-session_store gem).
 >- ActionDispatch::Session::MemCacheStore - Stores the data in a memcached cluster (this is a legacy implementation; consider using CacheStore instead).
-
+>
 >All session stores use a cookie to store a unique ID for each session (you must use a cookie, Rails will not allow you to pass the session ID in the URL as this is less secure).
 
 [How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
-
 
 #### Helper Methods
 
@@ -513,10 +527,9 @@ Adds methods to set and authenticate against a BCrypt password. This mechanism r
 
 Add debug to view:
 
-```
+```ruby
 <%= debug(params) if Rails.env.development? %>
 ```
-
 
 #### Partials Locals and not Instance Variables (ivars)
 
@@ -526,24 +539,23 @@ Add debug to view:
 >Partials that use local variables are more maintainable
 >Partials that use local variables are easier to debug
 
-
 #### Routes
 
-http://localhost:3000/rails/info/routes - will show routes on web as `rails routes` does in the terminal
+<http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
 
+##### Exploring Routes (optional) - from RailsBridge <http://docs.railsbridge.org/intro-to-rails/setting_the_default_page>
 
-###### Exploring Routes (optional) - from RailsBridge http://docs.railsbridge.org/intro-to-rails/setting_the_default_page
 Now you can have a look at the paths that are available in your app. Let's try looking at one of the topics routes we just generated. Open up your Rails console and play:
 
-```
+```bash
 $ rails console
 >> app.topics_path
 => "/topics"
 >> app.topics_url
 => "http://www.example.com/topics"
 ```
-`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
 
+`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
 
 ###### link_to things
 
@@ -572,15 +584,13 @@ Came across the `link_to_remote`, this is deprecated, can do something like this
 
 This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.
 
-
 #### Generation of things in Rails - model, controller, resource, scaffold, migration
 
-See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for differences
+See <http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/> for differences
 
 `rails g scaffold Invoice invoice_date:date_time price_per_kwh:decimal final_price:decimal total_kwh:decimal user:belongs_to`
 
 `user:belongs_to` can also be `user:references` and adds a `belongs_to` column
-
 
 #### Rails methods
 
@@ -589,22 +599,25 @@ See http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/ for dif
 Question in slack:
 
 >hey I saw this line
->```
+>
+>```ruby
 >delegate :name, :email, :account_number, :to => :customer, :prefix => true
 >```
+>
 >in `/Users/nandahibatullah/powershop/app/models/consumer.rb` and was wondering what `:prefix` does? (edited)
 
 reply:
 
 >creates `customer_email` on Consumer
-
->https://apidock.com/rails/Module/delegate
-
+>
+><https://apidock.com/rails/Module/delegate>
+>
 >:prefix - Prefixes the new method with the target name or a custom prefix
 
-http://api.rubyonrails.org/classes/Module.html#method-i-delegate
+<http://api.rubyonrails.org/classes/Module.html#method-i-delegate>
 
 ##### [ordinalize](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-ordinalize)
+
 Makes a `1` into `1st`
 
 ## Links
@@ -613,23 +626,26 @@ Makes a `1` into `1st`
 [A Quick Peek at Ruby: 'Include' vs. 'Require'](https://web.archive.org/web/20150405161656/http://ruby.about.com/b/2008/10/23/a-quick-peek-at-ruby-include-vs-require.htm)
 [Ruby Methods: differences between load, require, include and extend in Ruby.](https://prograils.com/posts/ruby-methods-differences-load-require-include-extend)
 
-
 ## assets
 
-https://guides.rubyonrails.org/command_line.html#assets
+<https://guides.rubyonrails.org/command_line.html#assets>
 
-
-https://guides.rubyonrails.org/command_line.html#bin-rails
+<https://guides.rubyonrails.org/command_line.html#bin-rails>
 
 ```bash
 bin/rails assets:precompile
 
 bin/rails assets:clean
 
-bin/rails assets:clobber
+bin/rails assets:clobber # use this one!! When working with the APL at work.
+
+# ran `bundle exec rails -T (couldn't get the -h flag working)
+rails assets:clean[keep]    # Remove old compiled assets
+rails assets:clobber        # Remove compiled assets -> # use this one!! When working with the APL at work.
+rails assets:precompile     # Compile all the assets named in config.assets.precompile
 ```
 
-https://makandracards.com/makandra/29533-asset-pipeline-basics
+<https://makandracards.com/makandra/29533-asset-pipeline-basics>
 
 >Debugging
 >One step in debugging the asset pipeline is to check the precompilation results. You can do this locally using the following >commands:
@@ -638,3 +654,17 @@ https://makandracards.com/makandra/29533-asset-pipeline-basics
 >rake assets:precompile # precompiles to Rails.root/public/assets
 >rake assets:clobber # deletes the public/assets directory
 >```
+
+## `layout`
+
+Can change which layouts that an action in a controller uses. This is done in the core app at work.
+
+<https://guides.rubyonrails.org/layouts_and_rendering.html#finding-layouts>
+
+<https://api.rubyonrails.org/classes/ActionView/Layouts/ClassMethods.html#method-i-layout>
+
+[Rails Layout Rendering Cheatsheet](https://medium.com/@kevinyckim33/rails-layout-rendering-cheatsheet-d40e14ab3503)
+
+## Testing
+
+[How We Test Rails Applications](https://thoughtbot.com/blog/how-we-test-rails-applications)

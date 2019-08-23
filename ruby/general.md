@@ -4,7 +4,6 @@
 
 [The Ruby Style Guide](https://rubystyle.guide/) - https://github.com/rubocop-hq/ruby-style-guide
 
-
 [Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
 
 ## Bang
@@ -134,7 +133,8 @@ will give:
 > A Protected method is not accessible from outside of the context of the object, but it is accessible from inside the context of another object of the same type.
 
 
-##### Private methods in modules
+##### Private methods in modules'
+
 [Private Class Methods in Ruby](http://domon.cc/2013/12/25/private-class-methods-in-ruby/)
 
 ```ruby

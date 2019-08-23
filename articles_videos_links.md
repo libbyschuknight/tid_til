@@ -2,6 +2,18 @@
 
 ## Culture / People / Team
 
+[He Tangata](http://www.hetangata.com/what-he-tangata-about)
+
+> **_He aha te mea nui o te ao_**
+>
+> What is the most important thing in the world?
+>
+> **_He tangata, he tangata, he tangata_**
+>
+> It is the people, it is the people, it is the people
+>
+> Māori proverb
+
 [The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
 
 [How to Build a High Velocity Development Team](https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021)
@@ -20,9 +32,7 @@
 
 [Manager handoffs](http://larahogan.me/blog/manager-handoffs/)
 
-[Get your macron on: A guide to writing Māori the right way](https://thespinoff.co.nz/atea/13-10-2017/get-your-macron-on-a-guide-to-writing-maori-the-right-way/?utm_source=The+Spinoff&utm_medium=CPE&utm_campaign=Get+your+macron+on%3A+A+guide+to+writing+M%C4%81ori+the+right+way)
-
-[Te Aka Māori-English](http://maoridictionary.co.nz/)
+[Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk)
 
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
 
@@ -40,13 +50,11 @@
 
 [Engineering Growth Framework](https://medium.com/s/engineering-growth-framework)
 
-[The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
-
 [Diverse Teams Feel Less Comfortable — and That’s Why They Perform Better](https://hbr.org/2016/09/diverse-teams-feel-less-comfortable-and-thats-why-they-perform-better)
 
-[Letter to a Junior Engineer](https://builttoadapt.io/a-letter-to-a-junior-engineer-edec0e260b87)
+[Atlassian ditches ‘brilliant jerks’ in performance review overhaul](https://www.news.com.au/finance/work/at-work/atlassian-ditches-brilliant-jerks-in-performance-review-overhaul/news-story/82a5e2abba1939f51d68ae81db8f05bd)
 
-[Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
+[Letter to a Junior Engineer](https://builttoadapt.io/a-letter-to-a-junior-engineer-edec0e260b87)
 
 [Gender and sex](http://geekfeminism.wikia.com/wiki/Gender_and_sex)
 
@@ -58,7 +66,17 @@
 
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
-#### Why personality tests can be useless / harmful in the workplace
+### Privilege
+
+[The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
+
+[Swimming in Privilege](https://medium.com/@dunn/swimming-in-privilege-e517e4003b7c)
+
+[Straight White Male: The Lowest Difficulty Setting There Is](https://whatever.scalzi.com/2012/05/15/straight-white-male-the-lowest-difficulty-setting-there-is/)
+
+[Facts are Cool](http://www.jimchines.com/2012/05/facts-are-cool/)
+
+### Why personality tests can be useless / harmful in the workplace
 
 [Goodbye to MBTI, the Fad That Won’t Die](https://www.psychologytoday.com/us/blog/give-and-take/201309/goodbye-mbti-the-fad-won-t-die)
 
@@ -66,7 +84,7 @@
 
 [QUIZ: WHICH DISNEY PRINCESS ARE YOU?](https://ohmy.disney.com/quiz/2014/06/25/quiz-which-disney-princess-are-you/) - a good alternative? 😂
 
-#### Agile and Introverts
+### Agile and Introverts
 
 [Introverts in Agile](http://katrinatester.blogspot.com/2016/01/introverts-in-agile.html)
 
@@ -74,9 +92,11 @@
 
 [Facilitating Introverts: Eliciting the Gifts of the Quiet Ones](http://www.janicethomson.net/facilitating-introverts-eliciting-the-gifts-of-the-quiet-ones/)
 
-#### Diversity & Inclusion
+### Diversity & Inclusion
 
 [How do you define diversity](https://www.youtube.com/watch?v=a4YrQD0JpN0)
+
+[8 Things Diversity&Inclusion Leaders Need Everyone to Know](https://medium.com/@emilybest/8-things-d-i-leaders-need-everyone-to-know-65a0a7674867)
 
 [Inclusion has to be proactive](https://medium.com/@fox/inclusion-has-to-be-proactive-b01a37f85148)
 
@@ -106,7 +126,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 [No more excuses: Why your attempts to deny the gender pay gap just won’t wash](https://thespinoff.co.nz/society/08-03-2017/no-more-excuses-why-your-attempts-to-deny-the-gender-pay-gap-just-wont-wash/)
 
-#### Spotify model
+### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
 
@@ -119,6 +139,8 @@ Sarah Mei: Diversity of Thought tweets:
 [Shut Up, Imposter Syndrome: I Can Too Program](https://www.laserfiche.com/ecmblog/shut-up-imposter-syndrome-i-can-too-program/#)
 
 [You don’t have Impostor Syndrome: And neither do I anymore](https://medium.com/counter-intuition/you-don-t-have-impostor-syndrome-126e4c4bdcc)
+
+[Imposter Syndrome: Why You Have It and What You Can Do About It](https://zapier.com/blog/what-is-imposter-syndrome/)
 
 [The Mistakes I Made As a Beginner Programmer: Learn to identify them, make habits to avoid them](https://edgecoders.com/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
 
@@ -137,6 +159,16 @@ Sarah Mei: Diversity of Thought tweets:
 [An opinionated guide to writing developer resumes in 2017](https://www.freecodecamp.org/news/how-to-write-a-good-resume-in-2017-b8ea9dfdd3b9/#.ewsa7eqxj)
 
 ## More Stuff
+
+[Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
+
+[Ikigai: The Japanese Secret to a Long and Happy Life Might Just Help You Live a More Fulfilling Life](https://medium.com/thrive-global/ikigai-the-japanese-secret-to-a-long-and-happy-life-might-just-help-you-live-a-more-fulfilling-9871d01992b7)
+
+## Working Remotely
+
+[Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)
+
+## Computer Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
 
@@ -180,9 +212,11 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
 
-#### Resources
+#### Computer Hardware Stuff
 
-##### Younger
+[How Many Cores Does My CPU Have? A Guide For All OS](https://techwiser.com/how-many-cores-does-my-cpu-have/)
+
+#### Younger
 
 [Ruby Warrior](https://www.bloc.io/ruby-warrior#/)
 
@@ -232,6 +266,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 ### Rails
 
+[Understanding the basics of Ruby on Rails: HTTP, MVC, and Routes](https://www.freecodecamp.org/news/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a/)
+
 [The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)
 
 [Render and Redirect- Which to Use?](https://medium.com/@kerenlerner/render-and-redirect-which-to-use-106ff653ee9a)
@@ -258,7 +294,7 @@ Sarah Mei: Diversity of Thought tweets:
 
 <!-- TODO: add link to javascript.md page for using webpack in rails -->
 
-##### Time
+#### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
 

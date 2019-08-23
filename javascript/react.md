@@ -20,13 +20,13 @@
 
 [Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
 
-
 ## Learning Resources
 
 [Getting Started](https://reactjs.org/docs/getting-started.html)
 
 [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 
+[The Complete Introduction to React](https://jscomplete.com/learn/complete-intro-react#the-react-language)
 
 ## Linting
 

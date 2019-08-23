@@ -27,6 +27,8 @@
 
 [The CSS Mindset](https://mxb.dev/blog/the-css-mindset/)
 
+[How to make your HTML responsive by adding a single line of CSS](https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/amp/?__twitter_impression=true)
+
 >```css
 >outline: 2px dotted hotpink
 >```
@@ -34,6 +36,22 @@
 ### Specificity
 
 [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
+### Useful Links (from Thomas Winter)
+
+#### Useful Resources
+
+- [CSS tricks](https://css-tricks.com/)
+- [BEM methodology](https://en.bem.info/methodology/css/)
+- [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+- [Smacss](https://smacss.com/)
+
+##### People to follow
+
+- [Brad Frost](http://bradfrost.com/)
+- [Chris Coyier](https://chriscoyier.net/)
+- [Jonathan Snook](https://snook.ca/)
+- [Harry Roberts](https://csswizardry.com/)
 
 ## Layout
 
@@ -96,9 +114,7 @@ And in my case added `padding-right: 2em;`, as had another class adding `width: 
 
 ## SASS - Syntactically Awesome Style Sheets
 
-<https://sass-lang.com/>
-
-CSS preprocessor
+<https://sass-lang.com/> - CSS preprocessor
 
 [SASS Guidelines](https://sass-guidelin.es/)
 
@@ -108,7 +124,7 @@ CSS preprocessor
 
 [Aesthetic Sass 1: Architecture and Style Organization](https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization)
 
-### Default Values - `!default`
+## Default Values - `!default`
 
 <https://sass-lang.com/documentation/variables#default-values>
 

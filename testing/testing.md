@@ -2,7 +2,6 @@
 
 [Tips to improve speed of your test suite](https://medium.com/appaloosa-store-engineering/tips-to-improve-speed-of-your-test-suite-8418b485205c)
 
-
 ## Using Fixtures in Rails
 
 [7 REASONS I'M STICKING WITH MINITEST AND FIXTURES IN RAILS](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
@@ -17,7 +16,7 @@ Reminded about from here https://designcode.commandrun.com/testing-rails-simple-
 
 First came across here https://robots.thoughtbot.com/four-phase-test
 
-```
+```code
 test do
   # setup - Prepare object for this test
   # exercise - Execute the functionality we are testing
@@ -29,7 +28,7 @@ end
 An example of when I have used:
 pseudocode
 
-```
+```ruby
 describe "#processing?" do
   context "when payments are being processing" do
     # setup - Prepare object for this test
@@ -55,30 +54,32 @@ end
 [Difference between rspec, capybara and cucumber](https://stackoverflow.com/questions/22491145/difference-between-rspec-capybara-and-cucumber/22491329#22491329)
 
 >rspec is a full-featured testing framework that will let you write what Rails considers unit tests, functional tests, and integration tests. All of these exercise Ruby code through various layers of your Rails application. All of these tests simulate requests to your Rails application, but don't actually run the application end-to-end over the network.
-
+>
 >cucumber is a browser based integration testing framework, which allows writing automated tests that run against the entire Rails application accessed from within an automated web browser. This allows you to write automated tests about in-browser behavior for JS or CSS. Cucumber provides a unique angle on integration testing that uses plain english specification mapped to code via regular expressions. This allows a more natural "Behavior Driven Development" model - describing what a web application should do, in plain language, from the perspective of the user.
-
+>
 >capybara is a particular web driver powering the cucumber integration testing framework, that uses headless webkit. This allows running a headless (without UI) Chrome/Webkit browser for automated testing. This is very useful both in development, but especially on a remote test/continuous integration server.
-
+>
 >So rspec and cucumber are similar in being testing frameworks with their own way of specifying things.  rspec has a nice DSL that's very readable while being actual code.  cucumber maps plain text descriptions to real code.
-
+>
 >Though cucumber is usually used on top of capybara, you can also use rspec to drive capybara integration tests. The tests are written in either rspec or cucumber, but capybara is an integration engine underneath.
-
 
 [A repeatable, step-by-step process for writing Rails integration tests with Capybara](https://www.codewithjason.com/repeatable-step-step-process-writing-rails-integration-tests-capybara/)
 
-
 ## Try to remember to read the Rspec errors really carefully!!
+
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
 ## Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz
-A must watch and re-watch - [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz]https://www.youtube.com/watch?v=URSWYvyc42M
+
+A must watch and re-watch - [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](https://www.youtube.com/watch?v=URSWYvyc42M)
 
 ## Using OpenStructs
+
 When using OpenStruct in tests, need to look at the things that are being passed into the object you are wanting to recreate.
 
 e.g.
 module representer for api
+
 ```ruby
     module Role
       include ::Representers::Base
@@ -108,6 +109,7 @@ end
 ```
 
 creating objects to use in spec
+
 ```ruby
 let(:st_id) do
   OpenStruct.new(something_id: "FLCK")
@@ -132,21 +134,36 @@ let(:object) do
   )
 end
 ```
+
 My point being, make sure that what the properties are in the OpenStruct object, are the same as what is in the Role. For example, `party_id` needs to be `party.id`.
 
 ## Params
+
 If you change the columns on your table, remember to change the 'strong params' that are allowed to pass through.
 
 ## TIME
+
 ### Stub out in RSpec
+
 ```ruby
 allow(Time).to receive(:now).and_return(Time.parse('2016-03-02'))
 ```
+
 Needed to use `Time.utc(2016, 8, 1, 14, 34, 56)`, otherwise was failing on Travis due to different timezones.
 
+Another stubbing:
+
+```ruby
+    let(:model) { double('New Ticket Form', method => value, :errors => { :updated_at => "error update" }) }
+```
+
+Lots of other stuff was going on with the above stubbing but this part `:errors => { :updated_at => "error update" }` is what worked with needing to be able to handle errors and get the spec to work with the code checking this stuff:
+
+```ruby
+object.errors[method] if object.respond_to?(:errors) && object.errors.respond_to?(:[]) && object.errors[method].present?
+```
 
 Also see # August Mistakes & Improvements - Testing with Time
-
 
 ## Using Doubles
 
@@ -176,16 +193,15 @@ params = { "address" => "31 Te Whiti Street, Kilbirnie, Wellington 6003" }
 expect{ post :create, params }.to change{ Application.count }.by(1)
 ```
 
+## RSpec
 
-# RSpec
-
-## let
+### let
 
 [RSpec: What is the difference between let and a before block?](http://stackoverflow.com/questions/5974360/rspec-what-is-the-difference-between-let-and-a-before-block?answertab=active#tab-top)
 
 [When to use RSpec let()?](http://stackoverflow.com/questions/5359558/when-to-use-rspec-let)
 
-## Autoloading Error
+### Autoloading Error
 
 ```bash
 LoadError:
@@ -225,7 +241,7 @@ end
 ```
 And the specs are passing! Yay!
 
-## RSpec Formatting
+### RSpec Formatting
 
 Repo is set with `--format documentation`, which will output all the documentation strings. In an app that has a lot of specs this can be slow.
 Can set when you run `rspec` to run as the default, which is no strings, just dots, F's and P's.
@@ -238,8 +254,7 @@ or
 rspec --format progress
 ```
 
-
-## Stubbing vs Using VCR
+### Stubbing vs Using VCR
 
 Discussion at Flick about using doubles / allows to stub versus
 
@@ -255,7 +270,8 @@ Yeah, I think that is fine, like if you are thinking as servers as objects (just
 ootoovak 4 hours ago
 As for VCR vs manually stubbing kind of the same as using FactoryGirl.build(:user) vs User.new(...). As in there is not much difference the former provides more convenience the latter has has less dependence on external tool that could be overused/debugged. In either case it is stubbing the call to a service and both can drift over time form the actual API if not maintained.
 
-### Strategy
+#### Strategy
+
 This is what Samson and I did when I was writing a feature spec for an api.
 
 ```ruby
@@ -274,9 +290,11 @@ allow(InvoicedClient).to receive_message_chain(:new, :client).and_return(service
 Worked the above backwards. Starting with stubbing (or is it mocking) out an external call `InvoicedClient` and have the return an instance_double.
 Then the `service_client` was stubbed out and returned a double which to start with was just `invoiced_invoice = double("InvoicedInvoice")` and then ran the spec to see what messages the object was wanting to respond to.
 
+## Capybara Testing
 
+<https://rubydoc.info/github/teamcapybara/capybara/master>
 
-# Capybara Testing
+[Write Reliable, Asynchronous Integration Tests With Capybara](https://thoughtbot.com/blog/write-reliable-asynchronous-integration-tests-with-capybara)
 
 Useful page - has node methods (as in `fill_in`) and session methods (using `page`, `page.body`, `page.save_page`)
 
@@ -289,7 +307,7 @@ config.assets.debug = true
 config.action_controller.asset_host = "http://localhost:6001"
 ```
 
-# Unit tests
+## Unit tests
 
 After having a chat with Sam about testing and unit tests.
 
