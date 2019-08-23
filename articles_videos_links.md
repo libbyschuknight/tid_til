@@ -134,6 +134,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [On being overwhelmed with our fast paced industry](https://wesbos.com/overwhelmed-with-web-development/)
 
+[An opinionated guide to writing developer resumes in 2017](https://www.freecodecamp.org/news/how-to-write-a-good-resume-in-2017-b8ea9dfdd3b9/#.ewsa7eqxj)
+
 ## More Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
