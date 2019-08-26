@@ -4,15 +4,15 @@
 
 [He Tangata](http://www.hetangata.com/what-he-tangata-about)
 
->***He aha te mea nui o te ao***
+> **_He aha te mea nui o te ao_**
 >
->What is the most important thing in the world?
+> What is the most important thing in the world?
 >
->***He tangata, he tangata, he tangata***
+> **_He tangata, he tangata, he tangata_**
 >
->It is the people, it is the people, it is the people
+> It is the people, it is the people, it is the people
 >
->Māori proverb
+> Māori proverb
 
 [The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
 
@@ -156,6 +156,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [On being overwhelmed with our fast paced industry](https://wesbos.com/overwhelmed-with-web-development/)
 
+[An opinionated guide to writing developer resumes in 2017](https://www.freecodecamp.org/news/how-to-write-a-good-resume-in-2017-b8ea9dfdd3b9/#.ewsa7eqxj)
+
+## More Stuff
+
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
 
 [Ikigai: The Japanese Secret to a Long and Happy Life Might Just Help You Live a More Fulfilling Life](https://medium.com/thrive-global/ikigai-the-japanese-secret-to-a-long-and-happy-life-might-just-help-you-live-a-more-fulfilling-9871d01992b7)
@@ -177,6 +181,18 @@ Sarah Mei: Diversity of Thought tweets:
 [What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
 
 [awesome-aotearoa-tech](https://github.com/radsy/awesome-aotearoa-tech)
+
+### Phone numbers and addresses
+
+[Awesome Falsehood](https://github.com/kdeldycke/awesome-falsehood)
+
+- has phone numbers and addresses
+
+<https://github.com/google/libphonenumber>
+
+[AddressValidationMetadata](https://github.com/google/libaddressinput/wiki/AddressValidationMetadata)
+
+[Handling Addresses from All Around the World](https://engineering.shopify.com/blogs/engineering/handling-addresses-from-all-around-the-world)
 
 ### Computer Science
 
