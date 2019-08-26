@@ -46,9 +46,11 @@ Ran tests for `bath_houses`, these failed (didn't even run), as a table had been
 
 *How to deal with this?*
 Checkout a release and then make a branch off there (make sure you have stashed code you have already written).
+
 ```bash
 git checkout 4.4.0
 ```
+
 Instead of a branch name you will see the first few digits of the tags commit shard.
 You will get something like this:
 

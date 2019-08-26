@@ -4,6 +4,8 @@
 
 [Getting Started - atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - have come across this again and again and it has always been useful.
 
+[Become a git guru.](https://www.atlassian.com/git/tutorials)
+
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
 [New Developer? You should’ve learned Git yesterday.](https://codeburst.io/number-one-piece-of-advice-for-new-developers-ddd08abc8bfa)
@@ -28,10 +30,6 @@
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
-[TELLING STORIES THROUGH YOUR COMMITS](http://blog.mocoso.co.uk/talks/2015/01/12/telling-stories-through-your-commits/``)
-
-[Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
-
   >**The seven rules of a great git commit message**
   >
   >Keep in mind: This has all been said before.
@@ -43,6 +41,10 @@
   >- Use the imperative mood in the subject line
   >- Wrap the body at 72 characters
   >- Use the body to explain what and why vs. how
+
+[TELLING STORIES THROUGH YOUR COMMITS](http://blog.mocoso.co.uk/talks/2015/01/12/telling-stories-through-your-commits/``)
+
+[Git Tutorial: 10 Common Git Problems and How to Fix Them](https://www.codementor.io/citizen428/git-tutorial-10-common-git-problems-and-how-to-fix-them-aajv0katd)
 
 ## Setting up git with gitlab
 
