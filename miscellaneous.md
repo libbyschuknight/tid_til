@@ -58,12 +58,20 @@ After getting help, looked at the occurences tab and the top error was:
 undefined method 'user' for nil:NilClass
 ```
 
-Funny that it continues to report on the oringial error even though it has been fixed!!
+Funny that it continues to report on the original error even though it has been fixed!!
 
 ## Sites for RegEx
 
 [Rubular - a Ruby regular expression editor](http://rubular.com/)
-[RegExrv2.1](http://regexr.com/)
+
+RegExrv2.1 - <https://regexr.com/>
+
+![reg-ex- cuke](/cuke-regex-2.png)
+
+<https://regexcrossword.com/>
+
+<https://www.executeprogram.com/>
+
 
 `?` needs to be escaped in this case:
 
