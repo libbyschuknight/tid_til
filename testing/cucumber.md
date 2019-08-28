@@ -32,3 +32,21 @@ Thoughts from Jordane
 >Just makes things nice to read and understand without looking into the code that backs the step
 >
 ><https://www.foreach.be/blog/9-tips-improving-cucumber-test-readability>
+
+## Cucumber expressions
+
+```cucumber
+{int} - will match an integer
+{string} - will match a string
+(100) - capture block
+.* - any character any number of times
+[0-9]* - any number of digits
+\d+ - at least one digit
+\w+ - at least one word
+```
+
+<https://cucumber.io/docs/cucumber/cucumber-expressions/>
+
+(Thanks Anuj)
+
+![reg-ex- cuke](/cuke-regex-2.png)

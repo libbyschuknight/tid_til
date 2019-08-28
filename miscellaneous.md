@@ -60,18 +60,37 @@ undefined method 'user' for nil:NilClass
 
 Funny that it continues to report on the original error even though it has been fixed!!
 
-## Sites for RegEx
+## RegEx
 
 [Rubular - a Ruby regular expression editor](http://rubular.com/)
 
 RegExrv2.1 - <https://regexr.com/>
 
-![reg-ex- cuke](/cuke-regex-2.png)
+<https://regex101.com/> - good for validating regex
 
 <https://regexcrossword.com/>
 
 <https://www.executeprogram.com/>
 
+### Cucumber expressions
+
+```cucumber
+{int} - will match an integer
+{string} - will match a string
+(100) - capture block
+.* - any character any number of times
+[0-9]* - any number of digits
+\d+ - at least one digit
+\w+ - at least one word
+```
+
+<https://cucumber.io/docs/cucumber/cucumber-expressions/>
+
+(Thanks Anuj)
+
+![reg-ex- cuke](/cuke-regex-2.png)
+
+### Escaping a `?`
 
 `?` needs to be escaped in this case:
 

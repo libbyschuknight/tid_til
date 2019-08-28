@@ -44,7 +44,7 @@ Could have also used a reload in the original code which is not shown here.
 
 We use RSpec and Cucumber. I have aliases set up to run each:
 
-```
+```bash
 nzspec='nz bundle exec spring rspec'
 
 nzcuk='nz bundle exec spring cucumber'
@@ -52,17 +52,17 @@ nzcuk='nz bundle exec spring cucumber'
 
 An example of running a cuke (cucumber feature test) would be:
 
-```
+```bash
 nzcuk nz/features/some_feature_test.feature
 ```
 
 I have got things turned around a couple of times and wondered why it wasn't working:
 
-```
+```bash
 nzspec nz/features/some_feature_test.feature
 ```
 
-```
+```bash
 An error occurred while loading ./nz/features/some_feature_test.feature.
 Failure/Error: load_dependency(file) { result = super }
 
@@ -72,5 +72,5 @@ SyntaxError:
           ^
 # -e:1:in `<main>'
 ```
-Was racking my brain. Asked someone else if they had come across this and they saw my mistake, phew!
 
+Was racking my brain. Asked someone else if they had come across this and they saw my mistake, phew!

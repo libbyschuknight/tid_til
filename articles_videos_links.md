@@ -66,6 +66,8 @@
 
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
+[Sharing the Data: How Technical Women Navigate Their Career](https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -126,6 +128,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [No more excuses: Why your attempts to deny the gender pay gap just won’t wash](https://thespinoff.co.nz/society/08-03-2017/no-more-excuses-why-your-attempts-to-deny-the-gender-pay-gap-just-wont-wash/)
 
+[How “Good Intent” Undermines Diversity and Inclusion](https://thebias.com/2017/09/26/how-good-intent-undermines-diversity-and-inclusion/)
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
@@ -158,13 +162,19 @@ Sarah Mei: Diversity of Thought tweets:
 
 [An opinionated guide to writing developer resumes in 2017](https://www.freecodecamp.org/news/how-to-write-a-good-resume-in-2017-b8ea9dfdd3b9/#.ewsa7eqxj)
 
+[Things I Learnt from a Senior Software Engineer](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
+
 ## More Stuff
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
 
 [Ikigai: The Japanese Secret to a Long and Happy Life Might Just Help You Live a More Fulfilling Life](https://medium.com/thrive-global/ikigai-the-japanese-secret-to-a-long-and-happy-life-might-just-help-you-live-a-more-fulfilling-9871d01992b7)
 
-## Working Remotely
+## Work Stuff
+
+[How We Hire Developers](https://automattic.com/work-with-us/how-we-hire-developers/)
+
+### Working Remotely
 
 [Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)
 

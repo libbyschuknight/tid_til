@@ -81,7 +81,6 @@ Changing this
 Which looks just like a link to something that looks like a button but is not a button, as it does not submit anything.
 It took me a little while to get my head around that, I had in my head that the design/er was wanting a button, so was thinking about using the styles already in the app for buttons. But its functionality is not that of a button, it is a link, so although it might end up looking like a button, it is not.
 
-
 ## Spring issue
 
 Was trying to run a test with
@@ -108,12 +107,12 @@ Killed off the server running
 
  and run spec again and it works! yay!
 
-
 ## RSpec `include`
 
-https://relishapp.com/rspec/rspec-expectations/v/3-7/docs/built-in-matchers/include-matcher#string-usage
+<https://relishapp.com/rspec/rspec-expectations/v/3-7/docs/built-in-matchers/include-matcher#string-usage>
 
 You can do this
+
 ```ruby
 expect(mail.subject).to include("Your Powershop", "Account Invoice")
 ```
