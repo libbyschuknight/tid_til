@@ -1,6 +1,6 @@
 # Gem Stuff (this is for Ruby)
 
-https://guides.rubygems.org
+<https://guides.rubygems.org>
 
 ## Using local gem (on your computer)
 
@@ -27,12 +27,13 @@ Optimistic Version Constraint
 ```ruby
 gem "apples", ">=1.5.0"
 ```
-http://railsapps.github.io/managing-rails-versions-gems.html
+
+<http://railsapps.github.io/managing-rails-versions-gems.html>
 
 They do different things:
-- http://guides.rubygems.org/patterns/#pessimistic-version-constraint
-- https://robots.thoughtbot.com/rubys-pessimistic-operator
 
+- <http://guides.rubygems.org/patterns/#pessimistic-version-constraint>
+- <https://robots.thoughtbot.com/rubys-pessimistic-operator>
 
 ## Change back to older version of local gem
 
@@ -112,11 +113,9 @@ rails-dom-testing (2.0.2, 2.0.1, 1.0.8, 1.0.7, 1.0.6)
 ...
 ```
 
-
 ## To install a particular version of a gem
 
-https://guides.rubygems.org/command-reference/#gem-install
-
+<https://guides.rubygems.org/command-reference/#gem-install>
 
 ```bash
 gem install rails --version=4.2.9`
@@ -126,7 +125,6 @@ gem install rails --version=4.2.9`
 gem install bundler -v 1.17.3
 ```
 
-
 ## Check if gem installed
 
 `gem list`
@@ -135,21 +133,19 @@ or
 
 `gem list -i <gem-name>`
 
-
 ## Uninstall a gem
 
-https://guides.rubygems.org/rubygems-basics/#uninstalling-gems
+<https://guides.rubygems.org/rubygems-basics/#uninstalling-gems>
 
-```
+```bash
 gem uninstall bundler
 ```
 
 Uninstall a specific version
 
-```
+```bash
 gem uninstall --default -v1.17.1 bundler
 ```
-
 
 ## Load paths
 
@@ -163,6 +159,10 @@ require_relative './lib/admin_pattern_library/version'
 lib = File.expand_path("lib", __dir__)
 ```
 
-https://guides.rubygems.org/patterns/#declaring-dependencies, section title `Requiring files relative to each other`
+<https://guides.rubygems.org/patterns/#declaring-dependencies,> section title `Requiring files relative to each other`
 
 >Gems should not have to use __FILE__ to bring in other Ruby files in your gem.
+
+## Rdoc
+
+tto stop building rdoc when you install gems or the bundle, you can add `gem: "--no-document"` to `~/.gemrc.` Then after reloading your term session, gem and bundle will stop building rdoc.

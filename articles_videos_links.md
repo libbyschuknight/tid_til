@@ -68,6 +68,8 @@
 
 [Sharing the Data: How Technical Women Navigate Their Career](https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/)
 
+[IF IT'S ALL THE SAME TO YOU, I'D RATHER BE WORKING.](https://www.3percentmovement.com/article/if-its-all-same-you-id-rather-be-working-rene-huey-lipton)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
