@@ -2,6 +2,18 @@
 
 [Tips to improve speed of your test suite](https://medium.com/appaloosa-store-engineering/tips-to-improve-speed-of-your-test-suite-8418b485205c)
 
+## Running a specific test
+
+If you want to run one particiular spec or feature scenraio, you can specific the line
+
+`bundle exec spring cucumber core/features/admin_premium_providers_capybara.feature:41` - will run the scenario for line 41
+
+You can also do more than one `bundle exec spring cucumber core/features/admin_premium_providers_capybara.feature:41:46`
+
+Same with RSpec:
+
+`bundle exec rspec core/spec/controllers/admin/brands_controller_spec.rb:67`
+
 ## Using Fixtures in Rails
 
 [7 REASONS I'M STICKING WITH MINITEST AND FIXTURES IN RAILS](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
@@ -12,9 +24,9 @@
 
 ## Four Phase Test Pattern
 
-Reminded about from here https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187
+Reminded about from here <https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187>
 
-First came across here https://robots.thoughtbot.com/four-phase-test
+First came across here <https://robots.thoughtbot.com/four-phase-test>
 
 ```code
 test do
@@ -26,9 +38,10 @@ end
 ```
 
 An example of when I have used:
-pseudocode
 
 ```ruby
+# pseudoscope
+
 describe "#processing?" do
   context "when payments are being processing" do
     # setup - Prepare object for this test
@@ -42,7 +55,6 @@ describe "#processing?" do
 
     # verify - Verify the exercise's result against our expectation
       # expect payment_schedule to eq processing
-
   end
 end
 ```
@@ -65,7 +77,7 @@ end
 
 [A repeatable, step-by-step process for writing Rails integration tests with Capybara](https://www.codewithjason.com/repeatable-step-step-process-writing-rails-integration-tests-capybara/)
 
-## Try to remember to read the Rspec errors really carefully!!
+## Try to remember to read the RSpec errors really carefully!!
 
 Just had a number of fails but was due to not coding the factories properly rather then any error a test itself.
 
@@ -210,6 +222,7 @@ LoadError:
 
 Had three specs that were randomly failing - two would fail and one would pass, and it would change when had order as random.
 The issue was this:
+
 ```ruby
 let(:schedules_resource)  { Resources::Schedule.new.from_json(schedule_response_json) }
 ```
@@ -218,27 +231,29 @@ After having a think and remembering that with `lets` there is lazy loading, so 
 and specs passed.
 
 From rspec:
->Note that let is lazy-evaluated: it is not evaluated until the first time the method it defines is invoked. You can use let! to force the method's invocation before each example. https://relishapp.com/rspec/rspec-core/v/3-4/docs/helper-methods/let-and-let
+>Note that let is lazy-evaluated: it is not evaluated until the first time the method it defines is invoked. You can use let! to force the method's invocation before each example. <https://relishapp.com/rspec/rspec-core/v/3-4/docs/helper-methods/let-and-let>
 
 Then were running this pass other devs, got from @Ootoovak
 
 > This came across my Twitter feed a few days ago (by one of the RSpec core team members)
-
->https://twitter.com/samphippen/status/767850685329203200 Extraordinary Alien @samphippen
-
+>
+><https://twitter.com/samphippen/status/767850685329203200> Extraordinary Alien @samphippen
+>
 > RSpec advice:
-
+>
   > don't use let!
-
+>
   > use let and evaluate it in a before.
 
 So have done this:
+
 ```ruby
 before do
   payment_schedules_resource
   # other code...
 end
 ```
+
 And the specs are passing! Yay!
 
 ### RSpec Formatting

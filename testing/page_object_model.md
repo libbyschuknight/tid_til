@@ -8,6 +8,11 @@
 >
 >SitePrism gives you a simple, clean and semantic DSL for describing your site using the Page Object Model pattern, for use with Capybara in automated acceptance testing.
 
+## Old cuke steps to new cuke steps using POM
+
+Note: you can't combine Selenium and POM interactivity steps together. You can combine setup that doesn't touch a browser (e.g. modifying the database etc), but nothing that involves clicking, page content, etc.
+
+
 ## require relative (uninitialized constant error)
 
 Been adding in POMs for a resource that has index, new, show, edit pages, and form partial.

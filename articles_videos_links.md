@@ -70,6 +70,8 @@
 
 [IF IT'S ALL THE SAME TO YOU, I'D RATHER BE WORKING.](https://www.3percentmovement.com/article/if-its-all-same-you-id-rather-be-working-rene-huey-lipton)
 
+[The Power Of A Grandmother | Hīria Te Rangi | TEDxWellington](https://www.youtube.com/watch?v=RHq1waE-qIY&feature=youtu.be&app=desktop) - video
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -165,6 +167,8 @@ Sarah Mei: Diversity of Thought tweets:
 [An opinionated guide to writing developer resumes in 2017](https://www.freecodecamp.org/news/how-to-write-a-good-resume-in-2017-b8ea9dfdd3b9/#.ewsa7eqxj)
 
 [Things I Learnt from a Senior Software Engineer](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
+
+[toxic / finding a safe place to work](http://lowercaseopinions.com/safe-place)
 
 ## More Stuff
 

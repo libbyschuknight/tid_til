@@ -1,12 +1,12 @@
 # RSpec
 
-[The RSpec Style Guide](https://rspec.rubystyle.guide/) - https://github.com/rubocop-hq/rspec-style-guide
+[The RSpec Style Guide](https://rspec.rubystyle.guide/) - <https://github.com/rubocop-hq/rspec-style-guide>
 
 [RSpec Documentation](https://rspec.info/documentation/)
 
 [RSpec Relish](https://relishapp.com/rspec)
 
-[Better Specs { rspec guidelines with ruby }](http://www.betterspecs.org/)
+[Better Specs { RSpec guidelines with ruby }](http://www.betterspecs.org/)
 
 [RSpec::Expectations Cheat Sheet](https://www.rubypigeon.com/posts/rspec-expectations-cheat-sheet/)
 
@@ -42,8 +42,8 @@ Match part if a filename:
 expect(result.filename).to match(/111222_0000060962TR01A_26_09_2017_.+\.csv/)
 ```
 
-
 ### Change
+
 Discovered that instead of doing
 
 ```ruby
@@ -60,30 +60,29 @@ Which is better then the first expect because it will mean that it will be less 
 
 [Understanding RSpec Expect and Change Syntax in the context of Ruby](https://forum.shakacode.com/t/understanding-rspec-expect-and-change-syntax-in-the-context-of-ruby/219)
 
-
 ## Stubbing a helper method
+
 (in a presenter spec)
 
 Wanted to test a presenter (that only returned links), when ran test, a helper method failed
 
-```
+```bash
 NoMethodError:
        undefined method `product_end_notice_sent?' for nil:NilClass
 ```
 
 In test have done this:
 
-```
+```ruby
 allow_any_instance_of(ThisHelper).to receive(:show_bananas?).and_return(true)
 ```
 
 Not sure if `allow_any_instance_of` is good to use.
 
-
 ## [Aggregating Failures](https://relishapp.com/rspec/rspec-core/docs/expectation-framework-integration/aggregating-failures)
 
 >RSpec::Expectations provides aggregate_failures, an API that allows you to group a set of expectations and see all the failures at once, rather than it aborting on the first failure.
-
+>
 >```ruby
 >it "returns a successful response" do
 >  response = Client.make_request
@@ -99,7 +98,6 @@ Not sure if `allow_any_instance_of` is good to use.
 ### RSpec Shared Examples
 
 So, was adding a context in the below spec. I knew when I was adding it that there would be a better way of doing it.
-
 
 ```ruby
 # frozen_string_literal: true
@@ -176,9 +174,9 @@ module Api
 end
 ```
 
-Got feedback in code review around lots of duplication, could be good to break out into using shared examples. Not knowing much about shared examples I was a bit hesistate. However, the reviewer shared this:
+Got feedback in code review around lots of duplication, could be good to break out into using shared examples. Not knowing much about shared examples I was a bit hesitate. However, the reviewer shared this:
 
-https://relishapp.com/rspec/rspec-core/docs/example-groups/shared-examples#shared-examples-group-included-in-two-groups-in-one-file
+<https://relishapp.com/rspec/rspec-core/docs/example-groups/shared-examples#shared-examples-group-included-in-two-groups-in-one-file>
 
 and I found an example in the code base as well.
 
@@ -245,4 +243,5 @@ module Api
   end
 end
 ```
+
 Seems a lot clearer and there is a lot less duplication.
