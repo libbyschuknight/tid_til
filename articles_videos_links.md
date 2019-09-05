@@ -170,6 +170,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [toxic / finding a safe place to work](http://lowercaseopinions.com/safe-place)
 
+[final questions / what to ask at the end of an interview](http://lowercaseopinions.com/final-questions/)
+
 ## More Stuff
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
@@ -307,6 +309,8 @@ Sarah Mei: Diversity of Thought tweets:
 [What is the difference between <%, <%=, <%# and -%> in ERB in Rails?](https://stackoverflow.com/questions/7996695/what-is-the-difference-between-and-in-erb-in-rails)
 
 [Rails Techniques: Using Polymorphic Associations](https://semaphoreci.com/blog/2017/08/16/polymorphic-associations-in-rails.html)
+
+[Understanding Webpacker in Rails 6](https://prathamesh.tech/2019/08/26/understanding-webpacker-in-rails-6/)
 
 <!-- TODO: add link to javascript.md page for using webpack in rails -->
 

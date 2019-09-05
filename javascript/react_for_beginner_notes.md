@@ -1,10 +1,11 @@
-## NOTES: React for Beginners - Wes Bos
+# NOTES: React for Beginners - Wes Bos
 
-### Video 7 - Passing Dynamic data with props
+## Video 7 - Passing Dynamic data with props
 
 There are two fundamental things that we learn in this course - props and state.
 
-#### Props
+### Props
+
 - similar to HTML attributes
 - e.g image tag, need to provide 2 things, provide more info to tag
 - similar in react and called `props` in react
@@ -65,14 +66,14 @@ e.g. in `App.js`, `<Header tagline="Lib is cool" age={500} />` is a component in
 
 \
 \
-##### :mortar_board: `$0` & `$r`
+
+#### :mortar_board: `$0` & `$r`
 
 Use of `$0` in dev tool consoles
 
 [Console Utilities API Reference](https://developers.google.com/web/tools/chrome-devtools/console/utilities?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#0-4)
 
 [What does ==$0 (double equals dollar zero) mean in Chrome Developer Tools?](https://stackoverflow.com/questions/36999739/what-does-0-double-equals-dollar-zero-mean-in-chrome-developer-tools)
-
 
 `$r` in React Dev Tools, what does this mean? It is like `$0` above.
 
@@ -83,7 +84,6 @@ Whole component thing, it is just a object!
 So what is `this`?
 
 It is the component / object that is "active" "in use" right at the moment, and in this case is what `$r` returns.
-
 
 ### Video 8 - Stateless Functional Components
 
@@ -164,7 +164,6 @@ const Header = props => (
 ### Video 9 - Routing with React Router
 
 Nothing to add, except was easy to understand and no other useful tips.
-
 
 ### Video 10 - Helper and Utility Functions
 
@@ -381,6 +380,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Dest
 ### Video 16 - Updating our Order State
 
 The order that Wes likes to put things in his `App.js` file:
+
  - state at the top
  - lifecycle events
  - custom stuff
@@ -591,12 +591,15 @@ Two types of animation, one is sort of mounting and unmounting of different comp
 
 [React Transition Group](https://reactcommunity.org/react-transition-group/)
 
+CSS used - Stylus - <http://stylus-lang.com/>
 
-CSS used - Stylus - http://stylus-lang.com/
 - same as SASS, is based on indentation
 - omits brackets and semi colons
-
 
 ### Video 23 - Component Validation with PropTypes
 
 [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+
+### Video 24 - Authentication
+
+Through Firebase have enabled Facebook, Twitter and Github.

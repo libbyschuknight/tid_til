@@ -477,7 +477,6 @@ Great article:
 
 [The Basics of Ruby Memoization](http://gavinmiller.io/2013/basics-of-ruby-memoization/)
 
-
 ## splat * / **
 
 [An introduction to Ruby’s *Splat and double **Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
@@ -485,7 +484,7 @@ Great article:
 [Using splats to build up and tear apart arrays in Ruby](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/)
 
 >But the main idea is that whenever you don’t want to specify the number of arguments you have, you would use a splat operator. The simplest example would be something like this:
-
+>
 >```ruby
 >def unknown_amount(*args)
 >  p args
@@ -493,6 +492,8 @@ Great article:
 >unknown_amount(1, 2, 3)
 ># => [1, 2, 3]
 >```
+
+[Ruby double splat (**) operator cheatsheet](https://jetrockets.pro/blog/ruby-double-splat-operator-cheatsheet)
 
 ## alias keyword and method
 
