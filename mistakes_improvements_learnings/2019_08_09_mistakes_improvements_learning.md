@@ -1,4 +1,4 @@
-# August 2019 Mistakes, Improvements, Learning and Stuff
+# August & September 2019 Mistakes, Improvements, Learning and Stuff
 
 ## Cucumber vs POM
 
@@ -129,3 +129,46 @@ The steps I took to get this fixed:
 - make changes re version of the gem
 - final the [gem release process](/gems/release_steps.md)
 - final the [gem release process](/gems/release_steps.md#-Release-process-for-APL-gem---for-my-understanding) (check where this link goes on github)
+
+## Updating feature steps to use POMs and what to do with steps that are used in other places
+
+I ended up doing this in a cucumber step file (`premium_providers_step.rb`):
+
+```ruby
+
+# Used in: core/features/admin_premium_shopper_product_creation.feature
+Given(/^I click the (Back to )?Premium Providers link$/) do |back_to|
+  step("I click the \"#{back_to}#{premium_providers_label}\" link")
+end
+
+def premium_providers_label
+  PremiumProvider.model_name.human.pluralize
+end
+
+
+Then(/^I should see the Premium Provider label$/) do
+  step("I should see \"#{premium_provider_label}\"")
+end
+
+Given(/^I click the (New|Edit) Premium Provider link$/) do |action|
+  step("I click the \"#{action} #{premium_provider_label}\" link")
+end
+
+def premium_provider_label
+  PremiumProvider.model_name.human
+end
+
+# ####
+
+# All other steps were using POMs and only used in one feature file
+```
+
+Code review suggeted this:
+
+>I think they are unnecessary per-step (esp. because they may be used elsewhere and therefore become out-of-date quickly), but fine for them to stay.
+>Something you could do is move them into specific steps that relate to the feature e.g.
+>
+>- admin/premium_shopper_product_steps.rb
+>- provider_steps.rb (or maybe rename provider.feature to premium_provider.feature)
+
+Great idea. Have done. And it all works!!

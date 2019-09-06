@@ -158,17 +158,45 @@ module UserInformationService
 end
 ```
 
-
 ### Keyword Arguments
+
 [Ruby and method arguments](http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/)
 
 [Ruby 2 Keyword Arguments](https://robots.thoughtbot.com/ruby-2-keyword-arguments),
 
 [Keyword arguments in Ruby 2.0](http://brainspec.com/blog/2012/10/08/keyword-arguments-ruby-2-0/))
 
+[Utilizing Ruby Keyword Arguments](https://medium.com/@tyler_brewer2/utilizing-ruby-keyword-arguments-462ba8366483)
 
+With a method like this:
+
+```ruby
+def enter_details(cost:, start_date:, end_date:)
+  cost_field.set(cost)
+  start_date_field.type_date(start_date)
+  end_date_field.type_date(end_date)
+end
+
+# called
+
+admin_app.new_premium_provider_page.form.enter_details(
+  name: "Alice",
+  start_date: "01 Jan 2014",
+  end_date: ""
+)
+
+# could pass in default values to the method
+
+def enter_details(cost:, start_date: "", end_date: "")
+...
+end
+
+# then can just do
+admin_app.new_premium_provider_page.form.enter_details(name: "Alice", start_date: "01 Jan 2014")
+```
 
 ## True / False Statements / Conditionals
+
 If using things that return a `boolean` value, don't need to have them in a `if/else` statement.
 
 ```ruby

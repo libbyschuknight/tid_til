@@ -320,26 +320,35 @@ Show the diff on commits:
 
 ### git stash
 
+#### name
+
 Add a name when you are stashing:
 
 ```bash
 git stash save useful name here
 ```
 
+#### show / view
+
 how to see what you have stashed
+
 ```bash
 git stash list
 git stash show -p # this shows the diff
 git stash show -p stash@{3}
 ```
 
-http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git
+<http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git>
+
+#### apply / pop
 
 And then to put back into the branch the stash you want:
 
 `git stash apply stash@{3}`
 
 `apply` keeps the stash, `pop` takes it of the stack (gets rid of it)
+
+#### remove / delete
 
 To get rid of a stash:
 
@@ -350,15 +359,27 @@ To get rid of a stash:
 
 `git stash clear` to remove all stashes
 
+Remove mutiple stashes but not all of them:
 
-Stash untacked files:
+```bash
+# for example - To delete all stashes older than stash@{19}:
+while git stash drop 'stash@{20}'; do true; done
+```
+
+<https://stackoverflow.com/questions/11369375/how-can-i-delete-all-of-my-git-stashes-at-once/57593045#57593045>
+
+#### untracked
+
+Stash untracked files:
+
 `git stash --include-untracked`
 `git stash -u`
->Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
-https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work
 
+>Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
+<https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work>
 
 ## Error when trying to apply a stash
+
 Early I had an error when upon searching the suggestion was to do this:
 `Normally closing git program and re open will fix this issue` or `rm -f ./.git/index.lock`
 
