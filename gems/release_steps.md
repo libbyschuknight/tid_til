@@ -9,7 +9,7 @@ Create new branch (`apl-123`)
 - write code, do all the things etc etc
 - get working
 - push new branch (`apl-123`) to gitlab
-- read for testing
+- ready for testing
 
 ### Core App
 
@@ -44,36 +44,31 @@ Create a new branch - (core - `apl-123`)
 ### APL Gem
 
 - remove / squash unnecessary commits from the gem branch `apl-123`
-  - e.g. there might be a few "Bump gem version" commits
   - best to do with a `git rebase -i` probably
+  <!-- Note I think this was meant for the core app info -->
 - merge into master
   - this will trigger a build of the deploy branch
 - update version, changelog and commit to master
-  - ruby `version.rb
+  - ruby `version.rb`
   - javascript `package.json`
+  - change log - `CHANGELOG.md`
   - this commit will trigger a build of the deploy branch
 
 #### Gitlab
 
 - go to GitLab
 - create a new tag
-  - repo -> tags -> new tag - create from `deploy` branch
-  - messages - e.g. `Release version 0.9.0`
-  - release notes - from the changelog
-
-    ```markdown
-    Changed
-    Completed documentation for DatePicker component. FG-49
-
-    Added
-
-    Button Component
-    Icon Component (private API)
-    ```
+  - repo -> tags -> new tag - **create from `deploy` branch**
+  - tag name - e.g. v0.9.0
+  - message - e.g. `Release gem version 0.9.0`
+  - release notes - do not add any release notes, we are not doing releases like this, see CHANGELOG.md  for release notes
 
 ### Core App
 
 - in the core branch (core - `apl-123`)
+- remove / squash unnecessary commits from the gem branch `apl-123`
+  - e.g. there might be a few "Bump gem version" commits
+  - best to do with a `git rebase -i` probably
 - update the `Gemfile` to use the new APL gem version
   `gem 'admin_pattern_library', :powergem => 'admin_pattern_library', :tag => 'v0.0.0'`
 - run `bundle update --conservative admin_pattern_library`
@@ -81,6 +76,6 @@ Create a new branch - (core - `apl-123`)
   - `bundle _1.17.3_ update --conservative admin_pattern_library`
 - in the `Gemfile.lock` the information for the APL gem should be updated and NOTHING else.
 - push branch to GitLab
-- CI hopefulluy passes
+- CI hopefully passes
 - test on Wippy - just in case
 - then assign to MargeBot so it is merged into master!
