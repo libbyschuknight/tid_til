@@ -6,10 +6,9 @@
 
 [What does bundle exec rake mean?](https://stackoverflow.com/questions/6588674/what-does-bundle-exec-rake-mean)
 
-
 ## [Table Display](https://github.com/willbryant/table_display)
 
-```
+```bash
 >> pt Customer.find(7139).purchases, :only => [:id, :purchase_price], :methods => [:start_date?]
 +---------+----------------+-------------+
 | id      | purchase_price | start_date? |
@@ -25,7 +24,7 @@
 ...
 ```
 
-```
+```bash
 >> pt User.all.limit(5), :only => [:id, :email, :first_name, :last_name]
 +--------+--------------------------------+--------------+------------------+
 | id     | email                          | first_name   | last_name        |
@@ -38,7 +37,8 @@
 +--------+---------------------------------+--------------+------------------+
 ```
 
-# Useful Gems
+## Useful Gems
 
-## [Rubocop](https://rubygems.org/gems/rubocop/versions/0.67.2)
+### [Rubocop](https://rubygems.org/gems/rubocop/versions/0.67.2)
+
 See [linters/rubocop](../linters/rubocop.md)

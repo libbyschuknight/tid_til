@@ -378,12 +378,12 @@ Stash untracked files:
 >Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
 <https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work>
 
-## Error when trying to apply a stash
+## Error when trying to apply a stash / When trying to stage files to undone commit message
 
-Early I had an error when upon searching the suggestion was to do this:
+Early I had an error, when upon searching the suggestion was to do this:
 `Normally closing git program and re open will fix this issue` or `rm -f ./.git/index.lock`
 
-https://stackoverflow.com/questions/38004148/another-git-process-seems-to-be-running-in-this-repository
+<https://stackoverflow.com/questions/38004148/another-git-process-seems-to-be-running-in-this-repository>
 
 I tried the second suggestion.
 

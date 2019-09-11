@@ -72,6 +72,8 @@
 
 [The Power Of A Grandmother | Hīria Te Rangi | TEDxWellington](https://www.youtube.com/watch?v=RHq1waE-qIY&feature=youtu.be&app=desktop) - video
 
+[EMPATHY is the most important leadership skill needed today!](https://www.linkedin.com/pulse/empathy-most-important-leadership-skill-needed-today-hyacinth)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -173,6 +175,8 @@ Sarah Mei: Diversity of Thought tweets:
 [toxic / finding a safe place to work](http://lowercaseopinions.com/safe-place)
 
 [final questions / what to ask at the end of an interview](http://lowercaseopinions.com/final-questions/)
+
+[Reducing Job Interview Anxiety, Part 1: Increasing Touch Points](https://chelseatroy.com/2019/05/30/reducing-job-interview-anxiety-part-1-increasing-touch-points/)
 
 ## More Stuff
 

@@ -17,6 +17,7 @@ Create a new branch - (core - `apl-123`)
 
 - can use this for developing local (who could use the `Playground` app)
   - set the APL gem tp local path in Gemfile
+  `gem 'admin_pattern_library', :path => '../admin_pattern_library'`
   - use  `bundle _1.17.3_ update --conservative admin_pattern_library` to up date just the gem (you may or may not need to set the `bundle` version)
 - if adding to the gem, changes you make in the core branch will not be pushed to master
 
