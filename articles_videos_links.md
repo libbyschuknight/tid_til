@@ -72,6 +72,8 @@
 
 [The Power Of A Grandmother | Hīria Te Rangi | TEDxWellington](https://www.youtube.com/watch?v=RHq1waE-qIY&feature=youtu.be&app=desktop) - video
 
+[EMPATHY is the most important leadership skill needed today!](https://www.linkedin.com/pulse/empathy-most-important-leadership-skill-needed-today-hyacinth)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -134,6 +136,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [How “Good Intent” Undermines Diversity and Inclusion](https://thebias.com/2017/09/26/how-good-intent-undermines-diversity-and-inclusion/)
 
+[How to Fix Your Tech Interview to Increase Diversity](https://www.diversifytech.co/blog/how-to-fix-tech-interview-to-increase-diversity)
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
@@ -176,6 +180,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [final questions / what to ask at the end of an interview](http://lowercaseopinions.com/final-questions/)
 
+[Reducing Job Interview Anxiety, Part 1: Increasing Touch Points](https://chelseatroy.com/2019/05/30/reducing-job-interview-anxiety-part-1-increasing-touch-points/)
+
 ## More Stuff
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
@@ -185,6 +191,8 @@ Sarah Mei: Diversity of Thought tweets:
 ## Work Stuff
 
 [How We Hire Developers](https://automattic.com/work-with-us/how-we-hire-developers/)
+
+[Setting goals with your engineers that don’t completely suck](https://medium.com/@tsunamino/setting-goals-with-your-engineers-that-dont-completely-suck-cb76b87e4275)
 
 ### Working Remotely
 
