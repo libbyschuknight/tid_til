@@ -150,6 +150,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Imposter Syndrome: Why You Have It and What You Can Do About It](https://zapier.com/blog/what-is-imposter-syndrome/)
 
+[What is impostor syndrome and how you can combat it?](https://www.ted.com/talks/elizabeth_cox_what_is_imposter_syndrome_and_how_can_you_combat_it#t-12340)
+
+> build confidence in some simple truths: you have talent, you are capable, and you belong.
+
 [The Mistakes I Made As a Beginner Programmer: Learn to identify them, make habits to avoid them](https://edgecoders.com/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
 
 [It is never too late to be who you might have been — becoming a developer at age 36](https://medium.freecodecamp.org/it-is-never-too-late-to-be-who-you-might-have-been-becoming-a-developer-at-age-36-7d186ad5702)
@@ -377,6 +381,8 @@ https://twitter.com/betsythemuffin/status/1006597377413795842
 ## Mac Stuff
 
 [macOS Setup Guide](http://sourabhbajaj.com/mac-setup/)
+
+[How to change where Mac screenshots are saved](https://www.macworld.co.uk/how-to/mac-software/change-where-mac-screenshots-saved-3682381/)
 
 ### Other Stuff
 

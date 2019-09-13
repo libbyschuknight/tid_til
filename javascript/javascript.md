@@ -132,6 +132,8 @@ IIFE (Immediately Invoked Function Expression) is a JavaScript function that run
 
 [How to handle event handling in JavaScript (examples and all)](https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57)
 
+[Object Assignment vs. Primitive Assignment in JavaScript for Beginners](https://nick.scialli.me/object-assignment-for-beginners/)
+
 ### [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
 ECMA = European Computer Manufacturers Association, and has been around since the 1960s
@@ -230,7 +232,7 @@ console.log(sum(2, 6));
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors>
 
->Property accessors provide access to an object's properties by using the dot notation or the bracket notation.
+> Property accessors provide access to an object's properties by using the dot notation or the bracket notation.
 
 ```js
 var person = {};
@@ -240,7 +242,7 @@ person['lastname'] = 'Rossi';
 console.log(person.firstname);
 // expected output: "Mario"
 
-person = {'firstname': 'John', 'lastname': 'Doe'}
+person = { firstname: 'John', lastname: 'Doe' };
 
 console.log(person['lastname']);
 // expected output: "Doe"
@@ -349,8 +351,8 @@ Webpack is a build / bundle tool.
 > Concept #1 — The core dichotomy of build tools is “installing vs. doing”
 > Build tools do two things:
 >
->1. Install things
->2. Do things
+> 1.  Install things
+> 2.  Do things
 >
 > Concept #4 — The lines between “install” and “do” can be blurry
 >

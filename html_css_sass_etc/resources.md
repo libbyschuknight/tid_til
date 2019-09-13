@@ -4,7 +4,7 @@
 
 ### [Semantic code](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
 
->Semantic code describes the value of content on a page, regardless of the style or appearance of that content. There are several benefits to using semantic elements, including enabling computers, screen readers, search engines, and other devices to adequately read and understand the content on a web page. Additionally, semantic HTML is easier to manage and work with, as it shows clearly what each piece of content is about.
+> Semantic code describes the value of content on a page, regardless of the style or appearance of that content. There are several benefits to using semantic elements, including enabling computers, screen readers, search engines, and other devices to adequately read and understand the content on a web page. Additionally, semantic HTML is easier to manage and work with, as it shows clearly what each piece of content is about.
 
 ## HTML
 
@@ -14,7 +14,7 @@
 
 [The HTML autocomplete attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
 
->The HTML autocomplete attribute is available on `<input>` elements that take a text or numeric value as input, `<textarea>` elements, `<select>` elements, and `<form>` elements. autocomplete lets web developers specify what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
+> The HTML autocomplete attribute is available on `<input>` elements that take a text or numeric value as input, `<textarea>` elements, `<select>` elements, and `<form>` elements. autocomplete lets web developers specify what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
 
 [HTML attribute reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 
@@ -24,8 +24,8 @@
 
 [Why it's important to give your HTML button a type](https://dev.to/claireparkerjones/why-its-important-to-give-your-html-button-a-type-58k9)
 
->`type`
->The type of the button. Possible values are:
+> `type`
+> The type of the button. Possible values are:
 > `submit`: The button submits the form data to the server. This is the default if the attribute is not specified, or if the attribute >is dynamically changed to an empty or invalid value.
 > `reset`: The button resets all the controls to their initial values.
 > `button`: The button has no default behavior. It can have client-side scripts associated with the element's events, which are >triggered when the events occur.
@@ -36,11 +36,30 @@
 
 [Full Tenon-UI Form demo](https://www.tenon-ui.info/forms-full-demo/) - good demo for an accessible form
 
+### Learning
+
+_Interneting is Hard: HTML & CSS basics_
+Beautifully crafted resource to learn basic concepts of CSS and HTML. From Layout to structuring CSS
+<https://internetingishard.com/>
+
+_CSS Tricks_
+Visual explanation of techniques, code snippets, industry trends, and video tutorials
+<https://css-tricks.com/snippets>
+For example, checkout their flexbox layout guide! <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+
+_Can I Use_
+Awesome place to check if a CSS or HTML feature you want to use is supported in a certain browser.
+<https://caniuse.com>
+
+_MDN web docs_
+Great references for HTML5. Seriously
+<https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5>
+
 ## CSS
 
 ### clip-path
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+<https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path>
 
 [CSS clip-path marker](https://bennettfeely.com/clippy/)
 
@@ -48,7 +67,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
 
 ### position
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/position
+<https://developer.mozilla.org/en-US/docs/Web/CSS/position>
 
 [position (css-tricks)](https://css-tricks.com/almanac/properties/p/position/)
 
@@ -104,4 +123,4 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
 
 [Unsplash](https://unsplash.com/)
 
->The internet’s source of freely useable images. Powered by creators everywhere.]
+> The internet’s source of freely useable images. Powered by creators everywhere.]

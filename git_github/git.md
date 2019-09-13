@@ -6,6 +6,8 @@
 
 [Become a git guru.](https://www.atlassian.com/git/tutorials)
 
+[Basic Git commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
+
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
 [New Developer? You should’ve learned Git yesterday.](https://codeburst.io/number-one-piece-of-advice-for-new-developers-ddd08abc8bfa)
@@ -30,17 +32,17 @@
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
-  >**The seven rules of a great git commit message**
-  >
-  >Keep in mind: This has all been said before.
-  >
-  >- Separate subject from body with a blank line
-  >- Limit the subject line to 50 characters
-  >- Capitalise the subject line
-  >- Do not end the subject line with a period
-  >- Use the imperative mood in the subject line
-  >- Wrap the body at 72 characters
-  >- Use the body to explain what and why vs. how
+> **The seven rules of a great git commit message**
+>
+> Keep in mind: This has all been said before.
+>
+> - Separate subject from body with a blank line
+> - Limit the subject line to 50 characters
+> - Capitalise the subject line
+> - Do not end the subject line with a period
+> - Use the imperative mood in the subject line
+> - Wrap the body at 72 characters
+> - Use the body to explain what and why vs. how
 
 [TELLING STORIES THROUGH YOUR COMMITS](http://blog.mocoso.co.uk/talks/2015/01/12/telling-stories-through-your-commits/``)
 
@@ -169,12 +171,12 @@ Issue had with local repo:
 - resolved conflicts that came up
 - some how had one file that had all of its code missing, it was the most recent file
 - to fix did:
-    `git pull -f origin branch`
-    `git reset --hard origin/branch`
+  `git pull -f origin branch`
+  `git reset --hard origin/branch`
 
 ## cancelling a merge that has conflicts - abort
 
-`git merge --abort`  if there has been conflicts
+`git merge --abort` if there has been conflicts
 
 [How to: Cancel a Git merge](https://nathanhoad.net/how-to-git-cancel-merge/)
 
@@ -182,28 +184,26 @@ There are heaps of ways to do it in git but since Git version 1.7.4 you can do t
 
 https://www.git-scm.com/docs/git-merge/1.7.4
 
-
 ## searching commits
 
 ```bash
 git log --all --grep="#til"
 ```
 
-
 ## Deleting
 
 ### Deleting tags
 
 If you have pushed a tag and then released that you had the wrong number, you can do this:
+
 ```bash
 git tag -d v1.0
 git push origin :refs/tags/v1.0
 ```
+
 from [How do I remove or delete a tag from a Git repo?](https://confluence.atlassian.com/bitbucket/how-do-i-remove-or-delete-a-tag-from-a-git-repo-282175551.html), even though it is on a BitBUcket page, it works for GitHub too (I guess as it is in git).
 
-
 ### Deleteing multiple branches at once
-
 
 ```bash
 # a grep showing what branches this will be
@@ -216,6 +216,7 @@ $ git branch -D `git branch | grep -E 'ci-*'`
 Deleted branch ci-2949 (was 8e0aa94780).
 Deleted branch ci-3219 (was 7cefdc4239).
 ```
+
 Bound to be lots of other ways to delete branches and different combinations of branches.
 
 Another suggestion:
@@ -223,7 +224,6 @@ Another suggestion:
 ```bash
 git branch --merged | egrep -v "(^\*|master|prod)" | xargs git branch -D
 ```
-
 
 ### fetch /checkout
 
@@ -240,7 +240,6 @@ Check what what remotes are on a repo:
 - `git branch -a` => shows branches and remotes including `gem_fury`
 
 - `git branch -r` => just shows remotes
-
 
 ### `git add <file1> <file2>`
 
@@ -269,6 +268,7 @@ UPPATE to this is that I am now using the Git / Github integration with Atom htt
 ```bash
 git checkout 4.4.0
 ```
+
 Instead of a branch name you will see the first few digits of the tags commit shard.
 You will get something like this:
 
@@ -286,16 +286,19 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at 3768438... Tag version 4.4.0
 ```
+
 Make a new branch so any changes you make can be kept:
+
 ```bash
 git branch -d feature/participant_roles_facade
 ```
+
 Apply anything you have stashed - `git stash apply`
 
 (see [Gem Stuff](gems/gem_stuff.md) for example of when used)
 
-
 ### `git log` plus variations
+
 I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and `zsh` instead of `bash`.
 I use the [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet) as well, which has [a lot of `git`](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) aliases set up.
 
@@ -352,7 +355,7 @@ And then to put back into the branch the stash you want:
 
 To get rid of a stash:
 
-`git stash drop`  removes top one
+`git stash drop` removes top one
 `git stash drop stash@{3}` specific one
 
 [Cleaning up your stash](https://www.atlassian.com/git/tutorials/git-stash#cleaning-up-your-stash)
@@ -375,8 +378,8 @@ Stash untracked files:
 `git stash --include-untracked`
 `git stash -u`
 
->Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
-<https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work>
+> Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files:
+> <https://www.atlassian.com/git/tutorials/git-stash#stashing-your-work>
 
 ## Error when trying to apply a stash
 
@@ -488,7 +491,7 @@ Then reset the unwanted files in order to leave them out from the commit:
 
 `git reset HEAD path/to/unwanted_file`
 
-`git reset HEAD test/`    # remove all the files under test that didn't want to add
+`git reset HEAD test/` # remove all the files under test that didn't want to add
 
 Now commit again, you can even re-use the same commit message:
 
@@ -498,14 +501,13 @@ Now commit again, you can even re-use the same commit message:
 
 [How can I undo the last commit?](https://www.git-tower.com/learn/git/faq/undo-last-commit)
 
->In these cases, the "reset" command is your best friend:
+> In these cases, the "reset" command is your best friend:
 >
->`$ git reset --soft HEAD~1`
+> `$ git reset --soft HEAD~1`
 >
->If you don't want to keep these changes, simply use the --hard flag. Be sure to only do this when you're sure you don't need these changes anymore.
+> If you don't want to keep these changes, simply use the --hard flag. Be sure to only do this when you're sure you don't need these changes anymore.
 >
->`$ git reset --hard HEAD~1`
-
+> `$ git reset --hard HEAD~1`
 
 ## Find most recent branches
 
@@ -588,7 +590,6 @@ First things first is making the `~/Projects/open_source/www: resolve-register_o
 ~/Projects/open_source/www: resolve-register_of_ruby_companies   #copy with the commit I need
 ```
 
-
 ```bash
 ~/Projects/open_source/forked/www: gh-pages>$ git remote add localcopy ../../www
 ```
@@ -613,7 +614,7 @@ From ../../www
  * [new branch]      gh-pages                -> localcopy/gh-pages
  * [new branch]      register-of-companies   -> localcopy/register-of-companies
  * [new branch]      resolve-register_of_ruby_companies -> localcopy/resolve-register_of_ruby_companies
- ```
+```
 
 Then was able to `cherry-pick` which commits I wanted to move from one to the other.
 
@@ -648,10 +649,10 @@ gunwip	   git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
 ```
 
 ## .gitignore
+
 https://git-scm.com/docs/gitignore
 
 https://www.atlassian.com/git/tutorials/saving-changes/gitignore
-
 
 If want to ignore `node_modules` folder
 
@@ -673,7 +674,6 @@ e.g. if you want to have a local folder but not have it in git or in the `gitign
 
 [Auto-squashing Git Commits](https://robots.thoughtbot.com/autosquashing-git-commits)
 
-
 ## git-rerere
 
 Records conflict changes you have made so you don't have to do them again.
@@ -688,7 +688,7 @@ https://git-scm.com/docs/git-rerere
 
 <https://www.atlassian.com/git/tutorials/git-prune>
 
->The git prune command is an internal housekeeping utility that cleans up unreachable or "orphaned" Git objects. Unreachable objects are those that are inaccessible by any refs. Any commit that cannot be accessed through a branch or tag is considered unreachable.
+> The git prune command is an internal housekeeping utility that cleans up unreachable or "orphaned" Git objects. Unreachable objects are those that are inaccessible by any refs. Any commit that cannot be accessed through a branch or tag is considered unreachable.
 
 Used this after I was doing a pull on the master branch for the huge monolith at work, where it came up with this message:
 
