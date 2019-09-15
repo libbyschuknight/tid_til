@@ -13,3 +13,7 @@
 [Waiata / Anthems](https://open.spotify.com/album/0Gk1SmhYrh61EhIE8BSKQz?si=R1zYlUWZRJqOPyyYkEo3Iw)
 
 [email in te reo māori](https://static1.squarespace.com/static/57ca10fbd1758e8b0e641c15/t/5cd0e0b8a88e7800011a72e3/1557192955213/Arataua+I%CC%84mera+i+te+reo+Ma%CC%84ori+Graphic_Print_Crops_A4.pdf)
+
+[Te Taura Whiri i te Reo Māori: MĀORI LANGUAGE COMMISSION](https://tetaurawhiri.govt.nz/rauemi-a-ipurangi/)
+
+- [Rauemi ā-Ipurangi: Te Wiki o te Reo Māori 2019 Print and Digital Resources](https://tewikiotereomaori.nz/2019-resources/)

@@ -182,6 +182,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Reducing Job Interview Anxiety, Part 1: Increasing Touch Points](https://chelseatroy.com/2019/05/30/reducing-job-interview-anxiety-part-1-increasing-touch-points/)
 
+[Hire managers of one](https://signalvnoise.com/posts/1430-hire-managers-of-one)
+
 ## More Stuff
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)

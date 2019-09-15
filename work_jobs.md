@@ -2,9 +2,11 @@
 
 [Ruby and or Rails Companies in NZ](https://github.com/rubynz/www/wiki/Ruby-and-or-Rails-Companies-in-NZ)
 
-[list of remote dev/tech companies](https://twitter.com/joshbuchea/status/1152659632550060032?s=03) - tweet
+[The elephant in the room: when to talk money in an interview](https://www.seek.co.nz/career-advice/addressing-the-elephant-in-the-room-how-and-when-to-talk-money-in-an-interview?tracking=PSM-TWR-SOP-VSPSep19CA-SAT2111ST-21321&utm_campaign=SocialAlwaysOn&utm_source=Twitter&utm_medium=PaidSocialMedia&utm_content=VisitshareP)
 
 ## Remote work
+
+[list of remote dev/tech companies](https://twitter.com/joshbuchea/status/1152659632550060032?s=03) - tweet
 
 [Remote Work](https://joshbuchea.com/remote-work/)
 
@@ -17,6 +19,8 @@
 [Remote-friendly companies](https://github.com/remoteintech/remote-jobs)
 
 [Remote Jobs general guideline](https://gist.github.com/jeanlucaslima/1da263f81842058cf512a61d85ada4c1)
+
+[What it means to be remote-first vs. remote-friendly](https://circleci.com/blog/what-almost-failing-the-gre-taught-me-about-barriers-to-entry/)
 
 ## Resources
 

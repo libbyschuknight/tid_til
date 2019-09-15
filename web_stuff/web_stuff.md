@@ -4,6 +4,10 @@
 
 [MDN web docs: Resources for developers, by developers.](https://developer.mozilla.org/en-US/)
 
+- <https://developer.mozilla.org/en-US/docs/Web/HTML>
+- <https://developer.mozilla.org/en-US/docs/Web/CSS>
+- <https://developer.mozilla.org/en-US/docs/Web/JavaScript>
+
 [100+ unicode symbols that you can use](https://tutorialzine.com/2014/12/you-dont-need-icons-here-are-100-unicode-symbols-that-you-can-use)
 
 [Unicode® character table](https://unicode-table.com/en/#control-character)
@@ -44,7 +48,8 @@
 
 ## Learning CSS
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/CSS3_taxonomy_and_status-v2.png/1201px-CSS3_taxonomy_and_status-v2.png
+<https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/CSS3_taxonomy_and_status-v2.png/1201px-CSS3_taxonomy_and_status-v2.png>
+
 Start in the centre and work way outwards, in a methodical manner
 
 [HTML Tutorials. And Stuff.](http://htmldog.com/)
@@ -57,10 +62,10 @@ Start in the centre and work way outwards, in a methodical manner
 
 [What is the difference between authentication and authorization?](https://serverfault.com/questions/57077/what-is-the-difference-between-authentication-and-authorization)
 
->- Authentication is the process of verifying who you are. When you log on to a PC with a user name and password you are authenticating.
->- Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.
+> - Authentication is the process of verifying who you are. When you log on to a PC with a user name and password you are authenticating.
+> - Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.
 
-[How to fix target=”_blank” links: a security and performance issue in web pages](https://medium.com/@ali.dev/how-to-fix-target-blank-a-security-and-performance-issue-in-web-pages-2118eba1ce2f)
+[How to fix target=”\_blank” links: a security and performance issue in web pages](https://medium.com/@ali.dev/how-to-fix-target-blank-a-security-and-performance-issue-in-web-pages-2118eba1ce2f)
 
 ## Browsers
 
@@ -108,7 +113,7 @@ Start in the centre and work way outwards, in a methodical manner
 
 [Everything you need to know about Design Systems](https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969)
 
-  >A Design System is the single source of truth which groups all the elements that will allow the teams to design, realize and develop a product.
+> A Design System is the single source of truth which groups all the elements that will allow the teams to design, realize and develop a product.
 
 Follow on article
 [Atomic design: how to design systems of components](https://uxdesign.cc/atomic-design-how-to-design-systems-of-components-ab41f24f260e)

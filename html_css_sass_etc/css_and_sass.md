@@ -21,7 +21,8 @@
 [Understanding grid placement through building a HTML periodical table](https://www.chenhuijing.com/blog/understanding-grid-placement/#%F0%9F%91%9F)
 
 [The Ultimate Guide to CSS](https://docs.google.com/document/d/1PU8y7_jld2RBcj79uwmJCUBtjMeXNl44EjUu5jqY4YU/edit)
->A complete breakdown of the CSS support for the most popular mobile, web and desktop email clients on the planet.
+
+> A complete breakdown of the CSS support for the most popular mobile, web and desktop email clients on the planet.
 
 [Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
@@ -29,13 +30,15 @@
 
 [How to make your HTML responsive by adding a single line of CSS](https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/amp/?__twitter_impression=true)
 
->```css
->outline: 2px dotted hotpink
->```
+> ```css
+> outline: 2px dotted hotpink;
+> ```
 
 ### Specificity
 
 [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+
+[Understanding Specificity in CSS](https://alligator.io/css/understanding-specificity-in-css/)
 
 ### Useful Links (from Thomas Winter)
 
@@ -128,6 +131,6 @@ And in my case added `padding-right: 2em;`, as had another class adding `width: 
 
 <https://sass-lang.com/documentation/variables#default-values>
 
->Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
+> Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
 >
->To make this possible, Sass provides the !default flag. This assigns a value to a variable only if that variable isn’t defined or its value is null. Otherwise, the existing value will be used. This way, users can set variables before they import your library to customize its behavior.
+> To make this possible, Sass provides the !default flag. This assigns a value to a variable only if that variable isn’t defined or its value is null. Otherwise, the existing value will be used. This way, users can set variables before they import your library to customize its behavior.
