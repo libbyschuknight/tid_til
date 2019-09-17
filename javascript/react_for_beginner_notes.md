@@ -603,3 +603,5 @@ CSS used - Stylus - <http://stylus-lang.com/>
 ### Video 24 - Authentication
 
 Through Firebase have enabled Facebook, Twitter and Github.
+
+### Video 24 - ADD NOTES!!!

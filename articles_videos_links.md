@@ -138,6 +138,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [How to Fix Your Tech Interview to Increase Diversity](https://www.diversifytech.co/blog/how-to-fix-tech-interview-to-increase-diversity)
 
+[Hiring, Growth and Diversity](https://medium.com/flick-tech/hiring-growth-and-diversity-7fbe4809e498)
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)

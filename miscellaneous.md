@@ -3,6 +3,7 @@
 ## Trello
 
 [How To Format Your Text in Trello](http://help.trello.com/article/821-using-markdown-in-trello)
+
 [Keybaord Shortcuts](https://trello.com/shortcuts)
 
 ## Aliases
@@ -107,11 +108,6 @@ Control+Shift+Power
 
 control + shift + space bar - for switching between keyboard languages
 control + space bar - to bring up list and select with arrow keys
-
-## Some markdown stuff
-
-Image
-`![alt_tag](images/<name of image>.png)`
 
 ## Bug hunting
 

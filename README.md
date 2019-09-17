@@ -26,10 +26,6 @@ There are many terms in coding/development/computer science that I don't know yo
 
 ---
 
-## Links
-
-Good sites for learning markdown - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), [Markdown Cheatsheet
-](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## About
 
