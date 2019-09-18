@@ -6,6 +6,8 @@
 
 `fn + ctrl + F2` - menu focus
 
+`Option (⌥) + Command (⌘) + D` - toggle displaying of dock
+
 ## Chrome Dev Tools`
 
 `cmd + shift + p` - screenshot, when on inspect tab/window
@@ -30,7 +32,7 @@ Shift+Return » duplicates the tab into a new window.
 
 ## iTerm2
 
-## Keyboard Commands
+### Keyboard Commands
 
 `ctrl + u` - deleting a line
 `ctrl + y` - bringing that back
