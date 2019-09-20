@@ -1,10 +1,24 @@
 # Resources for HTML / CSS
 
+[CSS-Tricks](https://css-tricks.com)
+
+[Can I Use?](https://caniuse.com/)
+
+[Can I email?](https://www.caniemail.com)
+
+[My favorite CSS hack](https://dev.to/gajus/my-favorite-css-hack-32g3)
+
+[CSS Utility Classes: How To Use Them Effectively 🔥](https://blog.mariano.io/css-utility-classes-how-to-use-them-effectively-d61ee00dad2d)
+
 ## Use semantic code
 
 ### [Semantic code](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
 
 > Semantic code describes the value of content on a page, regardless of the style or appearance of that content. There are several benefits to using semantic elements, including enabling computers, screen readers, search engines, and other devices to adequately read and understand the content on a web page. Additionally, semantic HTML is easier to manage and work with, as it shows clearly what each piece of content is about.
+
+## Fonts
+
+[Typography in Design Systems: Choose Fonts, Set a Hierarchy, and Integrate with Components](https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e)
 
 ## HTML
 
@@ -36,10 +50,10 @@
 
 [Full Tenon-UI Form demo](https://www.tenon-ui.info/forms-full-demo/) - good demo for an accessible form
 
-### Learning
+### Learning (from slack)
 
 _Interneting is Hard: HTML & CSS basics_
-Beautifully crafted resource to learn basic concepts of CSS and HTML. From Layout to structuring CSS
+Beautifully crafted resource to learn basic concepts of CSS and HTML. From Layout to structuring `CSS`
 <https://internetingishard.com/>
 
 _CSS Tricks_
@@ -116,6 +130,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
 [background-blend-mode - mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
 
 [background-blend-mode - css tricks](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
+
+### overflow
+
+<https://css-tricks.com/almanac/properties/o/overflow/>
+
+>#Auto
+>
+>Auto overflow is very similar to the scroll value, only it solves the problem of getting scrollbars when you don't need them. The scrollbars will only show up if there >is content that actually breaks out of the element.
+
+<https://stackoverflow.com/questions/6689412/difference-between-html-overflow-auto-and-overflow-scroll>
+
+>overflow: scroll will hide all overflowing content and cause scroll bars to appear on the element in question. If the content does not overflow, the scrollbars will >still be visible, but disabled.
+>
+>overflow: auto is very similar, but the scrollbars only appear when the content is overflowing.
+
 
 ## Images
 

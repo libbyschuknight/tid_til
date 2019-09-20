@@ -136,6 +136,8 @@ Follow on article
 
 [Component-Driven Development](https://blog.hichroma.com/component-driven-development-ce1109d56c8e)
 
+[Typography in Design Systems: Choose Fonts, Set a Hierarchy, and Integrate with Components](https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e)
+
 ## Documentation Tools
 
 [MDX - Markdown for the component era](https://mdxjs.com)
