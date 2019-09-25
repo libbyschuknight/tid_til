@@ -138,6 +138,8 @@ Follow on article
 
 [Typography in Design Systems: Choose Fonts, Set a Hierarchy, and Integrate with Components](https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e)
 
+[Space in Design Systems: From Basics to Expanded Concepts to Apply Space with Intent](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62)
+
 ## Documentation Tools
 
 [MDX - Markdown for the component era](https://mdxjs.com)

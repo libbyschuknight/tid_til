@@ -3,9 +3,9 @@
 [What is React?](https://www.w3schools.com/whatis/whatis_react.asp)
 
 >React is a JavaScript library created by Facebook
-
+>
 >React is a User Interface (UI) library
-
+>
 >React is a tool for building UI components
 
 [What Is ReactJS and Why Should We Use It?](https://www.c-sharpcorner.com/article/what-and-why-reactjs/)
@@ -13,6 +13,12 @@
 >ReactJS basically is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It’s used for handling view layer for web and mobile apps. React also allows us to create reusable UI components.
 
 [What Is React? – Unveil The Magic Of Interactive UI With React](https://www.edureka.co/blog/what-is-react/)
+
+## React DevTools
+
+[Introducing the New React DevTools](https://reactjs.org/blog/2019/08/15/new-react-devtools.html)
+
+[React DevTools - Tutorial](https://react-devtools-tutorial.now.sh)
 
 ## Links
 
@@ -28,27 +34,34 @@
 
 [The Complete Introduction to React](https://jscomplete.com/learn/complete-intro-react#the-react-language)
 
+## Resources
+
+### Storybooks
+
+[carbon components react](http://react.carbondesignsystem.com/?path=/story/accordion--default)
+
+[lucid UI](https://appnexus.github.io/lucid/?path=/story/documentation--introduction)
+
 ## Linting
 
 [ESLint-plugin-React](https://github.com/yannickcr/eslint-plugin-react)
-
 
 ## Specifics
 
 [constructor()](https://reactjs.org/docs/react-component.html#constructor)
 
 >Typically, in React constructors are only used for two purposes:
+>
 >- Initializing local state by assigning an object to this.state.
 >- Binding event handler methods to an instance.
 
 [Understanding Constructors with React Components](https://alligator.io/react/constructors-with-react-components/)
 
 >>The constructor is a method that’s automatically called during the creation of an object from a class. It can handle your initial setup stuff like defaulting some properties of the object, or sanity checking the arguments that were passed in. Simply put, the constructor aids in constructing things.
-
+>
 >In React, the constructor is no different. It can be used to bind event handlers to the component and/or initializing the local state of the component. The constructor() method is fired before the component is mounted and like most things in React, has a few rules that you should follow when using them.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor
-
 
 [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 

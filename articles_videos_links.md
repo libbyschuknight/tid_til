@@ -188,6 +188,13 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Hire managers of one](https://signalvnoise.com/posts/1430-hire-managers-of-one)
 
+[Starting Today, Stop These 6 Things to Become the Best Version of Yourself](https://www.lifehack.org/articles/communication/starting-today-stop-these-6-things-become-the-best-version-yourself.html)
+
+[MENTAL HEALTH AWARENESS WEEK 2019: TE WHARE TAPA WHĀ](https://mhaw.nz/explore/te-whare-tapa-wha/#)
+
+My Wharenui
+![my wharenui](libswharenui.jpg)
+
 ## More Stuff
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
