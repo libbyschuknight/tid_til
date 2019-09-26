@@ -25,11 +25,18 @@ brew update && brew upgrade # could possibly come up with issues with doing this
 `brew list`
 
 ```bash
-ack         git         pcre          rbenv               tree
-autoconf    graphviz    phantomjs     readline            v8
-exercism    htop        pkg-config    ruby-build          xz
-fzf         libpng      postgresql    sqlite              yarn
-gdbm        openssl     python        the_silver_searcher
+Last login: Thu Sep 26 11:08:23 on ttys001
+/own/habit_repos: brew list
+autoconf        gdk-pixbuf        imagemagick		libtool			pkg-config		verm
+boost			gettext			imagemagick@6		little-cms2		postgresql		webp
+cairo			ghostscript		jpeg			mariadb			python			xz
+chromedriver		git			kitchen-sync		mysql-client		python@2		yaml-cpp
+cmake			glib			libcroco		node			rbenv			yarn
+fontconfig		go			libffi			openjpeg		readline		zsh
+freetype		gobject-introspection	libpng			openssl			ruby-build		zsh-completions
+fribidi			graphite2		libpq			pango			sqlite
+fzf			harfbuzz		librsvg			pcre			terminal-notifier
+gdbm			icu4c			libtiff			pixman			tree
 ```
 
 `the_silver_searcher` aka `ag` - <https://github.com/ggreer/the_silver_searcher>

@@ -41,6 +41,7 @@ I will make one model - `SurfSpot` with 8 fields/attributes.
 ### Step 2 - create a new Rails app
 
 Create a new rails app:
+
 ```bash
 rails new go_surf_5 --database=postgresql --skip-test-unit
 ```
@@ -48,6 +49,7 @@ rails new go_surf_5 --database=postgresql --skip-test-unit
 `rails new <app_name>` creates the new app (you can choose a different name for your app if you want)
 
 The other options:
+
 - `--database=postgresql` make postgresql the dataebase used
 - `--skip-test-unit` means that the default test framework is not installed
 
@@ -66,6 +68,7 @@ Add the remote to you git repo.
 ![add_remote](images/adding_remote.png)
 
 Since you have done the three git commands above, just do these to finish setting up you git repo:
+
 ```bash
 git remote add origin git@github.com:<git username>/<app_name>.git # replace username and app name
 
@@ -75,6 +78,7 @@ git push -u origin master
 ```
 
 ### Step 4 - Install RSpec (testing framework)
+
 (can skip if you don't care about testing!)
 https://github.com/rspec/rspec-rails
 
@@ -83,12 +87,14 @@ Add the rspec-rails gem to your gemfile, under `development, test`:
 ```ruby
 gem 'rspec-rails'
 ```
+
 It should now look like this:
+
 ```ruby
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rspec-rails'  
+  gem 'rspec-rails'
 end
 ```
 (the byebug may already have been present, if not you don't need to add)
@@ -112,6 +118,7 @@ git push origin <branch name> # push it all to github
 ```
 
 ### Step 4 - set up database/run server
+
 Create database
 `rake db:create`
 

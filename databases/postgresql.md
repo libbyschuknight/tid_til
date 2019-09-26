@@ -57,20 +57,19 @@ Sometimes it isn't this simple.''
 FATAL:  data directory "/usr/local/var/postgres" has group or world access
 DETAIL:  Permissions should be u=rwx (0700).
 ```
+
 Googled this and got http://www.rubycoloredglasses.com/2014/06/sharing-administrative-rights-with-homebrew/.
+
 Did this
 `chmod 700 /usr/local/var/postgres`
 but could cause other issues, which link addresses.
 Might be worthwhile to search this again if comes up again.
-
 
 ## Dropping a column in PSQL
 
 ```
 alter table accounts drop column nickname;
 ```
-
-
 
 ### elixir database issue
 

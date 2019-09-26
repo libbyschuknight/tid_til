@@ -1,8 +1,119 @@
 # Creating a New Rails app
 
-The steps I follow to create a new rails app - from https://github.com/roa-2015/shopping_cart_example (private repo)
+
+## 2019
+
+### Ruby, Rails, DB, github
+
+```bash
+# checking if postgresql is up to date
+
+brew list
+
+brew info postgresql
+
+brew outdated
+
+brew upgrade postgresql
+
+# checking ruby version and updating
+ruby -v
+
+rbenv versions
+
+rails --version
+
+rbenv local 2.6.3
+
+# installing rails 6
+gem install rails -v '6.0.0'
+
+rails --version
+
+# creating new app and pushing to github
+rails new resistance_training_habit --database=postgresql --skip-test
+
+cd resistance_training_habit
+
+# in VScode made a commit
+# create repo in github then
+git remote add origin git@github.com:libbyschuknight/resistance_training_habit.git
+
+git push -u origin master
+```
+
+### Adding RSpec, pry, other things
+
+#### <https://github.com/rspec/rspec-rails>
+
+```ruby
+group :development, :test do
+  gem 'rspec-rails' # go to rubygems to get most up to date version number
+end
+```
+
+Run
+
+```bash
+bundle install
+
+# then
+rails generate rspec:install
+```
+
+Add `--format documentation` to the `spec_helper`. This will print out the spec strings / documentation rather then just printing dots.
+
+#### pry
+
+<https://github.com/pry/pry>
+
+<https://github.com/deivid-rodriguez/pry-byebug>
+
+<https://github.com/rweng/pry-rails>
+
+```ruby
+group :development, :test do
+  gem 'rspec-rails'
+  # add
+  gem 'pry-byebug'
+  gem 'pry-rails'
+end
+```
+
+Run `bundle install`, the app already has `pry` and `byebug`, will fetch `pry-rails`.
+
+Also added (<https://www.railstutorial.org/book/beginning#sec-installing_rails)>
+
+```ruby
+group :test do
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
+  # Easy installation and use of web drivers to run system tests with browsers
+  gem 'webdrivers'
+end
+```
+
+### create db
+
+If using `postgresql` have to do this before `rails server` will work.
+
+```bash
+rails db:create
+```
+
+There maybe other things around users and permissions that need to be done with using `postgresql`
+
+### Fire up server
+
+`rails server` - and yay it works!!
+
+## OLD
+
+The steps I follow to create a new rails app - from <https://github.com/roa-2015/shopping_cart_example> (private repo)
 
 - create new rails app
+
 ```bash
 rails new app_name --database=postgresql --skip-test --skip-turbolinks
 
@@ -16,6 +127,7 @@ rails new app_name --database=postgresql --skip-test --skip-turbolinks
 [The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
 
 - if not already git initialised (which probably is with new versions of rails)
+
 ```
 cd app_name
 
@@ -38,7 +150,7 @@ git push -u origin --tags
 
 Remove coffeescript gem, might be better to do above.
 
-Install RSpec Rails - https://github.com/rspec/rspec-rails
+Install RSpec Rails - <https://github.com/rspec/rspec-rails>
 
 Add rspec-rails to both the :development and :test groups in the Gemfile:
 
@@ -105,6 +217,7 @@ rake db:migrate
 ```
 
 If you have run a migration and then want to reverse:
+
 ```bash
 rails destroy resource CreateFeetsLegsWeapons
 ``

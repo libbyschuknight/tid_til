@@ -207,6 +207,8 @@ My Wharenui
 
 [Setting goals with your engineers that don’t completely suck](https://medium.com/@tsunamino/setting-goals-with-your-engineers-that-dont-completely-suck-cb76b87e4275)
 
+[Software Engineer vs. Web Developer](http://blog.thefirehoseproject.com/posts/software-engineer-vs-web-developer/)
+
 ### Working Remotely
 
 [Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)

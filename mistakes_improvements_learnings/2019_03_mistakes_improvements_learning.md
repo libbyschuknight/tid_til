@@ -87,27 +87,28 @@ Asked this question in Ruby NZ slack
 Got a couple of great replies!!
 
 >RM
-
+>
 >The first part of this article has a bit of the history which kind of explains the why of it: https://medium.com/michelada-io/from-the-asset-pipeline-to-webpack-ce5a4bc323a9
-
+>
 >My answer to your question would be:
+>
 >- Rails had, and still has, the asset pipeline, which solved the problem of how to use JS, Sass, etc in your Rails applications.
 >- Since then, JS development has changed a fair bit, and the popularity of single page applications (SPAs) has meant that peoples’ workflow in JS has changed
 >- The asset pipeline isn’t really set up to handle the newer workflows, while Webpack is
 >- The Rails team introduced Webpacker to solve this problem, and I believe they will eventually deprecate the asset pipeline
 >- Webpack does the job of bundling up your JS and serving it where it needs to be served, and allows you to run it through transformers, so you can use technologies like ES7 and TypeScript in your Rails applications
 >Webpacker in Rails helps us move from a ‘sprinkles here, sprinkles there’ approach to JavaScript to a more app-like approach to JavaScript, where you might be using different frameworks and libraries for your UIs rather than relying on erb
+
 ---
 >ur5us
-
+>
 >`Webpacker in Rails helps us move from a ‘sprinkles here, sprinkles there’ approach to JavaScript to a more app-like approach to JavaScript, where you might be using different frameworks and libraries for your UIs rather than relying on erb`
-
+>
 >I don’t disagree necessarily. Instead, I’d like to further qualify the “sprinkles” approach. It probably means different things to different people. For the most part it’s probably fair to say that it usually implies rendering your HTML server side and then add some dynamic behaviour via jQuery and plugins. It works but it’s hard to maintain/extend in larger apps. These days, the sprinkles approach can mean something different though. For instance, you could have one page in your Rails app (for lack of a better word) that uses a ReactJS/VueJS/StimulusJS/etc app, but only for that one page or section of the entire application. With ReactJS/VueJS you’d probably push the view rendering into the frameworks’ preferred templating language, e.g. JSX or `<template>…</template>`. With StimulusJS (Basecamp’s JS framework) you’d still render your HTML server side (ERB by default in Rails), annotate it with lots of special meaning `data-` attributes and then provide one or even multiple little apps for the different dynamic behaviours. So it that sense it’s still somewhat a sprinkles approach. Here’s an example for what I mean using VueJS + Turbolinks: https://gorails.com/episodes/how-to-use-vuejs-and-turbolinks-together IIRC, GitLab uses VueJS to “app-ify” parts of their UI but it’s not one big JS app yet. Somebody please correct me there if this is no longer true.
-
+>
 >I wholeheartedly on the premise that Webpack(er) allows one to use new JS technologies including ES6/7/8, TS, and many others. Bundling your JS is not a universally solved problem (IMO) but this is one possible solution with a big/vocal community and lots of tooling. Brunch we’d be another one and there are probably a few more.
 
-
-## Getting React working in the gem for developement purposes
+## Getting React working in the gem for development purposes
 
 Using a little simple button to help with this
 
