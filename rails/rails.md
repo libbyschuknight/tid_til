@@ -1,6 +1,6 @@
 # Rails
 
-<https://api.rubyonrails.org/> - Ruby on Rails  - RDOC_MAIN.rdoc
+<https://api.rubyonrails.org/> - Ruby on Rails - RDOC_MAIN.rdoc
 
 [Ruby on Rails Guides](https://guides.rubyonrails.org/)
 
@@ -15,7 +15,12 @@
 <https://github.com/turbolinks/turbolinks>
 
 [Turbolinks](https://thoughtbot.com/upcase/videos/turbolinks)
-<!-- add images?? -->
+
+![turbolinks 1](/rails/turbolinks_1.png)\
+
+![turbolinks 1](/rails/turbolinks_2.png)
+
+![jquery turbolinks](/rails/jquery_turbolinks.png)
 
 ## Upgrade
 
@@ -88,7 +93,7 @@ This was also happening in rails console.
 Quick Google search came up with [Why doesn't Rails autoload classes from app/services?](https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-from-app-services)
 Solution is to stop `spring`
 
->Stopping Spring with bin/spring stop will force Spring to load your app fresh. Now running rails console and inspecting ActiveSupport::Dependencies.autoload_paths will successfully show app/services.
+> Stopping Spring with bin/spring stop will force Spring to load your app fresh. Now running rails console and inspecting ActiveSupport::Dependencies.autoload_paths will successfully show app/services.
 
 <https://stackoverflow.com/questions/32873343/why-doesnt-rails-autoload-classes-from-app-services/41371440#41371440>
 
@@ -101,7 +106,7 @@ Although, it may happen again when I add another file or folder?? And if so then
 
 ## Assets Pipeline - scss
 
-Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous  project, I was missing:
+Been working on my Seido Karate Guide and added some styling to the `stances.scss` file. When loading page this wasn't coming through. Looking at a previous project, I was missing:
 
 ```js
 *= require_tree .
@@ -396,6 +401,7 @@ end
 This was using Rails 4 with RSpec 3.
 
 Note from senior dev
+
 > Yeah, so this is a more often that not a result of not using the ActiveRecord associations to update things like using Dog.create(person_id: person.id, number: number) instead of the better person.dog.create(number: number) that updates in memory as well.
 
 ## In Rails console - `reload!`
@@ -446,7 +452,7 @@ Used this so a flash message wasn't staying around between new applications.
 ## Rails Conventions
 
 > It is convention in Rails (and Ruby to some degree) to use ! at the end of the method name when there is going to be a side effect (like saving as well as changing attributes)
-@ootovak
+> @ootovak
 
 ## Bits & Bobs
 
@@ -487,15 +493,15 @@ To get load the `structure.sql` run `rake db:structure:load`
 
 <http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html>
 
->has_secure_password(options = {}) Link
->Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
+> has_secure_password(options = {}) Link
+> Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
 >
->The following validations are added automatically:
+> The following validations are added automatically:
 >
->- Password must be present on creation
->- Password length should be less than or equal to 72 characters
->- Confirmation of password (using a password_confirmation attribute)
->- If password confirmation validation is not needed, simply leave out the value for password_confirmation (i.e. don't provide a form field for it). When this attribute has a nil value, the validation will not be triggered.
+> - Password must be present on creation
+> - Password length should be less than or equal to 72 characters
+> - Confirmation of password (using a password_confirmation attribute)
+> - If password confirmation validation is not needed, simply leave out the value for password_confirmation (i.e. don't provide a form field for it). When this attribute has a nil value, the validation will not be triggered.
 
 - add method to `user.rb` - `has_secure_password`
 - add `bcrypt` gem to gemfile
@@ -505,20 +511,21 @@ To get load the `structure.sql` run `rake db:structure:load`
 
 [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
 
->2.1 What are Sessions?
->HTTP is a stateless protocol. Sessions make it stateful.
+> 2.1 What are Sessions?
+> HTTP is a stateless protocol. Sessions make it stateful.
 >
->Most applications need to keep track of certain state of a particular user. This could be the contents of a shopping basket or the user id of the currently logged in user. Without the idea of sessions, the user would have to identify, and probably authenticate, on every request. Rails will create a new session automatically if a new user accesses the application. It will load an existing session if the user has already used the application.
+> Most applications need to keep track of certain state of a particular user. This could be the contents of a shopping basket or the user id of the currently logged in user. Without the idea of sessions, the user would have to identify, and probably authenticate, on every request. Rails will create a new session automatically if a new user accesses the application. It will load an existing session if the user has already used the application.
 
 [Session](http://guides.rubyonrails.org/action_controller_overview.html#session)
->Your application has a session for each user in which you can store small amounts of data that will be persisted between requests. The session is only available in the controller and the view and can use one of a number of different storage mechanisms:
+
+> Your application has a session for each user in which you can store small amounts of data that will be persisted between requests. The session is only available in the controller and the view and can use one of a number of different storage mechanisms:
 >
->- ActionDispatch::Session::CookieStore - Stores everything on the client.
->- ActionDispatch::Session::CacheStore - Stores the data in the Rails cache.
->- ActionDispatch::Session::ActiveRecordStore - Stores the data in a database using Active Record. (require activerecord-session_store gem).
->- ActionDispatch::Session::MemCacheStore - Stores the data in a memcached cluster (this is a legacy implementation; consider using CacheStore instead).
+> - ActionDispatch::Session::CookieStore - Stores everything on the client.
+> - ActionDispatch::Session::CacheStore - Stores the data in the Rails cache.
+> - ActionDispatch::Session::ActiveRecordStore - Stores the data in a database using Active Record. (require activerecord-session_store gem).
+> - ActionDispatch::Session::MemCacheStore - Stores the data in a memcached cluster (this is a legacy implementation; consider using CacheStore instead).
 >
->All session stores use a cookie to store a unique ID for each session (you must use a cookie, Rails will not allow you to pass the session ID in the URL as this is less secure).
+> All session stores use a cookie to store a unique ID for each session (you must use a cookie, Rails will not allow you to pass the session ID in the URL as this is less secure).
 
 [How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
 
@@ -542,9 +549,9 @@ Add debug to view:
 
 [Stop Using Instance Variables Inside Your Partials](http://www.carlosramireziii.com/stop-using-instance-variables-in-partials.html)
 
->Partials using local variables are easier to reuse
->Partials that use local variables are more maintainable
->Partials that use local variables are easier to debug
+> Partials using local variables are easier to reuse
+> Partials that use local variables are more maintainable
+> Partials that use local variables are easier to debug
 
 #### Routes
 
@@ -570,22 +577,18 @@ Came across the `link_to_remote`, this is deprecated, can do something like this
 
 ```html
 <% if add_utility_notice.shown? %>
-  <div class="add-utility-notice">
-    <%= link_to(new_utility_path(:property_id => add_utility_notice.property_id, :customer_id => add_utility_notice.customer_id), { :class => "text" }) do %>
-      <%= t :company_name %> now has <%= add_utility_notice.utility_type %>!
-      <span class="call-to-action">Add now</span>
-    <% end %>
-
-    <%= link_to(customer_utility_notice_dismissals_path, html_options = {
-        :class => "dismiss-button",
-        :method => :post,
-        :remote => true,
-        :onclick => "document.querySelector('.add-utility-notice').style.display = 'none'; return false"
-      }) do %>
-      <div class="icon"></div>
-    <% end %>
-
-  </div>
+<div class="add-utility-notice">
+  <%= link_to(new_utility_path(:property_id => add_utility_notice.property_id,
+  :customer_id => add_utility_notice.customer_id), { :class => "text" }) do %>
+  <%= t :company_name %> now has <%= add_utility_notice.utility_type %>!
+  <span class="call-to-action">Add now</span>
+  <% end %> <%= link_to(customer_utility_notice_dismissals_path, html_options =
+  { :class => "dismiss-button", :method => :post, :remote => true, :onclick =>
+  "document.querySelector('.add-utility-notice').style.display = 'none'; return
+  false" }) do %>
+  <div class="icon"></div>
+  <% end %>
+</div>
 <% end %>
 ```
 
@@ -605,21 +608,21 @@ See <http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/> for d
 
 Question in slack:
 
->hey I saw this line
+> hey I saw this line
 >
->```ruby
->delegate :name, :email, :account_number, :to => :customer, :prefix => true
->```
+> ```ruby
+> delegate :name, :email, :account_number, :to => :customer, :prefix => true
+> ```
 >
->in `/Users/nandahibatullah/powershop/app/models/consumer.rb` and was wondering what `:prefix` does? (edited)
+> in `/Users/nandahibatullah/powershop/app/models/consumer.rb` and was wondering what `:prefix` does? (edited)
 
 reply:
 
->creates `customer_email` on Consumer
+> creates `customer_email` on Consumer
 >
-><https://apidock.com/rails/Module/delegate>
+> <https://apidock.com/rails/Module/delegate>
 >
->:prefix - Prefixes the new method with the target name or a custom prefix
+> :prefix - Prefixes the new method with the target name or a custom prefix
 
 <http://api.rubyonrails.org/classes/Module.html#method-i-delegate>
 
@@ -654,13 +657,13 @@ rails assets:precompile     # Compile all the assets named in config.assets.prec
 
 <https://makandracards.com/makandra/29533-asset-pipeline-basics>
 
->Debugging
->One step in debugging the asset pipeline is to check the precompilation results. You can do this locally using the following >commands:
+> Debugging
+> One step in debugging the asset pipeline is to check the precompilation results. You can do this locally using the following >commands:
 >
->```bash
->rake assets:precompile # precompiles to Rails.root/public/assets
->rake assets:clobber # deletes the public/assets directory
->```
+> ```bash
+> rake assets:precompile # precompiles to Rails.root/public/assets
+> rake assets:clobber # deletes the public/assets directory
+> ```
 
 ## `layout`
 

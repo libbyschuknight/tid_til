@@ -89,6 +89,90 @@ Hmmm, gitlab doesn't still work, did `ssh-add -A` and reloaded zsh, think it wil
 
 `ssh -T git@git.fluxfederation.com`
 
+## SSH Keys (Sept 2019)
+
+I wanted to set up my personal gitlab on my work and home laptops. Work uses gitlab enterprise and
+I have used GitHub for all personal things forever.
+
+### [Generating a new SSH key pair](https://docs.gitlab.com/ee/ssh/#generating-a-new-ssh-key-pair)
+
+Put into terminal
+
+`ssh-keygen -o -t rsa -b 4096 -C "libbysk@gmail.com"`
+
+You get an output like this:
+
+```bash
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/SchuKnight/.ssh/id_rsa): id_rsa_gitlab
+# in this instance I used `id_rsa_gitlab` but something like `id_rsa_home` might be better
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in id_rsa_gitlab.
+Your public key has been saved in id_rsa_gitlab.pub.
+The key fingerprint is:
+SHA256:ksmmPMsoK+p028Bakjsdhfkhsadfhsadf libbysk@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|     oE.+ .      |
+|     xxxxx       |
+|    .oo= .       |
+|     o+oo        |
+| .   .* S        |
+|. xxxxxxxx       |
+| o O+. +         |
+|= =oO+o +.       |
+|B=sxxxxxxxx      |
++----[SHA256]-----+
+```
+
+### [Adding an SSH key to your GitLab account](https://docs.gitlab.com/ee/ssh/#generating-a-new-ssh-key-pair)
+
+You then need to copy the key and set up on Gitlab `pbcopy < ~/.ssh/id_rsa_gitlab.pub`
+
+### [Testing that everything is set up correctly](https://docs.gitlab.com/ee/ssh/#generating-a-new-ssh-key-pair)
+
+Doing this `ssh -T git@gitlab.com`, give me this output `Permission denied (publickey).`.
+
+I remembered that I needed to update my ssh config file. I had this:
+
+```bash
+# Home account
+Host home.github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+
+# Company account
+Host git.fluxfederation.com
+   HostName git.fluxfederation.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa_flux
+```
+
+I added in my personal gitlab one:
+
+```bash
+# Personal github account
+Host home.github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+
+# Personal gitlab account
+Host gitlab.com
+  Hostname gitlab.com
+  IdentityFile ~/.ssh/id_rsa_gitlab
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+
+# Company account
+Host git.fluxfederation.com
+   HostName git.fluxfederation.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa_flux
+```
+
 ## Amending a commit
 
 If you have made some changes and just want to add them to the last commit you made.
