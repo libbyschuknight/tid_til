@@ -77,7 +77,6 @@ DateStuff.defaultProps = {
 };
 ```
 
-
 ## Another myqsl issue
 
 Had pulled down latest master branch, went to do the migrations etc

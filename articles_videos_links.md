@@ -142,6 +142,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [What referrals tell us about how networks work for people of color — Black, Latinx and Asian candidates](https://medium.com/@Atipica/what-referrals-tell-us-about-how-networks-work-for-people-of-color-black-latinx-and-asian-fcf0c971288e)
 
+[Women do well in referral programs overall, especially for smaller teams, but don’t fare well in the technical pipeline.](https://medium.com/@Atipica/women-do-well-in-referral-programs-overall-especially-on-smaller-teams-but-dont-fare-well-in-194c205e2aab)
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)

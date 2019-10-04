@@ -53,14 +53,17 @@ state_paths.to_states.map(&:to_s)
 > Use the proc invocation shorthand when the invoked method is the only operation of a block
 
 ### "pragma", or "directive"
+
 > a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.
 
-https://en.wikipedia.org/wiki/Directive_(programming)
+<https://en.wikipedia.org/wiki/Directive_(programming)>
 
 Example in pull request:
+
 ```ruby
 # frozen_string_literal: true
 ```
+
 [Ruby 2.3 release](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
 
 #### frozen_string_literal

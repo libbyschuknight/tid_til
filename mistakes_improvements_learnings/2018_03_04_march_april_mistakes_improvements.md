@@ -6,7 +6,7 @@ Asked this question:
 
 got this answer:
 >Basically when we add new rb files we should put that at the top
-> https://freelancing-gods.com/2017/07/27/friendly-frozen-string-literals.html
+> <https://freelancing-gods.com/2017/07/27/friendly-frozen-string-literals.html>
 
 Was going to add to the repo, but have already!! Remember to check here first! And to back myself!
 
