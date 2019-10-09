@@ -2,6 +2,8 @@
 
 [CSS-Tricks](https://css-tricks.com)
 
+[https://cssreference.io/](https://cssreference.io/)
+
 [Can I Use?](https://caniuse.com/)
 
 [Can I email?](https://www.caniemail.com)
@@ -107,7 +109,7 @@ Great references for HTML5. Seriously
 
 ### Pseudo-classes
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+<https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes>
 
 [Meet the Pseudo Class Selectors](https://css-tricks.com/pseudo-class-selectors/)
 
@@ -115,11 +117,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 
 ### Cascade and inheritance
 
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance
+<https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance>
 
 #### Inheritance
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance
+<https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance>
 
 ### px / em / rem
 

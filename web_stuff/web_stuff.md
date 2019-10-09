@@ -2,6 +2,8 @@
 
 ## Learning / Resources
 
+[An overview of how the Web works](https://marksheet.io/introduction.html)
+
 [MDN web docs: Resources for developers, by developers.](https://developer.mozilla.org/en-US/)
 
 - <https://developer.mozilla.org/en-US/docs/Web/HTML>
@@ -45,6 +47,13 @@
 [Cool Chrome DevTools tips and tricks you wish you knew already](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2)
 
 [16 DevTools tips and tricks every CSS developer needs to know](https://www.heartinternet.uk/blog/16-devtools-tips-and-tricks-every-css-developer-need-to-know/)
+
+## Progressive Web Apps
+
+[Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)
+
+[Build a PWA Using Only Vanilla JavaScript](https://levelup.gitconnected.com/build-a-pwa-using-only-vanilla-javascript-bdf1eee6f37a)
+
 
 ## Learning CSS
 
@@ -139,6 +148,8 @@ Follow on article
 [Typography in Design Systems: Choose Fonts, Set a Hierarchy, and Integrate with Components](https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e)
 
 [Space in Design Systems: From Basics to Expanded Concepts to Apply Space with Intent](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62)
+
+[Visual Regression Testing in Design Systems](https://seesparkbox.com/foundry/design_system_visual_regression_testing)
 
 ## Documentation Tools
 

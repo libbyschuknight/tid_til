@@ -74,6 +74,8 @@
 
 [EMPATHY is the most important leadership skill needed today!](https://www.linkedin.com/pulse/empathy-most-important-leadership-skill-needed-today-hyacinth)
 
+[Empathy: What it is (and isn’t) and how companies can put it to good use](https://www.linkedin.com/pulse/empathy-what-isnt-how-companies-can-put-good-use-jamil-zaki-1c)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -143,6 +145,8 @@ Sarah Mei: Diversity of Thought tweets:
 [What referrals tell us about how networks work for people of color — Black, Latinx and Asian candidates](https://medium.com/@Atipica/what-referrals-tell-us-about-how-networks-work-for-people-of-color-black-latinx-and-asian-fcf0c971288e)
 
 [Women do well in referral programs overall, especially for smaller teams, but don’t fare well in the technical pipeline.](https://medium.com/@Atipica/women-do-well-in-referral-programs-overall-especially-on-smaller-teams-but-dont-fare-well-in-194c205e2aab)
+
+[FAQs for Black, Queer, Female Software Engineers: And why you might think twice before you ask them](https://onezero.medium.com/faqs-for-black-queer-female-software-engineers-38b2d2b9450e)
 
 ### Spotify model
 
@@ -380,12 +384,14 @@ My Wharenui
 [Code review thoughts](https://twitter.com/schuknight/status/1003802645465714688?s=11)
 
 Object Oriented design twitter threads:
-https://twitter.com/betsythemuffin/status/1006292902333607936
-https://twitter.com/betsythemuffin/status/1006597377413795842
+<https://twitter.com/betsythemuffin/status/1006292902333607936>
+<https://twitter.com/betsythemuffin/status/1006597377413795842>
 
 [[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
 
 ### Architecture Patterns
+
+[Software Architecture is Overrated, Clear and Simple Design is Underrated](https://blog.pragmaticengineer.com/software-architecture-is-overrated/)
 
 [REST API Design - Resource Modeling](https://www.thoughtworks.com/insights/blog/rest-api-design-resource-modeling)
 

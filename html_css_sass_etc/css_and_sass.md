@@ -28,11 +28,19 @@
 
 [The CSS Mindset](https://mxb.dev/blog/the-css-mindset/)
 
+[Things nobody ever taught me about CSS.](https://medium.com/@devdevcharlie/things-nobody-ever-taught-me-about-css-5d16be8d5d0e)
+
+### Tips
+
 [How to make your HTML responsive by adding a single line of CSS](https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/amp/?__twitter_impression=true)
 
 > ```css
 > outline: 2px dotted hotpink;
 > ```
+
+### CSS Frameworks
+
+[Bulma](https://bulma.io)
 
 ### Specificity
 

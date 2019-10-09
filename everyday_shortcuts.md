@@ -85,3 +85,16 @@ Save Mark/Jump to Mark
 `shift + cmd + x` Open extentions panel in side bar\
 `shift + cmd + m` Toogle problems panel
 `shift + cmd + .` ERB toggle
+
+## Slack
+
+[Add search modifiers](https://slack.com/intl/en-nz/help/articles/202528808-search-in-slack#h_5ece87ed-b336-4ae0-86dd-54221c2d2c03)
+
+```text
+Description                           Modifiers             Examples
+
+Search for info shared by someone     from:@display name    from:@sara
+Search a specific conversation        in:channel name       in:#team-marketing
+                                      in:@display name      in:@sara
+```
+

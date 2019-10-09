@@ -510,13 +510,13 @@ git push --force origin feature/first_page_join_form_MVP
 
 [Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history)
 
-[Interactive Rebase](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase)
-
 #### git rebase -i (--interactive)
 
 [Beginner’s Guide to Interactive Rebasing](https://hackernoon.com/beginners-guide-to-interactive-rebasing-346a3f9c3a6d)
 
-```
+[Interactive Rebase](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase)
+
+```bash
 commit sha123456
 Author: Libby Schumacher-Knight
 Date:   Tue Jun 12 15:01:43 2018 +1200
@@ -539,7 +539,6 @@ Author: Misty
 Date:   Tue Jun 12 14:30:41 2018 +1200
 
     Merge branch '123' into 'master'
-
 ```
 
 I want to remove the `WIP`'s at the start of my 2 commit messages. To do this I can use:

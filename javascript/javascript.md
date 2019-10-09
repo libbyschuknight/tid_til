@@ -32,6 +32,12 @@
 
 - [Moment JS - Timezone](https://momentjs.com/timezone/)
 
+[Build a PWA Using Only Vanilla JavaScript](https://levelup.gitconnected.com/build-a-pwa-using-only-vanilla-javascript-bdf1eee6f37a)
+
+### JS Frameworks
+
+[I created the exact same app in React and Vue. Here are the differences. [2019 Edition]](https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-2019-edition-42ba2cab9e56)
+
 ## Testing
 
 [Testing Your React Component With Jest and Enzyme](https://medium.com/backticks-tildes/testing-your-react-component-with-jest-and-enzyme-276eef45bea0)

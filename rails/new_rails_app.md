@@ -195,11 +195,7 @@ gem 'pry-rails', '~> 0.3.6'
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2' # rails 5 up
 ```
 
-
-
-
 -----
-
 
 Remove Turbolinks (Rails 4?)
   http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4

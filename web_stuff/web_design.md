@@ -4,6 +4,8 @@
 
 [Web Form Design: Showcases And Solutions](https://www.smashingmagazine.com/web-form-design-showcases-and-solutions/)
 
+[Web Design in 4 minutes](https://jgthms.com/web-design-in-4-minutes/)
+
 ## Accessibility
 
 [6 ways to create a website that’s accessible (and why it’s important to do so](https://thenextweb.com/podium/2019/08/19/6-ways-to-create-a-website-thats-accessible-and-why-its-important-to-do-so/)
