@@ -203,6 +203,8 @@ My Wharenui
 
 [A Woman’s Guide to Salary Negotiation](https://www.nytimes.com/guides/working-womans-handbook/salary-negotiation-woman?te=1&nl=in-her%20words&emc=edit_gn_20191004?campaign_id=10&instance_id=12847&segment_id=17597&user_id=d93c9ac7ff13ff81832a2bf33c5b8191&regi_id=85868229&utm_source=ACE+LADY+NETWORK%21&utm_campaign=b5b5644c44-EMAIL_CAMPAIGN_2019_10_05_04_19&utm_medium=email&utm_term=0_e0f0cedd61-b5b5644c44-521451461)
 
+[Time Management: A powerful tool to show us where to spend our time.](https://medium.com/@lindsay_jopson/a-powerful-tool-to-show-us-where-to-spend-our-time-a8e564656bdf)
+
 ## More Stuff
 
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)

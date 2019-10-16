@@ -5,16 +5,21 @@ List databases on computer (mac - terminal)
 `psql -l`
 
 ## PSQL Command line
+
 I was wanting to see the values were in an enum column.
 From here http://www.postgresql.org/docs/8.3/static/tutorial-accessdb.html, I discovered:
+
 ```bash
 \? for help with psql commands
 ```
+
 This showed what is below.
 And from that I found
+
 ```bash
 \dT[S+] [PATTERN]      list data types
 ```
+
 And this gave me this:
 
 ```bash

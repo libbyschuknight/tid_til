@@ -678,3 +678,15 @@ Can change which layouts that an action in a controller uses. This is done in th
 ## Testing
 
 [How We Test Rails Applications](https://thoughtbot.com/blog/how-we-test-rails-applications)
+
+## Mailers
+
+<https://guides.rubyonrails.org/action_mailer_basics.html>
+
+<https://api.rubyonrails.org/classes/ActionMailer/Base.html>
+
+### View Mailers Locally
+
+Some mailers have previews and can be looked at here: <http://localhost:3000/rails/mailers>
+
+<https://guides.rubyonrails.org/action_mailer_basics.html#previewing-emails>

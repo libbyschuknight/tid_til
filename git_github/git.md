@@ -739,11 +739,11 @@ https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 If want to ignore `node_modules` folder
 
-```
+```bash
 node_modules/
 ```
 
-## exclude from git (not git ignore)
+## exclude from git (not gitignore)
 
 Add to `.git/info/exclude`
 
@@ -752,6 +752,20 @@ e.g. if you want to have a local folder but not have it in git or in the `gitign
 `local/*`
 
 [Exclude files from git without committing changes to .gitignore 🙅](https://hackernoon.com/exclude-files-from-git-without-committing-changes-to-gitignore-986fa712e78d)
+
+Example of a `exclude` file
+
+```bash
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+local/*
+```
+
 
 ## git squash
 

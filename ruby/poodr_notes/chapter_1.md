@@ -21,7 +21,8 @@ Page 1
 
 >The purpose of design is to allow you to do design later and its primary goal is to reduce the cost of change.
 
-#### Design Principles
+### Design Principles
+
 Page 5
 
 SOLID
@@ -44,6 +45,7 @@ DRY - Dont' Repeat Yourself
 Law of Demeter
 
 #### Design Patterns
+
 Page 6
 
 >Each well-known pattern is a near perfect open-source solution for the problem it solves.
@@ -52,6 +54,7 @@ Page 6
 **NOTE: find out more about design patterns**
 
 #### A Brief Introduction to OO Programming
+
 Page 11
 
 OO Languages

@@ -82,7 +82,7 @@ With a gem we have, to update it in our main rails up, we need to do `bundle upd
 
 This rails app uses `bundler 1.17.1`, however 2 plus is that up to date version for `bundler` and every time I run `bundle update --conservative admin_pattern_library`, which I haven't need to do often, it also updates the `bundler` version and I forget to check my change properly and push and then everything stops working!!!
 
-So to fix, I had to undo commit and disgard changes in the `Gemfile && Gemfile.lock` and then I figured out that I can do `bundle _1.17.1_ update --conservative admin_pattern_library`, which will keep the `bundler` version at `1.17.1` and not update it to `2.x.x`. Yay!
+So to fix, I had to undo commit and discard changes in the `Gemfile && Gemfile.lock` and then I figured out that I can do `bundle _1.17.1_ update --conservative admin_pattern_library`, which will keep the `bundler` version at `1.17.1` and not update it to `2.x.x`. Yay!
 
 ```bash
 bundle _1.17.3_ update --conservative admin_pattern_library

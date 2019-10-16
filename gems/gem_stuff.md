@@ -86,7 +86,7 @@ Apply anything you have stashed - `git stash apply`
 
 ## [Bundler](https://bundler.io/)
 
-`bundle _1.17.1_ install` this will run bundle for the version set.
+`bundle _1.17.1_ install` this will run bundle for the version set e.g. `1.17.1`
 
 [Run specific version of bundler](https://makandracards.com/makandra/9741-run-specific-version-of-bundler) - this site is old but...
 

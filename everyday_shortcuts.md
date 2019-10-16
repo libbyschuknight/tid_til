@@ -1,5 +1,7 @@
 # Everyday shortcuts / commands
 
+[How to type the ¯\_(ツ)_/¯ shrug emoji on every platform](https://www.dailydot.com/debug/how-to-type-shrug-emoji/)
+
 ## Mac
 
 `Control + Shift + Eject` or `Control + Shift + Power` - sleep / lock (external keyboard)
@@ -97,4 +99,3 @@ Search for info shared by someone     from:@display name    from:@sara
 Search a specific conversation        in:channel name       in:#team-marketing
                                       in:@display name      in:@sara
 ```
-

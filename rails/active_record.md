@@ -1,5 +1,11 @@
 # Active Record
 
+Add logger into rails console
+
+```ruby
+ActiveRecord::Base.logger = Logger.new $>
+```
+
 ## DB stuff
 
 [Preload, Eagerload, Includes and Joins](https://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)
@@ -8,7 +14,7 @@
 
 ### Queries
 
-https://robots.thoughtbot.com/activerecords-wherenot
+<https://robots.thoughtbot.com/activerecords-wherenot>
 
 This query:
 
@@ -17,7 +23,6 @@ This query:
 is effectively the same as this:
 
 `User.where('name != ?', 'Gabe')`
-
 
 #### Finding records
 
