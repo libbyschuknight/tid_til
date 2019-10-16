@@ -219,6 +219,21 @@ My Wharenui
 
 [Software Engineer vs. Web Developer](http://blog.thefirehoseproject.com/posts/software-engineer-vs-web-developer/)
 
+[Planning a career move in Tech](https://medium.com/swlh/planning-a-career-move-in-tech-a7c75d7569b)
+
+> The question to ask yourself here is…
+>
+> 1.  Does the job that you are currently doing satisfy you?
+> 2.  Is the job you think you want going to satisfy you?
+
+[Time Management: A powerful tool to show us where to spend our time.](https://medium.com/@lindsay_jopson/a-powerful-tool-to-show-us-where-to-spend-our-time-a8e564656bdf)
+
+> I stumbled across a tool where I was presented with a simple grid. The grid was broken up into 4 quadrants.
+> Hate & are bad at.
+> Hate & are good at.
+> Love & are good at.
+> Love and are bad at.
+
 ### Working Remotely
 
 [Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)

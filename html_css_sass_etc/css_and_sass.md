@@ -1,5 +1,7 @@
 # CSS & SASS
 
+[Simple CSS Dark Theming for Accessibility](https://reinteractive.com/posts/403-simple-css-dark-theming-for-accessibility)
+
 ## CSS
 
 [YOU MIGHT NOT NEED JAVASCRIPT](http://youmightnotneedjs.com/)
@@ -33,6 +35,8 @@
 ### Tips
 
 [How to make your HTML responsive by adding a single line of CSS](https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/amp/?__twitter_impression=true)
+
+---
 
 > ```css
 > outline: 2px dotted hotpink;
