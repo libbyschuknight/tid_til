@@ -76,6 +76,8 @@
 
 [Empathy: What it is (and isn’t) and how companies can put it to good use](https://www.linkedin.com/pulse/empathy-what-isnt-how-companies-can-put-good-use-jamil-zaki-1c)
 
+[Developers mentoring other developers: practices I've seen work well](https://blog.pragmaticengineer.com/developers-mentoring-other-developers/)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -366,6 +368,8 @@ My Wharenui
 
 <!-- TODO: add link to javascript.md page for using webpack in rails -->
 
+[How to Write Fast Code in Ruby on Rails](https://engineering.shopify.com/blogs/engineering/write-fast-code-ruby-rails)
+
 #### Time
 
 [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
@@ -405,6 +409,8 @@ Object Oriented design twitter threads:
 <https://twitter.com/betsythemuffin/status/1006597377413795842>
 
 [[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
+
+[Stop Calling it Bad Code](https://blog.pragmaticengineer.com/bad-code/)
 
 ### Architecture Patterns
 

@@ -690,3 +690,9 @@ Can change which layouts that an action in a controller uses. This is done in th
 Some mailers have previews and can be looked at here: <http://localhost:3000/rails/mailers>
 
 <https://guides.rubyonrails.org/action_mailer_basics.html#previewing-emails>
+
+## Engines
+
+[Getting Started with Engines](https://guides.rubyonrails.org/engines.html)
+
+[The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)

@@ -405,6 +405,30 @@ Show the diff on commits:
  git log -p -2
 ```
 
+Searching for an "authors" commits:
+
+```bash
+git log --author="Libby Schumacher-Knight" # name
+
+git log --author='Libby Schumacher-Knight' --oneline --pretty=format:'%h%x09%an%x09%ad%qqx09%s' --date=short
+# ccab0883911     Libby Schumacher-Knight 2019-10-08      APL-183 FIX remove cell being clickable
+# 1c9a4e78c4e     Libby Schumacher-Knight 2019-09-10      APL-110 Make changes following code review
+
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --author="Libby Schumacher-Knight"
+# ccab0883911     Libby Schumacher-Knight Tue Oct 8 15:00:05 2019 +1300   APL-183 FIX remove cell being clickable
+# 1c9a4e78c4e     Libby Schumacher-Knight Tue Sep 10 12:05:35 2019 +1200  APL-110 Make changes following code review
+```
+
+Getting number of commits:
+
+```bash
+# shows number be author
+git shortlog -s
+# ...
+#  142  Libby Schumacher-Knight
+# ...
+```
+
 ### git stash
 
 #### name
@@ -726,9 +750,9 @@ I use the [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet
 
 One I have just discovered that is very useful:
 
-```
-gwip	     git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"
-gunwip	   git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
+```bash
+gwip      git add -A; git ls-files --deleted -z | xargs -r0 git rm; git commit -m "--wip--"
+gunwip    git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
 ```
 
 ## .gitignore
