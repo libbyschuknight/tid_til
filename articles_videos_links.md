@@ -223,6 +223,8 @@ My Wharenui
 
 [Planning a career move in Tech](https://medium.com/swlh/planning-a-career-move-in-tech-a7c75d7569b)
 
+<!--  -->
+
 > The question to ask yourself here is…
 >
 > 1.  Does the job that you are currently doing satisfy you?

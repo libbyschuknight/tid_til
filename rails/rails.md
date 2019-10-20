@@ -22,6 +22,8 @@
 
 ![jquery turbolinks](/rails/jquery_turbolinks.png)
 
+[#210 Ruby on Rails Tips and Tricks](https://www.driftingruby.com/episodes/ruby-on-rails-tips-and-tricks-46fedaf6-0a62-4c69-ac51-69a4870e2238)
+
 ## Upgrade
 
 <http://guides.rubyonrails.org/upgrading_ruby_on_rails.html>
@@ -696,3 +698,20 @@ Some mailers have previews and can be looked at here: <http://localhost:3000/rai
 [Getting Started with Engines](https://guides.rubyonrails.org/engines.html)
 
 [The Modular Monolith: Rails Architecture](https://medium.com/@dan_manges/the-modular-monolith-rails-architecture-fb1023826fc4)
+
+## Tips and Tricks
+
+[#210 Ruby on Rails Tips and Tricks](https://www.driftingruby.com/episodes/ruby-on-rails-tips-and-tricks-46fedaf6-0a62-4c69-ac51-69a4870e2238)
+
+- logging tip
+
+```Ruby
+# Add to an index action in a controller
+Rails.logger.info("DEBUG:: Users Size: #{@users.size}")
+```
+
+```bash
+# then tail the log in terminal
+$ tail -f log/development.log | grep DEBUG
+> DEBUG:: Users Size: 0
+```
