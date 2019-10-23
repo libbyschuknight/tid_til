@@ -12,10 +12,13 @@
 
 [EMOJI CHEAT SHEET](https://gist.github.com/roachhd/1f029bd4b50b8a524f3c) for markdown
 
-
 ## Image
 
 `![alt_tag](images/<name of image>.png)`
+
+## Link to heading
+
+[create an anchor](#anchors-in-markdown)
 
 ## Dropdown
 
@@ -28,3 +31,5 @@
 <br>
 This is how you dropdown.
 </details>
+
+## Anchors in markdown

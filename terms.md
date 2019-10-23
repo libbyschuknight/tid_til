@@ -53,11 +53,10 @@ https://en.wikipedia.org/wiki/Transport_Layer_Security
 
 ## MITM - man-in-the-middle (MITM) attack
 
-
 ## ROAR -
 
-## REST
-
+## REST - REpresentational State Transfer
+<!-- TODOL add patterns -->
 [Ruby On REST: Introducing the Representer Pattern](http://nicksda.apotomo.de/2011/12/ruby-on-rest-introducing-the-representer-pattern/)
 
 [Understanding REST And RPC For HTTP APIs](https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/)

@@ -207,7 +207,7 @@ And was like WTF?!! as my spec wasn't doing anything with the db (service making
 Ran `rails db:test:prepare`, but that seems not to have worked. I think that works nicely on postgres databases but not so nicely with MariaDB database, or at least how it is set up at work.
 
 Have just found out more about `rails/rake db:test:prepare` -
-https://guides.rubyonrails.org/v5.0/testing.html#maintaining-the-test-database-schema
+<https://guides.rubyonrails.org/v5.0/testing.html#maintaining-the-test-database-schema>
 
 and this part
 >Running the migrations against the development database (bin/rails db:migrate) will bring the schema up to date

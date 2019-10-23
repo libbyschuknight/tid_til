@@ -28,7 +28,7 @@ Talk by @nigelramsay from @abletech, at Wellrailed meetup
 
 - What is distributed logging?
 
-- REST...
+- REST - REpresentational State Transfer
 
 
 ####

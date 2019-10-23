@@ -50,6 +50,8 @@
 
 [Engineering Growth Framework](https://medium.com/s/engineering-growth-framework)
 
+[More Growth Frameworks](#List-of-Growth-Frameworks)
+
 [Diverse Teams Feel Less Comfortable — and That’s Why They Perform Better](https://hbr.org/2016/09/diverse-teams-feel-less-comfortable-and-thats-why-they-perform-better)
 
 [Atlassian ditches ‘brilliant jerks’ in performance review overhaul](https://www.news.com.au/finance/work/at-work/atlassian-ditches-brilliant-jerks-in-performance-review-overhaul/news-story/82a5e2abba1939f51d68ae81db8f05bd)
@@ -445,3 +447,43 @@ Object Oriented design twitter threads:
 ### Other Stuff
 
 [Collections: Curated lists and insight into burgeoning industries, topics, and communities.](https://github.com/collections)
+
+## List of Growth Frameworks
+
+Patreon: <https://levels.patreon.com/>
+
+Buffer: <https://open.buffer.com/engineering-career-framework/>
+
+Rent the Runway: <https://docs.google.com/document/d/1SxmQBrDZvj16veuc2OVO0wUX7a7vEKPM-57dNLXhuEk/edit>
+
+Medium: <https://medium.com/s/engineering-growth-framework/engineering-growth-introduction-8ba7b78c8d6c>
+
+Kickstarter: <https://gist.github.com/jamtur01/aef437a79fee5a9cefdc>
+
+Glossier: <https://medium.com/glossier/building-an-engineering-ladder-at-glossier-e7fc3a390695>
+
+SongKick: <https://www.songkick.com/downloads/growth-framework/sk-growth-framework.pdf>
+
+Chartbeat: <http://engineering.chartbeat.com/2015/06/05/engineering-ladders/>
+
+Fog Creek: <https://www.joelonsoftware.com/2009/02/13/fog-creek-professional-ladder/>
+
+Artsy: <http://artsy.github.io/blog/2015/04/03/artsy-engineering-compensation-framework/>
+
+Enova: <https://github.com/enova/career_ladders/blob/master/software_engineering/mobile_engineer.md>
+
+Spotify: <https://labs.spotify.com/2016/02/15/spotify-technology-career-steps/>
+
+CapGemini: <https://capgemini.github.io/culture/our-grade-ladder/>
+
+Travis CI (kind of): <https://speakerdeck.com/rkh/how-we-replaced-salary-negotiations-with-a-sinatra-app>
+
+Urban Airship: <https://github.com/urbanairship/techladder>
+
+Gov .UK: <https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework>
+
+Soundcloud: <https://developers.soundcloud.com/blog/engineering-levels>
+
+Monzo: <https://eng-progression.monzo.com/>
+
+Developer Growth Framework: <https://www.tamarabuckland.co.nz/blog/2018/5/6/developer-growth-framework>
