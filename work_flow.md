@@ -11,27 +11,28 @@
 - be staunch about only doing what the task is and not doing anything else
 
 #### Definition of a Story
-###### [What is a User Story?](https://www.mountaingoatsoftware.com/agile/user-stories)
+
+##### [What is a User Story?](https://www.mountaingoatsoftware.com/agile/user-stories)
 
 User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. They typically follow a simple template:
-> As a <type of user>, I want <some goal> so that <some reason>.
+
+> As a `type of user`,
+>I want `some goal`,
+>so that `some reason`.
 
 User stories are often written on index cards or sticky notes, stored in a shoe box, and arranged on walls or tables to facilitate planning and discussion. As such, they strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written.
-
-### TODO: add Simons definition
-
 
 ### At the Beginning of Coding
 
 **RUN THE TESTS!!**
 
-If tests fail, reset the test database: `rake db:test:prepare`  
+If tests fail, reset the test database: `rake db:test:prepare`
 and remember to reset the development database: `rake db:reset` (depending on what rake tasks are set up).
-
 
 ### When writing code
 
 Remember to:
+
 - look at refactoring code BEFORE creating pull request
 - single responsibility methods, rather then lots of logic in one method or (god forbid) in the initialize method!
 
@@ -75,7 +76,8 @@ end
 
 ### Strategies for solving difficult things
 
-##### Adding things in
+#### Adding things in
+
 If you have working code and you want to add to it (might be refactoring or adding DSL) and it is providing difficult, revert code back to working and then add bits back in one at a time.
 Make it as general as possible.
 
@@ -96,9 +98,11 @@ desc "Receive all data for changing a bubble"
     end
   end
 ```
+
 Was aiming to access the `id` in the JSON array without using index of the array. Each element of the array holds a different Hash with different keys/values. And it is the second element  that has the first `id`
 
 Did try:
+
 - `type: Array[JSON]`
 - `given`, `values`, `optional`
-from https://github.com/ruby-grape/grape#parameter-validation-and-coercion
+from <https://github.com/ruby-grape/grape#parameter-validation-and-coercion>

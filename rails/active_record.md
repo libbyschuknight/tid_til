@@ -26,16 +26,18 @@ is effectively the same as this:
 
 #### Finding records
 
-In between certain dates
+In between certain dates:
+
 ```ruby
+# `activated` is work/model specific method
 Consumer.active.activated.where(start_date: Date.parse("23/3/2017")..Date.parse("4/4/2017"))
 ```
 
-Before a certain date, with a certain attribute set to `nil`
+Before a certain date, with a certain attribute set to `nil`:
+
 ```ruby
 Consumer.active.activated.where(last_annual_summary_date: nil).where("start_date <= ?", Date.parse("1/4/2018"))
 ```
-
 
 ## [.includes](http://apidock.com/rails/ActiveRecord/QueryMethods/includes)
 
@@ -44,6 +46,7 @@ Use to speed up a query that is taking ages due to using lots of models.
 ```ruby
 consumers = Consumer.where(participant_ref: provider_url).includes(customer: [account: [{user: :userref}, :sign_up, :contacts]])
 ```
+
 where consumers is being used to do:
 
 ```ruby
@@ -52,7 +55,6 @@ consumers.each do |consumer|
 end
 
 # and these are being accessed from the consumer
-
 customer = consumer.customer
 user = customer.account.user
 account = customer.account
@@ -70,32 +72,44 @@ sign_up = account.sign_up
 
 ### `where` and `nil`
 
-So was doing a `where` like this in a scope a model in Rails:
+So was doing a `where` like this with a scope on a model:
+
 ```ruby
 Model.where("started_by = ? AND source = ?", nil, "join")
 ```
+
 When I did `to_sql` on it (handy little trick in rails), got this:
+
 ```sql
 "SELECT \"models\".* FROM \"models\" WHERE (started_by = NULL AND source = 'join')"
 ```
+
 which returns `[]`, which is not what I want!
 
 So, knowing that this returns what I want:
+
 ```ruby
 Model.where(started_by: nil).where(source: "join")
 ```
+
 and the sql is this:
+
 ```sql
 "SELECT \"models\".* FROM \"models\" WHERE \"models\".\"started_by\" IS NULL AND \"models\".\"source\" = 'join'"
 ```
+
 and seeing that where `NULL` is it uses `IS NULL` I changed my first query to:
+
 ```ruby
 Model.where("started_by is ? AND source = ?", nil, "join")
 ```
+
 which is
+
 ```sql
 "SELECT \"models\".* FROM \"models\" WHERE (started_by is NULL AND source = 'join')"
 ```
+
 and returns what I want!
 
 ### finding a bunch of users by id
@@ -105,12 +119,13 @@ ids = [1,2,3,4]
 User.where(id: ids)
 ```
 
-
 ## Joining Tables
+
 [Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
 
 ### Find all records which have a count of an association greater than zero
-https://stackoverflow.com/questions/20183710/find-all-records-which-have-a-count-of-an-association-greater-than-zero
+
+<https://stackoverflow.com/questions/20183710/find-all-records-which-have-a-count-of-an-association-greater-than-zero>
 
 I wanted to find games that had more then x guesses.
 
@@ -120,13 +135,11 @@ I thought it might have been simple (I might be missing a simple way), but this 
 Game.joins(:guesses).group('games.id').having('count(game_id) > 5')
 ```
 
-
-
 ## Validations
 
-#### Number being non-negative
+### Number being non-negative
 
-http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html#method-i-validates_numericality_of
+<http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html#method-i-validates_numericality_of>
 
 ```ruby
 class Game < ApplicationRecord
@@ -135,23 +148,19 @@ class Game < ApplicationRecord
 end
 ```
 
-
 ## Migrations
 
 [Rails 5: Rename a Column on a Database in a Migration](http://codkal.com/how-rename-database-column-rails-5-migration/)
-
-
 
 ## Enums
 
 [Creating Easy, Readable Attributes With ActiveRecord Enums](https://www.justinweiss.com/articles/creating-easy-readable-attributes-with-activerecord-enums/)
 
+## `update_all`
 
-## update_all
+<http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all>
 
-http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all
 When have a group of records where want to change say an `something_id` on all of them.
-
 
 ## Overcome readonly_attributes
 
@@ -169,7 +178,6 @@ end
 User.update_column(brand_id: 3)
 ```
 
-
 ## .merge
 
 [14.4 Merging of scopes](http://guides.rubyonrails.org/active_record_querying.html#merging-of-scopes)
@@ -178,20 +186,16 @@ Instead of doing this:
 
 ```ruby
 Consumer.joins(:customer).where("experience = ?", Customer::SHOPPER)
-```
-can do:
-```ruby
+
+# can do
 Consumer.joins(:customer).merge(Customer.shopper)
 ```
 
-
-
 ## Printing table data in console
 
-```
+```bash
 pt Customer.all
 ```
-
 
 ## HACK DAYS - Getting Better at Queries
 
@@ -200,7 +204,8 @@ Things I didn't know / haven't come across before / or will be useful (and I sho
 ### [Active Record Query Interface](https://guides.rubyonrails.org/active_record_querying.html)
 
 >On a collection that is ordered using order, first will return the first record ordered by the specified attribute for order.
-> ```
+>
+> ```bash
 > client = Client.order(:first_name).first
 ># => #<Client id: 2, first_name: "Fifo">
 >```
@@ -209,19 +214,19 @@ Things I didn't know / haven't come across before / or will be useful (and I sho
 
 #### ActiveRecord::Relation
 
->But try running User.where(:id => 1).class and you’ll see that it isn’t an Array, it’s actually an instance of ActiveRecord::Relation.
+>But try running `User.where(:id => 1).class` and you’ll see that it isn’t an Array, it’s actually an instance of ActiveRecord::Relation.
 >...
 >Active Record queries return relations to be lazy.
-
+>
 >You should care that ActiveRecord queries usually return Relations because you’ll run into them often when coding and debugging. The knowledge should make you comfortable chaining query methods together to construct elaborate queries.
-
->The key thing to note is that #find returns the actual record while #where returns an ActiveRecord::Relation which basically acts like an array. So if you’re using #where to find a single record, you still need to remember to go into that “array” and grab the first record, e.g. User.where(:email => "foo@bar.com")[0] or User.where(:email => "foo@bar.com").first.
-
->`#select` should be pretty obvious to a SQL ninja like you – it lets you choose which columns to select from the table(s), just like in SQL. To select just the ID column for all users, it’s as simple as `User.select(:id)`. You can also use aliases like in SQL but should use quotes instead of symbols, e.g. `@users = User.select("users.id AS user_id")` will create a new attribute called user_id, e.g. allowing you to access `@users.first.user_id`.
+>
+>The key thing to note is that `#find` returns the actual record while `#where` returns an `ActiveRecord::Relation` which basically acts like an array. So if you’re using `#where` to find a single record, you still need to remember to go into that “`array`” and grab the first record, e.g. `User.where(:email => "foo@bar.com")[0]` or `User.where(:email => "foo@bar.com").first`.
+>
+>`#select` should be pretty obvious to a SQL ninja like you – it lets you choose which columns to select from the table(s), just like in SQL. To select just the ID column for all users, it’s as simple as `User.select(:id)`. You can also use aliases like in SQL but should use quotes instead of symbols, e.g. `@users = User.select("users.id AS user_id")` will create a new attribute called `user_id`, e.g. allowing you to access `@users.first.user_id`.
 
 ```ruby
 $ users = User.select(:id).limit(5)
-[
+> [
     [0] #<User:0x00007fbe98cda588> {
         "id" => 1
     },
@@ -240,8 +245,7 @@ $ users = User.select(:id).limit(5)
 ]
 
 $ users = User.select("users.id AS user_id").limit(5)
-
-[
+> [
     [0] #<User:0x00007fbe9b360e50> {
              "id" => nil,
         "user_id" => 1
@@ -265,13 +269,11 @@ $ users = User.select("users.id AS user_id").limit(5)
 ]
 ```
 
-
 #### Aggregations
 
 ```ruby
 $ Game.joins(:guesses).group("guesses.letter").count
-
-{
+>{
     "G" => 1,
     "a" => 15,
     "b" => 13,
@@ -286,22 +288,23 @@ $ Game.joins(:guesses).group("guesses.letter").count
 }
 ```
 
-#### N + 1 Queries and Eager Loading
+#### N+1 Queries and Eager Loading
 
 >The N + 1 query problem is the classic case of this – you grab all the records for your users (User.all) then loop through each user and call an association it has, like the city the user lives in (user.city). For this example we’re assuming an association exists between User and City, where User belongs_to a City. This might look like:
->```
+>
+>```ruby
 >  User.all.each do |user|
 >    puts user.city
 >  end
 >```
+>
 >This is going to result in one query to get all the users, then another query for each user to find its city through the association… so N additional queries, where N is the total number of users. Hence “N+1” problems. Note that it’s totally fine to just grab a regular attribute of User like user.name… it’s because you’re reaching through the association with City that we’ve got to run another full query.
 
 `one query to get all users, another on each user to get its city - 1 query plus N additional queries`
 
 >Rails is well aware of your distress and has provided a simple solution – “eager loading”. When you first grab the list of all users, you can tell Rails to also grab the cities at the same time (with just one additional query) and store them in memory until you’d like to call upon them. Then user.city gets treated the same way as user.name… it doesn’t run another query. The trick is the #includes method.
 
-
-https://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations
+<https://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations>
 
 When you grab a list of `guesses` you can grab the games at the same time and store in memory and call later.
 
