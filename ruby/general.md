@@ -2,21 +2,27 @@
 
 [Ruby Docs](https://ruby-doc.org/)
 
-[The Ruby Style Guide](https://rubystyle.guide/) - https://github.com/rubocop-hq/ruby-style-guide
+[The Ruby Style Guide](https://rubystyle.guide/) - <https://github.com/rubocop-hq/ruby-style-guide>
 
 [Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
+
+[Learn How to Program: Ruby & Rails](https://www.learnhowtoprogram.com/ruby-and-rails)
+
+## `attr_`
+
+[Why use Ruby's attr_accessor, attr_reader and attr_writer?](https://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)
 
 ## Bang
 
 [Why are exclamation marks used in Ruby methods?](https://stackoverflow.com/questions/612189/why-are-exclamation-marks-used-in-ruby-methods)
 
->In general, methods that end in ! indicate that the method will modify the object it's called on. Ruby calls these as "dangerous methods" because they change state that someone else might have a reference to.
+> In general, methods that end in ! indicate that the method will modify the object it's called on. Ruby calls these as "dangerous methods" because they change state that someone else might have a reference to.
 >
->A bang can used in the below ways, in order of my personal preference.
+> A bang can used in the below ways, in order of my personal preference.
 >
->1) An active record method raises an error if the method does not do what it says it will.
->2) An active record method saves the record or a method saves an object (e.g. strip!)
->3) A method does something “extra”, like posts to someplace, or does some action.
+> 1. An active record method raises an error if the method does not do what it says it will.
+> 2. An active record method saves the record or a method saves an object (e.g. strip!)
+> 3. A method does something “extra”, like posts to someplace, or does some action.
 
 ### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
 
@@ -57,6 +63,7 @@ state_paths.to_states.map(&:to_s)
 [How Does Symbol#to_proc Work?](http://benjamintan.io/blog/2015/03/16/how-does-symbol-to_proc-work/)
 
 [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide#single-action-blocks)
+
 > Use the proc invocation shorthand when the invoked method is the only operation of a block
 
 ### "pragma", or "directive"
@@ -89,7 +96,7 @@ http://api.rubyonrails.org/classes/Class.html#method-i-class_attribute
 included do
   class_attribute :formats
 end
- ```
+```
 
 ## Arrays
 
@@ -142,6 +149,7 @@ will give:
 ## Private vs Protected (and Public)
 
 [The difference between Public, Protected and Private methods in Ruby](http://culttt.com/2015/06/03/the-difference-between-public-protected-and-private-methods-in-ruby/)
+
 > ... a Public method and so you can call it from outside the scope of the object.
 >
 > Both Private and Protected methods are not accessible from outside of the object as they are used internally to the object.
@@ -305,7 +313,7 @@ h = { "a" => 100, "b" => 200 }
 h.delete("a")   #=> 100
 ```
 
->Deletes the key-value pair and returns the value from hsh whose key is equal to key.
+> Deletes the key-value pair and returns the value from hsh whose key is equal to key.
 
 ## Using JSON
 
@@ -314,7 +322,7 @@ Had a string that wanted to parse to make a json string.
 Wanted to use
 
 ```js
-JSON.parse(string)
+JSON.parse(string);
 ```
 
 but wasn't working because of this `include Roar::JSON` being included at top.
@@ -322,7 +330,7 @@ but wasn't working because of this `include Roar::JSON` being included at top.
 So needed to do:
 
 ```js
-::JSON.parse(string)
+::JSON.parse(string);
 ```
 
 The two colons make it move out of the current class. Or something like that.
@@ -330,7 +338,8 @@ The two colons make it move out of the current class. Or something like that.
 ### Time
 
 Michael @Flick
->ISO8601 is more flexible that I thought, an ISO8601 can represent a time without any zone data e.g. `2016-10-02T22:12:13Z`, or it can include zone data: `2016-10-02T22:12:13+1300`
+
+> ISO8601 is more flexible that I thought, an ISO8601 can represent a time without any zone data e.g. `2016-10-02T22:12:13Z`, or it can include zone data: `2016-10-02T22:12:13+1300`
 
 Use this in console to get the correct formatted iso8601 string
 
@@ -342,7 +351,7 @@ Time.parse(string).utc.iso8601
 
 ### [Precedence](https://ruby-doc.org/core-2.3.0/doc/syntax/precedence_rdoc.html)
 
->From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
+> From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
 
 ### Case statements
 
@@ -440,9 +449,9 @@ ri IO.foreach
 ri File#each_line
 ```
 
-
 ## tap - object
->Yields self to the block, and then returns self. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
+
+> Yields self to the block, and then returns self. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
 
 https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
 
@@ -450,8 +459,8 @@ https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
 
 [Understanding tap in Ruby](http://stackoverflow.com/questions/25191805/understanding-tap-in-ruby)
 
-
 ## Patterns
+
 [Decorators, Presenters, Delegators and Rails](https://robertomurray.co.uk/blog/2014/decorators-presenters-delegators-rails/)
 
 [Using SimpleDelegator for your Decorators](https://hashrocket.com/blog/posts/using-simpledelegator-for-your-decorators)
@@ -504,7 +513,6 @@ ChargeBatch {
 }
 ```
 
-
 ## Using `try()`
 
 [try(), try() again in Rails](https://everydayrails.com/2011/04/28/rails-try-method.html)
@@ -512,7 +520,6 @@ ChargeBatch {
 [Do, or do not. There is no #try.](http://www.virtuouscode.com/2011/06/28/do-or-do-not-there-is-no-try/)
 
 [Demeter: It’s not just a good idea. It’s the law.](http://www.virtuouscode.com/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/)
-
 
 ## safe navigation operator
 
@@ -522,42 +529,39 @@ ChargeBatch {
 
 [How to use Ruby’s English and/or operators without going nuts](http://www.virtuouscode.com/2014/08/26/how-to-use-rubys-english-andor-operators-without-going-nuts/)
 
-
 ## Memoization
 
 Great article:
 
 [The Basics of Ruby Memoization](http://gavinmiller.io/2013/basics-of-ruby-memoization/)
 
-## splat * / **
+## splat \* / \*\*
 
-[An introduction to Ruby’s *Splat and double **Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
+[An introduction to Ruby’s \*Splat and double \*\*Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
 
 [Using splats to build up and tear apart arrays in Ruby](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/)
 
->But the main idea is that whenever you don’t want to specify the number of arguments you have, you would use a splat operator. The simplest example would be something like this:
+> But the main idea is that whenever you don’t want to specify the number of arguments you have, you would use a splat operator. The simplest example would be something like this:
 >
->```ruby
->def unknown_amount(*args)
+> ```ruby
+> def unknown_amount(*args)
 >  p args
->end
->unknown_amount(1, 2, 3)
-># => [1, 2, 3]
->```
+> end
+> unknown_amount(1, 2, 3)
+> # => [1, 2, 3]
+> ```
 
-[Ruby double splat (**) operator cheatsheet](https://jetrockets.pro/blog/ruby-double-splat-operator-cheatsheet)
+[Ruby double splat (\*\*) operator cheatsheet](https://jetrockets.pro/blog/ruby-double-splat-operator-cheatsheet)
 
 ## alias keyword and method
 
 [Alias in Ruby](https://medium.com/rubycademy/alias-in-ruby-bf89be245f69)
-
 
 ## set ruby version
 
 using `rbenv` do `rbenv local 2.4.5` and it will create a file `.ruby-version` with the version number in it.
 
 Then you need to do `bundle install` to get all the gems with this version and probably need to do a `rbenv rehash` either before or after or both.
-
 
 ## The % Notation - `%w, %i`
 
