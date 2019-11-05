@@ -12,6 +12,8 @@ ActiveRecord::Base.logger = Logger.new $>
 
 [Making sense of ActiveRecord joins, includes, preload, and eager_load](http://blog.scoutapp.com/articles/2017/01/24/activerecord-includes-vs-joins-vs-preload-vs-eager_load-when-and-where)
 
+[Rails 4: List of available datatypes](https://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes)
+
 ### Queries
 
 <https://robots.thoughtbot.com/activerecords-wherenot>
