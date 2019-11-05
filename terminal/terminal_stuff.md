@@ -365,6 +365,11 @@ scp server.name:/apps/customer_app/releases/20160922043147/filename.csv ~/Downlo
 >Irb has a built in help function. While in irb, you can type `help 'Hash#reduce'` for example and get the docs & an example in your terminal. Try `help 'Object#tap'`.
 Raquel Moss - #tech-links FlickElectric
 
+To load a script into irb, file script is named `start.rb`
+
+```bash
+irb -r "start.rb"
+```
 
 ## Programs installed via Homebrew (see gist)
 
@@ -387,19 +392,19 @@ TODO: add images
 [fzf](http://sourabhbajaj.com/mac-setup/iTerm/fzf.html)
 
 
-
 ## Zsh
 
 I use zsh and [OhMyZsh](http://ohmyz.sh/)
 
 ### Aliases
+
 Be wary of aliases overwriting other terminal commands - see [alias issue](../mistakes_improvements_learnings/2019_04_mistakes_improvements_learning.md#issue-with-`ps-aux`-not-working)
 
 #### rake tasks
 
 Was trying to do this:
 
-```
+```bash
 rake brands:create[test_brand]
 ```
 

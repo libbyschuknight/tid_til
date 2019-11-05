@@ -27,7 +27,7 @@ brew update && brew upgrade # could possibly come up with issues with doing this
 ```bash
 Last login: Thu Sep 26 11:08:23 on ttys001
 /own/habit_repos: brew list
-autoconf        gdk-pixbuf        imagemagick		libtool			pkg-config		verm
+autoconf        gdk-pixbuf        imagemagick   libtool			pkg-config		verm
 boost			gettext			imagemagick@6		little-cms2		postgresql		webp
 cairo			ghostscript		jpeg			mariadb			python			xz
 chromedriver		git			kitchen-sync		mysql-client		python@2		yaml-cpp
@@ -41,17 +41,20 @@ gdbm			icu4c			libtiff			pixman			tree
 
 `the_silver_searcher` aka `ag` - <https://github.com/ggreer/the_silver_searcher>
 
-### What I have installed at home (as of Sept 2019)
+### What I have installed at home (as of Nov 2019)
 
 ```bash
-ack         gdbm              jpeg          mariadb   php55-mcrypt  tree
-autoconf    gettext           libgpg-error	mcrypt     pkg-config	  unixodbc
-automake	  git               libksba       mhash     postgresql	  watchman
-brew-cask	  heroku            libpng        minicom   python        webp
-elixir      heroku-node	      libtiff       mysql     python3       wxmac
-erlang      heroku-toolbelt	  libtool       node      rbenv         xz
-exercism	  icu4c             libyaml       pcre      ruby-build
-fzf         imagemagick	      little-cms2	  php55     sqlite
+brew list
+ack         gettext         libffi          mcrypt        pkg-config    watchman
+autoconf	  git             libgpg-error    mhash         postgresql    webp
+automake    go              libksba         minicom       python         wxmac
+brew-cask   heroku          libpng          mysql         python3        xz
+elixir      heroku-node     libtiff         node          rbenv          zsh
+erlang      heroku-toolbelt libtool         openssl       readline
+exercism    hunspell        libxml2         openssl@1.1   ruby-build
+freetype    icu4c           libyaml         pcre          sqlite
+fzf         imagemagick     little-cms2     php55         tree
+gdbm        jpeg            mariadb         php55-mcrypt  unixodbc
 ```
 
 ## Installing fzf - fuzzy search

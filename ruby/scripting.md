@@ -45,3 +45,5 @@ Another explanation from Samson via slack:
 > - But because there is no longer an extension (because we are trying to hide the implementation details of the script from the user) we need another way to tell the computer what type of script it is and what it needs to run it. That is commonly done with what is called a “shebang” and is something that looks like this as the very first line in the file `#!/usr/bin/env ruby`. Depending on the scripting language being used to run it `#!/usr/bin/env bash`, `#!/usr/bin/env python`, `#!/usr/bin/env node` being other common ones.
 
 > So, next time see if you can open the file and check if it has that _shebang_ to tell the computer what language it is supposed to run it in and then make it executable with `chmod +x script_name` and then double check you can run it in the place you want it run with `./script_name`.
+
+[Ruby and Rails Basic Ruby Basic Ruby Scripting](https://www.learnhowtoprogram.com/ruby-and-rails/basic-ruby/basic-ruby-scripting)
