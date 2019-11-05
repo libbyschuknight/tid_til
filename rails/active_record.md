@@ -340,6 +340,10 @@ Guess Load (3.0ms)  SELECT "guesses".* FROM "guesses"
 
 <https://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html#method-i-eager_load>
 
+[Understanding Rails Eager-Loading](https://dev.to/johncip/understanding-rails-eager-loading-3n6j)
+
+[Includes, Eager Load, and Preload](https://blog.techatpower.com/includes-eager-load-and-preload-246e6b900cb8)
+
 #### [1.2 Retrieving Multiple Objects in Batches](https://guides.rubyonrails.org/active_record_querying.html#retrieving-multiple-objects-in-batches)
 
 `find_each`
