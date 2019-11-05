@@ -2,11 +2,15 @@
 
 [Ruby Docs](https://ruby-doc.org/)
 
-[The Ruby Style Guide](https://rubystyle.guide/) - https://github.com/rubocop-hq/ruby-style-guide
+[The Ruby Style Guide](https://rubystyle.guide/) - <https://github.com/rubocop-hq/ruby-style-guide>
 
 [Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
 
 [Learn How to Program: Ruby & Rails](https://www.learnhowtoprogram.com/ruby-and-rails)
+
+## `attr_`
+
+[Why use Ruby's attr_accessor, attr_reader and attr_writer?](https://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)
 
 ## Bang
 
@@ -16,9 +20,9 @@
 >
 > A bang can used in the below ways, in order of my personal preference.
 >
-> 1.  An active record method raises an error if the method does not do what it says it will.
-> 2.  An active record method saves the record or a method saves an object (e.g. strip!)
-> 3.  A method does something “extra”, like posts to someplace, or does some action.
+> 1. An active record method raises an error if the method does not do what it says it will.
+> 2. An active record method saves the record or a method saves an object (e.g. strip!)
+> 3. A method does something “extra”, like posts to someplace, or does some action.
 
 ### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
 
