@@ -34,7 +34,9 @@
 
 [Build a PWA Using Only Vanilla JavaScript](https://levelup.gitconnected.com/build-a-pwa-using-only-vanilla-javascript-bdf1eee6f37a)
 
-### JS Frameworks
+[A Complete Guide to JavaScript Tooling](https://dev.to/hoangbkit/a-complete-guide-to-javascript-tooling-56eg)
+
+## JS Frameworks
 
 [I created the exact same app in React and Vue. Here are the differences. [2019 Edition]](https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-2019-edition-42ba2cab9e56)
 
@@ -308,7 +310,7 @@ And then `npm outdated` should not return anything.
 
 <https://teamtreehouse.com/library/jquery-basics>
 
-## JS code in Rails
+## JS Code in Rails
 
 ### JS adding in a click and dismiss
 
@@ -357,8 +359,8 @@ Webpack is a build / bundle tool.
 > Concept #1 — The core dichotomy of build tools is “installing vs. doing”
 > Build tools do two things:
 >
-> 1.  Install things
-> 2.  Do things
+> 1. Install things
+> 2. Do things
 >
 > Concept #4 — The lines between “install” and “do” can be blurry
 >

@@ -1,6 +1,6 @@
 # Everyday shortcuts / commands
 
-[How to type the ¯\_(ツ)_/¯ shrug emoji on every platform](https://www.dailydot.com/debug/how-to-type-shrug-emoji/)
+[How to type the ¯\_(ツ)\_/¯ shrug emoji on every platform](https://www.dailydot.com/debug/how-to-type-shrug-emoji/)
 
 ## Mac
 
@@ -81,12 +81,13 @@ Save Mark/Jump to Mark
 
 ## VSCode
 
-`cmd + .` Correct misspelt word\
-`shift + cmd + e` Open explorer panel in side bar\
-`shift + cmd + f` Open search panel in side bar\
-`shift + cmd + x` Open extentions panel in side bar\
-`shift + cmd + m` Toogle problems panel
-`shift + cmd + .` ERB toggle
+`ctrl + tab` - circle through open tab windows\
+`cmd + .` - correct misspelt word\
+`shift + cmd + e` - open explorer panel in side bar\
+`shift + cmd + f` - open search panel in side bar\
+`shift + cmd + x` - open extentions panel in side bar\
+`shift + cmd + m` - toogle problems panel
+`shift + cmd + .` - ERB toggle
 
 ## Slack
 
