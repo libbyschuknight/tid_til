@@ -280,6 +280,8 @@ My Wharenui
 
 [Famous Laws Of Software Development](https://www.timsommer.be/famous-laws-of-software-development/)
 
+[base cs - Exploring the basics of computer science, every Monday, for a year.](https://medium.com/basecs)
+
 ### Programming / Coding
 
 [The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
