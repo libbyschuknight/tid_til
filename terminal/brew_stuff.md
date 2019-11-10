@@ -2,6 +2,10 @@
 
 [Homebrew Documentation - FAQ](https://docs.brew.sh/FAQ)
 
+Note: do not install node via Homebrew!!
+
+<https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x/50266406#50266406>
+
 ```bash
 brew update
 
@@ -15,6 +19,7 @@ brew upgrade <package>  # always consider doing one at a time
 
 brew info <package>    # will show the info from when installed, can be useful for postgres start / stop commands
 
+brew uninstall <package> # will uninstall / remove the package
 
 # could do
 brew update && brew upgrade # could possibly come up with issues with doing this
