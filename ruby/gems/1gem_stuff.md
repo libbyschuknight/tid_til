@@ -1,3 +1,4 @@
+<!-- TODO: combine with other gem_stuff file -->
 # Gem Stuff
 
 ## [bundle exec](http://bundler.io/man/bundle-exec.1.html)

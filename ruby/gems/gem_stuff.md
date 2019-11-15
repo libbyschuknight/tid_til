@@ -1,4 +1,4 @@
-# Gem Stuff (this is for Ruby)
+# Gem Stuff
 
 <https://guides.rubygems.org>
 
@@ -7,6 +7,8 @@
 >This command executes the command, making all gems specified in the Gemfile(5) available to require in Ruby programs.
 
 [What does bundle exec rake mean?](https://stackoverflow.com/questions/6588674/what-does-bundle-exec-rake-mean)
+
+[Loading Additional Ruby Gems in Development](https://phili.pe/posts/loading-additional-ruby-gems-in-development/)
 
 ## Using local gem (on your computer)
 

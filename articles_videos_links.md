@@ -66,6 +66,8 @@
 
 [Calling Grown Women ‘Girls’ Is Sexist As Hell – Here Are 4 Reasons Why](https://everydayfeminism.com/2015/06/grown-women-are-not-girls/)
 
+[Tweet with image of "mansplaning](https://twitter.com/kimgoodwin/status/1020029572266438657?s=19)
+
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)
 
 [Sharing the Data: How Technical Women Navigate Their Career](https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/)
@@ -107,6 +109,8 @@
 [Facilitating Introverts: Eliciting the Gifts of the Quiet Ones](http://www.janicethomson.net/facilitating-introverts-eliciting-the-gifts-of-the-quiet-ones/)
 
 ### Diversity & Inclusion
+
+[The true face of diversity and inclusion isn’t just women](https://www.m2woman.co.nz/true-face-of-diversity-and-inclusion-isnt-just-women/)
 
 [How do you define diversity](https://www.youtube.com/watch?v=a4YrQD0JpN0)
 
@@ -291,6 +295,8 @@ My Wharenui
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
 [Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
+
+[Please Don’t Write “Clever” Code](https://www.oop.wtf/dont-write-clever-code)
 
 #### Computer Hardware Stuff
 
