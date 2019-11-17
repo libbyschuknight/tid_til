@@ -2,9 +2,19 @@
 
 [Tips to improve speed of your test suite](https://medium.com/appaloosa-store-engineering/tips-to-improve-speed-of-your-test-suite-8418b485205c)
 
+[TestUnit - Writing Test Code In Ruby (1/3)](https://dev.to/exampro/testunit-writing-test-code-in-ruby-part-1-of-3-44m2)
+
+[MiniTest - Writing Test Code In Ruby (2/3)](https://dev.to/exampro/minitest-writing-test-code-in-ruby-part-2-of-3-4306)
+
+[RSpec - Writing Test Code In Ruby (3/3)](https://dev.to/exampro/rspec-writing-test-code-in-ruby-part-3-of-3-32np)
+
+[Introduction to Ruby and RSpec…](https://medium.com/craft-academy/introduction-to-ruby-and-rspec-135da4051802)
+
+[INTRODUCTION TO RSPEC](https://www.theodinproject.com/courses/ruby-programming/lessons/introduction-to-rspec)
+
 ## Running a specific test
 
-If you want to run one particiular spec or feature scenraio, you can specific the line
+If you want to run one particular spec or feature scenario, you can specific the line
 
 `bundle exec spring cucumber core/features/admin_premium_providers_capybara.feature:41` - will run the scenario for line 41
 
@@ -65,15 +75,15 @@ end
 
 [Difference between rspec, capybara and cucumber](https://stackoverflow.com/questions/22491145/difference-between-rspec-capybara-and-cucumber/22491329#22491329)
 
->rspec is a full-featured testing framework that will let you write what Rails considers unit tests, functional tests, and integration tests. All of these exercise Ruby code through various layers of your Rails application. All of these tests simulate requests to your Rails application, but don't actually run the application end-to-end over the network.
+> rspec is a full-featured testing framework that will let you write what Rails considers unit tests, functional tests, and integration tests. All of these exercise Ruby code through various layers of your Rails application. All of these tests simulate requests to your Rails application, but don't actually run the application end-to-end over the network.
 >
->cucumber is a browser based integration testing framework, which allows writing automated tests that run against the entire Rails application accessed from within an automated web browser. This allows you to write automated tests about in-browser behavior for JS or CSS. Cucumber provides a unique angle on integration testing that uses plain english specification mapped to code via regular expressions. This allows a more natural "Behavior Driven Development" model - describing what a web application should do, in plain language, from the perspective of the user.
+> cucumber is a browser based integration testing framework, which allows writing automated tests that run against the entire Rails application accessed from within an automated web browser. This allows you to write automated tests about in-browser behavior for JS or CSS. Cucumber provides a unique angle on integration testing that uses plain english specification mapped to code via regular expressions. This allows a more natural "Behavior Driven Development" model - describing what a web application should do, in plain language, from the perspective of the user.
 >
->capybara is a particular web driver powering the cucumber integration testing framework, that uses headless webkit. This allows running a headless (without UI) Chrome/Webkit browser for automated testing. This is very useful both in development, but especially on a remote test/continuous integration server.
+> capybara is a particular web driver powering the cucumber integration testing framework, that uses headless webkit. This allows running a headless (without UI) Chrome/Webkit browser for automated testing. This is very useful both in development, but especially on a remote test/continuous integration server.
 >
->So rspec and cucumber are similar in being testing frameworks with their own way of specifying things.  rspec has a nice DSL that's very readable while being actual code.  cucumber maps plain text descriptions to real code.
+> So rspec and cucumber are similar in being testing frameworks with their own way of specifying things. rspec has a nice DSL that's very readable while being actual code. cucumber maps plain text descriptions to real code.
 >
->Though cucumber is usually used on top of capybara, you can also use rspec to drive capybara integration tests. The tests are written in either rspec or cucumber, but capybara is an integration engine underneath.
+> Though cucumber is usually used on top of capybara, you can also use rspec to drive capybara integration tests. The tests are written in either rspec or cucumber, but capybara is an integration engine underneath.
 
 [A repeatable, step-by-step process for writing Rails integration tests with Capybara](https://www.codewithjason.com/repeatable-step-step-process-writing-rails-integration-tests-capybara/)
 
@@ -227,23 +237,24 @@ The issue was this:
 let(:schedules_resource)  { Resources::Schedule.new.from_json(schedule_response_json) }
 ```
 
-After having a think and remembering that with `lets` there is lazy loading, so added a  ! to the let  - `let!(:schedule_resource)`
+After having a think and remembering that with `lets` there is lazy loading, so added a ! to the let - `let!(:schedule_resource)`
 and specs passed.
 
 From rspec:
->Note that let is lazy-evaluated: it is not evaluated until the first time the method it defines is invoked. You can use let! to force the method's invocation before each example. <https://relishapp.com/rspec/rspec-core/v/3-4/docs/helper-methods/let-and-let>
+
+> Note that let is lazy-evaluated: it is not evaluated until the first time the method it defines is invoked. You can use let! to force the method's invocation before each example. <https://relishapp.com/rspec/rspec-core/v/3-4/docs/helper-methods/let-and-let>
 
 Then were running this pass other devs, got from @Ootoovak
 
 > This came across my Twitter feed a few days ago (by one of the RSpec core team members)
 >
-><https://twitter.com/samphippen/status/767850685329203200> Extraordinary Alien @samphippen
+> <https://twitter.com/samphippen/status/767850685329203200> Extraordinary Alien @samphippen
 >
 > RSpec advice:
 >
-  > don't use let!
+> don't use let!
 >
-  > use let and evaluate it in a before.
+> use let and evaluate it in a before.
 
 So have done this:
 
@@ -278,10 +289,10 @@ Those were all stubbed.
 This then led me to stub in the `DeprovisioningApi` spec as well.
 
 Not too sure about stubbing. I guess though that as long as the Network assignment_suspension endpoint is tested well in Network then it is okay to stub?? Rather then use VCR??
-       @ootoovak
+@ootoovak
 ootoovak 4 hours ago
 Yeah, I think that is fine, like if you are thinking as servers as objects (just at a different level) then stubbing out calls to other servers is like a unit test. This does leave the problem of how we write "integration" level tests between our services. @mermop started the test suite for this but we have not come to a consensus about maintaining it and adding to it. One thing we have to overcome is how we manage state changes between servers. That level of tests might have to wait until the day we get containers with seed data. Then we could potentially spin up a test version of all our services, run all the "service/integration" level tests on them, then spin it down again. Meaning the data would be fresh between each run even if some tests changed the seed data.
-       @ootoovak
+@ootoovak
 ootoovak 4 hours ago
 As for VCR vs manually stubbing kind of the same as using FactoryGirl.build(:user) vs User.new(...). As in there is not much difference the former provides more convenience the latter has has less dependence on external tool that could be overused/debugged. In either case it is stubbing the call to a service and both can drift over time form the actual API if not maintained.
 

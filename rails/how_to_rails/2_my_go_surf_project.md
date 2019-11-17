@@ -9,6 +9,7 @@ rails generate resource SurfSpot
 ```
 
 You can add on the fields if you want to, e.g.
+
 ```bash
 rails generate resource SurfSpot name:string description:string coordinates:integer # etc
 ```
@@ -16,9 +17,11 @@ rails generate resource SurfSpot name:string description:string coordinates:inte
 I'm going to add the fields/attributes in my migration file later.
 
 Once you run:
+
 ```bash
 rails generate resource SurfSpot
 ```
+
 You will get an output something like this in your console:
 
 ```bash
@@ -50,6 +53,7 @@ Running via Spring preloader in process 22248
 Using `resource` generates a lot of files, the ones we are interested in are migrations, models, controllers, routes and later on specs.
 
 Migration
+
 ```ruby
 class CreateSurfSpots < ActiveRecord::Migration
   def change
@@ -60,17 +64,23 @@ class CreateSurfSpots < ActiveRecord::Migration
   end
 end
 ```
+
 Model
+
 ```ruby
 class SurfSpot < ApplicationRecord
 end
 ```
+
 Controller
+
 ```ruby
 class SurfSpotsController < ApplicationController
 end
 ```
+
 Routes
+
 ```ruby
 Rails.application.routes.draw do
   resources :surf_spots
@@ -107,22 +117,25 @@ class CreateSurfSpots < ActiveRecord::Migration
   end
 end
 ```
+
 I have added latitude and longitude for the coordinates and will add photos later using Paperclip.
 
 Now run your migration:
 `rake db:migrate`
 
 Console output:
+
 ```bash
 == 20160812220455 CreateSurfSpots: migrating ==================================
 -- create_table(:surf_spots)
    -> 0.0428s
 == 20160812220455 CreateSurfSpots: migrated (0.0428s) =========================
 ```
+
 Even though you have run your migrations, your server will run but you will still see the "Welcome aboard" page. There is still some work to do.
 
-
 ### Step 3 - Updating Routes / Views
+
 Set the root route for you app.
 Run `rake routes` in your console
 
@@ -137,14 +150,17 @@ surf_spot       GET    /surf_spots/:id(.:format)      surf_spots#show
                 PUT    /surf_spots/:id(.:format)      surf_spots#update
                 DELETE /surf_spots/:id(.:format)      surf_spots#destroy
 ```
+
 We want to set our root route to `surf_spots`
 
 Add to your routes.rb file:
+
 ```ruby
 root "surf_spots#index"
 ```
 
 So it now looks like this:
+
 ```ruby
 Rails.application.routes.draw do
   root "surf_spots#index"
@@ -160,8 +176,7 @@ Now run your sever:
 You should see this:
 ![unknown_index_action](images/missing_index_action.png)
 
-We now need to add the `index` action to our  `SurfSportController`, but first we are going to add the `new`action so we can data into our database.
-
+We now need to add the `index` action to our `SurfSportController`, but first we are going to add the `new`action so we can data into our database.
 
 ### Step 4 - add action to controller
 
@@ -172,6 +187,7 @@ def new
   @surf_spot = SurfSpot.new
 end
 ```
+
 Visit [http://localhost:3000/surf_spots/new](http://localhost:3000/surf_spots/new)
 
 You should see this on the web page:
@@ -182,6 +198,7 @@ Now add a view.
 ### Step 5 - add a view (template)
 
 Go to `app/view/surf_spots` folder and add a new file and name it:
+
 ```
 new.html.erb
 ```

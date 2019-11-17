@@ -2,6 +2,8 @@
 
 [26 Miraculous VS Code Tools for JavaScript Developers in 2019](https://dev.to/jsmanifest/26-miraculous-vs-code-tools-for-javascript-developers-in-2019-50gg)
 
+[Tips to use VSCode more efficiently](https://dev.to/selrond/tips-to-use-vscode-more-efficiently-3h6p)
+
 ## [Keyboard shortcuts](/everyday_shortcuts.md#VSCode)
 
 ## Markdown

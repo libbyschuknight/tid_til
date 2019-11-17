@@ -6,6 +6,12 @@
 
 [RSpec Relish](https://relishapp.com/rspec)
 
+[RSpec - Writing Test Code In Ruby (3/3)](https://dev.to/exampro/rspec-writing-test-code-in-ruby-part-3-of-3-32np)
+
+[Introduction to Ruby and RSpec…](https://medium.com/craft-academy/introduction-to-ruby-and-rspec-135da4051802)
+
+[INTRODUCTION TO RSPEC](https://www.theodinproject.com/courses/ruby-programming/lessons/introduction-to-rspec)
+
 [Transpec: A magical tool for converting your specs to the latest RSpec syntax.](http://yujinakayama.me/transpec/)
 
 [Better Specs { RSpec guidelines with ruby }](http://www.betterspecs.org/)
@@ -85,10 +91,10 @@ Not sure if `allow_any_instance_of` is good to use.
 
 ## [Aggregating Failures](https://relishapp.com/rspec/rspec-core/docs/expectation-framework-integration/aggregating-failures)
 
->RSpec::Expectations provides aggregate_failures, an API that allows you to group a set of expectations and see all the failures at once, rather than it aborting on the first failure.
+> RSpec::Expectations provides aggregate_failures, an API that allows you to group a set of expectations and see all the failures at once, rather than it aborting on the first failure.
 >
->```ruby
->it "returns a successful response" do
+> ```ruby
+> it "returns a successful response" do
 >  response = Client.make_request
 >
 >  aggregate_failures "testing response" do
@@ -96,8 +102,8 @@ Not sure if `allow_any_instance_of` is good to use.
 >    expect(response.headers).to include("Content-Type" => "application/json")
 >    expect(response.body).to eq('{"message":"Success"}')
 >  end
->end
->```
+> end
+> ```
 
 ### RSpec Shared Examples
 

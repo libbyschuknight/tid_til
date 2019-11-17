@@ -50,6 +50,7 @@ To see the development React version in localhost, in `app/assets/javascripts/ad
 So, add `.dev` to the end.
 
 You may also need to do:
+
 - `yarn build` in the APL gem repo
 - `au bundle exec rails assets:clobber` in the core app repo
 - then restart the server and you should be able to see the full react components in the React console

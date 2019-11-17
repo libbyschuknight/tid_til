@@ -89,6 +89,10 @@ Save Mark/Jump to Mark
 `shift + cmd + m` - toogle problems panel
 `shift + cmd + .` - ERB toggle
 
+When focused in the file explorer:
+`a` - creates a new file
+`shift + a` - creates a new folder
+
 ## Slack
 
 [Add search modifiers](https://slack.com/intl/en-nz/help/articles/202528808-search-in-slack#h_5ece87ed-b336-4ae0-86dd-54221c2d2c03)
