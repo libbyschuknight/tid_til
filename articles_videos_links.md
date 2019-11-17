@@ -308,6 +308,8 @@ My Wharenui
 
 ### Ruby
 
+[Idiomatic Ruby: writing beautiful code](https://www.freecodecamp.org/news/idiomatic-ruby-writing-beautiful-code-6845c830c664/)
+
 [How to avoid inheritance in Ruby?](http://mjk.space/how-to-avoid-inheritance-in-ruby/)
 
 [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
@@ -425,6 +427,8 @@ Object Oriented design twitter threads:
 [[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
 
 [Stop Calling it Bad Code](https://blog.pragmaticengineer.com/bad-code/)
+
+[What is idiomatic code?](https://stackoverflow.com/questions/84102/what-is-idiomatic-code)
 
 ### Architecture Patterns
 

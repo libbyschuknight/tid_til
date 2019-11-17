@@ -1,5 +1,7 @@
 # Questions at Job Interviews
 
+[https://30secondsofinterviews.org/](https://30secondsofinterviews.org/) (html/css/js)
+
 ## Questions from interviewers - Technical
 
 ### How would you solve the N + 1 query problem?

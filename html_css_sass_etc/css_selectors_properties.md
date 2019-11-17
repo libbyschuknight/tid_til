@@ -12,18 +12,21 @@ https://css-tricks.com/almanac/selectors/
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
 
-
 https://css-tricks.com/almanac/selectors/c/child/
 
->A child combinator in CSS is the "greater than" symbol, it looks like this:
+> A child combinator in CSS is the "greater than" symbol, it looks like this:
 
->```css
->ol > li {
->  color: red;
->}
->```
+> ```css
+> ol > li {
+>   color: red;
+> }
+> ```
 
->It means "select elements that are direct descendants only". In this case: "select list items that are direct descendants of an ordered list".
+> It means "select elements that are direct descendants only". In this case: "select list items that are direct descendants of an ordered list".
+
+## Combinators
+
+[Descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator)
 
 ### General `sibling ~` combinator
 
@@ -33,7 +36,7 @@ https://css-tricks.com/almanac/selectors/g/general-sibling/
 
 ```css
 img ~ p {
-  background-color: #FEF0B6;
+  background-color: #fef0b6;
   padding: 5px;
 }
 ```

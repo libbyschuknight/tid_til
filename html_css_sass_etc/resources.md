@@ -12,6 +12,8 @@
 
 [CSS Utility Classes: How To Use Them Effectively 🔥](https://blog.mariano.io/css-utility-classes-how-to-use-them-effectively-d61ee00dad2d)
 
+[30 seconds of CSS: A curated collection of useful CSS snippets you can understand in 30 seconds or less.](https://css.30secondsofcode.org/)
+
 ## Use semantic code
 
 ### [Semantic code](https://learn.shayhowe.com/html-css/getting-to-know-html/#semantics-overview)
@@ -137,16 +139,15 @@ Great references for HTML5. Seriously
 
 <https://css-tricks.com/almanac/properties/o/overflow/>
 
->#Auto
+> #Auto
 >
->Auto overflow is very similar to the scroll value, only it solves the problem of getting scrollbars when you don't need them. The scrollbars will only show up if there >is content that actually breaks out of the element.
+> Auto overflow is very similar to the scroll value, only it solves the problem of getting scrollbars when you don't need them. The scrollbars will only show up if there >is content that actually breaks out of the element.
 
 <https://stackoverflow.com/questions/6689412/difference-between-html-overflow-auto-and-overflow-scroll>
 
->overflow: scroll will hide all overflowing content and cause scroll bars to appear on the element in question. If the content does not overflow, the scrollbars will >still be visible, but disabled.
+> overflow: scroll will hide all overflowing content and cause scroll bars to appear on the element in question. If the content does not overflow, the scrollbars will >still be visible, but disabled.
 >
->overflow: auto is very similar, but the scrollbars only appear when the content is overflowing.
-
+> overflow: auto is very similar, but the scrollbars only appear when the content is overflowing.
 
 ## Images
 

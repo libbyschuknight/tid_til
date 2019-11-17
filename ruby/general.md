@@ -6,6 +6,8 @@
 
 [Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)
 
+[Idiomatic Ruby: writing beautiful code](https://www.freecodecamp.org/news/idiomatic-ruby-writing-beautiful-code-6845c830c664/)
+
 [Learn How to Program: Ruby & Rails](https://www.learnhowtoprogram.com/ruby-and-rails)
 
 ## `attr_`
@@ -90,7 +92,7 @@ Example in pull request:
 
 ### class_attribute
 
-http://api.rubyonrails.org/classes/Class.html#method-i-class_attribute
+<http://api.rubyonrails.org/classes/Class.html#method-i-class_attribute>
 
 ```ruby
 included do

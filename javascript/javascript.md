@@ -24,6 +24,8 @@
 
 [8 Useful JavaScript Tricks](https://devinduct.com/blogpost/26/8-useful-javascript-tricks)
 
+[Console cheat sheet for JavaScript developers](https://levelup.gitconnected.com/console-cheat-sheet-for-javascript-developers-21f0c49604d4)
+
 [Handling Time Zone in JavaScript](https://medium.com/@toastui/handling-time-zone-in-javascript-547e67aa842d)
 
 > But if you want full time zone support, do not implement it from scratch. Rather use a library like Moment Timezone.
@@ -35,6 +37,8 @@
 [Build a PWA Using Only Vanilla JavaScript](https://levelup.gitconnected.com/build-a-pwa-using-only-vanilla-javascript-bdf1eee6f37a)
 
 [A Complete Guide to JavaScript Tooling](https://dev.to/hoangbkit/a-complete-guide-to-javascript-tooling-56eg)
+
+[30 seconds of code: Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.](https://github.com/30-seconds/30-seconds-of-code#readme)
 
 ## JS Frameworks
 
@@ -169,8 +173,8 @@ ECMAScript is "JavaScript"
 > Note that array.length isn't necessarily the number of items in the array. Consider the following:
 
 ```js
-var a = ['dog', 'cat', 'hen'];
-a[100] = 'fox';
+var a = ["dog", "cat", "hen"];
+a[100] = "fox";
 a.length; // 101
 ```
 
@@ -230,7 +234,7 @@ console.log(getRectArea(3, 4));
 > The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, but suffers from security and similar (but far less significant) performance issues to eval. However, unlike eval, the Function constructor creates functions which execute in the global scope only.
 
 ```js
-var sum = new Function('a', 'b', 'return a + b');
+var sum = new Function("a", "b", "return a + b");
 
 console.log(sum(2, 6));
 // expected output: 8
@@ -244,15 +248,15 @@ console.log(sum(2, 6));
 
 ```js
 var person = {};
-person['firstname'] = 'Mario';
-person['lastname'] = 'Rossi';
+person["firstname"] = "Mario";
+person["lastname"] = "Rossi";
 
 console.log(person.firstname);
 // expected output: "Mario"
 
-person = { firstname: 'John', lastname: 'Doe' };
+person = { firstname: "John", lastname: "Doe" };
 
-console.log(person['lastname']);
+console.log(person["lastname"]);
 // expected output: "Doe"
 ```
 
@@ -323,11 +327,11 @@ add_utility_notice.customer_id), :class => "dismiss-button") do %>
 
 ```js
 jQuery(function($) {
-  $('.add-utility-notice .dismiss-button').click(function(event) {
+  $(".add-utility-notice .dismiss-button").click(function(event) {
     event.preventDefault();
-    postAjax($(this).attr('href'));
+    postAjax($(this).attr("href"));
 
-    $('.add-utility-notice').hide();
+    $(".add-utility-notice").hide();
   });
 });
 ```
