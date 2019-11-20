@@ -65,7 +65,8 @@ which gave
 Running that though in Sequel Pro, firstly gave a SQL syntax error, need to remove the `""`.
 Then got `Unknown column 'brand.shopper_enabled' in 'where clause'`, so did some searching and figured what needed to do to make the query work as expected.
 
-https://stackoverflow.com/questions/9033797/how-to-specify-conditions-on-joined-tables-in-rails
+<https://stackoverflow.com/questions/9033797/how-to-specify-conditions-on-joined-tables-in-rails>
+
 `Score.joins(:submission).where(:submissions => {:task_id => 1})`
 
 ```ruby

@@ -8,8 +8,7 @@ where it has `rake tweets:send\[cpytel\]`
 So tried:
 `rake brands:create\[test_brand\]` worked
 
-See - [rake tasks and zsh](terminal/terminal_stuff.md#rake tasks)
-
+See - ![rake tasks and zsh](../terminal/terminal_stuff.md#rake-tasks)
 
 ## ruby - .insert
 

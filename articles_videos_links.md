@@ -156,6 +156,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [FAQs for Black, Queer, Female Software Engineers: And why you might think twice before you ask them](https://onezero.medium.com/faqs-for-black-queer-female-software-engineers-38b2d2b9450e)
 
+[Gender Decoder for Job Ads](http://gender-decoder.katmatfield.com/)
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)

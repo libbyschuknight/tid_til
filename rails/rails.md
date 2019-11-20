@@ -555,6 +555,14 @@ Add debug to view:
 > Partials that use local variables are more maintainable
 > Partials that use local variables are easier to debug
 
+##### Layouts
+
+[Finding Layouts](https://guides.rubyonrails.org/layouts_and_rendering.html#finding-layouts)
+
+At work we have a old admin pattern library layout and a new one. To use the new one, in a controller you add `layout "admin"`. This would point it to use `admin.html.erb`, whereas if you didn't have this it would use the old layout `admin_legacy.html.erb`.
+
+[Rails Layout Rendering Cheatsheet](https://medium.com/@kevinyckim33/rails-layout-rendering-cheatsheet-d40e14ab3503)
+
 #### Routes
 
 <http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
@@ -715,3 +723,11 @@ Rails.logger.info("DEBUG:: Users Size: #{@users.size}")
 $ tail -f log/development.log | grep DEBUG
 > DEBUG:: Users Size: 0
 ```
+
+## Reserved words in Rails
+
+[Reserved Words in Ruby on Rails](http://reservedwords.herokuapp.com/)
+
+<https://stackoverflow.com/questions/13750009/reserved-names-with-activerecord-models>
+
+[Reserved words for Rails](https://medium.com/@jarrett.yew/reserved-words-for-rails-340a455f9af9)

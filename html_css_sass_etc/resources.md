@@ -149,6 +149,10 @@ Great references for HTML5. Seriously
 >
 > overflow: auto is very similar, but the scrollbars only appear when the content is overflowing.
 
+### :target
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/:target>
+
 ## Images
 
 [The Ultimate List Of Free Stock Photos & Free Royalty Free Images](https://www.eric-liang.com/blog/the-ultimate-list-of-free-stock-photos-free-royalty-free-images/)
