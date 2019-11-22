@@ -32,6 +32,30 @@ Same with RSpec:
 
 [Define Fixtures With Polymorphic Association](http://ruby-journal.com/rails/define-fixtures-with-polymorphic-association/)
 
+### Fixtures in ActiveRecord
+
+```ruby
+ActiveRecord::FixtureSet.identify(:<fixture_name)
+
+# e.g. you have this record which is a fixture
+Assignee.csr_ticket_access
+[
+    [0] #<Assignee:0x00007fcb686b6170> {
+                      :id => 657985557,
+                    :name => nil,
+        :administrator_id => 352583627,
+                    :type => nil,
+              :created_at => 2019-11-21 13:14:39 +1300,
+              :updated_at => 2019-11-21 13:14:39 +1300
+    }
+]
+
+# the name of the fixture is "ticket_admin_group_csr"
+
+ActiveRecord::FixtureSet.identify(:ticket_admin_group_csr)
+# 657985557
+```
+
 ## Four Phase Test Pattern
 
 Reminded about from here <https://designcode.commandrun.com/testing-rails-simple-guide-part-2-17d629645187>

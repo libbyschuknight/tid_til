@@ -6,7 +6,13 @@
 
 - using `pry-rails`
 
-### Accessing Helper methods
+## Running console in test env
+
+```bash
+bundle exec rails c -e test
+```
+
+## Accessing Helper methods
 
 [Quick Tip: Helper Methods in the Rails Console?](http://code-worrier.com/blog/helper-methods-in-console/)
 
@@ -18,15 +24,15 @@ helper.in_local_time(time)
 #  Wed, 05 Oct 2016 00:00:00 NZDT +13:00
 ```
 
-### RAILS_ENV
+## RAILS_ENV
 
 Make sure you are running the production env on the server when ssh-ing in and going into console
+
 ```bash
 RAILS_ENV=production bundle exec rails c
 ```
 
-
-### Changing Time
+## Changing Time
 
 Need to take day today and get the start of the day as a time and then convert to UTC and follow the iso8061 format.
 
@@ -60,11 +66,12 @@ Time.parse("2017-04-23T12:00:00Z").in_time_zone
 ```
 
 ## sandbox
-http://guides.rubyonrails.org/command_line.html#rails-console
+
+<http://guides.rubyonrails.org/command_line.html#rails-console>
+
 >going `bundle exec rails c production --sandbox` is super handy
 >everything you do is in a transaction that is rolled back when you exit the console
 Thanks @terrcin
-
 
 ## rake routes
 

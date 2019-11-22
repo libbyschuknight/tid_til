@@ -567,8 +567,26 @@ Then you need to do `bundle install` to get all the gems with this version and p
 
 ## The % Notation - `%w, %i`
 
-https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation
+<https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation>
 
-https://ruby-doc.org/core-2.5.1/doc/syntax/literals_rdoc.html#label-Percent+Strings
+<https://ruby-doc.org/core-2.5.1/doc/syntax/literals_rdoc.html#label-Percent+Strings>
 
-http://ruby.zigzo.com/2014/08/21/rubys-notation/
+<http://ruby.zigzo.com/2014/08/21/rubys-notation/>
+
+## `Struct` in Ruby
+
+<https://ruby-doc.org/core-2.5.0/Struct.html>
+
+>A Struct is a convenient way to bundle a number of attributes together, using accessor methods, without having to write an explicit class.
+
+### `keyword_init`
+
+>If the optional keyword_init keyword argument is set to true, .new takes keyword arguments instead of normal arguments.
+
+```ruby
+Customer = Struct.new(:name, :address, keyword_init: true)
+Customer.new(name: "Dave", address: "123 Main")
+#=> #<struct Customer name="Dave", address="123 Main">
+```
+
+[How to Use Struct & OpenStruct in Ruby](https://www.rubyguides.com/2017/06/ruby-struct-and-openstruct/)

@@ -415,7 +415,7 @@ Reload the rails environment, e.g. when you have updated the code on a model and
 
 Remember to check the `.env` files. There maybe a `.env.development.example` or `.env.development.dist`, you will need to duplicate this and save as `.env.development`.
 
-## The Rails Console
+## The Rails DB Console
 
 Came across this awhile ago but forgot about it.
 If you are in a Rails app, you can do `rails dbconsole` or just `rails db` to get into the development database.
@@ -731,3 +731,6 @@ $ tail -f log/development.log | grep DEBUG
 <https://stackoverflow.com/questions/13750009/reserved-names-with-activerecord-models>
 
 [Reserved words for Rails](https://medium.com/@jarrett.yew/reserved-words-for-rails-340a455f9af9)
+
+
+## Rails console

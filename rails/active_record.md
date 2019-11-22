@@ -1,10 +1,14 @@
 # Active Record
 
+[10 New Things in Active Record](https://hint.io/blog/10-New-Things-in-Active-Record)
+
 Add logger into rails console
 
 ```ruby
 ActiveRecord::Base.logger = Logger.new $>
 ```
+
+[Active Record Associations](https://guides.rubyonrails.org/association_basics.html)
 
 ## DB stuff
 
@@ -362,7 +366,7 @@ Guess Load (3.0ms)  SELECT "guesses".* FROM "guesses"
 
 > For example when you add the following translations:
 
-```
+```yaml
 en:
   activerecord:
     models:
