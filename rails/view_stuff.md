@@ -2,23 +2,22 @@
 
 ## Forms
 
-https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html
+<https://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html>
 
-https://guides.rubyonrails.org/form_helpers.htm
+<https://guides.rubyonrails.org/form_helpers.htm>
 
-https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for
+<https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for>
 
-https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
+<https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders>
 
 [Rails 5.1's form_with vs. form_tag vs. form_for](https://m.patrikonrails.com/rails-5-1s-form-with-vs-old-form-helpers-3a5f72a8c78a)
 
 [form_with — Building HTML forms in Rails 5.1](https://medium.com/@tinchorb/form-with-building-html-forms-in-rails-5-1-f30bd60ef52d)
 
-
 ### Formtastic
+
 At work we are using [Formtastic](https://github.com/justinfrench/formtastic).
 [more docs](http://www.rubydoc.info/github/justinfrench/formtastic)
-
 
 Having had no prior knowledge of Formtastic and little experience with forms, let alone complex forms, I continually find it difficult to search and find answers to problems I am having with getting things working with Formtastic.
 Usually it is to do with the html formatting of part of the form.
@@ -32,11 +31,15 @@ Tried:
 = f.action :submit, :input_html => { :disabled => true }, label: "Add Credit Card"
 = f.action :submit, label: "Add Credit Card", disabled: disabled
 ```
+
 Before coming across a post that had:
+
 ```ruby
 <%= f.action :submit, :button_html => { :label => "create case", :class => "btn primary", :disable_with => 'Processing...'} % >
 ```
+
 So tried this and it worked!
+
 ```ruby
 = f.action :submit, button_html: { disabled: true }, label: "Add Credit Card"
 ```
@@ -44,6 +47,7 @@ So tried this and it worked!
 ## Helpers
 
 ### Date Time Helper
+
 ```ruby
 module DateTimeHelper
   DEFAULT_DATE_FORMAT = "%d %B %Y".freeze
@@ -104,8 +108,9 @@ you get:
 </form>
 ```
 
-
 ## render
+
+[Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html)
 
 [Ruby On Rails : difference between render and `render partial: :template`| Passing locals in partials](https://cbabhusal.wordpress.com/2015/06/19/ruby-on-rails-difference-between-render-and-render-partial/)
 
@@ -113,3 +118,15 @@ you get:
 >render will not accept additional local variables for the partial, you need to use render :partial
 
 [Using Partials (Rails Guide)](http://guides.rubyonrails.org/layouts_and_rendering.html#using-partials)
+
+### Different syntax for rendering views
+
+```ruby
+render :partial => "customer_row"
+render :partial => "/layouts/mobile_header"
+
+render :partial => 'form', :locals => {:f => f}
+
+render 'admin/billings/menu'
+
+```

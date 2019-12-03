@@ -23,6 +23,15 @@ brew uninstall <package> # will uninstall / remove the package
 
 # could do
 brew update && brew upgrade # could possibly come up with issues with doing this
+
+brew services list # lists out services that are running or not, good way to check what instances of mariadb were runnng
+# Name         Status  User  Plist
+# chromedriver stopped
+# mariadb      started libby /Users/libby/Library/LaunchAgents/homebrew.mxcl.mariadb.plist
+# mariadb@10.3 started libby /Users/libby/Library/LaunchAgents/homebrew.mxcl.mariadb@10.3.plist
+# postgresql   started libby /Users/libby/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+# verm         started libby /Users/libby/Library/LaunchAgents/homebrew.mxcl.verm.plist
+
 ```
 
 ## What I have installed at work (old)
@@ -115,7 +124,7 @@ Use uninstall script to remove fzf.
 For more information, see: https://github.com/junegunn/fzf
 ```
 
-And now `crtl + r` gives me the fuzzy searc
+And now `crtl + r` gives me the fuzzy search
 
 ```bash
   11442  brew install fzf

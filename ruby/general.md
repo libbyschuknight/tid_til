@@ -10,6 +10,8 @@
 
 [Learn How to Program: Ruby & Rails](https://www.learnhowtoprogram.com/ruby-and-rails)
 
+[Ruby Guides - Jesus Castello](https://www.rubyguides.com/)
+
 ## `attr_`
 
 [Why use Ruby's attr_accessor, attr_reader and attr_writer?](https://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)

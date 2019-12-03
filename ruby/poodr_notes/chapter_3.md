@@ -241,6 +241,7 @@ end
 >After this change, `gear_inches` is more abstract. `Gear` now isolates `wheel.diameter` in a separate method and `gear_inches` can depend on a message sent to `self.`
 
 #### Remove argument-order dependencies
+
 Page 46
 
 (possibly not so much of an issue now with keyword arguments? [Ruby 2 Keyword Arguments](https://robots.thoughtbot.com/ruby-2-keyword-arguments), [Keyword arguments in Ruby 2.0

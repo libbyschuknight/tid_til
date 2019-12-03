@@ -1,4 +1,4 @@
-# Active Record
+# ActiveRecord
 
 [10 New Things in Active Record](https://hint.io/blog/10-New-Things-in-Active-Record)
 
@@ -10,15 +10,17 @@ ActiveRecord::Base.logger = Logger.new $>
 
 [Active Record Associations](https://guides.rubyonrails.org/association_basics.html)
 
-## DB stuff
-
 [Preload, Eagerload, Includes and Joins](https://blog.bigbinary.com/2013/07/01/preload-vs-eager-load-vs-joins-vs-includes.html)
 
 [Making sense of ActiveRecord joins, includes, preload, and eager_load](http://blog.scoutapp.com/articles/2017/01/24/activerecord-includes-vs-joins-vs-preload-vs-eager_load-when-and-where)
 
 [Rails 4: List of available datatypes](https://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes)
 
-### Queries
+[ignored_columns()](https://api.rubyonrails.org/classes/ActiveRecord/ModelSchema/ClassMethods.html#method-i-ignored_columns)
+
+[Deploy without downtime](https://github.com/barsoom/devbook/tree/master/deploy_without_downtime)
+
+## Queries
 
 <https://robots.thoughtbot.com/activerecords-wherenot>
 
@@ -30,16 +32,16 @@ is effectively the same as this:
 
 `User.where('name != ?', 'Gabe')`
 
-#### Finding records
+### Finding records
 
-In between certain dates:
+**In between certain dates:**
 
 ```ruby
 # `activated` is work/model specific method
 Consumer.active.activated.where(start_date: Date.parse("23/3/2017")..Date.parse("4/4/2017"))
 ```
 
-Before a certain date, with a certain attribute set to `nil`:
+**Before a certain date, with a certain attribute set to `nil`:**
 
 ```ruby
 Consumer.active.activated.where(last_annual_summary_date: nil).where("start_date <= ?", Date.parse("1/4/2018"))
@@ -47,13 +49,13 @@ Consumer.active.activated.where(last_annual_summary_date: nil).where("start_date
 
 ## [.includes](http://apidock.com/rails/ActiveRecord/QueryMethods/includes)
 
-Use to speed up a query that is taking ages due to using lots of models.
+**Use to speed up a query that is taking ages due to using lots of models.**
 
 ```ruby
 consumers = Consumer.where(participant_ref: provider_url).includes(customer: [account: [{user: :userref}, :sign_up, :contacts]])
 ```
 
-where consumers is being used to do:
+**where consumers is being used to do:**
 
 ```ruby
 consumers.each do |consumer|

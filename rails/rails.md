@@ -24,6 +24,8 @@
 
 [#210 Ruby on Rails Tips and Tricks](https://www.driftingruby.com/episodes/ruby-on-rails-tips-and-tricks-46fedaf6-0a62-4c69-ac51-69a4870e2238)
 
+[Rails 6: the missing developer setup guide](https://dev.to/vvo/a-rails-6-setup-guide-for-2019-and-2020-hf5)
+
 ## Upgrade
 
 <http://guides.rubyonrails.org/upgrading_ruby_on_rails.html>

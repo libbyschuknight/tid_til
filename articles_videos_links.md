@@ -82,6 +82,10 @@
 
 [Developers mentoring other developers: practices I've seen work well](https://blog.pragmaticengineer.com/developers-mentoring-other-developers/)
 
+### Company focused links
+
+[Onboarding / Employee Handbooks](https://www.notion.so/Onboarding-Employee-Handbooks-138a98bd392a45da910d74b900300194)
+
 ### Privilege
 
 [The Importance of Listening as a Privileged Person Fighting for Justice](https://everydayfeminism.com/2013/04/the-importance-of-listening-as-a-privileged-person-fighting-for-justice/)
@@ -251,6 +255,8 @@ My Wharenui
 ### Working Remotely
 
 [Working Remotely](https://medium.com/zynga-engineering/working-remotely-f19735c50cce)
+
+[How to Improve Communication Frequency With Your Remote Team](https://medium.com/better-humans/how-to-improve-communication-frequency-with-your-remote-team-a446e15e5bb5)
 
 ## Computer Stuff
 
