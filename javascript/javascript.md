@@ -1,7 +1,5 @@
 # JAVASCRIPT
 
-## Links
-
 [My Favorite Teachers In The JavaScript Community](https://dev.to/emmawedekind/my-favorite-teachers-in-the-javascript-community-53h)
 
 [Learn JavaScript with Eric Elliott](https://ericelliottjs.com/)
@@ -40,6 +38,8 @@
 
 [30 seconds of code: Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.](https://github.com/30-seconds/30-seconds-of-code#readme)
 
+<!-- different versions of JS -->
+
 ## JS Frameworks
 
 [I created the exact same app in React and Vue. Here are the differences. [2019 Edition]](https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-2019-edition-42ba2cab9e56)
@@ -77,7 +77,7 @@ To run one file - `npm run test src/components/button/v1_0/js/_tests_/Button.spe
 
 <https://facebook.github.io/create-react-app/docs/running-tests#option-2-react-testing-library>
 
-## Language things
+## JS Language
 
 [What does this symbol mean in JavaScript?](https://stackoverflow.com/questions/9549780/what-does-this-symbol-mean-in-javascript)
 
@@ -145,6 +145,57 @@ IIFE (Immediately Invoked Function Expression) is a JavaScript function that run
 [How to handle event handling in JavaScript (examples and all)](https://medium.freecodecamp.org/event-handling-in-javascript-with-examples-f6bc1e2fff57)
 
 [Object Assignment vs. Primitive Assignment in JavaScript for Beginners](https://nick.scialli.me/object-assignment-for-beginners/)
+
+### Functions / Methods
+
+[What is the Difference Between a Function and a Method in JavaScript?](https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in-javascript-3mkj)
+
+>In short: a method is a function that belongs to a class. In JavaScript, however, a method is a function that belongs to an object.
+
+[JavaScript Functions vs Methods (and other helpful tips)](https://medium.com/predict/javascript-functions-vs-methods-and-other-helpful-tips-e58a621b1d27)
+
+>*Functions vs. Methods*
+>
+>Methods have a “receiver” while functions do not.
+>
+>...
+>
+>If you are unaware of what a “receiver” is, look at the code snippet below:
+>
+>`someObject.someMethod()`
+>
+>In this context, the `someObject` is the receiver, while the `someMethod` is the method. Compare that with a function invocation:
+>
+>`someFunction(arg)`
+>
+>Notice how there is no receiver. In JavaScript, functions are invoked without a receiver using the parens syntax (). The receiver is what separates a function from a method.
+
+### Function Declaration vs Function Expression
+
+[JavaScript Functions vs Methods (and other helpful tips)](https://medium.com/predict/javascript-functions-vs-methods-and-other-helpful-tips-e58a621b1d27)
+
+>What’s the difference?
+>
+>If the line begins with the word “function” it’s a declaration. Otherwise, it’s an expression.
+>
+>Here are some examples:
+>
+>```javascript
+>// This is a function declaration
+>function hello() {
+>  console.log('Hello World');
+>}
+>// This is a function expression
+>var hello = function() {
+>  console.log('Hello World');
+>};
+>// This is also a function expression.
+>(function() {
+>  console.log('Hello World');
+>})();
+>```
+
+---
 
 ### [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 

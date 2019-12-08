@@ -170,6 +170,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 ## Help yourself
 
+[Being Glue](https://noidea.dog/glue)
+
 [You Must Try, and then You Must Ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html)
 
 [Learn faster! When and how to ask for help](https://codewithoutrules.com/2017/12/07/asking-for-help/)

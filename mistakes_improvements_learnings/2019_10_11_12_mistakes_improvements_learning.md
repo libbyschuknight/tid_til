@@ -163,7 +163,6 @@ Asked in work slack:
 >libby:fluxy:  1 minute ago
 >Oh yay it is working now! Was what you said Erik, thanks. probably should remove mariadb? and just have mariadb10.3.
 
-
 ## More DB issues!<!--   -->
 
 Arhhhhh! I'm getting this table doesn't exist error again but for a different table (after pulling down master)

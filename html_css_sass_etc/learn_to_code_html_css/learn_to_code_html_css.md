@@ -75,8 +75,8 @@ https://color.adobe.com/create/color-wheel/
 
 ## [HTML Borders](https://www.quackit.com/html/codes/html_borders.cfm)
 
-
 ## Universal Selector
+
 >The Universal Selector
 >In the first step of this exercise we were introduced to the universal selector. In CSS the asterisk, &#42;, is the universal selector, which selects every element. Rather than listing every single element imaginable, we can use the asterisk as a catch-all to select all elements for us.
 >The :before and :after pseudo-elements also mentioned in this step are elements that can be dynamically generated with CSS. We’re not going to be using these elements within our project; however, when using the universal selector it’s a good practice to also include these pseudo-elements in case they should ever appear.
@@ -128,8 +128,3 @@ Shows as:
   <dd>A person's regular occupation, profession, or trade</dd>
 </dl>
 =============
-
-
-
-
-

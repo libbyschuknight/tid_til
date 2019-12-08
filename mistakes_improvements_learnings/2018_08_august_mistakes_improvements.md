@@ -9,7 +9,6 @@ My aim:
 - see if there are any patterns in my mistake making
 - what concepts aren't sticking?
 
-
 ## string interpolation in JS
 
 Had these two functions:
@@ -40,9 +39,9 @@ function displayError(error_message, link, target) {
   $(target).html(`<tr><td colspan="5">${error_message} ${link}</td></tr>`);
 }
 ```
+
 Was hoping they would work online but didn't.
 Changed the code in the `makeTableRow` but didn't look through the rest of the code and missed the backticks in the `displayError` function. Which meant I had to change, push and re-deploy. 😞
-
 
 ## Adding a dataset method on a Sequel model
 
