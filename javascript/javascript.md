@@ -322,6 +322,14 @@ Set time in node console to UTC
 
 #### Updating npm packages
 
+<https://docs.npmjs.com/cli/update.html>
+
+<https://github.com/npm/node-semver>
+
+<https://devhints.io/semver>
+
+##### `npm outdated
+
 Check to see what is outdated:
 
 ```shell

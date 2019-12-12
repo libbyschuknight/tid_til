@@ -414,3 +414,11 @@ What I have done which seems to have worked is:
 Then `RETAILER=psnz COUNTRY=nz bundle exec lib/db_refresh.rb`.
 
 I think this was also an issue, previously I had been running `COUNTRY=nz bundle exec lib/db_refresh.rb` as I hadn't caught up with the fact that we needed to add the retailer flag now.
+
+## Updating node packages and the ^ (caret) symbol
+
+<https://yarnpkg.com/en/docs/cli/upgrade>
+
+<https://docs.npmjs.com/cli/update.html#caret-dependencies>
+
+<https://github.com/npm/node-semver#caret-ranges-123-025-004>

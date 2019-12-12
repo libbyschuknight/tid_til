@@ -1,8 +1,11 @@
 # Articles and Links
 
+📖 - still to read completely
+✅ - have read and probably more tha once and/or kept coming back to!
+
 ## Culture / People / Team
 
-[He Tangata](http://www.hetangata.com/what-he-tangata-about)
+[He Tangata](http://www.hetangata.com/what-he-tangata-about) ✅
 
 > **_He aha te mea nui o te ao_**
 >
@@ -14,31 +17,31 @@
 >
 > Māori proverb
 
-[The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
+[The Essential Guide to Building Balanced Development Teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80) ✅
 
-[How to Build a High Velocity Development Team](https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021)
+[How to Build a High Velocity Development Team](https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021) ✅
 
-[Put your paddle in the air](https://blog.figure.nz/put-your-paddle-in-the-air-28eee39648ef)
+[Put your paddle in the air](https://blog.figure.nz/put-your-paddle-in-the-air-28eee39648ef) ✅
 
-[Figure NZ - Our kaupapa: raise a paddle](http://tohu.figure.nz/internal/our_kaupapa/#raise-a-paddle)
+[Figure NZ - Our kaupapa: raise a paddle](http://tohu.figure.nz/internal/our_kaupapa/#raise-a-paddle) ✅
 
 [Let Me Google That for You](http://bridgetkromhout.com/blog/2015/05/31/let-me-google-that-for-you/)
 
-[One-on-one catchups with your team](https://medium.com/@mogest/one-on-one-catchups-with-your-team-4d84219d59ce)
+[One-on-one catchups with your team](https://medium.com/@mogest/one-on-one-catchups-with-your-team-4d84219d59ce) ✅
 
-[Questions for our first 1:1](http://larahogan.me/blog/first-one-on-one-questions/)
+[Questions for our first 1:1](http://larahogan.me/blog/first-one-on-one-questions/) ✅
 
-[Every One-on-One Meeting Should Ask This Question](https://www.startups.co/articles/one-question-ask-every-one-one-meeting)
+[Every One-on-One Meeting Should Ask This Question](https://www.startups.co/articles/one-question-ask-every-one-one-meeting) ✅
 
-[Manager handoffs](http://larahogan.me/blog/manager-handoffs/)
+[Manager handoffs](http://larahogan.me/blog/manager-handoffs/) ✅
 
-[Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk)
+[Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk) ✅
 
-[Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/)
+[Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/) ✅
 
-[Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59)
+[Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59) ✅
 
-[ReWork - Google](https://rework.withgoogle.com/)
+[ReWork - Google](https://rework.withgoogle.com/) ✅
 
 [blog](https://rework.withgoogle.com/blog/)
 
@@ -162,6 +165,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Gender Decoder for Job Ads](http://gender-decoder.katmatfield.com/)
 
+[Enough Leaning In. Let’s Tell Men to Lean Out.](https://www.nytimes.com/2019/10/10/opinion/sunday/feminism-lean-in.html) 📖
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
@@ -260,7 +265,7 @@ My Wharenui
 
 [How to Improve Communication Frequency With Your Remote Team](https://medium.com/better-humans/how-to-improve-communication-frequency-with-your-remote-team-a446e15e5bb5)
 
-## Computer Stuff
+## Coding Stuff
 
 [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
 
@@ -273,6 +278,8 @@ My Wharenui
 [What is an API? In English, please.](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
 
 [awesome-aotearoa-tech](https://github.com/radsy/awesome-aotearoa-tech)
+
+[decent-code](https://robatwilliams.github.io/decent-code/) 📖
 
 ### Phone numbers and addresses
 

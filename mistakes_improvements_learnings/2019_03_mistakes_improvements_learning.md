@@ -334,7 +334,6 @@ document.getElementById {
 ✖ 1 problem (1 error, 0 warnings)
 ```
 
-
 ### webpack dev-server
 
 So when using this, it doesn't save the files to disk. Bit of a discussion around whether we want to be able to see the ressulting files or not and if we want to ahve the ability to see the prod files as well in development. Could help with debugging.
@@ -343,18 +342,18 @@ Found this useful stackoverflow question and answer:
 
 [webpack “--watch” vs “--hot” : what's the difference?](https://stackoverflow.com/questions/38089785/webpack-watch-vs-hot-whats-the-difference)
 
-Top answer - https://stackoverflow.com/questions/38089785/webpack-watch-vs-hot-whats-the-difference?answertab=votes#tab-top
+Top answer - <https://stackoverflow.com/questions/38089785/webpack-watch-vs-hot-whats-the-difference?answertab=votes#tab-top>
 
 Short of it is:
 
 >The dev server uses webpack’s watch mode. It also prevents webpack from emitting the resulting files to disk. Instead it keeps and serves the resulting files from memory.
 
-
 ## Errors
+
 Pearl of widsom from my collegue Thomas, if you are searching for an error on Google and you can't find anything, there you have probably done something wrong in your code e.g. spelling error, as there are so many people out there that someone else would have come across the same error!
 
-
 ## Locking down npm packages
+
 In `package.json` has this:
 
 ```json
@@ -375,9 +374,9 @@ We wanted to lock down out versions to what we have currently, so need to take o
     "@babel/preset-react": "7.0.0",
 ```
 
-https://docs.npmjs.com/cli/update
+<https://docs.npmjs.com/cli/update>
 
-https://www.hostingadvice.com/how-to/update-npm-packages/ - Semantic Versioning: Major, Minor, & Patch Version Ranges
+<https://www.hostingadvice.com/how-to/update-npm-packages/> - Semantic Versioning: Major, Minor, & Patch Version Ranges
 
 >To Allow Patch Releases: 1.0 or 1.0.x or ~1.0.4
 >To Allow Minor Releases: 1 or 1.x or ^1.0.4
