@@ -10,6 +10,11 @@
 
 [Markdown Tables Generator Facebook](http://www.tablesgenerator.com/markdown_tables) - useful for getting lines right for a table.
 
+| old column   |     | new column |
+|------------  |   --|------------|
+|one           |  => |two         |
+|three         |  => |four        |
+
 [EMOJI CHEAT SHEET](https://gist.github.com/roachhd/1f029bd4b50b8a524f3c) for markdown
 
 ## Image

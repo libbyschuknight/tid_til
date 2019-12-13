@@ -127,6 +127,29 @@ ids = [1,2,3,4]
 User.where(id: ids)
 ```
 
+## [`pluck`](https://guides.rubyonrails.org/active_record_querying.html#pluck)
+
+
+```ruby
+Plan.manually_assignable.pluck(:name, :customer_label, :manually_assignable, :available_for_signup)
+
+
+[
+    [ 0] [
+        [0] "standard",
+        [1] "standard",
+        [2] true,
+        [3] true
+    ],
+    [ 1] [
+        [0] "Published_0PCT-Oct18_0",
+        [1] "Simple Flexi",
+        [2] true,
+        [3] true
+    ],
+```
+
+
 ## Joining Tables
 
 [Joining Tables](http://guides.rubyonrails.org/active_record_querying.html#joining-tables)
