@@ -149,6 +149,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [You Guys](https://www.xaprb.com/blog/you-guys/)
 
+[A step we can all take towards gender equality — banish these two words](https://medium.com/@victoria.maclennan/a-step-we-can-all-take-towards-gender-equality-banish-these-two-words-e08ae2212eed)
+
 [No more excuses: Why your attempts to deny the gender pay gap just won’t wash](https://thespinoff.co.nz/society/08-03-2017/no-more-excuses-why-your-attempts-to-deny-the-gender-pay-gap-just-wont-wash/)
 
 [How “Good Intent” Undermines Diversity and Inclusion](https://thebias.com/2017/09/26/how-good-intent-undermines-diversity-and-inclusion/)
@@ -227,6 +229,8 @@ My Wharenui
 [A Woman’s Guide to Salary Negotiation](https://www.nytimes.com/guides/working-womans-handbook/salary-negotiation-woman?te=1&nl=in-her%20words&emc=edit_gn_20191004?campaign_id=10&instance_id=12847&segment_id=17597&user_id=d93c9ac7ff13ff81832a2bf33c5b8191&regi_id=85868229&utm_source=ACE+LADY+NETWORK%21&utm_campaign=b5b5644c44-EMAIL_CAMPAIGN_2019_10_05_04_19&utm_medium=email&utm_term=0_e0f0cedd61-b5b5644c44-521451461)
 
 [Time Management: A powerful tool to show us where to spend our time.](https://medium.com/@lindsay_jopson/a-powerful-tool-to-show-us-where-to-spend-our-time-a8e564656bdf)
+
+[How to find joy and purpose in your work](https://medium.com/@hannah_73062/how-to-find-joy-and-purpose-in-your-work-376c366ddb00) 📖
 
 ## More Stuff
 
