@@ -11,7 +11,7 @@ I think I should have also been able to have run this `bundle _1.17.1_ install` 
 I am using `rbenv` and the version is `2.4.5`. So uninstalled it, have ran `rbenv install 2.4.5` but it has hung on
 `ruby-build: use readline from homebrew`
 
-A google tells me that `readline` has been a problem - https://github.com/rbenv/ruby-build/issues/1064
+A google tells me that `readline` has been a problem - <https://github.com/rbenv/ruby-build/issues/1064>
 
 Tried reinstalling `rbenv` but it was already up to date.
 
@@ -127,7 +127,7 @@ Application.updateEstimates = function() {
 
 This is then doing stuff on a Rails page and is it working within Rails-React.
 
-http://api.jquery.com/Ajax_Events/ - see here for what `.complete` does.
+<http://api.jquery.com/Ajax_Events/> - see here for what `.complete` does.
 
 ## https issue
 
@@ -136,7 +136,7 @@ Mixed Content: The page at 'https://schuknight.com/js-memory-cards/' was loaded 
 ```
 
 solution:
-https://stackoverflow.com/questions/18251128/why-am-i-suddenly-getting-a-blocked-loading-mixed-active-content-issue-in-fire
+<https://stackoverflow.com/questions/18251128/why-am-i-suddenly-getting-a-blocked-loading-mixed-active-content-issue-in-fire>
 
 Update the `http` part of url to `https`.
 
@@ -144,15 +144,15 @@ Update the `http` part of url to `https`.
 
 Just using `nvm`!!!
 
-https://github.com/nvm-sh/nvm
+<https://github.com/nvm-sh/nvm>
 
 ## Handy tip about reversing the order of WordPress blog posts
 
-I wanted to share all of my blog posts about my journay at EDA. I have tagged them all - https://schuknight.wordpress.com/category/eda/, but this is most recent to least. I thought it would make more sense to have least recent (oldest) to most recent (newest).
+I wanted to share all of my blog posts about my journay at EDA. I have tagged them all - <https://schuknight.wordpress.com/category/eda/,> but this is most recent to least. I thought it would make more sense to have least recent (oldest) to most recent (newest).
 
-https://en.support.wordpress.com/show-your-posts-in-chronological-order/
+<https://en.support.wordpress.com/show-your-posts-in-chronological-order/>
 
-And you can by adding `?order=asc`, to the end of a url - https://schuknight.wordpress.com/category/eda/?order=asc
+And you can by adding `?order=asc`, to the end of a url - <https://schuknight.wordpress.com/category/eda/?order=asc>
 
 Handy!!
 
@@ -193,8 +193,8 @@ Connection closed
 Connection closed
 Kitchen Syncing failed.
 /Users/libby/flux/powershop/lib/partial_sync/runner.rb:73:in `run_ks': PartialSync::Runner::SystemCommandError (PartialSync::Runner::SystemCommandError)
-	from /Users/libby/flux/powershop/lib/partial_sync/runner.rb:13:in `build_table_structure'
-	from lib/db_refresh.rb:78:in `<main>'`
+ from /Users/libby/flux/powershop/lib/partial_sync/runner.rb:13:in `build_table_structure'
+ from lib/db_refresh.rb:78:in `<main>'`
 ```
 
 as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll mysql-client`
@@ -207,13 +207,13 @@ as it turns out, I hadn't yet re-installed `mysql-client` doh! `brew instasll my
 
 ## VoiceOver User Guide (mac)
 
-https://help.apple.com/voiceover/mac/10.14/
+<https://help.apple.com/voiceover/mac/10.14/>
 
 ## `form_for && form_with` builders
 
-https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for
+<https://apidock.com/rails/ActionView/Helpers/FormHelper/form_for>
 
-https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
+<https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders>
 
 With working on updating the pattern library we have been getting into customising forms.
 
@@ -221,13 +221,13 @@ With working on updating the pattern library we have been getting into customisi
 
 `form_for && form_with` are basically helpers to make adding forms for objects easier
 
-https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object
+<https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object>
 
 > What we want to do is somehow bind a form to a model object, which is exactly what form_for does.
 
 If we wanted to we could build a form for an object using form tags we could.
 
-https://guides.rubyonrails.org/form_helpers.html#dealing-with-model-objects-model-object-helpers
+<https://guides.rubyonrails.org/form_helpers.html#dealing-with-model-objects-model-object-helpers>
 
 > While the \*\_tag helpers can certainly be used for this task they are somewhat verbose as for each tag you would have to ensure the correct parameter name is used and set the default value of the input appropriately. Rails provides helpers tailored to this task.
 
@@ -243,7 +243,7 @@ Note also that `form_with` will be the one in the future if not now.
 
 We can customise `form_for && form_with` via the form builder.
 
-Look here for example in Rails guide - https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders
+Look here for example in Rails guide - <https://guides.rubyonrails.org/form_helpers.html#customizing-form-builders>
 
 NB: more to come on this....
 
@@ -277,13 +277,13 @@ module AdminPatternLibrary
 
 ```bash
 /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant': uninitialized constant AdminPatternLibrary::TexInput (NameError)
-	from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
-	from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
-	from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
-	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:98:in `<class:AplFormBuilder>'
-	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:96:in `<module:ViewHelpers>'
-	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:8:in `<module:AdminPatternLibrary>'
-	from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:7:in `<main>'
+ from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+ from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+ from /Users/libby/.rbenv/versions/2.4.5/lib/ruby/gems/2.4.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+ from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:98:in `<class:AplFormBuilder>'
+ from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:96:in `<module:ViewHelpers>'
+ from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:8:in `<module:AdminPatternLibrary>'
+ from /Users/libby/flux/admin_pattern_library/src/ruby/admin_pattern_library/view_helpers.rb:7:in `<main>'
 ```
 
 `TextInput` not `TexInput`
@@ -306,10 +306,10 @@ Suggestion to colleague who was using `content_tag`.
 
 > I was just reminding myself what `content_tag` does and for Rails 5 it has this in the documentation - `Note: this is legacy syntax, see tag method description for details.`
 >
-> https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-content_tag - old
-> https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-tag - new
+> <https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-content_tag> - old
+> <https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/TagHelper.html#method-i-tag> - new
 >
-> And found this https://blog.bigbinary.com/2017/08/23/new-syntax-for-tag-helpers-in-rails-5-1.html
+> And found this <https://blog.bigbinary.com/2017/08/23/new-syntax-for-tag-helpers-in-rails-5-1.html>
 > And it is being used in our main app at work
 >
 > Think we should use the preferred option - `tag.<tag name>(optional content, options)`
@@ -366,10 +366,10 @@ end
 
 Been lots of issues around timezones with the date picker we have implemented. We have used Flatpickr, but don't think it does timezones very well.
 
-https://flatpickr.js.org/
+<https://flatpickr.js.org/>
 
-https://medium.com/@toastui/handling-time-zone-in-javascript-547e67aa842d
+<https://medium.com/@toastui/handling-time-zone-in-javascript-547e67aa842d>
 
-https://en.wikipedia.org/wiki/List_of_UTC_time_offsets
+<https://en.wikipedia.org/wiki/List_of_UTC_time_offsets>
 
-https://www.iana.org/time-zones
+<https://www.iana.org/time-zones>

@@ -75,3 +75,19 @@ At work we have anti virus software that makes installs extremely slow. It took 
 > .../.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/pkg-config-1.2.8/lib/pkg-config.rb:299:in `parse_pc': .pc for >libffi doesn't exist. (RuntimeError)
 > You need to provide PKG_CONFIG_PATH like this (the actual location may vary):
 > PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig bundle install
+
+
+---
+
+[How to Show Hidden Files on MacOS with a Keyboard Shortcut](http://osxdaily.com/2018/02/12/show-hidden-files-mac-keyboard-shortcut/)
+
+[New Tab iTerm2 within Current Directory](https://medium.com/ayuth/new-tab-iterm2-with-in-current-directory-627b0c31734a)
+
+
+---
+
+Other programs??
+- add image
+- spectacle
+- time out
+- others...

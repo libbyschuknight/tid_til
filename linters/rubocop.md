@@ -30,6 +30,7 @@ rbenv install 2.3.0
 #install bundler for new ruby version
 gem install bundler
 ```
+
 run bundle install for project - which has rubocop gem
 
 this was useful http://stackoverflow.com/questions/21275951/rbenv-ruby-command-not-found

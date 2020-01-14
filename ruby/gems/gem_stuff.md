@@ -2,6 +2,8 @@
 
 <https://guides.rubygems.org>
 
+[Ruby Gems, Gemfile & Bundler (The Ultimate Guide)](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/)
+
 ## [bundle exec](http://bundler.io/man/bundle-exec.1.html)
 
 >This command executes the command, making all gems specified in the Gemfile(5) available to require in Ruby programs.
@@ -108,6 +110,18 @@ Apply anything you have stashed - `git stash apply`
 
 >Restores installed gems to their pristine condition
 
+## `require`
+
+### `require: false
+
+[What does 'require: false' in Gemfile mean?](https://stackoverflow.com/questions/4800721/what-does-require-false-in-gemfile-mean)
+
+>You use :require => false when you want the gem to be installed but not "required".
+>
+>So in the example you gave: gem 'whenever', :require => false when someone runs bundle install the whenever gem would be installed as with gem install whenever. Whenever is used to create cron jobs by running a rake task but isn't usually used from within the rails (or other framework if not rails) application.
+>
+>So you can use :require => false for anything that you need to run from the command line but don't need within your code.
+
 ## To see what versions of gems have
 
 e.g. to see what different versions of rails you have locally
@@ -175,7 +189,7 @@ lib = File.expand_path("lib", __dir__)
 
 to stop building rdoc when you install gems or the bundle, you can add `gem: "--no-document"` to `~/.gemrc.` Then after reloading your term session, gem and bundle will stop building rdoc.
 
-## USEFUL GEMS
+## GEMS
 
 ### [Rubocop](https://rubygems.org/gems/rubocop/versions/0.67.2)
 
@@ -211,3 +225,9 @@ See [linters/rubocop](../linters/rubocop.md)
 | 167744 | "user_167744@test@example.com" | "Kate_167744" | "Builder_167744" |
 +--------+---------------------------------+--------------+------------------+
 ```
+
+### [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers)
+
+[JSON Serialization in Rails: A Complete Guide](https://buttercms.com/blog/json-serialization-in-rails-a-complete-guide)
+
+[A Quickstart Guide to Using Serializer With Your Ruby on Rails API](https://itnext.io/a-quickstart-guide-to-using-serializer-with-your-ruby-on-rails-api-d5052dea52c5)

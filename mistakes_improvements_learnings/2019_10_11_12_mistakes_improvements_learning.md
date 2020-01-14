@@ -23,8 +23,8 @@ Come this week and the core app branch was out of date with master and the APL g
 We can do any of these:
 
 ```ruby
-gem 'admin_pattern_library', :pgem => 'admin_pattern_library', :tag => 'v0.29.0' # point at a release, usually most recent
-gem 'admin_pattern_library', :pgem => 'admin_pattern_library', :branch => 'deploy-apl-282' # point at a feature branch deploy branch
+gem 'admin_pattern_library', :gem => 'admin_pattern_library', :tag => 'v0.29.0' # point at a release, usually most recent
+gem 'admin_pattern_library', :gem => 'admin_pattern_library', :branch => 'deploy-apl-282' # point at a feature branch deploy branch
 gem 'admin_pattern_library', :path => '../admin_pattern_library' # point at the gem locally, on computer
 ```
 
