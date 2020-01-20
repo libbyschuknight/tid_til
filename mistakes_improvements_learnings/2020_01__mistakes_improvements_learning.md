@@ -2,7 +2,9 @@
 
 First month at Storypark!!
 
-## Finding computers local IP address
+## New Computer Setup and SP repo setups
+
+### Finding computers local IP address
 
 <https://en.wikipedia.org/wiki/Ifconfig>
 
@@ -31,3 +33,12 @@ ifconfig | grep inet
 This line `inet 192.168.1.19 netmask 0xffffff00 broadcast 192.168.1.255` is where we can find it - `192.168.1.19`.
 
 Also can be found under `Systems Preferences -> Network -> Advanced -> TCP/IP -> IPv4 Address`
+
+### yarn / gyp errors
+
+Needed to use `yarn` within a project. xcode command line tools should have worked but there seems to be issues with xcode, gyp and catalina.
+
+<https://github.com/nodejs/node-gyp/issues/1927>
+
+I had a look at this <https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md> and had a quick chat with colleague and decided to install the full xcode app.
+It could actualy be useful to have. And now things are working fine.
