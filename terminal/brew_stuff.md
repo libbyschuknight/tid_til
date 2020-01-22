@@ -55,6 +55,27 @@ gdbm			icu4c			libtiff			pixman			tree
 
 `the_silver_searcher` aka `ag` - <https://github.com/ggreer/the_silver_searcher>
 
+## What I have installed at work - Jan 2020
+
+After setting up new computer, with an company install script
+
+```bash
+autoconf		icu4c			little-cms2		redis
+automake		imagemagick@6		ncurses			ruby
+aws-elasticbeanstalk	jpeg			node			ruby-install
+awscli			jpegoptim		oniguruma		scour
+bison			jq			openjpeg		sqlite
+chruby			kompose			openssl@1.1		terraform
+coreutils		libffi			pcre			terraform_landscape
+direnv			libidn2			pcre2			webp
+freetype		libpng			pkg-config		wget
+fzf			libtiff			pngcrush		xz
+gdbm			libtool			postgresql@10		yarn
+gettext			libunistring		python			zsh
+git			libxml2			python@3.8
+hub			libyaml			readline
+```
+
 ### What I have installed at home (as of Nov 2019)
 
 ```bash
@@ -138,3 +159,13 @@ And now `crtl + r` gives me the fuzzy search
   10000/10000 +S
 >
 ```
+
+## brew cask
+
+<https://formulae.brew.sh/cask/>
+
+>This is a listing of all casks available via the Homebrew package manager for macOS.
+
+<https://github.com/Homebrew/homebrew-cask>
+
+>Homebrew Cask extends Homebrew and brings its elegance, simplicity, and speed to the installation and management of GUI macOS applications such as Atom and Google Chrome.

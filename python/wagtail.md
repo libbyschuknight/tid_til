@@ -23,16 +23,20 @@ https://docs.python.org/3/tutorial/interpreter.html, saying to type in `python3.
 I actually did a quick google before looking back at the docs and found that you can do `python3`. Might make an alias for it soon!
 
 #### Pip
+
 And I did the same thing with pip, for Python3 it is `pip3`!
 I was trying to upgrade `pip` as the Wagtail docs say that it comes with Python3 but you will need to upgrade.
 The upgrade dos just have `pip install -U pip`, nooo, it is `pip3 install -U pip`
 
 What even is `pip`?
+
 >pip is a package management system used to install and manage software packages written in Python.
-https://en.wikipedia.org/wiki/Pip_(package_manager)
+
+<https://en.wikipedia.org/wiki/Pip_(package_manager)>
 
 
 #### Virtualenv
+
 This confused me a lot. The Wagtail docs assume you know about this I believe.
 
 I had used it for the [DjangoGirls tutorial](http://tutorial.djangogirls.org/en/) so I went back to look at that.

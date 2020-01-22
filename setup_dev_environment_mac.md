@@ -91,3 +91,17 @@ Other programs??
 - spectacle
 - time out
 - others...
+
+## Themes for vscode, iterm
+
+### <https://github.com/wesbos/cobalt2-vscode>
+
+### <https://github.com/wesbos/Cobalt2-iterm>
+
+- `pip` installtion, should be using `python3`,  and therefore it will already be installed but have to refer to it as `pip3`
+
+> UPDATE: This is no longer necessary with Python3.4. It installs pip3 as part of the stock install.
+
+<https://stackoverflow.com/questions/20082935/how-to-install-pip-for-python-3-on-mac-os-x>
+
+So just needed to do `pip3 install --user powerline-status` as per the instructions.

@@ -19,3 +19,5 @@ You can set a 'Tip of the Day'
 >A: Go to Preferences->Profiles tab. Select your profile on the left, and then open the Keyboard tab. At the bottom is a set of buttons that lets you select the behavior of the Option key. For most users, Esc+ will be the best choice.
 
 Update Oct 2017 - <http://thinkingeek.com/2012/11/17/mac-os-x-iterm-meta-key/>
+
+## [Quickly open files in iTerm with Cmd+Click](https://coderwall.com/p/b7e82q/quickly-open-files-in-iterm-with-cmd-click)
