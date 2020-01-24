@@ -178,3 +178,23 @@ direnv: export +AWS_ACCESS_KEY_ID +AWS_REGION +AWS_SECRET_ACCESS_KEY +GOOGLE_APP
 ```
 
 that I had reloaded the tab! Doh!! Actually went out of and back into the folder.
+
+## Local development
+
+Apps are run with `foreman`, currently can't getting `binding.pry` working when using this.
+
+Workaround at the moment is to just run `rails s`, to get it working with the host set do `bundle exec rails s -b 0.0.0.0`.
+
+The other things won't be running, but you can see what would be by looking at the `Procfile.dev` or just running the server with `foreman` and see what starts up.
+
+Assets weren't loading. In the `Procfile.dev` it has this `./bin/webpack-dev-server` for webpack. Run this and then `rails s` and then the assets should load.
+
+
+
+elastic beanstalk
+- ec 2 instances
+
+
+pry
+show-source
+show-source user.beta_options
