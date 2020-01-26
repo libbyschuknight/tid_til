@@ -117,6 +117,8 @@ e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `v
 
 [Three dots ( … ) in JavaScript](https://dev.to/sagar/three-dots---in-javascript-26ci)
 
+[7 Tricks with Resting and Spreading JavaScript Objects](https://blog.bitsrc.io/6-tricks-with-resting-and-spreading-javascript-objects-68d585bdc83)
+
 ### IIFE (Immediately Invoked Function Expression)
 
 IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
@@ -150,50 +152,50 @@ IIFE (Immediately Invoked Function Expression) is a JavaScript function that run
 
 [What is the Difference Between a Function and a Method in JavaScript?](https://dev.to/tiffany/what-is-the-difference-between-a-function-and-a-method-in-javascript-3mkj)
 
->In short: a method is a function that belongs to a class. In JavaScript, however, a method is a function that belongs to an object.
+> In short: a method is a function that belongs to a class. In JavaScript, however, a method is a function that belongs to an object.
 
 [JavaScript Functions vs Methods (and other helpful tips)](https://medium.com/predict/javascript-functions-vs-methods-and-other-helpful-tips-e58a621b1d27)
 
->*Functions vs. Methods*
+> _Functions vs. Methods_
 >
->Methods have a “receiver” while functions do not.
+> Methods have a “receiver” while functions do not.
 >
->...
+> ...
 >
->If you are unaware of what a “receiver” is, look at the code snippet below:
+> If you are unaware of what a “receiver” is, look at the code snippet below:
 >
->`someObject.someMethod()`
+> `someObject.someMethod()`
 >
->In this context, the `someObject` is the receiver, while the `someMethod` is the method. Compare that with a function invocation:
+> In this context, the `someObject` is the receiver, while the `someMethod` is the method. Compare that with a function invocation:
 >
->`someFunction(arg)`
+> `someFunction(arg)`
 >
->Notice how there is no receiver. In JavaScript, functions are invoked without a receiver using the parens syntax (). The receiver is what separates a function from a method.
+> Notice how there is no receiver. In JavaScript, functions are invoked without a receiver using the parens syntax (). The receiver is what separates a function from a method.
 
 ### Function Declaration vs Function Expression
 
 [JavaScript Functions vs Methods (and other helpful tips)](https://medium.com/predict/javascript-functions-vs-methods-and-other-helpful-tips-e58a621b1d27)
 
->What’s the difference?
+> What’s the difference?
 >
->If the line begins with the word “function” it’s a declaration. Otherwise, it’s an expression.
+> If the line begins with the word “function” it’s a declaration. Otherwise, it’s an expression.
 >
->Here are some examples:
+> Here are some examples:
 >
->```javascript
->// This is a function declaration
->function hello() {
->  console.log('Hello World');
->}
->// This is a function expression
->var hello = function() {
->  console.log('Hello World');
->};
->// This is also a function expression.
->(function() {
->  console.log('Hello World');
->})();
->```
+> ```javascript
+> // This is a function declaration
+> function hello() {
+>   console.log('Hello World');
+> }
+> // This is a function expression
+> var hello = function() {
+>   console.log('Hello World');
+> };
+> // This is also a function expression.
+> (function() {
+>   console.log('Hello World');
+> })();
+> ```
 
 ---
 
@@ -224,8 +226,8 @@ ECMAScript is "JavaScript"
 > Note that array.length isn't necessarily the number of items in the array. Consider the following:
 
 ```js
-var a = ["dog", "cat", "hen"];
-a[100] = "fox";
+var a = ['dog', 'cat', 'hen'];
+a[100] = 'fox';
 a.length; // 101
 ```
 
@@ -285,7 +287,7 @@ console.log(getRectArea(3, 4));
 > The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, but suffers from security and similar (but far less significant) performance issues to eval. However, unlike eval, the Function constructor creates functions which execute in the global scope only.
 
 ```js
-var sum = new Function("a", "b", "return a + b");
+var sum = new Function('a', 'b', 'return a + b');
 
 console.log(sum(2, 6));
 // expected output: 8
@@ -299,15 +301,15 @@ console.log(sum(2, 6));
 
 ```js
 var person = {};
-person["firstname"] = "Mario";
-person["lastname"] = "Rossi";
+person['firstname'] = 'Mario';
+person['lastname'] = 'Rossi';
 
 console.log(person.firstname);
 // expected output: "Mario"
 
-person = { firstname: "John", lastname: "Doe" };
+person = { firstname: 'John', lastname: 'Doe' };
 
-console.log(person["lastname"]);
+console.log(person['lastname']);
 // expected output: "Doe"
 ```
 
@@ -386,11 +388,11 @@ add_utility_notice.customer_id), :class => "dismiss-button") do %>
 
 ```js
 jQuery(function($) {
-  $(".add-utility-notice .dismiss-button").click(function(event) {
+  $('.add-utility-notice .dismiss-button').click(function(event) {
     event.preventDefault();
-    postAjax($(this).attr("href"));
+    postAjax($(this).attr('href'));
 
-    $(".add-utility-notice").hide();
+    $('.add-utility-notice').hide();
   });
 });
 ```
