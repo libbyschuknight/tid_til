@@ -737,3 +737,25 @@ $ tail -f log/development.log | grep DEBUG
 ## sanitize(html, options = {})
 
 <https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html#method-i-sanitize>
+
+## Rails Concerns
+
+Was doing a code review where are this was added:
+
+```ruby
+module CommonOptions
+    extend ActiveSupport::Concern
+...
+```
+
+<https://api.rubyonrails.org/classes/ActiveSupport/Concern.html>
+
+[Put chubby models on a diet with concerns](https://signalvnoise.com/posts/3372-put-chubby-models-on-a-diet-with-concerns)
+
+> Concerns are also a helpful way of extracting a slice of model that doesn’t seem part of its essence (what is and isn’t in the essence of a model is a fuzzy line and a longer discussion) without going full-bore Single Responsibility Principle and running the risk of ballooning your object inventory.
+
+Hadn't paid enough attention to the above and came across concerns again and it took me too long figure out what was happening.
+
+[Stop Worrying and Start Being Concerned: ActiveSupport Concerns](http://vaidehijoshi.github.io/blog/2015/10/13/stop-worrying-and-start-being-concerned-activesupport-concerns/)
+
+[Rails concerns](http://dmitrypol.github.io/rails/2016/10/29/rails-concerns.html)

@@ -185,6 +185,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [You Must Try, and then You Must Ask](https://blogs.akamai.com/2013/10/you-must-try-and-then-you-must-ask.html)
 
+[Asking for help twitter thread](https://twitter.com/EvyKassirer/status/1220556930675904516)
+
+- further to the "You must try and then you must ask", this thread has some great thoughts in it.
+
 [Learn faster! When and how to ask for help](https://codewithoutrules.com/2017/12/07/asking-for-help/)
 
 [Shut Up, Imposter Syndrome: I Can Too Program](https://www.laserfiche.com/ecmblog/shut-up-imposter-syndrome-i-can-too-program/#)

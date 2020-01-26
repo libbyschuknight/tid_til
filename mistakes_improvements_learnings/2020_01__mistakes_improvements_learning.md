@@ -67,7 +67,6 @@ LOCAL_IP=192.168.1.67
 
 Will just have to remember to change it!
 
-
 ### yarn / gyp errors
 
 Needed to use `yarn` within a project. xcode command line tools should have worked but there seems to be issues with xcode, gyp and catalina.
@@ -94,7 +93,7 @@ direnv: error exit status 1
 
 <https://github.com/direnv/direnv>
 
->direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
+> direnv is an extension for your shell. It augments existing shells with a new feature that can load and unload environment variables depending on the current directory.
 
 This probably should have got me thinking!
 
@@ -189,11 +188,11 @@ The other things won't be running, but you can see what would be by looking at t
 
 Assets weren't loading. In the `Procfile.dev` it has this `./bin/webpack-dev-server` for webpack. Run this and then `rails s` and then the assets should load.
 
-
+TODO
 
 elastic beanstalk
-- ec 2 instances
 
+- ec 2 instances
 
 pry
 show-source
