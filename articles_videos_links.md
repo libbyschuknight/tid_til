@@ -55,6 +55,8 @@
 
 [More Growth Frameworks](#List-of-Growth-Frameworks)
 
+[The Engineer’s Guide to Career Growth — Advice from My Time at Stripe and Facebook](https://firstround.com/review/the-engineers-guide-to-career-growth-advice-from-my-time-at-stripe-and-facebook/) 📖
+
 [Diverse Teams Feel Less Comfortable — and That’s Why They Perform Better](https://hbr.org/2016/09/diverse-teams-feel-less-comfortable-and-thats-why-they-perform-better)
 
 [Atlassian ditches ‘brilliant jerks’ in performance review overhaul](https://www.news.com.au/finance/work/at-work/atlassian-ditches-brilliant-jerks-in-performance-review-overhaul/news-story/82a5e2abba1939f51d68ae81db8f05bd)
@@ -82,6 +84,8 @@
 [EMPATHY is the most important leadership skill needed today!](https://www.linkedin.com/pulse/empathy-most-important-leadership-skill-needed-today-hyacinth)
 
 [Empathy: What it is (and isn’t) and how companies can put it to good use](https://www.linkedin.com/pulse/empathy-what-isnt-how-companies-can-put-good-use-jamil-zaki-1c)
+
+[This Is What Impactful Engineering Leadership Looks Like](https://firstround.com/review/this-is-what-impactful-engineering-leadership-looks-like/)
 
 [Developers mentoring other developers: practices I've seen work well](https://blog.pragmaticengineer.com/developers-mentoring-other-developers/)
 

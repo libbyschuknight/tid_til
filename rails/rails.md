@@ -734,5 +734,6 @@ $ tail -f log/development.log | grep DEBUG
 
 [Reserved words for Rails](https://medium.com/@jarrett.yew/reserved-words-for-rails-340a455f9af9)
 
+## sanitize(html, options = {})
 
-## Rails console
+<https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html#method-i-sanitize>

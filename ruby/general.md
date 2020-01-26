@@ -28,6 +28,18 @@
 > 2. An active record method saves the record or a method saves an object (e.g. strip!)
 > 3. A method does something “extra”, like posts to someplace, or does some action.
 
+## Question mark
+
+<https://github.com/rubocop-hq/ruby-style-guide#boolean-methods-question-mark>
+
+[What does the question mark operator mean in Ruby?](https://stackoverflow.com/questions/1345843/what-does-the-question-mark-operator-mean-in-ruby)
+
+>It's a convention in Ruby that methods that return boolean values end in a question mark. There's no more significance to it than that.
+
+<https://docs.ruby-lang.org/en/master/syntax/methods_rdoc.html>
+
+>Methods that end with a question mark by convention return boolean, but they may not always return just true or false. Often, they will return an object to indicate a true value (or “truthy” value).
+
 ### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
 
 **Date ranges - begin/end**

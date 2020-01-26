@@ -30,3 +30,9 @@ Thanks @ootoovak
 |DELETE   |Delete   |405 (Method Not Allowed), unless you want to delete the whole collection—not often desirable.   |200 (OK). 404 (Not Found), if ID not found or invalid.   |
 
 From [Using HTTP Methods for RESTful Services](http://www.restapitutorial.com/lessons/httpmethods.html)
+
+#### HTTP Codes
+
+[HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+
+[Cat HTTP status codes](https://iridakos.com/el/cats/2016/09/26/cat-http-status-codes)

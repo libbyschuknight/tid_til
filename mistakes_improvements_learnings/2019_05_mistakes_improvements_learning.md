@@ -161,6 +161,7 @@ https://bundler.io/man/bundle-update.1.html
 [A Guide to Update Gems with bundle update: Tips and tricks to master bundle update by following incremental, controlled and safe steps](https://medium.com/cedarcode/reduce-fear-of-bundle-update-with-this-4-step-process-e021e8808c48)
 
 >### Step 2 — Update “Non-production” gems
+>
 >`$ bundle update --conservative --group test development`
 >
 >Bundler’s --conservative option prevents updates in any “Production” gem that is also a dependency of a“Non-production” gem.

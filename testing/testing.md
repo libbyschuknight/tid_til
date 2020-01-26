@@ -362,3 +362,15 @@ config.action_controller.asset_host = "http://localhost:6001"
 After having a chat with Sam about testing and unit tests.
 
 ![unit testing](testing.jpg)
+
+## Getting into being a tester
+
+Some resources people have suggested:
+
+[To The New Tester](https://www.satisfice.com/blog/archives/958)
+
+[Ministry of Testing](https://www.ministryoftesting.com/)
+
+[ASSURITY Courses](https://education.assurity.nz/courses)
+
+[ISTQB](https://www.istqb.org/)

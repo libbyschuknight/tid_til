@@ -76,6 +76,10 @@ Start in the centre and work way outwards, in a methodical manner
 
 [How to fix target=”\_blank” links: a security and performance issue in web pages](https://medium.com/@ali.dev/how-to-fix-target-blank-a-security-and-performance-issue-in-web-pages-2118eba1ce2f)
 
+[Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+
+>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement to distribution of malware.
+
 ## Browsers
 
 [Emulate and Test Other Browsers](https://developers.google.com/web/tools/chrome-devtools/device-mode/testing-other-browsers)
