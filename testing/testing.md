@@ -241,11 +241,18 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 
 ## RSpec
 
-### let
+### let() & let!()
 
 [RSpec: What is the difference between let and a before block?](http://stackoverflow.com/questions/5974360/rspec-what-is-the-difference-between-let-and-a-before-block?answertab=active#tab-top)
 
 [When to use RSpec let()?](http://stackoverflow.com/questions/5359558/when-to-use-rspec-let)
+
+[Let vs. Let! vs. Instance Variables in RSpec](https://mixandgo.com/learn/let-vs-instance-variables-in-rspec)
+
+<https://relishapp.com/rspec/rspec-core/v/2-11/docs/helper-methods/let-and-let>
+<http://www.betterspecs.org/#let>
+<https://stackoverflow.com/questions/5359558/when-to-use-rspec-let/5359979#5359979>
+
 
 ### Autoloading Error
 

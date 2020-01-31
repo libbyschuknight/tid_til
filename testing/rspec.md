@@ -255,3 +255,11 @@ end
 ```
 
 Seems a lot clearer and there is a lot less duplication.
+
+## Matchers - `be true`, `be_truthy`
+
+<https://eddyluten.com/rspec-be_truthy-exists-or-be-true>
+
+<https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers> - Truthiness and existentialism
+
+<https://medium.com/@bartoszkrajka/a-note-on-truthiness-in-rspec-1484defd7c3c>

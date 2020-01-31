@@ -14,6 +14,30 @@ PASSWORD=""
 
 A quick search of what `cat` is and found this link - [10 Terminal Commands That Will Boost Your Productivity](http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105).
 
+## Setting IP address for running server locally
+
+As I work from home one day a week, I had to keen changing my IP address, this is what was in the .env file:
+
+```bash
+# Set these using your machine's settings
+# # Work settings
+HOSTNAME=192.168.1.19:3000
+LOCAL_IP=192.168.1.19
+```
+
+Chatted with a collegue and have now added this to `.zshrc`:
+
+```zsh
+export LOCAL_IP=$(ipconfig getifaddr en0)
+export HOSTNAME=$LOCAL_IP:3000
+
+# this
+$ ipconfig getifaddr en0
+
+# gives us something like this
+> 192.168.1.19
+```
+
 ## md5
 
 To get a md5 hash in your terminal:
@@ -371,7 +395,7 @@ filename = "#{Rails.root}/#{presenter.filename}"
 File.open(filename, 'w') { |file| file.write(presenter.to_csv) }
 ```
 
-##### Get file from server
+### Get file from server
 
 You have to be in local terminal NOT on server.
 

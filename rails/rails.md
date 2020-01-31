@@ -533,6 +533,18 @@ To get load the `structure.sql` run `rake db:structure:load`
 
 [How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
 
+#### Controllers
+
+[current_page?(options, check_parameters: false)](https://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-current_page)
+
+Looking at using this when wanting to check in a helper if the user was on a specific page - `current_page?(action: 'bananas')`, returns true if you are on the bananas page.
+
+Can check a number of things with with, another one being - `current_page?(controller: 'fruit', action: 'bananas')`
+
+Controllers also have a method called `action_name`, which can be used in a helper.
+<https://guides.rubyonrails.org/action_controller_overview.html#routing-parameters>
+
+
 #### Helper Methods
 
 [ActionController::Helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html)

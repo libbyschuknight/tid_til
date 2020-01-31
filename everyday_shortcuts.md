@@ -18,6 +18,10 @@
 
 ## Google Chrome
 
+[Chrome keyboard shortcuts](https://support.google.com/chrome/answer/157179?hl=en)
+
+>Stop the page loading => Esc
+
 [Google Chrome duplicate tab shortcut](http://hints.macworld.com/article.php?story=20110214102729988)
 
 `Cmd + L` then `Opt + return`

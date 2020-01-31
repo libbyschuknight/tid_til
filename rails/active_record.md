@@ -6,6 +6,8 @@ Add logger into rails console
 
 ```ruby
 ActiveRecord::Base.logger = Logger.new $>
+
+ActiveRecord::Base.logger = Logger.new(STDOUT);
 ```
 
 [Active Record Associations](https://guides.rubyonrails.org/association_basics.html)

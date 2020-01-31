@@ -365,9 +365,11 @@ Time.parse(string).utc.iso8601
 > "2017-01-04T00:00:00Z"
 ```
 
-### [Precedence](https://ruby-doc.org/core-2.3.0/doc/syntax/precedence_rdoc.html)
+### [Precedence](https://ruby-doc.org/core/doc/syntax/precedence_rdoc.html) / Operator precedence
 
 > From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
+
+[Ruby - Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)
 
 ### Case statements
 

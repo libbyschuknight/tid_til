@@ -197,3 +197,7 @@ elastic beanstalk
 pry
 show-source
 show-source user.beta_options
+
+Printing out `params` in Rails server, have to do `params.permit!` now, then you can use `params`
+
+If ou did and just tried `params` then get this error `<ActionController::Parameters {"controller"=>"editor/stories", "action"=>"new"} permitted: false>`

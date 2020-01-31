@@ -57,6 +57,7 @@ module DateTimeHelper
   end
 end
 ```
+
 So if date is showing as `2017-06-01`, use `date_format` method
 
 ```erb
@@ -66,6 +67,7 @@ So if date is showing as `2017-06-01`, use `date_format` method
 And will show as `01 June 2017`
 
 ## strftime
+
 If you want to have good spacing for dates and times, use this:
 e.g.
 `09 Jan 2018 - 9:51am`
@@ -74,10 +76,9 @@ e.g.
 
 `9 Jan 2018 - 9:51am`
 
-
 ## Using `capture`
-[Using concat and capture to clean up custom Rails helpers](https://thepugautomatic.com/2013/06/helpers/)
 
+[Using concat and capture to clean up custom Rails helpers](https://thepugautomatic.com/2013/06/helpers/)
 
 ## Buttons / Links
 
