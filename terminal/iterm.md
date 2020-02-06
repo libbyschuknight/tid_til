@@ -6,6 +6,13 @@ You can set a 'Tip of the Day'
 
 `cmd + shift + o`
 
+Also see [Tabs and Windows](https://gist.github.com/squarism/ae3613daf5c01a98ba3a)
+
+- Go to Window - `⌘ + Option + Number`
+- this gist also has shell key combos I didn't know about e.g.
+- Delete to start of line (favorite) - `Ctrl + U` - Use this to start over typing without hitting Ctrl-C
+
+
 ## Shorten path
 
 `export PS1='\W$ '`

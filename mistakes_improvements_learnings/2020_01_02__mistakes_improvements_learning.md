@@ -188,6 +188,15 @@ The other things won't be running, but you can see what would be by looking at t
 
 Assets weren't loading. In the `Procfile.dev` it has this `./bin/webpack-dev-server` for webpack. Run this and then `rails s` and then the assets should load.
 
+## Embedded coffeescript
+
+<https://github.com/sstephenson/eco>
+
+
+
+
+
+
 TODO
 
 elastic beanstalk

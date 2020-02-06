@@ -1,10 +1,20 @@
 # [VS Code](https://code.visualstudio.com/)
 
+Note: I have Atom Keymap on, as I came to VScode from Atom and decided it would take too long to learn VScodes keybindings.
+
 [26 Miraculous VS Code Tools for JavaScript Developers in 2019](https://dev.to/jsmanifest/26-miraculous-vs-code-tools-for-javascript-developers-in-2019-50gg)
 
 [Tips to use VSCode more efficiently](https://dev.to/selrond/tips-to-use-vscode-more-efficiently-3h6p)
 
 ## [Keyboard shortcuts](/everyday_shortcuts.md#VSCode)
+
+### Quick Switch Window
+
+No set key combo, have added `cmd + a + m` for my own set up.
+
+Can also access by going to the command palttee `cmd + shift +p` and typing "quick".
+
+You can switch windows using "cmd + `", but not if the window is minimised, so using the above to maxmise windows.
 
 ## Markdown
 
@@ -42,3 +52,9 @@ ul.li*5
   <li></li>
 </ul>
 ```
+
+## Using `a` in explorer to create a new file not working, brings up filter instead
+
+`"workbench.list.automaticKeyboardNavigation": false` - have this as false
+
+[How to disable file filtering in VS Code Sidebar / Explorer?](https://superuser.com/questions/1417361/how-to-disable-file-filtering-in-vs-code-sidebar-explorer)

@@ -405,3 +405,9 @@ en:
 ```
 
 > Then User.model_name.human will return "Dude" and User.human_attribute_name("login") will return "Handle".
+
+## Polymorphic Associations
+
+<https://guides.rubyonrails.org/association_basics.html#polymorphic-associations>
+
+> With polymorphic associations, a model can belong to more than one other model, on a single association.

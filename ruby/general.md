@@ -12,6 +12,10 @@
 
 [Ruby Guides - Jesus Castello](https://www.rubyguides.com/)
 
+## PORO = Plain Old Ruby Objects
+
+e.g service objects, query objects, use case objects
+
 ## `attr_`
 
 [Why use Ruby's attr_accessor, attr_reader and attr_writer?](https://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)
@@ -606,3 +610,13 @@ Customer.new(name: "Dave", address: "123 Main")
 ```
 
 [How to Use Struct & OpenStruct in Ruby](https://www.rubyguides.com/2017/06/ruby-struct-and-openstruct/)
+
+## Use Cases
+
+[A Case For Use Cases](https://webuild.envato.com/blog/a-case-for-use-cases/)
+
+- [CommandQuerySeparation](https://martinfowler.com/bliki/CommandQuerySeparation.html)
+
+  >The fundamental idea is that we should divide an object's methods into two sharply separated categories:
+  >Queries: Return a result and do not change the observable state of the system (are free of side effects).
+  >Commands: Change the state of a system but do not return a value.
