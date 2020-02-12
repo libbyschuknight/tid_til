@@ -263,3 +263,17 @@ Seems a lot clearer and there is a lot less duplication.
 <https://relishapp.com/rspec/rspec-expectations/v/3-9/docs/built-in-matchers> - Truthiness and existentialism
 
 <https://medium.com/@bartoszkrajka/a-note-on-truthiness-in-rspec-1484defd7c3c>
+
+## [Working with legacy code](https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/working-with-legacy-code)
+
+>RSpec provides a few features that, while not generally recommended, can be useful when you are getting legacy code under test (or in similar situations). Usage of these features should be considered a code smell.
+
+[allow_any_instance_of](https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/working-with-legacy-code/any-instance)
+
+[receive_message_chain](https://relishapp.com/rspec/rspec-mocks/v/3-9/docs/working-with-legacy-code/message-chains)
+
+## specify
+
+<https://til.hashrocket.com/posts/edefa42db2-rspec-specify>
+
+<https://rubydoc.info/gems/rspec-core/RSpec/Core/ExampleGroup#specify-class_method>

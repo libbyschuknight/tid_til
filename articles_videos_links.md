@@ -1,5 +1,11 @@
 # Articles and Links
 
+<!-- TODO:
+split this file out into
+  ## Core / People Stuff
+  ## Technical / Coding Stuff
+-->
+
 📖 - still to read completely
 ✅ - have read and probably more tha once and/or kept coming back to!
 
@@ -292,6 +298,8 @@ My Wharenui
 [awesome-aotearoa-tech](https://github.com/radsy/awesome-aotearoa-tech)
 
 [decent-code](https://robatwilliams.github.io/decent-code/) 📖
+
+[Technical Debt](https://www.productplan.com/glossary/technical-debt/) 📖
 
 ### Phone numbers and addresses
 

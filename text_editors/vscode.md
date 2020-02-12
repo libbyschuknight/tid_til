@@ -8,13 +8,25 @@ Note: I have Atom Keymap on, as I came to VScode from Atom and decided it would 
 
 ## [Keyboard shortcuts](/everyday_shortcuts.md#VSCode)
 
-### Quick Switch Window
+### Key combos / chords not working
 
-No set key combo, have added `cmd + a + m` for my own set up.
+#### Quick Switch Window Issue
 
-Can also access by going to the command palttee `cmd + shift +p` and typing "quick".
+Doh!!
 
-You can switch windows using "cmd + `", but not if the window is minimised, so using the above to maxmise windows.
+>No set key combo, have added `cmd + s + w` for my own set up.
+>
+>Can also access by going to the command palette `cmd + shift + p` and typing "quick".
+>
+>You can switch windows using "cmd + `", but not if the window is minimised, so using the above to maxmise windows.
+
+Did the above and then when I tried to do `cmd + s` it was coming up with this:
+
+![cmd + s key chord](cmdschord.png)
+
+Took me awhile to figure out why that was happening but is because I added a key chord combo that started with `cmd + s`
+
+Removed the key binding - `cmd + s + w` and now `cmd + s` is working fine!
 
 ## Markdown
 

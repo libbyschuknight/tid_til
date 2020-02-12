@@ -544,7 +544,6 @@ Can check a number of things with with, another one being - `current_page?(contr
 Controllers also have a method called `action_name`, which can be used in a helper.
 <https://guides.rubyonrails.org/action_controller_overview.html#routing-parameters>
 
-
 #### Helper Methods
 
 [ActionController::Helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html)
@@ -561,13 +560,25 @@ Add debug to view:
 <%= debug(params) if Rails.env.development? %>
 ```
 
-#### Partials Locals and not Instance Variables (ivars)
+#### Partials - Locals and not Instance Variables (ivars)
 
 [Stop Using Instance Variables Inside Your Partials](http://www.carlosramireziii.com/stop-using-instance-variables-in-partials.html)
 
 > Partials using local variables are easier to reuse
 > Partials that use local variables are more maintainable
 > Partials that use local variables are easier to debug
+
+#### `local_assigns` in partials
+
+[Extending Rails partials using local_assigns](https://blog.evalcode.com/extending-rails-partials-using-local_assigns/)
+
+<https://api.rubyonrails.org/classes/ActionView/Base.html>
+
+>The local variables passed to sub templates can be accessed as a hash using the local_assigns hash. This lets you access the variables as:
+>
+>`Headline: <%= local_assigns[:headline] %>`
+>
+>This is useful in cases where you aren't sure if the local variable has been assigned. Alternatively, you could also use defined? headline to first check if the variable has been assigned before using it.
 
 ##### Layouts
 

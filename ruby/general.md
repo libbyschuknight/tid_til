@@ -620,3 +620,9 @@ Customer.new(name: "Dave", address: "123 Main")
   >The fundamental idea is that we should divide an object's methods into two sharply separated categories:
   >Queries: Return a result and do not change the observable state of the system (are free of side effects).
   >Commands: Change the state of a system but do not return a value.
+
+## Guard clause
+
+[Guard Clauses vs. Nested Conditionals](https://anthonygharvey.com/ruby/guard_clauses_vs_nested_if_statements)
+
+[PREFER GUARD CLAUSES OVER NESTED CONDITIONALS](https://www.thechrisoshow.com/2009/02/16/using-guard-clauses-in-your-ruby-code/)

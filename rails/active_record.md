@@ -74,9 +74,15 @@ sign_up = account.sign_up
 
 ## Scopes
 
+[14 Scopes](https://guides.rubyonrails.org/active_record_querying.html#scopes)
+
 [The Importance of Scopes in Ruby on Rails](https://jasoncharnes.com/importance-rails-scopes/)
 
 [Should You Use Scopes or Class Methods?](https://www.justinweiss.com/articles/should-you-use-scopes-or-class-methods/)
+
+>Methods that always return the same kind of object are really useful. You don’t have to worry as much about edge cases or errors. You can assume you’ll always be handed back an object you can use.
+>
+>Here, it means you can chain scopes together, without having to worry about nil values coming back.
 
 ## .where
 
@@ -411,3 +417,9 @@ en:
 <https://guides.rubyonrails.org/association_basics.html#polymorphic-associations>
 
 > With polymorphic associations, a model can belong to more than one other model, on a single association.
+
+## [Single-table inheritance vs. polymorphic associations in Rails: find what works for you](https://www.freecodecamp.org/news/single-table-inheritance-vs-polymorphic-associations-in-rails-af3a07a204f2/)
+
+## Single table inheritance
+
+[Single table inheritance](https://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html)
