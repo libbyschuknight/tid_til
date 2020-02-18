@@ -1,5 +1,7 @@
 # Non-Technical Stuff
 
+<!-- move to main articles and links page -->
+
 ## Articles / Links
 
 Asking for what you are worth
@@ -53,6 +55,7 @@ Asking for what you are worth
 ## Terms
 
 Intersectionality
->the interconnected nature of social categorizations such as race, class, and gender as they apply to a given individual or group, regarded as creating overlapping and interdependent systems of discrimination or disadvantage.
->It is the study of overlapping or intersecting social identities and related systems of oppression, domination, or discrimination.
-<https://en.wikipedia.org/wiki/Intersectionality>
+
+> the interconnected nature of social categorizations such as race, class, and gender as they apply to a given individual or group, regarded as creating overlapping and interdependent systems of discrimination or disadvantage.
+> It is the study of overlapping or intersecting social identities and related systems of oppression, domination, or discrimination.
+> <https://en.wikipedia.org/wiki/Intersectionality>
