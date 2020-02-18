@@ -188,6 +188,16 @@ The other things won't be running, but you can see what would be by looking at t
 
 Assets weren't loading. In the `Procfile.dev` it has this `./bin/webpack-dev-server` for webpack. Run this and then `rails s` and then the assets should load.
 
+### Stopping foreman and processes that it started
+
+`killall -9 ruby` - "there's no ruby system processes, it'll just stop all the things you're running"
+
+Also, in one cased it said that `nginx` was not working, so grepped for that and then killed that processes and all was good.
+
+This was when I had accidentally closed the terminal window running the server.
+
+Could also do `killall -9 passenger`
+
 ## Embedded coffeescript
 
 <https://github.com/sstephenson/eco>
