@@ -277,3 +277,17 @@ Seems a lot clearer and there is a lot less duplication.
 <https://til.hashrocket.com/posts/edefa42db2-rspec-specify>
 
 <https://rubydoc.info/gems/rspec-core/RSpec/Core/ExampleGroup#specify-class_method>
+
+
+## Using pluck
+
+```ruby
+it "only shows stories for child" do
+  get :index, params: { q: "story" }, format: :json
+
+  titles = json[:stories].pluck(:title)
+
+  expect(titles).to include(story_for_my_child.title)
+  expect(titles).to_not include(story_for_other_child.title)
+end
+```

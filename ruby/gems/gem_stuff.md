@@ -2,6 +2,10 @@
 
 <https://guides.rubygems.org>
 
+[Ruby Gem Basics](http://guides.rubygems.org/rubygems-basics/)
+
+[RubyGems](http://sourabhbajaj.com/mac-setup/Ruby/RubyGems.html)
+
 [Ruby Gems, Gemfile & Bundler (The Ultimate Guide)](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/)
 
 ## [bundle exec](http://bundler.io/man/bundle-exec.1.html)
@@ -93,7 +97,6 @@ Apply anything you have stashed - `git stash apply`
 `bundle _1.17.1_ install` this will run bundle for the version set e.g. `1.17.1`
 
 [Run specific version of bundler](https://makandracards.com/makandra/9741-run-specific-version-of-bundler) - this site is old but...
-
 <https://stackoverflow.com/questions/12092928/how-to-bundle-install-when-your-gemfile-requires-an-older-version-of-bundler>
 
 [How to install and bundle your rails application with a specific bundler version](https://www.aloucaslabs.com/miniposts/how-to-install-and-bundle-your-rails-application-with-a-specific-bundler-version)
@@ -231,3 +234,7 @@ See [linters/rubocop](../linters/rubocop.md)
 [JSON Serialization in Rails: A Complete Guide](https://buttercms.com/blog/json-serialization-in-rails-a-complete-guide)
 
 [A Quickstart Guide to Using Serializer With Your Ruby on Rails API](https://itnext.io/a-quickstart-guide-to-using-serializer-with-your-ruby-on-rails-api-d5052dea52c5)
+
+### [pg_search](https://content.pivotal.io/blog/pg-search-how-i-learned-to-stop-worrying-and-love-postgresql-full-text-search)
+
+[pg_search: How I Learned to Stop Worrying and Love PostgreSQL full-text search](https://content.pivotal.io/blog/pg-search-how-i-learned-to-stop-worrying-and-love-postgresql-full-text-search)

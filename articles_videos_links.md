@@ -177,6 +177,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Gender Decoder for Job Ads](http://gender-decoder.katmatfield.com/)
 
+[Self-Defined](https://www.selfdefined.app/)
+
+>A modern dictionary about us. We define our words, but they don't define us.
+
 [Enough Leaning In. Let’s Tell Men to Lean Out.](https://www.nytimes.com/2019/10/10/opinion/sunday/feminism-lean-in.html) 📖
 
 ### Spotify model

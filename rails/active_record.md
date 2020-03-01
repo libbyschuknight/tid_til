@@ -327,7 +327,7 @@ $ Game.joins(:guesses).group("guesses.letter").count
 }
 ```
 
-#### N + 1 Queries and Eager Loading
+#### N+1 Queries and Eager Loading
 
 > The N + 1 query problem is the classic case of this – you grab all the records for your users (User.all) then loop through each user and call an association it has, like the city the user lives in (user.city). For this example we’re assuming an association exists between User and City, where User belongs_to a City. This might look like:
 >
