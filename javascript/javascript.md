@@ -107,6 +107,8 @@ e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `v
 
 [Everything You Need to Know About Date in JavaScript](https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/)
 
+[JavaScript Double Negation (!!) Trick or Trouble?](https://www.sitepoint.com/javascript-double-negation-trick-trouble/)
+
 ### The three dots `...`
 
 [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
@@ -381,8 +383,8 @@ And then `npm outdated` should not return anything.
 
 ```html
 <%= link_to(customer_utility_notice_dismissals_path(:customer_id =>
-add_utility_notice.customer_id), :class => "dismiss-button") do %>
-<div class="icon"></div>
+  add_utility_notice.customer_id), :class => "dismiss-button") do %>
+  <div class="icon"></div>
 <% end %>
 ```
 

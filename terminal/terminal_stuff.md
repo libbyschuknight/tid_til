@@ -48,7 +48,29 @@ $ md5 -s 2281cc73797deb3ec2319ed19bdbd5ff
 # MD5 ("2281cc73797deb3ec2319ed19bdbd5ff") = 2feca6d1b69c0cb5ecdb3c7a798e4f5a
 ```
 
-## Pry
+## [Pry](https://github.com/pry/pry)
+
+[5 Pry Features Every Ruby Developer Should Know](https://blog.cognitohq.com/five-pry-features-every-ruby-developer-should-know/)
+
+[Why Pry is one of the most important tools a junior Rubyist can learn](https://www.honeybadger.io/blog/debugging-ruby-with-pry/)
+
+[Pry: show-method & show-source](https://medium.com/@dnick13/pry-show-method-show-source-74d040c306e1)
+
+<https://github.com/pry/pry/wiki/Source-browsing>
+
+```bash
+> show-source paginated_records.next_page
+
+# results
+From: /Users/libby/parkstory/storyjar/education/app/services/pagination/order_and_paginate.rb @ line 46:
+Owner: Pagination::OrderAndPaginate
+Visibility: public
+Number of lines: 3
+
+def next_page
+  @next_page ||= next_page_plus_one.first(page_limit)
+end
+```
 
 ### binding.pry
 
@@ -56,6 +78,8 @@ When using a `binding.pry` to debug stuff, really useful command to know is:
 
 ```bash
 whereami
+# or you can do
+@
 ```
 
 this will take you to where you are in the code. Very useful if you have been trying out different things and where you were as disappeared of the screen.

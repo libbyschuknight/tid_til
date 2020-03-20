@@ -2,6 +2,16 @@
 
 The aim of this is to have a list of things I have realised I could do to get better, or other people have suggested.
 
+## Plan and then ask
+
+When starting a new story/card/ticket, plan my approach and then get someone elses though on my approach before I start diving into the code.
+
+## Ask questions
+
+When I am reviewing work from a senior, it is okay to ask lots of questions to help understand what is going on.
+
+And to push back against things you think might not be quite right around patterns / code smells, issues.
+
 ## Read files working in way more carefully, take the time to do this
 
 First story, new job, dived right into it. Was simple, just needed to add some attributes to an JSON output that was being generated. This attribute needed to return `true` or `false`. Thought I had it sorted but it was returning `"true"` or `null`.

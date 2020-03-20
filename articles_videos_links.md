@@ -43,6 +43,8 @@ split this file out into
 
 [Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk) ✅
 
+[The five keys to a successful Google team](https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/) ✅
+
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/) ✅
 
 [Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59) ✅

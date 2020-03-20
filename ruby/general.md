@@ -557,6 +557,24 @@ Great article:
 
 [The Basics of Ruby Memoization](http://gavinmiller.io/2013/basics-of-ruby-memoization/)
 
+[4 Simple Memoization Patterns in Ruby (And One Gem)](https://www.justinweiss.com/articles/4-simple-memoization-patterns-in-ruby-and-one-gem/)
+
+[Ruby Memoization and Alternatives](https://thoughtbot.com/blog/ruby-memoization-and-alternatives)
+
+>Memoization has two big benefits:
+>
+>1. Cache expensive work
+>2. Delay expensive work via laziness
+>As a form of caching it comes with all the advantages and downsides of such. It also complicates a codebase.
+>
+>Most common uses of memoization in Ruby are premature optimization. For operations that:
+>
+>- are always used by your object then set the instance variable in the constructor and have a normal reader
+>- are only used once then a regular method is fine
+>- are cheap then a regular method is fine
+>- are expensive and not always used then you may want to use a memoized method to do the work lazily
+>In all cases, move the calculation to its own method!
+
 ## splat \* / \*\*
 
 [An introduction to Ruby’s \*Splat and double \*\*Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
@@ -626,3 +644,7 @@ Customer.new(name: "Dave", address: "123 Main")
 [Guard Clauses vs. Nested Conditionals](https://anthonygharvey.com/ruby/guard_clauses_vs_nested_if_statements)
 
 [PREFER GUARD CLAUSES OVER NESTED CONDITIONALS](https://www.thechrisoshow.com/2009/02/16/using-guard-clauses-in-your-ruby-code/)
+
+## Unary / Double colon operator
+
+[Ruby Dot "." and Double Colon "::" Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)
