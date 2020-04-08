@@ -1,5 +1,7 @@
 # Vue JS
 
+[Vue JS Guide](https://vuejs.org/v2/guide/)
+
 [Awesome Vue.js](https://github.com/vuejs/awesome-vue)
 
 ## [Vue I18n](https://kazupon.github.io/vue-i18n/introduction.html)

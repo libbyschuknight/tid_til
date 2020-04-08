@@ -383,6 +383,10 @@ Guess Load (3.0ms)  SELECT "guesses".* FROM "guesses"
 
 [Includes, Eager Load, and Preload](https://blog.techatpower.com/includes-eager-load-and-preload-246e6b900cb8)
 
+#### Lazy loading
+
+[Lazy loading in rails – Rails Feature](https://rubyinrails.com/2014/01/08/what-is-lazy-loading-in-rails/)
+
 #### [1.2 Retrieving Multiple Objects in Batches](https://guides.rubyonrails.org/active_record_querying.html#retrieving-multiple-objects-in-batches)
 
 `find_each`
@@ -414,12 +418,12 @@ en:
 
 ## Polymorphic Associations
 
-<https://guides.rubyonrails.org/association_basics.html#polymorphic-associations>
+[Polymorphic Associations](https://guides.rubyonrails.org/association_basics.html#polymorphic-associations)
 
 > With polymorphic associations, a model can belong to more than one other model, on a single association.
-
-## [Single-table inheritance vs. polymorphic associations in Rails: find what works for you](https://www.freecodecamp.org/news/single-table-inheritance-vs-polymorphic-associations-in-rails-af3a07a204f2/)
 
 ## Single table inheritance
 
 [Single table inheritance](https://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html)
+
+## [Single-table inheritance vs. polymorphic associations in Rails: find what works for you](https://www.freecodecamp.org/news/single-table-inheritance-vs-polymorphic-associations-in-rails-af3a07a204f2/)

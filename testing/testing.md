@@ -117,7 +117,7 @@ Just had a number of fails but was due to not coding the factories properly rath
 
 ## Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz
 
-A must watch and re-watch - [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](https://www.youtube.com/watch?v=URSWYvyc42M)
+A must watch and re-watch - [Rails Conf 2013 The Magic Tricks of Testing by Sandi Metz](https://www.youtube.com/watch?v=URSWYvyc42M) 👀
 
 ## Using OpenStructs
 

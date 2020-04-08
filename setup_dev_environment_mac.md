@@ -92,6 +92,36 @@ Other programs??
 - time out
 - others...
 
+## Tools - tips and tricks
+
+- clipy - <https://github.com/Clipy/Clipy>
+
+- rectangle - <https://rectangleapp.com/>
+
+- ohmyzsh - <https://github.com/ohmyzsh/ohmyzsh>
+  - gwip / gunwip
+
+- vscode - stashing
+  - <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens> extension
+
+- comparing code or text in vscode - compare
+
+- diff checker - <https://www.diffchecker.com/>
+
+- details in github PR comments
+
+  ```git
+    <details>
+    <summary>How do I dropdown?</summary>
+    <br>
+    This is how you dropdown.
+    </details>
+  ```
+
+- fzf - fuzzy search in terminal - <https://github.com/junegunn/fzf>
+
+- <https://zoom.us/> (I've just signed up with my storypark google email)
+
 ## Themes for vscode, iterm
 
 ### <https://github.com/wesbos/cobalt2-vscode>

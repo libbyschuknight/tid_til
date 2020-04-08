@@ -481,3 +481,13 @@ First this
 [What is tree shaking and how does it work?](https://bitsofco.de/what-is-tree-shaking/)
 
 <https://webpack.js.org/guides/tree-shaking/>
+
+## Event.stopPropagation() / Event.preventDefault()
+
+<https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation>
+
+<https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault>
+
+[What's the difference between event.stopPropagation and event.preventDefault](https://stackoverflow.com/questions/5963669/whats-the-difference-between-event-stoppropagation-and-event-preventdefault)
+
+[How to correctly use preventDefault(), stopPropagation(), or return false; on events](https://medium.com/@jacobwarduk/how-to-correctly-use-preventdefault-stoppropagation-or-return-false-on-events-6c4e3f31aedb)
