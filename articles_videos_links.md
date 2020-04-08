@@ -195,10 +195,9 @@ Sarah Mei: Diversity of Thought tweets:
 
 - further to the "You must try and then you must ask", this thread has some great thoughts in it.
 
->A worry junior engineers and new hires frequently have is that they ask too many questions.
+> A worry junior engineers and new hires frequently have is that they ask too many questions.
 >
->The most common advice I've heard is to try to figure it out yourself for 30 min, and if you're still stuck, ask. This is reasonable advice, but I don't think it's actually very good.
-
+> The most common advice I've heard is to try to figure it out yourself for 30 min, and if you're still stuck, ask. This is reasonable advice, but I don't think it's actually very good.
 
 [Learn faster! When and how to ask for help](https://codewithoutrules.com/2017/12/07/asking-for-help/)
 
@@ -305,6 +304,8 @@ My Wharenui
 [decent-code](https://robatwilliams.github.io/decent-code/) 📖
 
 [Technical Debt](https://www.productplan.com/glossary/technical-debt/) 📖
+
+[Tiny helpers: A collection of free single-purpose online tools for web developers...](https://tiny-helpers.dev/)
 
 ### Phone numbers and addresses
 

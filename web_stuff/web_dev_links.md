@@ -4,6 +4,8 @@
 
 [Front-end Developer Handbook 2019](https://frontendmasters.com/books/front-end-handbook/2019/#2)
 
+[Tiny helpers: A collection of free single-purpose online tools for web developers...](https://tiny-helpers.dev/)
+
 ## Color
 
 [0to255](http://www.0to255.com/)
