@@ -54,7 +54,6 @@
 
 [Build a PWA Using Only Vanilla JavaScript](https://levelup.gitconnected.com/build-a-pwa-using-only-vanilla-javascript-bdf1eee6f37a)
 
-
 ## Learning CSS
 
 <https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/CSS3_taxonomy_and_status-v2.png/1201px-CSS3_taxonomy_and_status-v2.png>
@@ -162,3 +161,7 @@ Follow on article
 [Storybook Docs sneak peek](https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a)
 
 [Storybook DocsPage Beautiful documentation, instantly](https://medium.com/storybookjs/storybook-docspage-e185bc3622bf)
+
+## Images / Videos
+
+[Lazy Loading Images and Video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video)

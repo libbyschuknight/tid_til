@@ -3,21 +3,25 @@
 ## Personal Projects
 
 [Easy Reference Data](https://github.com/AbleTech/easy_reference_data)
-- could be useful in own projects?
 
+- could be useful in own projects?
 
 ## At work
 
 ### [ROAR](https://github.com/apotonick/roar)
+
 - TODO: add own definition
 
 ### [Representable](https://github.com/apotonick/representable)
+
 - TODO: add own definition
 
 ### [Grape](https://github.com/ruby-grape/grape)
+
 - TODO: add own definition
 
-### [State Machine]()
+### [State Machine]
+
 - TODO: add own definition
 
 ### [inherited_resources](https://github.com/josevalim/inherited_resources)

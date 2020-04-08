@@ -148,3 +148,9 @@ And in my case added `padding-right: 2em;`, as had another class adding `width: 
 > Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
 >
 > To make this possible, Sass provides the !default flag. This assigns a value to a variable only if that variable isn’t defined or its value is null. Otherwise, the existing value will be used. This way, users can set variables before they import your library to customize its behavior.
+
+## `!global`
+
+[!global](https://sass-lang.com/documentation/variables#shadowing)
+
+[The !default and !global flags](https://anotheruiguy.gitbooks.io/sassintherealworld_book-i/handy-tools/default-flag.html)

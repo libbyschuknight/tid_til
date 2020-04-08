@@ -18,19 +18,21 @@ The PR - https://github.com/rtomayko/shotgun/pull/61
 
 Immediate solution until the PR is/was merged into the master branch of the Shotgun repo.
 In Gemfile
+
 ```ruby
 gem "rack", "< 2" # TODO: upgrade to Rack 2 once issue fixed https://github.com/rtomayko/shotgun/pull/61
 ```
 
 ## Tail the logs on a server
+
 To see what is happening on a production log you can do this:
 (if you are in the `log` folder)
 
 ```bash
 tails -f production.log
 ```
-use `ctrl + c` to get out of the log
 
+use `ctrl + c` to get out of the log
 
 # DevOps
 

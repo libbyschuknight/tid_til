@@ -1,4 +1,23 @@
-# Factory Girl
+# Factory Bot
+
+## Creating data quickly
+
+In rails console:
+
+```ruby
+# create 100 posts belonging to the same group
+FactoryBot.create_list(:post, 100, group_id: 4, content:"this is all the same")
+
+# find a post
+post = Post.find(446)
+
+# create 20 comments for that post
+FactoryBot.create_list(:comment, 20, commentable: post)
+```
+
+Used this in case to see how adding a `includes` on a query improved the performance of the search.
+
+## Nesting
 
 Nested factories work well:
 
@@ -40,5 +59,4 @@ factory :party, class: Models::Party do
     name "AAA"
   end
 end
-
 ```

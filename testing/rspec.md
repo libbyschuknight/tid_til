@@ -277,3 +277,29 @@ Seems a lot clearer and there is a lot less duplication.
 <https://til.hashrocket.com/posts/edefa42db2-rspec-specify>
 
 <https://rubydoc.info/gems/rspec-core/RSpec/Core/ExampleGroup#specify-class_method>
+
+## Using pluck
+
+```ruby
+it "only shows stories for child" do
+  get :index, params: { q: "story" }, format: :json
+
+  titles = json[:stories].pluck(:title)
+
+  expect(titles).to include(story_for_my_child.title)
+  expect(titles).to_not include(story_for_other_child.title)
+end
+```
+
+## `RSpec.describe`
+
+<https://relishapp.com/rspec/rspec-core/v/3-3/docs/configuration/zero-monkey-patching-mode>
+
+<https://github.com/rspec/rspec-rails/commit/ca0d249858903949052e06884e8e7f9d596cdc79>
+
+>Always using only the non-monkey patched `RSpec.describe`, instead of
+>inspecting the configuration, has the benefits of:
+>
+>- not requiring RSpec to be loaded when the generators are run by Rails
+>- not introducing extra logic and state to handle the different states
+>- Resolve #1048

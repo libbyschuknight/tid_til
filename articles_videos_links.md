@@ -43,6 +43,8 @@ split this file out into
 
 [Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk) ✅
 
+[The five keys to a successful Google team](https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/) ✅
+
 [Why psychological safety matters and what to do about it](https://rework.withgoogle.com/blog/how-to-foster-psychological-safety/) ✅
 
 [Psychological safety: the secret weapon of awesome teams](https://medium.com/smells-like-team-spirit/safety-makes-awesome-possible-97acb601ff59) ✅
@@ -177,6 +179,10 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Gender Decoder for Job Ads](http://gender-decoder.katmatfield.com/)
 
+[Self-Defined](https://www.selfdefined.app/)
+
+> A modern dictionary about us. We define our words, but they don't define us.
+
 [Enough Leaning In. Let’s Tell Men to Lean Out.](https://www.nytimes.com/2019/10/10/opinion/sunday/feminism-lean-in.html) 📖
 
 ### Spotify model
@@ -249,6 +255,8 @@ My Wharenui
 [Time Management: A powerful tool to show us where to spend our time.](https://medium.com/@lindsay_jopson/a-powerful-tool-to-show-us-where-to-spend-our-time-a8e564656bdf)
 
 [How to find joy and purpose in your work](https://medium.com/@hannah_73062/how-to-find-joy-and-purpose-in-your-work-376c366ddb00) 📖
+
+[4 sources of endless content ideas 💡](https://changelog.com/posts/4-sources-of-endless-content-ideas) 📖
 
 ## More Stuff
 
@@ -331,15 +339,17 @@ My Wharenui
 
 ### Programming / Coding
 
-[The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
+[The Wrong Abstraction](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction) 📖
+
+[RailsConf 2014 - All the Little Things by Sandi Metz](https://www.youtube.com/watch?v=8bZh5LMaSmE&index=1&list=LLlt4ZSW8NUcXLWiB3NMnK_w&t=56s) 👀
 
 [Rule of three (computer programming)](<https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)>)
 
 [Small Functions considered Harmful](https://medium.com/@copyconstruct/small-functions-considered-harmful-91035d316c29)
 
-[Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers#only-instantiate-one-object-in-the-controller)
+[Sandi Metz' Rules For Developers](https://robots.thoughtbot.com/sandi-metz-rules-for-developers) 📖
 
-[Please Don’t Write “Clever” Code](https://www.oop.wtf/dont-write-clever-code)
+[Please Don’t Write “Clever” Code](https://www.oop.wtf/dont-write-clever-code) 📖
 
 #### Computer Hardware Stuff
 
@@ -447,7 +457,7 @@ My Wharenui
 
 ### Code Style / Structure / Reviews
 
-[7 Patterns to Refactor Fat ActiveRecord Models](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
+[7 Patterns to Refactor Fat ActiveRecord Models](https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/)
 
 [acts_as_good_style](http://rubyglasses.blogspot.co.nz/2007/08/actsasgoodstyle.html?m=1)
 
@@ -455,23 +465,18 @@ My Wharenui
 
 [Ubiquitous Language & the joy of naming](http://blog.carbonfive.com/2016/10/04/ubiquitous-language-the-joy-of-naming/)
 
-[How to Do Code Reviews Like a Human (Part One)](https://mtlynch.io/human-code-reviews-1/)
-
-[How to Do Code Reviews Like a Human (Part Two)](https://mtlynch.io/human-code-reviews-2/)
-
-[One weird trick for handling code review feedback](https://medium.com/@raquelxmoss/one-weird-trick-to-help-you-handle-code-review-feedback-better-d999a08620b1)
-
-[Code review thoughts](https://twitter.com/schuknight/status/1003802645465714688?s=11)
-
-Object Oriented design twitter threads:
-<https://twitter.com/betsythemuffin/status/1006292902333607936>
-<https://twitter.com/betsythemuffin/status/1006597377413795842>
-
 [[Exercism - Behind the Scenes] Unhelpful, insulting, and rude—feedback antipatterns](https://tinyletter.com/exercism/letters/exercism-behind-the-scenes-unhelpful-insulting-and-rude-feedback-antipatterns)
 
 [Stop Calling it Bad Code](https://blog.pragmaticengineer.com/bad-code/)
 
 [What is idiomatic code?](https://stackoverflow.com/questions/84102/what-is-idiomatic-code)
+
+Object Oriented design twitter threads:
+
+- <https://twitter.com/betsythemuffin/status/1006292902333607936>
+- <https://twitter.com/betsythemuffin/status/1006597377413795842>
+
+[Code Reviews - page](/code_review_articles_ideas.md#Code-Reviews)
 
 ### Architecture Patterns
 

@@ -169,3 +169,9 @@ And now `crtl + r` gives me the fuzzy search
 <https://github.com/Homebrew/homebrew-cask>
 
 >Homebrew Cask extends Homebrew and brings its elegance, simplicity, and speed to the installation and management of GUI macOS applications such as Atom and Google Chrome.
+
+e.g.
+
+```bash
+brew cask install <program>
+```

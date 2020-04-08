@@ -782,3 +782,13 @@ Hadn't paid enough attention to the above and came across concerns again and it 
 [Stop Worrying and Start Being Concerned: ActiveSupport Concerns](http://vaidehijoshi.github.io/blog/2015/10/13/stop-worrying-and-start-being-concerned-activesupport-concerns/)
 
 [Rails concerns](http://dmitrypol.github.io/rails/2016/10/29/rails-concerns.html)
+
+## Database Indexes
+
+[What are indexes? And how to add them to your Rails app?](https://medium.com/@mera.stackhouse/what-are-indexes-and-how-to-add-them-to-your-rails-app-dc066d538771)
+
+[Faster Rails: Is Your Database Properly Indexed?](https://semaphoreci.com/blog/2017/05/09/faster-rails-is-your-database-properly-indexed.html)
+
+>A good way to think about indexes is to imagine them as the index section at the end of a book. If you want to find a word in a book, you can either read the whole book and find the word, or your can open the index section that contains a alphabetically sorted list of important words with a locator that points to the page that defines the word.
+
+[Increase Rails Performance with Database Indexes](https://www.rakeroutes.com/increase-rails-performance-with-database-indexes/)

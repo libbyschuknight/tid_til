@@ -1,4 +1,4 @@
-# January 2020 Mistakes, Improvements, Learning and Stuff
+# January / February 2020 Mistakes, Improvements, Learning and Stuff
 
 First month at Storypark!!
 
@@ -67,6 +67,28 @@ LOCAL_IP=192.168.1.67
 
 Will just have to remember to change it!
 
+#### Set the vars above!
+
+Chatted with a colleague and have now added this to `.zshrc`:
+
+```zsh
+export LOCAL_IP=$(ipconfig getifaddr en0)
+export HOSTNAME=$LOCAL_IP:3000
+```
+
+Now when run it will pick up the local ip. BUT make sure you quit out of your iterm between work and home.
+Was just trying to get local working at work and it was trying to work with my ip address from home.
+
+Quit out of iterm and now working fine!!
+
+```zsh
+# this
+$ ipconfig getifaddr en0
+
+# gives us something like this
+> 192.168.1.19
+```
+
 ### yarn / gyp errors
 
 Needed to use `yarn` within a project. xcode command line tools should have worked but there seems to be issues with xcode, gyp and catalina.
@@ -76,7 +98,7 @@ Needed to use `yarn` within a project. xcode command line tools should have work
 I had a look at this <https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md> and had a quick chat with colleague and decided to install the full xcode app.
 It could actualy be useful to have. And now things are working fine.
 
-### Enviornment varaibles
+### Enviornment variables
 
 Second rails app I needed to get working in a monorepo.
 
@@ -202,21 +224,8 @@ Could also do `killall -9 passenger`
 
 <https://github.com/sstephenson/eco>
 
+## Rails params
 
+Printing out `params` in Rails server, have to do `params.permit!` now, then you can use `params`.
 
-
-
-
-TODO
-
-elastic beanstalk
-
-- ec 2 instances
-
-pry
-show-source
-show-source user.beta_options
-
-Printing out `params` in Rails server, have to do `params.permit!` now, then you can use `params`
-
-If ou did and just tried `params` then get this error `<ActionController::Parameters {"controller"=>"editor/stories", "action"=>"new"} permitted: false>`
+If you did and just tried `params` then get this error `<ActionController::Parameters {"controller"=>"editor/stories", "action"=>"new"} permitted: false>`

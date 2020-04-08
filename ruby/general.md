@@ -20,7 +20,59 @@ e.g service objects, query objects, use case objects
 
 [Why use Ruby's attr_accessor, attr_reader and attr_writer?](https://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)
 
-## Bang
+## Ancestors
+
+```ruby
+puts buyer1.ancestors
+
+Buyer
+User
+Object
+Kernel
+BasicObject
+```
+
+```ruby
+date_range = (Date.yesterday)..(Date.today)
+# Mon, 25 Sep 2017..Mon, 25 Sep 2017
+
+date_range.class
+# Range < Object
+date_range.class.ancestors
+# [
+#     [ 0] Range < Object,
+#     [ 1] Enumerable,
+#     [ 2] Object < BasicObject,
+#     [ 3] PP::ObjectMixin,
+#     [ 4] RequireAll,
+#     [ 5] V8::Conversion::Object,
+#     [ 6] ActiveSupport::Dependencies::Loadable,
+#     [ 7] Delayed::MessageSending,
+#     [ 8] JSON::Ext::Generator::GeneratorMethods::Object,
+#     [ 9] Kernel,
+#     [10] BasicObject
+# ]
+```
+
+## class_attribute
+
+<http://api.rubyonrails.org/classes/Class.html#method-i-class_attribute>
+
+```ruby
+included do
+  class_attribute :formats
+end
+```
+
+## Operators / Operations
+
+### [Precedence](https://ruby-doc.org/core/doc/syntax/precedence_rdoc.html) / Operator precedence
+
+> From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
+
+[Ruby - Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)
+
+### Bang
 
 [Why are exclamation marks used in Ruby methods?](https://stackoverflow.com/questions/612189/why-are-exclamation-marks-used-in-ruby-methods)
 
@@ -32,7 +84,7 @@ e.g service objects, query objects, use case objects
 > 2. An active record method saves the record or a method saves an object (e.g. strip!)
 > 3. A method does something “extra”, like posts to someplace, or does some action.
 
-## Question mark
+### Question mark
 
 <https://github.com/rubocop-hq/ruby-style-guide#boolean-methods-question-mark>
 
@@ -44,7 +96,37 @@ e.g service objects, query objects, use case objects
 
 >Methods that end with a question mark by convention return boolean, but they may not always return just true or false. Often, they will return an object to indicate a true value (or “truthy” value).
 
-### [Range](https://ruby-doc.org/core-2.2.3/Range.html)
+### safe navigation operator
+
+[The Safe Navigation Operator (&.) in Ruby](http://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/)
+
+### and/or
+
+[How to use Ruby’s English and/or operators without going nuts](http://www.virtuouscode.com/2014/08/26/how-to-use-rubys-english-andor-operators-without-going-nuts/)
+
+### splat \* / \*\*
+
+[An introduction to Ruby’s \*Splat and double \*\*Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
+
+[Using splats to build up and tear apart arrays in Ruby](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/)
+
+> But the main idea is that whenever you don’t want to specify the number of arguments you have, you would use a splat operator. The simplest example would be something like this:
+>
+> ```ruby
+> def unknown_amount(*args)
+>  p args
+> end
+> unknown_amount(1, 2, 3)
+> # => [1, 2, 3]
+> ```
+
+[Ruby double splat (\*\*) operator cheatsheet](https://jetrockets.pro/blog/ruby-double-splat-operator-cheatsheet)
+
+### Unary / Double colon operator
+
+[Ruby Dot "." and Double Colon "::" Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)
+
+## [Range](https://ruby-doc.org/core-2.2.3/Range.html)
 
 **Date ranges - begin/end**
 
@@ -66,7 +148,7 @@ date_range.end
 # => ["a", "b", "c", "d", "e", "f"]
 ```
 
-### [to_proc](http://ruby-doc.org/core-2.3.0/Symbol.html#method-i-to_proc)
+## [to_proc](http://ruby-doc.org/core-2.3.0/Symbol.html#method-i-to_proc)
 
 You can shorten:
 
@@ -86,7 +168,7 @@ state_paths.to_states.map(&:to_s)
 
 > Use the proc invocation shorthand when the invoked method is the only operation of a block
 
-### "pragma", or "directive"
+## "pragma", or "directive"
 
 > a directive pragma (from "pragmatic") is a language construct that specifies how a compiler (or assembler or interpreter) should process its input.
 
@@ -100,23 +182,13 @@ Example in pull request:
 
 [Ruby 2.3 release](https://www.ruby-lang.org/en/news/2015/12/25/ruby-2-3-0-released/)
 
-#### frozen_string_literal
+### frozen_string_literal
 
 [An Introduction to Frozen String Literals](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html)
 
 [Friendly Frozen String Literals](https://freelancing-gods.com/2017/07/27/friendly-frozen-string-literals.html)
 
 [Explain the difference between strings and symbols like I am five](https://dev.to/laurosilvacom/explain-the-difference-between-strings-and-symbols-like-i-am-five-2j73)
-
-### class_attribute
-
-<http://api.rubyonrails.org/classes/Class.html#method-i-class_attribute>
-
-```ruby
-included do
-  class_attribute :formats
-end
-```
 
 ## Arrays
 
@@ -203,7 +275,7 @@ module UserInformationService
 end
 ```
 
-### Keyword Arguments
+## Keyword Arguments
 
 [Ruby and method arguments](http://codeloveandboards.com/blog/2014/02/05/ruby-and-method-arguments/)
 
@@ -240,6 +312,10 @@ end
 admin_app.new_premium_provider_page.form.enter_details(name: "Alice", start_date: "01 Jan 2014")
 ```
 
+### `**kwargs` - keyword arguments
+
+[kwargs reserved word in python. What does it mean? duplicate](http://stackoverflow.com/questions/20158516/kwargs-reserved-word-in-python-what-does-it-mean)
+
 ## True / False Statements / Conditionals
 
 If using things that return a `boolean` value, don't need to have them in a `if/else` statement.
@@ -260,7 +336,9 @@ def valid?
 end
 ```
 
-## Change a Hash but keep original Hash
+## Hashes
+
+### Change a Hash but keep original Hash
 
 ```ruby
 name_numbers = { "name1" => 1, "name2" => 2 }
@@ -277,8 +355,6 @@ new_name_numbers = Hash[name_numbers.map { |name, number| [name, number * 20] } 
     "name2" => 40
 }
 ```
-
-## Hashes
 
 ### Accessing Hashes
 
@@ -355,7 +431,7 @@ So needed to do:
 
 The two colons make it move out of the current class. Or something like that.
 
-### Time
+## Time
 
 Michael @Flick
 
@@ -369,13 +445,7 @@ Time.parse(string).utc.iso8601
 > "2017-01-04T00:00:00Z"
 ```
 
-### [Precedence](https://ruby-doc.org/core/doc/syntax/precedence_rdoc.html) / Operator precedence
-
-> From highest to lowest, this is the precedence table for ruby. High precedence operations happen before low precedence operations.
-
-[Ruby - Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)
-
-### Case statements
+## Case statements
 
 Thought you had to do like this:
 
@@ -422,47 +492,9 @@ end
 
 Would be nice if the ruby style guide covered this... although the snippet above is from the the Source Code Layout section
 
-## `**kwargs` - keyword arguments
-
-[kwargs reserved word in python. What does it mean? duplicate](http://stackoverflow.com/questions/20158516/kwargs-reserved-word-in-python-what-does-it-mean)
-
-## Ancestors
-
-```ruby
-puts buyer1.ancestors
-
-Buyer
-User
-Object
-Kernel
-BasicObject
-```
-
-```ruby
-date_range = (Date.yesterday)..(Date.today)
-# Mon, 25 Sep 2017..Mon, 25 Sep 2017
-
-date_range.class
-# Range < Object
-date_range.class.ancestors
-# [
-#     [ 0] Range < Object,
-#     [ 1] Enumerable,
-#     [ 2] Object < BasicObject,
-#     [ 3] PP::ObjectMixin,
-#     [ 4] RequireAll,
-#     [ 5] V8::Conversion::Object,
-#     [ 6] ActiveSupport::Dependencies::Loadable,
-#     [ 7] Delayed::MessageSending,
-#     [ 8] JSON::Ext::Generator::GeneratorMethods::Object,
-#     [ 9] Kernel,
-#     [10] BasicObject
-# ]
-```
-
 ## ri - ruby documentation
 
-http://stackoverflow.com/a/1728941/4772356
+<http://stackoverflow.com/a/1728941/4772356>
 
 ```bash
 ri File.open
@@ -475,7 +507,7 @@ ri File#each_line
 
 > Yields self to the block, and then returns self. The primary purpose of this method is to “tap into” a method chain, in order to perform operations on intermediate results within the chain.
 
-https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap
+<https://ruby-doc.org/core-2.2.3/Object.html#method-i-tap>
 
 [advantage of tap method in ruby](http://stackoverflow.com/questions/17493080/advantage-of-tap-method-in-ruby)
 
@@ -543,43 +575,47 @@ ChargeBatch {
 
 [Demeter: It’s not just a good idea. It’s the law.](http://www.virtuouscode.com/2011/07/05/demeter-its-not-just-a-good-idea-its-the-law/)
 
-## safe navigation operator
-
-[The Safe Navigation Operator (&.) in Ruby](http://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/)
-
-## and/or
-
-[How to use Ruby’s English and/or operators without going nuts](http://www.virtuouscode.com/2014/08/26/how-to-use-rubys-english-andor-operators-without-going-nuts/)
-
 ## Memoization
 
 Great article:
 
 [The Basics of Ruby Memoization](http://gavinmiller.io/2013/basics-of-ruby-memoization/)
 
-## splat \* / \*\*
+[4 Simple Memoization Patterns in Ruby (And One Gem)](https://www.justinweiss.com/articles/4-simple-memoization-patterns-in-ruby-and-one-gem/)
 
-[An introduction to Ruby’s \*Splat and double \*\*Splat operators](https://medium.freecodecamp.org/rubys-splat-and-double-splat-operators-ceb753329a78)
+[Ruby Memoization and Alternatives](https://thoughtbot.com/blog/ruby-memoization-and-alternatives)
 
-[Using splats to build up and tear apart arrays in Ruby](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/)
-
-> But the main idea is that whenever you don’t want to specify the number of arguments you have, you would use a splat operator. The simplest example would be something like this:
+>Memoization has two big benefits:
 >
-> ```ruby
-> def unknown_amount(*args)
->  p args
-> end
-> unknown_amount(1, 2, 3)
-> # => [1, 2, 3]
-> ```
+>1. Cache expensive work
+>2. Delay expensive work via laziness
+>As a form of caching it comes with all the advantages and downsides of such. It also complicates a codebase.
+>
+>Most common uses of memoization in Ruby are premature optimization. For operations that:
+>
+>- are always used by your object then set the instance variable in the constructor and have a normal reader
+>- are only used once then a regular method is fine
+>- are cheap then a regular method is fine
+>- are expensive and not always used then you may want to use a memoized method to do the work lazily
+>In all cases, move the calculation to its own method!
 
-[Ruby double splat (\*\*) operator cheatsheet](https://jetrockets.pro/blog/ruby-double-splat-operator-cheatsheet)
+e.g.
+
+>Doing
+>
+>```ruby
+>def foo
+>  @foo ||= dosomething
+>end
+>```
+>
+>Allows you to cache the result of `dosomething` so we don't run it every time foo is called
 
 ## alias keyword and method
 
 [Alias in Ruby](https://medium.com/rubycademy/alias-in-ruby-bf89be245f69)
 
-## set ruby version
+## Set ruby version
 
 using `rbenv` do `rbenv local 2.4.5` and it will create a file `.ruby-version` with the version number in it.
 

@@ -1,4 +1,4 @@
-# Rails Security
+# Security
 
 ## [Cross-Site Request Forgery (CSRF)](http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf)
 
@@ -15,7 +15,7 @@
 [Cross-Site Scripting (XSS)](http://guides.rubyonrails.org/security.html#cross-site-scripting-xss)
 
 > The most widespread, and one of the most devastating security vulnerabilities in web applications is XSS. This malicious attack injects client-side executable code. Rails provides helper methods to fend these attacks off.
-
+>
 > XSS attacks work like this: An attacker injects some code, the web application saves it and displays it on a page, later presented to a victim. Most XSS examples simply display an alert box, but it is more powerful than that. XSS can steal the cookie, hijack the session, redirect the victim to a fake website, display advertisements for the benefit of the attacker, change elements on the web site to get confidential information or install malicious software through security holes in the web browser.
 
 [Cross-site Scripting (XSS)](<https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)>)
@@ -29,3 +29,9 @@
 > This page lists many query methods and options in ActiveRecord which do not sanitize raw SQL arguments and are not intended to be called with unsafe user input. Careless use of these methods can open up code to SQL Injection exploits.
 
 [Fixing SQL Injection Vulnerabilities in Ruby/Rails](http://gavinmiller.io/2015/fixing-sql-injection-vulnerabilities/)
+
+## Display exceptions messages / stack trace on prod
+
+[Is a stack trace of a server application a vulnerability?](https://security.stackexchange.com/questions/19130/is-a-stack-trace-of-a-server-application-a-vulnerability/19132#19132)
+
+[Is it a vulnerability to display exception messages in an error page?](https://security.stackexchange.com/questions/4471/is-it-a-vulnerability-to-display-exception-messages-in-an-error-page)
