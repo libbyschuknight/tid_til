@@ -28,7 +28,7 @@ on-my-zsh - if using zsh
 
 ruby build & rbenv - <https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x>
 
-NOTE: do not install node via Homebrew
+NOTE: do not install node via Homebrew (?? have actually on new work computer down this - Feb 2020)
 
 <https://stackoverflow.com/questions/28017374/what-is-the-suggested-way-to-install-brew-node-js-io-js-nvm-npm-on-os-x/50266406#50266406>
 
@@ -76,17 +76,16 @@ At work we have anti virus software that makes installs extremely slow. It took 
 > You need to provide PKG_CONFIG_PATH like this (the actual location may vary):
 > PKG_CONFIG_PATH=/usr/local/opt/libffi/lib/pkgconfig bundle install
 
-
 ---
 
 [How to Show Hidden Files on MacOS with a Keyboard Shortcut](http://osxdaily.com/2018/02/12/show-hidden-files-mac-keyboard-shortcut/)
 
 [New Tab iTerm2 within Current Directory](https://medium.com/ayuth/new-tab-iterm2-with-in-current-directory-627b0c31734a)
 
-
 ---
 
 Other programs??
+
 - add image
 - spectacle
 - time out
@@ -99,9 +98,11 @@ Other programs??
 - rectangle - <https://rectangleapp.com/>
 
 - ohmyzsh - <https://github.com/ohmyzsh/ohmyzsh>
+
   - gwip / gunwip
 
 - vscode - stashing
+
   - <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens> extension
 
 - comparing code or text in vscode - compare
@@ -128,7 +129,7 @@ Other programs??
 
 ### <https://github.com/wesbos/Cobalt2-iterm>
 
-- `pip` installtion, should be using `python3`,  and therefore it will already be installed but have to refer to it as `pip3`
+- `pip` installtion, should be using `python3`, and therefore it will already be installed but have to refer to it as `pip3`
 
 > UPDATE: This is no longer necessary with Python3.4. It installs pip3 as part of the stock install.
 

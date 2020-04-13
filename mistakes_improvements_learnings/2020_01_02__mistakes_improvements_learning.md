@@ -96,9 +96,9 @@ Needed to use `yarn` within a project. xcode command line tools should have work
 <https://github.com/nodejs/node-gyp/issues/1927>
 
 I had a look at this <https://github.com/nodejs/node-gyp/blob/master/macOS_Catalina.md> and had a quick chat with colleague and decided to install the full xcode app.
-It could actualy be useful to have. And now things are working fine.
+It could actually be useful to have. And now things are working fine.
 
-### Enviornment variables
+### Environment variables
 
 Second rails app I needed to get working in a monorepo.
 

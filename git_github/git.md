@@ -266,7 +266,7 @@ Issue had with local repo:
 
 There are heaps of ways to do it in git but since Git version 1.7.4 you can do this
 
-https://www.git-scm.com/docs/git-merge/1.7.4
+<https://www.git-scm.com/docs/git-merge/1.7.4>
 
 ## searching commits
 
@@ -345,7 +345,7 @@ or two or more files
 Perhaps also as I am using OhMyZsh and being using the git [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) I have taken the easy/lazy road of just always adding everything.
 I had better start using `ga` (shortcut for `git add`) when wanting to not add all files.
 
-UPPATE to this is that I am now using the Git / Github integration with Atom https://github.atom.io/, which is great and makes it much easier I think to stage files and parts of files.
+UPPATE to this is that I am now using the Git / Github integration with Atom <https://github.atom.io/,> which is great and makes it much easier I think to stage files and parts of files.
 
 ### Checking out a branches `tag` / version
 
@@ -502,7 +502,7 @@ Then when I tried to apply a stash got this:
 
 ```bash
 error: Your local changes to the following files would be overwritten by merge:
-	spec/features/generate_invoices_spec.rb
+ spec/features/generate_invoices_spec.rb
 Please commit your changes or stash them before you merge.
 Aborting
 fatal: Unable to create '/Users/libby/Code/payments/.git/MERGE_RR.lock': File exists.
@@ -757,9 +757,9 @@ gunwip    git log -n 1 | grep -q -c "--wip--" && git reset HEAD~1
 
 ## .gitignore
 
-https://git-scm.com/docs/gitignore
+<https://git-scm.com/docs/gitignore>
 
-https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+<https://www.atlassian.com/git/tutorials/saving-changes/gitignore>
 
 If want to ignore `node_modules` folder
 
@@ -790,7 +790,6 @@ Example of a `exclude` file
 local/*
 ```
 
-
 ## git squash
 
 [Auto-squashing Git Commits](https://robots.thoughtbot.com/autosquashing-git-commits)
@@ -799,7 +798,7 @@ local/*
 
 Records conflict changes you have made so you don't have to do them again.
 
-https://git-scm.com/docs/git-rerere
+<https://git-scm.com/docs/git-rerere>
 
 [Fix conflicts only once with git rerere](https://medium.com/@porteneuve/fix-conflicts-only-once-with-git-rerere-7d116b2cec67)
 
