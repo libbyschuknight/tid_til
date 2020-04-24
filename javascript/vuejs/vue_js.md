@@ -6,11 +6,17 @@
 
 ## [Vue I18n](https://kazupon.github.io/vue-i18n/introduction.html)
 
+## [Vuex](https://vuex.vuejs.org/)
+
+>Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion.
+
+<https://vuex.vuejs.org/guide/getters.html#the-mapgetters-helper>
+
 ### Pluralization
 
 [Pluralization](https://kazupon.github.io/vue-i18n/guide/pluralization.html)
 
-Example of dping Pluralization in a Rails app that has api endpoints that uses Vue in the frontend.
+Example of dding Pluralization in a Rails app that has API endpoints that uses Vue in the frontend.
 
 ```js
 // in index.vue file

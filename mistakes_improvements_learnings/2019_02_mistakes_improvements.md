@@ -70,13 +70,11 @@ received :allow_experience_traits with unexpected arguments
 And the same would happen if a trait was removed from the controller.
 We ended up doing this instead of adding a separate test to test the "sad path", as we are really just wanting to test that this endpoint is only used of the trait is either `apple` or `banana`.
 
-
-
 ### VSCode
-Just a reminder on how to do this. If want to include/exclude certain file types in the search, e.g. `*_spec.rb`
 
+Just a reminder on how to do this. If want to include/exclude certain file types in the search, e.g. `*_spec.rb`
 
 ### Fixtures
 
 Need to learn more about polymorphic associations.
-This is useful when using fixtures - http://ruby-journal.com/rails/define-fixtures-with-polymorphic-association/
+This is useful when using fixtures - <http://ruby-journal.com/rails/define-fixtures-with-polymorphic-association/>

@@ -303,3 +303,54 @@ end
 >- not requiring RSpec to be loaded when the generators are run by Rails
 >- not introducing extra logic and state to handle the different states
 >- Resolve #1048
+
+
+## JSON - format or as
+
+In controller tests, if use `format: :json`, as you are passing a hash, it will convert non strings to strings. This caused me issues when I had a validation happening where it was validating `true` and `false`, not `"true"` and `"false"`. I think the default is also `format: :json`.
+
+```ruby
+valid_params =
+    {
+      content: "content",
+      announcement: false,
+      updated_media_items: [stuff]
+    }
+
+  it "returns a 200 OK status" do
+    post :create, params: { centre_id: centre.id, community_post: valid_params }, as: :json # default is format: :json
+
+    expect(response).to have_http_status(:ok)
+  end
+```
+
+```json
+{
+  "content" => "This is some content for this post.",
+  "announcement" => "false",
+  "updated_media_items" => [
+    {
+      "key" => "mi_1",
+      "name" => "",
+      "size" => "",
+      "media_type" => "1"
+    }
+  ]
+}
+```
+
+But if you use `as: :json`, then it does pass it properly through as json.
+
+```json
+{
+  "content" => "This is some content for this post.",
+  "announcement" => false,
+  "updated_media_items" => [ {
+      "key" => "mi_1",
+      "name" => nil,
+      "size" => nil,
+      "media_type" => 1
+    }
+  ]
+}
+```

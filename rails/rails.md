@@ -26,6 +26,12 @@
 
 [Rails 6: the missing developer setup guide](https://dev.to/vvo/a-rails-6-setup-guide-for-2019-and-2020-hf5)
 
+### Controller
+
+[Action Controller Parameters](https://api.rubyonrails.org/classes/ActionController/Parameters.html)
+
+- [permit(*filters)](https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-permit)
+
 ## Upgrade
 
 <http://guides.rubyonrails.org/upgrading_ruby_on_rails.html>

@@ -247,6 +247,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [MENTAL HEALTH AWARENESS WEEK 2019: TE WHARE TAPA WHĀ](https://mhaw.nz/explore/te-whare-tapa-wha/#)
 
+[20 questions to ask instead of “How are you doing right now?”](https://qz.com/work/1836105/20-great-questions-to-ask-instead-of-how-are-you-doing-right-now/)
+
 My Wharenui
 ![my wharenui](libswharenui.jpg)
 

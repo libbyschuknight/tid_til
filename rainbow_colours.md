@@ -1,6 +1,6 @@
 # Rainbow Colours
 
-```
+```colours
 red red red red red
 orange orange yellow
 yellow yellow yellow

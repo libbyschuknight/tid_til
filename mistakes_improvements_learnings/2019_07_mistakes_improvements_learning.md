@@ -4,7 +4,7 @@
 
 For the work we are doing on the pattern library at work, we are customisting `ViewHelpers` and `FormBuilders`.
 I will try and explain what we are doing.
-We are adding a `text input` and wanting to have it for both a form helper tag (the basic helpers ending in `*_tag` - https://guides.rubyonrails.org/form_helpers.html#helpers-for-generating-form-elements)...
+We are adding a `text input` and wanting to have it for both a form helper tag (the basic helpers ending in `*_tag` - <https://guides.rubyonrails.org/form_helpers.html#helpers-for-generating-form-elements)...>
 
 ```html
 <%= form_tag("/search", method: "get") do %>
@@ -13,6 +13,7 @@ We are adding a `text input` and wanting to have it for both a form helper tag (
   <%= submit_tag("Search") %>
 <% end %>
 ```
+
 and for forms dealing with model objects.
 
 You can use the `*_tag` methods, but Rails makes things work with models and you drop the `_tag` of the method name:
@@ -27,7 +28,7 @@ You can use the `*_tag` methods, but Rails makes things work with models and you
 <%= text_field_tag(:query) %>
 ```
 
-And then with the binding of a form to an object (https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object), by using `form_with` or `form_for` you can use the form builder object - *"The form_for method yields a form builder object (the f variable)."*
+And then with the binding of a form to an object (<https://guides.rubyonrails.org/form_helpers.html#binding-a-form-to-an-object),> by using `form_with` or `form_for` you can use the form builder object - *"The form_for method yields a form builder object (the f variable)."*
 
 ```html
 <%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
@@ -88,22 +89,21 @@ This is useful when thinking/learning about the `form_builder` methods:
 
 [ActionView::Helpers::FormBuilder < Object](https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html)
 
-And in particular in this case around the `label` method - https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label
-
+And in particular in this case around the `label` method - <https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label>
 
 ## Ruby Mine / doing `bundle open <gem>`
 
 A couple of my colleagues use [RubyMine](https://www.jetbrains.com/ruby/) and it works in such a way that you can easily look at the methods etc of gems that are included in your Rails project.
 
-I use [VSCode](https://code.visualstudio.com/) and it doesn't have this ability. (It actually might have this ability with this extension https://github.com/rubyide/vscode-ruby / https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+I use [VSCode](https://code.visualstudio.com/) and it doesn't have this ability. (It actually might have this ability with this extension <https://github.com/rubyide/vscode-ruby> / <https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)>
 
 But what you can do instead is `bundle open rails` for example and then you have access to all the rails gem code.
 
-*Note:* further to this, I was able to do `bundle open rails` and see everything (all the gems) as we use a forked version at work. However, now `rails` is separeated out into gems - https://github.com/rails/rails#frameworks-and-libraries, so doing `bundle open rails` only opens up the readme for rails. For what I wanted to be looking at I need to do `bundle open actionview` if I was using a standard rails app where rails had not been forked (and had all the gems in it already)
+*Note:* further to this, I was able to do `bundle open rails` and see everything (all the gems) as we use a forked version at work. However, now `rails` is separeated out into gems - <https://github.com/rails/rails#frameworks-and-libraries,> so doing `bundle open rails` only opens up the readme for rails. For what I wanted to be looking at I need to do `bundle open actionview` if I was using a standard rails app where rails had not been forked (and had all the gems in it already)
 
 I have just done this as I am working on adding methods to the `FormBuidler` and wanted to take a closer look at the `label` method
 
-https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label
+<https://api.rubyonrails.org/classes/ActionView/Helpers/FormBuilder.html#method-i-label>
 
 And have also put a `binding.pry` in there so I can have a nosey around.
 
@@ -126,7 +126,6 @@ end
 ```
 
 Then looked at `Label`, `actionview/lib/action_view/helpers/tags/label.rb`. Not that I figured anything out but really interesting looking at the Rails code. Think it is the first time I have done it and some of it has made sense.
-
 
 ## Using the `label` method on the `FormBuilder`
 
@@ -159,12 +158,14 @@ label(method, nil, class: class_names_label) do |label_builder|
   @template.concat optional_label
 end
 ```
+
 It is basically because we want to be able to add this optional span within the label, previosuly the way we were doing it:
 
 ```ruby
 label = options[:label] + optional_label
 label(method, label, class: class_names_label)
 ```
+
 And with this, the underlying code using `method` to create the text for the label was being overwritten by what we were passing into the second argument. So we needed a way that we could have the text from the `method` (e.g. if the method was `:first_name` then the text would be `First name`, that would do the translation stuff if needed AND pass in the optional `span`, within the label.
 
 Hence the solution above which ends up outputting this HTML:
@@ -197,7 +198,7 @@ For our pattern library, if we want to add a tag in an erb template:
 
 Then via the `text_field_tag` we get this output:
 
-https://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-text_field_tag
+<https://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-text_field_tag>
 
 ```html
 <div class="apl-field-v1_0 field-class-name has-error">
@@ -220,6 +221,7 @@ https://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method
   </div>
 </div>
 ```
+
 Notice that the `id` (`apl-text-input-field-v1_0-2`) is reused in a number of places.
 
 If we use the same underlying code for generating the `html` for a `form` that uses `text_field`:
@@ -302,7 +304,7 @@ I was pleased I was able to use my knowledge (recent understanding) of `text_fie
 
 When wanting to access the use `$r` when using Storybook, you may need to change JavaScript context in Chrome Dev Tools to `top`.
 
-See https://github.com/facebook/react-devtools/issues/366#issuecomment-212749794
+See <https://github.com/facebook/react-devtools/issues/366#issuecomment-212749794>
 
 ![JS-context](JS-context-storybook.png)
 

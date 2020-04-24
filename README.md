@@ -39,41 +39,41 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 ---
 
-#### API stuff
+### API stuff
 
 - [General](api_stuff/general.md)
 
-#### Code Reviews
+### Code Reviews
 
 - [Code Reviews - general](code_reviews/code_reviews_general.md)
 
-#### Databases
+### Databases
 
 - [General DB Stuff](databases/databases.md)
 - [Postgresql](databases/postgresql.md)
 - [Sequel](databases/sequel.md)
 
-#### Gems
+### Gems
 
 - [Gem Stuff](/gems/gem_stuff.md)
 
-#### Git/Github
+### Git/Github
 
 - [Git/Github](/git_github/git.md)
 
-#### Rails
+### Rails
 
 - [General](/rails/rails.md)
 - [New Rails app](/rails/new_rails_app.md)
 
-#### Ruby
+### Ruby
 
 - [Errors](/ruby/errors.md)
 
-#### Testing
+### Testing
 
 - [Factory Girl](/testing/factory_girl.md)
 
-#### Text Editors
+### Text Editors
 
 - [Atom](/text_editors/atom.md)

@@ -24,13 +24,15 @@ en-NZ-realsurf:
   contact_hours: "8am to 8pm, Monday to Friday"
   contact_hours_business: "9am to 5pm, Monday to Friday"z
 ```
+
 Removed it and yay it works!! Such a small thing! A reminder to be careful when changing things and to check and re-check!
 
-
 ## Translations / Locales (yaml files)
+
 ### [4.5 Translations for Active Record Models](https://guides.rubyonrails.org/i18n.html#translations-for-active-record-models)
 
 >For example when you add the following translations:
+
 ```
 en:
   activerecord:
@@ -41,6 +43,7 @@ en:
         login: "Handle"
       # will translate User attribute "login" as "Handle"
 ```
+
 >Then User.model_name.human will return "Dude" and User.human_attribute_name("login") will return "Handle".
 
 ### Using a list in translation files to add list text to view
@@ -96,10 +99,10 @@ DOH!!
 
 Using `Net::HTTP`, get request to Hubspot API.
 
-https://developers.hubspot.com/docs/methods/lists/get_list_contacts_recent
+<https://developers.hubspot.com/docs/methods/lists/get_list_contacts_recent>
 `GET /contacts/v1/lists/:list_id/contacts/recent`
 
-https://api.hubapi.com/contacts/v1/lists/120824/contacts/recent?hapikey=demo
+<https://api.hubapi.com/contacts/v1/lists/120824/contacts/recent?hapikey=demo>
 Returns stuff as of Sept 2018
 
 For this, wanted to be able to pass in the `list_id` and have optional params for offsets to do paginigation and be able to change the count if needed.
@@ -145,6 +148,7 @@ hub.fetch_contacts
 ```
 
 Response:
+
 ```json
 {
        "contacts" => [
@@ -194,14 +198,15 @@ Response:
         ...
 ```
 
-
 ## Specs
+
 Think I have come across this before, created a new spec, ran it and got an error like this:
 
 ```bash
 ActiveRecord::NotNullViolation:
        Mysql2::Error: Field 'credit' doesn't have a default value: INSERT INTO `promotion_grants` (`id`, `created_at`, `updated_at`, `discount_voucher_category_id`, `promotion_id`, `delay_until`, `delay_days`) VALUES (644667019, '2018-09-24 12:09:24.770222', '2018-09-24 12:09:24.770222', 284678023, 644667019, NULL, NULL), (16771602, '2018-09-24 12:09:24.770222',
 ```
+
 And was like WTF?!! as my spec wasn't doing anything with the db (service making a request to an external API) and the remembdered about making sure the test database was all nice and clean.
 
 Ran `rails db:test:prepare`, but that seems not to have worked. I think that works nicely on postgres databases but not so nicely with MariaDB database, or at least how it is set up at work.
@@ -216,16 +221,17 @@ So should have run `rails db:migrate db:test:prepare`. Which I actually usually 
 
 Also found a rake task in our codebase that drops, creates, loads structure and runs migrations. And that has worked! Yay!
 
-
 ## VScode
 
 Adding user snippets.
 I use rspec and there is a lot of times you need to write `do newline end`:
+
 ```ruby
 something do
 
 end
 ```
+
 There didn't seem to be a shortcut for this so I added one to my user snippets.
 
 Go to preferences and user snippets and and existing or new snippets file (is a json file). I had existing one and copied on of the ones already there and changed it to this:
@@ -239,7 +245,9 @@ Go to preferences and user snippets and and existing or new snippets file (is a 
   "description": "Insert do end (mainly for specs) at cursor location"
 }
 ```
+
 And when I type `de` enter, it does this:
+
 ```ruby
 do
 
@@ -247,6 +255,7 @@ end
 ```
 
 So if wanted to do a let block with a do end, could do:
+
 ```ruby
 let(:this) de
 # and would give me
@@ -256,10 +265,9 @@ let(:this) do
 end
 ```
 
-With an extenstion (https://marketplace.visualstudio.com/items?itemName=karunamurti.rspec-snippets) I already have I can write `let` and get `let(:object) {  }` but often I need the do/end.
+With an extenstion (<https://marketplace.visualstudio.com/items?itemName=karunamurti.rspec-snippets)> I already have I can write `let` and get `let(:object) {  }` but often I need the do/end.
 
 Possibly a hack day projects would be to add some stuff to that extension.
-
 
 ## Net::HTTP::Post
 
@@ -298,13 +306,15 @@ response = http.request(post_request)
 ```
 
 but it kept coming up with a bad request error:
+
 ```
 "{\"status\":\"error\",\"message\":\"Invalid input JSON on line 1, column 2: Unexpected character ('%' (code 37)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')\",\"correlationId\":\"858c584c-5157-44fa-bb6f-94b7a7855159\",\"requestId\":\"eea949ee93f3eb71e990d53affdaf96c\"}"
 ```
-I think I was doing something wrong with what I was passing into the `set_form_data` but couldn't figure out what it was.
-Things I have been looking all seem to do a post using `post_form` - https://github.com/augustl/net-http-cheat-sheet/blob/master/post_form.rb.
 
-But then found this - https://coderwall.com/p/c-mu-a/http-posts-in-ruby and did this:
+I think I was doing something wrong with what I was passing into the `set_form_data` but couldn't figure out what it was.
+Things I have been looking all seem to do a post using `post_form` - <https://github.com/augustl/net-http-cheat-sheet/blob/master/post_form.rb.>
+
+But then found this - <https://coderwall.com/p/c-mu-a/http-posts-in-ruby> and did this:
 
 ```ruby
 uri = URI.parse(build_url(params))
@@ -344,8 +354,8 @@ In the example it has:
 `request.set_form_data({"q" => "My query", "per_page" => "50"})`
 and for the endpoint I am hitting it needs to be in an array, so wondering if I am passing things in incorrectly.
 
-
 ## Another raise_error in RSpec!!!
+
 Has this:
 
 ```ruby
@@ -362,7 +372,6 @@ it "raises the error" do
   expect { request.call }.to raise_error(Net::HTTPServerException)
 end
 ```
-
 
 ## Stubbing external API calls
 
@@ -416,15 +425,15 @@ So if the `body_json` doesn't much what is passed to the `post` request, the stu
 ```
 
 ## Rails Commands
-[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
 
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
 
 ## Newlines at end of file
 
 `\ No newline at end of file`
 
-https://robots.thoughtbot.com/no-newline-at-end-of-file
+<https://robots.thoughtbot.com/no-newline-at-end-of-file>
 
-https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline
+<https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline>
 
-https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file
+<https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file>
