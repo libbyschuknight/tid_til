@@ -138,10 +138,11 @@ FYI was having this issue locally
 
 And I have just realised that because I like to use `binding.pry` to debug stuff and you can't use that when using `foreman` so I go back to the `rails s` why of running the server and I also run the `webpack` in another tab. I have just reaslised that there is a job that copies the network message to a com post for centres, so I wasn't seeing it cos the jobs weren't running!! OMG! So much going on! Will add this `bundle exec sidekiq` to my setup for when I want to debug! 😱
 
-
 ## Rails normal and API controllers
 
 Hello people. Here is a fun problem. Getting this error when running a spec:
+
+```bash
  1) PostsController authorization create Post is a community post sets the status to published
      Failure/Error:
        json[:html]               = render_to_string(
@@ -158,136 +159,34 @@ Hello people. Here is a fun problem. Getting this error when running a spec:
          * "/Users/libby/.gem/ruby/2.6.3/gems/kaminari-core-1.1.1/app/views"
          * "/Users/libby/.gem/ruby/2.6.3/gems/doorkeeper-4.4.1/app/views"
          * "/Users/libby/.gem/ruby/2.6.3/gems/devise-4.7.1/app/views"
-Have updated the code in the controller to use a CommunityPost::Create use case. Locally works all good. No errors.
-But with needing to update the test I needed to add in the use of as: :json as we need to pass in a boolean and not have it be converted to a string (ideally).
-And this some how mucks with the spec and makes it think there is no shared/posts/_post, which there is.
-1. anyone got any thoughts?
-2. anyone want to pair on it? We will time box it.
-3. I think I might have a fix but it would involved taking off a validation on the use case?? Thoughts?
-@ellery @Tim @Chad. Posted in this channel in case anyone else wants to join in on the fun :smile: (edited)
+```
+
+> Have updated the code in the controller to use a CommunityPost::Create use case. Locally works all good. No errors.
+> But with needing to update the test I needed to add in the use of as: :json as we need to pass in a boolean and not have it be converted to > a string (ideally).
+> And this some how mucks with the spec and makes it think there is no shared/posts/_post, which there is.
 
 
+Fix for this was to created a method like this:
 
+```ruby
+  def parse_announcement(announcement)
+    # NOTE: this has been added to make the PostsController#create specs pass
+    # as in the specs the params values are stringified.
+    # We wanted to keep the validation of the "announcement" value in the CommunityPost::Create
+    # use case.
+    # This can be removed once the creation of CommunityPosts in this controller has been removed.
+    if announcement == "true"
+      true
+    elsif announcement == "false"
+      false
+    else
+      announcement
+    end
+  end
+```
 
+Not ideal but the code will be updated soon anyway and this will be removed.
 
+And something to remember:
 
-Chad Sandeman:house_with_garden:  20 minutes ago
-Has the partial or test been moved somewhere else? could be that the path no longer exists from that position?
-
-Libby:house_with_garden:  19 minutes ago
-Nope, the partial is still there. and number 3 worked to get the test passing.
-
-Libby:house_with_garden:  18 minutes ago
-https://github.com/storypark/storyjar/blob/master/education/app/views/shared/posts/_post.html.haml
-
-Libby:house_with_garden:  18 minutes ago
-and still works in app so all good
-
-Libby:house_with_garden:  16 minutes ago
-I'll try that, I thought all controller actions used format json as a default?
-
-Tim MacDonald  16 minutes ago
-Unsure sorry, have you got your changes pushed up? I could try it locally my end and see if I can debug? (edited)
-
-Libby:house_with_garden:  14 minutes ago
-yeah think is failing on last commit. but using format json might have fixed it, just checking
-
-Libby:house_with_garden:  13 minutes ago
-oh no it didn't, was looking at the wrong thing.
-
-Libby:house_with_garden:  11 minutes ago
-hmmmmm
-
-Tim MacDonald  10 minutes ago
-Yeh I've got it running locally
-
-Tim MacDonald  10 minutes ago
-what is the use case returning?
-
-Libby:house_with_garden:  10 minutes ago
-a com post
-
-Ellery Prisk  10 minutes ago
-API requests use JSON by default, regular web controllers will stringify all param values
-
-Libby:house_with_garden:  9 minutes ago
-yeah I wondered if it was that.....
-
-Tim MacDonald  9 minutes ago
-Screen Shot 2020-04-23 at 11.55.48 AM.png
-Screen Shot 2020-04-23 at 11.55.48 AM.png
-
-
-
-Tim MacDonald  9 minutes ago
-Screen Shot 2020-04-23 at 11.56.02 AM.png
-Screen Shot 2020-04-23 at 11.56.02 AM.png
-
-
-
-Libby:house_with_garden:  8 minutes ago
-so has to do with our validation on announcement in the use case (edited)
-
-Libby:house_with_garden:  8 minutes ago
-perhaps we don't worry about doing that validation?
-
-Libby:house_with_garden:  8 minutes ago
-or we remove this tests from the posts controller?
-
-Ellery Prisk  8 minutes ago
-Could you make sure announcement is a boolean when passing to the use case?
-
-Libby:house_with_garden:  7 minutes ago
-hmmm using !!
-
-Libby:house_with_garden:  6 minutes ago
-or maybe something like if params == "true", return true
-
-Libby:house_with_garden:  6 minutes ago
-I'm not a fan of the !! (edited)
-
-Libby:house_with_garden:  6 minutes ago
-will try it now
-
-Libby:house_with_garden:  6 minutes ago
-Tim, not sure what those photos are showing me
-:+1:
-1
-
-
-Tim MacDonald  3 minutes ago
-I was getting this error when running this spec locally:
-
-Tim MacDonald  3 minutes ago
-Screen Shot 2020-04-23 at 12.01.15 PM.png
-Screen Shot 2020-04-23 at 12.01.15 PM.png
-
-
-
-Tim MacDonald  2 minutes ago
-So looks like the use case is returning nil
-
-Libby:house_with_garden:  2 minutes ago
-yeah, that is because the validation is failing as from the normal rails controller it passes all params in as strings, but the validtion is checking if it is a boolean. so the create fails, so you don't get a com post from the result
-
-Tim MacDonald  2 minutes ago
-Yep sweet
-
-Libby:house_with_garden:  2 minutes ago
-Ellerys suggest as worked I think...
-
-Libby:house_with_garden:  < 1 minute ago
-silly me, think !! would be best here, as otherwise would need to check "true" and "false" but might leave a comment in the code
-
-Libby:house_with_garden:  < 1 minute ago
-or write a really clear commit message
-
-Libby:house_with_garden:  < 1 minute ago
-or both
-
-Libby:house_with_garden:  < 1 minute ago
-thanks for the help people
-
-Libby:house_with_garden:  < 1 minute ago
-going to remember this
-API requests use JSON by default, regular web controllers will stringify all param values
+>API requests use JSON by default, regular web controllers will stringify all param values
