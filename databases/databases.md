@@ -1,10 +1,64 @@
 # Databases - general stuff
 
+[DBMS Tutorial – Database Management System notes](https://beginnersbook.com/2015/04/dbms-tutorial/)
+
 ## Modelling
+
+[Entity Relationship Diagram – ER Diagram in DBMS](https://beginnersbook.com/2015/04/e-r-model-in-dbms/)
+
+[What is an Entity Relationship Diagram (ERD)?](https://www.lucidchart.com/pages/er-diagrams)
+
+### One approach to start thinking about how to model something (shared by colleague)
+
+First
+
+- look at designs
+- pull out core parts
+- consider a common or generic example e.g. receipts
+- could what we are looking to model fit a common pattern?
+- create a spreadsheet
+  - add ideas for tables
+  - what column's etc
+
+<img src="common-parts.png" alt="common-parts" width="500"/>
+
+Table structure
+
+<img src="table-structure.png" alt="table-structure" width="500"/>
+
+Second
+
+- come up with some dummy data
+- start entering into spreadsheet tables
+
+<img src="dummy-data-polymorph.png" alt="dummy-data-polymorph" width="500"/>
+
+Third
+
+- think about how would update this data
+- look at what the UI is doing around updating
+
+Other option for structure
+
+<img src="other-option.png" alt="other-option" width="500"/>
+
+### Relationship symbols
 
 [ERD "Crow's Foot" Relationship Symbols Cheat Sheet](https://www.vivekmchawla.com/erd-crows-foot-relationship-symbols-cheat-sheet/)
 
-![ERD Relationship Symbols](ERD_Relationship_Symbols_Quick_Reference-1.png)
+<img src="ERD_Relationship_Symbols_Quick_Reference-1.png" alt="ERD_Relationship_Symbols_Quick_Reference-1" width="500"/>
+
+[ERD "Crow's Foot" Relationship Symbols [Quick Reference] - pdf](ERD_Relationship_Symbols_Quick_Reference.pdf)
+
+[ERD "Crow's Foot" Relationship Symbols [Quick Reference] - pdf](https://drive.google.com/file/d/1uHu60o8lYvdWRy1t25l_pwX_TQBoOthc/view?usp=sharing)
+
+<img src="cardinality-symbols.png" alt="cardinality-symbols.png" width="500"/>
+
+<img src="info-eng-style-cardinality.png" alt="info-eng-style-cardinality.png" width="500"/>
+
+## Normalization
+
+[Normalization in DBMS: 1NF, 2NF, 3NF and BCNF in Database](https://beginnersbook.com/2015/05/normalization-in-dbms/)
 
 ## Activerecord
 
@@ -96,6 +150,7 @@ you can just have:
 ```ruby
 create(sports_id: sports_id, type: "running", data: params)
 ```
+
 ... as you are inside the `Event` model.
 
 ## Database Transaction

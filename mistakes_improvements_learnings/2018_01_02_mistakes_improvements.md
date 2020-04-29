@@ -7,6 +7,7 @@ If doe this as a scope:
 ```ruby
 scope :first_read_taken, -> { order_by_taken_at.first }
 ```
+
 can't chain another scope on it.
 Could use a `limit(1)` instead but suggested is you would do a class method:
 
@@ -19,7 +20,6 @@ end
 ## validations
 
 [Skipping Validations in Ruby On Rails](https://richonrails.com/articles/skipping-validations-in-ruby-on-rails)
-
 
 ## Remind about things to think about when starting to test something like a service object
 
@@ -60,7 +60,6 @@ suggestion to change to:
 
 changed to
 `expect(User.customers.pluck(:admin).compact.uniq).to eq([false])`
-
 
 ## Thinking on links vs buttons and making a link look like a button
 
@@ -123,14 +122,14 @@ instead of
 expect(mail.subject).to include("Your Powershop")
 expect(mail.subject).to include("Account Invoice")
 ```
-or trying to do some sort of regex
 
+or trying to do some sort of regex
 
 ## `to_partial_path`
 
 Was trying to find a render using a path and couldn't because it was using a `to_partial_path` on a presenter
 
-https://apidock.com/rails/ActiveModel/Conversion/to_partial_path
+<https://apidock.com/rails/ActiveModel/Conversion/to_partial_path>
 
 ```ruby
 class Customer::AddUtilityBannerPresenter
@@ -149,8 +148,8 @@ Customer::AddUtilityBannerPresenter.new(customer).to_partial_path
 # "customer/add_utility_banner"
 ```
 
-
 ### Controller / Routes things
+
 Had to have a button that would then do some stuff in a controller and make a banner go away.
 Which required a new model, controller etc.
 
@@ -159,7 +158,6 @@ I forgot, initially about routes, so added one in, but had to be done in this fo
 Then was trying to hit the endpoint, which was a post (create) but was getting an error, as was trying to do it via a get!
 
 Also, reminder to check naming, another error was due to missing of `Controller` at the end of the controller name in the file.
-
 
 ## JS adding in a click and dismiss
 
@@ -179,4 +177,5 @@ jQuery(function($) {
   });
 });
 ```
+
 So this sends post to controller which creates something and it also hides a notice/banner on the click as well!
