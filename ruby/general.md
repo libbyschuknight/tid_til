@@ -122,6 +122,23 @@ end
 
 [Ruby double splat (\*\*) operator cheatsheet](https://jetrockets.pro/blog/ruby-double-splat-operator-cheatsheet)
 
+#### Another use of splat
+
+[Using splats to build up and tear apart arrays in Ruby](https://www.honeybadger.io/blog/ruby-splat-array-manipulation-destructuring/)
+
+>Constructing arrays
+>
+>The splat operator is useful not only for destructuring arrays but also for constructing them.
+>
+>In the following example, we use splat to join two arrays.
+>
+>```ruby
+>[*[1,2], *[3,4]]
+>=> [1, 2, 3, 4]
+>```
+>
+>This is the equivalent of `[[1, 2], [3,4]].flatten`.
+
 ### Unary / Double colon operator
 
 [Ruby Dot "." and Double Colon "::" Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm)

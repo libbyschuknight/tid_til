@@ -29,3 +29,26 @@ I have just done one of these with a senior this morning and points from it:
   - (this was specifically a unit test)
 - think about the behavior of the unit/class and if the changes mean that it is staying the same or changing
 - keeping in mind what should and shouldn't be tested, for example, internal methods shouldn't be tested, just the behaviour of the class.
+
+## Code Review / Pull Request Emojis
+
+This is what we used at Flick Electric when I was working there.
+
+When reviewing a Pull Request, the more Emoji the better ✨. These ones have a defined meaning:
+
+- 💡 **FYIs**           *(such as: "💡In another service, we solve a similar problem in this way")*
+- ⚠️ **blocking**      *(such as: "⚠️ I don't think this will work for these edge cases")*
+- 🐘 **non-blocking**  *(such as: "🐘 This could be more elegant by doing it a different way")*
+- 🍄 **code smell**   *(such as: "🍄 This seems like a lot of logic for a view")*
+- 💭 **thought**      *(such as: "💭I wonder if we could use this pattern in other services?")*
+- ✨ **compliments**  *(such as: "✨This is some great code, computer friend!")*
+- ❓ **questions**   *(such as: "❓Why have you done this this way?")*
+- 👠 **style**  *(such as: "👠 Add some spaces inside the curly braces")*
+- :mortar_board: or 📚 **learning**  *(such as: ":mortar_board:  "I haven't used geckoboard, wondering where this method comes from?")*
+- ♿️ **accessibility** *(such as: "♿️ The link text 'click here' might not make sense to someone using a screen reader if they encounter it out of context")*
+
+- 🔧 **todo / building next**
+
+Addition from Storypark
+
+- 🎈a **thought** *("such as: "Just a thought, you can change if you want but not blocking")*

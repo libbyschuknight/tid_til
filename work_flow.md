@@ -1,8 +1,9 @@
 # Work Flow / Process
+
 > How I try to approach developing a story / writing code
 
+## At the Very Beginning
 
-### At the Very Beginning
 - be clear about the story and what you are aiming to achieve
 - be clear about how approaching task
 - only focus on this task, don't get sidetracked by how it fits in with other bits / keep focused on the story
@@ -10,9 +11,9 @@
 - draw diagrams of what is happening to help with understanding where at and what want to achieve
 - be staunch about only doing what the task is and not doing anything else
 
-#### Definition of a Story
+### Definition of a Story
 
-##### [What is a User Story?](https://www.mountaingoatsoftware.com/agile/user-stories)
+#### [What is a User Story?](https://www.mountaingoatsoftware.com/agile/user-stories)
 
 User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. They typically follow a simple template:
 
@@ -55,6 +56,7 @@ end
 ```
 
 After:
+
 ```ruby
 def initialize(bubbles)
   @bubbles = wrap_in_facades(bubbles)
