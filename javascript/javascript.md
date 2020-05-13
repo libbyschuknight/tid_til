@@ -472,13 +472,15 @@ First this
 
 ## Tree Shaking
 
-<https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking>
+<https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking> ✅
+
+>Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
 
 [What is tree shaking? 🌲](https://medium.com/@netxm/what-is-tree-shaking-de7c6be5cadd)
 
 > Tree shaking or dead code elimination means that unused modules will not be included in the bundle during the build process.
 
-[What is tree shaking and how does it work?](https://bitsofco.de/what-is-tree-shaking/)
+[What is tree shaking and how does it work?](https://bitsofco.de/what-is-tree-shaking/) ✅
 
 <https://webpack.js.org/guides/tree-shaking/>
 

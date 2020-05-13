@@ -13,7 +13,7 @@
 
 [Code Review Best Practices](https://www.kevinlondon.com/2015/05/05/code-review-best-practices.html) ✅
 
-[Thoughbot - Code Review](https://github.com/thoughtbot/guides/tree/master/code-review) 📖
+[Thoughbot - Code Review](https://github.com/thoughtbot/guides/tree/master/code-review) ✅
 
 Collation of tips, ideas, advice on reviewing code.
 

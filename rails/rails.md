@@ -250,7 +250,31 @@ Best practice is to write another migration to remove what you have added.
 
 Otherwise the schema will be incorrect / out of sync and could cause bad 😱 things to happen!!
 
-#### Column Types
+### `rollback`
+
+<https://guides.rubyonrails.org/active_record_migrations.html#rolling-back>
+
+```bash
+> rails db:rollback
+
+> rails db:rollback STEP=3
+```
+
+Also `rails db:migrate:redo VERSION=20200505023059`
+
+>The db:migrate:redo command is a shortcut for doing a rollback and then migrating back up again.
+
+and
+
+<https://guides.rubyonrails.org/active_record_migrations.html#running-specific-migrations>
+
+>If you need to run a specific migration up or down, the db:migrate:up and db:migrate:down commands will do that. >Just specify the appropriate version and the corresponding migration will have its change, up or down method >invoked, for example:
+>
+>`$ rails db:migrate:up VERSION=20080906120000`
+
+
+
+## Column Types
 
 <http://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes>
 
@@ -281,7 +305,7 @@ and it outputted this:
       create    app/models/katum.rb
       invoke    rspec
       create      spec/models/katum_spec.rb
-      invoke      factory_girl
+      invoke      factory_bot
       create        spec/factories/kata.rb
 ```
 
@@ -298,7 +322,7 @@ invoke  active_record
  create    app/models/katas.rb
  invoke    rspec
  create      spec/models/katas_spec.rb
- invoke      factory_girl
+ invoke      factory_bot
  create        spec/factories/katas.rb
 ```
 
@@ -319,7 +343,7 @@ create    db/migrate/20171112005548_create_katas.rb
 create    app/models/kata.rb
 invoke    rspec
 create      spec/models/kata_spec.rb
-invoke      factory_girl
+invoke      factory_bot
 create        spec/factories/katas.rb
 ```
 

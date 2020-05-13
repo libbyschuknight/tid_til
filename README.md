@@ -72,7 +72,7 @@ I have copied this idea from [thoughtbot/til](https://github.com/thoughtbot/til)
 
 ### Testing
 
-- [Factory Girl](/testing/factory_girl.md)
+- [factory bot](/testing/factory_bot.md)
 
 ### Text Editors
 

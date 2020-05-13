@@ -1,7 +1,5 @@
 # Web Stuff
 
-## Learning / Resources
-
 [An overview of how the Web works](https://marksheet.io/introduction.html)
 
 [MDN web docs: Resources for developers, by developers.](https://developer.mozilla.org/en-US/)
@@ -16,7 +14,6 @@
 
 - [Arrows](https://unicode-table.com/en/sets/arrows-symbols/)
 
-[JSONJSONLint - The JSON Validator](https://jsonlint.com/)
 
 [Convert Images to Base64](https://www.browserling.com/tools/image-to-base64)
 
@@ -32,9 +29,13 @@
 
 [The Web I Want](https://dev.to/quii/the-web-i-want-43o)
 
-[CSS Zen Garden](http://www.csszengarden.com/)
+## JSON
 
-[The Ultimate List Of Free Stock Photos & Free Royalty Free Images](https://www.eric-liang.com/blog/the-ultimate-list-of-free-stock-photos-free-royalty-free-images/)
+[JSON Schema](https://json-schema.org/)
+
+[JSONJSONLint - The JSON Validator](https://jsonlint.com/)
+
+## CSS / design stuff??
 
 [Periodic Table of the Elements](http://smm.zoomquiet.top/data/20110511083224/index.html)
 
@@ -42,7 +43,15 @@
 
 [The Process of Implementing A UI Design From Scratch](https://ishadeed.com/article/building-ui-design-scratch/)
 
-## Chrome Dev Tools
+## The Browser
+
+### window.location
+
+<https://developer.mozilla.org/en-US/docs/Web/API/Window/location>
+
+[window.location Cheatsheet](https://dev.to/samanthaming/window-location-cheatsheet-4edl)
+
+### Chrome Dev Tools
 
 [Cool Chrome DevTools tips and tricks you wish you knew already](https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2)
 

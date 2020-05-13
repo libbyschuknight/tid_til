@@ -246,4 +246,4 @@ Today I worked on disco and resources. Continued to fix specs that were failing 
 
 ##### 14 March 2016
 
-Today I worked on disco and Resources. Mainly in netdisco. Adding properties to the representers and fixing up specs due to changes. Good use of factory girl, nested factories. See [Factory Girl](/testing/factory_girl.md)
+Today I worked on disco and Resources. Mainly in netdisco. Adding properties to the representers and fixing up specs due to changes. Good use of factory bot, nested factories. See [factory bot](/testing/factory_bot.md)

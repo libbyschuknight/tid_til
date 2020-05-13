@@ -165,6 +165,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [No more excuses: Why your attempts to deny the gender pay gap just won’t wash](https://thespinoff.co.nz/society/08-03-2017/no-more-excuses-why-your-attempts-to-deny-the-gender-pay-gap-just-wont-wash/)
 
+[The gender pay gap: a tale as old as time](https://www.brazen.world/2020/04/29/the-gender-pay-gap-a-tale-as-old-as-time/)
+
 [How “Good Intent” Undermines Diversity and Inclusion](https://thebias.com/2017/09/26/how-good-intent-undermines-diversity-and-inclusion/)
 
 [How to Fix Your Tech Interview to Increase Diversity](https://www.diversifytech.co/blog/how-to-fix-tech-interview-to-increase-diversity)
