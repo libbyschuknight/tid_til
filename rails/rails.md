@@ -394,7 +394,15 @@ SELECT  "stances".* FROM "stances" WHERE (id > 7)  ORDER BY "stances"."id" ASC L
 "#<Stance id: 8, description: \"50/50, heels together, each foot at 45 degs\", created_at: \"2016-04-15 09:35:54\", updated_at: \"2016-04-15 09:35:54\", image_file_name: \"musubi.JPG\", image_content_type: \"image/jpeg\", image_file_size: 107624, image_updated_at: \"2016-04-15 09:35:54\", japanese_name: \"Musubi Dachi\", english_name: \"Open-toe stance\">"
 ```
 
-## FIND_OR_CREATE!!
+## find_or_create
+
+<https://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-find_or_create_by>
+
+>Finds the first record with the given attributes, or creates a record with the attributes if one is not found:
+
+<https://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-find_or_initialize_by>
+
+>Like find_or_create_by, but calls new instead of create.
 
 Don't forget about find or create when needing to return an object that may or may not already exist!!
 

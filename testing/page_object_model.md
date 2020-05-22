@@ -1,5 +1,9 @@
 # Page Object Model - POM
 
+[PageObject](https://martinfowler.com/bliki/PageObject.html)
+
+<https://github.com/SeleniumHQ/selenium/wiki/PageObjects>
+
 ## In Ruby
 
 [SitePrism](https://github.com/natritmeyer/site_prism)

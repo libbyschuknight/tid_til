@@ -75,6 +75,14 @@ split this file out into
 
 [Use of "guys" - twitter thread](https://twitter.com/samanthageitz/status/993967503901646848)
 
+<img src="guys-twitter-thread-1.png" alt="guys twitter thread" width="500"/>
+
+<img src="guys-twitter-thread-2.png" alt="guys twitter thread" width="500"/>
+
+[You Guys](https://www.xaprb.com/blog/you-guys/)
+
+[A step we can all take towards gender equality — banish these two words](https://medium.com/@victoria.maclennan/a-step-we-can-all-take-towards-gender-equality-banish-these-two-words-e08ae2212eed)
+
 [The art of developing resilience](https://medium.com/@victoria.maclennan/the-art-of-developing-resilience-12d643f100f7)
 
 [Calling Grown Women ‘Girls’ Is Sexist As Hell – Here Are 4 Reasons Why](https://everydayfeminism.com/2015/06/grown-women-are-not-girls/)
@@ -158,8 +166,6 @@ Sarah Mei: Diversity of Thought tweets:
 - <https://twitter.com/sarahmei/status/920311083264491520>
 
 [FOR WOMEN JOB SEEKERS, NETWORKING LIKE A MAN ISN'T ENOUGH](https://www.wired.com/story/women-leadership-job-networking/)
-
-[You Guys](https://www.xaprb.com/blog/you-guys/)
 
 [A step we can all take towards gender equality — banish these two words](https://medium.com/@victoria.maclennan/a-step-we-can-all-take-towards-gender-equality-banish-these-two-words-e08ae2212eed)
 

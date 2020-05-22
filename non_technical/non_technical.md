@@ -44,7 +44,9 @@ Asking for what you are worth
 
 [Advanced Pair Programming: Pairing Remotely](https://chelseatroy.com/2017/04/01/advanced-pair-programming-pairing-remotely/)
 
-[Tuple's Pair Programming Guide](https://tuple.app/pair-programming-guide/template)
+[Tuple's Pair Programming Guide](https://tuple.app/pair-programming-guide)
+
+ - [A Pairing Session Template](https://tuple.app/pair-programming-guide/template)
 
 ### Engineering Empathy
 

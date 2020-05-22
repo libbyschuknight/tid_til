@@ -255,6 +255,74 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 
 [All about RSpec let](https://medium.com/@tomkadwill/all-about-rspec-let-a3b642e08d39)
 
+Asked this in Ruby NZ Slack channel
+
+>Hey people! Hope the week is going well. I have a quesiton about RSpec (@jonrowe). I've been discussing with colleagues the use of let vs let! . I >lean towards trying not to use let! and instead using let's if needed and then evaluating it in a before block. I feel I have ended up having this >preference because of some pain with tests in the past where strange things seemed to be happening and we realised it was due to the use of a let! >(I can't remember anything specific about  this though) and also these tweets around that time were brought to my attention - <https://twitter.com/>penelope_zone/status/767850685329203200>
+>
+>RSpec advice:
+>don't use let!
+>use let and evaluate it in a before.
+>
+>it's really hard to visually differentiate let and let!. An evaluation in a before is really really obvious.
+>Keen to hear thoughts on others here. Thanks (edited)
+>
+>RSpec advice:
+>don't use let!
+>use let and evaluate it in a before.
+
+Some of the answers that were useful:
+
+>jemmyw
+>let! is evaluated immediately of course. Now I disagree with a blanket no use. When you understand what it does then it's fine to use. It's just >that it's use should be occasional. You require a value to be setup and another let or before block requires a side effect of that setup. Doesn't >come up often but if you have callbacks then it can
+>
+>And let! can do something that an evaluation in a before cannot... let you override in contexts
+
+Performance cost / scoping
+
+>RM
+>let! can come with a performance cost when it’s not scoped correctly in specs. If you’re using let! and not scoping it to only the specs that need >that object (e.g. in a describe or context block) then you may be inadvertently creating extra objects when they’re not needed, slowing down your >specs. If you’re declaring something with a let at the top of the file and then evaluating it as required, you can be a bit more intentional about >it. Personally I just like to sanity-check that I’ve scoped everything so that I’m creating the minimal number of objects per spec run, and think >about future-proofing, for when the next developer comes along and adds a spec to the file.
+>
+>Obviously you have the same problem if you’re using let with a before and not scoping it correctly, I think it’s just easier for it to slip under the radar with a let! ¯\_(ツ)_/¯
+
+
+>jemmyw
+>I agree. However, with before you have a different issue in that because you cannot override it, if you run a setup on too high a scope and need >another setup with a new before in the nested scope, you're doing the work twice
+>
+>jemmyw
+>but it's not something I've seen much, most specs are reasonably scoped regardless
+>
+>jemmyw
+>In my opinion it comes down to know and understand your specs and tools, rather than disallowing a built in like let! because you once or twice >made a mistake. You can make a mistake with anything. OTOH if a dev personally decides to avoid it and your code is still nice and clean then all >power to them
+
+Some thoughts from colleahues after reading the above
+
+>EP
+>Thanks for following up on that Libby!
+>
+>A couple of takeaways for me :
+>
+>`let!` is fine as long as it is close to where it is used (e.g. avoid them at the top of the file). If it's too far away, it is easy to miss and may cause headaches in the future
+>
+>`let!` is effectively a before block, so avoid mixing `let!` s and befores in the same scope. I.e. The order they run in isn't always the same as the >order you read them and may cause headaches in the future
+
+Also
+
+>From RSpec core lead
+>These are identical:
+
+>```ruby
+>let(:name) { do_thing }
+>before { do_thing }
+># or
+>let!(:name) { do_thing }
+>```
+>
+>The reasoning behind not using `let!` is its harder to see whats going on.
+>
+>Its not immediately executed, it is placed in a`before` scope, which means ordering can be subtly unexpected.
+>
+>For example there is a precedence order to hooks so its possible that say, a `before(:context)` thats declared after the `let!` will execute before the `let!`
+
 ### `subject()`
 
 <https://rspec.rubystyle.guide/#subject>
@@ -262,8 +330,6 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 <https://relishapp.com/rspec/rspec-core/v/3-9/docs/subject/explicit-subject>
 
 <http://www.betterspecs.org/#subject>
-
-
 
 ### Autoloading Error
 
@@ -297,6 +363,10 @@ Then were running this pass other devs, got from @Ootoovak
 > don't use let!
 >
 > use let and evaluate it in a before.
+
+> <https://twitter.com/penelope_zone/status/767850817156177920>
+>
+>it's really hard to visually differentiate let and let!. An evaluation in a before is really really obvious.
 
 So have done this:
 
