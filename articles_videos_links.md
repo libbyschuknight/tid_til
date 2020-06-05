@@ -173,7 +173,11 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The gender pay gap: a tale as old as time](https://www.brazen.world/2020/04/29/the-gender-pay-gap-a-tale-as-old-as-time/)
 
+[The Damage of Gender Stereotypes At a Young Age](https://blog.storypark.com/2016/09/damage-gender-stereotypes-young-age/)
+
 [How “Good Intent” Undermines Diversity and Inclusion](https://thebias.com/2017/09/26/how-good-intent-undermines-diversity-and-inclusion/)
+
+[How to improve gender equality in the workplace](https://www.xero.com/nz/resources/small-business-guides/business-management/gender-equality-workplace/)
 
 [How to Fix Your Tech Interview to Increase Diversity](https://www.diversifytech.co/blog/how-to-fix-tech-interview-to-increase-diversity)
 
@@ -192,6 +196,8 @@ Sarah Mei: Diversity of Thought tweets:
 > A modern dictionary about us. We define our words, but they don't define us.
 
 [Enough Leaning In. Let’s Tell Men to Lean Out.](https://www.nytimes.com/2019/10/10/opinion/sunday/feminism-lean-in.html) 📖
+
+[Equality Is Not Enough: What the Classroom Has Taught Me About Justice](https://everydayfeminism.com/2014/09/equality-is-not-enough/)
 
 ### Spotify model
 
@@ -212,6 +218,9 @@ Sarah Mei: Diversity of Thought tweets:
 > A worry junior engineers and new hires frequently have is that they ask too many questions.
 >
 > The most common advice I've heard is to try to figure it out yourself for 30 min, and if you're still stuck, ask. This is reasonable advice, but I don't think it's actually very good.
+
+> PSA: when you're building a diverse team, you're looking for culture _add_, not culture _fit_. Hire people who bring a perspective you don't yet have.
+> Twitter thread - <https://twitter.com/sarahmei/status/973918468729798659>
 
 [Learn faster! When and how to ask for help](https://codewithoutrules.com/2017/12/07/asking-for-help/)
 
