@@ -177,4 +177,8 @@ Evergreen Browser
 
 [Blacklisting vs. Whitelisting](https://consoltech.com/blog/blacklisting-vs-whitelisting/)
 
+>The blacklisting approach involves defining which entities should be blocked. A blacklist is a list of suspicious or malicious entities that should be denied access or running rights on a network or system.
+
+>Whitelisting tackles the same challenges as blacklisting but uses the opposite approach. Instead of creating a list of threats, you create a list of permitted entities and block everything else. It’s based on trust, and the default is to deny anything new unless it’s proven to be acceptable. This results in a much stricter approach to access control. It’s analogous to denying everyone access to your office building unless they can pass a background check and have the credentials to prove that they did.
+
 <https://stackoverflow.com/questions/1453285/what-is-whitelist-and-blacklist-data>

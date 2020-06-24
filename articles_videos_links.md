@@ -87,6 +87,8 @@ split this file out into
 
 [Calling Grown Women ‘Girls’ Is Sexist As Hell – Here Are 4 Reasons Why](https://everydayfeminism.com/2015/06/grown-women-are-not-girls/)
 
+["Girl" vs. “Woman": Why Language Matters || Mayim Bialik](https://www.youtube.com/watch?v=qHH3lhYwqcY&feature=youtu.be)
+
 [Tweet with image of "mansplaning](https://twitter.com/kimgoodwin/status/1020029572266438657?s=19)
 
 [How to Become a Better Software Developer: A Handbook on Personal Performance](https://www.7pace.com/blog/become-a-better-programmer-skills-development)

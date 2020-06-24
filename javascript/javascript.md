@@ -38,6 +38,8 @@
 
 [30 seconds of code: Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.](https://github.com/30-seconds/30-seconds-of-code#readme)
 
+[Robust Client-Side JavaScript](https://molily.de/robust-javascript/)
+
 <!-- different versions of JS -->
 
 ## JS Frameworks

@@ -280,7 +280,12 @@ Some of the answers that were useful:
 Performance cost / scoping
 
 >RM
->let! can come with a performance cost when it’s not scoped correctly in specs. If you’re using let! and not scoping it to only the specs that need >that object (e.g. in a describe or context block) then you may be inadvertently creating extra objects when they’re not needed, slowing down your >specs. If you’re declaring something with a let at the top of the file and then evaluating it as required, you can be a bit more intentional about >it. Personally I just like to sanity-check that I’ve scoped everything so that I’m creating the minimal number of objects per spec run, and think >about future-proofing, for when the next developer comes along and adds a spec to the file.
+>
+>let! can come with a performance cost when it’s not scoped correctly in specs. If you’re using let! and not scoping it to only the specs that need
+>that object (e.g. in a describe or context block) then you may be inadvertently creating extra objects when they’re not needed, slowing down your
+>specs. If you’re declaring something with a let at the top of the file and then evaluating it as required, you can be a bit more intentional about
+>it. Personally I just like to sanity-check that I’ve scoped everything so that I’m creating the minimal number of objects per spec run, and think
+>about future-proofing, for when the next developer comes along and adds a spec to the file.
 >
 >Obviously you have the same problem if you’re using let with a before and not scoping it correctly, I think it’s just easier for it to slip under the radar with a let! ¯\_(ツ)_/¯
 

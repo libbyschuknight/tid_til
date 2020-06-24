@@ -30,7 +30,7 @@ Thanks @ootoovak
 |PATCH   |Update/Modify   |405 (Method Not Allowed), unless you want to modify the collection itself   |200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid.   |
 |DELETE   |Delete   |405 (Method Not Allowed), unless you want to delete the whole collection—not often desirable.   |200 (OK). 404 (Not Found), if ID not found or invalid.   |
 
-From [Using HTTP Methods for RESTful Services](http://www.restapitutorial.com/lessons/httpmethods.html)
+From [Using HTTP Methods for RESTful Services](https://www.restapitutorial.com/lessons/httpmethods.html)
 
 ### HTTP Codes
 
