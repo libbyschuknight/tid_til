@@ -1,4 +1,4 @@
-# May 2020 Mistakes, Improvements, Learning and Stuff
+# May / June 2020 Mistakes, Improvements, Learning and Stuff
 
 ## Check the gem version used in the app you are working on
 

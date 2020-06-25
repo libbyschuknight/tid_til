@@ -95,6 +95,8 @@ split this file out into
 
 [Sharing the Data: How Technical Women Navigate Their Career](https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/)
 
+[Why women collaborating ‘isn’t a soft skill, it’s a superpower’](https://www.siliconrepublic.com/people/margaret-heffernan-women-business)
+
 [IF IT'S ALL THE SAME TO YOU, I'D RATHER BE WORKING.](https://www.3percentmovement.com/article/if-its-all-same-you-id-rather-be-working-rene-huey-lipton)
 
 [The Power Of A Grandmother | Hīria Te Rangi | TEDxWellington](https://www.youtube.com/watch?v=RHq1waE-qIY&feature=youtu.be&app=desktop) - video
