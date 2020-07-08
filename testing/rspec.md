@@ -304,7 +304,6 @@ end
 >- not introducing extra logic and state to handle the different states
 >- Resolve #1048
 
-
 ## JSON - format or as
 
 In controller tests, if use `format: :json`, as you are passing a hash, it will convert non strings to strings. This caused me issues when I had a validation happening where it was validating `true` and `false`, not `"true"` and `"false"`. I think the default is also `format: :json`.
@@ -354,3 +353,23 @@ But if you use `as: :json`, then it does pass it properly through as json.
   ]
 }
 ```
+
+## Skipping tests
+
+Learnt that you can do this
+
+```ruby
+describe "media paths", skip: "until we reintroduce profile_medium" do
+  it
+  it
+```
+
+And it will print out like:
+
+```text
+  media paths
+    returns default url if it doesn't (PENDING: until we reintroduce profile_medium)
+    returns a serialized media url if it has one (PENDING: until we reintroduce profile_medium)
+```
+
+Could be pretty handy.

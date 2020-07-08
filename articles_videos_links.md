@@ -468,6 +468,8 @@ My Wharenui
 
 [It's About Time (Zones)](https://robots.thoughtbot.com/its-about-time-zones)
 
+- [A summary of do’s and don'ts with time zones](https://thoughtbot.com/blog/its-about-time-zones#a-summary-of-do39s-and-don39ts-with-time-zones)
+
 [Working with dates on Ruby on Rails](https://nandovieira.com/working-with-dates-on-ruby-on-rails)
 
 ### YAML

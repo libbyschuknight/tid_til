@@ -16,6 +16,8 @@ ActiveRecord::Base.logger = Logger.new(STDOUT);
 
 [Making sense of ActiveRecord joins, includes, preload, and eager_load](http://blog.scoutapp.com/articles/2017/01/24/activerecord-includes-vs-joins-vs-preload-vs-eager_load-when-and-where)
 
+[A Visual Guide to Using :includes in Rails](https://engineering.gusto.com/a-visual-guide-to-using-includes-in-rails/)
+
 [Rails 4: List of available datatypes](https://stackoverflow.com/questions/17918117/rails-4-list-of-available-datatypes)
 
 [ignored_columns()](https://api.rubyonrails.org/classes/ActiveRecord/ModelSchema/ClassMethods.html#method-i-ignored_columns)
