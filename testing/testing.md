@@ -308,7 +308,8 @@ Some thoughts from colleahues after reading the above
 >
 >`let!` is fine as long as it is close to where it is used (e.g. avoid them at the top of the file). If it's too far away, it is easy to miss and may cause headaches in the future
 >
->`let!` is effectively a before block, so avoid mixing `let!` s and befores in the same scope. I.e. The order they run in isn't always the same as the >order you read them and may cause headaches in the future
+>`let!` is effectively a before block, so avoid mixing `let!` s and befores in the same scope. I.e. The order they run in isn't always the same as the
+>order you read them and may cause headaches in the future
 
 Also
 

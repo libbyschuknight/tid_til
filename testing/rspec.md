@@ -30,6 +30,13 @@
 
 e.g. `be rspec ./src/components/date_picker/v1_0/ruby/spec/view_helpers_spec.rb --example '#apl_date_picker_field_tag_v1_0'`
 
+### `--order` option
+
+<https://relishapp.com/rspec/rspec-core/docs/command-line/order>
+
+Use `--order defined` if want to run them in the actual order and not randomly
+
+
 ### Time
 
 Freeze time:
@@ -88,6 +95,17 @@ allow_any_instance_of(ThisHelper).to receive(:show_bananas?).and_return(true)
 ```
 
 Not sure if `allow_any_instance_of` is good to use.
+- no, not anymore - https://rubocop-rspec.readthedocs.io/en/latest/cops_rspec/#rspecanyinstance
+
+do something like this
+
+```ruby
+this_helper = instance_double(ThisHelper)
+allow(ThisHelper).to receive(:show_bananas?).and_return(true)
+
+# or if need it to return the class
+allow(ThisHelper).to receive(:later).and_return(this_helper)
+```
 
 ## [Aggregating Failures](https://relishapp.com/rspec/rspec-core/docs/expectation-framework-integration/aggregating-failures)
 
