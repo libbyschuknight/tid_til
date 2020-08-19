@@ -470,7 +470,7 @@ To get rid of a stash:
 
 `git stash clear` to remove all stashes
 
-Remove mutiple stashes but not all of them:
+Remove multiple stashes but not all of them:
 
 ```bash
 # for example - To delete all stashes older than stash@{19}:
@@ -830,5 +830,13 @@ Seemed to do the trick. Had asked in slack and another suggestion was:
 git prune --dry-run # to see what would be deleted
 
 # run this from time to time to delete all merged branches locally other than ones with master and prod in name
-git branch --merged | egrep -v "(^\*|master|prod)" | xargs git branch -D
+git branch --merged | egrep -v "(^\*|master|prod)" | xargs git branch -d # could do -D to force
+```
+
+## To delete all branches that are already merged into the currently checked out branch
+
+```bash
+kill_merged_branches() {
+  git branch --merged master | grep -v "\*" | xargs -n 1 git branch -d
+}
 ```

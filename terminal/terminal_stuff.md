@@ -25,7 +25,7 @@ HOSTNAME=192.168.1.19:3000
 LOCAL_IP=192.168.1.19
 ```
 
-Chatted with a collegue and have now added this to `.zshrc`:
+Chatted with a colleague and have now added this to `.zshrc`:
 
 ```zsh
 export LOCAL_IP=$(ipconfig getifaddr en0)
@@ -36,7 +36,6 @@ $ ipconfig getifaddr en0
 
 # gives us something like this
 > 192.168.1.19
-```
 ```
 
 ## md5

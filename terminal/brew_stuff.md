@@ -57,7 +57,7 @@ gdbm			icu4c			libtiff			pixman			tree
 
 ## What I have installed at work - Jan 2020
 
-After setting up new computer, with an company install script
+After setting up new computer, with a company install script
 
 ```bash
 autoconf		icu4c			little-cms2		redis

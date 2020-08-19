@@ -109,6 +109,8 @@ split this file out into
 
 [Developers mentoring other developers: practices I've seen work well](https://blog.pragmaticengineer.com/developers-mentoring-other-developers/)
 
+[Bullying at work: Advice for workers](https://worksafe.govt.nz/topic-and-industry/bullying/bullying-at-work-advice-for-workers/)
+
 ### Company focused links
 
 [Onboarding / Employee Handbooks](https://www.notion.so/Onboarding-Employee-Handbooks-138a98bd392a45da910d74b900300194)
@@ -202,6 +204,8 @@ Sarah Mei: Diversity of Thought tweets:
 [Enough Leaning In. Let’s Tell Men to Lean Out.](https://www.nytimes.com/2019/10/10/opinion/sunday/feminism-lean-in.html) 📖
 
 [Equality Is Not Enough: What the Classroom Has Taught Me About Justice](https://everydayfeminism.com/2014/09/equality-is-not-enough/)
+
+[The number one reason white men give for not getting involved with diversity and inclusion](https://qz.com/work/1889860/why-white-men-dont-get-involved-in-diversity-and-inclusion/)
 
 ### Spotify model
 

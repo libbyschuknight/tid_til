@@ -571,6 +571,17 @@ To get load the `structure.sql` run `rake db:structure:load`
 
 [How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
 
+#### Caching
+
+[Caching with Rails: An Overview](https://guides.rubyonrails.org/caching_with_rails.html#low-level-caching)
+
+```bash
+$ rails dev:cache
+Development mode is now being cached.
+$ rails dev:cache
+Development mode is no longer being cached.
+```
+
 #### Controllers
 
 [current_page?(options, check_parameters: false)](https://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-current_page)

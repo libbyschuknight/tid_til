@@ -1,5 +1,8 @@
 # Setting up your Development Environment - Ruby / Rails
 
+Useful guide = [macOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
+
+
 [Setup Ruby On Rails on macOS 10.12 XXX - A guide to setting up a Ruby on Rails development environment](https://gorails.com/setup/osx/)
 
 Has older macOS's.

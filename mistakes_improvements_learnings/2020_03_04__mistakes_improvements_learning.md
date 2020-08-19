@@ -99,7 +99,7 @@ Slack convo:
 >It's more complex with flipper because the state for it is stored in redis, which isn't unique across dev/test - It probably >wouldn't be hard to fix that though, you'd just add a namespace for the dev environment
 >
 >Colleague 1
->Local and test are separate—redis is not. Anything set in redis is kept between test runs and may be set during while you're >developing on your local
+>Local and test are separate — redis is not. Anything set in redis is kept between test runs and may be set during while you're >developing on your local
 
 ## Useful tips tricks from newsletters
 
