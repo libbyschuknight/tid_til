@@ -175,3 +175,38 @@ e.g.
 ```bash
 brew cask install <program>
 ```
+
+### chromedriver
+
+```bash
+brew cask install chromedriver
+```
+
+Was getting this error when trying to run a feature spec
+
+```bash
+Failures:
+
+  1) ChildRoutines loads
+     Failure/Error: visit routines_child_path(child.families_id)
+
+     Selenium::WebDriver::Error::SessionNotCreatedError:
+       session not created: This version of ChromeDriver only supports Chrome version 80
+         (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.15.4 x86_64)
+```
+
+Ran `brew cask install chromedriver`, said was installed and suggested re-installing:
+
+```bash
+>brew cask reinstall chromedriver
+
+==> Downloading https://chromedriver.storage.googleapis.com/84.0.4147.30/chromedriver_mac64.zip
+######################################################################## 100.0%
+==> Verifying SHA-256 checksum for Cask 'chromedriver'.
+==> Uninstalling Cask chromedriver
+==> Unlinking Binary '/usr/local/bin/chromedriver'.
+==> Purging files for version 80.0.3987.106 of Cask chromedriver
+==> Installing Cask chromedriver
+==> Linking Binary 'chromedriver' to '/usr/local/bin/chromedriver'.
+🍺  chromedriver was successfully installed!
+```

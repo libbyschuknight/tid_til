@@ -29,10 +29,10 @@ Faker::Time.between(DateTime.now - 1, DateTime.now)
 # 2020-05-12 11:42:13 +1200
 ```
 
-
 ## Migration issue with indexes
 
 Oh no! Just ran migrations and got this error
+
 ```bash
 == 20200701200149 AddUniqueIndexOnChildDailyRoutines: migrating ===============
 -- add_index("daily_routines", [:date, :centre_id, :child_id], {:using=>"btree", :unique=>true, :algorithm=>:concurrently})
@@ -49,6 +49,7 @@ Asked collegues, thought deleting DRs would help but not. This was then suggeste
 ER
 Hmm it might have partially applied,
 What's the output of:
+
 ```bash
 # run in rails console
 migrations = ActiveRecord::Base.connection.execute("SELECT * FROM schema_migrations")
@@ -64,6 +65,7 @@ Okay, so the migration hasn't run so we can't rollback
 ER
 Can you delete the index with the following:
 (run in rails console)
+
 ```bash
 ActiveRecord::Base.connection.execute("DROP INDEX IF EXISTS index_daily_routines_on_date_and_centre_id_and_child_id;")
 
