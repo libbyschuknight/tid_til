@@ -16,6 +16,8 @@
 
 [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
+[Learn JavaScript: The easiest way to learn & practice modern JavaScript step by step](https://learnjavascript.online/)
+
 [javascript-questions](https://github.com/lydiahallie/javascript-questions)
 
 > A long list of (advanced) JavaScript questions, and their explanations ✨ Updated weekly!
@@ -41,6 +43,14 @@
 [Robust Client-Side JavaScript](https://molily.de/robust-javascript/)
 
 <!-- different versions of JS -->
+
+## JS Basics
+
+[A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+
+[What is JavaScript doing on your page?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#What_is_JavaScript_doing_on_your_page)
+
+[How to handle event handling in JavaScript (examples and all)](https://www.freecodecamp.org/news/event-handling-in-javascript-with-examples-f6bc1e2fff57/)
 
 ## JS Frameworks
 

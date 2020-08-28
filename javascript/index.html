@@ -1,0 +1,31 @@
+<!-- https://www.freecodecamp.org/news/event-handling-in-javascript-with-examples-f6bc1e2fff57/ -->
+
+<html>
+
+<body>
+  <!-- <a href="https://google.com/">Google</a>
+
+  <script>
+    let link = document.querySelector("a"); // It is the method to access the first matched element
+    link.addEventListener("click", function (event) {
+      console.log("Redirecting Stopped");
+      event.preventDefault();
+    });
+  </script> -->
+
+  <p id="demo"> Hello Ho<button id="button12"> Button2 </button> </p>
+  <script>
+    // Event Listener on the Button and it's logic
+    document.getElementById("button12").addEventListener("mousedown", function (event) {
+      alert("button clicked");
+      if (event.button == 2) // Right Click
+        event.stopPropagation();
+    });
+    // Event Listener on the paragraph element with it's logic:
+    document.getElementById("demo").addEventListener("mousedown", function (event) {
+      alert("Paragraph clicked");
+    });
+  </script>
+</body>
+
+</html>

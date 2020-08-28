@@ -1,5 +1,9 @@
 # Git
 
+>git is a recipe of data transforms and tags are just pointers to commits
+Alex Q
+
+
 ## Useful Resources
 
 [Getting Started - atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - have come across this again and again and it has always been useful.

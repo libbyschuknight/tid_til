@@ -429,3 +429,8 @@ en:
 [Single table inheritance](https://api.rubyonrails.org/classes/ActiveRecord/Inheritance.html)
 
 ## [Single-table inheritance vs. polymorphic associations in Rails: find what works for you](https://www.freecodecamp.org/news/single-table-inheritance-vs-polymorphic-associations-in-rails-af3a07a204f2/)
+
+
+## size / count / length
+
+[ActiveRecord: size vs count vs length](https://blazarblogs.wordpress.com/2019/07/27/activerecord-size-vs-count-vs-length/)
