@@ -8,6 +8,8 @@
 
 [A Visual Explanation of SQL Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
+[SQL concepts from A to Z](https://helenanderson.co.nz/sql-concepts-from-a-to-z/)
+
 ## SQL Joins
 
 [Visual Representation of SQL Joins](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins)

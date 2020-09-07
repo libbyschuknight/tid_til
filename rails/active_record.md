@@ -430,7 +430,40 @@ en:
 
 ## [Single-table inheritance vs. polymorphic associations in Rails: find what works for you](https://www.freecodecamp.org/news/single-table-inheritance-vs-polymorphic-associations-in-rails-af3a07a204f2/)
 
-
 ## size / count / length
 
 [ActiveRecord: size vs count vs length](https://blazarblogs.wordpress.com/2019/07/27/activerecord-size-vs-count-vs-length/)
+
+[count vs length in Rails](https://medium.com/@craigsheen/count-vs-length-in-rails-4308e83f6292)
+
+`count` will always run a query
+
+`length` will only run the query the firs time
+
+`size` will decide which out of `count` and `length` to use
+
+[ActiveRecord count vs length vs size and what will happen if you use it the way you shouldn’t](https://medium.com/@mingca/activerecord-count-vs-length-vs-size-and-what-will-happen-if-you-use-it-the-way-you-shouldnt-2256ec0ab7e8)
+
+>Counts number of elements using SQL query (SELECT COUNT(*) FROM…)
+>
+>Returns length of a collecion without performing additional queries… as long as collection is loaded
+>
+>Combines abilities of both previous methods;
+
+<https://stackoverflow.com/questions/6083219/activerecord-size-vs-count/6083229#6083229>
+
+>Basically:
+>
+>- if you already load all entries, say User.all, then you should use length to avoid another db query
+>
+>- if you haven't anything loaded, use count to make a count query on your db
+>
+>- if you don't want to bother with these considerations, use size which will adapt
+
+[count vs length vs size](http://web.archive.org/web/20100210204319/http://blog.hasmanythrough.com/2008/2/27/count-length-size)
+
+>post.comments.count - Determine the number of elements with an SQL COUNT query. You can also specify conditions to count only a subset of the associated elements (e.g. :conditions => {:author_name => "josh"}). If you set up a counter cache on the association, #count will return that cached value instead of executing a new query.
+>
+>post.comments.length - This always loads the contents of the association into memory, then returns the number of elements loaded. Note that this won't force an update if the association had been previously loaded and then new comments were created through another way (e.g. Comment.create(...) instead of post.comments.create(...)).
+>
+>post.comments.size - This works as a combination of the two previous options. If the collection has already been loaded, it will return its length just like calling #length. If it hasn't been loaded yet, it's like calling #count.
