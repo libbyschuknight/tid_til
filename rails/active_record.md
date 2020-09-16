@@ -159,6 +159,8 @@ Plan.manually_assignable.pluck(:name, :customer_label, :manually_assignable, :av
     ],
 ```
 
+[Which one is faster between map, collect, select and pluck?](https://stackoverflow.com/questions/45347317/which-one-is-faster-between-map-collect-select-and-pluck/45347812#45347812)
+
 
 ## Joining Tables
 

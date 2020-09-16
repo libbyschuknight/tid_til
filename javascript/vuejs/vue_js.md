@@ -12,6 +12,12 @@
 
 <https://vuex.vuejs.org/guide/getters.html#the-mapgetters-helper>
 
+## Testing
+
+<https://vuejs.org/v2/guide/testing.html>
+
+
+
 ### Pluralization
 
 [Pluralization](https://kazupon.github.io/vue-i18n/guide/pluralization.html)

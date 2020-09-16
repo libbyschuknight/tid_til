@@ -1,4 +1,4 @@
-# May / June / July 2020 Mistakes, Improvements, Learning and Stuff
+# May / June / July / August / September 2020 Mistakes, Improvements, Learning and Stuff
 
 ## Check the gem version used in the app you are working on
 
@@ -75,3 +75,53 @@ ActiveRecord::Base.connection.execute("DROP INDEX IF EXISTS index_daily_routines
 ```
 
 Migration then worked!
+
+## `Errno::ECONNRESET: Connection reset by peer @ io_fillbuf` error
+
+Getting this locally. Due to how I run all my server things separately. See add link
+
+```bash
+[2020-09-07 16:37:13] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:38
+
+NotImplementedError (only partial hijack is supported.):
+rack (2.2.3) lib/rack/handler/webrick.rb:83:in `block in service'
+actioncable (5.2.2) lib/action_cable/connection/stream.rb:101:in `hijack_rack_socket'
+actioncable (5.2.2) lib/action_cable/connection/client_socket.rb:59:in `start_driver'
+
+...
+
+{"method":"GET","path":"/api/v3/children/2338406119233291491/daily_routines","format":"json","controller":"Api::V3::Children::DailyRoutinesController","action":"index","status":200,"duration":343.0,"view":13.06,"db":72.49,"conact":"Api::V3::Children::DailyRoutinesController#index","uid":12,"ip":"192.168.1.70","host":"Libbys-MacBook-Pro.local","pid":2293,"sql":90,"params":{"page_token":"undefined","format":"json","child_id":"2338406119233291491","daily_routine":{}},"session_id":"e1f515a1d4b8fe8858e61109b75247b8","speed":"33.01"}
+192.168.1.70 - - [09/Sep/2020:08:41:31 NZST] "GET /api/v3/children/2338406119233291491/daily_routines?page_token=undefined HTTP/1.1" 200 33089
+http://192.168.1.70:3000/children/2338406119233291491/routines -> /api/v3/children/2338406119233291491/daily_routines?page_token=undefined
+NotImplementedError (only partial hijack is supported.):
+rack (2.2.3) lib/rack/handler/webrick.rb:83:in `block in service'
+actioncable (5.2.2) lib/action_cable/connection/stream.rb:101:in `hijack_rack_socket'
+
+```
+
+We have a procfile to run everything locally with `foreman`.
+
+But `foreman` does not play nicely with `pry`.
+
+So I can all the processes in separate tabs and the server command is:
+
+```bash
+bin/spring stop && be rails s -b 0.0.0.0
+```
+
+Which means that:
+>Mathew
+>So that's not running passenger and whatever default server it's trying to run (I'm assuming thin) can't handle the websocket connection
+>
+>I think you ignore the error and continue using rails s which is probably more useful for using pry, or use passenger if >you don't want to see the error, and use something like better_errors instead of pry to debug
+>
+>Mathew Hartley  < 1 minute ago
+>Yes, planning#edit is the only area which uses action_cable/websockets (edited)
+
+So, currently just putting up with it and remembering to get of any `planning#edit` pages if I don't need to be looking at them.
+
+One day I will get around to looking at using `overmind` which may fix this issue.
+
+<https://github.com/DarthSim/overmind>
+
+<https://evilmartians.com/chronicles/introducing-overmind-and-hivemind>

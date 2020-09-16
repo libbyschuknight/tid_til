@@ -4,6 +4,7 @@
 
 <https://github.com/SeleniumHQ/selenium/wiki/PageObjects>
 
+
 ## In Ruby
 
 [SitePrism](https://github.com/natritmeyer/site_prism)
@@ -11,6 +12,8 @@
 >A Page Object Model DSL for Capybara
 >
 >SitePrism gives you a simple, clean and semantic DSL for describing your site using the Page Object Model pattern, for use with Capybara in automated acceptance testing.
+
+[System of a test II: Robust Rails browser testing with SitePrism](https://evilmartians.com/chronicles/system-of-a-test-2-robust-rails-browser-testing-with-siteprism)
 
 ## Old cuke steps to new cuke steps using POM
 

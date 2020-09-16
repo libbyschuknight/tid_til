@@ -369,9 +369,17 @@ create  vendor/extensions/katas/app/views/refinery/katas/katas/show.html.erb
 
 So, think it has worked add in plural in the inflections file.
 
-## HAML
+## HAML / ERB and back
 
-HAML converter to HTML - <https://haml2erb.org/>
+HAML converter to ERB/HTML
+
+ - <https://haml2erb.org/>
+
+HTML converter to HAML
+
+- <https://awsm-tools.com/code/html2haml>
+- <https://htmltohaml.com>
+
 
 ## Adding Next and Previous buttons to show pages
 
