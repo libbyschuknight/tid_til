@@ -207,6 +207,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [The number one reason white men give for not getting involved with diversity and inclusion](https://qz.com/work/1889860/why-white-men-dont-get-involved-in-diversity-and-inclusion/)
 
+[“I identify as an attack helicopter” and Other Fallacious Arguments](https://medium.com/@transphilosophr/i-identify-as-an-attack-helicopter-and-other-fallacious-arguments-561246b7151e)
+
 ### Spotify model
 
 [Spotify engineering culture (part 1)](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
