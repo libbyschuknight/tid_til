@@ -590,6 +590,10 @@ $ rails dev:cache
 Development mode is no longer being cached.
 ```
 
+[Mastering Low Level Caching in Rails](https://www.honeybadger.io/blog/rails-low-level-caching/)
+
+To clear the local development cache `Rails.cache.clear` in the console.
+
 #### Controllers
 
 [current_page?(options, check_parameters: false)](https://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-current_page)
@@ -648,6 +652,38 @@ At work we have a old admin pattern library layout and a new one. To use the new
 #### Routes
 
 <http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
+
+[5.1 Listing Existing Routes](https://guides.rubyonrails.org/routing.html#listing-existing-routes)
+
+`rails routes -g family`
+
+Rails 6 we can do this `rails routes --expanded`
+
+```bash
+--[ Route 1 ]----------------------------------------------------
+Prefix            | users
+Verb              | GET
+URI               | /users(.:format)
+Controller#Action | users#index
+--[ Route 2 ]----------------------------------------------------
+Prefix            |
+Verb              | POST
+URI               | /users(.:format)
+Controller#Action | users#create
+--[ Route 3 ]----------------------------------------------------
+Prefix            | new_user
+Verb              | GET
+URI               | /users/new(.:format)
+Controller#Action | users#new
+--[ Route 4 ]----------------------------------------------------
+Prefix            | edit_user
+Verb              | GET
+URI               | /users/:id/edit(.:format)
+Controller#Action | users#edit
+```
+
+[How To Search Rails Routes](https://www.natashatherobot.com/search-rails-routes/#)
+
 
 ##### Exploring Routes (optional) - from RailsBridge <http://docs.railsbridge.org/intro-to-rails/setting_the_default_page>
 
@@ -839,6 +875,8 @@ Hadn't paid enough attention to the above and came across concerns again and it 
 [Stop Worrying and Start Being Concerned: ActiveSupport Concerns](http://vaidehijoshi.github.io/blog/2015/10/13/stop-worrying-and-start-being-concerned-activesupport-concerns/)
 
 [Rails concerns](http://dmitrypol.github.io/rails/2016/10/29/rails-concerns.html)
+
+[Rails Concerns: To Concern Or Not To Concern](https://blog.appsignal.com/2020/09/16/rails-concers-to-concern-or-not-to-concern.html)
 
 ## Database Indexes
 

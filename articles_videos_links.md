@@ -111,6 +111,10 @@ split this file out into
 
 [Bullying at work: Advice for workers](https://worksafe.govt.nz/topic-and-industry/bullying/bullying-at-work-advice-for-workers/)
 
+[A Rubric for Evaluating Team Members’ Contributions to an Inclusive Culture](https://chelseatroy.com/2018/05/24/why-your-efforts-to-make-your-company-inclusive-arent-working/)
+
+[THIS IS WHAT’S MISSING FROM YOUR TALENT STRATEGY](https://fierceinc.com/blog/this-is-what-s-missing-from-your-talent-strategy/)
+
 ### Company focused links
 
 [Onboarding / Employee Handbooks](https://www.notion.so/Onboarding-Employee-Handbooks-138a98bd392a45da910d74b900300194)
@@ -538,6 +542,8 @@ Object Oriented design twitter threads:
 ### Other Stuff
 
 [Collections: Curated lists and insight into burgeoning industries, topics, and communities.](https://github.com/collections)
+
+<http://www.pahu.maori.nz/>
 
 ## List of Growth Frameworks
 

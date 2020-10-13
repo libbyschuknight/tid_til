@@ -109,7 +109,6 @@ The format is not yet decided. We can either have talks (with slides and all tha
 
 Was interesting learning about 'modules', which are basically Ruby 'gems', or very similar. 'Composer' is like 'bundler' in Ruby. Have better understanding of what SilverStripe is and what it is used for.
 
-
 ##### [Railsn00bs v13](http://www.meetup.com/WellingtonRailsn00bs/events/229809896/) - 2 April 2016
 > In the mood to learn something new? Andrew Kampjes will host a mini workshop on security for Ruby on Rails. In this interactive session, you'll get a chance to try your hand at making things more secure!
 

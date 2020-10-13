@@ -255,6 +255,8 @@ expect{ post :create, params }.to change{ Application.count }.by(1)
 
 [All about RSpec let](https://medium.com/@tomkadwill/all-about-rspec-let-a3b642e08d39)
 
+[The difference between let, let! and instance variables in RSpec](https://www.codewithjason.com/difference-let-let-instance-variables-rspec/)
+
 Asked this in Ruby NZ Slack channel
 
 >Hey people! Hope the week is going well. I have a quesiton about RSpec (@jonrowe). I've been discussing with colleagues the use of let vs let! . I >lean towards trying not to use let! and instead using let's if needed and then evaluating it in a before block. I feel I have ended up having this >preference because of some pain with tests in the past where strange things seemed to be happening and we realised it was due to the use of a let! >(I can't remember anything specific about  this though) and also these tweets around that time were brought to my attention - <https://twitter.com/>penelope_zone/status/767850685329203200>
@@ -299,7 +301,7 @@ Performance cost / scoping
 >jemmyw
 >In my opinion it comes down to know and understand your specs and tools, rather than disallowing a built in like let! because you once or twice >made a mistake. You can make a mistake with anything. OTOH if a dev personally decides to avoid it and your code is still nice and clean then all >power to them
 
-Some thoughts from colleahues after reading the above
+Some thoughts from colleagues after reading the above
 
 >EP
 >Thanks for following up on that Libby!
