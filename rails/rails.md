@@ -887,3 +887,20 @@ Hadn't paid enough attention to the above and came across concerns again and it 
 >A good way to think about indexes is to imagine them as the index section at the end of a book. If you want to find a word in a book, you can either read the whole book and find the word, or your can open the index section that contains a alphabetically sorted list of important words with a locator that points to the page that defines the word.
 
 [Increase Rails Performance with Database Indexes](https://www.rakeroutes.com/increase-rails-performance-with-database-indexes/)
+
+## Dates
+
+<https://api.rubyonrails.org/classes/Date.html>
+
+[Working with dates on Ruby on Rails](https://nandovieira.com/working-with-dates-on-ruby-on-rails)
+
+<https://api.rubyonrails.org/classes/Date.html#method-i-since>
+
+```bash
+> 5.months.from_now
+Tue, 06 Apr 2021 10:16:59 NZST +12:00
+
+# which is an alias for since
+> 5.months.since
+Tue, 06 Apr 2021 10:17:25 NZST +12:00
+```

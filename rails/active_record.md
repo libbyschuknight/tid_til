@@ -440,7 +440,7 @@ en:
 
 `count` will always run a query
 
-`length` will only run the query the firs time
+`length` will only run the query the first time and than return the length
 
 `size` will decide which out of `count` and `length` to use
 
@@ -448,7 +448,7 @@ en:
 
 >Counts number of elements using SQL query (SELECT COUNT(*) FROM…)
 >
->Returns length of a collecion without performing additional queries… as long as collection is loaded
+>Returns length of a collection without performing additional queries… as long as collection is loaded
 >
 >Combines abilities of both previous methods;
 

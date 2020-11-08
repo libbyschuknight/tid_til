@@ -532,7 +532,7 @@ ri File#each_line
 
 ## Patterns
 
-[Decorators, Presenters, Delegators and Rails](https://robertomurray.co.uk/blog/2014/decorators-presenters-delegators-rails/)
+~~[Decorators, Presenters, Delegators and Rails](https://robertomurray.co.uk/blog/2014/decorators-presenters-delegators-rails/)~~ - dead link 😢
 
 [Using SimpleDelegator for your Decorators](https://hashrocket.com/blog/posts/using-simpledelegator-for-your-decorators)
 
