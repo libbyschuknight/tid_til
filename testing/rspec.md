@@ -36,6 +36,17 @@ e.g. `be rspec ./src/components/date_picker/v1_0/ruby/spec/view_helpers_spec.rb 
 
 Use `--order defined` if want to run them in the actual order and not randomly
 
+>Example usage
+>The defined option is only necessary when you have --order rand stored in a
+>config file (e.g. .rspec) and you want to override it from the command line.
+>
+>```bash
+>--order defined
+>--order rand
+>--order rand:123
+>--seed 123 # same as --order rand:123
+>```
+
 
 ### Time
 
@@ -391,3 +402,33 @@ And it will print out like:
 ```
 
 Could be pretty handy.
+
+
+## [`contain_exactly` matcher](https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/contain-exactly-matcher)
+
+`match_array`
+
+
+>David Leach  12:09 PM
+>Hi, I noticed sometimes that the v3 notes controller spec fails because of ID ordering in the json response
+>12:10
+>Generally if there’s no ordering specified in a query the DB will return values in whatever order it sees fit. I just >wanted to check that this was an appropriate remedy to the spec
+
+```ruby
+it "returns linked posts" do
+  get :show, params: { id: note.id }
+  expect(json_response[:note][:linked_posts]).not_to be_empty
+  expect(json_response[:note][:linked_posts].pluck(:id).sort).to eq([linked_note.id.to_s, linked_story.id.to_s].sort)
+end
+```
+
+>Libby (she/her):duck-notification-none:  1:06 PM
+>“The contain_exactly matcher provides a way to test arrays against each other in a way
+>that disregards differences in the ordering between the actual and expected array.”
+>1:09
+><https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/contain-exactly-matcher>
+>`contain_exactly` matcher - Built in matchers - RSpec Expectations - RSpec - Relish
+
+
+>other places in our specs use include and don’t have the not to be empty expect, which could go green with an empty array >so that is what I have been trying to avoid. I wonder actaully if we used just match_array/contain_exactly if taht would >also fail it it was empty, I think so, so you could potenitally take out that first expect
+><https://relishapp.com/rspec/rspec-expectations/docs/built-in-matchers/contain-exactly-matcher#array-is-expected-to-contain-every-value> - yeah I think it would value if the array was empty.

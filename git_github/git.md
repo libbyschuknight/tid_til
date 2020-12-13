@@ -213,6 +213,16 @@ List branches by committer date instead of alphabetically:
 
 `git branch --sort=-committerdate`
 
+Search pattern:
+
+```bash
+git branch --list '*slow*'
+
+>  save-slow-10
+>* slow-10-story-info
+>  slow-6-story-view-content
+```
+
 ## git clean
 
 Quite often I have found that I have had to get rid of untracked files in git and have discovered that git clean is something that you can use.

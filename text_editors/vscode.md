@@ -70,3 +70,7 @@ ul.li*5
 `"workbench.list.automaticKeyboardNavigation": false` - have this as false
 
 [How to disable file filtering in VS Code Sidebar / Explorer?](https://superuser.com/questions/1417361/how-to-disable-file-filtering-in-vs-code-sidebar-explorer)
+
+## Useful extensions that haven't tried yet
+
+[Bust A Gem for VS Code](https://marketplace.visualstudio.com/items?itemName=gurgeous.bust-a-gem)

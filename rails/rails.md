@@ -904,3 +904,12 @@ Tue, 06 Apr 2021 10:16:59 NZST +12:00
 > 5.months.since
 Tue, 06 Apr 2021 10:17:25 NZST +12:00
 ```
+
+## Translation / Localization / Internationalisation / Pluralization
+
+[Ruby on Rails localization support (YAML, YML)](https://support.oneskyapp.com/hc/en-us/articles/206385418-Ruby-on-Rails-localization-support-YAML-YML-)
+
+
+[Ruby I18n](https://github.com/ruby-i18n/i18n)
+
+[i18n-tasks](https://github.com/glebm/i18n-tasks)

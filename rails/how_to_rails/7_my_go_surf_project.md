@@ -28,7 +28,6 @@ Now that I have the basic app set up I am going to aim to create new branches in
 This will be useful to play around with different things and also will mean that the master branch can stay "clean".
 Which means that if I make a big mistake in a branch, I still have a nice clean, up to date, working branch and it will also make it nicer and easier to deploy.
 
-
 ### Adding Seed Dump gem
 As this is going to be an app I am playing around with a lot, I don't want to have to keep entering data into the datebase.
 

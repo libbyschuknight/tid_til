@@ -628,6 +628,8 @@ e.g.
 >
 >Allows you to cache the result of `dosomething` so we don't run it every time foo is called
 
+[Speeding up Rails with Memoization](https://www.honeybadger.io/blog/ruby-rails-memoization/?utm_source=rubyweekly&utm_medium=email&utm_campaign=ruby)
+
 ## alias keyword and method
 
 [Alias in Ruby](https://medium.com/rubycademy/alias-in-ruby-bf89be245f69)

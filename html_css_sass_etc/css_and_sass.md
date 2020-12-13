@@ -78,6 +78,8 @@
 
 [12 CSS Flexbox tips & tricks which you need to know as a web developer](https://dev.to/duomly/12-flexbox-tips-tricks-which-you-need-to-know-as-a-web-developer-1bkg)
 
+[Flexbox - cheatsheet](https://flexbox.malven.co/)
+
 ## CSS-Tricks
 
 Good site, need to explore - <https://css-tricks.com/>

@@ -194,6 +194,8 @@ to stop building rdoc when you install gems or the bundle, you can add `gem: "--
 
 ## GEMS
 
+Gems that I have used or think could be useful to use.
+
 ### [Rubocop](https://rubygems.org/gems/rubocop/versions/0.67.2)
 
 See [linters/rubocop](../linters/rubocop.md)
@@ -238,3 +240,26 @@ See [linters/rubocop](../linters/rubocop.md)
 ### [pg_search](https://content.pivotal.io/blog/pg-search-how-i-learned-to-stop-worrying-and-love-postgresql-full-text-search)
 
 [pg_search: How I Learned to Stop Worrying and Love PostgreSQL full-text search](https://content.pivotal.io/blog/pg-search-how-i-learned-to-stop-worrying-and-love-postgresql-full-text-search)
+
+### [`seed_dump`](https://rubygems.org/gems/seed_dump/versions)
+
+You need to create the folder and files firsr
+
+```bash
+# rails console
+
+SeedDump.dump(Group, file: 'db/libs_data/groups.rb')
+SeedDump.dump(Centre, file: 'db/libs_data/centres.rb')
+SeedDump.dump(Child, file: 'db/libs_data/children.rb')
+SeedDump.dump(User, file: 'db/libs_data/users.rb')
+```
+
+### [seed-fu](https://rubygems.org/gems/seed-fu)
+
+Maybe an alternative to seed dump, have not tried this yet.
+
+### Internationalization and Localization
+
+[Ruby I18n](https://github.com/ruby-i18n/i18n)
+
+[i18n-tasks](https://github.com/glebm/i18n-tasks)
