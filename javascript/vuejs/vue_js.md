@@ -16,8 +16,6 @@
 
 <https://vuejs.org/v2/guide/testing.html>
 
-
-
 ### Pluralization
 
 [Pluralization](https://kazupon.github.io/vue-i18n/guide/pluralization.html)
@@ -48,3 +46,15 @@ community_post_card:
 - `props` - given by the parent component
   - > Props are custom attributes you can register on a component.
   - <https://vuejs.org/v2/guide/components.html#Passing-Data-to-Child-Components-with-Props>
+
+
+## CSS Styles etc in Vue
+
+[Scoped CSS](https://vue-loader.vuejs.org/guide/scoped-css.html#scoped-css)
+
+
+[Deep Selectors](https://vue-loader.vuejs.org/guide/scoped-css.html#child-component-root-elements)
+
+What does `>>>` do?
+
+>If you want a selector in scoped styles to be "deep", i.e. affecting child components, you can use the `>>>`  combinator:

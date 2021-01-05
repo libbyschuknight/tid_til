@@ -74,3 +74,15 @@ ul.li*5
 ## Useful extensions that haven't tried yet
 
 [Bust A Gem for VS Code](https://marketplace.visualstudio.com/items?itemName=gurgeous.bust-a-gem)
+
+## Settings
+
+Showing hidden files, some are excluded in vscode.
+
+>go to file -> preferences -> settings
+>
+>and in the search bar, search for "files.exclude"
+>
+>then delete whatever json setting that you don't want to hide that specific file
+
+I did this and deleted `./git` which was on this list and now I get to see that in the explorer panel in VScode.
