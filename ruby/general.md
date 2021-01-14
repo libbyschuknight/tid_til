@@ -353,6 +353,13 @@ def valid?
 end
 ```
 
+[Truthy and Falsy values](https://riptutorial.com/ruby/example/2092/truthy-and-falsy-values)
+
+>In Ruby, there are exactly two values which are considered "falsy", and will return false when tested as a condition for an if >expression. They are:
+>
+>`nil`
+>boolean `false`
+
 ## Hashes
 
 ### Change a Hash but keep original Hash

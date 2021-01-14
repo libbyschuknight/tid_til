@@ -747,6 +747,8 @@ Had issue with using the zsh command `gcmsg`, which is `git commit -v`, it would
 Quick searched showed I needed to set the config to wait:
 `git config --global core.editor "atom --wait"`
 
+`git config --global core.editor "code --wait"` for VSCode
+
 Now, working all good!
 
 ## `git push --force or --force-with-lease`

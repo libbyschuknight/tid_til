@@ -231,7 +231,11 @@ See [linters/rubocop](../linters/rubocop.md)
 +--------+---------------------------------+--------------+------------------+
 ```
 
-### [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers)
+### Serializers
+
+TODO: add blueprinter
+
+[ActiveModelSerializers](https://github.com/rails-api/active_model_serializers)
 
 [JSON Serialization in Rails: A Complete Guide](https://buttercms.com/blog/json-serialization-in-rails-a-complete-guide)
 

@@ -52,6 +52,26 @@
 
 [How to handle event handling in JavaScript (examples and all)](https://www.freecodecamp.org/news/event-handling-in-javascript-with-examples-f6bc1e2fff57/)
 
+[Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+
+>A falsy (sometimes written falsey) value is a value that is considered false when encountered in a Boolean context.
+
+I came across this in a code review...
+
+```js
+{
+  visible: this.contributorItems.length,
+},
+```
+
+...and knew that `visible` should be `true` or `false`, so was confused about why this was not
+
+```js
+  visible: this.contributorItems.length === 0
+```
+
+It is because `0` is a falsy value in JS. Unlike Ruby.
+
 ## JS not Basics
 
 [Javascript - Currying VS Partial Application](https://towardsdatascience.com/javascript-currying-vs-partial-application-4db5b2442be8)
