@@ -1,15 +1,14 @@
 # Rubocop
 
-https://github.com/rubocop-hq/rubocop
+<https://github.com/rubocop-hq/rubocop>
 
->RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide.
+> RuboCop is a Ruby static code analyzer (a.k.a. linter) and code formatter. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide.
 
 ## Style/HashSyntax
 
 Deciding to use the new syntax for hashes:
 
-https://rubocop.readthedocs.io/en/latest/cops_style/#stylehashsyntax
-
+<https://rubocop.readthedocs.io/en/latest/cops_style/#stylehashsyntax>
 
 ## Different ways to disable cops
 

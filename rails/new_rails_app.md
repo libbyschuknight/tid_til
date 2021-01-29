@@ -1,6 +1,5 @@
 # Creating a New Rails app
 
-
 ## 2019
 
 ### Ruby, Rails, DB, github
@@ -108,7 +107,22 @@ There maybe other things around users and permissions that need to be done with 
 
 `rails server` - and yay it works!!
 
-## OLD
+## Create Rails API app
+
+[Rails API Tutorial, Part 1: Creating Rails API Project and Routing](https://tomkadwill.com/rails-api-tutorial-part-1-create-rails-api-project-and-routing)
+
+- look slike a good tutorial series, it has notes as well as videos
+- this time I am going to aim to create my own app alongside his one, as in follow and do what he is going but also make my own thing
+
+See here for my notes -
+
+Create new API app with `postgresql` database:
+
+```bash
+rails new nile --api --database=postgresql
+```
+
+## OLD - 2017
 
 The steps I follow to create a new rails app - from <https://github.com/roa-2015/shopping_cart_example> (private repo)
 
@@ -138,9 +152,10 @@ git add -A
 git commit -m "first commit message"
 ```
 
-Got to github or gitlab and create a online repo for your `existing Git repository`,  follow instructions for adding remote to local:
+Got to github or gitlab and create a online repo for your `existing Git repository`, follow instructions for adding remote to local:
 
 gitlab example
+
 ```
 cd existing_repo
 git remote add origin git@git.fluxfederation.com:libby/<app_name>.git
@@ -159,6 +174,7 @@ Add rspec-rails to both the :development and :test groups in the Gemfile:
     gem 'rspec-rails' # go to rubygems to get most up to date version number
   end
 ```
+
 Run:
 
 `bundle install`
@@ -168,7 +184,6 @@ Initialize spec/ dir...
 `rails generate rspec:install`
 
 Use rspec to run commands... `rspec` or `bundle exec rspec`
-
 
 Add cucumber (https://cucumber.io/docs/reference/rails)
 
@@ -195,11 +210,11 @@ gem 'pry-rails', '~> 0.3.6'
 gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2' # rails 5 up
 ```
 
------
+---
 
 Remove Turbolinks (Rails 4?)
-  http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4
-  http://blog.flightswithfriends.com/post/53943440505/how-to-disable-turbolinks-in-rails-4
+http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4
+http://blog.flightswithfriends.com/post/53943440505/how-to-disable-turbolinks-in-rails-4
 
 Generate models, controllers, views etc.
 You can do each individually or use `resource` which will generate models and controllers
@@ -244,9 +259,12 @@ As you build up routes you can see them all with `rake routes`.
 
 REMEMBER to run:
 ```
+
 rake db:mirgrate
 rake db:seed
+
 ```
 
 And prepare you test db:
 `rake db:test:prepare`
+```
