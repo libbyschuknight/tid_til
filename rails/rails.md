@@ -26,11 +26,15 @@
 
 [Rails 6: the missing developer setup guide](https://dev.to/vvo/a-rails-6-setup-guide-for-2019-and-2020-hf5)
 
+[6 Things to Do When Inheriting Legacy Rails Apps](https://nextlinklabs.com/insights/six-tips-for-inheriting-a-legacy-rails-app)
+
+[Most Common Types of Technical Debt in Rails](https://nextlinklabs.com/insights/most-common-technical-debt-in-rails-projects)
+
 ### Controller
 
 [Action Controller Parameters](https://api.rubyonrails.org/classes/ActionController/Parameters.html)
 
-- [permit(*filters)](https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-permit)
+- [permit(\*filters)](https://api.rubyonrails.org/classes/ActionController/Parameters.html#method-i-permit)
 
 ## Upgrade
 
@@ -262,17 +266,15 @@ Otherwise the schema will be incorrect / out of sync and could cause bad 😱 th
 
 Also `rails db:migrate:redo VERSION=20200505023059`
 
->The db:migrate:redo command is a shortcut for doing a rollback and then migrating back up again.
+> The db:migrate:redo command is a shortcut for doing a rollback and then migrating back up again.
 
 and
 
 <https://guides.rubyonrails.org/active_record_migrations.html#running-specific-migrations>
 
->If you need to run a specific migration up or down, the db:migrate:up and db:migrate:down commands will do that. >Just specify the appropriate version and the corresponding migration will have its change, up or down method >invoked, for example:
+> If you need to run a specific migration up or down, the db:migrate:up and db:migrate:down commands will do that. >Just specify the appropriate version and the corresponding migration will have its change, up or down method >invoked, for example:
 >
->`$ rails db:migrate:up VERSION=20080906120000`
-
-
+> `$ rails db:migrate:up VERSION=20080906120000`
 
 ## Column Types
 
@@ -373,13 +375,12 @@ So, think it has worked add in plural in the inflections file.
 
 HAML converter to ERB/HTML
 
- - <https://haml2erb.org/>
+- <https://haml2erb.org/>
 
 HTML converter to HAML
 
 - <https://awsm-tools.com/code/html2haml>
 - <https://htmltohaml.com>
-
 
 ## Adding Next and Previous buttons to show pages
 
@@ -406,11 +407,11 @@ SELECT  "stances".* FROM "stances" WHERE (id > 7)  ORDER BY "stances"."id" ASC L
 
 <https://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-find_or_create_by>
 
->Finds the first record with the given attributes, or creates a record with the attributes if one is not found:
+> Finds the first record with the given attributes, or creates a record with the attributes if one is not found:
 
 <https://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-find_or_initialize_by>
 
->Like find_or_create_by, but calls new instead of create.
+> Like find_or_create_by, but calls new instead of create.
 
 Don't forget about find or create when needing to return an object that may or may not already exist!!
 
@@ -635,11 +636,11 @@ Add debug to view:
 
 <https://api.rubyonrails.org/classes/ActionView/Base.html>
 
->The local variables passed to sub templates can be accessed as a hash using the local_assigns hash. This lets you access the variables as:
+> The local variables passed to sub templates can be accessed as a hash using the local_assigns hash. This lets you access the variables as:
 >
->`Headline: <%= local_assigns[:headline] %>`
+> `Headline: <%= local_assigns[:headline] %>`
 >
->This is useful in cases where you aren't sure if the local variable has been assigned. Alternatively, you could also use defined? headline to first check if the variable has been assigned before using it.
+> This is useful in cases where you aren't sure if the local variable has been assigned. Alternatively, you could also use defined? headline to first check if the variable has been assigned before using it.
 
 ##### Layouts
 
@@ -683,7 +684,6 @@ Controller#Action | users#edit
 ```
 
 [How To Search Rails Routes](https://www.natashatherobot.com/search-rails-routes/#)
-
 
 ##### Exploring Routes (optional) - from RailsBridge <http://docs.railsbridge.org/intro-to-rails/setting_the_default_page>
 
@@ -884,7 +884,7 @@ Hadn't paid enough attention to the above and came across concerns again and it 
 
 [Faster Rails: Is Your Database Properly Indexed?](https://semaphoreci.com/blog/2017/05/09/faster-rails-is-your-database-properly-indexed.html)
 
->A good way to think about indexes is to imagine them as the index section at the end of a book. If you want to find a word in a book, you can either read the whole book and find the word, or your can open the index section that contains a alphabetically sorted list of important words with a locator that points to the page that defines the word.
+> A good way to think about indexes is to imagine them as the index section at the end of a book. If you want to find a word in a book, you can either read the whole book and find the word, or your can open the index section that contains a alphabetically sorted list of important words with a locator that points to the page that defines the word.
 
 [Increase Rails Performance with Database Indexes](https://www.rakeroutes.com/increase-rails-performance-with-database-indexes/)
 
@@ -908,7 +908,6 @@ Tue, 06 Apr 2021 10:17:25 NZST +12:00
 ## Translation / Localization / Internationalisation / Pluralization
 
 [Ruby on Rails localization support (YAML, YML)](https://support.oneskyapp.com/hc/en-us/articles/206385418-Ruby-on-Rails-localization-support-YAML-YML-)
-
 
 [Ruby I18n](https://github.com/ruby-i18n/i18n)
 
