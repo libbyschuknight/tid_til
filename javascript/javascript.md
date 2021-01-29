@@ -44,7 +44,6 @@
 
 <!-- different versions of JS -->
 
-
 ## JS Basics
 
 [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
@@ -52,6 +51,10 @@
 [What is JavaScript doing on your page?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#What_is_JavaScript_doing_on_your_page)
 
 [How to handle event handling in JavaScript (examples and all)](https://www.freecodecamp.org/news/event-handling-in-javascript-with-examples-f6bc1e2fff57/)
+
+## JS not Basics
+
+[Javascript - Currying VS Partial Application](https://towardsdatascience.com/javascript-currying-vs-partial-application-4db5b2442be8)
 
 ## JS Frameworks
 
