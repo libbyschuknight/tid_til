@@ -177,6 +177,10 @@ to
 
 ```ruby
 state_paths.to_states.map(&:to_s)
+
+# another example
+artwork: user.purchased_artwork_pack_ids.map! { |id| id.to_s }
+artwork: user.purchased_artwork_pack_ids.map(&:to_s)
 ```
 
 [How Does Symbol#to_proc Work?](http://benjamintan.io/blog/2015/03/16/how-does-symbol-to_proc-work/)

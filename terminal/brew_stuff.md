@@ -197,6 +197,8 @@ Failures:
          (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Mac OS X 10.15.4 x86_64)
 ```
 
+
+OLD
 Ran `brew cask install chromedriver`, said was installed and suggested re-installing:
 
 ```bash
@@ -212,3 +214,42 @@ Ran `brew cask install chromedriver`, said was installed and suggested re-instal
 ==> Linking Binary 'chromedriver' to '/usr/local/bin/chromedriver'.
 🍺  chromedriver was successfully installed!
 ```
+
+**27 Jan 2021**
+
+Similar error
+
+```bash
+ 2) Registration with sign up forms creates a new centre on educator signup
+     Failure/Error: visit "/signup?educator_signup=true"
+
+     Selenium::WebDriver::Error::SessionNotCreatedError:
+       session not created: This version of ChromeDriver only supports Chrome version 86
+       Current browser version is 88.0.4324.96 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+         (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Mac OS X 11.0.0 x86_64)
+```
+
+Tried the above and `brew cask reinstall chromedriver` is an outdated way of doing it.
+
+```bash
+brew install --cask chromedriver
+
+Error:
+  homebrew-core is a shallow clone.
+  homebrew-cask is a shallow clone.
+To `brew update`, first run:
+  git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core fetch --unshallow
+  git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
+This restriction has been made on GitHub's request because updating shallow
+clones is an extremely expensive operation due to the tree layout and traffic of
+Homebrew/homebrew-core and Homebrew/homebrew-cask. We don't do this for you
+automatically to avoid repeatedly performing an expensive unshallow operation in
+CI systems (which should instead be fixed to not use shallow clones). Sorry for
+the inconvenience!
+Warning: Cask 'chromedriver' is already installed.
+
+To re-install chromedriver, run:
+  brew reinstall chromedriver
+```
+
+Run `brew reinstall chromedriver` next time

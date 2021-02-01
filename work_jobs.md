@@ -4,6 +4,8 @@
 
 [The elephant in the room: when to talk money in an interview](https://www.seek.co.nz/career-advice/addressing-the-elephant-in-the-room-how-and-when-to-talk-money-in-an-interview?tracking=PSM-TWR-SOP-VSPSep19CA-SAT2111ST-21321&utm_campaign=SocialAlwaysOn&utm_source=Twitter&utm_medium=PaidSocialMedia&utm_content=VisitshareP)
 
+[The 40 Best Questions to Ask in an Interview — How to Go Deeper Than “What’s the Culture Like?”](https://firstround.com/review/the-40-best-questions-to-ask-in-an-interview-how-to-go-deeper-than-whats-the-culture-like/)
+
 ## Remote work
 
 [list of remote dev/tech companies](https://twitter.com/joshbuchea/status/1152659632550060032?s=03) - tweet

@@ -42,6 +42,12 @@
 
 [Robust Client-Side JavaScript](https://molily.de/robust-javascript/)
 
+[13 JavaScript One-Liners That’ll Make You Look Like a Pro](https://medium.com/dailyjs/13-javascript-one-liners-thatll-make-you-look-like-a-pro-29a27b6f51cb)
+
+[10 Clean code examples (Javascript).](https://dev.to/redbossrabbit/10-clean-code-examples-javascript-37kj)
+
+[How to ace your next Javascript interview](https://browntreelabs.com/how-to-ace-your-next-javascript-interview/)
+
 <!-- different versions of JS -->
 
 ## JS Basics
@@ -280,6 +286,19 @@ a.length; // 101
 > a
 <- (101) ["dog", "cat", "hen", empty × 97, "fox"]
 ```
+
+[Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+```javascript
+const ids = this.story.children.map(child => child.id);
+console.log(ids);
+
+0: "2328937611080500280"
+1: "2343481106612880686"
+2: "2328937588095714314"
+3: "2343478397612590381"
+```
+
 
 #### Functions
 

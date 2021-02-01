@@ -309,6 +309,9 @@ My Wharenui
 
 [Planning a career move in Tech](https://medium.com/swlh/planning-a-career-move-in-tech-a7c75d7569b)
 
+[The 40 Best Questions to Ask in an Interview — How to Go Deeper Than “What’s the Culture Like?”](https://firstround.com/review/the-40-best-questions-to-ask-in-an-interview-how-to-go-deeper-than-whats-the-culture-like/)
+
+
 <!--  -->
 
 > The question to ask yourself here is…

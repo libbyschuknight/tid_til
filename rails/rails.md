@@ -26,6 +26,8 @@
 
 [Rails 6: the missing developer setup guide](https://dev.to/vvo/a-rails-6-setup-guide-for-2019-and-2020-hf5)
 
+[Most Common Types of Technical Debt in Rails](https://nextlinklabs.com/insights/most-common-technical-debt-in-rails-projects)
+
 ### Controller
 
 [Action Controller Parameters](https://api.rubyonrails.org/classes/ActionController/Parameters.html)

@@ -47,6 +47,55 @@ community_post_card:
   - > Props are custom attributes you can register on a component.
   - <https://vuejs.org/v2/guide/components.html#Passing-Data-to-Child-Components-with-Props>
 
+## Computed vs Methods
+
+[The difference between COMPUTED and METHODS in Vue.js](https://medium.com/notonlycss/the-difference-between-computed-and-methods-in-vue-js-9cb05c59ed98#:~:text=methods%20don't%20know%20if,everytime%20to%20check%2C%20only%20once!)
+
+>- methods don’t know if the values used in the function changed so they need to run everytime to check.
+>
+>- computed properties know if the values used in the function changed so they don’t need to run everytime to check, only once!
+
+[The Difference Between Computed Properties, Methods and Watchers in Vue](https://www.sitepoint.com/the-difference-between-computed-properties-methods-and-watchers-in-vue/)
+
+## Slots
+
+<https://vuejs.org/v2/guide/components-slots.html>
+
+Code review comment from colleague:
+
+>if you don't include a name it's called the "default" slot and it will use the contents of the element. In this case, >anything that goes
+>
+>```js
+><Layout>
+>  ... here ...
+></Layout>
+>```
+>
+>will be in that default slot. The named ones need to have their own template elements, so in this case with the sidebar as >well it would look like:
+>
+>```js
+><Layout>
+>   ... main slot stuff ...
+>
+>  <template v-slot:sidebar>
+>    ... sidebar slot stuff ...
+>  </template>
+></Layout>
+>```
+>
+>Which is really just a shorthand way of writing this, I think:
+>
+>```js
+><Layout>
+>  <template v-slot:default>
+>    ... main slot stuff ...
+>  </template>
+>
+>  <template v-slot:sidebar>
+>    ... sidebar slot stuff ...
+>  </template>
+></Layout>
+>```
 
 ## CSS Styles etc in Vue
 

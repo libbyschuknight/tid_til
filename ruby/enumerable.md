@@ -54,6 +54,8 @@ get an array of `started_at` values
 
 ## map
 
+<https://ruby-doc.org/core-2.6.6/Enumerable.html#method-i-map>
+
 [Ruby : Choosing between each, map, inject, each_with_index and each_with_object](https://stackoverflow.com/questions/40469476/ruby-choosing-between-each-map-inject-each-with-index-and-each-with-object/40469887#40469887)
 
 >A more tl;dr answer:
@@ -83,7 +85,6 @@ get an array of `started_at` values
 More detailed answer
 
 <https://stackoverflow.com/questions/40469476/ruby-choosing-between-each-map-inject-each-with-index-and-each-with-object/40469477#40469477>
-
 
 Own example that lead to looking at this in more detail.
 
@@ -116,6 +117,39 @@ def memberships_or_children_groups(user)
 end
 ```
 
+## `compact`
+
+<https://ruby-doc.org/core-2.6.6/Array.html#method-i-compact>
+
+Used `compact` with `map` to get rid of `nil`'s.
+
+```ruby
+story.links.map do |link|
+  link if current_user.can? :view, link
+end.compact
+```
+
+This was due to different users being able to view different links that have been returned. And when a user doesn't have permission to view one, the `map` will then return `nil` in the array.
+
+See `select`
+
+## `select`
+
+<https://ruby-doc.org/core-2.6.6/Array.html#method-i-select>
+
+<https://ruby-doc.org/core-2.6.6/Enumerable.html#method-i-select>
+
+Further to the use of `map` and `compact` under the `compact` section, colleague pointed out that if you use `select` instead of `map` with `compact`, which will also get read of `nil` elements in the array.
+
+```ruby
+story.links.select do |link|
+  link if current_user.can? :view, link
+end
+
+# or even one line
+story.links.select { |link| link if current_user.can? :view, link }
+```
+
 ## Get min and max number from an array
 
 ```ruby
@@ -145,6 +179,6 @@ ActiveSupport also has `transform_values` and `transform_keys`
 { a: 1, b: 2, c: 3 }.transform_values { |x| x * 2 } # => { a: 2, b: 4, c: 6 }
 ```
 
-https://apidock.com/rails/v4.2.7/Hash/transform_values
+<https://apidock.com/rails/v4.2.7/Hash/transform_values>
 
-https://apidock.com/rails/v4.2.7/Hash/transform_keys
+<https://apidock.com/rails/v4.2.7/Hash/transform_keys>

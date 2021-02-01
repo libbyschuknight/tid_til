@@ -69,3 +69,5 @@ guesses = Guess.includes(:game)
 <https://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html#method-i-eager_load>
 
 ## Questions from Me / Interviewee
+
+[The 40 Best Questions to Ask in an Interview — How to Go Deeper Than “What’s the Culture Like?”](https://firstround.com/review/the-40-best-questions-to-ask-in-an-interview-how-to-go-deeper-than-whats-the-culture-like/)

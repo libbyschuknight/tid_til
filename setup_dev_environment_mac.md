@@ -1,7 +1,12 @@
 # Setting up your Development Environment - Ruby / Rails
 
-Useful guide = [macOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
+Useful for the future:
 
+[Install Ruby on Rails 6.1 · macOS Big Sur or Catalina](https://learn-rails.com/install-rails-mac/index.html)
+
+[Install Ruby 3.0 · macOS Big Sur or Catalina](https://mac.install.guide/ruby/index.html)
+
+Useful guide = [macOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
 
 [Setup Ruby On Rails on macOS 10.12 XXX - A guide to setting up a Ruby on Rails development environment](https://gorails.com/setup/osx/)
 
