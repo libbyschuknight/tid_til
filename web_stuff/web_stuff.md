@@ -29,6 +29,13 @@
 
 [The Web I Want](https://dev.to/quii/the-web-i-want-43o)
 
+[CLIENT-SIDE VS. SERVER-SIDE](https://skillcrush.com/blog/client-side-vs-server-side/)
+
+>Client-side means that the action takes place on the user’s (the client’s) computer. Server-side means that the >action takes place on a web server.
+>...
+>The difference between client-side vs. server-side, and frontend vs. backend programming is really a difference >in semantics. Client-side vs. server-side describes where the action takes place (literally on your computer vs. >a server). Frontend vs. backend refers to what kind of action is taking place (the kind the user sees vs. the >kind a user does not).
+
+
 ## JSON
 
 [JSON Schema](https://json-schema.org/)

@@ -3,7 +3,6 @@
 >git is a recipe of data transforms and tags are just pointers to commits
 Alex Q
 
-
 ## Useful Resources
 
 [Getting Started - atlassian](https://www.atlassian.com/git/tutorials/setting-up-a-repository) - have come across this again and again and it has always been useful.
@@ -323,7 +322,7 @@ Another suggestion:
 git branch --merged | egrep -v "(^\*|master|prod)" | xargs git branch -D
 ```
 
-### fetch /checkout
+## fetch /checkout
 
 ```bash
 git fetch --tags
@@ -331,7 +330,7 @@ git fetch --tags
 git checkout <tag_number>
 ```
 
-### remotes
+## remotes
 
 Check what what remotes are on a repo:
 
@@ -339,7 +338,7 @@ Check what what remotes are on a repo:
 
 - `git branch -r` => just shows remotes
 
-### `git add <file1> <file2>`
+## `git add <file1> <file2>`
 
 I'm not sure why it has taken me a long time to click onto this, it maybe because I have always added EVERYTHING before adding, committing and pushing. Which has gotten me into some tricky spots!
 So,
@@ -361,7 +360,7 @@ I had better start using `ga` (shortcut for `git add`) when wanting to not add a
 
 UPPATE to this is that I am now using the Git / Github integration with Atom <https://github.atom.io/,> which is great and makes it much easier I think to stage files and parts of files.
 
-### Checking out a branches `tag` / version
+## Checking out a branches `tag` / version
 
 ```bash
 git checkout 4.4.0
@@ -395,7 +394,7 @@ Apply anything you have stashed - `git stash apply`
 
 (see [Gem Stuff](gems/gem_stuff.md) for example of when used)
 
-### `git log` plus variations
+## `git log` plus variations
 
 I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) and `zsh` instead of `bash`.
 I use the [cheatsheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet) as well, which has [a lot of `git`](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet#git) aliases set up.
@@ -443,9 +442,9 @@ git shortlog -s
 # ...
 ```
 
-### git stash
+## git stash
 
-#### name
+### name
 
 Add a name when you are stashing:
 
@@ -453,7 +452,7 @@ Add a name when you are stashing:
 git stash save useful name here
 ```
 
-#### show / view
+### show / view
 
 how to see what you have stashed
 
@@ -465,7 +464,7 @@ git stash show -p stash@{3}
 
 <http://stackoverflow.com/questions/3573623/is-it-possible-to-preview-stash-contents-in-git>
 
-#### apply / pop
+### apply / pop
 
 And then to put back into the branch the stash you want:
 
@@ -473,7 +472,7 @@ And then to put back into the branch the stash you want:
 
 `apply` keeps the stash, `pop` takes it of the stack (gets rid of it)
 
-#### remove / delete
+### remove / delete
 
 To get rid of a stash:
 
@@ -493,7 +492,7 @@ while git stash drop 'stash@{20}'; do true; done
 
 <https://stackoverflow.com/questions/11369375/how-can-i-delete-all-of-my-git-stashes-at-once/57593045#57593045>
 
-#### untracked
+### untracked
 
 Stash untracked files:
 
@@ -532,7 +531,7 @@ Re-read over the above stack overflow answer and closed terminal window, re-open
 
 Had this again, found same stack overflow question, did this `rm -f .git/index.lock` and it fixed the problem.
 
-### git rebase
+## git rebase
 
 ```bash
 feature/first_page_form
@@ -548,7 +547,7 @@ git push --force origin feature/first_page_join_form_MVP
 
 [Git Interactive Rebase, Squash, Amend and Other Ways of Rewriting History](https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history)
 
-#### git rebase -i (--interactive)
+### git rebase -i (--interactive)
 
 [Beginner’s Guide to Interactive Rebasing](https://hackernoon.com/beginners-guide-to-interactive-rebasing-346a3f9c3a6d)
 
@@ -588,7 +587,11 @@ I want to remove the `WIP`'s at the start of my 2 commit messages. To do this I 
 This will then give me the option to say what I want to do with each commit - in this case just wanted to reword the commit messages.
 Have a look at <https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history#interactive-rebase> for what to do next.
 
-### git reset
+#### git drop
+
+[Dropping Commits With Git Rebase](https://til.hashrocket.com/posts/iw7diudcph-dropping-commits-with-git-rebase)
+
+## git reset
 
 When have mucked up a merge or something badly and need to reset the branch. Or in this case want to reset the uat branch locally to what is on github.
 
@@ -600,7 +603,7 @@ git fetch origin uat
 git reset --hard origin/uat
 ```
 
-#### git reset --soft HEAD^
+### git reset --soft HEAD^
 
 <http://stackoverflow.com/questions/12481639/remove-files-from-git-commit>
 
@@ -618,7 +621,7 @@ Now commit again, you can even re-use the same commit message:
 
 `git commit -c ORIG_HEAD`
 
-#### git reset --soft HEAD~1 - remove the last commit
+### git reset --soft HEAD~1 - remove the last commit
 
 [How can I undo the last commit?](https://www.git-tower.com/learn/git/faq/undo-last-commit)
 

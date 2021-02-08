@@ -299,7 +299,6 @@ console.log(ids);
 3: "2343478397612590381"
 ```
 
-
 #### Functions
 
 <!-- where from??? -->
@@ -410,6 +409,29 @@ And then `npm outdated` should not return anything.
 #### nvm
 
 [NVM, the Easiest Way to Switch Node.js Environments on Your Machine in a Flash](https://itnext.io/nvm-the-easiest-way-to-switch-node-js-environments-on-your-machine-in-a-flash-17babb7d5f1b)
+
+#### Node shell
+
+[Node.js Console - REPL](https://www.tutorialsteacher.com/nodejs/nodejs-console-repl)
+
+>REPL (aka Node shell). REPL stands for Read-Eval-Print-Loop.
+
+Was wanting to grab some numbers out of a long blob of json, so pasted the raw json from Insomnia into the node shell.
+
+To open just type `node` in the terminal (assumming you have node installed etc etc)
+
+Paste in the json and save to a variable, `js = { ... all the stuff }`, and then I grabbed out the stuff I wanted from each child.
+
+```zsh
+> js["user"]["children"].map(child => [child.id, child.first_name, child.storypark_id])
+[
+  [ '2486101975012213886', 'LibbyC (centre/no centre)', '11556' ],
+  [ '2278748000350111599', 'Libby Child', '9737' ],
+  [ '2343957355739219304', 'Libby Child 2 (no centre)', '9841' ],
+  [ '2373206674967102692', 'Libby Child 3', '9887' ],
+  [ '2373653387519460584', 'Libby Child 4', '9891' ]
+]
+```
 
 ### jQuery
 
