@@ -100,6 +100,17 @@ end
 
 [The Safe Navigation Operator (&.) in Ruby](http://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/)
 
+### ! - the logical NOT operator
+
+<https://www.tutorialspoint.com/ruby/ruby_operators.htm#:~:text=Ruby%20Logical%20Operators&text=Called%20Logical%20AND%20operator.,a%20and%20b)%20is%20true.&text=Called%20Logical%20OR%20Operator>
+
+>`!`   Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.     `!(a && b)` is false
+
+
+<https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/ch04s06.html#boolean_ops_amp>
+
+>The `!` operator performs a unary Boolean NOT. If the operand is nil or false, then the `!` operator returns true. Otherwise, `!` returns false.
+
 ### and/or
 
 [How to use Ruby’s English and/or operators without going nuts](http://www.virtuouscode.com/2014/08/26/how-to-use-rubys-english-andor-operators-without-going-nuts/)

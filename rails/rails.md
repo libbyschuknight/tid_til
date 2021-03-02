@@ -807,6 +807,12 @@ Can change which layouts that an action in a controller uses. This is done in th
 
 [How We Test Rails Applications](https://thoughtbot.com/blog/how-we-test-rails-applications)
 
+### Rails console test env
+
+`RAILS_ENV=test bundle exec rails c`
+
+`rails c -e test`
+
 ## Mailers
 
 <https://guides.rubyonrails.org/action_mailer_basics.html>

@@ -18,6 +18,8 @@
 
 [IONICONS](http://ionicons.com/)
 
+[Inline SVG or Icon Fonts: Which One to Use](https://betterprogramming.pub/inline-svg-or-icon-fonts-which-one-to-use-77c0daf1c527)
+
 ## Fonts
 
 [Fount](https://fount.artequalswork.com/)

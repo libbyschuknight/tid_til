@@ -29,3 +29,43 @@ git config --global core.editor "code --wait"
 >```js
 >return !this.things && user && otherUser.groupIds.some(groupId => user.groupIds.includes(groupId))
 >```
+
+## white space
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/white-space>
+
+Had an issue where we weren't getting multiple lines showing as multiple lines in a Vue JS file. Code was this:
+
+```html
+<span class="text-body-2">
+  {{ comment.message }}
+</span>
+```
+
+By adding `white-space: pre-line` to the span, made the mutiple lines display (as in newlines), but added a heap of space to the top
+
+```html
+<span class="text-body-2 white-line-pre-space">
+  {{ comment.message }}
+</span>
+```
+
+```css
+.white-space-pre-line {
+  white-space: pre-line;
+}
+```
+
+What we realised is that you need to have the span on one line, so could do:
+
+```html
+<span class="text-body-2 white-line-pre-space">{{ comment.message }}</span>
+```
+
+but this could get long with needing more classes for other things, so we can use the `v-text` directive:
+
+```html
+<span class="text-body-2 white-space-pre-line" v-text="comment.message"/>
+```
+
+<https://vuejs.org/v2/api/#v-text)>

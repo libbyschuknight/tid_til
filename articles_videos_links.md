@@ -129,6 +129,10 @@ split this file out into
 
 [Facts are Cool](http://www.jimchines.com/2012/05/facts-are-cool/)
 
+[Power/Privilege Wheel](https://www.instagram.com/p/CEFiUShhpUT/?hl=en)
+
+<img src="wheel-power-privilege.jpg" alt="" width="300"/>
+
 ### Why personality tests can be useless / harmful in the workplace
 
 [Goodbye to MBTI, the Fad That Won’t Die](https://www.psychologytoday.com/us/blog/give-and-take/201309/goodbye-mbti-the-fad-won-t-die)

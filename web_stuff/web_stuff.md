@@ -14,7 +14,6 @@
 
 - [Arrows](https://unicode-table.com/en/sets/arrows-symbols/)
 
-
 [Convert Images to Base64](https://www.browserling.com/tools/image-to-base64)
 
 [The Promise of a Burger Party](https://kosamari.com/notes/the-promise-of-a-burger-party)
@@ -34,6 +33,7 @@
 >Client-side means that the action takes place on the user’s (the client’s) computer. Server-side means that the >action takes place on a web server.
 >...
 >The difference between client-side vs. server-side, and frontend vs. backend programming is really a difference >in semantics. Client-side vs. server-side describes where the action takes place (literally on your computer vs. >a server). Frontend vs. backend refers to what kind of action is taking place (the kind the user sees vs. the >kind a user does not).
+
 
 
 ## JSON

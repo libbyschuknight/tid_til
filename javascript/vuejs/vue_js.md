@@ -101,9 +101,36 @@ Code review comment from colleague:
 
 [Scoped CSS](https://vue-loader.vuejs.org/guide/scoped-css.html#scoped-css)
 
-
 [Deep Selectors](https://vue-loader.vuejs.org/guide/scoped-css.html#child-component-root-elements)
 
 What does `>>>` do?
 
 >If you want a selector in scoped styles to be "deep", i.e. affecting child components, you can use the `>>>`  combinator:
+
+## Directives
+
+[v-text](https://vuejs.org/v2/api/#v-text)
+
+>Updates the element’s `textContent`. If you need to update the part of `textContent`, you should use `{{ Mustache }}` interpolations.
+>
+>Example
+>
+>```html
+><span v-text="msg"></span>
+><!-- same as -->
+><span>{{msg}}</span>
+>```
+
+Note if have:
+
+```html
+<span>
+  {{msg}}
+</span>
+```
+
+Get extra space on the page, even when using `white-space: pre-line`.
+
+## Packages
+
+[Vue Swatches](https://saintplay.github.io/vue-swatches/)

@@ -285,6 +285,38 @@ end
 
 Seems a lot clearer and there is a lot less duplication.
 
+## Testing controllers
+
+Using `ActionController::Parameters.new` in a spec. Great explanation from colleague in code review.
+
+```ruby
+    let(:permitted_params) do
+     ActionController::Parameters.new(
+        {
+          thing_id: thing.id.to_s,
+          other_thing_id: other_thing.id.to_s,
+          content: "This is a test",
+          medium_ids: ["Foo", "Bar"],
+          linked_posts: [
+            ActionController::Parameters.new({ id: "ABC", post_type: "Notice" }).permit!,
+            ActionController::Parameters.new({ id: "123", post_type: "Post" }).permit!
+          ]
+        }
+      ).permit!
+    end
+
+```
+
+🎓 for my learning, why are you using this here?
+
+>I'm going to change this, but commenting for learnings.
+>
+>If you look at notes_controller, you'll see we take permitted_params.notes_api (which is just params.require(:notes).permit>(note_api_attributes)) and pass that right through to the service. That means the service is receiving a Rails strong >parameters object, which are mostly used to make sure we don't accept whatever garbage params the user gave us.
+>
+>Because I want to test that strong params are being used (I want to test that unwanted params are ignored), I need to expect >the service receives strong params. And the easiest way to make them is to just call ActionController::Parameters.new with >your hash of choice.
+>
+>However, it's a lot similar for everyone involved if I just call permitted_params.notes_api.to_h instead - any params you >haven't explicitly allowed aren't included in the Hash, and it makes the spec tidier (plus strong params are a very >Rails-internal concern), so that's how I'm going to change it. This was a case where I got overly focused on getting the >test passing and not thinking about how to make the test less clunky.
+
 ## Matchers - `be true`, `be_truthy`
 
 <https://eddyluten.com/rspec-be_truthy-exists-or-be-true>

@@ -469,3 +469,7 @@ en:
 >post.comments.length - This always loads the contents of the association into memory, then returns the number of elements loaded. Note that this won't force an update if the association had been previously loaded and then new comments were created through another way (e.g. Comment.create(...) instead of post.comments.create(...)).
 >
 >post.comments.size - This works as a combination of the two previous options. If the collection has already been loaded, it will return its length just like calling #length. If it hasn't been loaded yet, it's like calling #count.
+
+>Count - hits the database each time
+>Length - enumerable method, uses the in-memory list (or forces AR to load the list if it's not in memory first)
+>Size - tries the memory version, does a count if not loaded

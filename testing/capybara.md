@@ -26,3 +26,7 @@ When using [`save_and_open_page`](https://www.stefanwille.com/2010/12/printing-t
 config.assets.debug = true
 config.action_controller.asset_host = "http://localhost:6001"
 ```
+
+`save_and_open_screenshot`
+
+- need to have in the test `js: true`, for SP

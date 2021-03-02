@@ -16,6 +16,10 @@
 
 [Setting Up Cypress, Rails, and CircleCI](https://gilesbowkett.com/blog/2020/10/09/cypress-rails-circle/)
 
+[TestPyramid](https://martinfowler.com/bliki/TestPyramid.html)
+
+[The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html#TheTestPyramid)
+
 ## Running a specific test
 
 If you want to run one particular spec or feature scenario, you can specific the line
