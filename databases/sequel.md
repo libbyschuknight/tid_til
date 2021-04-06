@@ -1,26 +1,34 @@
 # Sequel - [Sequel: The Database Toolkit for Ruby](http://sequel.jeremyevans.net/)
 
 ### Where vs Find
+
 So, when using...
+
 ```ruby
 Models::Meal.find(ingredient: "beef")
 ```
+
 will only return the first one.
 When using:
+
 ```ruby
 Models::Meal.where(ingredient: "beef")
 ```
+
 ...will return all.
 
 ### Migrations
+
 Change name of table: # TODO:
 
 **Foreign key and index:**
+
 - table with a foreign key and index, say on `cat_id`
 - if you remove the fk, this will also remove the index!
 
 
 **Add another value to enum**
+
 Found that you need to use this:
 `add_enum_value (enum, value, opts=OPTS)` but there was not example of exactly how to use it.
 

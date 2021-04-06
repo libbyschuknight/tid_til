@@ -66,6 +66,8 @@ module CommonOptions
 
 [Rails concerns](http://dmitrypol.github.io/rails/2016/10/29/rails-concerns.html)
 
+[Tip: Sharing common code between Rails controllers with `Scoped` pattern](https://boringrails.com/tips/rails-scoped-controllers-sharing-code)
+
 ## `npm ci`
 
 https://docs.npmjs.com/cli/ci.html

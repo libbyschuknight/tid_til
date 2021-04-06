@@ -12,9 +12,28 @@
 
 [Ruby Guides - Jesus Castello](https://www.rubyguides.com/)
 
+[Learning Ruby: From Zero to Hero](https://www.freecodecamp.org/news/learning-ruby-from-zero-to-hero-90ad4eecc82d/)
+
 ## PORO = Plain Old Ruby Objects
 
 e.g service objects, query objects, use case objects
+
+## Classes
+
+## Modules
+
+[Modules](http://ruby-for-beginners.rubymonstas.org/advanced/modules.html)
+
+From [POODR - Practical Object-Oriented Design in Ruby](https://www.poodr.com/)
+
+```markdown
+Many OO languages have a way to define a named group of methods that are independent of class and can be mixed in to any objects.
+In Ruby they are *modules*.
+
+>Methods can be defined in a module and then the module can be added to any object. Modules thus provide a perfect way to allow objects of different classes to play a common role using a single set of code.
+>
+>When an object includes a module, method become available via automatic delegation.
+```
 
 ## `attr_`
 
@@ -306,6 +325,8 @@ module UserInformationService
   private_class_method :users_names_and_counts
 end
 ```
+
+##
 
 ## Keyword Arguments
 

@@ -30,6 +30,44 @@
 
 [Most Common Types of Technical Debt in Rails](https://nextlinklabs.com/insights/most-common-technical-debt-in-rails-projects)
 
+[What is a Rails model?](https://www.codewithjason.com/what-is-a-rails-model/)
+
+<!-- moved from  articles_videos_links.md -->
+
+[Understanding the basics of Ruby on Rails: HTTP, MVC, and Routes](https://www.freecodecamp.org/news/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a/)
+
+[The difference between Render and Redirect in Rails](https://tosbourn.com/difference-between-redirect-render-rails/)
+
+[Render and Redirect- Which to Use?](https://medium.com/@kerenlerner/render-and-redirect-which-to-use-106ff653ee9a)
+
+[How Rails handles status codes](http://ieftimov.com/how-rails-handles-status-codes)
+
+[How DHH Organizes His Rails Controllers](http://jeromedalbert.com/how-dhh-organizes-his-rails-controllers/)
+
+[The Importance of Scopes in Ruby on Rails](https://jasoncharnes.com/importance-rails-scopes/)
+
+[Skipping Validations in Ruby On Rails](https://richonrails.com/articles/skipping-validations-in-ruby-on-rails)
+
+[Different Ways to Set Attributes in ActiveRecord (Rails 4)](http://www.davidverhasselt.com/set-attributes-in-activerecord/)
+
+[Essential RubyOnRails patterns — part 1: Service Objects](https://medium.com/selleo/essential-rubyonrails-patterns-part-1-service-objects-1af9f9573ca1)
+
+[How constant lookup and resolution works in Ruby on Rails](http://blog.bigbinary.com/2015/11/05/how-constant-lookup-happens-in-rails.html)
+
+[The Options of Rails Commands: Things you can choose to not include when creating with rails](https://medium.com/@anneeb/the-options-of-rails-commands-4b29effa9a8f)
+
+[What is the difference between <%, <%=, <%# and -%> in ERB in Rails?](https://stackoverflow.com/questions/7996695/what-is-the-difference-between-and-in-erb-in-rails)
+
+[Rails Techniques: Using Polymorphic Associations](https://semaphoreci.com/blog/2017/08/16/polymorphic-associations-in-rails.html)
+
+[Understanding Webpacker in Rails 6](https://prathamesh.tech/2019/08/26/understanding-webpacker-in-rails-6/)
+
+  <!-- TODO: add link to javascript.md page for using webpack in rails -->
+
+[How to Write Fast Code in Ruby on Rails](https://engineering.shopify.com/blogs/engineering/write-fast-code-ruby-rails)
+
+<!-- moved -->
+
 ### Controller
 
 [Action Controller Parameters](https://api.rubyonrails.org/classes/ActionController/Parameters.html)

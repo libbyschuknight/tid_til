@@ -48,6 +48,8 @@
 
 [How to ace your next Javascript interview](https://browntreelabs.com/how-to-ace-your-next-javascript-interview/)
 
+[JavaScript: What is the meaning of this?](https://web.dev/javascript-this/)
+
 <!-- different versions of JS -->
 
 ## JS Basics
@@ -82,9 +84,17 @@ It is because `0` is a falsy value in JS. Unlike Ruby.
 
 [Javascript - Currying VS Partial Application](https://towardsdatascience.com/javascript-currying-vs-partial-application-4db5b2442be8)
 
+[JavaScript Debounce Function](https://davidwalsh.name/javascript-debounce-function)
+
+[Debounce in JavaScript — Improve Your Application’s Performance](https://levelup.gitconnected.com/debounce-in-javascript-improve-your-applications-performance-5b01855e086)
+
 ## JS Frameworks
 
 [I created the exact same app in React and Vue. Here are the differences. [2019 Edition]](https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-2019-edition-42ba2cab9e56)
+
+## Debugging
+
+[Beyond Console.log() – Level up Your Debugging Skills](https://www.sitepoint.com/beyond-console-log-level-up-your-debugging-skills/)
 
 ## Testing
 

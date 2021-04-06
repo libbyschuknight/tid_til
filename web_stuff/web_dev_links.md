@@ -20,6 +20,8 @@
 
 [Inline SVG or Icon Fonts: Which One to Use](https://betterprogramming.pub/inline-svg-or-icon-fonts-which-one-to-use-77c0daf1c527)
 
+[Stop Using Icon Fonts](https://www.irigoyen.dev/blog/2021/02/17/stop-using-icon-fonts/?ref=sidebar)
+
 ## Fonts
 
 [Fount](https://fount.artequalswork.com/)

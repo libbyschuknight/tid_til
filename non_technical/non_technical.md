@@ -24,6 +24,8 @@ Asking for what you are worth
 
 [10 Tips To Start Off Well In A Junior Dev Role](https://simpleprogrammer.com/2016/11/09/10-tips-junior-dev-role/)
 
+[How Your Company Can Support Junior Engineers](https://www.eventbrite.com/engineering/how-to-support-junior-engineers/)
+
 ### Diversity
 
 [Improving diversity through hiring](https://storify.com/justkelly_ok/justkelly-ok-on-improving-diversity-through-hiring)

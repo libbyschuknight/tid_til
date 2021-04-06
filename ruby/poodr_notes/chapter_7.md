@@ -1,4 +1,5 @@
 # Chapter 7 - Sharing Role Behaviour with Modules
+
 Page 141
 
 Alternative to classical inheritance, use of techniques of inheritance to share a *role*.
@@ -21,15 +22,15 @@ Many OO languages have a way to define a named group of methods that are indepen
 In Ruby they are *modules*.
 
 >Methods can be defined in a module and then the module can be added to any object. Modules thus provide a perfect way to allow objects of different classes to play a common role using a single set of code.
-
+>
 >When an object includes a module, method become available via automatic delegation.
-
+>
 >The total set of messages to which an object can respond includes:
+
 - those it implements
 - those implemented in all objects above it in the hierarchy
 - those implemented in any module that has been added to it
 - those implemented in all modules added to any object above it in the hierarchy
-
 
 ### Organising responsibilities
 
@@ -38,8 +39,8 @@ In Ruby they are *modules*.
 >The knowledge about what values to use does not belong in `Schedule`, it belongs in the classes whose names `Schedule` is checking.
 >Instead of knowing details about other classes, the `Schedule` should send them messages.
 
-
 ### Removing unnecessary dependencies
+
 Page 145
 
 >The fact that the `Schedule` checks many class names to determine what value to place in one var suggests that the var name should be turned into a message, which in turn should be sent to each incoming object.
@@ -55,6 +56,7 @@ This change moves the responsibility for knowing lead days into the last object.
 >The `Schedule` expects its `target` to behave like something that understands `lead_days`, that is, like something that is "schedulable". You have discovered a duck type.
 
 #### Letting objects speak for themselves
+
 Page 147
 e.g `StringUtils.empty?(some_string)`
 

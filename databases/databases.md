@@ -2,6 +2,22 @@
 
 [DBMS Tutorial – Database Management System notes](https://beginnersbook.com/2015/04/dbms-tutorial/)
 
+## SQL GUI tools
+
+<https://www.sequelpro.com/>
+
+- used at Flux
+
+Ones that people at Storypark use:
+
+<https://dbeaver.io/>
+
+<https://www.pgadmin.org/>
+
+<https://www.beekeeperstudio.io/>
+
+<http://www.psequel.com/>
+
 ## Modelling
 
 [Entity Relationship Diagram – ER Diagram in DBMS](https://beginnersbook.com/2015/04/e-r-model-in-dbms/)

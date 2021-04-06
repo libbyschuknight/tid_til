@@ -12,9 +12,11 @@
 
 [INTRODUCTION TO RSPEC](https://www.theodinproject.com/courses/ruby-programming/lessons/introduction-to-rspec)
 
+[RSpec fundamentals: a basic glossary](https://remimercier.com/rspec-fundamentals-glossary/) 📖
+
 [Transpec: A magical tool for converting your specs to the latest RSpec syntax.](http://yujinakayama.me/transpec/)
 
-[Better Specs { RSpec guidelines with ruby }](http://www.betterspecs.org/)
+[Better Specs { RSpec guidelines with ruby }](http://www.betterspecs.org/) 📖
 
 [RSpec::Expectations Cheat Sheet](https://www.rubypigeon.com/posts/rspec-expectations-cheat-sheet/)
 

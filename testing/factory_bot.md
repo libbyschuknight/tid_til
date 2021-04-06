@@ -4,6 +4,8 @@
 
 <https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md>
 
+[factory_bot - thoughtbot](https://thoughtbot.com/upcase/videos/factory-bot)
+
 ## Creating data quickly
 
 In rails console:

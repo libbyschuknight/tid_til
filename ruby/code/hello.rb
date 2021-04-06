@@ -7,7 +7,6 @@
 # puts "Hello #{name}!"
 
 # name = ARGV[0]
-# puts "Hello #{name}!"
 
 
 first_name = ARGV[0]
