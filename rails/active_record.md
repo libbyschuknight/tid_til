@@ -24,6 +24,16 @@ ActiveRecord::Base.logger = Logger.new(STDOUT);
 
 [Deploy without downtime](https://github.com/barsoom/devbook/tree/master/deploy_without_downtime)
 
+## Methods
+
+[.create](https://api.rubyonrails.org/classes/ActiveRecord/Associations/CollectionProxy.html#method-i-create)
+
+>Returns a new object of the collection type that has been instantiated with attributes, linked to this object and that has already been saved (if it passes the validations).
+
+[.build](https://api.rubyonrails.org/classes/ActiveRecord/Associations/CollectionProxy.html#method-i-build)
+
+>Returns a new object of the collection type that has been instantiated with attributes and linked to this object, but have not yet been saved. You can pass an array of attributes hashes, this will return an array with the new objects.
+
 ## Queries
 
 <https://robots.thoughtbot.com/activerecords-wherenot>
@@ -74,7 +84,7 @@ contact = account.main_contact
 sign_up = account.sign_up
 ```
 
-## Scopes
+### Scopes
 
 [14 Scopes](https://guides.rubyonrails.org/active_record_querying.html#scopes)
 
@@ -86,9 +96,9 @@ sign_up = account.sign_up
 >
 >Here, it means you can chain scopes together, without having to worry about nil values coming back.
 
-## .where
+### .where
 
-### `where` and `nil`
+#### `where` and `nil`
 
 So was doing a `where` like this with a scope on a model:
 
@@ -139,7 +149,6 @@ User.where(id: ids)
 
 ## [`pluck`](https://guides.rubyonrails.org/active_record_querying.html#pluck)
 
-
 ```ruby
 Plan.manually_assignable.pluck(:name, :customer_label, :manually_assignable, :available_for_signup)
 
@@ -161,6 +170,15 @@ Plan.manually_assignable.pluck(:name, :customer_label, :manually_assignable, :av
 
 [Which one is faster between map, collect, select and pluck?](https://stackoverflow.com/questions/45347317/which-one-is-faster-between-map-collect-select-and-pluck/45347812#45347812)
 
+## `update_all`
+
+<http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all>
+
+When have a group of records where want to change say an `something_id` on all of them.
+
+## `touch`
+
+<https://api.rubyonrails.org/v6.1.3/classes/ActiveRecord/Persistence.html#method-i-touch>
 
 ## Joining Tables
 
@@ -198,12 +216,6 @@ end
 ## Enums
 
 [Creating Easy, Readable Attributes With ActiveRecord Enums](https://www.justinweiss.com/articles/creating-easy-readable-attributes-with-activerecord-enums/)
-
-## `update_all`
-
-<http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all>
-
-When have a group of records where want to change say an `something_id` on all of them.
 
 ## Overcome readonly_attributes
 

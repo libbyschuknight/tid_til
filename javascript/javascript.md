@@ -58,6 +58,8 @@
 
 [What is JavaScript doing on your page?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#What_is_JavaScript_doing_on_your_page)
 
+[The complete guide to Working With Strings in Modern JavaScript](https://www.baseclass.io/guides/string-handling-modern-js#creating-strings) ✅
+
 [How to handle event handling in JavaScript (examples and all)](https://www.freecodecamp.org/news/event-handling-in-javascript-with-examples-f6bc1e2fff57/)
 
 [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
@@ -156,6 +158,8 @@ e.g. `const { value } = this.state;` will grab / assign `this.state.value` to `v
 > Associativity determines the way in which operators of the same precedence are parsed.
 
 [Javascript variables; should you use let, var or const?](https://medium.com/podiihq/javascript-variables-should-you-use-let-var-or-const-394f7645c88f)
+
+[Replacing let with const](https://charles-stover.medium.com/replacing-let-with-const-86797b790775)
 
 [Everything You Need to Know About Date in JavaScript](https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/)
 

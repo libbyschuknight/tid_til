@@ -27,6 +27,8 @@ split this file out into
 
 [How to Build a High Velocity Development Team](https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021) ✅
 
+[Being A Team Player](https://www.samjarman.co.nz/blog/teamwork) ✅
+
 [Put your paddle in the air](https://blog.figure.nz/put-your-paddle-in-the-air-28eee39648ef) ✅
 
 [Figure NZ - Our kaupapa: raise a paddle](http://tohu.figure.nz/internal/our_kaupapa/#raise-a-paddle) ✅
@@ -43,7 +45,7 @@ split this file out into
 
 [Google Tried to Prove Managers Don't Matter. Instead, It Discovered 10 Traits of the Very Best Ones](https://www.inc.com/scott-mautz/google-tried-to-prove-managers-dont-matter-instead-they-discovered-10-traits-of-very-best-ones.html?fbclid=IwAR3hIJIhbPSi2Aj3XDdqjYfxlTuVXJXEe0Z65wdk0u7Y2nI_-sMhtL52eCk) ✅
 
-[Things your manager might not know](https://jvns.ca/blog/things-your-manager-might-not-know/?s=09)
+[Things your manager might not know](https://jvns.ca/blog/things-your-manager-might-not-know/?s=09) ✅
 
 [The five keys to a successful Google team](https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/) ✅
 
@@ -77,6 +79,8 @@ split this file out into
 
 [Gender and sex](http://geekfeminism.wikia.com/wiki/Gender_and_sex)
 
+[NON-BINARY GENDER INCLUSION](https://www.hibob.com/guides/hr-leaders-guide-for-non-binary-gender-inclusion/)
+
 [Use of "guys" - twitter thread](https://twitter.com/samanthageitz/status/993967503901646848)
 
 <img src="guys-twitter-thread-1.png" alt="guys twitter thread" width="500"/>
@@ -101,6 +105,8 @@ split this file out into
 
 [Why women collaborating ‘isn’t a soft skill, it’s a superpower’](https://www.siliconrepublic.com/people/margaret-heffernan-women-business)
 
+[7 Pieces of Bad Career Advice Women Should Ignore](https://hbr.org/2021/04/7-pieces-of-bad-career-advice-women-should-ignore) ✅
+
 [IF IT'S ALL THE SAME TO YOU, I'D RATHER BE WORKING.](https://www.3percentmovement.com/article/if-its-all-same-you-id-rather-be-working-rene-huey-lipton)
 
 [The Power Of A Grandmother | Hīria Te Rangi | TEDxWellington](https://www.youtube.com/watch?v=RHq1waE-qIY&feature=youtu.be&app=desktop) - video
@@ -122,6 +128,8 @@ split this file out into
 ### Company focused links
 
 [Onboarding / Employee Handbooks](https://www.notion.so/Onboarding-Employee-Handbooks-138a98bd392a45da910d74b900300194)
+
+[How to Measure Software Development, from ‘Accelerate: The Science of Lean Software and DevOps’](https://www.holistics.io/blog/accelerate-measure-software-development/)
 
 ### Privilege
 
@@ -197,6 +205,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [How to improve gender equality in the workplace](https://www.xero.com/nz/resources/small-business-guides/business-management/gender-equality-workplace/)
 
+[Top Workplaces for Women - Workplaces for women insights](https://elpha.com/resources/workplaces-for-women-insights)
+
 [How to Fix Your Tech Interview to Increase Diversity](https://www.diversifytech.co/blog/how-to-fix-tech-interview-to-increase-diversity)
 
 [Hiring, Growth and Diversity](https://medium.com/flick-tech/hiring-growth-and-diversity-7fbe4809e498)
@@ -252,6 +262,8 @@ Sarah Mei: Diversity of Thought tweets:
 
 [Imposter Syndrome: Why You Have It and What You Can Do About It](https://zapier.com/blog/what-is-imposter-syndrome/)
 
+[What is imposter syndrome and how can you combat it? - Elizabeth Cox](https://www.youtube.com/watch?v=ZQUxL4Jm1Lo) ✅
+
 [What is impostor syndrome and how you can combat it?](https://www.ted.com/talks/elizabeth_cox_what_is_imposter_syndrome_and_how_can_you_combat_it#t-12340)
 
 > build confidence in some simple truths: you have talent, you are capable, and you belong.
@@ -306,6 +318,11 @@ My Wharenui
 [Calming Your Brain During Conflict](https://hbr.org/2015/12/calming-your-brain-during-conflict)
 
 [Ikigai: The Japanese Secret to a Long and Happy Life Might Just Help You Live a More Fulfilling Life](https://medium.com/thrive-global/ikigai-the-japanese-secret-to-a-long-and-happy-life-might-just-help-you-live-a-more-fulfilling-9871d01992b7)
+
+## Agile / Project Management Stuff
+
+[Using the Scope Triangle in Project Quailty Management to Define the Project Scope(https://www.brighthubpm.com/resource-management/38914-scope-triangle-in-project-planning
+)
 
 ## Work Stuff
 

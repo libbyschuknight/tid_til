@@ -1,4 +1,4 @@
-# January / February / March 2021 Mistakes, Improvements, Learning and Stuff
+# January / February / March / April / May 2021 Mistakes, Improvements, Learning and Stuff
 
 ## Getting VS Code to be default editor for git stuff
 

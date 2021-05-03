@@ -20,6 +20,10 @@ Thanks @ootoovak
 
 - [Semantic Versioning: Why You Should Be Using it](http://www.sitepoint.com/semantic-versioning-why-you-should-using/)
 
+## Breaking changes
+
+[What Are Breaking Changes and How Do You Avoid Them?](https://nordicapis.com/what-are-breaking-changes-and-how-do-you-avoid-them/)
+
 ### HTTP Verbs
 
 |HTTP Verb  |CRUD   |Entire Collection (e.g. /customers)   |Specific Item (e.g. /customers/{id})   |

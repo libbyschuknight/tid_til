@@ -19,3 +19,10 @@
 <https://docsify.js.org/#/>
 
 [How to create a documentation site with Docsify and GitHub Pages](https://opensource.com/article/20/7/docsify-github-pages)
+
+
+## Github readme profile
+
+[How To Create A GitHub Profile README](https://aboutmonica.com/blog/how-to-create-a-github-profile-readme?fbclid=IwAR2B7Ddypc4M7tSl45jujZhkZTydD1gTI3gNTJFgdQsOfk-6YA1CjBIyvHc#fun-readmes)
+
+[Build a Stunning README For Your GitHub Profile](https://towardsdatascience.com/build-a-stunning-readme-for-your-github-profile-9b80434fe5d7)

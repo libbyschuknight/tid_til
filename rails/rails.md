@@ -68,7 +68,14 @@
 
 <!-- moved -->
 
-### Controller
+[Rails Patterns and Anti-patterns](https://blog.appsignal.com/category/rails-patterns-and-anti-patterns.html)
+
+1. to read - https://blog.appsignal.com/2020/08/05/introduction-to-ruby-on-rails-patterns-and-anti-patterns.html
+2. to read - https://blog.appsignal.com/2020/11/18/rails-model-patterns-and-anti-patterns.html
+3. to read - https://blog.appsignal.com/2021/02/10/ruby-on-rails-view-patterns-and-anti-patterns.html
+4. [Ruby on Rails Controller Patterns and Anti-patterns](https://blog.appsignal.com/2021/04/14/ruby-on-rails-controller-patterns-and-anti-patterns.html)
+
+## Controller
 
 [Action Controller Parameters](https://api.rubyonrails.org/classes/ActionController/Parameters.html)
 
@@ -564,7 +571,7 @@ TODO: look up some docs on this
 Provides a way to track changes in your object in the same way as Active Record does.
 <http://api.rubyonrails.org/classes/ActiveModel/Dirty.html>
 
-#### Rails app using Sequel
+### Rails app using Sequel
 
 App has a `structure.sql` file instead of a `schema.rb` file and can't do `rake db:create`.
 So to get clean database need to do:
@@ -578,7 +585,7 @@ rake db:seed
 
 To get load the `structure.sql` run `rake db:structure:load`
 
-#### has_secure_password
+### has_secure_password
 
 <http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html>
 
@@ -596,7 +603,7 @@ To get load the `structure.sql` run `rake db:structure:load`
 - add `bcrypt` gem to gemfile
 - add `password_digest` column/attribute to users table
 
-#### Sessions
+### Sessions
 
 [Ruby on Rails Security Guide](http://guides.rubyonrails.org/security.html)
 
@@ -618,7 +625,7 @@ To get load the `structure.sql` run `rake db:structure:load`
 
 [How Rails Sessions Work](http://www.justinweiss.com/articles/how-rails-sessions-work/)
 
-#### Caching
+### Caching
 
 [Caching with Rails: An Overview](https://guides.rubyonrails.org/caching_with_rails.html#low-level-caching)
 
@@ -633,7 +640,7 @@ Development mode is no longer being cached.
 
 To clear the local development cache `Rails.cache.clear` in the console.
 
-#### Controllers
+### Controllers
 
 [current_page?(options, check_parameters: false)](https://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-current_page)
 
@@ -644,7 +651,7 @@ Can check a number of things with with, another one being - `current_page?(contr
 Controllers also have a method called `action_name`, which can be used in a helper.
 <https://guides.rubyonrails.org/action_controller_overview.html#routing-parameters>
 
-#### Helper Methods
+### Helper Methods
 
 [ActionController::Helpers](http://api.rubyonrails.org/classes/ActionController/Helpers.html)
 
@@ -652,7 +659,7 @@ Controllers also have a method called `action_name`, which can be used in a help
 
 - or just put the method in the controller!?!
 
-#### View Stuff
+### View Stuff
 
 Add debug to view:
 
@@ -680,7 +687,7 @@ Add debug to view:
 >
 > This is useful in cases where you aren't sure if the local variable has been assigned. Alternatively, you could also use defined? headline to first check if the variable has been assigned before using it.
 
-##### Layouts
+#### Layouts
 
 [Finding Layouts](https://guides.rubyonrails.org/layouts_and_rendering.html#finding-layouts)
 
@@ -688,7 +695,7 @@ At work we have a old admin pattern library layout and a new one. To use the new
 
 [Rails Layout Rendering Cheatsheet](https://medium.com/@kevinyckim33/rails-layout-rendering-cheatsheet-d40e14ab3503)
 
-#### Routes
+### Routes
 
 <http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
 
@@ -760,7 +767,7 @@ Came across the `link_to_remote`, this is deprecated, can do something like this
 
 This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.
 
-#### Generation of things in Rails - model, controller, resource, scaffold, migration
+### Generation of things in Rails - model, controller, resource, scaffold, migration
 
 See <http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/> for differences
 
@@ -768,9 +775,9 @@ See <http://www.korenlc.com/rails-generate-model-vs-resourse-vs-scaffold/> for d
 
 `user:belongs_to` can also be `user:references` and adds a `belongs_to` column
 
-#### Rails methods
+### Rails methods
 
-##### [delegate](https://apidock.com/rails/Module/delegate)
+#### [delegate](https://apidock.com/rails/Module/delegate)
 
 Question in slack:
 

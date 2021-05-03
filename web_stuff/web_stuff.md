@@ -64,6 +64,8 @@
 
 [16 DevTools tips and tricks every CSS developer needs to know](https://www.heartinternet.uk/blog/16-devtools-tips-and-tricks-every-css-developer-need-to-know/)
 
+[15 DevTool Secrets for JavaScript Developers](https://blog.asayer.io/15-devtool-secrets-for-javascript-developers) ✅
+
 ## Progressive Web Apps
 
 [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)

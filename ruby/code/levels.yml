@@ -1,0 +1,494 @@
+table:
+  headers:
+    category: "Category"
+    section: "Section"
+    l1: L1 – Junior Developer
+    l2: L2 – Intermediate Developer
+    l3: L3 – Senior Developer
+    l4: L4 – Staff Developer
+    l5: L5 – Senior Staff Developer
+    l6: L6 – Principal Developer
+    l7: L7 – Senior Principal Developer
+  software_design_&_implementation:
+    quality:
+      attributes:
+        - Maintainability
+        - Code style
+        - Documentation
+        - Automated testing
+        - Ease of integration
+        - Rarity of defects
+      levels:
+        - l1:
+          - Writes consistently good and maintainable code, and needs little syntax/convention feedback.
+          - Consumes documentation and only asks teammates when documentation and effort don't yield results; produces basic documentation.
+          - Understands the basics of writing automated unit & functional tests.
+          - Consistently authors good test cases and achieves good test coverage with the help of their team.
+          - Writes most code without obvious bugs; knows how to avoid common problems.
+        - l2:
+          - Writes consistently great code requiring no syntax/convention feedback.
+          - Often adds new and relevant documentation to existing repositories of knowledge.
+        - l3:
+          - Understands the organizational value of great documentation and spends time to maintain, update and extend existing repositories of knowledge.
+          - Advises the rest of the team on quality of code, tests & documentation.
+          - Identifies & pragmatically applies better code practices or tooling.
+        - l4:
+          - Creates & structures documentation for large code projects concisely & consistently.
+          - Advises their team and other teams on best practices for code, test & documentation quality.
+        - l5:
+          - Considers (and proposes, when appropriate) new programming language & platform choices for the organization.
+          - Leads efforts to improve documentation & code skills sharing across teams.
+          - Makes the organization more effective through smart & pragmatic application of non-cutting-edge but useful code tools & patterns.
+    architecture:
+      attributes:
+        - Composition & decoupling
+        - Code interface design
+        - Technical debt
+        - Data locality
+        - Data formats
+        - Performance
+      levels:
+        - l1:
+          - Some architectural design/approach feedback may be necessary, but understands and applies feedback consistently.
+          - Is comfortable with the basics of code interface design; is learning to be more intentional.
+          - Understands and can usually recognize technical debt; can pay it down when advised.
+          - Has some experience with data formats, performance & locality; is learning quickly.
+        - l2:
+          - Strong architectural design & approach experience; only the most complex designs refined with senior teammates.
+          - Good intuition for code interface design; looks for opportunities to learn from other projects & teams.
+          - Understands and consistently recognizes technical debt; looks for opportunities to negotiate and pay it down incrementally, sometimes with prompting.
+          - Much more comfortable with multiple data formats & their tradeoffs; can anticipate most performance issues and make use of existing patterns to solve them.
+        - l3:
+          - Deep architectural & design pattern experience; consults for teammates on more difficult designs, and sets up new projects to ensure architectural success.
+          - Understands and plans with technical debt in mind; negotiates to pay it down incrementally and consistently, advises and prompts other teammates on technical debt.
+          - Can solve nearly all performance and data issues within the context of their team by applying experience & knowledge sharing.
+        - l4:
+          - Works with Architecture team regularly to define & refine cross-team architectural approaches with extensive experience & sharing.
+          - Understands technical debt as a long-term budgeting and risk management tool; articulates when to incur more and when to pay it down.
+          - Guides organizational adoption of new data formats, data stores, and patterns for performance & data locality; consults regularly across teams on similar issues.
+          - Sometimes employs prototyping for exploration of designs.
+        - l5:
+          - Succeeds by introducing simpler and time-tested approaches to technical problems to several teams.
+          - Fuses organizational strategy with technical architecture, including cross-team design & code sharing.
+          - Uses prototyping as a primary tool for rigorous design exploration.
+    running_systems_*:
+      attributes:
+        - OPTIONAL
+        - Logging & metrics
+        - Profiling & debugging
+        - Monitoring & alerting
+        - Failsafe design
+        - Live production spelunking
+      levels:
+        - l1:
+          - Can do basic code profiling alone and optimize obvious offenders.
+        - l2:
+          - Uses out-of-the-box tools to instrument and monitor systems; works well with the monitoring philosophy espoused by their team.
+          - Understands the basics of failsafe design; can implement with minimal prompting.
+          - Has some comfort working with live production systems, but may rely on teammates before taking actions.
+        - l3:
+          - Customizes out-of-the-box tools, may create small custom tools to instrument and monitor systems.
+          - Helps tune and change the monitoring philosophy on their team.
+          - Can do multi-application and multi-layer profiling alone and optimize almost all offenders.
+          - Strong understanding of failsafe design and regularly implements and occasionally mentors others on it.
+          - Acts as a primary mentor on running systems for the rest of their team.
+          - Unqualified comfort working with live production systems, debugging issues and taking careful actions with protections against destruction.
+        - l4:
+          - Creates new tools when necessary (and avoids doing so when not) to instrument and monitor systems; defines, realigns and understands cross-functional and cross-org implications of team's monitoring philosophy.
+          - Can solve any profiling challenge at any layer of the stack, down to bits on disk/in RAM and up to multi-region clusters of data.
+          - Seeks out running systems mentorship opportunities across teams.
+  team,_collaboration,_&_culture:
+    project_&_team_scope:
+      attributes:
+        - Size & number of projects
+        - Regular participation scope across teams
+      levels:
+        - l1:
+          - Can handle small changes with assistance from other developers.
+          - Works mostly with their own team.
+        - l2:
+          - Able to lead one medium sized feature at a time.
+          - Recognized for occasional participation in cross-team relationships and projects.
+        - l3:
+          - Acts as an ambassador and proactive connector for their team with other teams.
+          - Will lead one large feature on their team.
+          - Sometimes leads cross-team projects and plays a significant role in major organizational initiatives.
+          - Relied upon to keep complex features and projects on-track and sustainably implemented.
+        - l4:
+          - Works between and across teams almost as much as with their own.
+          - Participates in major projects and initiatives within and between teams, including working groups.
+          - Sometimes called in to mitigate large risks or solve tricky problems.
+        - l5:
+          - Significant contributor to Architecture team and leader of working group efforts across the organization.
+        - l6:
+          - Consults on numerous medium & large projects across the organization & actively connects different teams & systems.
+          - Leads major strategic technical initiatives across many or all teams.
+    technical_collaboration:
+      attributes:
+        - Communication of deeply technical subjects
+        - Ability to disagree accurately & constructively
+        - Reaching conclusions & committing
+      levels:
+        - l1:
+          - Communicates accurately about all technical subjects in their work—both speaking/writing and listening/understanding; spends more time learning than explaining.
+          - Can disagree and understand disagreement constructively and non-defensively.
+          - Fully embraces team solutions and commits to delivery without issue.
+        - l2:
+          - Leads technical explanations when appropriate; knows when to listen and give space to teammates.
+          - Approaches disagreement with inquisitiveness, empathy and the goal of a stronger solution; models this behavior for teammates; consistently disarms conflict.
+          - Guides team toward a decision, clarifies and gets buy-in, and holds self & teammates accountable for decision.
+        - l3:
+          - Facilitates technical discussions between teammates; has deep familiarity with technical topics under discussion at all levels.
+          - Increasing their impact in the company by supporting and assisting other teammates when required
+        - l4:
+          - Proactively seeks out gaps in technical understanding, especially cross-functional, and works with a variety of teammates to fill the gaps.
+    communication_&_empathy:
+      attributes:
+        - Clear, concise communication
+        - Kindness, approachability and non-aggressive style
+        - Modifying communication based on listener's perspective
+        - Insight into listener's challenges & goals
+        - Ability to communicate technical subjects to a non-technical audience
+      levels:
+        - l1:
+          - Communicates concisely, effectively & clearly.
+          - May sometimes need minimal coaching on communication skills, but overall a strong speaker and listener.
+          - A drive to continuously learn and grow
+          - Understands and can recognise bias
+        - l2:
+          - Coaching on communication skills is rare and exceptional; very strong speaker and listener.
+          - Can usually explain technical subjects to non-technical teammates.
+          - Actively works to counter bias, both with themselves and their peers.
+        - l3:
+          - Can explain deeply technical subjects to non-technical teammates with ease.
+        - l5:
+          - Often takes the lead to communicate technical topics to technical & non-technical directors and business leaders.
+  ownership_&_accountability:
+    productivity_time_&_task_management:
+      attributes:
+        - How much they can get done
+        - Ability to accurately estimate work tasks
+        - Effective prioritization of tasks & communication
+        - Timely completion of work
+        - Full and thorough completion of all commitments
+      levels:
+        - l1:
+          - Accomplishes tasks within an acceptable time frame.
+          - Can estimate work tasks with help from teammates & manager.
+          - Understands & acts in accordance with given priority of work tasks.
+          - Consistently delivers work tasks based on prior commitments and task definition to fulfill the specification of work.
+        - l2:
+          - Maintains a strongly consistent personal velocity of work tasks.
+          - Estimates work tasks accurately in most cases, with minimal oversight.
+          - Understands, negotiates & applies work priorities correctly.
+          - Knows when to conclude conversations, meetings, and pre-work tasks in order to complete work on time.
+          - Accomplishes nearly all work tasks in a timely manner; and raises an alarm early when tasks are off schedule.
+          - Thoroughly vets work requirements and helps refine them to fulfill the intent of the requirements.
+        - l3:
+          - Leverages own abilities and practices to mentor and improve the productivity of the entire team.
+        - l4:
+          - Successfully manages cross-team commitments and work completion.
+          - Improves productivity of teammates across multiple teams.
+    project_accountability:
+      attributes:
+        - Finding & filling gaps to complete projects
+        - Effective communication with project stakeholders
+        - Aiding others to reach project completion
+      levels:
+        - l1:
+          - Avoids surprising stakeholders whenever project expectations change; communicates changes early and often.
+          - Consistently communicates with project stakeholders about expectations.
+        - l2:
+          - Proactively finds gaps in project plans and works with stakeholders to specify them.
+          - Effectively communicates project status and expectation changes without prompting.
+          - May occasionally help teammates overcome obstacles and complete project work.
+        - l3:
+          - Consistently helps teammates overcome obstacles and complete project work.
+        - l4:
+          - Enables and improves cross-team collaboration by helping individual teammates and working with stakeholders.
+        - l5:
+          - Works with organizational leaders to improve project accountability across many or all teams.
+    production_support_*:
+      attributes:
+        - OPTIONAL
+        - Availability & responsiveness to production issues
+        - Appropriate & complete communication during production issues
+        - Effective escalation and management of production issues
+        - Thorough task & communication follow-ups for production issues
+        - Participation in Root Cause Analysis and follow-up work
+      levels:
+        - l1:
+          - Participates in team on-call or escalation procedures and can resolve basic issues.
+          - Communicates effectively to team about production issues.
+          - Escalates issues appropriately.
+          - Takes good notes about production issues.
+          - Participates in follow-up retrospectives and completes assigned work as requested.
+        - l2:
+          - Can comfortably and effectively resolve issues outside of their immediate scope of experience.
+          - Proactively identifies risks for production issues and works with stakeholders to resolve.
+        - l3:
+          - Leads definition & refinement of team on-call or escalation procedures.
+          - Can resolve nearly all issues escalated within their team.
+          - Communicates about production issues effectively with public & leadership.
+          - Acts as primary owner of production issues and thoroughly oversees them to completion.
+          - Leads Root Cause Analysis, definition & assignment of follow-up work.
+    autonomy_&_self_starting:
+      attributes:
+        - Ability to self-train on new projects & technologies
+        - Resourcefulness in finding own answers
+        - Awareness of the balance between consulting teammates and making progress
+      levels:
+        - l1:
+          - Dives into new projects & technologies with curiosity and a drive to understand.
+          - Maintains a healthy amount of urgency and consistency in their work.
+          - Makes effective use of existing documentation, examples and other resources to gain a solid understanding before relying on teammates.
+          - Knows how to ask good questions of their teammates and does so after trying options on their own.
+          - Has awareness of rabbit holes and doesn't burn too much time on their own before consulting teammates.
+        - l2:
+          - Gains adequate understanding of projects that lack good documentation or usage examples through systematic learning, triage and discussions.
+          - Contributes knowledge back to projects to enable self-starting of other teammates.
+          - Very rarely falls down rabbit holes.
+        - l3:
+          - Achieves expert-level knowledge of new systems & technologies through rigorous learning, curious testing and prior experience.
+          - Takes primary responsibility for improving projects to enable self-starting by other teammates.
+          - Avoids rabbit holes through self-discipline, awareness and resourcefulness.
+  brand_&_relationships:
+    product_&_business_team_relationships:
+      attributes:
+        - Integration into product & business team operations
+        - Quality & depth of relationships with product & business stakeholders
+      levels:
+        - l1:
+          - Understands how product & business teams adjacent to theirs operate.
+          - Builds & maintains a friendly relationship and open channel of communication with product team counterparts.
+        - l2:
+          - Works proactively with product counterparts to build strong relationships within and across teams.
+          - Knows and understands business stakeholders’ motivations as it affects their team.
+        - l3:
+          - Takes primary responsibility for relationships with product & business stakeholders within and across teams to better plan for and position their own team.
+          - Thinks about inter-team relationships strategically and work constantly to improve them.
+        - l4:
+          - Establishes strong relationships with product and business stakeholders across the organization to facilitate their own cross-team scope.
+    engineering_team_relationships:
+      attributes:
+        - Involvement in engineering strategy
+        - Representing own team within engineering org
+        - Quality of relationships with engineering leaders
+      levels:
+        - l1:
+          - Understands team & organizational engineering strategy and how they apply to their role & team.
+          - Works to represent self & team positively within the organization.
+          - May seek out relationships with engineering leaders for mentorship or broader context.
+        - l2:
+          - Informs team engineering strategy by working with their manager.
+          - Actively participates in execution and some planning of organizational engineering strategy.
+          - Seeks out relationships with engineering leaders to build understanding of organizational strategy.
+        - l3:
+          - Decides & collaborates on team engineering strategy with manager & teammates.
+          - Sometimes involves self in organizational engineering strategy.
+          - Seeks to build strong relationships with engineering leaders across the organization.
+        - l4:
+          - Effective relationship builder throughout the engineering organization.
+          - Often involved in strategic organizational plans.
+        - l5:
+          - Very effective relationship builder among most or all engineering leaders, regardless of function or relative team relationship.
+          - Proactively involved in and often leads strategic organizational decisions and plans.
+        - l6:
+          - Unquestionably strong relationships with all engineering leaders in the organization.
+          - Represents role model strategic engineering values and expertise.
+          - Creates & effectively manages many organizational strategy plans.
+    external_representation_*:
+      attributes:
+        - OPTIONAL
+        - Thoughtfulness in positively connecting self and team back to the brand (company, team, self)
+        - Prominence & results from external representation of company
+      levels:
+        - l1:
+          - Always represents self, team & company positively to external audiences.
+          - Thinks about how external communication affects the brand and plans accordingly, sometimes with help from teammates or leaders.
+          - Not generally expected, but certainly encouraged to represent company & team externally (e.g. blog posts, meetup group talks, conference speaking).
+        - l2:
+          - Might be more proactive in seeking out external representation opportunities.
+          - Contributes some external blog posts.
+        - l3:
+          - Contributes & solicits blog post opportunities from teammates.
+        - l4:
+          - Consistently represents self, team & company through excellent blog posts.
+          - Sometimes represents self, team & company with external speaking engagements.
+        - l5:
+          - Consistently represents self, team & company with external speaking engagements.
+          - May participate in industry working groups on behalf of company.
+        - l6:
+          - Acts as primary contact for any relevant industry working groups to represent company.
+          - Known among some industry groups for reputation at company.
+        - l7:
+          - Well-known among industry groups for reputation at company.
+          - Regularly cited & invited as an expert within industry conferences for expertise relevant to company.
+  innovation:
+    contributing_to_product_enhancements:
+      attributes:
+        - Contributions to the product roadmap
+        - Creating new abilities for the product team
+      levels:
+        - l1:
+          - Understands drivers behind product roadmap items as it affects their team.
+        - l2:
+          - Sometimes participates in roadmap feedback with product team.
+          - Looks for opportunities to simplify product & technical design.
+        - l3:
+          - Regularly participates in the creation of the team roadmap & ensuing feedback.
+          - Builds a reputation for simplifying product & technical design through proactive conversations.
+        - l4:
+          - Often helps refine roadmaps across teams based on technical strategy & constraints.
+          - Helps to define & create new product abilities by changing technical strategy or constraints.
+        - l5:
+          - Proactively seeks to create or redefine roadmaps with product & business counterparts.
+        - l6:
+          - Widely respected for important contributions to product roadmaps across the organization.
+    driving_efficiency_of_systems_&_practices:
+      attributes:
+        - Opportunities for customer-impacting performance improvements
+        - Continuous improvement of development, team and organizational practices to gain speed through efficiency
+      levels:
+        - l1:
+          - Takes responsibility for customer-impacting performance of systems on which they work.
+          - Sometimes thinks about team practices; may suggest improvements to team or manager.
+        - l2:
+          - Seeks to understand and vet performance characteristics of new and old systems; shares methods & knowledge.
+          - Regularly observes team practices & processes and suggests improvements to team or manager.
+        - l3:
+          - Consistently pursues improvements to performance, starting with the impact to customers.
+          - Thinks critically about team practices & processes and regularly discusses improvements with leads & manager.
+          - Observes organizational practices & processes and sometimes collaborates across teams to improve them.
+        - l4:
+          - Applies cross-team experience to provide consistent and replicable performance improvements for customers.
+          - Regularly discusses, tweaks and seeks feedback on organizational practices & processes.
+        - l5:
+          - Takes ownership & responsibility for organizational practices & processes and their continuous improvement.
+  vision:
+    technical_strategy_mapping:
+      attributes:
+        - Ability to articulate a vision for the future of a technical context
+      levels:
+        - l1:
+          - Articulates a coherent future vision for a component or components that they own within a larger system.
+        - l2:
+          - Articulates a coherent future vision for whole systems and several components for which they have responsibility.
+        - l3:
+          - Articulates a coherent future vision for many systems tended by their team.
+          - Often assists teammates with building and articulating visions for their responsibility areas.
+        - l4:
+          - Articulates a coherent future vision for systems that span teams, or many systems across teams.
+          - Helps define the model of what good & appropriate technical visions comprise.
+        - l6:
+          - Takes primary responsibility for building & articulating organization-level technical visions.
+          - Owns the definition & communication of models describing good technical visions.
+  integrity_&_ethics:
+    fiscal_responsibility_*:
+      attributes:
+        - OPTIONAL
+        - Spend carefully and only when it's in service of team & company goals
+        - Ensure timely & accurate accounting of business expenses
+        - Understand cost impact of tools, applications & services
+        - Understand financial drivers of the business
+      levels:
+        - l1:
+          - Spends carefully and only when it's in service of team & company goals.
+          - Ensures timely & accurate accounting of all business expenses.
+          - Understands relevant financial drivers behind projects or business initiatives.
+        - l2:
+          - Seeks out and understands overall cost impact of components for which they have responsibility.
+        - l3:
+          - Proactively takes responsibility for cost management of team-owned systems & resources.
+          - Looks for opportunities to increase cost efficiency of team-owned systems & resources.
+        - l4:
+    privacy_&_security:
+      attributes:
+        - Understanding and applying privacy & security principles
+        - Handling user data appropriately
+        - Reporting privacy & security concerns
+      levels:
+        - l1:
+          - Understands basic security & privacy principles; always applies them to daily work.
+          - Understands the importance & gravity of handling user data and does so responsibly without exception.
+          - Immediately reports privacy or security concerns to manager, CTO, or COO.
+        - l3:
+          - Works proactively with CTO to help refine technical strategy based on those constraints.
+    honesty_&_accuracy:
+      attributes:
+        - Realistic work estimates
+        - Humility about lack of knowledge or experience
+      levels:
+        - l1:
+          - Understands and always tries to give consistent and honest work estimates.
+          - Usually understands the limitations of their own knowledge and retains humility about their experiences.
+        - l2:
+          - Almost always understands the limitations of their own knowledge and retains humility about their experiences.
+        - l3:
+          - Always understands the limitations of their own knowledge and retains humility about their experiences.
+          - Encourages humility in others through coaching.
+  leadership:
+    mentorship_&_guidance:
+      attributes:
+        - Effectively mentoring and guiding teammates one-on-one
+        - Understanding the balance between giving answers and providing opportunities to learn
+        - Seeking out mentorship from teammates in particular areas
+        - Growing teammates to build redundancy or replacement
+      levels:
+        - l1:
+          - Knows when to seek out mentorship to grow their own experience.
+        - l2:
+          - Sometimes mentors teammates one-on-one with or without prompting.
+          - Always treats mentored teammates with respect and kindness, regardless of their experience.
+        - l3:
+          - Proactively mentors teammates one-on-one without prompting.
+          - Seeks out opportunities to train other teammates with their knowledge & skills to create team redundancy and backfill ability.
+        - l4:
+          - Often mentors teammates across teams based on experience & expertise.
+          - Takes full responsibility for their own succession on their team, including planning, coaching, mentorship & training.
+        - l5:
+          - Serves as a role model for mentorship within the engineering organization.
+          - Proactively seeks out mentoring relationships.
+          - Helps improve mentors.
+    broadcasting_&_knowledge_sharing:
+      attributes:
+        - Comfort speaking on technical subjects to groups of engineers
+        - Seek out opportunities to share unique expert knowledge or experiences with broad groups of teammates
+        - Share knowledge externally via the company technical blog
+      levels:
+        - l1:
+          - Feels comfortable explaining technical subjects to their own team.
+          - May broadcast to broader engineering groups through Tech Talks or the company technical blog.
+        - l2:
+          - Feels comfortable explaining technical subjects and receiving feedback across teams, whether formally (Tech Talks) or informally.
+          - Contributes to the company technical blog on a regular basis.
+          - May seek out speaking opportunities at local user groups or conferences.
+        - l3:
+          - Likely seeks out speaking opportunities at local user groups or conferences.
+        - l5:
+          - Habitually seeks out opportunities to share pragmatic experience and expert knowledge with teammates and external engineers via Tech Talks, local user groups and conference speaking engagements.
+        - l6:
+          - May speak externally on cross-functional topics to more diverse non-technical audiences.
+    influence_&_alignment:
+      attributes:
+        - Persuading and getting alignment across diverse groups of teammates to accomplish a goal
+        - Understanding the balance and power of making quick decisions with incomplete information
+      levels:
+        - l1:
+          - Can persuade some direct teammates based on the merits of a technical approach.
+          - Makes well-informed technical decisions with all or nearly all of the information required.
+        - l2:
+          - Balanced with good listening, can persuade their entire team of particular tactical approaches to problems.
+        - l3:
+          - Regularly achieves strong alignment with their own team.
+          - Sometimes persuades other team leads of a new approach based on sound tactical or strategic reasoning.
+        - l4:
+          - Regularly influences multiple teams to align around a cross-team goal.
+          - Can deal with some information ambiguity in decision making, but may make most decisions based on solid evidence.
+        - l5:
+          - Consistently works at a strategic level, influencing technical & non-technical decisions to achieve cross-team alignment on major near-term goals.
+        - l6:
+          - Successfully shapes organizational strategy with long-term considerations from technical architecture.
+          - Can persuade teammates at a tactical level with a lot of information, or the entire organization with limited information and sound, relevant experience.
+        - l7:
+          - Strongest technical influencers in the organization, with widely held respect and very forward-thinking plans.
