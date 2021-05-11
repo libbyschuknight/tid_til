@@ -2,6 +2,8 @@
 
 [https://30secondsofinterviews.org/](https://30secondsofinterviews.org/) (html/css/js)
 
+[What is the difference between ___ and ___ in the front-end development?](https://thisthat.dev/)
+
 ## Questions from interviewers - Technical
 
 ### How would you solve the N + 1 query problem?

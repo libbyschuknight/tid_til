@@ -1,26 +1,54 @@
 # JAVASCRIPT
 
+## Learning JS
+
 [My Favorite Teachers In The JavaScript Community](https://dev.to/emmawedekind/my-favorite-teachers-in-the-javascript-community-53h)
 
 [Learn JavaScript with Eric Elliott](https://ericelliottjs.com/)
 
-[10 Interview Questions: Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
-
 [YOU MIGHT NOT NEED JQUERY](http://youmightnotneedjquery.com/)
+
+[You (Might) Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
 
 [(Now More Than Ever) You Might Not Need jQuery](https://css-tricks.com/now-ever-might-not-need-jquery/)
 
-[Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
+[Vanilla JavaScript Code Snippets](https://www.smashingmagazine.com/2021/04/vanilla-javascript-code-snippets/) ✅
 
-[Airbnb JavaScript Style Guide](http://airbnb.io/javascript/react/)
+[30 second of code](https://www.30secondsofcode.org/)
+
+- [30 seconds of code: Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.](https://github.com/30-seconds/30-seconds-of-code#readme)
+
+[how to manage HTML DOM: with vanilla JavaScript only?](https://htmldom.dev/)
+
+[The Vanilla JavaScript Toolkit](https://vanillajstoolkit.com/)
+
+[The Vanilla JS Academy](https://vanillajsacademy.com/#ready-to-buy)
+
+[Learn Vanilla JavaScript](https://github.com/snipcart/learn-vanilla-js)
+
+[Javascript 30 - wes bos](https://javascript30.com/)
 
 [A re-introduction to Java​Script (JS tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 
 [Learn JavaScript: The easiest way to learn & practice modern JavaScript step by step](https://learnjavascript.online/)
 
+## Style Guides
+
+[Airbnb JavaScript Style Guide](http://airbnb.io/javascript/react/)
+
+## Questions / Interviews
+
+[10 Interview Questions: Every JavaScript Developer Should Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)
+
 [javascript-questions](https://github.com/lydiahallie/javascript-questions)
 
 > A long list of (advanced) JavaScript questions, and their explanations ✨ Updated weekly!
+
+[What is the difference between ___ and ___ in the front-end development?](https://thisthat.dev/)
+
+## Useful random things
+
+[Creating an Accordion with HTML, CSS & jQuery](http://inspirationalpixels.com/tutorials/creating-an-accordion-with-html-css-jquery)
 
 [8 Useful JavaScript Tricks](https://devinduct.com/blogpost/26/8-useful-javascript-tricks)
 
@@ -37,8 +65,6 @@
 [Build a PWA Using Only Vanilla JavaScript](https://levelup.gitconnected.com/build-a-pwa-using-only-vanilla-javascript-bdf1eee6f37a)
 
 [A Complete Guide to JavaScript Tooling](https://dev.to/hoangbkit/a-complete-guide-to-javascript-tooling-56eg)
-
-[30 seconds of code: Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less.](https://github.com/30-seconds/30-seconds-of-code#readme)
 
 [Robust Client-Side JavaScript](https://molily.de/robust-javascript/)
 
@@ -89,6 +115,8 @@ It is because `0` is a falsy value in JS. Unlike Ruby.
 [JavaScript Debounce Function](https://davidwalsh.name/javascript-debounce-function)
 
 [Debounce in JavaScript — Improve Your Application’s Performance](https://levelup.gitconnected.com/debounce-in-javascript-improve-your-applications-performance-5b01855e086)
+
+[Optional chaining (?.)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 
 ## JS Frameworks
 

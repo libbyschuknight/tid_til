@@ -2,6 +2,11 @@
 
 [Ruby Docs](https://ruby-doc.org/)
 
+[Core docs](https://ruby-doc.org/core-3.0.1/)
+
+- <https://ruby-doc.org/core-3.0.1/String.html>
+- <https://ruby-doc.org/core-3.0.1/Enumerable.html>
+
 [The Ruby Style Guide](https://rubystyle.guide/) - <https://github.com/rubocop-hq/ruby-style-guide>
 
 [Hidden features of Ruby you may not know about](https://blog.arkency.com/2014/07/hidden-features-of-ruby-you-may-dont-know-about/)

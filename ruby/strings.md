@@ -14,14 +14,14 @@ Needed to also work with:
 
 Both options about work!
 
-
 ## [Learn Strftime](http://learnstrftime.com/)
 Really useful site, can paste in a "Strftime" and it will tell you what the different components are.
 E.g.
 This  `%l:%M%P %-d %b %y` displays as `8:51am 6 Oct 16`.
 
 If you paste into Learn Strftime, get this:
-```
+
+```markdown
 
 Operator	   Example/Output	   Notes
 %l           ( 1..12)          Hour of day, 12-hour clock, blank-padded
@@ -41,7 +41,6 @@ Get the number of characters in a string use `size` or `length`, both return len
 s = "test" # "test"
 s.size # 4
 ```
-
 
 There is a `count` method for `String` but it is used like this:
 
@@ -65,14 +64,23 @@ Example
 )
 ```
 
-
 ## tr method
-https://ruby-doc.org/core-2.3.0/String.html#method-i-tr
+
+<https://ruby-doc.org/core-2.3.0/String.html#method-i-tr>
+
+<https://stackoverflow.com/questions/26749065/what-is-the-difference-between-tr-and-gsub/26750460#26750460>
+
+Use case at SP, changing all the double quotes to single quotes.
+
+```ruby
+img_tag = block.placeholder_img.to_s.tr('"', "'")
+```
 
 Marielle from work:
 
 > I've got a cool use case of tr to show you!
-```
+
+```bash
 irb(main):010:0> alphabet = ('a'..'z').to_a.join
 => "abcdefghijklmnopqrstuvwxyz"
 irb(main):011:0> cipher = "qwertyuiopasdfghjklzxcvbnm"
@@ -82,7 +90,8 @@ irb(main):012:0> "return the books".tr(alphabet, cipher)
 ```
 
 In a hangman context it's even cooler, this was how he used it:
-```
+
+```bash
 word = "knowledge"
 => "knowledge"
 
@@ -98,4 +107,3 @@ letters_left = alphabet - guesses
 word.tr(letters_left.join, "_")
 => "kn_w_e__e"
 ```
-
