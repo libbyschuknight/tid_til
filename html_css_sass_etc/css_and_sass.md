@@ -34,6 +34,8 @@
 
 [CSS Zen Garden](http://www.csszengarden.com/)
 
+[Learn CSS](https://web.dev/learn/css/)
+
 ### Tips
 
 [How to make your HTML responsive by adding a single line of CSS](https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/amp/?__twitter_impression=true)

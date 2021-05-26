@@ -1,5 +1,7 @@
 # JAVASCRIPT
 
+[Operator Lookup](https://www.joshwcomeau.com/operator-lookup/)
+
 ## Learning JS
 
 [My Favorite Teachers In The JavaScript Community](https://dev.to/emmawedekind/my-favorite-teachers-in-the-javascript-community-53h)
@@ -602,6 +604,8 @@ First this
 [What is tree shaking and how does it work?](https://bitsofco.de/what-is-tree-shaking/) ✅
 
 <https://webpack.js.org/guides/tree-shaking/>
+
+[Tree-Shaking: A Reference Guide](https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/)
 
 ## Event.stopPropagation() / Event.preventDefault()
 

@@ -34,6 +34,16 @@ ActiveRecord::Base.logger = Logger.new(STDOUT);
 
 >Returns a new object of the collection type that has been instantiated with attributes and linked to this object, but have not yet been saved. You can pass an array of attributes hashes, this will return an array with the new objects.
 
+[.update_all](http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all)
+
+When have a group of records where want to change say an `something_id` on all of them.
+
+[.touch](https://api.rubyonrails.org/v6.1.3/classes/ActiveRecord/Persistence.html#method-i-touch)
+
+>Saves the record with the updated_at/on attributes set to the current time or the time specified. Please note that no >validation is performed and only the after_touch, after_commit and after_rollback callbacks are executed.
+>
+>This method can be passed attribute names and an optional time argument. If attribute names are passed, they are >updated along with updated_at/on attributes. If no time argument is passed, the current time is used as default.
+
 ## Queries
 
 <https://robots.thoughtbot.com/activerecords-wherenot>
@@ -169,16 +179,6 @@ Plan.manually_assignable.pluck(:name, :customer_label, :manually_assignable, :av
 ```
 
 [Which one is faster between map, collect, select and pluck?](https://stackoverflow.com/questions/45347317/which-one-is-faster-between-map-collect-select-and-pluck/45347812#45347812)
-
-## `update_all`
-
-<http://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-update_all>
-
-When have a group of records where want to change say an `something_id` on all of them.
-
-## `touch`
-
-<https://api.rubyonrails.org/v6.1.3/classes/ActiveRecord/Persistence.html#method-i-touch>
 
 ## Joining Tables
 

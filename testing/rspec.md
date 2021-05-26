@@ -26,6 +26,10 @@
 
 [rspec-rainbow 🌈](https://github.com/mscoutermarsh/rspec-rainbow)
 
+[The 5 Rules of Simple RSpec Tests](https://solnic.codes/2021/05/11/the-5-rules-of-simple-rspec-tests/)
+
+[Write Detailed RSpec Example Descriptions](https://www.tomdalling.com/blog/mentoring/write-detailed-rspec-example-descriptions/)
+
 ## Running Specs
 
 [Running Rspec examples by name, or: Running a single shared example](https://makandracards.com/makandra/47400-running-rspec-examples-by-name-or-running-a-single-shared-example)

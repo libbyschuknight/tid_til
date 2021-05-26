@@ -75,7 +75,83 @@
 3. to read - https://blog.appsignal.com/2021/02/10/ruby-on-rails-view-patterns-and-anti-patterns.html
 4. [Ruby on Rails Controller Patterns and Anti-patterns](https://blog.appsignal.com/2021/04/14/ruby-on-rails-controller-patterns-and-anti-patterns.html)
 
-## Controller
+## Routes and stuff
+
+### Routes
+
+<http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
+
+[5.1 Listing Existing Routes](https://guides.rubyonrails.org/routing.html#listing-existing-routes)
+
+`rails routes -g family`
+
+Rails 6 we can do this `rails routes --expanded`
+
+```bash
+--[ Route 1 ]----------------------------------------------------
+Prefix            | users
+Verb              | GET
+URI               | /users(.:format)
+Controller#Action | users#index
+--[ Route 2 ]----------------------------------------------------
+Prefix            |
+Verb              | POST
+URI               | /users(.:format)
+Controller#Action | users#create
+--[ Route 3 ]----------------------------------------------------
+Prefix            | new_user
+Verb              | GET
+URI               | /users/new(.:format)
+Controller#Action | users#new
+--[ Route 4 ]----------------------------------------------------
+Prefix            | edit_user
+Verb              | GET
+URI               | /users/:id/edit(.:format)
+Controller#Action | users#edit
+```
+
+[How To Search Rails Routes](https://www.natashatherobot.com/search-rails-routes/#)
+
+#### Exploring Routes (optional) - from RailsBridge <http://docs.railsbridge.org/intro-to-rails/setting_the_default_page>
+
+Now you can have a look at the paths that are available in your app. Let's try looking at one of the topics routes we just generated. Open up your Rails console and play:
+
+```bash
+$ rails console
+>> app.topics_path
+=> "/topics"
+>> app.topics_url
+=> "http://www.example.com/topics"
+```
+
+`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
+
+#### link_to things
+
+Came across the `link_to_remote`, this is deprecated, can do something like this instead:
+
+```html
+<% if add_utility_notice.shown? %>
+<div class="add-utility-notice">
+  <%= link_to(new_utility_path(:property_id => add_utility_notice.property_id,
+  :customer_id => add_utility_notice.customer_id), { :class => "text" }) do %>
+  <%= t :company_name %> now has <%= add_utility_notice.utility_type %>!
+  <span class="call-to-action">Add now</span>
+  <% end %> <%= link_to(customer_utility_notice_dismissals_path, html_options =
+  { :class => "dismiss-button", :method => :post, :remote => true, :onclick =>
+  "document.querySelector('.add-utility-notice').style.display = 'none'; return
+  false" }) do %>
+  <div class="icon"></div>
+  <% end %>
+</div>
+<% end %>
+```
+
+(This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.)
+
+[Edge Rails: PATCH is the new primary HTTP method for updates](https://weblog.rubyonrails.org/2012/2/26/edge-rails-patch-is-the-new-primary-http-method-for-updates/)
+
+### Controller
 
 [Action Controller Parameters](https://api.rubyonrails.org/classes/ActionController/Parameters.html)
 
@@ -694,78 +770,6 @@ Add debug to view:
 At work we have a old admin pattern library layout and a new one. To use the new one, in a controller you add `layout "admin"`. This would point it to use `admin.html.erb`, whereas if you didn't have this it would use the old layout `admin_legacy.html.erb`.
 
 [Rails Layout Rendering Cheatsheet](https://medium.com/@kevinyckim33/rails-layout-rendering-cheatsheet-d40e14ab3503)
-
-### Routes
-
-<http://localhost:3000/rails/info/routes> - will show routes on web as `rails routes` does in the terminal
-
-[5.1 Listing Existing Routes](https://guides.rubyonrails.org/routing.html#listing-existing-routes)
-
-`rails routes -g family`
-
-Rails 6 we can do this `rails routes --expanded`
-
-```bash
---[ Route 1 ]----------------------------------------------------
-Prefix            | users
-Verb              | GET
-URI               | /users(.:format)
-Controller#Action | users#index
---[ Route 2 ]----------------------------------------------------
-Prefix            |
-Verb              | POST
-URI               | /users(.:format)
-Controller#Action | users#create
---[ Route 3 ]----------------------------------------------------
-Prefix            | new_user
-Verb              | GET
-URI               | /users/new(.:format)
-Controller#Action | users#new
---[ Route 4 ]----------------------------------------------------
-Prefix            | edit_user
-Verb              | GET
-URI               | /users/:id/edit(.:format)
-Controller#Action | users#edit
-```
-
-[How To Search Rails Routes](https://www.natashatherobot.com/search-rails-routes/#)
-
-##### Exploring Routes (optional) - from RailsBridge <http://docs.railsbridge.org/intro-to-rails/setting_the_default_page>
-
-Now you can have a look at the paths that are available in your app. Let's try looking at one of the topics routes we just generated. Open up your Rails console and play:
-
-```bash
-$ rails console
->> app.topics_path
-=> "/topics"
->> app.topics_url
-=> "http://www.example.com/topics"
-```
-
-`app` is a special object that represents your entire application. You can ask it about its routes (as we just did), play with its database connections, or make pseudo-web requests against it with `get` or `post` (and lots more).
-
-###### link_to things
-
-Came across the `link_to_remote`, this is deprecated, can do something like this instead:
-
-```html
-<% if add_utility_notice.shown? %>
-<div class="add-utility-notice">
-  <%= link_to(new_utility_path(:property_id => add_utility_notice.property_id,
-  :customer_id => add_utility_notice.customer_id), { :class => "text" }) do %>
-  <%= t :company_name %> now has <%= add_utility_notice.utility_type %>!
-  <span class="call-to-action">Add now</span>
-  <% end %> <%= link_to(customer_utility_notice_dismissals_path, html_options =
-  { :class => "dismiss-button", :method => :post, :remote => true, :onclick =>
-  "document.querySelector('.add-utility-notice').style.display = 'none'; return
-  false" }) do %>
-  <div class="icon"></div>
-  <% end %>
-</div>
-<% end %>
-```
-
-This was about having a dismiss X and when clicked, via JS, calls off to a controller and on success the notice is removed.
 
 ### Generation of things in Rails - model, controller, resource, scaffold, migration
 

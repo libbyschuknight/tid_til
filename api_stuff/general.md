@@ -24,7 +24,7 @@ Thanks @ootoovak
 
 [What Are Breaking Changes and How Do You Avoid Them?](https://nordicapis.com/what-are-breaking-changes-and-how-do-you-avoid-them/)
 
-### HTTP Verbs
+## HTTP Verbs
 
 |HTTP Verb  |CRUD   |Entire Collection (e.g. /customers)   |Specific Item (e.g. /customers/{id})   |
 |---|---|---|---|

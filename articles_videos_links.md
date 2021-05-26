@@ -2,7 +2,7 @@
 
 <!-- TODO:
 split this file out into
-  ## Core / People Stuff
+  ## Core / People Stuff / Company
   ## Technical / Coding Stuff
 -->
 
@@ -124,6 +124,12 @@ split this file out into
 [A Rubric for Evaluating Team Members’ Contributions to an Inclusive Culture](https://chelseatroy.com/2018/05/24/why-your-efforts-to-make-your-company-inclusive-arent-working/)
 
 [THIS IS WHAT’S MISSING FROM YOUR TALENT STRATEGY](https://fierceinc.com/blog/this-is-what-s-missing-from-your-talent-strategy/)
+
+[It’s not their job to buy you cake](https://www.niemanlab.org/2021/05/its-not-their-job-to-buy-you-cake/)
+
+[Being Glue](https://noidea.dog/glue)
+
+[Survival Tips For Women In Tech](https://patricia.no/2018/09/06/survival_tips_for_women_in_tech.html)
 
 ### Company focused links
 

@@ -34,6 +34,19 @@
 >...
 >The difference between client-side vs. server-side, and frontend vs. backend programming is really a difference >in semantics. Client-side vs. server-side describes where the action takes place (literally on your computer vs. >a server). Frontend vs. backend refers to what kind of action is taking place (the kind the user sees vs. the >kind a user does not).
 
+## HTTP Verbs
+
+|HTTP Verb  |CRUD   |Entire Collection (e.g. /customers)   |Specific Item (e.g. /customers/{id})   |
+|---|---|---|---|
+|POST   | Create  |201 (Created), 'Location' header with link to /customers/{id} containing new ID.   |404 (Not Found), 409 (Conflict) if resource already exists..   |
+|GET   |Read   |200 (OK), list of customers. Use pagination, sorting and filtering to navigate big lists.  |200 (OK), single customer. 404 (Not Found), if ID not found or invalid.   |
+|PUT   |Update/Replace   |405 (Method Not Allowed), unless you want to update/replace every resource in the entire collection.   |200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid.   |
+|PATCH   |Update/Modify   |405 (Method Not Allowed), unless you want to modify the collection itself   |200 (OK) or 204 (No Content). 404 (Not Found), if ID not found or invalid.   |
+|DELETE   |Delete   |405 (Method Not Allowed), unless you want to delete the whole collection—not often desirable.   |200 (OK). 404 (Not Found), if ID not found or invalid.   |
+
+From [Using HTTP Methods for RESTful Services](https://www.restapitutorial.com/lessons/httpmethods.html)
+
+[Edge Rails: PATCH is the new primary HTTP method for updates](https://weblog.rubyonrails.org/2012/2/26/edge-rails-patch-is-the-new-primary-http-method-for-updates/)
 
 
 ## JSON
@@ -83,6 +96,8 @@ Start in the centre and work way outwards, in a methodical manner
 [Learn CSS Layout](http://learnlayout.com/)
 
 [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
+
+[Learn CSS](https://web.dev/learn/css/)
 
 ## Security
 
